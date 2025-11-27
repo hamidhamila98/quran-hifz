@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Amiri:wght@400;700&family=Inter:wght@300;400;500;600;700&family=Scheherazade+New:wght@400;700&family=Noto+Naskh+Arabic:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: #f8fafc;
+  min-height: 100vh;
+}
+
+/* Custom Arabic text styling */
+.arabic-text {
+  font-family: 'Amiri Quran', 'Amiri', serif;
+  direction: rtl;
+  text-align: right;
+  line-height: 3.5;
+  letter-spacing: 0;
+}
+
+/* Flow mode - Mushaf style continuous text */
+.arabic-flow {
+  direction: rtl;
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 3.5;
+}
+
+.arabic-flow .verse-inline {
+  display: inline;
+}
+
+/* Tajweed colors from Quran.com API */
+.tajweed-text {
+  line-height: 3.8;
+}
+
+/* Tajweed CSS classes - Compatible avec Quran.com API ET AlQuran.cloud API */
+/* Les deux APIs utilisent des noms de classes différents! */
+
+/* === GRIS - Lettres silencieuses / non prononcées === */
+tajweed[class=ham_wasl] { color: #AAAAAA; } /* Hamzat ul Wasl - gris */
+tajweed[class=slnt] { color: #AAAAAA; } /* Silent (lettre non prononcée) - gris */
+tajweed[class=laam_shamsiyah] { color: #AAAAAA; } /* Lam Shamsiyyah - gris */
+
+/* === BLEU - Madd (Prolongation) === */
+tajweed[class=madda_normal] { color: #537FFF; } /* Madd Normal: 2 temps - bleu clair */
+tajweed[class=madda_permissible] { color: #4050FF; } /* Madd Permissible: 2,4,6 temps - bleu */
+tajweed[class=madda_obligatory] { color: #2144C1; } /* Madd Obligatory: 4-5 temps - bleu foncé */
+tajweed[class=madda_necessary] { color: #000EBC; } /* Madd Necessary: 6 temps - bleu très foncé */
+
+/* === ROUGE - Qalqala (Vibration/Écho) === */
+tajweed[class=qalaqah] { color: #DD0008; } /* Qalqala (Quran.com) - rouge */
+tajweed[class=qlq] { color: #DD0008; } /* Qalqala (AlQuran.cloud) - rouge */
+tajweed[class=qalpieces] { color: #DD0008; } /* Qalqala (ancien) - rouge */
+
+/* === ORANGE - Ghunna (Nasalisation 2 temps) === */
+tajweed[class=ghunnah] { color: #FF7E1E; } /* Ghunna (Quran.com) - orange */
+tajweed[class=ghn] { color: #FF7E1E; } /* Ghunna (AlQuran.cloud) - orange */
+
+/* === VIOLET/MAGENTA - Ikhfa (Dissimulation) === */
+tajweed[class=ikhafa_shafawi] { color: #D500B7; } /* Ikhfa Shafawi (Quran.com) - magenta */
+tajweed[class=ikhf_shfw] { color: #D500B7; } /* Ikhfa Shafawi (AlQuran.cloud) - magenta */
+tajweed[class=ikhafa] { color: #9400A8; } /* Ikhfa (Quran.com) - violet */
+tajweed[class=ikhf] { color: #9400A8; } /* Ikhfa (AlQuran.cloud) - violet */
+
+/* === CYAN - Iqlab (Conversion) === */
+tajweed[class=iqlab] { color: #26BFFD; } /* Iqlab (Quran.com) - cyan */
+tajweed[class=iqlb] { color: #26BFFD; } /* Iqlab (AlQuran.cloud) - cyan */
+
+/* === VERT - Idgham (Fusion/Assimilation) === */
+tajweed[class=idgham_shafawi] { color: #58B800; } /* Idgham Shafawi (Quran.com) - vert clair */
+tajweed[class=idghm_shfw] { color: #58B800; } /* Idgham Shafawi (AlQuran.cloud) - vert clair */
+tajweed[class=idgham_ghunnah] { color: #169777; } /* Idgham avec Ghunna (Quran.com) - teal */
+tajweed[class=idgh_ghn] { color: #169777; } /* Idgham avec Ghunna (AlQuran.cloud) - teal */
+tajweed[class=idgham_wo_ghunnah] { color: #169200; } /* Idgham sans Ghunna (Quran.com) - vert foncé */
+tajweed[class=idgh_w_ghn] { color: #169200; } /* Idgham sans Ghunna (AlQuran.cloud) - vert foncé */
+tajweed[class=idgham_mutajanisayn] { color: #A1A1A1; } /* Idgham Mutajanisayn (Quran.com) - gris */
+tajweed[class=idgham_mutaqaribayn] { color: #A1A1A1; } /* Idgham Mutaqaribayn (Quran.com) - gris */
+tajweed[class=idgh_mus] { color: #A1A1A1; } /* Idgham Mutajanisayn (AlQuran.cloud) - gris */
+
+/* Hide verse end numbers from API (we have our own) */
+.tajweed-text span.end { display: none; }
+
+/* Verse number styling - Quran-style marker */
+.verse-number {
+  font-family: system-ui, -apple-system, sans-serif;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.8rem;
+  height: 1.8rem;
+  margin: 0 0.4rem;
+  background: transparent;
+  color: #1a5f8d;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border: 2px solid #1a5f8d;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px rgba(26, 95, 141, 0.15);
+  vertical-align: middle;
+  transform: translateY(-0.3em);
+}
+
+/* Dark mode verse number */
+.dark .verse-number {
+  color: #60a5fa;
+  border-color: #60a5fa;
+  box-shadow: 0 0 0 2px rgba(96, 165, 250, 0.15);
+}
+
+/* Verse marker - Quran style with ۝ symbol */
+.verse-marker {
+  color: #d4af37;
+  font-size: 1.3em;
+  margin-left: 0.3rem;
+  vertical-align: middle;
+  display: inline-block;
+  transform: translateY(-0.4em);
+}
+
+/* Verse marker with Western numerals - positioned in center */
+.verse-marker-western {
+  position: relative;
+  display: inline-block;
+  margin-left: 0.3rem;
+  vertical-align: middle;
+  transform: translateY(-0.4em);
+}
+
+.verse-marker-western .marker-symbol {
+  color: #d4af37;
+  font-size: 1.3em;
+  font-family: 'Amiri Quran', serif;
+}
+
+.verse-marker-western .marker-number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -25%);
+  font-size: 0.55em;
+  font-family: system-ui, sans-serif;
+  font-weight: 600;
+  color: #d4af37;
+}
+
+.dark .verse-marker {
+  color: #fbbf24;
+}
+
+.dark .verse-marker-western .marker-symbol,
+.dark .verse-marker-western .marker-number {
+  color: #fbbf24;
+}
+
+/* Bismillah styling */
+.bismillah {
+  text-align: center;
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+  color: #1a5f8d;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1a5f8d;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #154c71;
+}
+
+/* Dark mode */
+.dark {
+  background-color: #0f172a;
+  color: #f1f5f9;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #1e293b;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #3b82f6;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+@keyframes pulse-gold {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(252, 194, 1, 0.4); }
+  50% { box-shadow: 0 0 0 10px rgba(252, 194, 1, 0); }
+}
+
+.pulse-gold {
+  animation: pulse-gold 2s infinite;
+}
+
+@keyframes slideIn {
+  from { transform: translateX(-100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+.animate-slide-in {
+  animation: slideIn 0.3s ease-out forwards;
+}
+
+/* Hidden verse for training mode */
+.verse-hidden {
+  filter: blur(8px);
+  user-select: none;
+  cursor: pointer;
+  transition: filter 0.3s ease;
+}
+
+.verse-hidden:hover {
+  filter: blur(5px);
+}
+
+.verse-revealed {
+  filter: none;
+  transition: filter 0.3s ease;
+}
+
+/* Verse highlight */
+.verse-highlight {
+  background: linear-gradient(120deg, rgba(252, 194, 1, 0.2) 0%, rgba(252, 194, 1, 0.1) 100%);
+  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+}
+
+/* Audio player styling */
+.audio-progress {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 6px;
+  border-radius: 3px;
+  background: #e2e8f0;
+  outline: none;
+}
+
+.audio-progress::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #1a5f8d;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.audio-progress::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #1a5f8d;
+  cursor: pointer;
+  border: none;
+}
+
+/* Card hover effects */
+.card-hover {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
