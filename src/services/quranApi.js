@@ -1,5 +1,7 @@
 // Quran API Service
-// Uses AlQuran.cloud for text, Quran.com for tajweed, and EveryAyah/Islamic Network CDN for audio
+// Uses AlQuran.cloud for text, cpfair/quran-tajweed for accurate tajweed, and EveryAyah/Islamic Network CDN for audio
+
+import { getVerseWithTajweed, hasTajweedData, getCpfairText } from './cpfairTajweed'
 
 const TEXT_API_BASE = 'https://api.alquran.cloud/v1';
 const QURAN_COM_API = 'https://api.quran.com/api/v4';
@@ -38,42 +40,52 @@ export const TAJWEED_CLASSES = {
 
 // Available Arabic fonts
 export const ARABIC_FONTS = [
+  // Polices existantes
   { id: 'amiri-quran', name: 'Amiri Quran', family: "'Amiri Quran', 'Amiri', serif" },
   { id: 'amiri', name: 'Amiri', family: "'Amiri', serif" },
   { id: 'scheherazade', name: 'Scheherazade New', family: "'Scheherazade New', serif" },
   { id: 'noto-naskh', name: 'Noto Naskh Arabic', family: "'Noto Naskh Arabic', serif" },
   { id: 'kitab', name: 'Kitab', family: "'Kitab', serif" },
+  // Nouvelles polices Google Fonts
+  { id: 'noto-kufi', name: 'Noto Kufi Arabic', family: "'Noto Kufi Arabic', sans-serif" },
+  { id: 'noto-nastaliq', name: 'Noto Nastaliq Urdu', family: "'Noto Nastaliq Urdu', serif" },
+  { id: 'lateef', name: 'Lateef', family: "'Lateef', serif" },
+  { id: 'reem-kufi', name: 'Reem Kufi', family: "'Reem Kufi', sans-serif" },
+  { id: 'aref-ruqaa', name: 'Aref Ruqaa', family: "'Aref Ruqaa', serif" },
+  { id: 'mada', name: 'Mada', family: "'Mada', sans-serif" },
+  { id: 'harmattan', name: 'Harmattan', family: "'Harmattan', sans-serif" },
+  { id: 'markazi', name: 'Markazi Text', family: "'Markazi Text', serif" },
+  // Polices Quran spécialisées (CDN)
+  { id: 'kfgqpc-uthmanic', name: 'KFGQPC Uthmanic (Mushaf Médine)', family: "'KFGQPC Uthmanic Script HAFS', 'Amiri Quran', serif" },
+  { id: 'me-quran', name: 'Me Quran', family: "'Me Quran', 'Amiri Quran', serif" },
 ];
 
 // Fetch a specific page of the Mushaf (1-604)
+// Uses cpfair/quran-tajweed for accurate tajweed when enabled
 export async function getPage(pageNumber, useTajweed = false) {
   try {
-    if (useTajweed) {
-      // Use Quran.com API for better tajweed
-      const response = await fetch(`${QURAN_COM_API}/quran/verses/uthmani_tajweed?page_number=${pageNumber}`);
-      if (!response.ok) throw new Error('Failed to fetch page with tajweed');
-      const data = await response.json();
+    // Use AlQuran.cloud for text
+    const response = await fetch(`${TEXT_API_BASE}/page/${pageNumber}/quran-uthmani`);
+    if (!response.ok) throw new Error('Failed to fetch page');
+    const data = await response.json();
 
-      // Transform to match AlQuran.cloud format
-      const ayahs = data.verses.map(verse => {
-        const [surah, ayah] = verse.verse_key.split(':').map(Number);
-        return {
-          number: verse.id,
-          text: verse.text_uthmani_tajweed,
-          numberInSurah: ayah,
-          surah: { number: surah },
-          page: pageNumber
-        };
+    // Apply cpfair tajweed if enabled - uses cpfair's own text for accurate positions
+    if (useTajweed && data.data && data.data.ayahs) {
+      data.data.ayahs = data.data.ayahs.map(ayah => {
+        if (hasTajweedData(ayah.surah.number, ayah.numberInSurah)) {
+          const tajweedText = getVerseWithTajweed(ayah.surah.number, ayah.numberInSurah);
+          if (tajweedText) {
+            return {
+              ...ayah,
+              text: tajweedText
+            };
+          }
+        }
+        return ayah;
       });
-
-      return { number: pageNumber, ayahs };
-    } else {
-      // Use AlQuran.cloud for regular text
-      const response = await fetch(`${TEXT_API_BASE}/page/${pageNumber}/quran-uthmani`);
-      if (!response.ok) throw new Error('Failed to fetch page');
-      const data = await response.json();
-      return data.data;
     }
+
+    return data.data;
   } catch (error) {
     console.error('Error fetching page:', error);
     throw error;
@@ -216,11 +228,12 @@ export async function getJuz(juzNumber) {
 }
 
 // Get page with word-level line numbers from Quran.com API
+// Uses cpfair/quran-tajweed for accurate character-level tajweed annotations
 export async function getPageWithLines(pageNumber, useTajweed = false) {
   try {
-    const textType = useTajweed ? 'text_uthmani_tajweed' : 'text_uthmani';
+    // Always fetch plain text - we'll apply cpfair tajweed if needed
     const response = await fetch(
-      `${QURAN_COM_API}/verses/by_page/${pageNumber}?words=true&word_fields=line_number,page_number,${textType}`
+      `${QURAN_COM_API}/verses/by_page/${pageNumber}?words=true&word_fields=line_number,page_number,text_uthmani`
     );
     if (!response.ok) throw new Error('Failed to fetch page with lines');
     const data = await response.json();
@@ -229,17 +242,32 @@ export async function getPageWithLines(pageNumber, useTajweed = false) {
     const verses = data.verses.map(verse => {
       const words = verse.words || [];
       const lineNumbers = [...new Set(words.map(w => w.line_number))];
+      const surahNumber = parseInt(verse.verse_key.split(':')[0]);
+      const verseNumber = verse.verse_number;
+
+      // Get plain text (without end markers)
+      const plainText = words
+        .filter(w => w.char_type_name !== 'end')
+        .map(w => w.text_uthmani)
+        .join(' ');
+
+      // Apply cpfair tajweed if enabled - uses cpfair's own text for accurate positions
+      let text = plainText;
+      if (useTajweed && hasTajweedData(surahNumber, verseNumber)) {
+        const tajweedText = getVerseWithTajweed(surahNumber, verseNumber);
+        if (tajweedText) {
+          text = tajweedText;
+        }
+      }
 
       return {
         id: verse.id,
         verseKey: verse.verse_key,
-        verseNumber: verse.verse_number,
-        surahNumber: parseInt(verse.verse_key.split(':')[0]),
+        verseNumber: verseNumber,
+        surahNumber: surahNumber,
         pageNumber: verse.page_number,
         juzNumber: verse.juz_number,
-        text: useTajweed
-          ? words.filter(w => w.char_type_name !== 'end').map(w => w.text_uthmani_tajweed || w.text_uthmani).join(' ')
-          : words.filter(w => w.char_type_name !== 'end').map(w => w.text_uthmani).join(' '),
+        text: text,
         words: words,
         lineNumbers: lineNumbers,
         startLine: Math.min(...lineNumbers),

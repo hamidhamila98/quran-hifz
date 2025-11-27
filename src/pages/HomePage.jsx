@@ -464,7 +464,7 @@ export default function HomePage({ settings, updateSettings }) {
   const renderVerseMarker = (number) => {
     if (settings.arabicNumerals) {
       return (
-        <span className="verse-marker" style={{ fontFamily: "'Amiri Quran', serif" }}>
+        <span className="verse-marker" style={{ fontFamily: "'KFGQPC Uthmanic Script HAFS', 'Amiri Quran', serif" }}>
           {'\u06DD'}{toArabicNumeral(number)}
         </span>
       )

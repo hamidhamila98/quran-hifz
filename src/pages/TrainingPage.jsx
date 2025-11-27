@@ -150,9 +150,10 @@ export default function TrainingPage({ settings }) {
     setAllRevealed(true)
   }
 
-  const handleAnswer = (isCorrect) => {
+  const handleAnswer = (points) => {
+    // points: 0 = incorrect, 0.5 = partiel, 1 = correct
     const newScore = {
-      correct: isCorrect ? score.correct + 1 : score.correct,
+      correct: score.correct + points,
       total: score.total + 1
     }
     setScore(newScore)
@@ -232,7 +233,7 @@ export default function TrainingPage({ settings }) {
   const renderVerseMarker = (number) => {
     if (settings.arabicNumerals) {
       return (
-        <span className="verse-marker" style={{ fontFamily: "'Amiri Quran', serif" }}>
+        <span className="verse-marker" style={{ fontFamily: "'KFGQPC Uthmanic Script HAFS', 'Amiri Quran', serif" }}>
           {'\u06DD'}{toArabicNumerals(number)}
         </span>
       )
@@ -248,10 +249,11 @@ export default function TrainingPage({ settings }) {
 
   const getScoreMessage = () => {
     const percentage = Math.round((score.correct / score.total) * 100)
-    if (percentage >= 90) return { emoji: '🏆', message: 'Excellent ! Ma sha Allah !' }
-    if (percentage >= 70) return { emoji: '⭐', message: 'Très bien ! Continue comme ça !' }
-    if (percentage >= 50) return { emoji: '💪', message: 'Pas mal ! Continue à réviser.' }
-    return { emoji: '📖', message: 'Continue à réviser, tu peux y arriver !' }
+    if (percentage === 100) return { emoji: '🏆', message: 'Parfait ! Ma sha Allah, aucune erreur !' }
+    if (percentage >= 75) return { emoji: '⭐', message: 'Excellent travail ! Continue comme ça !' }
+    if (percentage >= 50) return { emoji: '💪', message: 'Bien ! Quelques révisions et ce sera parfait.' }
+    if (percentage >= 25) return { emoji: '📖', message: 'Continue à réviser, tu progresses !' }
+    return { emoji: '🤲', message: 'Ne te décourage pas, la persévérance est la clé !' }
   }
 
   // End Screen
@@ -340,7 +342,7 @@ export default function TrainingPage({ settings }) {
               </label>
               <div className={`flex rounded-xl overflow-hidden border ${settings.darkMode ? 'border-slate-600' : 'border-gray-200'}`}>
                 {[
-                  { id: 'juz', label: 'Juzz' },
+                  { id: 'juz', label: 'Juz' },
                   { id: 'hizb', label: 'Hizb' },
                   { id: 'surah', label: 'Sourate' },
                   { id: 'custom', label: 'Pages' },
@@ -366,7 +368,7 @@ export default function TrainingPage({ settings }) {
             {selectionMode === 'juz' && (
               <div>
                 <label className={`block text-sm font-medium mb-2 ${settings.darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
-                  Choisir un Juzz
+                  Choisir un Juz
                 </label>
                 <div className="relative">
                   <select
@@ -490,14 +492,14 @@ export default function TrainingPage({ settings }) {
               <label className={`block text-sm font-medium mb-2 ${settings.darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
                 Nombre de questions
               </label>
-              <div className="flex gap-2">
-                {[5, 10, 20].map((num) => (
+              <div className="grid grid-cols-5 gap-2">
+                {[5, 10, 15, 20].map((num) => (
                   <button
                     key={num}
                     onClick={() => setQuestionCount(num)}
-                    className={`flex-1 py-2 rounded-xl font-medium transition-all text-sm ${
-                      questionCount === num && ![5, 10, 20].includes(questionCount) === false
-                        ? 'bg-gradient-to-r from-gold-500 to-gold-600 text-white shadow-lg'
+                    className={`py-2 rounded-xl font-medium transition-all text-sm ${
+                      questionCount === num && ![5, 10, 15, 20].includes(questionCount) === false
+                        ? 'bg-gradient-to-r from-primary-500 to-primary-600 text-white shadow-lg'
                         : settings.darkMode
                           ? 'bg-slate-700 hover:bg-slate-600 text-gray-300'
                           : 'bg-gray-100 hover:bg-gray-200 text-gray-700'
@@ -511,14 +513,14 @@ export default function TrainingPage({ settings }) {
                   min="1"
                   max="500"
                   placeholder="Autre"
-                  value={![5, 10, 20].includes(questionCount) ? questionCount : ''}
+                  value={![5, 10, 15, 20].includes(questionCount) ? questionCount : ''}
                   onChange={(e) => {
                     const val = parseInt(e.target.value) || 5
                     setQuestionCount(Math.max(1, Math.min(500, val)))
                   }}
-                  className={`flex-1 px-3 py-2 rounded-xl border text-center text-sm ${
-                    ![5, 10, 20].includes(questionCount)
-                      ? 'bg-gradient-to-r from-gold-500 to-gold-600 text-white border-gold-500'
+                  className={`px-2 py-2 rounded-xl border text-center text-sm ${
+                    ![5, 10, 15, 20].includes(questionCount)
+                      ? 'bg-gradient-to-r from-primary-500 to-primary-600 text-white border-primary-500'
                       : settings.darkMode
                         ? 'bg-slate-700 border-slate-600 text-white placeholder-gray-400'
                         : 'bg-gray-100 border-gray-200 text-gray-800 placeholder-gray-500'
@@ -532,12 +534,12 @@ export default function TrainingPage({ settings }) {
               <label className={`block text-sm font-medium mb-2 ${settings.darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
                 Versets par question
               </label>
-              <div className="flex gap-2">
+              <div className="grid grid-cols-5 gap-2">
                 {[1, 2, 3, 5, 10].map((num) => (
                   <button
                     key={num}
                     onClick={() => setVerseCount(num)}
-                    className={`flex-1 py-2 rounded-xl font-medium transition-all ${
+                    className={`py-2 rounded-xl font-medium transition-all text-sm ${
                       verseCount === num
                         ? 'bg-gradient-to-r from-primary-500 to-primary-600 text-white shadow-lg'
                         : settings.darkMode
@@ -552,7 +554,9 @@ export default function TrainingPage({ settings }) {
               <p className={`mt-2 text-sm ${settings.darkMode ? 'text-gray-400' : 'text-gray-500'}`}>
                 {verseCount === 1
                   ? `${hiddenRatio === '1/2' ? 'La moitié' : 'Les 2 tiers'} du verset ${hiddenRatio === '1/2' ? 'sera cachée' : 'seront cachés'}`
-                  : `Le 1er verset sera ${hiddenRatio === '1/2' ? 'à moitié' : 'aux 2/3'} caché, les ${verseCount - 1} suivants seront complètement cachés`
+                  : verseCount === 2
+                    ? `Le 1er verset sera ${hiddenRatio === '1/2' ? 'à moitié' : 'aux 2/3'} caché, le suivant sera complètement caché`
+                    : `Le 1er verset sera ${hiddenRatio === '1/2' ? 'à moitié' : 'aux 2/3'} caché, les ${verseCount - 1} suivants seront complètement cachés`
                 }
               </p>
             </div>
@@ -572,7 +576,7 @@ export default function TrainingPage({ settings }) {
                     onClick={() => setHiddenRatio(option.id)}
                     className={`flex-1 py-2 rounded-xl font-medium transition-all ${
                       hiddenRatio === option.id
-                        ? 'bg-gradient-to-r from-gold-500 to-gold-600 text-white shadow-lg'
+                        ? 'bg-gradient-to-r from-primary-500 to-primary-600 text-white shadow-lg'
                         : settings.darkMode
                           ? 'bg-slate-700 hover:bg-slate-600 text-gray-300'
                           : 'bg-gray-100 hover:bg-gray-200 text-gray-700'
@@ -739,17 +743,17 @@ export default function TrainingPage({ settings }) {
                               {renderText(ayah.text)}
                             </span>
                           ) : isPartiallyRevealed ? (
-                            // Partiellement révélé (1er clic effectué)
+                            // Partiellement révélé (1er clic effectué) - affiche juste les 2 premiers mots
                             <>
                               <span className={`${settings.darkMode ? 'text-gold-400' : 'text-gold-600'}`}>
-                                {partialVisible}
+                                {getFirstWords(ayah.text, 2)}
                               </span>
                               <span className="text-primary-500 mx-2">...</span>
                               <span
                                 className={`transition-all duration-300 cursor-pointer verse-hidden ${settings.darkMode ? 'text-white' : 'text-gray-800'}`}
                                 onClick={() => handleRevealVerse(index)}
                               >
-                                {partialHidden}
+                                {plainWords.slice(2).join(' ')}
                               </span>
                             </>
                           ) : (
@@ -807,15 +811,22 @@ export default function TrainingPage({ settings }) {
                 ) : (
                   <>
                     <button
-                      onClick={() => handleAnswer(false)}
-                      className="flex items-center gap-2 px-6 py-2 bg-red-500 hover:bg-red-600 text-white rounded-lg"
+                      onClick={() => handleAnswer(0)}
+                      className="flex items-center gap-2 px-4 py-2 bg-red-500 hover:bg-red-600 text-white rounded-lg"
                     >
                       <X className="w-4 h-4" />
                       Incorrect
                     </button>
                     <button
-                      onClick={() => handleAnswer(true)}
-                      className="flex items-center gap-2 px-6 py-2 bg-green-500 hover:bg-green-600 text-white rounded-lg"
+                      onClick={() => handleAnswer(0.5)}
+                      className="flex items-center gap-2 px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white rounded-lg"
+                    >
+                      <span className="w-4 h-4 text-sm font-bold">½</span>
+                      Partiel
+                    </button>
+                    <button
+                      onClick={() => handleAnswer(1)}
+                      className="flex items-center gap-2 px-4 py-2 bg-green-500 hover:bg-green-600 text-white rounded-lg"
                     >
                       <Check className="w-4 h-4" />
                       Correct

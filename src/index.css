@@ -1,4 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Amiri:wght@400;700&family=Inter:wght@300;400;500;600;700&family=Scheherazade+New:wght@400;700&family=Noto+Naskh+Arabic:wght@400;700&display=swap');
+/* Google Fonts - Polices arabes */
+@import url('https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Amiri:wght@400;700&family=Inter:wght@300;400;500;600;700&family=Scheherazade+New:wght@400;700&family=Noto+Naskh+Arabic:wght@400;700&family=Noto+Kufi+Arabic:wght@400;700&family=Noto+Nastaliq+Urdu:wght@400;700&family=Lateef:wght@400;700&family=Reem+Kufi:wght@400;700&family=Aref+Ruqaa:wght@400;700&family=Mada:wght@400;700&family=Harmattan:wght@400;700&family=Markazi+Text:wght@400;700&display=swap');
+
+/* KFGQPC Uthmanic Script HAFS - Police officielle du Mushaf de Médine */
+@import url('https://cdn.jsdelivr.net/npm/@fontsource/noto-naskh-arabic@4.5.0/index.css');
+@font-face {
+  font-family: 'KFGQPC Uthmanic Script HAFS';
+  src: url('https://db.onlinewebfonts.com/t/2c1ce06a505728976c1d2993407312b5.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Me Quran Font */
+@font-face {
+  font-family: 'Me Quran';
+  src: url('https://cdn.jsdelivr.net/gh/AlanWangChinese/QuranTextHelper@1.1/webfont/me_quran_volt_newmet.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 @tailwind base;
 @tailwind components;
@@ -46,45 +66,96 @@ body {
 /* Les deux APIs utilisent des noms de classes différents! */
 
 /* === GRIS - Lettres silencieuses / non prononcées === */
-tajweed[class=ham_wasl] { color: #AAAAAA; } /* Hamzat ul Wasl - gris */
-tajweed[class=slnt] { color: #AAAAAA; } /* Silent (lettre non prononcée) - gris */
-tajweed[class=laam_shamsiyah] { color: #AAAAAA; } /* Lam Shamsiyyah - gris */
+rule[class=ham_wasl], tajweed[class=ham_wasl] { color: #AAAAAA; } /* Hamzat ul Wasl - gris */
+rule[class=slnt], tajweed[class=slnt] { color: #AAAAAA; } /* Silent (lettre non prononcée) - gris */
+rule[class=laam_shamsiyah], tajweed[class=laam_shamsiyah] { color: #AAAAAA; } /* Lam Shamsiyyah - gris */
 
-/* === BLEU - Madd (Prolongation) === */
-tajweed[class=madda_normal] { color: #537FFF; } /* Madd Normal: 2 temps - bleu clair */
-tajweed[class=madda_permissible] { color: #4050FF; } /* Madd Permissible: 2,4,6 temps - bleu */
-tajweed[class=madda_obligatory] { color: #2144C1; } /* Madd Obligatory: 4-5 temps - bleu foncé */
-tajweed[class=madda_necessary] { color: #000EBC; } /* Madd Necessary: 6 temps - bleu très foncé */
+/* === JAUNE/DORÉ - Madd Normal (2 temps) === */
+rule[class=madda_normal], tajweed[class=madda_normal] { color: #D4A017; } /* Madd Normal: 2 temps - jaune/doré */
 
-/* === ROUGE - Qalqala (Vibration/Écho) === */
-tajweed[class=qalaqah] { color: #DD0008; } /* Qalqala (Quran.com) - rouge */
-tajweed[class=qlq] { color: #DD0008; } /* Qalqala (AlQuran.cloud) - rouge */
-tajweed[class=qalpieces] { color: #DD0008; } /* Qalqala (ancien) - rouge */
+/* === ORANGE - Madd Separated/Permissible (2/4/6 temps) === */
+rule[class=madda_permissible], tajweed[class=madda_permissible] { color: #FF7E1E; } /* Madd Permissible: 2,4,6 temps - orange */
 
-/* === ORANGE - Ghunna (Nasalisation 2 temps) === */
-tajweed[class=ghunnah] { color: #FF7E1E; } /* Ghunna (Quran.com) - orange */
-tajweed[class=ghn] { color: #FF7E1E; } /* Ghunna (AlQuran.cloud) - orange */
+/* === ROUGE - Madd Connected/Obligatory (4/5 temps) === */
+rule[class=madda_obligatory], tajweed[class=madda_obligatory] { color: #DD0008; } /* Madd Obligatory: 4-5 temps - rouge */
+rule[class=madda_obligatory_mottasel], tajweed[class=madda_obligatory_mottasel] { color: #DD0008; } /* Madd Obligatory Connecté: 4-5 temps - rouge */
 
-/* === VIOLET/MAGENTA - Ikhfa (Dissimulation) === */
-tajweed[class=ikhafa_shafawi] { color: #D500B7; } /* Ikhfa Shafawi (Quran.com) - magenta */
-tajweed[class=ikhf_shfw] { color: #D500B7; } /* Ikhfa Shafawi (AlQuran.cloud) - magenta */
-tajweed[class=ikhafa] { color: #9400A8; } /* Ikhfa (Quran.com) - violet */
-tajweed[class=ikhf] { color: #9400A8; } /* Ikhfa (AlQuran.cloud) - violet */
+/* === ORANGE - Madd Obligatory Séparé (4/5 temps) === */
+rule[class=madda_obligatory_monfasel], tajweed[class=madda_obligatory_monfasel] { color: #FF7E1E; } /* Madd Obligatory Séparé: 4-5 temps - orange */
 
-/* === CYAN - Iqlab (Conversion) === */
-tajweed[class=iqlab] { color: #26BFFD; } /* Iqlab (Quran.com) - cyan */
-tajweed[class=iqlb] { color: #26BFFD; } /* Iqlab (AlQuran.cloud) - cyan */
+/* === ROUGE FONCÉ - Madd Necessary (6 temps) === */
+rule[class=madda_necessary], tajweed[class=madda_necessary] { color: #8B0000; } /* Madd Necessary: 6 temps - rouge foncé */
+
+/* === JAUNE/DORÉ - Alef Maksura === */
+rule[class=custom-alef-maksora], tajweed[class=custom-alef-maksora] { color: #D4A017; } /* Alef Maksura - jaune/doré */
+
+/* === BLEU CLAIR - Qalqala (Vibration/Écho) === */
+rule[class=qalaqah], tajweed[class=qalaqah] { color: #26BFFD; } /* Qalqala (Quran.com) - bleu clair */
+rule[class=qlq], tajweed[class=qlq] { color: #26BFFD; } /* Qalqala (AlQuran.cloud) - bleu clair */
+rule[class=qalpieces], tajweed[class=qalpieces] { color: #26BFFD; } /* Qalqala (ancien) - bleu clair */
+
+/* === VERT - Ghunna (Nasalisation 2 temps) === */
+rule[class=ghunnah], tajweed[class=ghunnah] { color: #169200; } /* Ghunna (Quran.com) - vert */
+rule[class=ghn], tajweed[class=ghn] { color: #169200; } /* Ghunna (AlQuran.cloud) - vert */
+
+/* === VERT - Ikhfa (Dissimulation) === */
+rule[class=ikhafa_shafawi], tajweed[class=ikhafa_shafawi] { color: #169777; } /* Ikhfa Shafawi (Quran.com) - vert */
+rule[class=ikhf_shfw], tajweed[class=ikhf_shfw] { color: #169777; } /* Ikhfa Shafawi (AlQuran.cloud) - vert */
+rule[class=ikhafa], tajweed[class=ikhafa] { color: #169200; } /* Ikhfa (Quran.com) - vert */
+rule[class=ikhf], tajweed[class=ikhf] { color: #169200; } /* Ikhfa (AlQuran.cloud) - vert */
+
+/* === VERT - Iqlab (Conversion) === */
+rule[class=iqlab], tajweed[class=iqlab] { color: #58B800; } /* Iqlab (Quran.com) - vert clair */
+rule[class=iqlb], tajweed[class=iqlb] { color: #58B800; } /* Iqlab (AlQuran.cloud) - vert clair */
 
 /* === VERT - Idgham (Fusion/Assimilation) === */
-tajweed[class=idgham_shafawi] { color: #58B800; } /* Idgham Shafawi (Quran.com) - vert clair */
-tajweed[class=idghm_shfw] { color: #58B800; } /* Idgham Shafawi (AlQuran.cloud) - vert clair */
-tajweed[class=idgham_ghunnah] { color: #169777; } /* Idgham avec Ghunna (Quran.com) - teal */
-tajweed[class=idgh_ghn] { color: #169777; } /* Idgham avec Ghunna (AlQuran.cloud) - teal */
-tajweed[class=idgham_wo_ghunnah] { color: #169200; } /* Idgham sans Ghunna (Quran.com) - vert foncé */
-tajweed[class=idgh_w_ghn] { color: #169200; } /* Idgham sans Ghunna (AlQuran.cloud) - vert foncé */
-tajweed[class=idgham_mutajanisayn] { color: #A1A1A1; } /* Idgham Mutajanisayn (Quran.com) - gris */
-tajweed[class=idgham_mutaqaribayn] { color: #A1A1A1; } /* Idgham Mutaqaribayn (Quran.com) - gris */
-tajweed[class=idgh_mus] { color: #A1A1A1; } /* Idgham Mutajanisayn (AlQuran.cloud) - gris */
+rule[class=idgham_shafawi], tajweed[class=idgham_shafawi] { color: #58B800; } /* Idgham Shafawi (Quran.com) - vert clair */
+rule[class=idghm_shfw], tajweed[class=idghm_shfw] { color: #58B800; } /* Idgham Shafawi (AlQuran.cloud) - vert clair */
+rule[class=idgham_ghunnah], tajweed[class=idgham_ghunnah] { color: #169777; } /* Idgham avec Ghunna (Quran.com) - vert */
+rule[class=idgh_ghn], tajweed[class=idgh_ghn] { color: #169777; } /* Idgham avec Ghunna (AlQuran.cloud) - vert */
+rule[class=idgham_wo_ghunnah], tajweed[class=idgham_wo_ghunnah] { color: #169200; } /* Idgham sans Ghunna (Quran.com) - vert */
+rule[class=idgh_w_ghn], tajweed[class=idgh_w_ghn] { color: #169200; } /* Idgham sans Ghunna (AlQuran.cloud) - vert */
+rule[class=idgham_mutajanisayn], tajweed[class=idgham_mutajanisayn] { color: #A1A1A1; } /* Idgham Mutajanisayn (Quran.com) - gris */
+rule[class=idgham_mutaqaribayn], tajweed[class=idgham_mutaqaribayn] { color: #A1A1A1; } /* Idgham Mutaqaribayn (Quran.com) - gris */
+rule[class=idgh_mus], tajweed[class=idgh_mus] { color: #A1A1A1; } /* Idgham Mutajanisayn (AlQuran.cloud) - gris */
+
+/* === BLEU FONCÉ - Tafkhim (Emphase/Épaississement) === */
+rule[class=tafkhim], tajweed[class=tafkhim] { color: #000080; } /* Tafkhim - bleu foncé */
+
+/* ============================================== */
+/* cpfair/quran-tajweed - Classes précises (tj-) */
+/* Source: github.com/cpfair/quran-tajweed       */
+/* ============================================== */
+
+/* Lettres silencieuses - GRIS */
+.tj-hamzat_wasl { color: #AAAAAA; }
+.tj-lam_shamsiyyah { color: #AAAAAA; }
+.tj-silent { color: #AAAAAA; }
+
+/* Madd (Prolongation) */
+.tj-madd_normal { color: #D4A017; }      /* 2 temps - Jaune/Doré */
+.tj-madd_permissible { color: #FF7E1E; } /* 2/4/6 temps - Orange */
+.tj-madd_muttasil { color: #DD0008; }    /* 4/5 temps connecté - Rouge */
+.tj-madd_munfasil { color: #FF7E1E; }    /* 4/5 temps séparé - Orange */
+.tj-madd_necessary { color: #8B0000; }   /* 6 temps - Rouge foncé */
+
+/* Qalqala - BLEU CLAIR */
+.tj-qalqalah { color: #26BFFD; }
+
+/* Ghunna/Ikhfa - VERT */
+.tj-ghunnah { color: #169200; }
+.tj-ikhfa { color: #169200; }
+.tj-ikhfa_shafawi { color: #169777; }
+
+/* Idghaam - VERT */
+.tj-idghaam_ghunnah { color: #169777; }
+.tj-idghaam_no_ghunnah { color: #169200; }
+.tj-idghaam_shafawi { color: #58B800; }
+.tj-idghaam_mutajanisayn { color: #A1A1A1; }
+.tj-idghaam_mutaqaribayn { color: #A1A1A1; }
+
+/* Iqlab - VERT CLAIR */
+.tj-iqlab { color: #58B800; }
 
 /* Hide verse end numbers from API (we have our own) */
 .tajweed-text span.end { display: none; }
@@ -118,7 +189,7 @@ tajweed[class=idgh_mus] { color: #A1A1A1; } /* Idgham Mutajanisayn (AlQuran.clou
 
 /* Verse marker - Quran style with ۝ symbol */
 .verse-marker {
-  color: #d4af37;
+  color: #000000;
   font-size: 1.3em;
   margin-left: 0.3rem;
   vertical-align: middle;
@@ -136,9 +207,9 @@ tajweed[class=idgh_mus] { color: #A1A1A1; } /* Idgham Mutajanisayn (AlQuran.clou
 }
 
 .verse-marker-western .marker-symbol {
-  color: #d4af37;
+  color: #000000;
   font-size: 1.3em;
-  font-family: 'Amiri Quran', serif;
+  font-family: 'KFGQPC Uthmanic Script HAFS', 'Amiri Quran', serif;
 }
 
 .verse-marker-western .marker-number {
@@ -149,16 +220,16 @@ tajweed[class=idgh_mus] { color: #A1A1A1; } /* Idgham Mutajanisayn (AlQuran.clou
   font-size: 0.55em;
   font-family: system-ui, sans-serif;
   font-weight: 600;
-  color: #d4af37;
+  color: #000000;
 }
 
 .dark .verse-marker {
-  color: #fbbf24;
+  color: #ffffff;
 }
 
 .dark .verse-marker-western .marker-symbol,
 .dark .verse-marker-western .marker-number {
-  color: #fbbf24;
+  color: #ffffff;
 }
 
 /* Bismillah styling */

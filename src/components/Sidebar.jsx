@@ -21,11 +21,8 @@ const navItems = [
 ]
 
 const ARABIC_FONTS = [
-  { id: 'amiri-quran', name: 'Amiri Quran' },
-  { id: 'amiri', name: 'Amiri' },
-  { id: 'scheherazade', name: 'Scheherazade' },
-  { id: 'noto-naskh', name: 'Noto Naskh' },
-  { id: 'kitab', name: 'Kitab' },
+  { id: 'kfgqpc-uthmanic', name: 'Uthmanic (Mushaf)' },
+  { id: 'lateef', name: 'Lateef' },
 ]
 
 const RECITERS = [
