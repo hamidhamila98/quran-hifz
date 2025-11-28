@@ -193,7 +193,7 @@ rule[class=tafkhim], tajweed[class=tafkhim] { color: #000080; } /* Tafkhim - ble
   display: inline-block;
   margin-left: 0.3rem;
   vertical-align: middle;
-  transform: translateY(-0.4em);
+  transform: translateY(-0.15em);
 }
 
 .verse-marker-styled .marker-symbol {
@@ -204,13 +204,21 @@ rule[class=tafkhim], tajweed[class=tafkhim] { color: #000080; } /* Tafkhim - ble
 
 .verse-marker-styled .marker-number {
   position: absolute;
-  top: 42%;
   left: 50%;
-  transform: translate(-50%, -35%);
-  font-size: 0.55em;
-  font-family: system-ui, sans-serif;
+  transform: translate(-50%, -50%);
+  font-size: 0.45em;
+  font-family: 'Amiri', 'Georgia', serif;
   font-weight: 600;
   color: #000000;
+}
+
+.verse-marker-styled .marker-number-arabic {
+  top: 52%;
+}
+
+.verse-marker-styled .marker-number-western {
+  top: 56%;
+  left: 49%;
 }
 
 .dark .verse-marker-styled .marker-symbol,

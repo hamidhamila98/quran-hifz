@@ -474,7 +474,7 @@ export default function HomePage({ settings, updateSettings }) {
     return (
       <span className="verse-marker-styled">
         <span className="marker-symbol">{'\u06DD'}</span>
-        <span className="marker-number">
+        <span className={`marker-number ${settings.arabicNumerals ? 'marker-number-arabic' : 'marker-number-western'}`}>
           {settings.arabicNumerals ? toArabicNumeral(number) : number}
         </span>
       </span>
