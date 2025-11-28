@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react'
-import { Calendar, BookOpen, Target, TrendingUp, ChevronRight, ChevronLeft, Check } from 'lucide-react'
+import { BookOpen, ChevronRight, ChevronLeft, Check } from 'lucide-react'
 import {
   getPageWithLines,
   SURAH_INFO,
@@ -48,11 +48,6 @@ export default function HomePage({ settings, updateSettings }) {
   // Progress percentage (604 pages total, 4 quarters each = 2416 quarters)
   const totalQuarters = 604 * 4
   const progressPercent = ((validatedQuarters / totalQuarters) * 100).toFixed(2)
-
-  // Days since start
-  const daysSinceStart = Math.floor(
-    (new Date() - new Date(settings.startDate)) / (1000 * 60 * 60 * 24)
-  )
 
   // Find current surah based on page
   const getCurrentSurah = (page) => {
@@ -104,7 +99,7 @@ export default function HomePage({ settings, updateSettings }) {
 
       // Handle special pages (1 and 2)
       if (SPECIAL_PAGES.includes(currentPage) && portionSize !== '2') {
-        const pageData = await getPageWithLines(currentPage, settings.tajweedEnabled, { hideBismillah: settings.hideBismillah })
+        const pageData = await getPageWithLines(currentPage, settings.tajweedEnabled)
 
         const transformedVerses = pageData.verses.map(verse => ({
           number: verse.id,
@@ -126,7 +121,7 @@ export default function HomePage({ settings, updateSettings }) {
 
         // Load preview for page 2 (end of special pages)
         if (currentPage === 2) {
-          const nextPageData = await getPageWithLines(3, settings.tajweedEnabled, { hideBismillah: settings.hideBismillah })
+          const nextPageData = await getPageWithLines(3, settings.tajweedEnabled)
           const firstLineVerses = nextPageData.verses.filter(v => v.lineNumbers.includes(1))
           setPreviewVerses(firstLineVerses.slice(0, 1).map(v => ({
             number: v.id,
@@ -145,7 +140,7 @@ export default function HomePage({ settings, updateSettings }) {
       const { startLine, endLine, lineCount } = getPortionLines()
 
       // Load page data
-      const pageData = await getPageWithLines(currentPage, settings.tajweedEnabled, { hideBismillah: settings.hideBismillah })
+      const pageData = await getPageWithLines(currentPage, settings.tajweedEnabled)
 
       // Extract lines for this portion (with word-level tajweed)
       const linesForPortion = (pageData.lines || []).filter(
@@ -229,7 +224,7 @@ export default function HomePage({ settings, updateSettings }) {
         try {
           let nextPage = portionSize === '2' ? currentPage + 2 : currentPage + 1
           if (nextPage <= 604) {
-            const nextPageData = await getPageWithLines(nextPage, settings.tajweedEnabled, { hideBismillah: settings.hideBismillah })
+            const nextPageData = await getPageWithLines(nextPage, settings.tajweedEnabled)
             // Get ONLY the first line (not full verse)
             const firstLineVerses = nextPageData.verses.filter(v => v.lineNumbers.includes(1))
             // Take just the first verse fragment on line 1
@@ -251,7 +246,7 @@ export default function HomePage({ settings, updateSettings }) {
 
       // Handle 2 pages mode - load second page
       if (portionSize === '2' && currentPage < 604) {
-        const secondPageData = await getPageWithLines(currentPage + 1, settings.tajweedEnabled, { hideBismillah: settings.hideBismillah })
+        const secondPageData = await getPageWithLines(currentPage + 1, settings.tajweedEnabled)
         const secondPageVerses = secondPageData.verses.map(verse => ({
           number: verse.id,
           text: verse.text,
@@ -270,7 +265,7 @@ export default function HomePage({ settings, updateSettings }) {
     } finally {
       setLoading(false)
     }
-  }, [currentPage, portionIndex, portionSize, settings.tajweedEnabled, settings.hideBismillah])
+  }, [currentPage, portionIndex, portionSize, settings.tajweedEnabled])
 
   useEffect(() => {
     loadPortion()
@@ -440,34 +435,13 @@ export default function HomePage({ settings, updateSettings }) {
     return `Page ${currentPage} - Portion ${portionIndex + 1}/${config.portions} (lignes ${startLine}-${endLine})`
   }
 
-  const stats = [
-    {
-      icon: Calendar,
-      label: 'Jours',
-      value: daysSinceStart,
-      color: 'bg-blue-500'
-    },
-    {
-      icon: Target,
-      label: 'Page/j',
-      value: config.label,
-      color: 'bg-gold-500'
-    },
-    {
-      icon: BookOpen,
-      label: 'Page',
-      value: currentPage,
-      subtitle: portionInfo?.isSpecialPage ? 'Page spéciale' : `Portion ${portionIndex + 1}/${config.portions}`,
-      color: 'bg-green-500'
-    },
-    {
-      icon: TrendingUp,
-      label: 'Pages validées',
-      value: validatedPagesDisplay(),
-      subtitle: `/ 604 pages`,
-      color: 'bg-purple-500'
+  // Get position display text
+  const getPositionText = () => {
+    if (portionInfo?.isSpecialPage || portionSize === '1' || portionSize === '2') {
+      return `Page ${currentPage}`
     }
-  ]
+    return `Page ${currentPage}, Portion ${portionIndex + 1}/${config.portions}`
+  }
 
   // Render verse marker
   const renderVerseMarker = (number) => {
@@ -483,39 +457,41 @@ export default function HomePage({ settings, updateSettings }) {
 
   return (
     <div className={`min-h-screen p-6 ${settings.darkMode ? 'bg-slate-900' : 'bg-gray-50'}`}>
-      {/* Header */}
-      <header className="mb-8">
-        <h1 className={`text-3xl font-bold ${settings.darkMode ? 'text-white' : 'text-gray-800'}`}>
-          Assalamu Alaikum
-        </h1>
-        <p className={`mt-2 ${settings.darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-          Voici votre portion du Quran pour aujourd'hui
-        </p>
-      </header>
-
-      {/* Stats Grid */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-        {stats.map((stat, index) => (
-          <div
-            key={index}
-            className={`p-4 rounded-2xl ${settings.darkMode ? 'bg-slate-800' : 'bg-white'} shadow-sm card-hover`}
-          >
-            <div className={`w-10 h-10 ${stat.color} rounded-xl flex items-center justify-center mb-3`}>
-              <stat.icon className="w-5 h-5 text-white" />
+      {/* Progress Bar Header */}
+      <div className={`mb-6 p-4 rounded-2xl ${settings.darkMode ? 'bg-slate-800' : 'bg-white'} shadow-sm`}>
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-3">
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 bg-gradient-to-br from-primary-500 to-primary-600 rounded-xl flex items-center justify-center">
+              <BookOpen className="w-5 h-5 text-white" />
             </div>
-            <p className={`text-2xl font-bold ${settings.darkMode ? 'text-white' : 'text-gray-800'}`}>
-              {stat.value}
-            </p>
-            <p className={`text-sm ${settings.darkMode ? 'text-gray-400' : 'text-gray-500'}`}>
-              {stat.label}
-            </p>
-            {stat.subtitle && (
-              <p className={`text-xs ${settings.darkMode ? 'text-gray-500' : 'text-gray-400'}`}>
-                {stat.subtitle}
+            <div>
+              <h1 className={`text-lg font-bold ${settings.darkMode ? 'text-white' : 'text-gray-800'}`}>
+                Ma Progression
+              </h1>
+              <p className={`text-sm ${settings.darkMode ? 'text-gray-400' : 'text-gray-500'}`}>
+                {getPositionText()}
               </p>
-            )}
+            </div>
           </div>
-        ))}
+          <div className="flex items-center gap-4 text-sm">
+            <div className={`${settings.darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+              <span className="font-bold text-lg">{validatedPagesDisplay()}</span>
+              <span className={`${settings.darkMode ? 'text-gray-500' : 'text-gray-400'}`}> / 604 pages</span>
+            </div>
+            <div className={`font-semibold px-3 py-1 rounded-full ${
+              settings.darkMode ? 'bg-primary-900/50 text-primary-400' : 'bg-primary-100 text-primary-700'
+            }`}>
+              {progressPercent}%
+            </div>
+          </div>
+        </div>
+        {/* Progress bar */}
+        <div className={`h-3 rounded-full ${settings.darkMode ? 'bg-slate-700' : 'bg-gray-200'} overflow-hidden`}>
+          <div
+            className="h-full bg-gradient-to-r from-primary-500 via-primary-400 to-gold-500 rounded-full transition-all duration-500"
+            style={{ width: `${Math.max(parseFloat(progressPercent), 0.5)}%` }}
+          />
+        </div>
       </div>
 
       {/* Current Surah Info */}
@@ -740,44 +716,6 @@ export default function HomePage({ settings, updateSettings }) {
             reciterId={settings.reciter}
             darkMode={settings.darkMode}
           />
-
-          {/* Progress Card */}
-          <div className={`mt-6 p-4 rounded-2xl ${settings.darkMode ? 'bg-slate-800' : 'bg-white'} shadow-sm`}>
-            <h4 className={`font-semibold mb-3 ${settings.darkMode ? 'text-white' : 'text-gray-800'}`}>
-              Progression
-            </h4>
-            <div className="space-y-3">
-              <div>
-                <div className="flex justify-between text-sm mb-1">
-                  <span className={settings.darkMode ? 'text-gray-400' : 'text-gray-500'}>Quran</span>
-                  <span className={settings.darkMode ? 'text-gray-300' : 'text-gray-700'}>
-                    {progressPercent}%
-                  </span>
-                </div>
-                <div className={`h-2 rounded-full ${settings.darkMode ? 'bg-slate-700' : 'bg-gray-200'}`}>
-                  <div
-                    className="h-full bg-gradient-to-r from-primary-500 to-gold-500 rounded-full transition-all duration-500"
-                    style={{ width: `${progressPercent}%` }}
-                  />
-                </div>
-              </div>
-
-              <div className={`pt-3 border-t ${settings.darkMode ? 'border-slate-700' : 'border-gray-100'}`}>
-                <div className="flex justify-between text-sm">
-                  <span className={settings.darkMode ? 'text-gray-400' : 'text-gray-500'}>Position</span>
-                  <span className={settings.darkMode ? 'text-gray-300' : 'text-gray-700'}>
-                    Page {currentPage}
-                  </span>
-                </div>
-                <div className="flex justify-between text-sm mt-1">
-                  <span className={settings.darkMode ? 'text-gray-400' : 'text-gray-500'}>Pages validées</span>
-                  <span className={settings.darkMode ? 'text-gray-300' : 'text-gray-700'}>
-                    {validatedPagesDisplay()} / 604
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>

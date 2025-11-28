@@ -3,9 +3,6 @@
 
 import { getVerseWithTajweed, hasTajweedData, getCpfairText, getVerseWordsWithTajweed } from './cpfairTajweed'
 
-// Bismillah text pattern to detect and optionally remove
-const BISMILLAH_PATTERN = /^بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ\s*/
-
 const TEXT_API_BASE = 'https://api.alquran.cloud/v1';
 const QURAN_COM_API = 'https://api.quran.com/api/v4';
 const AUDIO_CDN_BASE = 'https://cdn.islamic.network/quran/audio';
@@ -76,9 +73,7 @@ export async function getPage(pageNumber, useTajweed = false, options = {}) {
     if (useTajweed && data.data && data.data.ayahs) {
       data.data.ayahs = data.data.ayahs.map(ayah => {
         if (hasTajweedData(ayah.surah.number, ayah.numberInSurah)) {
-          const tajweedText = getVerseWithTajweed(ayah.surah.number, ayah.numberInSurah, {
-            hideBismillah: options.hideBismillah
-          });
+          const tajweedText = getVerseWithTajweed(ayah.surah.number, ayah.numberInSurah);
           if (tajweedText) {
             return {
               ...ayah,
@@ -259,48 +254,35 @@ export async function getPageWithLines(pageNumber, useTajweed = false, options =
       // Get word-level tajweed if enabled
       let cpfairWords = null;
       if (useTajweed && hasTajweedData(surahNumber, verseNumber)) {
-        cpfairWords = getVerseWordsWithTajweed(surahNumber, verseNumber, {
-          hideBismillah: options.hideBismillah
-        });
+        cpfairWords = getVerseWordsWithTajweed(surahNumber, verseNumber);
       }
 
-      // Track cpfair word index (skip Bismillah words and end markers)
+      // Track cpfair word index (skip end markers)
       let cpfairWordIndex = 0;
 
       // Track which words go on which lines (for line-by-line display)
       words.forEach(word => {
         const lineNum = word.line_number;
         if (lineNum >= 1 && lineNum <= 15) {
-          // Skip Bismillah words if hideBismillah is enabled
-          const isBismillahWord = verseNumber === 1 &&
-                                  surahNumber !== 1 &&
-                                  surahNumber !== 9 &&
-                                  word.position <= 4;
-
           const isEndMarker = word.char_type_name === 'end';
 
-          if (!(options.hideBismillah && isBismillahWord)) {
-            // Get tajweed HTML for this word
-            let tajweedHtml = null;
-            if (!isEndMarker && cpfairWords && cpfairWordIndex < cpfairWords.length) {
-              tajweedHtml = cpfairWords[cpfairWordIndex].html;
-              cpfairWordIndex++;
-            }
-
-            linesMap.get(lineNum).push({
-              text: word.text_uthmani,
-              tajweedHtml: tajweedHtml,
-              charType: word.char_type_name,
-              position: word.position,
-              verseKey: verse.verse_key,
-              verseNumber: verseNumber,
-              surahNumber: surahNumber,
-              isEndMarker: isEndMarker
-            });
-          } else if (!isEndMarker) {
-            // Still increment cpfair index for skipped Bismillah words
-            // (cpfair data already has Bismillah removed when hideBismillah is true)
+          // Get tajweed HTML for this word
+          let tajweedHtml = null;
+          if (!isEndMarker && cpfairWords && cpfairWordIndex < cpfairWords.length) {
+            tajweedHtml = cpfairWords[cpfairWordIndex].html;
+            cpfairWordIndex++;
           }
+
+          linesMap.get(lineNum).push({
+            text: word.text_uthmani,
+            tajweedHtml: tajweedHtml,
+            charType: word.char_type_name,
+            position: word.position,
+            verseKey: verse.verse_key,
+            verseNumber: verseNumber,
+            surahNumber: surahNumber,
+            isEndMarker: isEndMarker
+          });
         }
       });
 
@@ -313,15 +295,10 @@ export async function getPageWithLines(pageNumber, useTajweed = false, options =
       // Apply cpfair tajweed if enabled - uses cpfair's own text for accurate positions
       let text = plainText;
       if (useTajweed && hasTajweedData(surahNumber, verseNumber)) {
-        const tajweedText = getVerseWithTajweed(surahNumber, verseNumber, {
-          hideBismillah: options.hideBismillah
-        });
+        const tajweedText = getVerseWithTajweed(surahNumber, verseNumber);
         if (tajweedText) {
           text = tajweedText;
         }
-      } else if (options.hideBismillah && verseNumber === 1 && surahNumber !== 1 && surahNumber !== 9) {
-        // Hide Bismillah for first verse of surahs (except Al-Fatiha and At-Tawbah) when tajweed is disabled
-        text = text.replace(BISMILLAH_PATTERN, '');
       }
 
       return {
@@ -408,16 +385,6 @@ export async function getPageMushafStyle(pageNumber, options = {}) {
       (verse.words || []).forEach(word => {
         const lineIndex = word.line_number - 1;
         if (lineIndex >= 0 && lineIndex < 15) {
-          // Skip Bismillah words if hideBismillah is enabled for first verse (except Al-Fatiha and At-Tawbah)
-          const isBismillahWord = verseNumber === 1 &&
-                                  surahNumber !== 1 &&
-                                  surahNumber !== 9 &&
-                                  word.position <= 4; // Bismillah has 4 words
-
-          if (options.hideBismillah && isBismillahWord) {
-            return; // Skip this word
-          }
-
           lines[lineIndex].words.push({
             text: word.text_uthmani,
             charType: word.char_type_name,

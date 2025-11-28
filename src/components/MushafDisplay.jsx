@@ -6,7 +6,6 @@ export default function MushafDisplay({
   darkMode = false,
   arabicFont = 'amiri-quran',
   arabicNumerals = true,
-  hideBismillah = false,
   onVerseClick = null
 }) {
   const [pageData, setPageData] = useState(null)
@@ -30,7 +29,7 @@ export default function MushafDisplay({
       try {
         setLoading(true)
         setError(null)
-        const data = await getPageMushafStyle(pageNumber, { hideBismillah })
+        const data = await getPageMushafStyle(pageNumber)
         setPageData(data)
       } catch (err) {
         console.error('Error loading Mushaf page:', err)
@@ -41,7 +40,7 @@ export default function MushafDisplay({
     }
 
     loadPage()
-  }, [pageNumber, hideBismillah])
+  }, [pageNumber])
 
   if (loading) {
     return (
