@@ -18,7 +18,7 @@ const defaultSettings = {
   startDate: new Date().toISOString().split('T')[0],
   darkMode: false,
   tajweedEnabled: false,
-  arabicFont: 'amiri-quran',
+  arabicFont: 'kfgqpc-uthmanic',
   flowMode: false,
   arabicNumerals: true,
 }

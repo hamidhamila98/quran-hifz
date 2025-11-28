@@ -33,7 +33,7 @@ const RECITERS = [
 ]
 
 const PORTION_SIZES = [
-  { id: '1/4', name: '¼ page/j', description: '4, 4, 3 lignes' },
+  { id: '1/4', name: '¼ page/j', description: '4, 4, 4, 3 lignes' },
   { id: '1/3', name: '⅓ page/j', description: '5, 5, 5 lignes' },
   { id: '1/2', name: '½ page/j', description: '8, 7 lignes' },
   { id: '1', name: '1 page/j', description: '15 lignes' },
