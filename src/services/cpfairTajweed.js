@@ -50,6 +50,9 @@ tajweedData.forEach(item => {
   tajweedIndex[key] = item.annotations || []
 })
 
+// Bismillah text pattern to detect and optionally remove
+const BISMILLAH_PATTERN = /^بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ\s*/
+
 // Parse the cpfair Quran text file and build index: { "surah:ayah": text }
 const quranTextIndex = {}
 quranTextRaw.split('\n').forEach(line => {
@@ -58,7 +61,7 @@ quranTextRaw.split('\n').forEach(line => {
   if (parts.length >= 3) {
     const surah = parseInt(parts[0])
     const ayah = parseInt(parts[1])
-    const text = parts.slice(2).join('|') // In case text contains |
+    const text = parts.slice(2).join('|').trim() // Trim to remove \r and whitespace
     const key = `${surah}:${ayah}`
     quranTextIndex[key] = text
   }
@@ -128,13 +131,33 @@ export function applyTajweedToText(text, annotations) {
  * This ensures proper alignment of tajweed annotations
  * @param {number} surah - Surah number
  * @param {number} ayah - Ayah number
+ * @param {Object} options - Options { hideBismillah: boolean }
  * @returns {string|null} HTML string with tajweed markup, or null if not available
  */
-export function getVerseWithTajweed(surah, ayah) {
-  const text = getCpfairText(surah, ayah)
+export function getVerseWithTajweed(surah, ayah, options = {}) {
+  let text = getCpfairText(surah, ayah)
   if (!text) return null
 
-  const annotations = getTajweedAnnotations(surah, ayah)
+  let annotations = getTajweedAnnotations(surah, ayah)
+
+  // Hide Bismillah for first verse of surahs (except Al-Fatiha where it's part of the surah)
+  // and At-Tawbah (surah 9) which has no Bismillah
+  if (options.hideBismillah && ayah === 1 && surah !== 1 && surah !== 9) {
+    const bismillahMatch = text.match(BISMILLAH_PATTERN)
+    if (bismillahMatch) {
+      const bismillahLength = [...bismillahMatch[0]].length // Use spread for proper Unicode length
+      text = text.replace(BISMILLAH_PATTERN, '')
+      // Adjust annotation positions
+      annotations = annotations
+        .map(ann => ({
+          ...ann,
+          start: ann.start - bismillahLength,
+          end: ann.end - bismillahLength
+        }))
+        .filter(ann => ann.start >= 0) // Remove annotations that were in Bismillah
+    }
+  }
+
   return applyTajweedToText(text, annotations)
 }
 
@@ -155,6 +178,119 @@ export function getTajweedLegend() {
 export function hasTajweedData(surah, ayah) {
   const key = `${surah}:${ayah}`
   return key in tajweedIndex && key in quranTextIndex
+}
+
+/**
+ * Build word-level tajweed data for a verse
+ * Returns an array of words with their tajweed HTML applied
+ * @param {number} surah - Surah number
+ * @param {number} ayah - Ayah number
+ * @param {Object} options - Options { hideBismillah: boolean }
+ * @returns {Array|null} Array of {text, html} for each word, or null if not available
+ */
+export function getVerseWordsWithTajweed(surah, ayah, options = {}) {
+  let text = getCpfairText(surah, ayah)
+  if (!text) return null
+
+  let annotations = getTajweedAnnotations(surah, ayah)
+
+  // Hide Bismillah handling
+  let bismillahOffset = 0
+  if (options.hideBismillah && ayah === 1 && surah !== 1 && surah !== 9) {
+    const bismillahMatch = text.match(BISMILLAH_PATTERN)
+    if (bismillahMatch) {
+      bismillahOffset = [...bismillahMatch[0]].length
+      text = text.replace(BISMILLAH_PATTERN, '')
+      annotations = annotations
+        .map(ann => ({
+          ...ann,
+          start: ann.start - bismillahOffset,
+          end: ann.end - bismillahOffset
+        }))
+        .filter(ann => ann.start >= 0)
+    }
+  }
+
+  // Split text into words (by spaces)
+  const words = text.split(/\s+/).filter(w => w.length > 0)
+  const result = []
+
+  let charOffset = 0
+  for (const word of words) {
+    const wordLength = [...word].length
+    const wordEnd = charOffset + wordLength
+
+    // Get annotations that overlap with this word
+    const wordAnnotations = annotations
+      .filter(ann => ann.start < wordEnd && ann.end > charOffset)
+      .map(ann => ({
+        ...ann,
+        start: Math.max(0, ann.start - charOffset),
+        end: Math.min(wordLength, ann.end - charOffset)
+      }))
+
+    const html = applyTajweedToText(word, wordAnnotations)
+    result.push({
+      text: word,
+      html: html
+    })
+
+    // Move offset: word length + 1 for space
+    charOffset = wordEnd + 1
+  }
+
+  return result
+}
+
+/**
+ * Get verse lines with tajweed for Mushaf-style display
+ * Each word from quran.com API gets tajweed applied by matching to cpfair words
+ * @param {number} surah - Surah number
+ * @param {number} ayah - Ayah number
+ * @param {Array} quranComWords - Words from quran.com API with line_number
+ * @param {Object} options - Options { hideBismillah: boolean }
+ * @returns {Array} Words with tajweed HTML added
+ */
+export function applyTajweedToWords(surah, ayah, quranComWords, options = {}) {
+  const cpfairWords = getVerseWordsWithTajweed(surah, ayah, options)
+
+  if (!cpfairWords) {
+    // No cpfair data, return words as-is
+    return quranComWords.map(w => ({
+      ...w,
+      tajweedHtml: w.text
+    }))
+  }
+
+  // Match quran.com words to cpfair words by position
+  // Skip 'end' type words (verse markers)
+  let cpfairIndex = 0
+  const result = []
+
+  for (const qcWord of quranComWords) {
+    if (qcWord.charType === 'end' || qcWord.isEndMarker) {
+      // End marker, keep as-is
+      result.push({
+        ...qcWord,
+        tajweedHtml: null
+      })
+    } else if (cpfairIndex < cpfairWords.length) {
+      // Regular word - use cpfair tajweed
+      result.push({
+        ...qcWord,
+        tajweedHtml: cpfairWords[cpfairIndex].html
+      })
+      cpfairIndex++
+    } else {
+      // No more cpfair words, use plain text
+      result.push({
+        ...qcWord,
+        tajweedHtml: qcWord.text
+      })
+    }
+  }
+
+  return result
 }
 
 // Export the raw indexes for debugging

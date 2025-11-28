@@ -187,18 +187,8 @@ rule[class=tafkhim], tajweed[class=tafkhim] { color: #000080; } /* Tafkhim - ble
   box-shadow: 0 0 0 2px rgba(96, 165, 250, 0.15);
 }
 
-/* Verse marker - Quran style with ۝ symbol */
-.verse-marker {
-  color: #000000;
-  font-size: 1.3em;
-  margin-left: 0.3rem;
-  vertical-align: middle;
-  display: inline-block;
-  transform: translateY(-0.4em);
-}
-
-/* Verse marker with Western numerals - positioned in center */
-.verse-marker-western {
+/* Verse marker - Quran style with ۝ symbol and number overlay */
+.verse-marker-styled {
   position: relative;
   display: inline-block;
   margin-left: 0.3rem;
@@ -206,29 +196,25 @@ rule[class=tafkhim], tajweed[class=tafkhim] { color: #000080; } /* Tafkhim - ble
   transform: translateY(-0.4em);
 }
 
-.verse-marker-western .marker-symbol {
+.verse-marker-styled .marker-symbol {
   color: #000000;
   font-size: 1.3em;
   font-family: 'KFGQPC Uthmanic Script HAFS', 'Amiri Quran', serif;
 }
 
-.verse-marker-western .marker-number {
+.verse-marker-styled .marker-number {
   position: absolute;
-  top: 50%;
+  top: 42%;
   left: 50%;
-  transform: translate(-50%, -25%);
+  transform: translate(-50%, -35%);
   font-size: 0.55em;
   font-family: system-ui, sans-serif;
   font-weight: 600;
   color: #000000;
 }
 
-.dark .verse-marker {
-  color: #ffffff;
-}
-
-.dark .verse-marker-western .marker-symbol,
-.dark .verse-marker-western .marker-number {
+.dark .verse-marker-styled .marker-symbol,
+.dark .verse-marker-styled .marker-number {
   color: #ffffff;
 }
 

@@ -12,7 +12,8 @@ import {
   Volume2,
   ChevronDown,
   Hash,
-  BookOpen
+  BookOpen,
+  BookMarked
 } from 'lucide-react'
 
 const navItems = [
@@ -136,6 +137,26 @@ export default function Sidebar({ isOpen, setIsOpen, settings, updateSettings })
               <span
                 className={`absolute top-1 left-1 w-4 h-4 bg-white rounded-full transition-transform shadow ${
                   settings.arabicNumerals ? 'translate-x-5' : ''
+                }`}
+              />
+            </button>
+          </div>
+
+          {/* Hide Bismillah Toggle */}
+          <div className={`flex items-center justify-between px-3 py-2 rounded-xl ${darkMode ? 'bg-slate-700/50' : 'bg-gray-50'}`}>
+            <div className="flex items-center gap-2">
+              <BookMarked className="w-4 h-4 text-primary-500" />
+              <span className={`text-sm font-medium ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>Cacher Bismillah</span>
+            </div>
+            <button
+              onClick={() => updateSettings({ hideBismillah: !settings.hideBismillah })}
+              className={`relative w-11 h-6 rounded-full transition-colors ${
+                settings.hideBismillah ? 'bg-primary-500' : darkMode ? 'bg-slate-600' : 'bg-gray-300'
+              }`}
+            >
+              <span
+                className={`absolute top-1 left-1 w-4 h-4 bg-white rounded-full transition-transform shadow ${
+                  settings.hideBismillah ? 'translate-x-5' : ''
                 }`}
               />
             </button>

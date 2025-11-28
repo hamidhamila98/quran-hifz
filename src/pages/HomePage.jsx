@@ -2,7 +2,6 @@ import { useState, useEffect, useCallback } from 'react'
 import { Calendar, BookOpen, Target, TrendingUp, ChevronRight, ChevronLeft, Check } from 'lucide-react'
 import {
   getPageWithLines,
-  TOTAL_QURAN_LINES,
   SURAH_INFO,
   ARABIC_FONTS
 } from '../services/quranApi'
@@ -22,6 +21,7 @@ const PORTION_CONFIG = {
 
 export default function HomePage({ settings, updateSettings }) {
   const [verses, setVerses] = useState([])
+  const [portionLines, setPortionLines] = useState([]) // Lignes de la portion pour affichage Mushaf
   const [overflowVerse, setOverflowVerse] = useState(null) // Verset dépassant
   const [previewVerses, setPreviewVerses] = useState([]) // Aperçu page suivante
   const [loading, setLoading] = useState(true)
@@ -100,10 +100,11 @@ export default function HomePage({ settings, updateSettings }) {
       setError(null)
       setOverflowVerse(null)
       setPreviewVerses([])
+      setPortionLines([])
 
       // Handle special pages (1 and 2)
       if (SPECIAL_PAGES.includes(currentPage) && portionSize !== '2') {
-        const pageData = await getPageWithLines(currentPage, settings.tajweedEnabled)
+        const pageData = await getPageWithLines(currentPage, settings.tajweedEnabled, { hideBismillah: settings.hideBismillah })
 
         const transformedVerses = pageData.verses.map(verse => ({
           number: verse.id,
@@ -115,6 +116,8 @@ export default function HomePage({ settings, updateSettings }) {
         }))
 
         setVerses(transformedVerses)
+        // Store all lines for special pages
+        setPortionLines(pageData.lines || [])
         setPortionInfo({
           isSpecialPage: true,
           page: currentPage,
@@ -123,7 +126,7 @@ export default function HomePage({ settings, updateSettings }) {
 
         // Load preview for page 2 (end of special pages)
         if (currentPage === 2) {
-          const nextPageData = await getPageWithLines(3, settings.tajweedEnabled)
+          const nextPageData = await getPageWithLines(3, settings.tajweedEnabled, { hideBismillah: settings.hideBismillah })
           const firstLineVerses = nextPageData.verses.filter(v => v.lineNumbers.includes(1))
           setPreviewVerses(firstLineVerses.slice(0, 1).map(v => ({
             number: v.id,
@@ -142,7 +145,13 @@ export default function HomePage({ settings, updateSettings }) {
       const { startLine, endLine, lineCount } = getPortionLines()
 
       // Load page data
-      const pageData = await getPageWithLines(currentPage, settings.tajweedEnabled)
+      const pageData = await getPageWithLines(currentPage, settings.tajweedEnabled, { hideBismillah: settings.hideBismillah })
+
+      // Extract lines for this portion (with word-level tajweed)
+      const linesForPortion = (pageData.lines || []).filter(
+        line => line.lineNumber >= startLine && line.lineNumber <= endLine
+      )
+      setPortionLines(linesForPortion)
 
       // Group verses by lines
       const lineMap = new Map()
@@ -220,7 +229,7 @@ export default function HomePage({ settings, updateSettings }) {
         try {
           let nextPage = portionSize === '2' ? currentPage + 2 : currentPage + 1
           if (nextPage <= 604) {
-            const nextPageData = await getPageWithLines(nextPage, settings.tajweedEnabled)
+            const nextPageData = await getPageWithLines(nextPage, settings.tajweedEnabled, { hideBismillah: settings.hideBismillah })
             // Get ONLY the first line (not full verse)
             const firstLineVerses = nextPageData.verses.filter(v => v.lineNumbers.includes(1))
             // Take just the first verse fragment on line 1
@@ -242,7 +251,7 @@ export default function HomePage({ settings, updateSettings }) {
 
       // Handle 2 pages mode - load second page
       if (portionSize === '2' && currentPage < 604) {
-        const secondPageData = await getPageWithLines(currentPage + 1, settings.tajweedEnabled)
+        const secondPageData = await getPageWithLines(currentPage + 1, settings.tajweedEnabled, { hideBismillah: settings.hideBismillah })
         const secondPageVerses = secondPageData.verses.map(verse => ({
           number: verse.id,
           text: verse.text,
@@ -261,7 +270,7 @@ export default function HomePage({ settings, updateSettings }) {
     } finally {
       setLoading(false)
     }
-  }, [currentPage, portionIndex, portionSize, settings.tajweedEnabled])
+  }, [currentPage, portionIndex, portionSize, settings.tajweedEnabled, settings.hideBismillah])
 
   useEffect(() => {
     loadPortion()
@@ -462,20 +471,14 @@ export default function HomePage({ settings, updateSettings }) {
 
   // Render verse marker
   const renderVerseMarker = (number) => {
-    if (settings.arabicNumerals) {
-      return (
-        <span className="verse-marker" style={{ fontFamily: "'KFGQPC Uthmanic Script HAFS', 'Amiri Quran', serif" }}>
-          {'\u06DD'}{toArabicNumeral(number)}
+    return (
+      <span className="verse-marker-styled">
+        <span className="marker-symbol">{'\u06DD'}</span>
+        <span className="marker-number">
+          {settings.arabicNumerals ? toArabicNumeral(number) : number}
         </span>
-      )
-    } else {
-      return (
-        <span className="verse-marker-western">
-          <span className="marker-symbol">{'\u06DD'}</span>
-          <span className="marker-number">{number}</span>
-        </span>
-      )
-    }
+      </span>
+    )
   }
 
   return (
@@ -571,29 +574,38 @@ export default function HomePage({ settings, updateSettings }) {
             </div>
           ) : (
             <div className={`rounded-2xl p-6 ${settings.darkMode ? 'bg-slate-800' : 'bg-white'} shadow-lg`}>
-              {/* Main verses */}
+              {/* Line-by-line display with tajweed */}
               <div
-                className={`text-2xl md:text-3xl ${settings.flowMode ? 'arabic-flow' : 'arabic-text'} ${settings.tajweedEnabled ? 'tajweed-text' : ''}`}
+                className={`text-2xl md:text-3xl arabic-text ${settings.tajweedEnabled ? 'tajweed-text' : ''}`}
                 style={{ fontFamily: getFontFamily() }}
               >
-                {verses.filter(v => !v.isSecondPage).map((ayah, index) => (
-                  <span
-                    key={ayah.verseKey || ayah.number}
-                    className={`
-                      ${settings.flowMode ? 'verse-inline' : 'inline'} transition-all duration-200 cursor-pointer
-                      ${highlightedAyah === ayah.number ? 'verse-highlight' : ''}
-                      ${settings.darkMode ? 'text-gray-100' : 'text-gray-800'}
-                    `}
-                    onClick={() => setHighlightedAyah(ayah.number)}
+                {portionLines.map((line, lineIdx) => (
+                  <div
+                    key={`line-${line.lineNumber}`}
+                    className="mushaf-line text-center mb-2"
+                    dir="rtl"
                   >
-                    {settings.tajweedEnabled ? (
-                      <span dangerouslySetInnerHTML={{ __html: ayah.text.replace(/<span class=end>.*?<\/span>/g, '') }} />
-                    ) : (
-                      ayah.text
-                    )}
-                    {renderVerseMarker(ayah.numberInSurah)}
-                    {settings.flowMode && index < verses.filter(v => !v.isSecondPage).length - 1 && ' '}
-                  </span>
+                    {line.words.map((word, wordIdx) => (
+                      <span
+                        key={`${word.verseKey}-${word.position}`}
+                        className={`
+                          inline cursor-pointer transition-all duration-200
+                          ${highlightedAyah === word.verseNumber ? 'verse-highlight' : ''}
+                          ${settings.darkMode ? 'text-gray-100' : 'text-gray-800'}
+                        `}
+                        onClick={() => setHighlightedAyah(word.verseNumber)}
+                      >
+                        {word.isEndMarker ? (
+                          renderVerseMarker(word.verseNumber)
+                        ) : settings.tajweedEnabled && word.tajweedHtml ? (
+                          <span dangerouslySetInnerHTML={{ __html: word.tajweedHtml }} />
+                        ) : (
+                          word.text
+                        )}
+                        {wordIdx < line.words.length - 1 && !word.isEndMarker && ' '}
+                      </span>
+                    ))}
+                  </div>
                 ))}
               </div>
 
@@ -624,14 +636,14 @@ export default function HomePage({ settings, updateSettings }) {
                     Page {currentPage + 1}
                   </p>
                   <div
-                    className={`text-2xl md:text-3xl ${settings.flowMode ? 'arabic-flow' : 'arabic-text'} ${settings.tajweedEnabled ? 'tajweed-text' : ''}`}
+                    className={`text-2xl md:text-3xl arabic-text ${settings.tajweedEnabled ? 'tajweed-text' : ''}`}
                     style={{ fontFamily: getFontFamily() }}
                   >
                     {verses.filter(v => v.isSecondPage).map((ayah, index) => (
                       <span
                         key={ayah.verseKey || ayah.number}
                         className={`
-                          ${settings.flowMode ? 'verse-inline' : 'inline'} transition-all duration-200 cursor-pointer
+                          inline transition-all duration-200 cursor-pointer
                           ${highlightedAyah === ayah.number ? 'verse-highlight' : ''}
                           ${settings.darkMode ? 'text-gray-100' : 'text-gray-800'}
                         `}
@@ -643,7 +655,7 @@ export default function HomePage({ settings, updateSettings }) {
                           ayah.text
                         )}
                         {renderVerseMarker(ayah.numberInSurah)}
-                        {settings.flowMode && index < verses.filter(v => v.isSecondPage).length - 1 && ' '}
+                        {index < verses.filter(v => v.isSecondPage).length - 1 && ' '}
                       </span>
                     ))}
                   </div>

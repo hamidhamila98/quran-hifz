@@ -1,7 +1,10 @@
 // Quran API Service
 // Uses AlQuran.cloud for text, cpfair/quran-tajweed for accurate tajweed, and EveryAyah/Islamic Network CDN for audio
 
-import { getVerseWithTajweed, hasTajweedData, getCpfairText } from './cpfairTajweed'
+import { getVerseWithTajweed, hasTajweedData, getCpfairText, getVerseWordsWithTajweed } from './cpfairTajweed'
+
+// Bismillah text pattern to detect and optionally remove
+const BISMILLAH_PATTERN = /^بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ\s*/
 
 const TEXT_API_BASE = 'https://api.alquran.cloud/v1';
 const QURAN_COM_API = 'https://api.quran.com/api/v4';
@@ -62,7 +65,7 @@ export const ARABIC_FONTS = [
 
 // Fetch a specific page of the Mushaf (1-604)
 // Uses cpfair/quran-tajweed for accurate tajweed when enabled
-export async function getPage(pageNumber, useTajweed = false) {
+export async function getPage(pageNumber, useTajweed = false, options = {}) {
   try {
     // Use AlQuran.cloud for text
     const response = await fetch(`${TEXT_API_BASE}/page/${pageNumber}/quran-uthmani`);
@@ -73,7 +76,9 @@ export async function getPage(pageNumber, useTajweed = false) {
     if (useTajweed && data.data && data.data.ayahs) {
       data.data.ayahs = data.data.ayahs.map(ayah => {
         if (hasTajweedData(ayah.surah.number, ayah.numberInSurah)) {
-          const tajweedText = getVerseWithTajweed(ayah.surah.number, ayah.numberInSurah);
+          const tajweedText = getVerseWithTajweed(ayah.surah.number, ayah.numberInSurah, {
+            hideBismillah: options.hideBismillah
+          });
           if (tajweedText) {
             return {
               ...ayah,
@@ -229,7 +234,7 @@ export async function getJuz(juzNumber) {
 
 // Get page with word-level line numbers from Quran.com API
 // Uses cpfair/quran-tajweed for accurate character-level tajweed annotations
-export async function getPageWithLines(pageNumber, useTajweed = false) {
+export async function getPageWithLines(pageNumber, useTajweed = false, options = {}) {
   try {
     // Always fetch plain text - we'll apply cpfair tajweed if needed
     const response = await fetch(
@@ -238,12 +243,66 @@ export async function getPageWithLines(pageNumber, useTajweed = false) {
     if (!response.ok) throw new Error('Failed to fetch page with lines');
     const data = await response.json();
 
+    // Build line-by-line structure for Mushaf-style display
+    const linesMap = new Map();
+    for (let i = 1; i <= 15; i++) {
+      linesMap.set(i, []);
+    }
+
     // Process verses and extract line information
     const verses = data.verses.map(verse => {
       const words = verse.words || [];
       const lineNumbers = [...new Set(words.map(w => w.line_number))];
       const surahNumber = parseInt(verse.verse_key.split(':')[0]);
       const verseNumber = verse.verse_number;
+
+      // Get word-level tajweed if enabled
+      let cpfairWords = null;
+      if (useTajweed && hasTajweedData(surahNumber, verseNumber)) {
+        cpfairWords = getVerseWordsWithTajweed(surahNumber, verseNumber, {
+          hideBismillah: options.hideBismillah
+        });
+      }
+
+      // Track cpfair word index (skip Bismillah words and end markers)
+      let cpfairWordIndex = 0;
+
+      // Track which words go on which lines (for line-by-line display)
+      words.forEach(word => {
+        const lineNum = word.line_number;
+        if (lineNum >= 1 && lineNum <= 15) {
+          // Skip Bismillah words if hideBismillah is enabled
+          const isBismillahWord = verseNumber === 1 &&
+                                  surahNumber !== 1 &&
+                                  surahNumber !== 9 &&
+                                  word.position <= 4;
+
+          const isEndMarker = word.char_type_name === 'end';
+
+          if (!(options.hideBismillah && isBismillahWord)) {
+            // Get tajweed HTML for this word
+            let tajweedHtml = null;
+            if (!isEndMarker && cpfairWords && cpfairWordIndex < cpfairWords.length) {
+              tajweedHtml = cpfairWords[cpfairWordIndex].html;
+              cpfairWordIndex++;
+            }
+
+            linesMap.get(lineNum).push({
+              text: word.text_uthmani,
+              tajweedHtml: tajweedHtml,
+              charType: word.char_type_name,
+              position: word.position,
+              verseKey: verse.verse_key,
+              verseNumber: verseNumber,
+              surahNumber: surahNumber,
+              isEndMarker: isEndMarker
+            });
+          } else if (!isEndMarker) {
+            // Still increment cpfair index for skipped Bismillah words
+            // (cpfair data already has Bismillah removed when hideBismillah is true)
+          }
+        }
+      });
 
       // Get plain text (without end markers)
       const plainText = words
@@ -254,10 +313,15 @@ export async function getPageWithLines(pageNumber, useTajweed = false) {
       // Apply cpfair tajweed if enabled - uses cpfair's own text for accurate positions
       let text = plainText;
       if (useTajweed && hasTajweedData(surahNumber, verseNumber)) {
-        const tajweedText = getVerseWithTajweed(surahNumber, verseNumber);
+        const tajweedText = getVerseWithTajweed(surahNumber, verseNumber, {
+          hideBismillah: options.hideBismillah
+        });
         if (tajweedText) {
           text = tajweedText;
         }
+      } else if (options.hideBismillah && verseNumber === 1 && surahNumber !== 1 && surahNumber !== 9) {
+        // Hide Bismillah for first verse of surahs (except Al-Fatiha and At-Tawbah) when tajweed is disabled
+        text = text.replace(BISMILLAH_PATTERN, '');
       }
 
       return {
@@ -275,9 +339,22 @@ export async function getPageWithLines(pageNumber, useTajweed = false) {
       };
     });
 
+    // Convert linesMap to array
+    const lines = [];
+    for (let i = 1; i <= 15; i++) {
+      const lineWords = linesMap.get(i);
+      if (lineWords.length > 0) {
+        lines.push({
+          lineNumber: i,
+          words: lineWords
+        });
+      }
+    }
+
     return {
       pageNumber,
       verses,
+      lines, // Line-by-line structure for Mushaf display
       totalLines: 15 // Madani Mushaf has 15 lines per page
     };
   } catch (error) {
@@ -305,6 +382,64 @@ export function groupVersesByLines(pageData) {
   });
 
   return lineMap;
+}
+
+// Get page data organized by lines for Mushaf-style display
+// Returns an array of 15 lines, each containing words with their metadata
+export async function getPageMushafStyle(pageNumber, options = {}) {
+  try {
+    const response = await fetch(
+      `${QURAN_COM_API}/verses/by_page/${pageNumber}?words=true&word_fields=line_number,page_number,text_uthmani,char_type_name`
+    );
+    if (!response.ok) throw new Error('Failed to fetch page');
+    const data = await response.json();
+
+    // Initialize 15 lines (standard Madani Mushaf)
+    const lines = Array.from({ length: 15 }, (_, i) => ({
+      lineNumber: i + 1,
+      words: []
+    }));
+
+    // Process each verse and distribute words to their lines
+    data.verses.forEach(verse => {
+      const surahNumber = parseInt(verse.verse_key.split(':')[0]);
+      const verseNumber = verse.verse_number;
+
+      (verse.words || []).forEach(word => {
+        const lineIndex = word.line_number - 1;
+        if (lineIndex >= 0 && lineIndex < 15) {
+          // Skip Bismillah words if hideBismillah is enabled for first verse (except Al-Fatiha and At-Tawbah)
+          const isBismillahWord = verseNumber === 1 &&
+                                  surahNumber !== 1 &&
+                                  surahNumber !== 9 &&
+                                  word.position <= 4; // Bismillah has 4 words
+
+          if (options.hideBismillah && isBismillahWord) {
+            return; // Skip this word
+          }
+
+          lines[lineIndex].words.push({
+            text: word.text_uthmani,
+            charType: word.char_type_name,
+            position: word.position,
+            verseKey: verse.verse_key,
+            verseNumber: verseNumber,
+            surahNumber: surahNumber,
+            isEndMarker: word.char_type_name === 'end'
+          });
+        }
+      });
+    });
+
+    return {
+      pageNumber,
+      lines: lines.filter(line => line.words.length > 0), // Only return non-empty lines
+      totalLines: 15
+    };
+  } catch (error) {
+    console.error('Error fetching Mushaf page:', error);
+    throw error;
+  }
 }
 
 // Get verses for a specific range of lines across pages
@@ -604,6 +739,7 @@ export default {
   searchQuran,
   getJuz,
   getPageWithLines,
+  getPageMushafStyle,
   groupVersesByLines,
   getVersesByLineRange,
   toAbsoluteLine,

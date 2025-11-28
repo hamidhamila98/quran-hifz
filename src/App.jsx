@@ -21,6 +21,7 @@ const defaultSettings = {
   arabicFont: 'amiri-quran',
   flowMode: false,
   arabicNumerals: true,
+  hideBismillah: true, // Cacher Bismillah au début de chaque sourate
 }
 
 function App() {

@@ -65,16 +65,12 @@ export default function VerseDisplay({
               ) : (
                 ayah.text
               )}
-              {arabicNumerals ? (
-                <span className="verse-marker" style={{ fontFamily: "'KFGQPC Uthmanic Script HAFS', 'Amiri Quran', serif" }}>
-                  {'\u06DD'}{toArabicNumeral(ayah.numberInSurah)}
+              <span className="verse-marker-styled">
+                <span className="marker-symbol">{'\u06DD'}</span>
+                <span className="marker-number">
+                  {arabicNumerals ? toArabicNumeral(ayah.numberInSurah) : ayah.numberInSurah}
                 </span>
-              ) : (
-                <span className="verse-marker-western">
-                  <span className="marker-symbol">{'\u06DD'}</span>
-                  <span className="marker-number">{ayah.numberInSurah}</span>
-                </span>
-              )}
+              </span>
               {flowMode && index < ayahs.length - 1 && ' '}
             </span>
           )
