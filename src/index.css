@@ -157,6 +157,25 @@ body {
   letter-spacing: 0;
 }
 
+/* Fix click area for verse words - prevent overlap with line below */
+.mushaf-line {
+  position: relative;
+  isolation: isolate;
+}
+
+/* Each word/span in the mushaf line should have contained click area */
+.mushaf-line > span {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+
+/* Reduce the effective click height of inline spans - all font sizes */
+.arabic-text .cursor-pointer {
+  line-height: 1.4;
+  vertical-align: middle;
+}
+
 /* Flow mode - Mushaf style continuous text */
 .arabic-flow {
   direction: rtl;
@@ -429,48 +448,52 @@ html {
   transition: filter 0.3s ease;
 }
 
-/* Verse highlight - simple background, no overlap issues */
+/* Verse highlight - solid colors to avoid opacity stacking */
 .verse-highlight {
-  background-color: rgba(252, 194, 1, 0.25);
+  background-color: #fef3c7; /* solid light yellow */
 }
 
-/* Verse selected for audio playback */
+.dark .verse-highlight {
+  background-color: #78350f; /* solid dark amber */
+}
+
+/* Verse selected for audio playback - solid colors to avoid opacity stacking */
 .verse-selected {
-  background-color: rgba(59, 130, 246, 0.25);
+  background-color: #dbeafe; /* solid light blue */
   border-radius: 2px;
 }
 
 /* Dark mode verse selected */
 .dark .verse-selected {
-  background-color: rgba(59, 130, 246, 0.35);
+  background-color: #1e3a5f; /* solid dark blue */
 }
 
-/* Word highlight during audio playback - simple selection style */
+/* Word highlight during audio playback - solid colors */
 .word-highlight {
-  background-color: rgba(252, 194, 1, 0.4);
+  background-color: #fde68a; /* solid yellow */
   border-radius: 2px;
 }
 
 /* Word highlight for inner tajweed spans */
 .word-highlight-inner {
-  background-color: rgba(252, 194, 1, 0.4);
+  background-color: #fde68a; /* solid yellow */
   border-radius: 2px;
 }
 
 /* Dark mode word highlight */
 .dark .word-highlight,
 .dark .word-highlight-inner {
-  background-color: rgba(252, 194, 1, 0.5);
+  background-color: #b45309; /* solid dark orange */
 }
 
-/* Verse playing highlight - for non-Afasy reciters */
+/* Verse playing highlight - for non-Afasy reciters - solid colors */
 .verse-playing {
-  background-color: rgba(252, 194, 1, 0.2);
+  background-color: #fef9c3; /* solid very light yellow */
   border-radius: 4px;
 }
 
 .dark .verse-playing {
-  background-color: rgba(252, 194, 1, 0.25);
+  background-color: #713f12; /* solid dark brown/amber */
 }
 
 /* Font size classes for Quran text */
@@ -502,6 +525,26 @@ html {
   .font-size-large.arabic-text {
     font-size: 2.5rem !important;
   }
+}
+
+/* Hide text for memorization practice */
+.text-hidden {
+  color: transparent !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+/* Hide inner spans (tajweed) but not verse markers */
+.text-hidden span:not(.verse-marker-styled):not(.marker-symbol):not(.marker-number) {
+  color: transparent !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+/* Keep verse markers visible when text is hidden */
+.text-hidden .verse-marker-styled,
+.text-hidden .verse-marker-styled .marker-symbol,
+.text-hidden .verse-marker-styled .marker-number {
+  color: inherit !important;
+  -webkit-text-fill-color: inherit !important;
 }
 
 /* Audio player styling */

@@ -479,7 +479,7 @@ export default function TrainingPage({ settings }) {
               />
             </div>
             <p className={`text-xl font-bold ${settings.darkMode ? 'text-white' : 'text-gray-800'}`}>
-              {percentage}%
+              {percentage}% <span className={`text-base font-medium ${settings.darkMode ? 'text-gray-400' : 'text-gray-500'}`}>({(percentage / 5).toFixed(1)}/20)</span>
             </p>
           </div>
 

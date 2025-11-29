@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback, useRef } from 'react'
 import { useSearchParams } from 'react-router-dom'
-import { BookOpen, ChevronRight, ChevronLeft, Check, ChevronUp, ChevronDown, Play, Pause, Repeat } from 'lucide-react'
+import { BookOpen, ChevronRight, ChevronLeft, Check, ChevronUp, ChevronDown, Play, Pause, Repeat, Eye, EyeOff } from 'lucide-react'
 import {
   getPageWithLines,
   SURAH_INFO,
@@ -51,6 +51,8 @@ export default function HomePage({ settings, updateSettings }) {
   const [pendingSeekRatio, setPendingSeekRatio] = useState(null) // 0-1 ratio to seek to after audio loads
   const [miniPlayerVerseKeys, setMiniPlayerVerseKeys] = useState(null) // Stored verse keys for audio playback
   const [loopAudio, setLoopAudio] = useState(false) // Loop audio playback
+  const [hideText, setHideText] = useState(false) // Hide Arabic text for memorization
+  const [hiddenVerses, setHiddenVerses] = useState(new Set()) // Verses to hide (empty = hide all when hideText is true)
   const miniPlayerRef = useRef(null)
 
   // Mini player state (page 2 - for 2-pages mode)
@@ -1543,7 +1545,31 @@ export default function HomePage({ settings, updateSettings }) {
               </button>
             </div>
           ) : (
-            <div className={`rounded-2xl p-6 ${settings.darkMode ? 'bg-slate-800' : 'bg-white'} shadow-lg`}>
+            <div className={`rounded-2xl p-6 ${settings.darkMode ? 'bg-slate-800' : 'bg-white'} shadow-lg relative`}>
+              {/* Hide Text Button - positioned on the left side of the text */}
+              <button
+                onClick={() => {
+                  const newHideText = !hideText
+                  if (newHideText) {
+                    // Activer le mode cacher: stocker les versets sélectionnés puis désélectionner
+                    setHiddenVerses(new Set(selectedVerses))
+                    setSelectedVerses(new Set())
+                  } else {
+                    // Désactiver le mode cacher: réinitialiser
+                    setHiddenVerses(new Set())
+                  }
+                  setHideText(newHideText)
+                }}
+                className={`absolute left-3 top-3 w-10 h-10 rounded-xl flex items-center justify-center transition-all z-10 ${
+                  hideText
+                    ? 'bg-amber-100 text-amber-600 dark:bg-amber-900/50 dark:text-amber-400 shadow-lg'
+                    : `${settings.darkMode ? 'bg-slate-700 hover:bg-slate-600 text-gray-400' : 'bg-gray-100 hover:bg-gray-200 text-gray-500'} shadow`
+                }`}
+                title={hideText ? "Afficher le texte" : "Cacher le texte"}
+              >
+                {hideText ? <EyeOff className="w-5 h-5" /> : <Eye className="w-5 h-5" />}
+              </button>
+
               {/* Toggle button for cut verse (verse starting before this portion) */}
               {cutVerse && cutVerseLines.length > 0 && (
                 <div className="mb-4">
@@ -1586,6 +1612,11 @@ export default function HomePage({ settings, updateSettings }) {
                         miniPlayerPlaying &&
                         !isWordHighlighted
 
+                      // Determine if this word should be hidden
+                      const shouldHideWord = hideText && !word.isEndMarker && (
+                        hiddenVerses.size === 0 || hiddenVerses.has(word.verseKey)
+                      )
+
                       return (
                         <span
                           key={`${word.verseKey}-${word.position}-cut`}
@@ -1594,6 +1625,7 @@ export default function HomePage({ settings, updateSettings }) {
                             ${selectedVerses.has(word.verseKey) ? 'verse-selected' : ''}
                             ${isWordHighlighted ? 'word-highlight' : ''}
                             ${isVersePlaying ? 'verse-playing' : ''}
+                            ${shouldHideWord ? 'text-hidden' : ''}
                           `}
                           onClick={() => toggleVerseSelection(word.verseKey)}
                         >
@@ -1634,6 +1666,11 @@ export default function HomePage({ settings, updateSettings }) {
                         miniPlayerPlaying &&
                         !isWordHighlighted // Don't apply verse highlight if word highlight is active
 
+                      // Determine if this word should be hidden
+                      const shouldHideWord = hideText && !word.isEndMarker && (
+                        hiddenVerses.size === 0 || hiddenVerses.has(word.verseKey)
+                      )
+
                       return (
                         <span
                           key={`${word.verseKey}-${word.position}`}
@@ -1643,6 +1680,7 @@ export default function HomePage({ settings, updateSettings }) {
                             ${highlightedAyah === word.verseKey ? 'verse-highlight' : ''}
                             ${isWordHighlighted ? 'word-highlight' : ''}
                             ${isVersePlaying ? 'verse-playing' : ''}
+                            ${shouldHideWord ? 'text-hidden' : ''}
                             ${settings.darkMode ? 'text-gray-100' : 'text-gray-800'}
                           `}
                           onClick={() => toggleVerseSelection(word.verseKey)}
@@ -1684,6 +1722,11 @@ export default function HomePage({ settings, updateSettings }) {
                         miniPlayerPlaying &&
                         !isWordHighlighted
 
+                      // Determine if this word should be hidden
+                      const shouldHideWord = hideText && !word.isEndMarker && (
+                        hiddenVerses.size === 0 || hiddenVerses.has(word.verseKey)
+                      )
+
                       return (
                         <span
                           key={`${word.verseKey}-${word.position}-overflow`}
@@ -1692,6 +1735,7 @@ export default function HomePage({ settings, updateSettings }) {
                             ${selectedVerses.has(word.verseKey) ? 'verse-selected' : ''}
                             ${isWordHighlighted ? 'word-highlight' : ''}
                             ${isVersePlaying ? 'verse-playing' : ''}
+                            ${shouldHideWord ? 'text-hidden' : ''}
                           `}
                           onClick={() => toggleVerseSelection(word.verseKey)}
                         >
