@@ -7,6 +7,7 @@ import {
   ChevronRight,
   Moon,
   Sun,
+  Palette,
   Type,
   Volume2,
   ChevronDown,
@@ -20,8 +21,25 @@ const navItems = [
 ]
 
 const ARABIC_FONTS = [
-  { id: 'kfgqpc-uthmanic', name: 'Uthmanic (Mushaf)' },
-  { id: 'lateef', name: 'Lateef' },
+  // Polices Mushaf Uthmani KFGQPC
+  { id: 'hafs-smart', name: 'Hafs Smart (Mushaf)', category: 'Mushaf' },
+  { id: 'uthmanic-hafs', name: 'Uthmanic Hafs v18', category: 'Mushaf' },
+  { id: 'hafs-uthmanic-v14', name: 'Hafs Uthmanic v14', category: 'Mushaf' },
+  { id: 'kfgqpc-uthmanic', name: 'KFGQPC Uthmanic', category: 'Mushaf' },
+  { id: 'al-mushaf', name: 'Al Mushaf', category: 'Mushaf' },
+  // Polices Quran calligraphiques
+  { id: 'al-qalam-quran-majeed', name: 'Al Qalam Quran Majeed', category: 'Calligraphie' },
+  { id: 'al-qalam-quran', name: 'Al Qalam Quran', category: 'Calligraphie' },
+  { id: 'me-quran', name: 'Me Quran', category: 'Calligraphie' },
+  { id: 'amiri-quran-colored', name: 'Amiri Quran Colored', category: 'Calligraphie' },
+  { id: 'amiri-quran', name: 'Amiri Quran', category: 'Calligraphie' },
+  // Polices Naskh (lisibilité)
+  { id: 'scheherazade', name: 'Scheherazade New', category: 'Naskh' },
+  { id: 'droid-naskh', name: 'Droid Naskh', category: 'Naskh' },
+  { id: 'noto-naskh', name: 'Noto Naskh Arabic', category: 'Naskh' },
+  { id: 'lateef', name: 'Lateef', category: 'Naskh' },
+  // Police Nastaliq
+  { id: 'hafs-nastaleeq', name: 'Hafs Nastaleeq', category: 'Nastaliq' },
 ]
 
 const RECITERS = [
@@ -100,6 +118,26 @@ export default function Sidebar({ isOpen, setIsOpen, settings, updateSettings })
       {/* Settings Controls */}
       {isOpen && (
         <div className={`flex-1 px-3 py-4 space-y-3 border-t mt-2 ${darkMode ? 'border-slate-700' : 'border-gray-100'}`}>
+          {/* Tajweed Toggle */}
+          <div className={`flex items-center justify-between px-3 py-2 rounded-xl ${darkMode ? 'bg-slate-700/50' : 'bg-gray-50'}`}>
+            <div className="flex items-center gap-2">
+              <Palette className="w-4 h-4 text-primary-500" />
+              <span className={`text-sm font-medium ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>Tajweed</span>
+            </div>
+            <button
+              onClick={() => updateSettings({ tajweedEnabled: !settings.tajweedEnabled })}
+              className={`relative w-11 h-6 rounded-full transition-colors ${
+                settings.tajweedEnabled ? 'bg-primary-500' : darkMode ? 'bg-slate-600' : 'bg-gray-300'
+              }`}
+            >
+              <span
+                className={`absolute top-1 left-1 w-4 h-4 bg-white rounded-full transition-transform shadow ${
+                  settings.tajweedEnabled ? 'translate-x-5' : ''
+                }`}
+              />
+            </button>
+          </div>
+
           {/* Arabic Numerals Toggle */}
           <div className={`flex items-center justify-between px-3 py-2 rounded-xl ${darkMode ? 'bg-slate-700/50' : 'bg-gray-50'}`}>
             <div className="flex items-center gap-2">
@@ -264,6 +302,17 @@ export default function Sidebar({ isOpen, setIsOpen, settings, updateSettings })
       {/* Collapsed Settings Icons */}
       {!isOpen && (
         <div className={`flex-1 px-2 py-4 space-y-2 border-t mt-2 ${darkMode ? 'border-slate-700' : 'border-gray-100'}`}>
+          <button
+            onClick={() => updateSettings({ tajweedEnabled: !settings.tajweedEnabled })}
+            className={`w-full p-3 rounded-xl transition-colors ${
+              settings.tajweedEnabled
+                ? darkMode ? 'bg-primary-900/30 text-primary-400' : 'bg-primary-100 text-primary-600'
+                : darkMode ? 'text-gray-500 hover:bg-slate-700' : 'text-gray-500 hover:bg-gray-100'
+            }`}
+            title="Tajweed"
+          >
+            <Palette className="w-5 h-5 mx-auto" />
+          </button>
           <button
             onClick={() => updateSettings({ darkMode: !settings.darkMode })}
             className={`w-full p-3 rounded-xl transition-colors ${

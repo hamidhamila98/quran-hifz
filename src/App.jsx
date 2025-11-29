@@ -17,7 +17,8 @@ const defaultSettings = {
   reciter: 'ar.husary',
   startDate: new Date().toISOString().split('T')[0],
   darkMode: false,
-  arabicFont: 'kfgqpc-uthmanic',
+  tajweedEnabled: false,
+  arabicFont: 'hafs-smart',
   flowMode: false,
   arabicNumerals: true,
 }

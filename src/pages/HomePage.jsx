@@ -134,7 +134,7 @@ export default function HomePage({ settings, updateSettings }) {
 
       // Handle special pages (1 and 2)
       if (SPECIAL_PAGES.includes(currentPage) && portionSize !== '2') {
-        const pageData = await getPageWithLines(currentPage)
+        const pageData = await getPageWithLines(currentPage, settings.tajweedEnabled)
 
         const transformedVerses = pageData.verses.map(verse => ({
           number: verse.id,
@@ -156,7 +156,7 @@ export default function HomePage({ settings, updateSettings }) {
 
         // Load preview for page 2 (end of special pages)
         if (currentPage === 2) {
-          const nextPageData = await getPageWithLines(3)
+          const nextPageData = await getPageWithLines(3, settings.tajweedEnabled)
           const firstLineVerses = nextPageData.verses.filter(v => v.lineNumbers.includes(1))
           setPreviewVerses(firstLineVerses.slice(0, 1).map(v => ({
             number: v.id,
@@ -175,7 +175,7 @@ export default function HomePage({ settings, updateSettings }) {
       const { startLine, endLine, lineCount } = getPortionLines()
 
       // Load page data
-      const pageData = await getPageWithLines(currentPage)
+      const pageData = await getPageWithLines(currentPage, settings.tajweedEnabled)
 
       // Extract lines for this portion (with word-level tajweed)
       const linesForPortion = (pageData.lines || []).filter(
@@ -259,7 +259,7 @@ export default function HomePage({ settings, updateSettings }) {
         try {
           let nextPage = portionSize === '2' ? currentPage + 2 : currentPage + 1
           if (nextPage <= 604) {
-            const nextPageData = await getPageWithLines(nextPage)
+            const nextPageData = await getPageWithLines(nextPage, settings.tajweedEnabled)
             // Get ONLY the first line (not full verse)
             const firstLineVerses = nextPageData.verses.filter(v => v.lineNumbers.includes(1))
             // Take just the first verse fragment on line 1
@@ -281,7 +281,7 @@ export default function HomePage({ settings, updateSettings }) {
 
       // Handle 2 pages mode - load second page
       if (portionSize === '2' && currentPage < 604) {
-        const secondPageData = await getPageWithLines(currentPage + 1)
+        const secondPageData = await getPageWithLines(currentPage + 1, settings.tajweedEnabled)
         const secondPageVerses = secondPageData.verses.map(verse => ({
           number: verse.id,
           text: verse.text,
@@ -300,7 +300,7 @@ export default function HomePage({ settings, updateSettings }) {
     } finally {
       setLoading(false)
     }
-  }, [currentPage, portionIndex, portionSize])
+  }, [currentPage, portionIndex, portionSize, settings.tajweedEnabled])
 
   useEffect(() => {
     loadPortion()
@@ -585,9 +585,9 @@ export default function HomePage({ settings, updateSettings }) {
             </div>
           ) : (
             <div className={`rounded-2xl p-6 ${settings.darkMode ? 'bg-slate-800' : 'bg-white'} shadow-lg`}>
-              {/* Line-by-line display */}
+              {/* Line-by-line display with tajweed */}
               <div
-                className="text-2xl md:text-3xl arabic-text"
+                className={`text-2xl md:text-3xl arabic-text ${settings.tajweedEnabled ? 'tajweed-text' : ''}`}
                 style={{ fontFamily: getFontFamily() }}
               >
                 {portionLines.map((line, lineIdx) => (
@@ -607,7 +607,13 @@ export default function HomePage({ settings, updateSettings }) {
                         `}
                         onClick={() => toggleVerseSelection(word.verseKey)}
                       >
-                        {word.isEndMarker ? renderVerseMarker(word.verseNumber) : word.text}
+                        {word.isEndMarker ? (
+                          renderVerseMarker(word.verseNumber)
+                        ) : settings.tajweedEnabled && word.tajweedHtml ? (
+                          <span dangerouslySetInnerHTML={{ __html: word.tajweedHtml }} />
+                        ) : (
+                          word.text
+                        )}
                         {wordIdx < line.words.length - 1 && !word.isEndMarker && ' '}
                       </span>
                     ))}
@@ -625,7 +631,11 @@ export default function HomePage({ settings, updateSettings }) {
                     className={`text-xl md:text-2xl arabic-text ${settings.darkMode ? 'text-amber-200' : 'text-amber-700'} opacity-80`}
                     style={{ fontFamily: getFontFamily() }}
                   >
-                    {overflowVerse.text}
+                    {settings.tajweedEnabled ? (
+                      <span dangerouslySetInnerHTML={{ __html: overflowVerse.text.replace(/<span class=end>.*?<\/span>/g, '') }} />
+                    ) : (
+                      overflowVerse.text
+                    )}
                     {renderVerseMarker(overflowVerse.numberInSurah)}
                   </div>
                 </div>
@@ -638,7 +648,7 @@ export default function HomePage({ settings, updateSettings }) {
                     Page {currentPage + 1}
                   </p>
                   <div
-                    className="text-2xl md:text-3xl arabic-text"
+                    className={`text-2xl md:text-3xl arabic-text ${settings.tajweedEnabled ? 'tajweed-text' : ''}`}
                     style={{ fontFamily: getFontFamily() }}
                   >
                     {verses.filter(v => v.isSecondPage).map((ayah, index) => (
@@ -652,7 +662,11 @@ export default function HomePage({ settings, updateSettings }) {
                         `}
                         onClick={() => toggleVerseSelection(ayah.verseKey)}
                       >
-                        {ayah.text}
+                        {settings.tajweedEnabled ? (
+                          <span dangerouslySetInnerHTML={{ __html: ayah.text.replace(/<span class=end>.*?<\/span>/g, '') }} />
+                        ) : (
+                          ayah.text
+                        )}
                         {renderVerseMarker(ayah.numberInSurah)}
                         {index < verses.filter(v => v.isSecondPage).length - 1 && ' '}
                       </span>
@@ -673,7 +687,11 @@ export default function HomePage({ settings, updateSettings }) {
                   >
                     {previewVerses.map((ayah) => (
                       <span key={ayah.verseKey || ayah.number}>
-                        {ayah.text}
+                        {settings.tajweedEnabled ? (
+                          <span dangerouslySetInnerHTML={{ __html: ayah.text.replace(/<span class=end>.*?<\/span>/g, '') }} />
+                        ) : (
+                          ayah.text
+                        )}
                         {renderVerseMarker(ayah.numberInSurah)}
                       </span>
                     ))}
