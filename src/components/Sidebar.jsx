@@ -14,7 +14,8 @@ import {
   Hash,
   BookOpen,
   Settings,
-  Eye
+  Eye,
+  BookText
 } from 'lucide-react'
 
 const navItems = [
@@ -76,15 +77,23 @@ const FONT_SIZES = [
   { id: 'large', name: 'Grand' },
 ]
 
+const TAFSIR_SOURCES = [
+  { id: 'ibn-kathir', name: 'Ibn Kathir', hasEnglish: true },
+  { id: 'tabari', name: 'Tabari', hasEnglish: false },
+  { id: 'qurtubi', name: 'Qurtubi', hasEnglish: false },
+]
+
 export default function Sidebar({ isOpen, setIsOpen, settings, updateSettings }) {
   const [fontDropdownOpen, setFontDropdownOpen] = useState(false)
   const [reciterDropdownOpen, setReciterDropdownOpen] = useState(false)
   const [portionDropdownOpen, setPortionDropdownOpen] = useState(false)
+  const [tafsirDropdownOpen, setTafsirDropdownOpen] = useState(false)
   const [configOpen, setConfigOpen] = useState(false)
 
   const currentFont = ARABIC_FONTS.find(f => f.id === settings.arabicFont) || ARABIC_FONTS[0]
   const currentReciter = RECITERS.find(r => r.id === settings.reciter) || RECITERS[0]
   const currentPortion = PORTION_SIZES.find(p => p.id === settings.portionSize) || PORTION_SIZES[1]
+  const currentTafsir = TAFSIR_SOURCES.find(t => t.id === settings.tafsirSource) || TAFSIR_SOURCES[0]
   const darkMode = settings.darkMode
 
   return (
@@ -219,6 +228,88 @@ export default function Sidebar({ isOpen, setIsOpen, settings, updateSettings })
             )}
           </div>
 
+          {/* Tajweed Toggle - Outside config */}
+          <div className={`flex items-center justify-between px-3 py-2 rounded-xl ${darkMode ? 'bg-slate-700/50' : 'bg-gray-50'}`}>
+            <div className="flex items-center gap-2">
+              <Palette className="w-4 h-4 text-primary-500" />
+              <span className={`text-sm font-medium ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>Tajweed</span>
+            </div>
+            <button
+              onClick={() => updateSettings({ tajweedEnabled: !settings.tajweedEnabled })}
+              className={`relative w-11 h-6 rounded-full transition-colors ${
+                settings.tajweedEnabled ? 'bg-primary-500' : darkMode ? 'bg-slate-600' : 'bg-gray-300'
+              }`}
+            >
+              <span
+                className={`absolute top-1 left-1 w-4 h-4 bg-white rounded-full transition-transform shadow ${
+                  settings.tajweedEnabled ? 'translate-x-5' : ''
+                }`}
+              />
+            </button>
+          </div>
+
+          {/* Tafsir Source Dropdown - Outside config */}
+          <div className="relative">
+            <button
+              onClick={() => { setTafsirDropdownOpen(!tafsirDropdownOpen); setFontDropdownOpen(false); setReciterDropdownOpen(false); setPortionDropdownOpen(false) }}
+              className={`w-full flex items-center justify-between px-3 py-2 rounded-xl transition-colors ${
+                darkMode ? 'bg-slate-700/50 hover:bg-slate-700' : 'bg-gray-50 hover:bg-gray-100'
+              }`}
+            >
+              <div className="flex items-center gap-2">
+                <BookText className="w-4 h-4 text-primary-500" />
+                <span className={`text-sm font-medium ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                  Tafsir: {currentTafsir.name}
+                </span>
+              </div>
+              <ChevronDown className={`w-4 h-4 text-gray-500 transition-transform ${tafsirDropdownOpen ? 'rotate-180' : ''}`} />
+            </button>
+            {tafsirDropdownOpen && (
+              <div className={`absolute top-full left-0 right-0 mt-1 rounded-xl shadow-lg border overflow-hidden z-50 ${
+                darkMode ? 'bg-slate-800 border-slate-700' : 'bg-white border-gray-100'
+              }`}>
+                {TAFSIR_SOURCES.map((tafsir) => (
+                  <button
+                    key={tafsir.id}
+                    onClick={() => { updateSettings({ tafsirSource: tafsir.id }); setTafsirDropdownOpen(false) }}
+                    className={`w-full px-3 py-2 text-left text-sm transition-colors ${
+                      settings.tafsirSource === tafsir.id || (!settings.tafsirSource && tafsir.id === 'ibn-kathir')
+                        ? darkMode ? 'bg-primary-900/30 text-primary-400' : 'bg-primary-50 text-primary-600'
+                        : darkMode ? 'text-gray-300 hover:bg-slate-700' : 'text-gray-700 hover:bg-gray-50'
+                    }`}
+                  >
+                    {tafsir.name}
+                    {tafsir.hasEnglish && <span className="text-xs text-gray-500 ml-1">(AR/EN)</span>}
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
+
+          {/* Dark Mode Toggle - Outside config */}
+          <div className={`flex items-center justify-between px-3 py-2 rounded-xl ${darkMode ? 'bg-slate-700/50' : 'bg-gray-50'}`}>
+            <div className="flex items-center gap-2">
+              {darkMode ? (
+                <Moon className="w-4 h-4 text-primary-500" />
+              ) : (
+                <Sun className="w-4 h-4 text-primary-500" />
+              )}
+              <span className={`text-sm font-medium ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>Mode sombre</span>
+            </div>
+            <button
+              onClick={() => updateSettings({ darkMode: !settings.darkMode })}
+              className={`relative w-11 h-6 rounded-full transition-colors ${
+                darkMode ? 'bg-primary-500' : 'bg-gray-300'
+              }`}
+            >
+              <span
+                className={`absolute top-1 left-1 w-4 h-4 bg-white rounded-full transition-transform shadow ${
+                  darkMode ? 'translate-x-5' : ''
+                }`}
+              />
+            </button>
+          </div>
+
           {/* Configuration Button */}
           <button
             onClick={() => setConfigOpen(!configOpen)}
@@ -238,26 +329,6 @@ export default function Sidebar({ isOpen, setIsOpen, settings, updateSettings })
           {/* Configuration Options - Collapsible */}
           {configOpen && (
             <div className={`space-y-3 pl-2 border-l-2 ${darkMode ? 'border-slate-600' : 'border-gray-200'}`}>
-              {/* Tajweed Toggle */}
-              <div className={`flex items-center justify-between px-3 py-2 rounded-xl ${darkMode ? 'bg-slate-700/50' : 'bg-gray-50'}`}>
-                <div className="flex items-center gap-2">
-                  <Palette className="w-4 h-4 text-primary-500" />
-                  <span className={`text-sm font-medium ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>Tajweed</span>
-                </div>
-                <button
-                  onClick={() => updateSettings({ tajweedEnabled: !settings.tajweedEnabled })}
-                  className={`relative w-11 h-6 rounded-full transition-colors ${
-                    settings.tajweedEnabled ? 'bg-primary-500' : darkMode ? 'bg-slate-600' : 'bg-gray-300'
-                  }`}
-                >
-                  <span
-                    className={`absolute top-1 left-1 w-4 h-4 bg-white rounded-full transition-transform shadow ${
-                      settings.tajweedEnabled ? 'translate-x-5' : ''
-                    }`}
-                  />
-                </button>
-              </div>
-
               {/* Arabic Numerals Toggle */}
               <div className={`flex items-center justify-between px-3 py-2 rounded-xl ${darkMode ? 'bg-slate-700/50' : 'bg-gray-50'}`}>
                 <div className="flex items-center gap-2">
@@ -376,50 +447,84 @@ export default function Sidebar({ isOpen, setIsOpen, settings, updateSettings })
                 </button>
               </div>
 
-              {/* Font Size */}
+              {/* Font Size - Quran */}
               <div className={`flex items-center justify-between px-3 py-2 rounded-xl ${darkMode ? 'bg-slate-700/50' : 'bg-gray-50'}`}>
-                <span className={`text-sm font-medium ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>Taille</span>
-                <div className="flex gap-1">
-                  {FONT_SIZES.map((size) => (
-                    <button
-                      key={size.id}
-                      onClick={() => updateSettings({ fontSize: size.id })}
-                      className={`px-2 py-1 text-xs font-medium rounded-lg transition-colors ${
-                        (settings.fontSize || 'medium') === size.id
-                          ? 'bg-primary-500 text-white'
-                          : darkMode
-                            ? 'bg-slate-600 text-gray-300 hover:bg-slate-500'
-                            : 'bg-gray-200 text-gray-600 hover:bg-gray-300'
-                      }`}
-                    >
-                      {size.name}
-                    </button>
-                  ))}
+                <span className={`text-sm font-medium ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>Coran</span>
+                <div className="flex gap-1 items-end">
+                  <button
+                    onClick={() => updateSettings({ fontSize: 'small' })}
+                    className={`w-7 h-7 flex items-center justify-center rounded-lg transition-colors ${
+                      (settings.fontSize || 'medium') === 'small'
+                        ? 'bg-primary-500 text-white'
+                        : darkMode ? 'bg-slate-600 text-gray-300 hover:bg-slate-500' : 'bg-gray-200 text-gray-600 hover:bg-gray-300'
+                    }`}
+                    title="Petit"
+                  >
+                    <span className="text-xs font-bold">A</span>
+                  </button>
+                  <button
+                    onClick={() => updateSettings({ fontSize: 'medium' })}
+                    className={`w-7 h-7 flex items-center justify-center rounded-lg transition-colors ${
+                      (settings.fontSize || 'medium') === 'medium'
+                        ? 'bg-primary-500 text-white'
+                        : darkMode ? 'bg-slate-600 text-gray-300 hover:bg-slate-500' : 'bg-gray-200 text-gray-600 hover:bg-gray-300'
+                    }`}
+                    title="Moyen"
+                  >
+                    <span className="text-sm font-bold">A</span>
+                  </button>
+                  <button
+                    onClick={() => updateSettings({ fontSize: 'large' })}
+                    className={`w-7 h-7 flex items-center justify-center rounded-lg transition-colors ${
+                      (settings.fontSize || 'medium') === 'large'
+                        ? 'bg-primary-500 text-white'
+                        : darkMode ? 'bg-slate-600 text-gray-300 hover:bg-slate-500' : 'bg-gray-200 text-gray-600 hover:bg-gray-300'
+                    }`}
+                    title="Grand"
+                  >
+                    <span className="text-base font-bold">A</span>
+                  </button>
                 </div>
               </div>
 
-              {/* Dark Mode Toggle */}
+              {/* Font Size - Tafsir/Translation */}
               <div className={`flex items-center justify-between px-3 py-2 rounded-xl ${darkMode ? 'bg-slate-700/50' : 'bg-gray-50'}`}>
-                <div className="flex items-center gap-2">
-                  {darkMode ? (
-                    <Moon className="w-4 h-4 text-primary-500" />
-                  ) : (
-                    <Sun className="w-4 h-4 text-primary-500" />
-                  )}
-                  <span className={`text-sm font-medium ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>Mode sombre</span>
-                </div>
-                <button
-                  onClick={() => updateSettings({ darkMode: !settings.darkMode })}
-                  className={`relative w-11 h-6 rounded-full transition-colors ${
-                    darkMode ? 'bg-primary-500' : 'bg-gray-300'
-                  }`}
-                >
-                  <span
-                    className={`absolute top-1 left-1 w-4 h-4 bg-white rounded-full transition-transform shadow ${
-                      darkMode ? 'translate-x-5' : ''
+                <span className={`text-sm font-medium ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>Tafsir/Trad</span>
+                <div className="flex gap-1 items-end">
+                  <button
+                    onClick={() => updateSettings({ tafsirFontSize: 'small' })}
+                    className={`w-7 h-7 flex items-center justify-center rounded-lg transition-colors ${
+                      (settings.tafsirFontSize || 'medium') === 'small'
+                        ? 'bg-primary-500 text-white'
+                        : darkMode ? 'bg-slate-600 text-gray-300 hover:bg-slate-500' : 'bg-gray-200 text-gray-600 hover:bg-gray-300'
                     }`}
-                  />
-                </button>
+                    title="Petit"
+                  >
+                    <span className="text-xs font-bold">A</span>
+                  </button>
+                  <button
+                    onClick={() => updateSettings({ tafsirFontSize: 'medium' })}
+                    className={`w-7 h-7 flex items-center justify-center rounded-lg transition-colors ${
+                      (settings.tafsirFontSize || 'medium') === 'medium'
+                        ? 'bg-primary-500 text-white'
+                        : darkMode ? 'bg-slate-600 text-gray-300 hover:bg-slate-500' : 'bg-gray-200 text-gray-600 hover:bg-gray-300'
+                    }`}
+                    title="Moyen"
+                  >
+                    <span className="text-sm font-bold">A</span>
+                  </button>
+                  <button
+                    onClick={() => updateSettings({ tafsirFontSize: 'large' })}
+                    className={`w-7 h-7 flex items-center justify-center rounded-lg transition-colors ${
+                      (settings.tafsirFontSize || 'medium') === 'large'
+                        ? 'bg-primary-500 text-white'
+                        : darkMode ? 'bg-slate-600 text-gray-300 hover:bg-slate-500' : 'bg-gray-200 text-gray-600 hover:bg-gray-300'
+                    }`}
+                    title="Grand"
+                  >
+                    <span className="text-base font-bold">A</span>
+                  </button>
+                </div>
               </div>
             </div>
           )}

@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback, useRef } from 'react'
 import { useSearchParams } from 'react-router-dom'
-import { BookOpen, ChevronRight, ChevronLeft, Check, ChevronUp, ChevronDown, Play, Pause, Repeat, Eye, EyeOff } from 'lucide-react'
+import { BookOpen, ChevronRight, ChevronLeft, Check, ChevronUp, ChevronDown, Play, Pause, Repeat, Eye, EyeOff, Languages, BookText } from 'lucide-react'
 import {
   getPageWithLines,
   SURAH_INFO,
@@ -53,6 +53,13 @@ export default function HomePage({ settings, updateSettings }) {
   const [loopAudio, setLoopAudio] = useState(false) // Loop audio playback
   const [hideText, setHideText] = useState(false) // Hide Arabic text for memorization
   const [hiddenVerses, setHiddenVerses] = useState(new Set()) // Verses to hide (empty = hide all when hideText is true)
+  const [showTranslation, setShowTranslation] = useState(false) // Show French translation
+  const [translations, setTranslations] = useState({}) // Cache: { verseKey: translationText }
+  const [loadingTranslation, setLoadingTranslation] = useState(false)
+  const [showTafsir, setShowTafsir] = useState(false) // Show Tafsir
+  const [tafsirData, setTafsirData] = useState({}) // Cache: { verseKey: { ar: text, en: text } }
+  const [loadingTafsir, setLoadingTafsir] = useState(false)
+  const [tafsirInEnglish, setTafsirInEnglish] = useState(false) // Toggle Arabic/English for Ibn Kathir
   const miniPlayerRef = useRef(null)
 
   // Mini player state (page 2 - for 2-pages mode)
@@ -192,6 +199,87 @@ export default function HomePage({ settings, updateSettings }) {
   const clearSelection = () => {
     setSelectedVerses(new Set())
   }
+
+  // Fetch French translation for current portion verses
+  const fetchTranslations = useCallback(async (verseKeys) => {
+    if (!verseKeys || verseKeys.length === 0) return
+
+    // Filter out verses we already have translations for
+    const missingKeys = verseKeys.filter(key => !translations[key])
+    if (missingKeys.length === 0) return
+
+    setLoadingTranslation(true)
+    try {
+      // Fetch translations for each verse (Hamidullah = ID 31)
+      const newTranslations = { ...translations }
+
+      for (const verseKey of missingKeys) {
+        const response = await fetch(
+          `https://api.quran.com/api/v4/verses/by_key/${verseKey}?translations=31`
+        )
+        if (response.ok) {
+          const data = await response.json()
+          if (data.verse?.translations?.[0]?.text) {
+            // Remove HTML tags from translation
+            newTranslations[verseKey] = data.verse.translations[0].text.replace(/<[^>]*>/g, '')
+          }
+        }
+      }
+
+      setTranslations(newTranslations)
+    } catch (err) {
+      console.error('Error fetching translations:', err)
+    } finally {
+      setLoadingTranslation(false)
+    }
+  }, [translations])
+
+  // Tafsir source IDs (Ibn Kathir by default, configurable in settings)
+  const TAFSIR_IDS = {
+    'ibn-kathir': { ar: 14, en: 169, name: 'Ibn Kathir', hasEnglish: true },
+    'tabari': { ar: 15, en: null, name: 'Tabari', hasEnglish: false },
+    'qurtubi': { ar: 90, en: null, name: 'Qurtubi', hasEnglish: false }
+  }
+
+  const tafsirSource = settings.tafsirSource || 'ibn-kathir'
+  const currentTafsir = TAFSIR_IDS[tafsirSource]
+
+  // Fetch Tafsir for verses
+  const fetchTafsir = useCallback(async (verseKeys, forceEnglish = false) => {
+    if (!verseKeys || verseKeys.length === 0) return
+
+    const lang = forceEnglish && currentTafsir.hasEnglish ? 'en' : 'ar'
+    const tafsirId = lang === 'en' ? currentTafsir.en : currentTafsir.ar
+
+    // Check which verses need fetching
+    const missingKeys = verseKeys.filter(key => !tafsirData[key]?.[lang])
+    if (missingKeys.length === 0) return
+
+    setLoadingTafsir(true)
+    try {
+      const newTafsirData = { ...tafsirData }
+
+      for (const verseKey of missingKeys) {
+        const response = await fetch(
+          `https://api.quran.com/api/v4/tafsirs/${tafsirId}/by_ayah/${verseKey}`
+        )
+        if (response.ok) {
+          const data = await response.json()
+          if (data.tafsir?.text) {
+            if (!newTafsirData[verseKey]) newTafsirData[verseKey] = {}
+            // Remove HTML tags
+            newTafsirData[verseKey][lang] = data.tafsir.text.replace(/<[^>]*>/g, '')
+          }
+        }
+      }
+
+      setTafsirData(newTafsirData)
+    } catch (err) {
+      console.error('Error fetching tafsir:', err)
+    } finally {
+      setLoadingTafsir(false)
+    }
+  }, [tafsirData, currentTafsir])
 
   const loadPortion = useCallback(async () => {
     try {
@@ -452,6 +540,14 @@ export default function HomePage({ settings, updateSettings }) {
   useEffect(() => {
     loadPortion()
   }, [loadPortion])
+
+  // Reset translation, tafsir, and hide text when changing portion
+  useEffect(() => {
+    setShowTranslation(false)
+    setShowTafsir(false)
+    setHideText(false)
+    setHiddenVerses(new Set())
+  }, [currentPage, portionIndex])
 
   // Navigate to next portion
   const handleNext = () => {
@@ -1546,29 +1642,83 @@ export default function HomePage({ settings, updateSettings }) {
             </div>
           ) : (
             <div className={`rounded-2xl p-6 ${settings.darkMode ? 'bg-slate-800' : 'bg-white'} shadow-lg relative`}>
-              {/* Hide Text Button - positioned on the left side of the text */}
-              <button
-                onClick={() => {
-                  const newHideText = !hideText
-                  if (newHideText) {
-                    // Activer le mode cacher: stocker les versets sélectionnés puis désélectionner
-                    setHiddenVerses(new Set(selectedVerses))
-                    setSelectedVerses(new Set())
-                  } else {
-                    // Désactiver le mode cacher: réinitialiser
-                    setHiddenVerses(new Set())
-                  }
-                  setHideText(newHideText)
-                }}
-                className={`absolute left-3 top-3 w-10 h-10 rounded-xl flex items-center justify-center transition-all z-10 ${
-                  hideText
-                    ? 'bg-amber-100 text-amber-600 dark:bg-amber-900/50 dark:text-amber-400 shadow-lg'
-                    : `${settings.darkMode ? 'bg-slate-700 hover:bg-slate-600 text-gray-400' : 'bg-gray-100 hover:bg-gray-200 text-gray-500'} shadow`
-                }`}
-                title={hideText ? "Afficher le texte" : "Cacher le texte"}
-              >
-                {hideText ? <EyeOff className="w-5 h-5" /> : <Eye className="w-5 h-5" />}
-              </button>
+              {/* Action buttons - positioned on the left side, lower when cut verse button is visible */}
+              <div className={`absolute left-3 flex flex-col gap-2 z-10 ${cutVerse && cutVerseLines.length > 0 ? 'top-20' : 'top-3'}`}>
+                {/* Hide Text Button */}
+                <button
+                  onClick={() => {
+                    const newHideText = !hideText
+                    if (newHideText) {
+                      setHiddenVerses(new Set(selectedVerses))
+                    } else {
+                      setHiddenVerses(new Set())
+                    }
+                    setHideText(newHideText)
+                  }}
+                  className={`w-10 h-10 rounded-xl flex items-center justify-center transition-all ${
+                    hideText
+                      ? 'bg-amber-100 text-amber-600 dark:bg-amber-900/50 dark:text-amber-400 shadow-lg'
+                      : `${settings.darkMode ? 'bg-slate-700 hover:bg-slate-600 text-gray-400' : 'bg-gray-100 hover:bg-gray-200 text-gray-500'} shadow`
+                  }`}
+                  title={hideText ? "Afficher le texte" : "Cacher le texte"}
+                >
+                  {hideText ? <EyeOff className="w-5 h-5" /> : <Eye className="w-5 h-5" />}
+                </button>
+
+                {/* Translation Button */}
+                <button
+                  onClick={async () => {
+                    const newShowTranslation = !showTranslation
+                    setShowTranslation(newShowTranslation)
+                    if (newShowTranslation) {
+                      // Fetch translations for current portion verses
+                      const verseKeys = verses.map(v => v.verseKey)
+                      await fetchTranslations(verseKeys)
+                    }
+                  }}
+                  disabled={loadingTranslation}
+                  className={`w-10 h-10 rounded-xl flex items-center justify-center transition-all ${
+                    showTranslation
+                      ? 'bg-blue-100 text-blue-600 dark:bg-blue-900/50 dark:text-blue-400 shadow-lg'
+                      : `${settings.darkMode ? 'bg-slate-700 hover:bg-slate-600 text-gray-400' : 'bg-gray-100 hover:bg-gray-200 text-gray-500'} shadow`
+                  }`}
+                  title={showTranslation ? "Masquer la traduction" : "Afficher la traduction (Hamidullah)"}
+                >
+                  {loadingTranslation ? (
+                    <div className="w-5 h-5 border-2 border-current border-t-transparent rounded-full animate-spin" />
+                  ) : (
+                    <Languages className="w-5 h-5" />
+                  )}
+                </button>
+
+                {/* Tafsir Button */}
+                <button
+                  onClick={async () => {
+                    const newShowTafsir = !showTafsir
+                    setShowTafsir(newShowTafsir)
+                    if (newShowTafsir) {
+                      // If verses selected, show tafsir for selection only, else show for portion
+                      const verseKeys = selectedVerses.size > 0
+                        ? Array.from(selectedVerses)
+                        : verses.map(v => v.verseKey)
+                      await fetchTafsir(verseKeys, tafsirInEnglish)
+                    }
+                  }}
+                  disabled={loadingTafsir}
+                  className={`w-10 h-10 rounded-xl flex items-center justify-center transition-all ${
+                    showTafsir
+                      ? 'bg-emerald-100 text-emerald-600 dark:bg-emerald-900/50 dark:text-emerald-400 shadow-lg'
+                      : `${settings.darkMode ? 'bg-slate-700 hover:bg-slate-600 text-gray-400' : 'bg-gray-100 hover:bg-gray-200 text-gray-500'} shadow`
+                  }`}
+                  title={showTafsir ? "Masquer le Tafsir" : `Afficher le Tafsir (${currentTafsir.name})`}
+                >
+                  {loadingTafsir ? (
+                    <div className="w-5 h-5 border-2 border-current border-t-transparent rounded-full animate-spin" />
+                  ) : (
+                    <BookText className="w-5 h-5" />
+                  )}
+                </button>
+              </div>
 
               {/* Toggle button for cut verse (verse starting before this portion) */}
               {cutVerse && cutVerseLines.length > 0 && (
@@ -1774,6 +1924,135 @@ export default function HomePage({ settings, updateSettings }) {
                 </div>
               )}
 
+              {/* Preview of next page (only first LINE) */}
+              {previewLines.length > 0 && (
+                <div className={`mt-6 pt-4 border-t border-dashed ${settings.darkMode ? 'border-slate-600' : 'border-gray-300'}`}>
+                  <p className={`text-xs mb-2 text-center ${settings.darkMode ? 'text-gray-500' : 'text-gray-400'}`}>
+                    Première ligne page suivante :
+                  </p>
+                  <div
+                    className={`text-2xl md:text-3xl arabic-text ${settings.tajweedEnabled ? 'tajweed-text' : ''}`}
+                    style={{ fontFamily: getFontFamily() }}
+                  >
+                    {previewLines.map((line) => (
+                      <div
+                        key={`preview-line-${line.lineNumber}`}
+                        className="mushaf-line text-center mb-2 text-red-500 dark:text-red-400 opacity-70"
+                        dir="rtl"
+                      >
+                        {line.words.map((word, wordIdx) => (
+                          <span key={`${word.verseKey}-${word.position}-preview`}>
+                            {word.isEndMarker ? (
+                              renderVerseMarker(word.verseNumber)
+                            ) : settings.tajweedEnabled && word.tajweedHtml ? (
+                              <span dangerouslySetInnerHTML={{ __html: word.tajweedHtml }} />
+                            ) : (
+                              word.text
+                            )}
+                            {wordIdx < line.words.length - 1 && !word.isEndMarker && ' '}
+                          </span>
+                        ))}
+                        <span className="text-sm mr-2">...</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* French Translation Display */}
+              {showTranslation && verses.length > 0 && (() => {
+                const tafsirSize = settings.tafsirFontSize || 'medium'
+                const textSizeClass = tafsirSize === 'small' ? 'text-sm' : tafsirSize === 'large' ? 'text-lg' : 'text-base'
+                return (
+                  <div className={`mt-6 pt-4 border-t-2 ${settings.darkMode ? 'border-slate-600' : 'border-gray-200'}`}>
+                    <p className={`text-sm font-semibold mb-3 ${settings.darkMode ? 'text-sky-400' : 'text-sky-600'}`}>
+                      Traduction française (Hamidullah)
+                    </p>
+                    <div className="space-y-3">
+                      {(selectedVerses.size > 0 ? Array.from(selectedVerses) : verses.map(v => v.verseKey)).map((verseKey) => (
+                        <div
+                          key={`trans-${verseKey}`}
+                          className={`p-3 rounded-lg ${settings.darkMode ? 'bg-slate-700/50' : 'bg-sky-50/70'}`}
+                        >
+                          <span className={`text-xs font-medium ${settings.darkMode ? 'text-sky-400' : 'text-sky-600'}`}>
+                            {verseKey}
+                          </span>
+                          <p
+                            className={`mt-1 ${textSizeClass} leading-relaxed ${settings.darkMode ? 'text-gray-300' : 'text-gray-700'}`}
+                            style={{ fontFamily: "'Georgia', 'Times New Roman', serif" }}
+                          >
+                            {translations[verseKey] || (
+                              <span className="italic text-gray-400">Chargement...</span>
+                            )}
+                          </p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )
+              })()}
+
+              {/* Tafsir Display */}
+              {showTafsir && verses.length > 0 && (() => {
+                const tafsirSize = settings.tafsirFontSize || 'medium'
+                const textSizeClass = tafsirSize === 'small' ? 'text-sm' : tafsirSize === 'large' ? 'text-lg' : 'text-base'
+                const arabicSizeClass = tafsirSize === 'small' ? 'text-base' : tafsirSize === 'large' ? 'text-xl' : 'text-lg'
+                return (
+                  <div className={`mt-6 pt-4 border-t-2 ${settings.darkMode ? 'border-slate-600' : 'border-gray-200'}`}>
+                    <div className="flex items-center justify-between mb-3">
+                      <p className={`text-sm font-semibold ${settings.darkMode ? 'text-emerald-400' : 'text-emerald-600'}`}>
+                        Tafsir {currentTafsir.name} {tafsirInEnglish && currentTafsir.hasEnglish ? '(English)' : '(العربية)'}
+                      </p>
+                      {/* English toggle for Ibn Kathir */}
+                      {currentTafsir.hasEnglish && (
+                        <button
+                          onClick={async () => {
+                            const newLang = !tafsirInEnglish
+                            setTafsirInEnglish(newLang)
+                            const verseKeys = selectedVerses.size > 0
+                              ? Array.from(selectedVerses)
+                              : verses.map(v => v.verseKey)
+                            await fetchTafsir(verseKeys, newLang)
+                          }}
+                          className={`px-3 py-1 text-xs rounded-full transition-all ${
+                            tafsirInEnglish
+                              ? 'bg-emerald-100 text-emerald-700 dark:bg-emerald-900/50 dark:text-emerald-400'
+                              : settings.darkMode ? 'bg-slate-600 text-gray-300' : 'bg-gray-200 text-gray-600'
+                          }`}
+                        >
+                          {tafsirInEnglish ? 'العربية' : 'English'}
+                        </button>
+                      )}
+                    </div>
+                    <div className="space-y-4">
+                      {(selectedVerses.size > 0 ? Array.from(selectedVerses) : verses.map(v => v.verseKey)).map((verseKey) => {
+                        const lang = tafsirInEnglish && currentTafsir.hasEnglish ? 'en' : 'ar'
+                        const tafsirText = tafsirData[verseKey]?.[lang]
+                        return (
+                          <div
+                            key={`tafsir-${verseKey}`}
+                            className={`p-4 rounded-lg ${settings.darkMode ? 'bg-slate-700/50' : 'bg-emerald-50/50'}`}
+                          >
+                            <span className={`text-xs font-medium ${settings.darkMode ? 'text-emerald-400' : 'text-emerald-600'}`}>
+                              {verseKey}
+                            </span>
+                            <div
+                              className={`mt-2 ${lang === 'ar' ? arabicSizeClass : textSizeClass} leading-relaxed ${settings.darkMode ? 'text-gray-300' : 'text-gray-700'} ${lang === 'ar' ? 'text-right' : ''}`}
+                              dir={lang === 'ar' ? 'rtl' : 'ltr'}
+                              style={{ fontFamily: lang === 'ar' ? "'Amiri', 'Scheherazade New', serif" : "'Georgia', 'Times New Roman', serif", lineHeight: lang === 'ar' ? '2.2' : '1.8' }}
+                            >
+                              {tafsirText || (
+                                <span className="italic text-gray-400">Chargement...</span>
+                              )}
+                            </div>
+                          </div>
+                        )
+                      })}
+                    </div>
+                  </div>
+                )
+              })()}
+
               {/* Second page for 2-pages mode - with separate audio player */}
               {portionSize === '2' && secondPageLines.length > 0 && (
                 <div className={`mt-6 pt-6 border-t-2 ${settings.darkMode ? 'border-slate-600' : 'border-gray-300'}`}>
@@ -1962,41 +2241,6 @@ export default function HomePage({ settings, updateSettings }) {
                             </span>
                           )
                         })}
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )}
-
-              {/* Preview of next page (only first LINE) */}
-              {previewLines.length > 0 && (
-                <div className={`mt-6 pt-4 border-t border-dashed ${settings.darkMode ? 'border-slate-600' : 'border-gray-300'}`}>
-                  <p className={`text-xs mb-2 text-center ${settings.darkMode ? 'text-gray-500' : 'text-gray-400'}`}>
-                    Première ligne page suivante :
-                  </p>
-                  <div
-                    className={`text-2xl md:text-3xl arabic-text ${settings.tajweedEnabled ? 'tajweed-text' : ''}`}
-                    style={{ fontFamily: getFontFamily() }}
-                  >
-                    {previewLines.map((line) => (
-                      <div
-                        key={`preview-line-${line.lineNumber}`}
-                        className="mushaf-line text-center mb-2 text-red-500 dark:text-red-400 opacity-70"
-                        dir="rtl"
-                      >
-                        {line.words.map((word, wordIdx) => (
-                          <span key={`${word.verseKey}-${word.position}-preview`}>
-                            {word.isEndMarker ? (
-                              renderVerseMarker(word.verseNumber)
-                            ) : settings.tajweedEnabled && word.tajweedHtml ? (
-                              <span dangerouslySetInnerHTML={{ __html: word.tajweedHtml }} />
-                            ) : (
-                              word.text
-                            )}
-                            {wordIdx < line.words.length - 1 && !word.isEndMarker && ' '}
-                          </span>
-                        ))}
-                        <span className="text-sm mr-2">...</span>
                       </div>
                     ))}
                   </div>
