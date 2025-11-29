@@ -1,15 +1,21 @@
 import { useState, useRef, useEffect } from 'react'
-import { Play, Pause, SkipBack, SkipForward, Volume2, VolumeX, Repeat } from 'lucide-react'
+import { Play, Pause, SkipBack, SkipForward, Volume2, VolumeX, Repeat, RefreshCw } from 'lucide-react'
 import { getAudioUrl, RECITERS } from '../services/quranApi'
 
-export default function AudioPlayer({ ayahs, reciterId = 'ar.alafasy', darkMode }) {
+export default function AudioPlayer({
+  ayahs,
+  reciterId = 'ar.alafasy',
+  darkMode,
+  loopAll = false,
+  onLoopChange = null
+}) {
   const [isPlaying, setIsPlaying] = useState(false)
   const [currentAyahIndex, setCurrentAyahIndex] = useState(0)
   const [progress, setProgress] = useState(0)
   const [duration, setDuration] = useState(0)
   const [volume, setVolume] = useState(1)
   const [isMuted, setIsMuted] = useState(false)
-  const [isRepeat, setIsRepeat] = useState(false)
+  const [isRepeatOne, setIsRepeatOne] = useState(false) // Répéter le verset actuel
   const [isLoading, setIsLoading] = useState(false)
 
   const audioRef = useRef(null)
@@ -67,15 +73,24 @@ export default function AudioPlayer({ ayahs, reciterId = 'ar.alafasy', darkMode 
   }
 
   const handleEnded = () => {
-    if (isRepeat) {
+    if (isRepeatOne) {
+      // Répéter le verset actuel
       audioRef.current.currentTime = 0
       audioRef.current.play()
     } else if (currentAyahIndex < ayahs.length - 1) {
+      // Passer au verset suivant
       setCurrentAyahIndex(prev => prev + 1)
       setTimeout(() => {
         audioRef.current?.play()
       }, 300)
+    } else if (loopAll) {
+      // Boucle sur toute la sélection: revenir au début
+      setCurrentAyahIndex(0)
+      setTimeout(() => {
+        audioRef.current?.play()
+      }, 300)
     } else {
+      // Fin de la lecture
       setIsPlaying(false)
       setCurrentAyahIndex(0)
     }
@@ -154,18 +169,34 @@ export default function AudioPlayer({ ayahs, reciterId = 'ar.alafasy', darkMode 
       </div>
 
       {/* Controls */}
-      <div className="flex items-center justify-center gap-4">
-        {/* Repeat */}
+      <div className="flex items-center justify-center gap-3">
+        {/* Repeat One (verset actuel) */}
         <button
-          onClick={() => setIsRepeat(!isRepeat)}
+          onClick={() => setIsRepeatOne(!isRepeatOne)}
+          title="Répéter le verset"
           className={`p-2 rounded-full transition-colors ${
-            isRepeat
+            isRepeatOne
               ? 'bg-primary-100 text-primary-600 dark:bg-primary-900/50 dark:text-primary-400'
               : 'hover:bg-gray-100 dark:hover:bg-slate-700 text-gray-500 dark:text-gray-400'
           }`}
         >
           <Repeat className="w-4 h-4" />
         </button>
+
+        {/* Loop All (boucle globale) */}
+        {onLoopChange && (
+          <button
+            onClick={() => onLoopChange(!loopAll)}
+            title="Jouer en boucle"
+            className={`p-2 rounded-full transition-colors ${
+              loopAll
+                ? 'bg-green-100 text-green-600 dark:bg-green-900/50 dark:text-green-400'
+                : 'hover:bg-gray-100 dark:hover:bg-slate-700 text-gray-500 dark:text-gray-400'
+            }`}
+          >
+            <RefreshCw className="w-4 h-4" />
+          </button>
+        )}
 
         {/* Previous */}
         <button

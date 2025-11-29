@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react'
-import { BookOpen, ChevronRight, ChevronLeft, Check } from 'lucide-react'
+import { BookOpen, ChevronRight, ChevronLeft, Check, List, Music } from 'lucide-react'
 import {
   getPageWithLines,
   SURAH_INFO,
@@ -29,6 +29,9 @@ export default function HomePage({ settings, updateSettings }) {
   const [portionInfo, setPortionInfo] = useState(null)
   const [highlightedAyah, setHighlightedAyah] = useState(null)
   const [audioKey, setAudioKey] = useState(0)
+  const [selectedVerses, setSelectedVerses] = useState(new Set()) // Versets sélectionnés pour audio
+  const [audioMode, setAudioMode] = useState('portion') // 'portion' ou 'selection'
+  const [loopAudio, setLoopAudio] = useState(false) // Lecture en boucle
 
   const currentPage = settings.currentPage || 1
   const portionIndex = settings.currentPortionIndex || 0
@@ -89,6 +92,37 @@ export default function HomePage({ settings, updateSettings }) {
     return portionIndex >= config.portions - 1
   }
 
+  // Toggle verse selection for audio (using verseKey for unique identification)
+  const toggleVerseSelection = (verseKey) => {
+    setSelectedVerses(prev => {
+      const newSet = new Set(prev)
+      if (newSet.has(verseKey)) {
+        newSet.delete(verseKey)
+      } else {
+        newSet.add(verseKey)
+      }
+      return newSet
+    })
+    // Auto-switch to selection mode when selecting verses
+    if (!selectedVerses.has(verseKey)) {
+      setAudioMode('selection')
+    }
+  }
+
+  // Clear all selections
+  const clearSelection = () => {
+    setSelectedVerses(new Set())
+  }
+
+  // Get verses for audio based on mode
+  const getAudioVerses = () => {
+    const portionVerses = verses.filter(v => !v.isSecondPage)
+    if (audioMode === 'selection' && selectedVerses.size > 0) {
+      return portionVerses.filter(v => selectedVerses.has(v.verseKey))
+    }
+    return portionVerses
+  }
+
   const loadPortion = useCallback(async () => {
     try {
       setLoading(true)
@@ -96,6 +130,7 @@ export default function HomePage({ settings, updateSettings }) {
       setOverflowVerse(null)
       setPreviewVerses([])
       setPortionLines([])
+      setSelectedVerses(new Set()) // Reset selection when portion changes
 
       // Handle special pages (1 and 2)
       if (SPECIAL_PAGES.includes(currentPage) && portionSize !== '2') {
@@ -566,10 +601,11 @@ export default function HomePage({ settings, updateSettings }) {
                         key={`${word.verseKey}-${word.position}`}
                         className={`
                           inline cursor-pointer transition-all duration-200
-                          ${highlightedAyah === word.verseNumber ? 'verse-highlight' : ''}
+                          ${selectedVerses.has(word.verseKey) ? 'verse-selected' : ''}
+                          ${highlightedAyah === word.verseKey ? 'verse-highlight' : ''}
                           ${settings.darkMode ? 'text-gray-100' : 'text-gray-800'}
                         `}
-                        onClick={() => setHighlightedAyah(word.verseNumber)}
+                        onClick={() => toggleVerseSelection(word.verseKey)}
                       >
                         {word.isEndMarker ? (
                           renderVerseMarker(word.verseNumber)
@@ -620,10 +656,11 @@ export default function HomePage({ settings, updateSettings }) {
                         key={ayah.verseKey || ayah.number}
                         className={`
                           inline transition-all duration-200 cursor-pointer
-                          ${highlightedAyah === ayah.number ? 'verse-highlight' : ''}
+                          ${selectedVerses.has(ayah.verseKey) ? 'verse-selected' : ''}
+                          ${highlightedAyah === ayah.verseKey ? 'verse-highlight' : ''}
                           ${settings.darkMode ? 'text-gray-100' : 'text-gray-800'}
                         `}
-                        onClick={() => setHighlightedAyah(ayah.number)}
+                        onClick={() => toggleVerseSelection(ayah.verseKey)}
                       >
                         {settings.tajweedEnabled ? (
                           <span dangerouslySetInnerHTML={{ __html: ayah.text.replace(/<span class=end>.*?<\/span>/g, '') }} />
@@ -710,11 +747,63 @@ export default function HomePage({ settings, updateSettings }) {
           <h3 className={`text-lg font-semibold mb-4 ${settings.darkMode ? 'text-white' : 'text-gray-800'}`}>
             Écouter la récitation
           </h3>
+
+          {/* Audio Mode Selection */}
+          <div className={`mb-4 p-3 rounded-xl ${settings.darkMode ? 'bg-slate-700' : 'bg-gray-100'}`}>
+            <div className="flex flex-col gap-2">
+              {/* Mode: Portion entière */}
+              <button
+                onClick={() => setAudioMode('portion')}
+                className={`flex items-center gap-2 px-3 py-2 rounded-lg text-sm transition-colors ${
+                  audioMode === 'portion'
+                    ? 'bg-primary-500 text-white'
+                    : settings.darkMode
+                      ? 'bg-slate-600 text-gray-300 hover:bg-slate-500'
+                      : 'bg-white text-gray-700 hover:bg-gray-200'
+                }`}
+              >
+                <Music className="w-4 h-4" />
+                <span>Toute la portion</span>
+              </button>
+
+              {/* Mode: Sélection */}
+              <button
+                onClick={() => setAudioMode('selection')}
+                className={`flex items-center gap-2 px-3 py-2 rounded-lg text-sm transition-colors ${
+                  audioMode === 'selection'
+                    ? 'bg-primary-500 text-white'
+                    : settings.darkMode
+                      ? 'bg-slate-600 text-gray-300 hover:bg-slate-500'
+                      : 'bg-white text-gray-700 hover:bg-gray-200'
+                }`}
+              >
+                <List className="w-4 h-4" />
+                <span>Versets sélectionnés ({selectedVerses.size})</span>
+              </button>
+            </div>
+
+            {/* Clear selection button */}
+            {selectedVerses.size > 0 && (
+              <button
+                onClick={clearSelection}
+                className={`mt-2 w-full text-xs py-1 rounded ${
+                  settings.darkMode
+                    ? 'text-gray-400 hover:text-gray-200'
+                    : 'text-gray-500 hover:text-gray-700'
+                }`}
+              >
+                Effacer la sélection
+              </button>
+            )}
+          </div>
+
           <AudioPlayer
-            key={audioKey}
-            ayahs={verses.filter(v => !v.isSecondPage)}
+            key={`${audioKey}-${audioMode}-${selectedVerses.size}`}
+            ayahs={getAudioVerses()}
             reciterId={settings.reciter}
             darkMode={settings.darkMode}
+            loopAll={loopAudio}
+            onLoopChange={setLoopAudio}
           />
         </div>
       </div>

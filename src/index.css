@@ -322,6 +322,17 @@ html {
   background-color: rgba(252, 194, 1, 0.25);
 }
 
+/* Verse selected for audio playback */
+.verse-selected {
+  background-color: rgba(59, 130, 246, 0.25);
+  border-radius: 2px;
+}
+
+/* Dark mode verse selected */
+.dark .verse-selected {
+  background-color: rgba(59, 130, 246, 0.35);
+}
+
 /* Audio player styling */
 .audio-progress {
   -webkit-appearance: none;
