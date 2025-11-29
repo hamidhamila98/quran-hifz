@@ -25,8 +25,10 @@ export default function HomePage({ settings, updateSettings }) {
   const [verses, setVerses] = useState([])
   const [portionLines, setPortionLines] = useState([]) // Lignes de la portion pour affichage Mushaf
   const [secondPageLines, setSecondPageLines] = useState([]) // Lignes de la 2ème page (mode 2 pages)
-  const [overflowVerse, setOverflowVerse] = useState(null) // Verset dépassant
+  const [overflowVerse, setOverflowVerse] = useState(null) // Verset dépassant (fin de portion)
   const [overflowLines, setOverflowLines] = useState([]) // Lignes du verset dépassant
+  const [cutVerse, setCutVerse] = useState(null) // Verset coupé (début de portion)
+  const [cutVerseLines, setCutVerseLines] = useState([]) // Lignes du verset coupé (avant la portion)
   const [previewVerses, setPreviewVerses] = useState([]) // Aperçu page suivante
   const [previewLines, setPreviewLines] = useState([]) // Lignes de l'aperçu page suivante
   const [loading, setLoading] = useState(true)
@@ -172,6 +174,8 @@ export default function HomePage({ settings, updateSettings }) {
       setError(null)
       setOverflowVerse(null)
       setOverflowLines([])
+      setCutVerse(null)
+      setCutVerseLines([])
       setPreviewVerses([])
       setPreviewLines([])
       setPortionLines([])
@@ -242,10 +246,11 @@ export default function HomePage({ settings, updateSettings }) {
 
       // Collect verses for the portion lines
       // Include ALL verses that touch the portion lines (start OR end within)
-      // Only the LAST verse that extends beyond goes to overflow
+      // Track: verse cut from previous portion (starts before) and overflow verse (ends after)
       const portionVerses = []
       const seenKeys = new Set()
       let lastOverflowVerse = null
+      let firstCutVerse = null // Verset qui commence AVANT notre portion
 
       for (let line = startLine; line <= endLine; line++) {
         const versesOnLine = lineMap.get(line) || []
@@ -260,6 +265,10 @@ export default function HomePage({ settings, updateSettings }) {
             const touchesPortion = verse.lineNumbers.some(l => l >= startLine && l <= endLine)
 
             if (touchesPortion) {
+              // If verse starts before our portion (cut from previous), track it
+              if (minLine < startLine && !firstCutVerse) {
+                firstCutVerse = verse
+              }
               // If verse extends beyond our portion (ends after endLine), track as potential overflow
               if (maxLine > endLine) {
                 lastOverflowVerse = verse
@@ -282,6 +291,24 @@ export default function HomePage({ settings, updateSettings }) {
       }))
 
       setVerses(transformedVerses)
+
+      // Set cut verse if exists - extract lines that are BEFORE our portion
+      if (firstCutVerse) {
+        setCutVerse({
+          number: firstCutVerse.id,
+          text: firstCutVerse.text,
+          numberInSurah: firstCutVerse.verseNumber,
+          verseKey: firstCutVerse.verseKey
+        })
+        // Extract lines for the cut verse (lines before startLine)
+        const cutLinesData = (pageData.lines || []).filter(
+          line => line.lineNumber < startLine && firstCutVerse.lineNumbers.includes(line.lineNumber)
+        ).map(line => ({
+          ...line,
+          words: line.words.filter(w => w.verseKey === firstCutVerse.verseKey)
+        }))
+        setCutVerseLines(cutLinesData)
+      }
 
       // Set overflow verse if exists - extract lines that are beyond our portion
       if (lastOverflowVerse) {
@@ -746,6 +773,40 @@ export default function HomePage({ settings, updateSettings }) {
             </div>
           ) : (
             <div className={`rounded-2xl p-6 ${settings.darkMode ? 'bg-slate-800' : 'bg-white'} shadow-lg`}>
+              {/* Cut verse from previous portion (verse starting before this portion) */}
+              {cutVerse && cutVerseLines.length > 0 && (
+                <div className={`mb-4 pb-4 border-b border-dashed ${settings.darkMode ? 'border-slate-600' : 'border-gray-300'}`}>
+                  <p className={`text-xs mb-2 text-center ${settings.darkMode ? 'text-blue-400' : 'text-blue-600'}`}>
+                    Début du verset (portion précédente) :
+                  </p>
+                  <div
+                    className={`text-2xl md:text-3xl arabic-text ${settings.tajweedEnabled ? 'tajweed-text' : ''}`}
+                    style={{ fontFamily: getFontFamily() }}
+                  >
+                    {cutVerseLines.map((line) => (
+                      <div
+                        key={`cut-line-${line.lineNumber}`}
+                        className={`mushaf-line text-center mb-2 ${settings.darkMode ? 'text-blue-200' : 'text-blue-700'} opacity-80`}
+                        dir="rtl"
+                      >
+                        {line.words.map((word, wordIdx) => (
+                          <span key={`${word.verseKey}-${word.position}-cut`}>
+                            {word.isEndMarker ? (
+                              renderVerseMarker(word.verseNumber)
+                            ) : settings.tajweedEnabled && word.tajweedHtml ? (
+                              <span dangerouslySetInnerHTML={{ __html: word.tajweedHtml }} />
+                            ) : (
+                              word.text
+                            )}
+                            {wordIdx < line.words.length - 1 && !word.isEndMarker && ' '}
+                          </span>
+                        ))}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
               {/* Line-by-line display with tajweed */}
               <div
                 className={`text-2xl md:text-3xl arabic-text ${settings.tajweedEnabled ? 'tajweed-text' : ''}`}

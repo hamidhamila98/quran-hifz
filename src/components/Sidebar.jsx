@@ -122,7 +122,7 @@ export default function Sidebar({ isOpen, setIsOpen, settings, updateSettings })
           <div className={`flex items-center justify-between px-3 py-2 rounded-xl ${darkMode ? 'bg-slate-700/50' : 'bg-gray-50'}`}>
             <div className="flex items-center gap-2">
               <Palette className="w-4 h-4 text-primary-500" />
-              <span className={`text-sm font-medium ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>Tajweed</span>
+              <span className={`text-sm font-medium ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>Tajweed (BETA)</span>
             </div>
             <button
               onClick={() => updateSettings({ tajweedEnabled: !settings.tajweedEnabled })}
