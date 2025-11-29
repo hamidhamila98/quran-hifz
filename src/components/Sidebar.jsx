@@ -43,10 +43,10 @@ const ARABIC_FONTS = [
 ]
 
 const RECITERS = [
-  { id: 'ar.husary', name: 'Al-Husary', type: 'Hafs' },
-  { id: 'ar.alafasy', name: 'Alafasy', type: 'Hafs' },
-  { id: 'Warsh_Abdul_Basit_128kbps', name: 'Abdul Basit', type: 'Warsh' },
-  { id: 'Warsh_Ibrahim_Al-Dosary_128kbps', name: 'Al-Dosary', type: 'Warsh' },
+  { id: 'ar.minshawimujawwad', name: 'Al-Minshawi', type: 'Hafs' },
+  { id: 'ar.abdulbasitmujawwad', name: 'Abdul Basit', type: 'Hafs' },
+  { id: 'ar.husarymujawwad', name: 'Al-Husary', type: 'Hafs' },
+  { id: 'ar.dosarywarsh', name: 'Ibrahim Al-Dosary', type: 'Warsh' },
 ]
 
 const PORTION_SIZES = [
@@ -216,7 +216,7 @@ export default function Sidebar({ isOpen, setIsOpen, settings, updateSettings })
               <ChevronDown className={`w-4 h-4 text-gray-500 transition-transform ${fontDropdownOpen ? 'rotate-180' : ''}`} />
             </button>
             {fontDropdownOpen && (
-              <div className={`absolute bottom-full left-0 right-0 mb-1 rounded-xl shadow-lg border overflow-hidden z-50 ${
+              <div className={`absolute top-full left-0 right-0 mt-1 rounded-xl shadow-lg border overflow-hidden z-50 max-h-64 overflow-y-auto ${
                 darkMode ? 'bg-slate-800 border-slate-700' : 'bg-white border-gray-100'
               }`}>
                 {ARABIC_FONTS.map((font) => (

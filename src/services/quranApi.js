@@ -9,11 +9,10 @@ const AUDIO_CDN_BASE = 'https://cdn.islamic.network/quran/audio';
 
 // Available reciters with their identifiers
 export const RECITERS = [
-  { id: 'ar.alafasy', name: 'Mishary Rashid Alafasy', everyAyahId: 'Alafasy_128kbps' },
-  { id: 'ar.abdulbasitmurattal', name: 'Abdul Basit (Murattal)', everyAyahId: 'Abdul_Basit_Murattal_192kbps' },
-  { id: 'ar.husary', name: 'Mahmoud Khalil Al-Husary', everyAyahId: 'Husary_128kbps' },
-  { id: 'ar.minshawi', name: 'Mohamed Siddiq El-Minshawi', everyAyahId: 'Minshawy_Murattal_128kbps' },
-  { id: 'ar.abdulsamad', name: 'Abdul Samad', everyAyahId: 'AbdulSamad_64kbps_QuranExplorer.Com' },
+  { id: 'ar.minshawimujawwad', name: 'Al-Minshawi (Hafs)', everyAyahId: 'Minshawy_Mujawwad_192kbps' },
+  { id: 'ar.abdulbasitmujawwad', name: 'Abdul Basit (Hafs)', everyAyahId: 'Abdul_Basit_Mujawwad_128kbps' },
+  { id: 'ar.husarymujawwad', name: 'Al-Husary (Hafs)', everyAyahId: 'Husary_128kbps_Mujawwad' },
+  { id: 'ar.dosarywarsh', name: 'Ibrahim Al-Dosary (Warsh)', everyAyahId: 'warsh/warsh_ibrahim_aldosary_128kbps' },
 ];
 
 // Tajweed CSS classes from Quran.com API

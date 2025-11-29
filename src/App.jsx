@@ -12,13 +12,16 @@ const defaultSettings = {
   currentSurah: 1,
   currentAbsoluteLine: 1, // Position actuelle (ligne absolue 1-9060)
   currentPortionIndex: 0, // Index de la portion dans la page (0, 1, 2...)
-  validatedPages: 0, // Nombre de pages validées (en quarts: 4 = 1 page)
+  // Système de validation simple: tableau des pages validées [1, 2, 3, 7, 8...]
+  validatedPages: [],
+  // Portions validées par page pour le mode fractionné: { "5": [0, 1], "6": [0, 1, 2] }
+  portionProgress: {},
   lastVerseKey: null, // Dernier verset affiché pour éviter répétitions
-  reciter: 'ar.husary',
+  reciter: 'ar.minshawimujawwad',
   startDate: new Date().toISOString().split('T')[0],
   darkMode: false,
   tajweedEnabled: false,
-  arabicFont: 'hafs-smart',
+  arabicFont: 'hafs-uthmanic-v14',
   flowMode: false,
   arabicNumerals: true,
 }

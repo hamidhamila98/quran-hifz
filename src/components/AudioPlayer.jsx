@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from 'react'
-import { Play, Pause, SkipBack, SkipForward, Volume2, VolumeX, Repeat, RefreshCw } from 'lucide-react'
+import { Play, Pause, SkipBack, SkipForward, Volume2, VolumeX, RefreshCw } from 'lucide-react'
 import { getAudioUrl, RECITERS } from '../services/quranApi'
 
 export default function AudioPlayer({
@@ -15,7 +15,7 @@ export default function AudioPlayer({
   const [duration, setDuration] = useState(0)
   const [volume, setVolume] = useState(1)
   const [isMuted, setIsMuted] = useState(false)
-  const [isRepeatOne, setIsRepeatOne] = useState(false) // Répéter le verset actuel
+  const [playbackSpeed, setPlaybackSpeed] = useState(1) // 1, 1.5, ou 2
   const [isLoading, setIsLoading] = useState(false)
 
   const audioRef = useRef(null)
@@ -28,6 +28,13 @@ export default function AudioPlayer({
       audioRef.current.volume = isMuted ? 0 : volume
     }
   }, [volume, isMuted])
+
+  // Appliquer la vitesse de lecture (à chaque changement de vitesse ou de verset)
+  useEffect(() => {
+    if (audioRef.current) {
+      audioRef.current.playbackRate = playbackSpeed
+    }
+  }, [playbackSpeed, currentAyahIndex])
 
   useEffect(() => {
     // Reset when ayahs change
@@ -73,11 +80,7 @@ export default function AudioPlayer({
   }
 
   const handleEnded = () => {
-    if (isRepeatOne) {
-      // Répéter le verset actuel
-      audioRef.current.currentTime = 0
-      audioRef.current.play()
-    } else if (currentAyahIndex < ayahs.length - 1) {
+    if (currentAyahIndex < ayahs.length - 1) {
       // Passer au verset suivant
       setCurrentAyahIndex(prev => prev + 1)
       setTimeout(() => {
@@ -134,7 +137,10 @@ export default function AudioPlayer({
         onTimeUpdate={handleTimeUpdate}
         onLoadedMetadata={handleLoadedMetadata}
         onEnded={handleEnded}
-        onCanPlay={() => setIsLoading(false)}
+        onCanPlay={() => {
+          setIsLoading(false)
+          if (audioRef.current) audioRef.current.playbackRate = playbackSpeed
+        }}
         onWaiting={() => setIsLoading(true)}
       />
 
@@ -170,17 +176,17 @@ export default function AudioPlayer({
 
       {/* Controls */}
       <div className="flex items-center justify-center gap-3">
-        {/* Repeat One (verset actuel) */}
+        {/* Speed Control */}
         <button
-          onClick={() => setIsRepeatOne(!isRepeatOne)}
-          title="Répéter le verset"
-          className={`p-2 rounded-full transition-colors ${
-            isRepeatOne
+          onClick={() => setPlaybackSpeed(s => s === 1 ? 1.5 : s === 1.5 ? 2 : 1)}
+          title="Vitesse de lecture"
+          className={`p-2 rounded-full transition-colors text-xs font-bold min-w-[40px] ${
+            playbackSpeed !== 1
               ? 'bg-primary-100 text-primary-600 dark:bg-primary-900/50 dark:text-primary-400'
               : 'hover:bg-gray-100 dark:hover:bg-slate-700 text-gray-500 dark:text-gray-400'
           }`}
         >
-          <Repeat className="w-4 h-4" />
+          x{playbackSpeed}
         </button>
 
         {/* Loop All (boucle globale) */}

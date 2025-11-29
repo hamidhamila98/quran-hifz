@@ -22,6 +22,7 @@ const PORTION_CONFIG = {
 export default function HomePage({ settings, updateSettings }) {
   const [verses, setVerses] = useState([])
   const [portionLines, setPortionLines] = useState([]) // Lignes de la portion pour affichage Mushaf
+  const [secondPageLines, setSecondPageLines] = useState([]) // Lignes de la 2ème page (mode 2 pages)
   const [overflowVerse, setOverflowVerse] = useState(null) // Verset dépassant
   const [previewVerses, setPreviewVerses] = useState([]) // Aperçu page suivante
   const [loading, setLoading] = useState(true)
@@ -38,19 +39,26 @@ export default function HomePage({ settings, updateSettings }) {
   const portionSize = settings.portionSize || '1/3'
   const config = PORTION_CONFIG[portionSize] || PORTION_CONFIG['1/3']
 
-  // Calculate validated pages as fraction
-  const validatedQuarters = settings.validatedPages || 0
-  const validatedPagesDisplay = () => {
-    const fullPages = Math.floor(validatedQuarters / 4)
-    const remainder = validatedQuarters % 4
-    if (remainder === 0) return fullPages === 0 ? '0' : `${fullPages}`
-    const fractions = ['', '¼', '½', '¾']
-    return fullPages > 0 ? `${fullPages}${fractions[remainder]}` : fractions[remainder]
-  }
+  // Nouveau système simple: tableau des pages validées
+  // S'assurer que validatedPages est bien un tableau (migration depuis ancien système)
+  const validatedPages = Array.isArray(settings.validatedPages) ? settings.validatedPages : []
+  const portionProgress = settings.portionProgress || {}
 
-  // Progress percentage (604 pages total, 4 quarters each = 2416 quarters)
-  const totalQuarters = 604 * 4
-  const progressPercent = ((validatedQuarters / totalQuarters) * 100).toFixed(2)
+  // Nombre de pages validées = longueur du tableau
+  const completePagesCount = validatedPages.length
+  const progressPercent = ((completePagesCount / 604) * 100).toFixed(2)
+
+  // Label pour la taille de portion
+  const getPortionSizeLabel = () => {
+    switch (portionSize) {
+      case '1/4': return '¼ de page'
+      case '1/3': return '⅓ de page'
+      case '1/2': return '½ page'
+      case '1': return '1 page'
+      case '2': return '2 pages'
+      default: return portionSize
+    }
+  }
 
   // Find current surah based on page
   const getCurrentSurah = (page) => {
@@ -282,6 +290,8 @@ export default function HomePage({ settings, updateSettings }) {
       // Handle 2 pages mode - load second page
       if (portionSize === '2' && currentPage < 604) {
         const secondPageData = await getPageWithLines(currentPage + 1, settings.tajweedEnabled)
+        // Stocker les lignes de la 2ème page
+        setSecondPageLines(secondPageData.lines || [])
         const secondPageVerses = secondPageData.verses.map(verse => ({
           number: verse.id,
           text: verse.text,
@@ -292,6 +302,8 @@ export default function HomePage({ settings, updateSettings }) {
           isSecondPage: true
         }))
         setVerses(prev => [...prev, ...secondPageVerses])
+      } else {
+        setSecondPageLines([])
       }
 
     } catch (err) {
@@ -385,73 +397,111 @@ export default function HomePage({ settings, updateSettings }) {
     }
   }
 
-  // Validate current portion
-  const handleValidate = () => {
+  // Vérifier si une page spécifique est validée
+  const isPageValidated = (page) => {
+    return validatedPages.includes(page)
+  }
+
+  // Vérifier si la portion actuelle est validée
+  const isCurrentPortionValidated = () => {
+    // Pages spéciales (1 et 2) sont toujours validées en entier, pas par portion
+    if (SPECIAL_PAGES.includes(currentPage)) {
+      return isPageValidated(currentPage)
+    }
+
+    // Mode 1 page ou 2 pages: vérifier si la/les page(s) sont validées
+    if (portionSize === '1') {
+      return isPageValidated(currentPage)
+    }
+    if (portionSize === '2') {
+      return isPageValidated(currentPage) && isPageValidated(currentPage + 1)
+    }
+
+    // Mode fractionné (1/4, 1/3, 1/2): vérifier la portion spécifique
+    const pageProgress = portionProgress[String(currentPage)] || []
+    return pageProgress.includes(portionIndex)
+  }
+
+  // Vérifier si une page est complète (toutes portions validées)
+  const isPageComplete = (page) => {
+    return isPageValidated(page)
+  }
+
+  // Obtenir le nombre de portions validées pour la page actuelle
+  const getValidatedPortionsCount = () => {
+    if (portionSize === '1' || portionSize === '2') {
+      return isPageValidated(currentPage) ? 1 : 0
+    }
+    const pageProgress = portionProgress[String(currentPage)] || []
+    return pageProgress.length
+  }
+
+  // Toggle validation pour la portion/page actuelle
+  const handleToggleValidation = () => {
     if (verses.length === 0) return
 
-    // Calculate quarters to add based on portion size
-    let quartersToAdd = 0
-    switch (portionSize) {
-      case '1/4': quartersToAdd = 1; break
-      case '1/3': quartersToAdd = 4/3; break // Approximately
-      case '1/2': quartersToAdd = 2; break
-      case '1': quartersToAdd = 4; break
-      case '2': quartersToAdd = 8; break
-      default: quartersToAdd = 1
-    }
+    let newValidatedPages = [...validatedPages]
+    let newPortionProgress = { ...portionProgress }
 
-    // For 1/3, we need to track better - let's use actual progression
-    // Each 1/3 portion = 1.33 quarters, so 3 portions = 4 quarters = 1 page
-    if (portionSize === '1/3') {
-      quartersToAdd = portionIndex === 2 ? 2 : 1 // Last portion gets extra to round up
-    }
-    if (portionSize === '1/4') {
-      quartersToAdd = 1
-    }
-
-    const newValidatedPages = (settings.validatedPages || 0) + quartersToAdd
-
-    // Move to next portion
-    if (portionInfo?.isSpecialPage) {
-      const nextPage = currentPage + 1
-      if (nextPage <= 604) {
-        updateSettings({
-          currentPage: nextPage,
-          currentPortionIndex: 0,
-          validatedPages: newValidatedPages
-        })
-        setAudioKey(prev => prev + 1)
+    // Pages spéciales (1 et 2): toujours validées en entier (1 page)
+    if (SPECIAL_PAGES.includes(currentPage)) {
+      if (isPageValidated(currentPage)) {
+        newValidatedPages = newValidatedPages.filter(p => p !== currentPage)
+      } else {
+        newValidatedPages.push(currentPage)
+      }
+    } else if (portionSize === '1') {
+      // Mode 1 page: toggle la page
+      if (isPageValidated(currentPage)) {
+        newValidatedPages = newValidatedPages.filter(p => p !== currentPage)
+      } else {
+        newValidatedPages.push(currentPage)
       }
     } else if (portionSize === '2') {
-      const nextPage = currentPage + 2
-      if (nextPage <= 604) {
-        updateSettings({
-          currentPage: nextPage,
-          validatedPages: newValidatedPages
-        })
-        setAudioKey(prev => prev + 1)
+      // Mode 2 pages: toggle les 2 pages ensemble
+      const page1 = currentPage
+      const page2 = currentPage + 1
+      const bothValidated = isPageValidated(page1) && isPageValidated(page2)
+
+      if (bothValidated) {
+        // Dévalider les 2 pages
+        newValidatedPages = newValidatedPages.filter(p => p !== page1 && p !== page2)
       } else {
-        updateSettings({ validatedPages: totalQuarters })
+        // Valider les 2 pages
+        if (!newValidatedPages.includes(page1)) newValidatedPages.push(page1)
+        if (!newValidatedPages.includes(page2)) newValidatedPages.push(page2)
       }
-    } else if (portionIndex < config.portions - 1) {
-      updateSettings({
-        currentPortionIndex: portionIndex + 1,
-        validatedPages: newValidatedPages
-      })
-      setAudioKey(prev => prev + 1)
     } else {
-      const nextPage = currentPage + 1
-      if (nextPage <= 604) {
-        updateSettings({
-          currentPage: nextPage,
-          currentPortionIndex: 0,
-          validatedPages: newValidatedPages
-        })
-        setAudioKey(prev => prev + 1)
+      // Mode fractionné (1/4, 1/3, 1/2)
+      const pageKey = String(currentPage)
+      const pageProgress = newPortionProgress[pageKey] || []
+
+      if (pageProgress.includes(portionIndex)) {
+        // Dévalider cette portion
+        newPortionProgress[pageKey] = pageProgress.filter(p => p !== portionIndex)
+        // Si c'était la dernière portion, retirer la page des validées
+        if (newPortionProgress[pageKey].length < config.portions) {
+          newValidatedPages = newValidatedPages.filter(p => p !== currentPage)
+        }
       } else {
-        updateSettings({ validatedPages: totalQuarters })
+        // Valider cette portion
+        newPortionProgress[pageKey] = [...pageProgress, portionIndex]
+        // Si toutes les portions sont validées, ajouter la page
+        if (newPortionProgress[pageKey].length >= config.portions) {
+          if (!newValidatedPages.includes(currentPage)) {
+            newValidatedPages.push(currentPage)
+          }
+        }
       }
     }
+
+    // Trier le tableau pour garder l'ordre
+    newValidatedPages.sort((a, b) => a - b)
+
+    updateSettings({
+      validatedPages: newValidatedPages,
+      portionProgress: newPortionProgress
+    })
   }
 
   // Can navigate
@@ -466,8 +516,11 @@ export default function HomePage({ settings, updateSettings }) {
     if (portionSize === '2') {
       return `Pages ${currentPage}-${Math.min(currentPage + 1, 604)}`
     }
-    const { startLine, endLine } = getPortionLines()
-    return `Page ${currentPage} - Portion ${portionIndex + 1}/${config.portions} (lignes ${startLine}-${endLine})`
+    if (portionSize === '1') {
+      return `Page ${currentPage}`
+    }
+    // Mode fractionné: Page X - 1/3, 2/3, etc.
+    return `Page ${currentPage} - ${portionIndex + 1}/${config.portions}`
   }
 
   // Get position display text
@@ -504,13 +557,16 @@ export default function HomePage({ settings, updateSettings }) {
                 Ma Progression
               </h1>
               <p className={`text-sm ${settings.darkMode ? 'text-gray-400' : 'text-gray-500'}`}>
-                {getPositionText()}
+                Vous apprenez <span className="font-semibold text-primary-500">{getPortionSizeLabel()}</span> du Coran par jour.
+                {completePagesCount > 0 && (
+                  <> Vous avez appris <span className="font-semibold text-green-500">{completePagesCount} page{completePagesCount > 1 ? 's' : ''}</span>.</>
+                )}
               </p>
             </div>
           </div>
           <div className="flex items-center gap-4 text-sm">
             <div className={`${settings.darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
-              <span className="font-bold text-lg">{validatedPagesDisplay()}</span>
+              <span className="font-bold text-lg">{completePagesCount}</span>
               <span className={`${settings.darkMode ? 'text-gray-500' : 'text-gray-400'}`}> / 604 pages</span>
             </div>
             <div className={`font-semibold px-3 py-1 rounded-full ${
@@ -556,9 +612,74 @@ export default function HomePage({ settings, updateSettings }) {
         {/* Verses */}
         <div className="lg:col-span-2">
           <div className="flex items-center justify-between mb-4">
-            <h3 className={`text-lg font-semibold ${settings.darkMode ? 'text-white' : 'text-gray-800'}`}>
-              {getPortionLabel()}
-            </h3>
+            <div className="flex items-center gap-3">
+              <h3 className={`text-lg font-semibold ${settings.darkMode ? 'text-white' : 'text-gray-800'}`}>
+                {getPortionLabel()}
+              </h3>
+              {/* Checkbox Validé */}
+              <button
+                onClick={handleToggleValidation}
+                className="flex items-center gap-2 cursor-pointer select-none group"
+                title={isCurrentPortionValidated() ? "Marquer comme non validé" : "Marquer comme validé"}
+              >
+                <div className={`w-6 h-6 rounded-md border-2 flex items-center justify-center transition-all
+                  group-hover:scale-110
+                  ${isCurrentPortionValidated()
+                    ? 'bg-green-500 border-green-500 dark:bg-green-600 dark:border-green-600'
+                    : settings.darkMode
+                      ? 'border-slate-500 bg-slate-700 hover:border-green-500'
+                      : 'border-gray-300 bg-white hover:border-green-500'
+                  }`}
+                >
+                  <Check className={`w-4 h-4 text-white transition-opacity ${isCurrentPortionValidated() ? 'opacity-100' : 'opacity-0'}`} />
+                </div>
+                <span className={`text-sm ${
+                  isCurrentPortionValidated()
+                    ? 'text-green-600 dark:text-green-400 font-medium'
+                    : settings.darkMode ? 'text-gray-400' : 'text-gray-500'
+                }`}>
+                  {isCurrentPortionValidated() ? 'Validé' : 'Valider'}
+                </span>
+                {/* Indicateur de progression de la page */}
+                {config.portions > 1 && (
+                  <span className={`text-xs px-2 py-0.5 rounded-full ${
+                    isPageComplete(currentPage)
+                      ? 'bg-green-100 text-green-700 dark:bg-green-900/50 dark:text-green-400'
+                      : settings.darkMode ? 'bg-slate-700 text-gray-400' : 'bg-gray-100 text-gray-500'
+                  }`}>
+                    {getValidatedPortionsCount()}/{config.portions}
+                  </span>
+                )}
+              </button>
+
+              {/* Navigation Buttons */}
+              <div className="flex items-center gap-1 ml-2">
+                <button
+                  onClick={handlePrevious}
+                  disabled={!canGoPrevious}
+                  title="Précédent"
+                  className={`p-2 rounded-lg transition-all ${
+                    canGoPrevious
+                      ? 'bg-gray-200 dark:bg-slate-700 hover:bg-gray-300 dark:hover:bg-slate-600 text-gray-700 dark:text-gray-200'
+                      : 'bg-gray-100 dark:bg-slate-800 text-gray-400 dark:text-gray-600 cursor-not-allowed'
+                  }`}
+                >
+                  <ChevronLeft className="w-5 h-5" />
+                </button>
+                <button
+                  onClick={handleNext}
+                  disabled={!canGoNext}
+                  title="Suivant"
+                  className={`p-2 rounded-lg transition-all ${
+                    canGoNext
+                      ? 'bg-primary-500 hover:bg-primary-600 text-white'
+                      : 'bg-gray-100 dark:bg-slate-800 text-gray-400 dark:text-gray-600 cursor-not-allowed'
+                  }`}
+                >
+                  <ChevronRight className="w-5 h-5" />
+                </button>
+              </div>
+            </div>
             <span className={`text-sm ${settings.darkMode ? 'text-gray-400' : 'text-gray-500'}`}>
               {verses.length} versets
             </span>
@@ -625,10 +746,10 @@ export default function HomePage({ settings, updateSettings }) {
               {overflowVerse && (
                 <div className={`mt-4 pt-4 border-t border-dashed ${settings.darkMode ? 'border-slate-600' : 'border-gray-300'}`}>
                   <p className={`text-xs mb-2 ${settings.darkMode ? 'text-amber-400' : 'text-amber-600'}`}>
-                    Verset dépassant la portion :
+                    Verset dépassant la partie du jour :
                   </p>
                   <div
-                    className={`text-xl md:text-2xl arabic-text ${settings.darkMode ? 'text-amber-200' : 'text-amber-700'} opacity-80`}
+                    className={`text-2xl md:text-3xl arabic-text text-center ${settings.darkMode ? 'text-amber-200' : 'text-amber-700'} opacity-80`}
                     style={{ fontFamily: getFontFamily() }}
                   >
                     {settings.tajweedEnabled ? (
@@ -641,8 +762,8 @@ export default function HomePage({ settings, updateSettings }) {
                 </div>
               )}
 
-              {/* Second page for 2-pages mode */}
-              {portionSize === '2' && verses.some(v => v.isSecondPage) && (
+              {/* Second page for 2-pages mode - line by line display */}
+              {portionSize === '2' && secondPageLines.length > 0 && (
                 <div className={`mt-6 pt-6 border-t-2 ${settings.darkMode ? 'border-slate-600' : 'border-gray-300'}`}>
                   <p className={`text-sm mb-3 font-semibold ${settings.darkMode ? 'text-primary-400' : 'text-primary-600'}`}>
                     Page {currentPage + 1}
@@ -651,25 +772,34 @@ export default function HomePage({ settings, updateSettings }) {
                     className={`text-2xl md:text-3xl arabic-text ${settings.tajweedEnabled ? 'tajweed-text' : ''}`}
                     style={{ fontFamily: getFontFamily() }}
                   >
-                    {verses.filter(v => v.isSecondPage).map((ayah, index) => (
-                      <span
-                        key={ayah.verseKey || ayah.number}
-                        className={`
-                          inline transition-all duration-200 cursor-pointer
-                          ${selectedVerses.has(ayah.verseKey) ? 'verse-selected' : ''}
-                          ${highlightedAyah === ayah.verseKey ? 'verse-highlight' : ''}
-                          ${settings.darkMode ? 'text-gray-100' : 'text-gray-800'}
-                        `}
-                        onClick={() => toggleVerseSelection(ayah.verseKey)}
+                    {secondPageLines.map((line) => (
+                      <div
+                        key={`line2-${line.lineNumber}`}
+                        className="mushaf-line text-center mb-2"
+                        dir="rtl"
                       >
-                        {settings.tajweedEnabled ? (
-                          <span dangerouslySetInnerHTML={{ __html: ayah.text.replace(/<span class=end>.*?<\/span>/g, '') }} />
-                        ) : (
-                          ayah.text
-                        )}
-                        {renderVerseMarker(ayah.numberInSurah)}
-                        {index < verses.filter(v => v.isSecondPage).length - 1 && ' '}
-                      </span>
+                        {line.words.map((word, wordIdx) => (
+                          <span
+                            key={`${word.verseKey}-${word.position}-p2`}
+                            className={`
+                              inline cursor-pointer transition-all duration-200
+                              ${selectedVerses.has(word.verseKey) ? 'verse-selected' : ''}
+                              ${highlightedAyah === word.verseKey ? 'verse-highlight' : ''}
+                              ${settings.darkMode ? 'text-gray-100' : 'text-gray-800'}
+                            `}
+                            onClick={() => toggleVerseSelection(word.verseKey)}
+                          >
+                            {word.isEndMarker ? (
+                              renderVerseMarker(word.verseNumber)
+                            ) : settings.tajweedEnabled && word.tajweedHtml ? (
+                              <span dangerouslySetInnerHTML={{ __html: word.tajweedHtml }} />
+                            ) : (
+                              word.text
+                            )}
+                            {wordIdx < line.words.length - 1 && !word.isEndMarker && ' '}
+                          </span>
+                        ))}
+                      </div>
                     ))}
                   </div>
                 </div>
@@ -682,7 +812,7 @@ export default function HomePage({ settings, updateSettings }) {
                     Première ligne page suivante :
                   </p>
                   <div
-                    className={`text-lg md:text-xl arabic-text text-red-500 dark:text-red-400 opacity-70`}
+                    className={`text-2xl md:text-3xl arabic-text text-center text-red-500 dark:text-red-400 opacity-70`}
                     style={{ fontFamily: getFontFamily() }}
                   >
                     {previewVerses.map((ayah) => (
@@ -702,44 +832,6 @@ export default function HomePage({ settings, updateSettings }) {
             </div>
           )}
 
-          {/* Navigation Buttons */}
-          {!loading && !error && verses.length > 0 && (
-            <div className="mt-4 flex flex-wrap justify-between gap-3">
-              <button
-                onClick={handlePrevious}
-                disabled={!canGoPrevious}
-                className={`flex items-center gap-2 px-5 py-3 rounded-xl transition-all shadow-md
-                  ${canGoPrevious
-                    ? 'bg-gray-200 dark:bg-slate-700 hover:bg-gray-300 dark:hover:bg-slate-600 text-gray-700 dark:text-gray-200'
-                    : 'bg-gray-100 dark:bg-slate-800 text-gray-400 dark:text-gray-600 cursor-not-allowed'
-                  }`}
-              >
-                <ChevronLeft className="w-5 h-5" />
-                <span>Précédent</span>
-              </button>
-
-              <button
-                onClick={handleValidate}
-                className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-green-500 to-green-600 text-white rounded-xl hover:from-green-600 hover:to-green-700 transition-all shadow-lg hover:shadow-xl"
-              >
-                <Check className="w-5 h-5" />
-                <span>Valider</span>
-              </button>
-
-              <button
-                onClick={handleNext}
-                disabled={!canGoNext}
-                className={`flex items-center gap-2 px-5 py-3 rounded-xl transition-all shadow-md
-                  ${canGoNext
-                    ? 'bg-gradient-to-r from-primary-500 to-primary-600 text-white hover:from-primary-600 hover:to-primary-700 shadow-lg hover:shadow-xl'
-                    : 'bg-gray-100 dark:bg-slate-800 text-gray-400 dark:text-gray-600 cursor-not-allowed'
-                  }`}
-              >
-                <span>Suivant</span>
-                <ChevronRight className="w-5 h-5" />
-              </button>
-            </div>
-          )}
         </div>
 
         {/* Audio Player Sidebar */}
