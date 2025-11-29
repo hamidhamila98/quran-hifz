@@ -25,6 +25,7 @@ const defaultSettings = {
   arabicFont: 'hafs-uthmanic-v14',
   flowMode: false,
   arabicNumerals: true,
+  wordHighlight: true, // Word-by-word highlighting during audio playback
 }
 
 function App() {

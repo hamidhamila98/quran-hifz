@@ -8,11 +8,24 @@ const QURAN_COM_API = 'https://api.quran.com/api/v4';
 const AUDIO_CDN_BASE = 'https://cdn.islamic.network/quran/audio';
 
 // Available reciters with their identifiers
+// hasWordTiming indicates if word-by-word timing data is available for highlighting
+// All 12 reciters from quran-align project + Ibrahim Al-Dosary (Warsh)
 export const RECITERS = [
-  { id: 'ar.minshawimujawwad', name: 'Al-Minshawi (Hafs)', everyAyahId: 'Minshawy_Mujawwad_192kbps' },
-  { id: 'ar.abdulbasitmujawwad', name: 'Abdul Basit (Hafs)', everyAyahId: 'Abdul_Basit_Mujawwad_128kbps' },
-  { id: 'ar.husarymujawwad', name: 'Al-Husary (Hafs)', everyAyahId: 'Husary_128kbps_Mujawwad' },
-  { id: 'ar.dosarywarsh', name: 'Ibrahim Al-Dosary (Warsh)', everyAyahId: 'warsh/warsh_ibrahim_aldosary_128kbps' },
+  // Reciters with word-by-word timing (from quran-align)
+  { id: 'ar.alafasy', name: 'Mishary Al-Afasy', everyAyahId: 'Alafasy_128kbps', hasWordTiming: true },
+  { id: 'ar.abdulbasitmujawwad', name: 'Abdul Basit (Mujawwad)', everyAyahId: 'Abdul_Basit_Mujawwad_128kbps', hasWordTiming: true },
+  { id: 'ar.abdulbasitmurattal', name: 'Abdul Basit (Murattal)', everyAyahId: 'Abdul_Basit_Murattal_64kbps', hasWordTiming: true },
+  { id: 'ar.sudais', name: 'Abdurrahmaan As-Sudais', everyAyahId: 'Abdurrahmaan_As-Sudais_192kbps', hasWordTiming: true },
+  { id: 'ar.shaatree', name: 'Abu Bakr Ash-Shaatree', everyAyahId: 'Abu_Bakr_Ash-Shaatree_128kbps', hasWordTiming: true },
+  { id: 'ar.hanirifai', name: 'Hani Ar-Rifai', everyAyahId: 'Hani_Rifai_192kbps', hasWordTiming: true },
+  { id: 'ar.husary', name: 'Al-Husary (Murattal)', everyAyahId: 'Husary_64kbps', hasWordTiming: true },
+  { id: 'ar.husarymuallim', name: 'Al-Husary (Muallim)', everyAyahId: 'Husary_Muallim_128kbps', hasWordTiming: true },
+  { id: 'ar.minshawimujawwad', name: 'Al-Minshawi (Mujawwad)', everyAyahId: 'Minshawy_Mujawwad_192kbps', hasWordTiming: true },
+  { id: 'ar.minshawimurttal', name: 'Al-Minshawi (Murattal)', everyAyahId: 'Minshawy_Murattal_128kbps', hasWordTiming: true },
+  { id: 'ar.tablaway', name: 'Mohammad Al-Tablaway', everyAyahId: 'Mohammad_al_Tablaway_128kbps', hasWordTiming: true },
+  { id: 'ar.shuraym', name: 'Saood Ash-Shuraym', everyAyahId: 'Saood_ash-Shuraym_128kbps', hasWordTiming: true },
+  // Reciter without word timing
+  { id: 'ar.dosarywarsh', name: 'Ibrahim Al-Dosary (Warsh)', everyAyahId: 'warsh/warsh_ibrahim_aldosary_128kbps', hasWordTiming: false },
 ];
 
 // Tajweed CSS classes from Quran.com API

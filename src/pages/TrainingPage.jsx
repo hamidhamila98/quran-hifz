@@ -1,6 +1,7 @@
-import { useState, useCallback, useRef } from 'react'
+import { useState, useCallback, useRef, useEffect } from 'react'
 import { Shuffle, Eye, RotateCcw, Check, X, Lightbulb, Trophy, BookOpen, ChevronDown, Play, Pause } from 'lucide-react'
 import { getAyahsInPageRange, SURAH_INFO, JUZ_INFO, HIZB_INFO, ARABIC_FONTS, getEveryAyahUrl, RECITERS } from '../services/quranApi'
+import { loadTimingData, getVerseTimings, getCurrentWordIndex, hasTimingData, isTimingDataLoaded } from '../services/wordTiming'
 
 export default function TrainingPage({ settings }) {
   // Selection mode: 'juz', 'hizb', 'surah', 'custom'
@@ -27,8 +28,37 @@ export default function TrainingPage({ settings }) {
   const [allRevealed, setAllRevealed] = useState(false)
   const [currentQuestion, setCurrentQuestion] = useState(1)
   const [playingAyahIndex, setPlayingAyahIndex] = useState(null)
+  const [highlightedWord, setHighlightedWord] = useState(null) // { surah, ayah, wordIndex }
+  const [timingDataLoaded, setTimingDataLoaded] = useState(false)
 
   const audioRef = useRef(null)
+
+  // Sync playback speed in real-time when setting changes
+  useEffect(() => {
+    if (audioRef.current) {
+      audioRef.current.playbackRate = settings.playbackSpeed || 1
+    }
+  }, [settings.playbackSpeed])
+
+  // Load timing data when reciter changes (for word-by-word highlighting)
+  useEffect(() => {
+    const loadTiming = async () => {
+      if (hasTimingData(settings.reciter)) {
+        const loaded = await loadTimingData(settings.reciter)
+        setTimingDataLoaded(loaded)
+      } else {
+        setTimingDataLoaded(false)
+      }
+    }
+    loadTiming()
+  }, [settings.reciter])
+
+  // Live toggle for word highlight - clear if disabled
+  useEffect(() => {
+    if (settings.wordHighlight === false) {
+      setHighlightedWord(null)
+    }
+  }, [settings.wordHighlight])
 
   // Update pages when selection changes
   const updatePagesFromSelection = (mode, value) => {
@@ -218,6 +248,46 @@ export default function TrainingPage({ settings }) {
     return words.slice(0, count).join(' ')
   }
 
+  // Helper to get first N words while preserving HTML/tajweed
+  const getHtmlForFirstWords = (html, wordCount) => {
+    if (!html || !wordCount) return ''
+    // Remove end markers
+    const cleanHtml = html.replace(/<span class=end>.*?<\/span>/g, '')
+    // Get plain text to count words
+    const plainText = cleanHtml.replace(/<[^>]*>/g, '')
+    const words = plainText.split(/\s+/).filter(w => w.length > 0)
+    if (words.length <= wordCount) return cleanHtml
+
+    // Find position of Nth word in original text and extract with HTML
+    let result = ''
+    let wordsSeen = 0
+    let i = 0
+    let inWord = false
+
+    while (i < cleanHtml.length && wordsSeen < wordCount) {
+      if (cleanHtml[i] === '<') {
+        // Include HTML tag
+        const tagEnd = cleanHtml.indexOf('>', i)
+        result += cleanHtml.substring(i, tagEnd + 1)
+        i = tagEnd + 1
+      } else if (/\s/.test(cleanHtml[i])) {
+        if (inWord) {
+          wordsSeen++
+          inWord = false
+        }
+        if (wordsSeen < wordCount) {
+          result += cleanHtml[i]
+        }
+        i++
+      } else {
+        inWord = true
+        result += cleanHtml[i]
+        i++
+      }
+    }
+    return result
+  }
+
   // Fonction pour extraire le texte brut (sans HTML du tajweed)
   const getPlainText = (text) => {
     if (!text) return ''
@@ -234,6 +304,32 @@ export default function TrainingPage({ settings }) {
     return text
   }
 
+  // Render text with word-by-word highlighting
+  const renderTextWithWordHighlight = (ayah, index) => {
+    const surahNumber = ayah.surah?.number || 1
+    const ayahNumber = ayah.numberInSurah || 1
+    const plainText = getPlainText(ayah.text)
+    const words = plainText.split(' ')
+
+    // Check if this verse should have word highlighting
+    const isPlaying = playingAyahIndex === index
+    const shouldHighlight = settings.wordHighlight && isPlaying && highlightedWord &&
+      highlightedWord.surah === surahNumber && highlightedWord.ayah === ayahNumber
+
+    return words.map((word, wordIndex) => {
+      const isHighlighted = shouldHighlight && wordIndex === highlightedWord?.wordIndex
+      return (
+        <span
+          key={wordIndex}
+          className={isHighlighted ? 'word-highlight' : ''}
+        >
+          {word}
+          {wordIndex < words.length - 1 ? ' ' : ''}
+        </span>
+      )
+    })
+  }
+
   // Get font family from settings
   const getFontFamily = () => {
     const font = ARABIC_FONTS.find(f => f.id === settings.arabicFont)
@@ -246,22 +342,16 @@ export default function TrainingPage({ settings }) {
     return String(num).split('').map(d => arabicDigits[parseInt(d)]).join('')
   }
 
-  // Render verse end marker with number (Quran style)
+  // Render verse end marker with number (Quran style) - identique à HomePage
   const renderVerseMarker = (number) => {
-    if (settings.arabicNumerals) {
-      return (
-        <span className="verse-marker" style={{ fontFamily: "'KFGQPC Uthmanic Script HAFS', 'Amiri Quran', serif" }}>
-          {'\u06DD'}{toArabicNumerals(number)}
+    return (
+      <span className="verse-marker-styled">
+        <span className="marker-symbol">{'\u06DD'}</span>
+        <span className={`marker-number ${settings.arabicNumerals ? 'marker-number-arabic' : 'marker-number-western'}`}>
+          {settings.arabicNumerals ? toArabicNumerals(number) : number}
         </span>
-      )
-    } else {
-      return (
-        <span className="verse-marker-western">
-          <span className="marker-symbol">{'\u06DD'}</span>
-          <span className="marker-number">{number}</span>
-        </span>
-      )
-    }
+      </span>
+    )
   }
 
   // Stop audio playback
@@ -271,6 +361,7 @@ export default function TrainingPage({ settings }) {
       audioRef.current.currentTime = 0
     }
     setPlayingAyahIndex(null)
+    setHighlightedWord(null)
   }
 
   // Play/Pause audio for a specific ayah
@@ -283,10 +374,12 @@ export default function TrainingPage({ settings }) {
         audioRef.current.play().catch(err => {
           console.error('Error playing audio:', err)
           setPlayingAyahIndex(null)
+          setHighlightedWord(null)
         })
       } else {
         audioRef.current.pause()
         setPlayingAyahIndex(null)
+        setHighlightedWord(null)
       }
       return
     }
@@ -294,6 +387,7 @@ export default function TrainingPage({ settings }) {
     // Si un autre verset est en cours, on l'arrête d'abord
     if (playingAyahIndex !== null) {
       audioRef.current.pause()
+      setHighlightedWord(null)
     }
 
     const reciter = RECITERS.find(r => r.id === settings.reciter) || RECITERS[0]
@@ -312,6 +406,36 @@ export default function TrainingPage({ settings }) {
 
   const handleAudioEnded = () => {
     setPlayingAyahIndex(null)
+    setHighlightedWord(null)
+  }
+
+  // Handle audio time update for word-by-word highlighting
+  const handleAudioTimeUpdate = () => {
+    if (!audioRef.current || playingAyahIndex === null || !settings.wordHighlight) {
+      return
+    }
+
+    const ayah = currentAyahs[playingAyahIndex]
+    if (!ayah) return
+
+    const surahNumber = ayah.surah?.number || 1
+    const ayahNumber = ayah.numberInSurah || 1
+
+    // Get timing segments for this verse
+    const segments = getVerseTimings(settings.reciter, surahNumber, ayahNumber)
+    if (!segments) return
+
+    // Get current word index based on playback time (in milliseconds)
+    const currentTimeMs = audioRef.current.currentTime * 1000
+    const wordIndex = getCurrentWordIndex(segments, currentTimeMs)
+
+    if (wordIndex >= 0) {
+      setHighlightedWord({
+        surah: surahNumber,
+        ayah: ayahNumber,
+        wordIndex
+      })
+    }
   }
 
   const getScoreMessage = () => {
@@ -350,7 +474,7 @@ export default function TrainingPage({ settings }) {
             </div>
             <div className="w-full bg-gray-200 rounded-full h-4 mb-2">
               <div
-                className="bg-gradient-to-r from-primary-500 to-gold-500 h-4 rounded-full transition-all"
+                className="bg-gradient-to-r from-emerald-500 to-teal-500 h-4 rounded-full transition-all"
                 style={{ width: `${percentage}%` }}
               />
             </div>
@@ -703,7 +827,7 @@ export default function TrainingPage({ settings }) {
             </div>
             <div className="w-full bg-gray-200 rounded-full h-2 mb-3">
               <div
-                className="bg-gradient-to-r from-primary-500 to-gold-500 h-2 rounded-full transition-all"
+                className="bg-gradient-to-r from-emerald-500 to-teal-500 h-2 rounded-full transition-all"
                 style={{ width: `${(currentQuestion / questionCount) * 100}%` }}
               />
             </div>
@@ -731,7 +855,7 @@ export default function TrainingPage({ settings }) {
           {currentAyahs.length > 0 && (
             <div className={`p-6 rounded-2xl ${settings.darkMode ? 'bg-slate-800' : 'bg-white'} shadow-lg`}>
               {/* Hidden audio element */}
-              <audio ref={audioRef} onEnded={handleAudioEnded} />
+              <audio ref={audioRef} onEnded={handleAudioEnded} onTimeUpdate={handleAudioTimeUpdate} />
 
               {/* Header Info with Page Number */}
               <div className="flex items-center justify-between mb-4">
@@ -773,10 +897,13 @@ export default function TrainingPage({ settings }) {
                   const partialVisible = plainWords.slice(0, partialWords).join(' ')
                   const partialHidden = plainWords.slice(partialWords).join(' ')
 
+                  // Check if this verse is currently playing and verse highlight is enabled
+                  const isVersePlaying = playingAyahIndex === index && settings.verseHighlight !== false
+
                   return (
                     <div
                       key={ayah.number}
-                      className={`p-4 rounded-xl ${settings.darkMode ? 'bg-slate-700/50' : 'bg-gray-50'} flex items-start gap-3`}
+                      className={`p-4 rounded-xl ${settings.darkMode ? 'bg-slate-700/50' : 'bg-gray-50'} flex items-start gap-3 transition-all ${isVersePlaying ? 'verse-playing' : ''}`}
                     >
                       {/* Play/Pause button */}
                       <button
@@ -799,18 +926,23 @@ export default function TrainingPage({ settings }) {
 
                       {isFirst || currentAyahs.length === 1 ? (
                         // Premier verset ou verset unique: révélation directe
-                        <div className="arabic-text text-2xl md:text-3xl leading-loose flex-1" dir="rtl" style={{ fontFamily: getFontFamily() }}>
-                          {renderVerseMarker(ayah.numberInSurah)}
+                        <div className={`arabic-text text-2xl md:text-3xl leading-loose flex-1 font-size-${settings.fontSize || 'medium'}`} dir="rtl" style={{ fontFamily: getFontFamily() }}>
                           {isRevealed ? (
-                            // Révélé: afficher tout le verset avec Tajweed
+                            // Révélé: afficher tout le verset avec surlignage des mots si actif
                             <span className={settings.darkMode ? 'text-white' : 'text-gray-800'}>
-                              {renderText(ayah.text)}
+                              {playingAyahIndex === index && settings.wordHighlight && timingDataLoaded
+                                ? renderTextWithWordHighlight(ayah, index)
+                                : renderText(ayah.text)}
                             </span>
                           ) : (
-                            // Non révélé: partie visible + partie cachée
+                            // Non révélé: partie visible (avec tajweed si activé) + partie cachée
                             <>
                               <span className={settings.darkMode ? 'text-white' : 'text-gray-800'}>
-                                {visible}
+                                {settings.tajweedEnabled ? (
+                                  <span dangerouslySetInnerHTML={{ __html: getHtmlForFirstWords(ayah.text, splitAyahText(ayah.text).visibleCount) }} />
+                                ) : (
+                                  visible
+                                )}
                               </span>
                               <span className="text-primary-500 mx-2">...</span>
                               <span
@@ -821,21 +953,27 @@ export default function TrainingPage({ settings }) {
                               </span>
                             </>
                           )}
+                          {renderVerseMarker(ayah.numberInSurah)}
                         </div>
                       ) : (
                         // Autres versets: révélation en 2 étapes
-                        <div className="arabic-text text-2xl md:text-3xl leading-loose flex-1" dir="rtl" style={{ fontFamily: getFontFamily() }}>
-                          {renderVerseMarker(ayah.numberInSurah)}
+                        <div className={`arabic-text text-2xl md:text-3xl leading-loose flex-1 font-size-${settings.fontSize || 'medium'}`} dir="rtl" style={{ fontFamily: getFontFamily() }}>
                           {isRevealed ? (
-                            // Complètement révélé - avec Tajweed
+                            // Complètement révélé - avec surlignage des mots si actif
                             <span className={settings.darkMode ? 'text-white' : 'text-gray-800'}>
-                              {renderText(ayah.text)}
+                              {playingAyahIndex === index && settings.wordHighlight && timingDataLoaded
+                                ? renderTextWithWordHighlight(ayah, index)
+                                : renderText(ayah.text)}
                             </span>
                           ) : isPartiallyRevealed ? (
                             // Partiellement révélé (1er clic effectué) - affiche juste les 2 premiers mots
                             <>
-                              <span className={`${settings.darkMode ? 'text-gold-400' : 'text-gold-600'}`}>
-                                {getFirstWords(ayah.text, 2)}
+                              <span className={settings.darkMode ? 'text-white' : 'text-gray-800'}>
+                                {settings.tajweedEnabled ? (
+                                  <span dangerouslySetInnerHTML={{ __html: getHtmlForFirstWords(ayah.text, 2) }} />
+                                ) : (
+                                  getFirstWords(ayah.text, 2)
+                                )}
                               </span>
                               <span className="text-primary-500 mx-2">...</span>
                               <span
@@ -849,8 +987,12 @@ export default function TrainingPage({ settings }) {
                             // Pas encore révélé
                             <>
                               {showBeginnings && (
-                                <span className={`${settings.darkMode ? 'text-gold-400' : 'text-gold-600'}`}>
-                                  {getFirstWords(ayah.text)}
+                                <span className={settings.darkMode ? 'text-white' : 'text-gray-800'}>
+                                  {settings.tajweedEnabled ? (
+                                    <span dangerouslySetInnerHTML={{ __html: getHtmlForFirstWords(ayah.text, 2) }} />
+                                  ) : (
+                                    getFirstWords(ayah.text)
+                                  )}
                                   <span className="text-primary-500 mx-2">...</span>
                                 </span>
                               )}
@@ -865,6 +1007,7 @@ export default function TrainingPage({ settings }) {
                               </span>
                             </>
                           )}
+                          {renderVerseMarker(ayah.numberInSurah)}
                         </div>
                       )}
                     </div>
@@ -891,7 +1034,7 @@ export default function TrainingPage({ settings }) {
                     )}
                     <button
                       onClick={handleRevealAll}
-                      className="flex items-center gap-2 px-6 py-2 bg-gradient-to-r from-gold-500 to-gold-600 text-white rounded-lg hover:from-gold-600 hover:to-gold-700"
+                      className="flex items-center gap-2 px-6 py-2 bg-gradient-to-r from-primary-500 to-primary-600 text-white rounded-lg hover:from-primary-600 hover:to-primary-700"
                     >
                       <Eye className="w-4 h-4" />
                       Tout révéler

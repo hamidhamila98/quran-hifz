@@ -12,7 +12,9 @@ import {
   Volume2,
   ChevronDown,
   Hash,
-  BookOpen
+  BookOpen,
+  Settings,
+  Eye
 } from 'lucide-react'
 
 const navItems = [
@@ -43,10 +45,21 @@ const ARABIC_FONTS = [
 ]
 
 const RECITERS = [
-  { id: 'ar.minshawimujawwad', name: 'Al-Minshawi', type: 'Hafs' },
-  { id: 'ar.abdulbasitmujawwad', name: 'Abdul Basit', type: 'Hafs' },
-  { id: 'ar.husarymujawwad', name: 'Al-Husary', type: 'Hafs' },
-  { id: 'ar.dosarywarsh', name: 'Ibrahim Al-Dosary', type: 'Warsh' },
+  // Reciters with word-by-word timing (from quran-align)
+  { id: 'ar.alafasy', name: 'Mishary Al-Afasy', type: 'Hafs', hasWordTiming: true },
+  { id: 'ar.abdulbasitmujawwad', name: 'Abdul Basit (Mujawwad)', type: 'Hafs', hasWordTiming: true },
+  { id: 'ar.abdulbasitmurattal', name: 'Abdul Basit (Murattal)', type: 'Hafs', hasWordTiming: true },
+  { id: 'ar.sudais', name: 'Abdurrahmaan As-Sudais', type: 'Hafs', hasWordTiming: true },
+  { id: 'ar.shaatree', name: 'Abu Bakr Ash-Shaatree', type: 'Hafs', hasWordTiming: true },
+  { id: 'ar.hanirifai', name: 'Hani Ar-Rifai', type: 'Hafs', hasWordTiming: true },
+  { id: 'ar.husary', name: 'Al-Husary (Murattal)', type: 'Hafs', hasWordTiming: true },
+  { id: 'ar.husarymuallim', name: 'Al-Husary (Muallim)', type: 'Hafs', hasWordTiming: true },
+  { id: 'ar.minshawimujawwad', name: 'Al-Minshawi (Mujawwad)', type: 'Hafs', hasWordTiming: true },
+  { id: 'ar.minshawimurttal', name: 'Al-Minshawi (Murattal)', type: 'Hafs', hasWordTiming: true },
+  { id: 'ar.tablaway', name: 'Mohammad Al-Tablaway', type: 'Hafs', hasWordTiming: true },
+  { id: 'ar.shuraym', name: 'Saood Ash-Shuraym', type: 'Hafs', hasWordTiming: true },
+  // Reciter without word timing
+  { id: 'ar.dosarywarsh', name: 'Ibrahim Al-Dosary (Warsh)', type: 'Warsh', hasWordTiming: false },
 ]
 
 const PORTION_SIZES = [
@@ -57,10 +70,17 @@ const PORTION_SIZES = [
   { id: '2', name: '2 pages/j', description: '30 lignes' },
 ]
 
+const FONT_SIZES = [
+  { id: 'small', name: 'Petit' },
+  { id: 'medium', name: 'Moyen' },
+  { id: 'large', name: 'Grand' },
+]
+
 export default function Sidebar({ isOpen, setIsOpen, settings, updateSettings }) {
   const [fontDropdownOpen, setFontDropdownOpen] = useState(false)
   const [reciterDropdownOpen, setReciterDropdownOpen] = useState(false)
   const [portionDropdownOpen, setPortionDropdownOpen] = useState(false)
+  const [configOpen, setConfigOpen] = useState(false)
 
   const currentFont = ARABIC_FONTS.find(f => f.id === settings.arabicFont) || ARABIC_FONTS[0]
   const currentReciter = RECITERS.find(r => r.id === settings.reciter) || RECITERS[0]
@@ -117,48 +137,8 @@ export default function Sidebar({ isOpen, setIsOpen, settings, updateSettings })
 
       {/* Settings Controls */}
       {isOpen && (
-        <div className={`flex-1 px-3 py-4 space-y-3 border-t mt-2 ${darkMode ? 'border-slate-700' : 'border-gray-100'}`}>
-          {/* Tajweed Toggle */}
-          <div className={`flex items-center justify-between px-3 py-2 rounded-xl ${darkMode ? 'bg-slate-700/50' : 'bg-gray-50'}`}>
-            <div className="flex items-center gap-2">
-              <Palette className="w-4 h-4 text-primary-500" />
-              <span className={`text-sm font-medium ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>Tajweed (BETA)</span>
-            </div>
-            <button
-              onClick={() => updateSettings({ tajweedEnabled: !settings.tajweedEnabled })}
-              className={`relative w-11 h-6 rounded-full transition-colors ${
-                settings.tajweedEnabled ? 'bg-primary-500' : darkMode ? 'bg-slate-600' : 'bg-gray-300'
-              }`}
-            >
-              <span
-                className={`absolute top-1 left-1 w-4 h-4 bg-white rounded-full transition-transform shadow ${
-                  settings.tajweedEnabled ? 'translate-x-5' : ''
-                }`}
-              />
-            </button>
-          </div>
-
-          {/* Arabic Numerals Toggle */}
-          <div className={`flex items-center justify-between px-3 py-2 rounded-xl ${darkMode ? 'bg-slate-700/50' : 'bg-gray-50'}`}>
-            <div className="flex items-center gap-2">
-              <Hash className="w-4 h-4 text-primary-500" />
-              <span className={`text-sm font-medium ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>Chiffres arabes</span>
-            </div>
-            <button
-              onClick={() => updateSettings({ arabicNumerals: !settings.arabicNumerals })}
-              className={`relative w-11 h-6 rounded-full transition-colors ${
-                settings.arabicNumerals ? 'bg-primary-500' : darkMode ? 'bg-slate-600' : 'bg-gray-300'
-              }`}
-            >
-              <span
-                className={`absolute top-1 left-1 w-4 h-4 bg-white rounded-full transition-transform shadow ${
-                  settings.arabicNumerals ? 'translate-x-5' : ''
-                }`}
-              />
-            </button>
-          </div>
-
-          {/* Portion Size Dropdown */}
+        <div className={`flex-1 px-3 py-4 space-y-3 border-t mt-2 overflow-y-auto ${darkMode ? 'border-slate-700' : 'border-gray-100'}`}>
+          {/* Portion Size Dropdown - Always visible */}
           <div className="relative">
             <button
               onClick={() => { setPortionDropdownOpen(!portionDropdownOpen); setFontDropdownOpen(false); setReciterDropdownOpen(false) }}
@@ -175,7 +155,7 @@ export default function Sidebar({ isOpen, setIsOpen, settings, updateSettings })
               <ChevronDown className={`w-4 h-4 text-gray-500 transition-transform ${portionDropdownOpen ? 'rotate-180' : ''}`} />
             </button>
             {portionDropdownOpen && (
-              <div className={`absolute bottom-full left-0 right-0 mb-1 rounded-xl shadow-lg border overflow-hidden z-50 ${
+              <div className={`absolute top-full left-0 right-0 mt-1 rounded-xl shadow-lg border overflow-hidden z-50 max-h-48 overflow-y-auto ${
                 darkMode ? 'bg-slate-800 border-slate-700' : 'bg-white border-gray-100'
               }`}>
                 {PORTION_SIZES.map((portion) => (
@@ -201,42 +181,7 @@ export default function Sidebar({ isOpen, setIsOpen, settings, updateSettings })
             )}
           </div>
 
-          {/* Font Dropdown */}
-          <div className="relative">
-            <button
-              onClick={() => { setFontDropdownOpen(!fontDropdownOpen); setReciterDropdownOpen(false); setPortionDropdownOpen(false) }}
-              className={`w-full flex items-center justify-between px-3 py-2 rounded-xl transition-colors ${
-                darkMode ? 'bg-slate-700/50 hover:bg-slate-700' : 'bg-gray-50 hover:bg-gray-100'
-              }`}
-            >
-              <div className="flex items-center gap-2">
-                <Type className="w-4 h-4 text-primary-500" />
-                <span className={`text-sm font-medium ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>{currentFont.name}</span>
-              </div>
-              <ChevronDown className={`w-4 h-4 text-gray-500 transition-transform ${fontDropdownOpen ? 'rotate-180' : ''}`} />
-            </button>
-            {fontDropdownOpen && (
-              <div className={`absolute top-full left-0 right-0 mt-1 rounded-xl shadow-lg border overflow-hidden z-50 max-h-64 overflow-y-auto ${
-                darkMode ? 'bg-slate-800 border-slate-700' : 'bg-white border-gray-100'
-              }`}>
-                {ARABIC_FONTS.map((font) => (
-                  <button
-                    key={font.id}
-                    onClick={() => { updateSettings({ arabicFont: font.id }); setFontDropdownOpen(false) }}
-                    className={`w-full px-3 py-2 text-left text-sm transition-colors ${
-                      settings.arabicFont === font.id
-                        ? darkMode ? 'bg-primary-900/30 text-primary-400' : 'bg-primary-50 text-primary-600'
-                        : darkMode ? 'text-gray-300 hover:bg-slate-700' : 'text-gray-700 hover:bg-gray-50'
-                    }`}
-                  >
-                    {font.name}
-                  </button>
-                ))}
-              </div>
-            )}
-          </div>
-
-          {/* Reciter Dropdown */}
+          {/* Reciter Dropdown - Always visible */}
           <div className="relative">
             <button
               onClick={() => { setReciterDropdownOpen(!reciterDropdownOpen); setFontDropdownOpen(false); setPortionDropdownOpen(false) }}
@@ -247,13 +192,13 @@ export default function Sidebar({ isOpen, setIsOpen, settings, updateSettings })
               <div className="flex items-center gap-2">
                 <Volume2 className="w-4 h-4 text-primary-500" />
                 <span className={`text-sm font-medium truncate ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
-                  {currentReciter.name} <span className="text-xs text-gray-500">({currentReciter.type})</span>
+                  {currentReciter.name}
                 </span>
               </div>
               <ChevronDown className={`w-4 h-4 text-gray-500 transition-transform ${reciterDropdownOpen ? 'rotate-180' : ''}`} />
             </button>
             {reciterDropdownOpen && (
-              <div className={`absolute bottom-full left-0 right-0 mb-1 rounded-xl shadow-lg border overflow-hidden z-50 ${
+              <div className={`absolute top-full left-0 right-0 mt-1 rounded-xl shadow-lg border overflow-hidden z-50 max-h-48 overflow-y-auto ${
                 darkMode ? 'bg-slate-800 border-slate-700' : 'bg-white border-gray-100'
               }`}>
                 {RECITERS.map((reciter) => (
@@ -266,58 +211,218 @@ export default function Sidebar({ isOpen, setIsOpen, settings, updateSettings })
                         : darkMode ? 'text-gray-300 hover:bg-slate-700' : 'text-gray-700 hover:bg-gray-50'
                     }`}
                   >
-                    {reciter.name} <span className="text-xs text-gray-500">({reciter.type})</span>
+                    {reciter.name}
+                    {reciter.type === 'Warsh' && <span className="text-xs text-gray-500 ml-1">(Warsh)</span>}
                   </button>
                 ))}
               </div>
             )}
           </div>
 
-          {/* Playback Speed */}
-          <div className={`flex items-center justify-between px-3 py-2 rounded-xl ${darkMode ? 'bg-slate-700/50' : 'bg-gray-50'}`}>
-            <span className={`text-sm font-medium ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>Vitesse</span>
-            <div className="flex gap-1">
-              {[1, 1.5, 2].map((speed) => (
+          {/* Configuration Button */}
+          <button
+            onClick={() => setConfigOpen(!configOpen)}
+            className={`w-full flex items-center justify-between px-3 py-2 rounded-xl transition-colors ${
+              configOpen
+                ? darkMode ? 'bg-primary-900/30 text-primary-400' : 'bg-primary-50 text-primary-600'
+                : darkMode ? 'bg-slate-700/50 hover:bg-slate-700 text-gray-300' : 'bg-gray-50 hover:bg-gray-100 text-gray-700'
+            }`}
+          >
+            <div className="flex items-center gap-2">
+              <Settings className={`w-4 h-4 ${configOpen ? 'text-primary-500' : 'text-gray-500'}`} />
+              <span className="text-sm font-medium">Configuration</span>
+            </div>
+            <ChevronDown className={`w-4 h-4 text-gray-500 transition-transform ${configOpen ? 'rotate-180' : ''}`} />
+          </button>
+
+          {/* Configuration Options - Collapsible */}
+          {configOpen && (
+            <div className={`space-y-3 pl-2 border-l-2 ${darkMode ? 'border-slate-600' : 'border-gray-200'}`}>
+              {/* Tajweed Toggle */}
+              <div className={`flex items-center justify-between px-3 py-2 rounded-xl ${darkMode ? 'bg-slate-700/50' : 'bg-gray-50'}`}>
+                <div className="flex items-center gap-2">
+                  <Palette className="w-4 h-4 text-primary-500" />
+                  <span className={`text-sm font-medium ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>Tajweed</span>
+                </div>
                 <button
-                  key={speed}
-                  onClick={() => updateSettings({ playbackSpeed: speed })}
-                  className={`px-2 py-1 text-xs font-medium rounded-lg transition-colors ${
-                    settings.playbackSpeed === speed
-                      ? 'bg-primary-500 text-white'
-                      : darkMode
-                        ? 'bg-slate-600 text-gray-300 hover:bg-slate-500'
-                        : 'bg-gray-200 text-gray-600 hover:bg-gray-300'
+                  onClick={() => updateSettings({ tajweedEnabled: !settings.tajweedEnabled })}
+                  className={`relative w-11 h-6 rounded-full transition-colors ${
+                    settings.tajweedEnabled ? 'bg-primary-500' : darkMode ? 'bg-slate-600' : 'bg-gray-300'
                   }`}
                 >
-                  {speed}x
+                  <span
+                    className={`absolute top-1 left-1 w-4 h-4 bg-white rounded-full transition-transform shadow ${
+                      settings.tajweedEnabled ? 'translate-x-5' : ''
+                    }`}
+                  />
                 </button>
-              ))}
-            </div>
-          </div>
+              </div>
 
-          {/* Dark Mode Toggle */}
-          <div className={`flex items-center justify-between px-3 py-2 rounded-xl ${darkMode ? 'bg-slate-700/50' : 'bg-gray-50'}`}>
-            <div className="flex items-center gap-2">
-              {darkMode ? (
-                <Moon className="w-4 h-4 text-primary-500" />
-              ) : (
-                <Sun className="w-4 h-4 text-primary-500" />
-              )}
-              <span className={`text-sm font-medium ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>Mode sombre</span>
+              {/* Arabic Numerals Toggle */}
+              <div className={`flex items-center justify-between px-3 py-2 rounded-xl ${darkMode ? 'bg-slate-700/50' : 'bg-gray-50'}`}>
+                <div className="flex items-center gap-2">
+                  <Hash className="w-4 h-4 text-primary-500" />
+                  <span className={`text-sm font-medium ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>Chiffres arabes</span>
+                </div>
+                <button
+                  onClick={() => updateSettings({ arabicNumerals: !settings.arabicNumerals })}
+                  className={`relative w-11 h-6 rounded-full transition-colors ${
+                    settings.arabicNumerals ? 'bg-primary-500' : darkMode ? 'bg-slate-600' : 'bg-gray-300'
+                  }`}
+                >
+                  <span
+                    className={`absolute top-1 left-1 w-4 h-4 bg-white rounded-full transition-transform shadow ${
+                      settings.arabicNumerals ? 'translate-x-5' : ''
+                    }`}
+                  />
+                </button>
+              </div>
+
+              {/* Font Dropdown */}
+              <div className="relative">
+                <button
+                  onClick={() => { setFontDropdownOpen(!fontDropdownOpen); setReciterDropdownOpen(false); setPortionDropdownOpen(false) }}
+                  className={`w-full flex items-center justify-between px-3 py-2 rounded-xl transition-colors ${
+                    darkMode ? 'bg-slate-700/50 hover:bg-slate-700' : 'bg-gray-50 hover:bg-gray-100'
+                  }`}
+                >
+                  <div className="flex items-center gap-2">
+                    <Type className="w-4 h-4 text-primary-500" />
+                    <span className={`text-sm font-medium ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>{currentFont.name}</span>
+                  </div>
+                  <ChevronDown className={`w-4 h-4 text-gray-500 transition-transform ${fontDropdownOpen ? 'rotate-180' : ''}`} />
+                </button>
+                {fontDropdownOpen && (
+                  <div className={`absolute top-full left-0 right-0 mt-1 rounded-xl shadow-lg border overflow-hidden z-50 max-h-48 overflow-y-auto ${
+                    darkMode ? 'bg-slate-800 border-slate-700' : 'bg-white border-gray-100'
+                  }`}>
+                    {ARABIC_FONTS.map((font) => (
+                      <button
+                        key={font.id}
+                        onClick={() => { updateSettings({ arabicFont: font.id }); setFontDropdownOpen(false) }}
+                        className={`w-full px-3 py-2 text-left text-sm transition-colors ${
+                          settings.arabicFont === font.id
+                            ? darkMode ? 'bg-primary-900/30 text-primary-400' : 'bg-primary-50 text-primary-600'
+                            : darkMode ? 'text-gray-300 hover:bg-slate-700' : 'text-gray-700 hover:bg-gray-50'
+                        }`}
+                      >
+                        {font.name}
+                      </button>
+                    ))}
+                  </div>
+                )}
+              </div>
+
+              {/* Playback Speed */}
+              <div className={`flex items-center justify-between px-3 py-2 rounded-xl ${darkMode ? 'bg-slate-700/50' : 'bg-gray-50'}`}>
+                <span className={`text-sm font-medium ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>Vitesse</span>
+                <div className="flex gap-1">
+                  {[1, 1.5, 2].map((speed) => (
+                    <button
+                      key={speed}
+                      onClick={() => updateSettings({ playbackSpeed: speed })}
+                      className={`px-2 py-1 text-xs font-medium rounded-lg transition-colors ${
+                        settings.playbackSpeed === speed
+                          ? 'bg-primary-500 text-white'
+                          : darkMode
+                            ? 'bg-slate-600 text-gray-300 hover:bg-slate-500'
+                            : 'bg-gray-200 text-gray-600 hover:bg-gray-300'
+                      }`}
+                    >
+                      {speed}x
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              {/* Verse Highlight Toggle */}
+              <div className={`flex items-center justify-between px-3 py-2 rounded-xl ${darkMode ? 'bg-slate-700/50' : 'bg-gray-50'}`}>
+                <div className="flex items-center gap-2">
+                  <Eye className="w-4 h-4 text-primary-500" />
+                  <span className={`text-sm font-medium ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>Suivi verset</span>
+                </div>
+                <button
+                  onClick={() => updateSettings({ verseHighlight: settings.verseHighlight === false ? true : false })}
+                  className={`relative w-11 h-6 rounded-full transition-colors ${
+                    settings.verseHighlight !== false ? 'bg-primary-500' : darkMode ? 'bg-slate-600' : 'bg-gray-300'
+                  }`}
+                >
+                  <span
+                    className={`absolute top-1 left-1 w-4 h-4 bg-white rounded-full transition-transform shadow ${
+                      settings.verseHighlight !== false ? 'translate-x-5' : ''
+                    }`}
+                  />
+                </button>
+              </div>
+
+              {/* Word Highlight Toggle */}
+              <div className={`flex items-center justify-between px-3 py-2 rounded-xl ${darkMode ? 'bg-slate-700/50' : 'bg-gray-50'}`}>
+                <div className="flex items-center gap-2">
+                  <Type className="w-4 h-4 text-primary-500" />
+                  <span className={`text-sm font-medium ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>Suivi mot</span>
+                </div>
+                <button
+                  onClick={() => updateSettings({ wordHighlight: settings.wordHighlight === false ? true : false })}
+                  className={`relative w-11 h-6 rounded-full transition-colors ${
+                    settings.wordHighlight !== false ? 'bg-primary-500' : darkMode ? 'bg-slate-600' : 'bg-gray-300'
+                  }`}
+                  title={currentReciter.hasWordTiming ? 'Suivi mot par mot disponible' : 'Non disponible pour ce réciteur'}
+                >
+                  <span
+                    className={`absolute top-1 left-1 w-4 h-4 bg-white rounded-full transition-transform shadow ${
+                      settings.wordHighlight !== false ? 'translate-x-5' : ''
+                    }`}
+                  />
+                </button>
+              </div>
+
+              {/* Font Size */}
+              <div className={`flex items-center justify-between px-3 py-2 rounded-xl ${darkMode ? 'bg-slate-700/50' : 'bg-gray-50'}`}>
+                <span className={`text-sm font-medium ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>Taille</span>
+                <div className="flex gap-1">
+                  {FONT_SIZES.map((size) => (
+                    <button
+                      key={size.id}
+                      onClick={() => updateSettings({ fontSize: size.id })}
+                      className={`px-2 py-1 text-xs font-medium rounded-lg transition-colors ${
+                        (settings.fontSize || 'medium') === size.id
+                          ? 'bg-primary-500 text-white'
+                          : darkMode
+                            ? 'bg-slate-600 text-gray-300 hover:bg-slate-500'
+                            : 'bg-gray-200 text-gray-600 hover:bg-gray-300'
+                      }`}
+                    >
+                      {size.name}
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              {/* Dark Mode Toggle */}
+              <div className={`flex items-center justify-between px-3 py-2 rounded-xl ${darkMode ? 'bg-slate-700/50' : 'bg-gray-50'}`}>
+                <div className="flex items-center gap-2">
+                  {darkMode ? (
+                    <Moon className="w-4 h-4 text-primary-500" />
+                  ) : (
+                    <Sun className="w-4 h-4 text-primary-500" />
+                  )}
+                  <span className={`text-sm font-medium ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>Mode sombre</span>
+                </div>
+                <button
+                  onClick={() => updateSettings({ darkMode: !settings.darkMode })}
+                  className={`relative w-11 h-6 rounded-full transition-colors ${
+                    darkMode ? 'bg-primary-500' : 'bg-gray-300'
+                  }`}
+                >
+                  <span
+                    className={`absolute top-1 left-1 w-4 h-4 bg-white rounded-full transition-transform shadow ${
+                      darkMode ? 'translate-x-5' : ''
+                    }`}
+                  />
+                </button>
+              </div>
             </div>
-            <button
-              onClick={() => updateSettings({ darkMode: !settings.darkMode })}
-              className={`relative w-11 h-6 rounded-full transition-colors ${
-                darkMode ? 'bg-primary-500' : 'bg-gray-300'
-              }`}
-            >
-              <span
-                className={`absolute top-1 left-1 w-4 h-4 bg-white rounded-full transition-transform shadow ${
-                  darkMode ? 'translate-x-5' : ''
-                }`}
-              />
-            </button>
-          </div>
+          )}
         </div>
       )}
 
