@@ -8,19 +8,39 @@ import {
   Moon,
   Sun,
   ChevronDown,
-  BookText
+  BookText,
+  Settings,
+  Type
 } from 'lucide-react'
 
 const navItems = [
-  { path: '/arabic', icon: BookText, label: "Apprentissage" },
+  { path: '/arabic', icon: BookText, label: "Arabe" },
   { path: '/', icon: BookOpen, label: 'Quran Hifz' },
 ]
 
+// Arabic fonts for learning
+const ARABIC_FONTS = [
+  { id: 'amiri', name: 'Amiri', family: "'Amiri', serif" },
+  { id: 'scheherazade', name: 'Scheherazade', family: "'Scheherazade New', serif" },
+  { id: 'noto-naskh', name: 'Noto Naskh', family: "'Noto Naskh Arabic', serif" },
+  { id: 'lateef', name: 'Lateef', family: "'Lateef', serif" },
+]
+
+// Book/Tome configuration
+const BOOKS = [
+  { id: 'aby1', name: 'Al-Arabiya Bayna Yadayk - Tome 1', shortName: 'ABY Tome 1' },
+  { id: 'aby2', name: 'Al-Arabiya Bayna Yadayk - Tome 2', shortName: 'ABY Tome 2' },
+  { id: 'aby3', name: 'Al-Arabiya Bayna Yadayk - Tome 3', shortName: 'ABY Tome 3' },
+  { id: 'aby4', name: 'Al-Arabiya Bayna Yadayk - Tome 4', shortName: 'ABY Tome 4' },
+]
+
 export default function ArabicSidebar({ isOpen, setIsOpen, settings, updateSettings }) {
-  const [unitDropdownOpen, setUnitDropdownOpen] = useState(false)
+  const [openTomeDropdown, setOpenTomeDropdown] = useState(null) // Which tome dropdown is open
+  const [configOpen, setConfigOpen] = useState(false)
   const [arabicData, setArabicData] = useState(null)
 
   const darkMode = settings.darkMode
+  const currentBook = settings.arabicBook || 'aby1'
   const currentUnit = settings.arabicUnit || 1
 
   // Load Arabic data for unit names
@@ -33,138 +53,276 @@ export default function ArabicSidebar({ isOpen, setIsOpen, settings, updateSetti
 
   const units = arabicData?.units || []
   const currentUnitData = units.find(u => u.id === currentUnit)
+  const currentFont = ARABIC_FONTS.find(f => f.id === settings.arabicLearningFont) || ARABIC_FONTS[0]
+
+  // Toggle tome dropdown
+  const toggleTomeDropdown = (tomeId) => {
+    setOpenTomeDropdown(openTomeDropdown === tomeId ? null : tomeId)
+  }
+
+  // Get units for a specific book
+  const getUnitsForBook = (bookId) => {
+    if (bookId === 'aby1') return units
+    return [] // Other tomes empty for now
+  }
+
+  // Get validation count for a book
+  const getBookProgress = (bookId) => {
+    if (bookId !== 'aby1') return { validated: 0, total: 0 }
+    const validated = settings.arabicValidated || {}
+    const totalDialogues = units.reduce((acc, u) => acc + (u.dialogues?.length || 0), 0)
+    return { validated: Object.keys(validated).length, total: totalDialogues }
+  }
 
   return (
     <aside
-      className={`fixed top-0 left-0 h-full transition-all duration-300 z-50 ${
+      className={`fixed top-0 left-0 h-full transition-all duration-300 z-50 flex flex-col ${
         isOpen ? 'w-64' : 'w-16'
       } ${darkMode ? 'bg-slate-800 text-white' : 'bg-white text-gray-900'} shadow-lg`}
     >
       {/* Header */}
-      <div className="p-4 flex items-center justify-between border-b border-gray-200 dark:border-slate-700">
+      <div className={`p-4 flex items-center justify-between border-b ${darkMode ? 'border-slate-700' : 'border-gray-100'}`}>
         {isOpen && (
-          <h2 className="text-lg font-bold text-emerald-600">
-            Arabe
-          </h2>
+          <div className="flex items-center gap-2">
+            <div className="w-8 h-8 bg-gradient-to-br from-emerald-500 to-emerald-700 rounded-lg flex items-center justify-center">
+              <span className="text-white font-bold text-sm">ع</span>
+            </div>
+            <h1 className={`font-semibold ${darkMode ? 'text-white' : 'text-gray-800'}`}>Arabe</h1>
+          </div>
         )}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className={`p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-slate-700 ${!isOpen && 'mx-auto'}`}
+          className={`p-2 rounded-lg transition-colors ${darkMode ? 'hover:bg-slate-700' : 'hover:bg-gray-100'} ${!isOpen && 'mx-auto'}`}
         >
           {isOpen ? <ChevronLeft className="w-5 h-5" /> : <ChevronRight className="w-5 h-5" />}
         </button>
       </div>
 
       {/* Navigation */}
-      <nav className="p-2">
+      <nav className="p-3 space-y-1">
         {navItems.map((item) => (
           <NavLink
             key={item.path}
             to={item.path}
             className={({ isActive }) =>
-              `flex items-center gap-3 p-3 rounded-lg transition-colors mb-1 ${
+              `flex items-center gap-3 px-3 py-3 rounded-xl transition-all duration-200 ${
                 isActive
-                  ? 'bg-emerald-100 text-emerald-700 dark:bg-emerald-900 dark:text-emerald-300'
-                  : 'hover:bg-gray-100 dark:hover:bg-slate-700'
+                  ? darkMode ? 'bg-emerald-900/30 text-emerald-400' : 'bg-emerald-50 text-emerald-600'
+                  : darkMode ? 'text-gray-400 hover:bg-slate-700' : 'text-gray-600 hover:bg-gray-50'
               } ${!isOpen && 'justify-center'}`
             }
           >
             <item.icon className="w-5 h-5 flex-shrink-0" />
-            {isOpen && <span className="text-sm font-medium">{item.label}</span>}
+            {isOpen && <span className="font-medium">{item.label}</span>}
           </NavLink>
         ))}
       </nav>
 
-      {/* Settings when open */}
+      {/* Books/Tomes Section */}
       {isOpen && (
-        <div className="p-4 space-y-4 border-t border-gray-200 dark:border-slate-700">
-          {/* Unit selector */}
-          <div className="relative">
-            <label className="block text-xs font-medium text-gray-500 dark:text-gray-400 mb-1">
-              Unité
-            </label>
+        <div className={`flex-1 px-3 py-4 space-y-2 border-t mt-2 overflow-y-auto ${darkMode ? 'border-slate-700' : 'border-gray-100'}`}>
+          <div className={`text-xs font-semibold uppercase tracking-wider px-3 mb-2 ${darkMode ? 'text-gray-500' : 'text-gray-400'}`}>
+            Livres
+          </div>
+
+          {BOOKS.map((book) => {
+            const bookUnits = getUnitsForBook(book.id)
+            const progress = getBookProgress(book.id)
+            const isCurrentBook = currentBook === book.id
+            const hasUnits = bookUnits.length > 0
+
+            return (
+              <div key={book.id} className="relative">
+                <button
+                  onClick={() => hasUnits && toggleTomeDropdown(book.id)}
+                  className={`w-full flex items-center justify-between px-3 py-2.5 rounded-xl transition-colors ${
+                    isCurrentBook
+                      ? darkMode ? 'bg-emerald-900/30 text-emerald-400' : 'bg-emerald-50 text-emerald-600'
+                      : darkMode ? 'bg-slate-700/50 hover:bg-slate-700' : 'bg-gray-50 hover:bg-gray-100'
+                  } ${!hasUnits && 'opacity-50 cursor-not-allowed'}`}
+                  disabled={!hasUnits}
+                >
+                  <div className="flex items-center gap-2 flex-1 min-w-0">
+                    <BookOpen className={`w-4 h-4 flex-shrink-0 ${isCurrentBook ? 'text-emerald-500' : 'text-gray-500'}`} />
+                    <span className={`text-sm font-medium truncate ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                      {book.shortName}
+                    </span>
+                    {hasUnits && progress.total > 0 && (
+                      <span className={`text-xs px-1.5 py-0.5 rounded ${
+                        darkMode ? 'bg-slate-600 text-gray-400' : 'bg-gray-200 text-gray-500'
+                      }`}>
+                        {progress.validated}/{progress.total}
+                      </span>
+                    )}
+                  </div>
+                  {hasUnits && (
+                    <ChevronDown className={`w-4 h-4 text-gray-500 transition-transform flex-shrink-0 ${
+                      openTomeDropdown === book.id ? 'rotate-180' : ''
+                    }`} />
+                  )}
+                </button>
+
+                {/* Units dropdown */}
+                {openTomeDropdown === book.id && hasUnits && (
+                  <div className={`mt-1 ml-4 rounded-lg border max-h-48 overflow-y-auto ${
+                    darkMode ? 'bg-slate-700 border-slate-600' : 'bg-white border-gray-200'
+                  }`}>
+                    {bookUnits.map((unit) => (
+                      <button
+                        key={unit.id}
+                        onClick={() => {
+                          updateSettings({ arabicBook: book.id, arabicUnit: unit.id, arabicDialogue: 0 })
+                          setOpenTomeDropdown(null)
+                        }}
+                        className={`w-full text-left px-3 py-2 text-sm transition-colors ${
+                          unit.id === currentUnit && currentBook === book.id
+                            ? darkMode ? 'bg-emerald-900/50 text-emerald-300' : 'bg-emerald-100 text-emerald-700'
+                            : darkMode ? 'hover:bg-slate-600' : 'hover:bg-gray-50'
+                        }`}
+                      >
+                        <div className={`font-medium ${darkMode ? 'text-gray-200' : 'text-gray-700'}`}>
+                          {unit.id}. {unit.titleFr}
+                        </div>
+                        <div className={`text-xs ${darkMode ? 'text-gray-400' : 'text-gray-500'}`} dir="rtl">
+                          {unit.titleAr}
+                        </div>
+                      </button>
+                    ))}
+                  </div>
+                )}
+              </div>
+            )
+          })}
+
+          {/* Configuration Section */}
+          <div className={`mt-4 pt-4 border-t ${darkMode ? 'border-slate-700' : 'border-gray-200'}`}>
             <button
-              onClick={() => setUnitDropdownOpen(!unitDropdownOpen)}
-              className={`w-full flex items-center justify-between p-3 rounded-lg border ${
-                darkMode ? 'border-slate-600 bg-slate-700' : 'border-gray-200 bg-gray-50'
+              onClick={() => setConfigOpen(!configOpen)}
+              className={`w-full flex items-center justify-between px-3 py-2 rounded-xl transition-colors ${
+                configOpen
+                  ? darkMode ? 'bg-emerald-900/30 text-emerald-400' : 'bg-emerald-50 text-emerald-600'
+                  : darkMode ? 'bg-slate-700/50 hover:bg-slate-700 text-gray-300' : 'bg-gray-50 hover:bg-gray-100 text-gray-700'
               }`}
             >
-              <span className="text-sm truncate">
-                {currentUnitData ? `${currentUnitData.id}. ${currentUnitData.titleFr}` : `Unité ${currentUnit}`}
-              </span>
-              <ChevronDown className={`w-4 h-4 transition-transform ${unitDropdownOpen ? 'rotate-180' : ''}`} />
+              <div className="flex items-center gap-2">
+                <Settings className={`w-4 h-4 ${configOpen ? 'text-emerald-500' : 'text-gray-500'}`} />
+                <span className="text-sm font-medium">Configuration</span>
+              </div>
+              <ChevronDown className={`w-4 h-4 text-gray-500 transition-transform ${configOpen ? 'rotate-180' : ''}`} />
             </button>
 
-            {unitDropdownOpen && (
-              <div className={`absolute z-10 w-full mt-1 rounded-lg shadow-lg border max-h-60 overflow-y-auto ${
-                darkMode ? 'bg-slate-700 border-slate-600' : 'bg-white border-gray-200'
-              }`}>
-                {units.map((unit) => (
-                  <button
-                    key={unit.id}
-                    onClick={() => {
-                      updateSettings({ arabicUnit: unit.id, arabicDialogue: 0 })
-                      setUnitDropdownOpen(false)
-                    }}
-                    className={`w-full text-left px-3 py-2 text-sm hover:bg-emerald-50 dark:hover:bg-slate-600 ${
-                      unit.id === currentUnit ? 'bg-emerald-100 dark:bg-emerald-900 text-emerald-700 dark:text-emerald-300' : ''
+            {configOpen && (
+              <div className={`mt-2 space-y-3 pl-2 border-l-2 ${darkMode ? 'border-slate-600' : 'border-gray-200'}`}>
+                {/* Font Selection */}
+                <div className={`flex items-center justify-between px-3 py-2 rounded-xl ${darkMode ? 'bg-slate-700/50' : 'bg-gray-50'}`}>
+                  <div className="flex items-center gap-2">
+                    <Type className="w-4 h-4 text-emerald-500" />
+                    <span className={`text-sm ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>Police</span>
+                  </div>
+                  <select
+                    value={settings.arabicLearningFont || 'amiri'}
+                    onChange={(e) => updateSettings({ arabicLearningFont: e.target.value })}
+                    className={`text-xs px-2 py-1 rounded-lg border ${
+                      darkMode
+                        ? 'bg-slate-600 border-slate-500 text-gray-200'
+                        : 'bg-white border-gray-300 text-gray-700'
                     }`}
                   >
-                    <div className="font-medium">{unit.id}. {unit.titleFr}</div>
-                    <div className="text-xs text-gray-500 dark:text-gray-400">{unit.titleAr}</div>
+                    {ARABIC_FONTS.map(font => (
+                      <option key={font.id} value={font.id}>{font.name}</option>
+                    ))}
+                  </select>
+                </div>
+
+                {/* Font Size */}
+                <div className={`flex items-center justify-between px-3 py-2 rounded-xl ${darkMode ? 'bg-slate-700/50' : 'bg-gray-50'}`}>
+                  <span className={`text-sm ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>Taille</span>
+                  <div className="flex gap-1 items-end">
+                    {['small', 'medium', 'large'].map((size) => (
+                      <button
+                        key={size}
+                        onClick={() => updateSettings({ arabicLearningFontSize: size })}
+                        className={`w-7 h-7 flex items-center justify-center rounded-lg transition-colors ${
+                          (settings.arabicLearningFontSize || 'medium') === size
+                            ? 'bg-emerald-500 text-white'
+                            : darkMode ? 'bg-slate-600 text-gray-300 hover:bg-slate-500' : 'bg-gray-200 text-gray-600 hover:bg-gray-300'
+                        }`}
+                        title={size === 'small' ? 'Petit' : size === 'medium' ? 'Moyen' : 'Grand'}
+                      >
+                        <span className={size === 'small' ? 'text-xs' : size === 'medium' ? 'text-sm' : 'text-base'} style={{ fontWeight: 'bold' }}>A</span>
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Dark Mode Toggle */}
+                <div className={`flex items-center justify-between px-3 py-2 rounded-xl ${darkMode ? 'bg-slate-700/50' : 'bg-gray-50'}`}>
+                  <div className="flex items-center gap-2">
+                    {darkMode ? <Moon className="w-4 h-4 text-emerald-500" /> : <Sun className="w-4 h-4 text-emerald-500" />}
+                    <span className={`text-sm ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>Mode sombre</span>
+                  </div>
+                  <button
+                    onClick={() => updateSettings({ darkMode: !darkMode })}
+                    className={`relative w-11 h-6 rounded-full transition-colors ${
+                      darkMode ? 'bg-emerald-500' : 'bg-gray-300'
+                    }`}
+                  >
+                    <span
+                      className={`absolute top-1 left-1 w-4 h-4 bg-white rounded-full transition-transform shadow ${
+                        darkMode ? 'translate-x-5' : ''
+                      }`}
+                    />
                   </button>
-                ))}
+                </div>
               </div>
             )}
           </div>
-
-          {/* Dark mode toggle */}
-          <div className="flex items-center justify-between">
-            <span className="text-sm">Mode sombre</span>
-            <button
-              onClick={() => updateSettings({ darkMode: !darkMode })}
-              className={`p-2 rounded-lg ${
-                darkMode
-                  ? 'bg-slate-600 text-yellow-400'
-                  : 'bg-gray-100 text-gray-600'
-              }`}
-            >
-              {darkMode ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
-            </button>
-          </div>
-
-          {/* Progress */}
-          <div className={`p-3 rounded-lg ${darkMode ? 'bg-slate-700' : 'bg-gray-50'}`}>
-            <div className="text-xs text-gray-500 dark:text-gray-400 mb-1">Progression</div>
-            <div className="flex items-center gap-2">
-              <div className="flex-1 h-2 bg-gray-200 dark:bg-slate-600 rounded-full overflow-hidden">
-                <div
-                  className="h-full bg-emerald-500 transition-all"
-                  style={{ width: `${(Object.keys(settings.arabicValidated || {}).length / 48) * 100}%` }}
-                />
-              </div>
-              <span className="text-sm font-medium">
-                {Object.keys(settings.arabicValidated || {}).length}/48
-              </span>
-            </div>
-          </div>
         </div>
       )}
 
-      {/* Collapsed state icons */}
+      {/* Collapsed Settings Icons */}
       {!isOpen && (
-        <div className="p-2 space-y-2 border-t border-gray-200 dark:border-slate-700 mt-2">
+        <div className={`flex-1 px-2 py-4 space-y-2 border-t mt-2 ${darkMode ? 'border-slate-700' : 'border-gray-100'}`}>
           <button
             onClick={() => updateSettings({ darkMode: !darkMode })}
-            className={`w-full p-3 rounded-lg flex justify-center ${
-              darkMode ? 'bg-slate-600 text-yellow-400' : 'bg-gray-100 text-gray-600'
+            className={`w-full p-3 rounded-xl transition-colors ${
+              darkMode
+                ? 'bg-emerald-900/30 text-emerald-400'
+                : 'text-gray-500 hover:bg-gray-100'
             }`}
             title="Mode sombre"
           >
-            {darkMode ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+            {darkMode ? <Moon className="w-5 h-5 mx-auto" /> : <Sun className="w-5 h-5 mx-auto" />}
           </button>
         </div>
       )}
+
+      {/* Footer */}
+      <div className="p-3">
+        <div className={`rounded-2xl p-4 border ${!isOpen ? 'p-2' : ''} ${
+          darkMode
+            ? 'bg-gradient-to-br from-emerald-900/40 via-teal-900/30 to-emerald-900/20 border-emerald-700/30'
+            : 'bg-gradient-to-br from-emerald-500/10 via-teal-500/10 to-emerald-500/5 border-emerald-200/50'
+        }`}>
+          {isOpen ? (
+            <>
+              <p className={`text-center font-semibold ${darkMode ? 'text-emerald-300' : 'text-emerald-700'}`}
+                 style={{ fontFamily: "'Amiri', serif", fontSize: '1.1rem', lineHeight: '2' }} dir="rtl">
+                اللُّغَةُ العَرَبِيَّةُ
+              </p>
+              <div className="flex items-center justify-center gap-2 mt-2">
+                <div className={`h-px flex-1 bg-gradient-to-r from-transparent to-transparent ${darkMode ? 'via-emerald-600' : 'via-emerald-300'}`} />
+                <p className={`text-xs font-medium px-2 ${darkMode ? 'text-emerald-400' : 'text-emerald-600'}`}>
+                  La langue arabe
+                </p>
+                <div className={`h-px flex-1 bg-gradient-to-r from-transparent to-transparent ${darkMode ? 'via-emerald-600' : 'via-emerald-300'}`} />
+              </div>
+            </>
+          ) : (
+            <p className={`text-center text-lg ${darkMode ? 'text-emerald-400' : 'text-emerald-600'}`}>ع</p>
+          )}
+        </div>
+      </div>
     </aside>
   )
 }

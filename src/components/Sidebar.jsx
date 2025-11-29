@@ -21,6 +21,7 @@ import {
 const navItems = [
   { path: '/', icon: Home, label: "Aujourd'hui" },
   { path: '/training', icon: Brain, label: 'Entraînement' },
+  { path: '/arabic', icon: BookText, label: 'Arabe' },
 ]
 
 const ARABIC_FONTS = [

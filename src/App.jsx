@@ -29,9 +29,12 @@ const defaultSettings = {
   arabicNumerals: true,
   wordHighlight: true, // Word-by-word highlighting during audio playback
   // Arabic learning settings
+  arabicBook: 'aby1', // Current book/tome
   arabicUnit: 1,
   arabicDialogue: 0,
   arabicValidated: {}, // { "1-0": true, "1-1": true, ... }
+  arabicLearningFont: 'amiri',
+  arabicLearningFontSize: 'medium',
 }
 
 function App() {
