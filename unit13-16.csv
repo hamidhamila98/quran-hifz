@@ -1,0 +1,169 @@
+Unité,Titre (AR),Titre (FR),Dial.,Pers.,Texte Arabe (Vocalisé),Phonétique,Traduction Française
+13,السفر,Le Voyage,13.1,الموظف,أَيَّ خِدمَةٍ ؟,Ayya khidmah?,Puis-je vous aider ?
+13,السفر,Le Voyage,13.1,المسافر,لَدَيَّ حَجْزُ إلى جُدَّةَ، وأريد تأكيد الحجز,"Ladayya ḥajzun ilā Jeddah, wa urīdu ta'kīda l-ḥajz","J'ai une réservation pour Jeddah, et je veux confirmer la réservation."
+13,السفر,Le Voyage,13.1,الموظف,هَلِ الحَجْزُ عَلَى الخُطوط السعودِيَّةِ ؟,Hali l-ḥajzu ʿalā l-khuṭūṭi s-suʿūdiyyah?,Est-ce que la réservation est sur la Saudi Airlines ?
+13,السفر,Le Voyage,13.1,المسافر,لا ، هُوَ على الخطوط الإندونيسية,"Lā, huwa ʿalā l-khuṭūṭi l-indūnīsiyyah","Non, c'est sur les lignes indonésiennes."
+13,السفر,Le Voyage,13.1,الموظف,أَيْنَ التَّذاكِرُ ؟,Ayna t-tadhākir?,Où sont les billets ?
+13,السفر,Le Voyage,13.1,المسافر,هَذِهِ هِيَ التَّذاكِرُ : تَذْكِرَتِي، وَتَذْكِرَةُ زَوْجَتِي,"Hādhihi hiya t-tadhākir: tadhkiratī, wa tadhkiratu zawjatī","Voici les billets : mon billet, et le billet de ma femme."
+13,السفر,Le Voyage,13.1,المسافر,وتَذْكِرَةُ ابْنِي، وَتَذْكِرَةُ بِنْتِي,"Wa tadhkiratu ibnī, wa tadhkiratu bintī","Et le billet de mon fils, et le billet de ma fille."
+13,السفر,Le Voyage,13.1,الموظف,وَأَيْنَ جَوازاتُ السَّفَرِ ؟,Wa ayna jawāzātu s-safar?,Et où sont les passeports ?
+13,السفر,Le Voyage,13.1,المسافر,هَذِهِ هِيَ جَوازَاتُ السَّفَرِ,Hādhihi hiya jawāzātu s-safar,Voici les passeports.
+13,السفر,Le Voyage,13.1,الموظف,أَيْنَ تَأشِيرَةُ الخُرُوجِ ؟,Ayna ta'shīratu l-khurūj?,Où est le visa de sortie ?
+13,السفر,Le Voyage,13.1,المسافر,هَذِهِ تَأْشِيرَةُ الخُرُوجِ، وَهَذِهِ تَأْشِيرَةُ الدخول,"Hādhihi ta'shīratu l-khurūj, wa hādhihi ta'shīratu d-dukhūl","Voici le visa de sortie, et voici le visa d'entrée."
+13,السفر,Le Voyage,13.1,الموظف,الرَّحلَةُ رَقْمُ ٧٧٧ . تُغَادِرُ الطَّائِرَةُ السَّاعَةَ الثَّالِثَةَ فَجْراً,Ar-riḥlatu raqm sab'ami'ah wa sab'a wa sab'ūn...,Le vol numéro 777. L'avion part à trois heures de l'aube.
+13,السفر,Le Voyage,13.1,الموظف,احْضُرْ إِلى المَطارِ قَبْلَ سَاعَتَيْنِ,Uḥḍur ilā l-maṭāri qabla sāʿatayn,Présentez-vous à l'aéroport deux heures avant.
+13,السفر,Le Voyage,13.1,المسافر,شكراً,Shukran,Merci.
+13,السفر,Le Voyage,13.1,الموظف,رِحْلَةً سَعِيدَةً,Riḥlatan saʿīdah,Bon voyage.
+13,السفر,Le Voyage,13.2,المسافر,السَّلامُ عَلَيْكُم,As-salāmu ʿalaykum,Que la paix soit sur vous.
+13,السفر,Le Voyage,13.2,الضابط,وَعَلَيْكُمُ السَّلَامُ أَهْلاً وَسَهْلاً جَوازَ السَّفَرِ مِنْ فَضْلِكَ,...jawāza s-safari min faḍlika,"Et sur vous la paix, bienvenue. Votre passeport s'il vous plaît."
+13,السفر,Le Voyage,13.2,المسافر,هَذَا هُوَ جَوازُ السَّفَرِ,Hādhā huwa jawāzu s-safar,Voici le passeport.
+13,السفر,Le Voyage,13.2,الضابط,هَلْ أَنْتَ ماليزي ؟,Hal anta Mālīziyy?,Êtes-vous Malaisien ?
+13,السفر,Le Voyage,13.2,المسافر,لا ، أنا كَشْمِيرِي,"Lā, ana Kashmīriyy","Non, je suis Cachemiri."
+13,السفر,Le Voyage,13.2,الضابط,هَلْ أَنْتَ قَادِمٌ لِلعَمَلِ ؟,Hal anta qādimun lil-ʿamal?,Venez-vous pour travailler ?
+13,السفر,Le Voyage,13.2,المسافر,لا ، أنا قادِمٌ لِلزِّيارَةِ والعُمْرَةِ,"Lā, ana qādimun liz-ziyārati wa l-ʿumrah","Non, je viens pour une visite et la Omra."
+13,السفر,Le Voyage,13.2,الضابط,كَم يَوْماً سَتُقِيمُ هُنا ؟,Kam yawman satuqīmu hunā?,Combien de jours resterez-vous ici ?
+13,السفر,Le Voyage,13.2,المسافر,ثَلَاثَةَ أسابيع تَقْرِيباً,Thalāthata asābīʿ taqrīban,Environ trois semaines.
+13,السفر,Le Voyage,13.2,الضابط,أَيْنَ سَتُقِيمُ ؟,Ayna satuqīm?,Où résiderez-vous ?
+13,السفر,Le Voyage,13.2,المسافر,سَأُقِيمُ فِي فُنْدُقٍ قَرِيبٍ مِنَ المَسْجِدِ الحرام,Sa-uqīmu fī funduqin qarīb min al-Masjidi l-Ḥarām,Je résiderai dans un hôtel proche de la Mosquée Sacrée.
+13,السفر,Le Voyage,13.2,الضابط,إقَامَةً طَيِّبَةً، وعُمْرَةً مَقْبُولَةً إِنْ شَاءَ الله,"Iqāmatan ṭayyibah, wa ʿumratan maqbūlah...","Bon séjour, et Omra acceptée si Dieu le veut."
+13,السفر,Le Voyage,13.2,المسافر,جَزَاكَ اللهُ خَيْرًا,Jazāka llāhu khayran,Qu'Allah vous récompense.
+13,السفر,Le Voyage,13.3,الموظف,أَهْلاً وسهلا,Ahlan wa sahlan,Bienvenue.
+13,السفر,Le Voyage,13.3,المسافر,فَقَدْتُ حقيبتي,Faqadtu ḥaqībatī,J'ai perdu ma valise.
+13,السفر,Le Voyage,13.3,الموظف,مِنْ أَيْنَ أَنْتَ قَادِمٌ ؟,Min ayna anta qādim?,D'où venez-vous (arrivez-vous) ?
+13,السفر,Le Voyage,13.3,المسافر,أنا قادِمٌ مِنْ بَنْغَلاديش,Ana qādimun min Banghalādīsh,Je viens du Bangladesh.
+13,السفر,Le Voyage,13.3,الموظف,أَيْنَ الجَوازُ ؟ وَأَيْنَ التَّذْكِرَةُ ؟,Ayna l-jawāz? Wa ayna t-tadhkirah?,Où est le passeport ? Et où est le billet ?
+13,السفر,Le Voyage,13.3,المسافر,هذا هُوَ الجَوازُ، وَهَذِهِ هِيَ التَّذْكِرَةُ,"Hādhā huwa l-jawāz, wa hādhihi hiya t-tadhkirah","Voici le passeport, et voici le billet."
+13,السفر,Le Voyage,13.3,الموظف,مَا لَوْنُ الحَقِيبَةِ ؟,Mā lawnu l-ḥaqībah?,Quelle est la couleur de la valise ?
+13,السفر,Le Voyage,13.3,المسافر,لَونُها أَسْوَدُ,Lawnuhā aswad,Sa couleur est noire.
+13,السفر,Le Voyage,13.3,الموظف,هَلْ هَذِهِ حَقِيبَتُكَ ؟,Hal hādhihi ḥaqībatuk?,Est-ce votre valise ?
+13,السفر,Le Voyage,13.3,المسافر,نَعَمْ، هَذِهِ حقيبتي,"Naʿam, hādhihi ḥaqībatī","Oui, c'est ma valise."
+13,السفر,Le Voyage,13.3,الموظف,ماذا في الحقيبة ؟,Mādhā fī l-ḥaqībah?,Qu'y a-t-il dans la valise ?
+13,السفر,Le Voyage,13.3,المسافر,في الحقيبة ملابس,Fī l-ḥaqībati malābis,Dans la valise il y a des vêtements.
+13,السفر,Le Voyage,13.3,الموظف,افْتَحِ الحَقِيبَةَ,Iftaḥi l-ḥaqībah,Ouvrez la valise.
+13,السفر,Le Voyage,13.3,المسافر,نَعَمْ، هذه حقيبتي,"Naʿam, hādhihi ḥaqībatī","Oui, c'est ma valise."
+14,الحج والعمرة,Hajj et Omra,14.1,سليم,متى العُطْلَةُ يا جميل ؟,Matā l-ʿuṭlatu yā Jamīl?,Quand sont les vacances Jamil ?
+14,الحج والعمرة,Hajj et Omra,14.1,جميل,العُطْلَةُ فِي شَهْرِ رَمَضانَ,Al-ʿuṭlatu fī shahri Ramaḍān,Les vacances sont au mois de Ramadan.
+14,الحج والعمرة,Hajj et Omra,14.1,سليم,أَيْنَ تَقْضِي العطلَةَ ؟,Ayna taqḍī l-ʿuṭlah?,Où passes-tu les vacances ?
+14,الحج والعمرة,Hajj et Omra,14.1,جميل,أقضي العُطْلَةَ في مَكَّةَ المُكَرَّمَةِ ، والمدينة المنورة,"Aqḍī l-ʿuṭlata fī Makkata l-Mukarramah, wa l-Madīnati l-Munawwarah","Je passe les vacances à La Mecque la Sainte, et Médine l'Illuminée."
+14,الحج والعمرة,Hajj et Omra,14.1,سليم,كَيْفَ تَقْضِي العُطْلَةَ فِي مَكَّةَ ؟,Kayfa taqḍī l-ʿuṭlata fī Makkah?,Comment passes-tu les vacances à La Mecque ?
+14,الحج والعمرة,Hajj et Omra,14.1,جميل,أَعْتَمِرُ وأصوم، وأصلي في المَسْجِدِ الحرام,"Aʿtamiru wa aṣūm, wa uṣallī fī l-Masjidi l-Ḥarām","Je fais la Omra, je jeûne et je prie à la Mosquée Sacrée."
+14,الحج والعمرة,Hajj et Omra,14.1,سليم,وماذا تَفْعَلُ في المدينة ؟,Wa mādhā tafʿalu fī l-Madīnah?,Et que fais-tu à Médine ?
+14,الحج والعمرة,Hajj et Omra,14.1,جميل,أزورُ المَسْجِدَ النَّبَوِيَّ,Azūru l-Masjida n-Nabawiyy,Je visite la Mosquée du Prophète.
+14,الحج والعمرة,Hajj et Omra,14.1,سليم,وأَيْنَ تَقْضِي أَيَّامَ العيد ؟,Wa ayna taqḍī ayyāma l-ʿīd?,Et où passes-tu les jours de l'Aïd ?
+14,الحج والعمرة,Hajj et Omra,14.1,جميل,أقضيها في مكة أو في المدينة,Aqḍīhā fī Makkah aw fī l-Madīnah,Je les passe à La Mecque ou à Médine.
+14,الحج والعمرة,Hajj et Omra,14.1,سليم,وماذا تَفْعَلُ فِي مَكَّةَ ؟,Wa mādhā tafʿalu fī Makkah?,Et que fais-tu à La Mecque ?
+14,الحج والعمرة,Hajj et Omra,14.1,جميل,أَطُوفُ حَوْلَ الكَعْبَةِ سَبْعَةَ أَشْواطٍ,Aṭūfu ḥawla l-Kaʿbati sabʿata ashwāṭ,Je tourne autour de la Kaaba sept tours (Tawaf).
+14,الحج والعمرة,Hajj et Omra,14.1,جميل,ثُمَّ أُصَلِّي رَكْعَتَينِ خَلْفَ مَقامِ إِبْرَاهِيمَ,Thumma uṣallī rakʿatayni khalfa maqāmi Ibrāhīm,Ensuite je prie deux unités de prière derrière la station d'Ibrahim.
+14,الحج والعمرة,Hajj et Omra,14.1,سليم,بِمَ تَشْعُرُ فِي مَكَّةَ والمَدِينَةِ ؟,Bima tashʿuru fī Makkah wa l-Madīnah?,Que ressens-tu à La Mecque et à Médine ?
+14,الحج والعمرة,Hajj et Omra,14.1,جميل,أَشْعُرُ بالسرور,Ashʿuru bi-s-surūr,Je ressens de la joie.
+14,الحج والعمرة,Hajj et Omra,14.2,الابن,كَيْفَ اعْتَمَرْتَ يا أبي ؟,Kayfa iʿtamarta yā abī?,Comment as-tu fait la Omra mon père ?
+14,الحج والعمرة,Hajj et Omra,14.2,الأب,وَصَلْتُ إلى الميقاتِ عِنْدَ الظُّهْرِ,Waṣaltu ilā l-mīqāti ʿinda ẓ-ẓuhr,Je suis arrivé au Miquat à midi.
+14,الحج والعمرة,Hajj et Omra,14.2,الابن,وماذا فَعَلْتَ في الميقات ؟,Wa mādhā faʿalta fī l-mīqāt?,Et qu'as-tu fait au Miquat ?
+14,الحج والعمرة,Hajj et Omra,14.2,الأب,خَلَعْتُ ثَوْبِي ، وَلَبِسْتُ مَلَابِسَ الإِحْرامِ وَلَبَّيْتُ بِالعُمْرَةِ,"Khalaʿtu thawbī, wa labistu malābisa l-iḥrām...","J'ai enlevé mon vêtement, j'ai mis les habits de l'Ihram et j'ai prononcé la Talbiya pour la Omra."
+14,الحج والعمرة,Hajj et Omra,14.2,الابن,وَمَتى وَصَلْتَ إِلَى المَسْجِدِ الحَرَامِ ؟,Wa matā waṣalta ilā l-Masjidi l-Ḥarām?,Et quand es-tu arrivé à la Mosquée Sacrée ?
+14,الحج والعمرة,Hajj et Omra,14.2,الأب,وَصَلْتُ بَعْدَ العَصْرِ,Waṣaltu baʿda l-ʿaṣr,Je suis arrivé après l'Asr.
+14,الحج والعمرة,Hajj et Omra,14.2,الابن,بِمَ شَعَرْتَ فِي المَسْجِدِ الْحَرَامِ ؟,Bima shaʿarta fī l-Masjidi l-Ḥarām?,Qu'as-tu ressenti dans la Mosquée Sacrée ?
+14,الحج والعمرة,Hajj et Omra,14.2,الأب,شَعَرْتُ بِالسُّرُورِ,Shaʿartu bi-s-surūr,J'ai ressenti de la joie.
+14,الحج والعمرة,Hajj et Omra,14.2,الابن,كَمْ شَوْطاً طُفْتَ حَوْلَ الكَعْبَةِ ؟,Kam shawṭan ṭufta ḥawla l-Kaʿbah?,Combien de tours as-tu fait autour de la Kaaba ?
+14,الحج والعمرة,Hajj et Omra,14.2,الأب,طُفْتُ سَبْعَةَ أَشْواطٍ، ثُمَّ صَلَّيْتُ رَكْعَتَينِ خَلْفَ مَقامِ إِبْراهيمَ,Ṭuftu sabʿata ashwāṭ...,"J'ai fait sept tours, puis j'ai prié deux unités derrière la station d'Ibrahim."
+14,الحج والعمرة,Hajj et Omra,14.2,الابن,وماذا فَعَلْتَ بَعْدَ ذَلِكَ ؟,Wa mādhā faʿalta baʿda dhālik?,Et qu'as-tu fait après cela ?
+14,الحج والعمرة,Hajj et Omra,14.2,الأب,سَعَيْتُ بَيْنَ الصَّفا والمَرْوَةِ سَبْعَةَ أَشْواطٍ ثُمَّ حَلَقْتُ رَأسي,Saʿaytu bayna ṣ-Ṣafā wa l-Marwah...,"J'ai fait le Sa'y entre Safa et Marwa sept fois, puis je me suis rasé la tête."
+14,الحج والعمرة,Hajj et Omra,14.2,الابن,وَأَيْنَ خَلَعْتَ مَلَابِسَ الإِحْرَامِ ؟,Wa ayna khalaʿta malābisa l-iḥrām?,Et où as-tu enlevé les vêtements de l'Ihram ?
+14,الحج والعمرة,Hajj et Omra,14.2,الأب,خَلَعْتُها فِي الفُنْدُقِ,Khalaʿtuhā fī l-funduq,Je les ai enlevés à l'hôtel.
+14,الحج والعمرة,Hajj et Omra,14.3,الرجل,مَتى يَبْدَأُ الوُقوفُ بِعَرَفَةَ ؟,Matā yabda'u l-wuqūfu bi-ʿArafah?,Quand commence la station à Arafat ?
+14,الحج والعمرة,Hajj et Omra,14.3,عدنان,يَبْدَأُ غَداً فِي اليَوْمِ النَّاسِعِ بَعْدَ الزَّوالِ,Yabda'u ghadan fī l-yawmi t-tāsiʿ baʿda z-zawāl,"Elle commence demain, le neuvième jour, après le zénith."
+14,الحج والعمرة,Hajj et Omra,14.3,الرجل,ومَتى يَنْتَهي ؟,Wa matā yantahī?,Et quand finit-elle ?
+14,الحج والعمرة,Hajj et Omra,14.3,عدنان,يَنْتَهِي عِنْدَ الفَجْرِ,Yantahī ʿinda l-fajr,Elle finit à l'aube.
+14,الحج والعمرة,Hajj et Omra,14.3,الرجل,هَلْ نُصَلِّي الظُّهْرَ والعَصْرَ فِي عَرَفَاتِ ؟,Hal nuṣallī ẓ-Ẓuhr wa l-ʿAṣr fī ʿArafāt?,Prions-nous le Dhuhr et le Asr à Arafat ?
+14,الحج والعمرة,Hajj et Omra,14.3,عدنان,نَعَمْ، جَمْعاً وقَصْراً وَقْتَ الظَّهْرِ,"Naʿam, jamʿan wa qaṣran waqta ẓ-Ẓuhr","Oui, groupées et raccourcies à l'heure du Dhuhr."
+14,الحج والعمرة,Hajj et Omra,14.3,الرجل,ومَتى نَذْهَبُ إِلى مُزْدَلِفَةَ ؟,Wa matā nadh-habu ilā Muzdalifah?,Et quand allons-nous à Muzdalifa ?
+14,الحج والعمرة,Hajj et Omra,14.3,عدنان,نَذْهَبُ بَعْدَ غُروبِ الشَّمْسِ,Nadh-habu baʿda ghurūbi sh-shams,Nous irons après le coucher du soleil.
+14,الحج والعمرة,Hajj et Omra,14.3,عدنان,وَنُصَلِّي فيها المَغْرِبَ والعِشَاءَ جَمْعاً وقَصْراً,Wa nuṣallī fīhā l-Maghriba wa l-ʿIshā' jamʿan wa qaṣran,Et nous y prierons le Maghrib et l'Isha groupées et raccourcies.
+14,الحج والعمرة,Hajj et Omra,14.3,الرجل,وماذا نَفْعَلُ بَعْدَ ذَلِكَ ؟,Wa mādhā nafʿalu baʿda dhālik?,Et que ferons-nous après cela ?
+14,الحج والعمرة,Hajj et Omra,14.3,عدنان,نَذْهَبُ إِلى مِنى قَبْلَ شُروقِ الشَّمْسِ,Nadh-habu ilā Minā qabla shurūqi sh-shams,Nous irons à Mina avant le lever du soleil.
+14,الحج والعمرة,Hajj et Omra,14.3,عدنان,وَنَرْمي الجَمْرَةَ الكُبرى، ثُمَّ نَذْبَحُ الهَدْيَ، وَنَحْلِقُ رُؤوسَنا,"Wa narmī l-jamrata l-kubrā, thumma nadhbaḥu...","Et nous jetterons (les pierres) à la grande Jamra, puis nous sacrifierons l'offrande, et nous nous raserons la tête."
+14,الحج والعمرة,Hajj et Omra,14.3,الرجل,وماذا نَفْعَلُ بَعْدَ ذَلِكَ ؟,Wa mādhā nafʿalu baʿda dhālik?,Et que ferons-nous après cela ?
+14,الحج والعمرة,Hajj et Omra,14.3,عدنان,نَذْهَبُ إِلى المَسْجِدِ الحرام لِطَوَافِ الإِفَاضَةِ وَسَعْيِ الْحَجِّ,...li-ṭawāfi l-ifāḍah wa saʿyi l-ḥajj,Nous irons à la Mosquée Sacrée pour le Tawaf al-Ifada et le Sa'y du Hajj.
+14,الحج والعمرة,Hajj et Omra,14.3,الرجل,وَمَتى نَطُوفُ طَوافَ الوَداع ؟,Wa matā naṭūfu ṭawāfa l-wadāʿ?,Et quand ferons-nous le Tawaf d'adieu ?
+14,الحج والعمرة,Hajj et Omra,14.3,عدنان,بَعْدَ رَمْيِ الجَمَرَاتِ فِي اليَوْمِ الثَّانِي عَشَرَ، أَوِ الثَّالِثَ عَشَرَ,Baʿda ramyi l-jamarāt...,Après le jet des Jamarat le douzième ou le treizième jour.
+15,الصحة,La Santé,15.1,مسعود,السَّلامُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكاتُهُ,As-salāmu ʿalaykum...,"Que la paix, la miséricorde d'Allah et Ses bénédictions soient sur vous."
+15,الصحة,La Santé,15.1,محمود,وَعَلَيْكُمُ السَّلامُ وَرَحْمَةُ اللهِ وَبَرَكاتُهُ,Wa ʿalaykumu s-salām...,Et sur vous la paix...
+15,الصحة,La Santé,15.1,مسعود,لماذا حَضَرْتَ اليَوْمَ إلى المُسْتَشْفَى ؟,Limādhā ḥaḍarta l-yawma ilā l-mustashfā?,Pourquoi es-tu venu aujourd'hui à l'hôpital ?
+15,الصحة,La Santé,15.1,محمود,حَضَرْتُ لِزِيارَةِ طَبِيبِ الأَسْنان,Ḥaḍartu li-ziyārati ṭabībi l-asnān,Je suis venu voir le dentiste.
+15,الصحة,La Santé,15.1,مسعود,بِمَ تَشْعُرُ ؟,Bima tashʿur?,Que ressens-tu ?
+15,الصحة,La Santé,15.1,محمود,أَشْعُرُ بِأَلَم شَديد في أَسناني,Ashʿuru bi-alamin shadīd fī asnānī,Je ressens une forte douleur dans mes dents.
+15,الصحة,La Santé,15.1,محمود,ولماذا حَضَرْتَ أَنْتَ إِلَى المُسْتَشْفَى ؟,Wa limādhā ḥaḍarta anta...,Et pourquoi es-tu venu à l'hôpital toi ?
+15,الصحة,La Santé,15.1,مسعود,حَضَرْتُ لِزِيارَةِ طَبِيبِ الأَنْفِ وَالْأُذُنِ والحَنْجَرَة,...ṭabībi l-anfi wa l-udhuni wa l-ḥanjarah,"Je suis venu voir l'ORL (médecin du nez, de l'oreille et de la gorge)."
+15,الصحة,La Santé,15.1,محمود,بِمَ تَشْعُرُ ؟,Bima tashʿur?,Que ressens-tu ?
+15,الصحة,La Santé,15.1,مسعود,أَشْعُرُ بِأَلم شَدِيدٍ في أُذُني,Ashʿuru bi-alamin shadīd fī udhunī,Je ressens une forte douleur dans mon oreille.
+15,الصحة,La Santé,15.1,محمود,هَلْ لَدَيْكَ مَوْعِدٌ مَعَ الطَّبِيبِ ؟,Hal ladayka mawʿidun maʿa ṭ-ṭabīb?,As-tu un rendez-vous avec le médecin ?
+15,الصحة,La Santé,15.1,مسعود,نَعَمْ ، مَوْعِدِي السَّاعَةَ العَاشِرَةَ,"Naʿam, mawʿidī as-sāʿata l-ʿāshirah","Oui, mon rendez-vous est à dix heures."
+15,الصحة,La Santé,15.1,محمود,مَوْعِدِي السَّاعَةَ العَاشِرَةَ أَيْضاً,Mawʿidī as-sāʿata l-ʿāshirata ayḍan,Mon rendez-vous est à dix heures aussi.
+15,الصحة,La Santé,15.1,مسعود,السَّاعَةُ الْآنَ التَّاسِعَةُ وَالنِّصْفُ ، الباقي نِصْفُ سَاعَةٍ,...al-bāqī niṣfu sāʿah,"Il est neuf heures et demie maintenant, il reste une demi-heure."
+15,الصحة,La Santé,15.2,المدرس,السَّلامُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكاتُهُ,As-salāmu ʿalaykum...,Que la paix soit sur vous...
+15,الصحة,La Santé,15.2,الطالب,وَعَلَيْكُمُ السَّلامُ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ,Wa ʿalaykumu s-salām...,Et sur vous la paix...
+15,الصحة,La Santé,15.2,المدرس,لماذا تَغَيَّبْتَ عَنِ الدِّرَاسَةِ ؟,Limādhā taghayyabta ʿani d-dirāsah?,Pourquoi t'es-tu absenté des cours ?
+15,الصحة,La Santé,15.2,الطالب,أُصِبْتُ بِزُكَامٍ شَدِيدٍ,Uṣibtu bi-zukāmin shadīd,J'ai attrapé un gros rhume.
+15,الصحة,La Santé,15.2,المدرس,بِمَ شَعَرْتَ ؟,Bima shaʿarta?,Qu'as-tu ressenti ?
+15,الصحة,La Santé,15.2,الطالب,شَعَرْتُ بِصُداع شَدِيدٍ فِي اللَّيلِ، وَارتَفَعَتْ درجة حرارتي,Shaʿartu bi-ṣudāʿin shadīd...,"J'ai ressenti un violent mal de tête la nuit, et ma température est montée."
+15,الصحة,La Santé,15.2,المدرس,هل قَابَلْتَ الطَّبِيبَ ؟,Hal qābalta ṭ-ṭabīb?,As-tu vu le médecin ?
+15,الصحة,La Santé,15.2,الطالب,نَعَمْ ، ذَهَبْتُ إلى المُسْتَشْفَى بالإسعاف ، وقابلت الطبيب,"Naʿam, dhahabtu ilā l-mustashfā bi-l-isʿāf...","Oui, je suis allé à l'hôpital en ambulance, et j'ai vu le médecin."
+15,الصحة,La Santé,15.2,المدرس,وبِمَ نَصَحَكَ الطَّبِيبُ ؟,Wa bima naṣaḥaka ṭ-ṭabīb?,Et que t'a conseillé le médecin ?
+15,الصحة,La Santé,15.2,الطالب,نَصَحَنِي بِالرَّاحَةِ وَتَنَاوُلِ الدَّواءِ، وَهَذَا هُوَ التقرير الطبي,Naṣaḥanī bi-r-rāḥati wa tanāwuli d-dawā'...,"Il m'a conseillé le repos et de prendre des médicaments, et voici le rapport médical."
+15,الصحة,La Santé,15.2,المدرس,شُكْراً لَكَ . وَبِمَ تَشْعُرُ الآن ؟,Shukran lak. Wa bima tashʿuru l-ān?,Merci à toi. Et comment te sens-tu maintenant ?
+15,الصحة,La Santé,15.2,الطالب,الحَمْدُ لله ، أنا بِخَيْرٍ,"Al-ḥamdu lillāh, ana bi-khayr","Louange à Dieu, je vais bien."
+15,الصحة,La Santé,15.3,الزوجة,السَّلامُ عَلَيْكُم وَرَحْمَةُ اللهِ وَبَرَكاتُهُ,As-salāmu ʿalaykum...,Que la paix soit sur vous...
+15,الصحة,La Santé,15.3,الزوج,وَعَلَيْكُمُ السَّلامُ وَرَحْمَةُ اللهِ وَبَرَكاتُهُ,Wa ʿalaykumu s-salām...,Et sur vous la paix...
+15,الصحة,La Santé,15.3,الزوجة,خَيْراً ، هَلْ قَابَلْتَ الطَّبِيبَ ؟,"Khayran, hal qābalta ṭ-ṭabīb?","J'espère que c'est bon, as-tu vu le médecin ?"
+15,الصحة,La Santé,15.3,الزوج,نَعَمْ ، وفَحَصَ الصَّدْرَ، والقَلْبَ، والكُلْيَةَ وقاس الضغط,"Naʿam, wa faḥaṣa ṣ-ṣadra wa l-qalba wa l-kulyah...","Oui, et il a examiné la poitrine, le cœur, le rein et a mesuré la tension."
+15,الصحة,La Santé,15.3,الزوجة,وما النتيجة ؟,Wa mā n-natījah?,Et quel est le résultat ?
+15,الصحة,La Santé,15.3,الزوج,القَلْبُ سَليم، والحَمْدُ للهِ,"Al-qalbu salīm, wa l-ḥamdu lillāh","Le cœur est sain, louange à Dieu."
+15,الصحة,La Santé,15.3,الزوج,هُناكَ ارتفاع قَلِيلٌ في الضَّغْطِ والسُّكَّري,Hunāka irtifāʿun qalīl fī ḍ-ḍaghṭi wa s-sukkariyy,Il y a une légère augmentation de la tension et du diabète.
+15,الصحة,La Santé,15.3,الزوجة,مَا سَبَبُ ذَلِكَ ؟,Mā sababu dhālik?,Quelle en est la cause ?
+15,الصحة,La Santé,15.3,الزوج,زِيادَةُ الوَزْنِ,Ziyādatu l-wazn,L'augmentation du poids (surpoids).
+15,الصحة,La Santé,15.3,الزوجة,وماذا طَلَبَ مِنْكَ الطَّبِيبُ ؟,Wa mādhā ṭalaba minka ṭ-ṭabīb?,Et que t'a demandé le médecin ?
+15,الصحة,La Santé,15.3,الزوج,طَلَبَ مِنِّي تَرْكَ السُّكَرِيَّاتِ,Ṭalaba minnī tarka s-sukkariyyāt,Il m'a demandé d'arrêter les sucreries.
+15,الصحة,La Santé,15.3,الزوجة,وَهَلْ طَلَبَ مِنْكَ شَيئًا آخَرَ ؟,Wa hal ṭalaba minka shay'an ākhar?,Et t'a-t-il demandé autre chose ?
+15,الصحة,La Santé,15.3,الزوج,نَعَمْ ، مُمارَسَةَ الرياضةِ ، وتَناول الفاكهة والخضراوات,"Naʿam, mumārasata r-riyāḍah...","Oui, de faire du sport, et de manger des fruits et des légumes."
+15,الصحة,La Santé,15.3,الزوجة,شَفَاكَ اللَّهُ,Shafāka llāh,Qu'Allah te guérisse.
+15,الصحة,La Santé,15.3,الزوج,آمين ، شُكراً لكِ,"Āmīn, shukran laki","Amen, merci à toi."
+16,العطلة,Les Vacances,16.1,الابن,كَمْ عِيداً في الإسلام يا أبي ؟,Kam ʿīdan fī l-islāmi yā abī?,Combien de fêtes y a-t-il en Islam mon père ?
+16,العطلة,Les Vacances,16.1,الأب,في الإسلام عيدان : عيد الفِطْرِ ، وَعِيدُ الأضحى,Fī l-islāmi ʿīdān: ʿĪdu l-Fiṭr wa ʿĪdu l-Aḍḥā,En Islam il y a deux fêtes : l'Aïd al-Fitr et l'Aïd al-Adha.
+16,العطلة,Les Vacances,16.1,الابن,مَتى عيدُ الفِطْرِ ؟,Matā ʿĪdu l-Fiṭr?,Quand est l'Aïd al-Fitr ?
+16,العطلة,Les Vacances,16.1,الأب,بَعدَ شَهْرِ رَمَضَانَ : فِي اليَوْمِ الْأَوَّلِ مِنْ شَوَّالٍ,Baʿda shahri Ramaḍān: fī l-yawmi l-awwali min Shawwāl,Après le mois de Ramadan : le premier jour de Shawwal.
+16,العطلة,Les Vacances,16.1,الابن,ماذا نَعْمَلُ فِي يَوْمِ العيد ؟,Mādhā naʿmalu fī yawmi l-ʿīd?,Que faisons-nous le jour de la fête ?
+16,العطلة,Les Vacances,16.1,الأب,نُعْطِي زَكَاةَ الفِطْرِ لِلْفُقَرَاءِ,Nuʿṭī zakāta l-fiṭri lil-fuqarā',Nous donnons la Zakat al-Fitr aux pauvres.
+16,العطلة,Les Vacances,16.1,الابن,وما زَكَاةُ الفِطْرِ ؟,Wa mā zakātu l-fiṭr?,Et qu'est-ce que la Zakat al-Fitr ?
+16,العطلة,Les Vacances,16.1,الأب,صَاعٌ مِنْ طَعَامٍ عَنْ كُلِّ شَخْصٍ,Ṣāʿun min ṭaʿāmin ʿan kulli shakhṣ,Un Sa' (mesure) de nourriture pour chaque personne.
+16,العطلة,Les Vacances,16.1,الابن,وماذا نَفْعَلُ بَعْدَ ذَلِكَ ؟,Wa mādhā nafʿalu baʿda dhālik?,Et que faisons-nous après cela ?
+16,العطلة,Les Vacances,16.1,الأب,نُصَلِّي صَلاةَ العيد ، ونزورُ الأَهْل والأصدقاء,"Nuṣallī ṣalāta l-ʿīd, wa nazūru l-ahla wa l-aṣdiqā'","Nous prions la prière de l'Aïd, et nous visitons la famille et les amis."
+16,العطلة,Les Vacances,16.1,الابن,وَمَتى عيد الأضحى ؟,Wa matā ʿĪdu l-Aḍḥā?,Et quand est l'Aïd al-Adha ?
+16,العطلة,Les Vacances,16.1,الأب,في اليَوْمِ العاشر من ذي الحجة,Fī l-yawmi l-ʿāshiri min Dhī l-Ḥijjah,Le dixième jour de Dhu al-Hijjah.
+16,العطلة,Les Vacances,16.1,الابن,وماذا نَفْعَلُ في عيد الأضحى ؟,Wa mādhā nafʿalu fī ʿĪdi l-Aḍḥā?,Et que faisons-nous à l'Aïd al-Adha ?
+16,العطلة,Les Vacances,16.1,الأب,نُصَلِّي صَلاةَ العيد، ونَدْبَحُ الأَضْحِيَّةَ، وَنَزُورُ الأهل والأصدقاء,Nuṣallī... wa nadhbaḥu l-uḍḥiyyah...,"Nous prions la prière de l'Aïd, nous sacrifions la bête (l'offrande), et nous visitons famille et amis."
+16,العطلة,Les Vacances,16.2,أحمد,اقْتَرَبَتِ العُطْلَةُ يا أبي,Iqtarabati l-ʿuṭlatu yā abī,Les vacances approchent mon père.
+16,العطلة,Les Vacances,16.2,الأب,ما رَأيكِ يَا نَدَى ؟ إِلَى أَيْنَ نُسَافِرُ ؟,Mā ra'yuki yā Nadā? Ilā ayna nusāfir?,Quel est ton avis Nada ? Où voyageons-nous ?
+16,العطلة,Les Vacances,16.2,ندى,لَدَيَّ فِكْرَةٌ ، نُسَافِرُ إِلى مِصْرَ,"Ladayya fikrah, nusāfiru ilā Miṣr","J'ai une idée, nous voyageons en Égypte."
+16,العطلة,Les Vacances,16.2,أحمد,لماذا نُسَافِرُ إِلى مِصْرَ ؟,Limādhā nusāfiru ilā Miṣr?,Pourquoi voyageons-nous en Égypte ?
+16,العطلة,Les Vacances,16.2,ندى,لِنَرَى مِصْرَ ، وَنَهْرَ النِّيلِ,"Linarā Miṣr, wa nahra n-Nīl",Pour voir l'Égypte et le fleuve Nil.
+16,العطلة,Les Vacances,16.2,أحمد,مُوافِقٌ ، فَكْرَةٌ طَيِّبَةٌ,"Muwāfiq, fikratun ṭayyibah","D'accord, bonne idée."
+16,العطلة,Les Vacances,16.2,الأب,كَيْفَ نُسَافِرُ إِلَى مِصْرَ ؟,Kayfa nusāfiru ilā Miṣr?,Comment voyageons-nous en Égypte ?
+16,العطلة,Les Vacances,16.2,ندى,نُسَافِرُ بِالجَو,Nusāfiru bi-l-jaw,Nous voyageons par les airs (avion).
+16,العطلة,Les Vacances,16.2,الأب,السَّفَرُ بِالجو غال,As-safaru bi-l-jawwi ghāl,Le voyage par avion est cher.
+16,العطلة,Les Vacances,16.2,أحمد,إذن نُسَافِرُ بِالبَحْرِ السَّفَرُ بِالبَحْرِ رَخِيصٌ,Idhan nusāfiru bi-l-baḥr...,"Alors voyageons par la mer, le voyage par mer est bon marché."
+16,العطلة,Les Vacances,16.2,الأب,كَمْ يَوْماً سَنَقْضِي فِي مِصْرَ ؟,Kam yawman sanaqḍī fī Miṣr?,Combien de jours passerons-nous en Égypte ?
+16,العطلة,Les Vacances,16.2,ندى,سَبْعَةَ أَيَّامٍ,Sabʿata ayyām,Sept jours.
+16,العطلة,Les Vacances,16.2,الأب,سَبْعَةَ أَيَّامٍ ... جَمِيلٌ نُسَافِرُ يَوْمَ السَّبْتِ، إِنْ شَاءَ الله,"...Jamīl, nusāfiru yawma s-sabt...","Sept jours... Bien, nous voyagerons samedi, si Dieu le veut."
+16,العطلة,Les Vacances,16.2,أحمد وندى,شُكْراً لَكَ يا أبي,Shukran laka yā abī,Merci à toi mon père.
+16,العطلة,Les Vacances,16.3,المدرس,أَيْنَ سَتَقْضُونَ عُطْلَةَ الصَّيْفِ يا أبنائي ؟,Ayna sataqḍūna ʿuṭlata ṣ-ṣayfi yā abnā'ī?,Où passerez-vous les vacances d'été mes enfants (fils) ?
+16,العطلة,Les Vacances,16.3,المدرس,إلى أَيْنَ سَتَذْهَبُ أَنْتَ ؟,Ilā ayna satadh-habu anta?,Où iras-tu toi ?
+16,العطلة,Les Vacances,16.3,الطالب 1,سَأَقْضِي عُطْلَةَ الصَّيْفِ فِي القَرْيَةِ مَعَ جدي,Sa-aqḍī ʿuṭlata ṣ-ṣayfi fī l-qaryati maʿa jaddī,Je passerai les vacances d'été au village avec mon grand-père.
+16,العطلة,Les Vacances,16.3,الطالب 1,المكانُ هُناكَ هَادِئٌ ، والهَواءُ نَقِيٌّ,"Al-makānu hunāka hādi', wa l-hawā'u naqiyy","L'endroit là-bas est calme, et l'air est pur."
+16,العطلة,Les Vacances,16.3,الطالب 2,سَأقْضِي عُطْلَةَ الصَّيْفِ فِي العَاصِمَةِ مَعَ عَمِّي,Sa-aqḍī ʿuṭlata ṣ-ṣayfi fī l-ʿāṣimati maʿa ʿammī,Je passerai les vacances d'été dans la capitale avec mon oncle paternel.
+16,العطلة,Les Vacances,16.3,الطالب 2,سأزور المكتبات والمتاحف,Sa-azūru l-maktabāti wa l-matāḥif,Je visiterai les bibliothèques et les musées.
+16,العطلة,Les Vacances,16.3,الطالب 3,سأقضي عُطْلَةَ الصَّيْفِ بَيْنِ الجِبالِ مَعَ فَرِيقِ الجوالة,Sa-aqḍī ʿuṭlata ṣ-ṣayfi bayna l-jibāli maʿa farīqi l-jawwālah,Je passerai les vacances d'été dans les montagnes avec l'équipe de scouts.
+16,العطلة,Les Vacances,16.3,الطالب 4,سَأَقْضِي العُطْلَةَ فِي مَكَّةَ والمَدِينَةِ مَعَ أُسْرَتِي,Sa-aqḍī l-ʿuṭlata fī Makkata wa l-Madīnati maʿa usratī,Je passerai les vacances à La Mecque et Médine avec ma famille.
+16,العطلة,Les Vacances,16.3,الطالب 4,سَنَعْتَمِرُ، وَنَحُجُّ ، وَنَزُورُ المَسْجِدَ النَّبَوِيَّ,"Sanaʿtamiru, wa naḥujju, wa nazūru l-Masjida n-Nabawiyy","Nous ferons la Omra, le Hajj, et nous visiterons la Mosquée du Prophète."
+16,العطلة,Les Vacances,16.3,الطالب 5,سَأَقْضِي العُطْلَةَ فِي بَلَدِي سأساعد والدي في المَزْرَعَة,"Sa-aqḍī l-ʿuṭlata fī baladī, sa-usāʿidu wālidī fī l-mazraʿah","Je passerai les vacances dans mon pays, j'aiderai mon père à la ferme."
+16,العطلة,Les Vacances,16.3,المدرس,عُطْلَةً سَعِيدَةً يا أبنائي,ʿUṭlatan saʿīdatan yā abnā'ī,Bonnes vacances mes enfants.
+16,العطلة,Les Vacances,16.3,الطلاب,عُطْلَةً سَعِيدَةً يَا أُسْتَاذُ,ʿUṭlatan saʿīdatan yā ustādh,Bonnes vacances professeur.

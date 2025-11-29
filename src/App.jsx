@@ -1,8 +1,10 @@
 import { useState, useEffect } from 'react'
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, useLocation } from 'react-router-dom'
 import Sidebar from './components/Sidebar'
+import ArabicSidebar from './components/ArabicSidebar'
 import HomePage from './pages/HomePage'
 import TrainingPage from './pages/TrainingPage'
+import ArabicPage from './pages/ArabicPage'
 
 // Default settings
 const defaultSettings = {
@@ -26,9 +28,16 @@ const defaultSettings = {
   flowMode: false,
   arabicNumerals: true,
   wordHighlight: true, // Word-by-word highlighting during audio playback
+  // Arabic learning settings
+  arabicUnit: 1,
+  arabicDialogue: 0,
+  arabicValidated: {}, // { "1-0": true, "1-1": true, ... }
 }
 
 function App() {
+  const location = useLocation()
+  const isArabicPage = location.pathname.startsWith('/arabic')
+
   const [settings, setSettings] = useState(() => {
     const saved = localStorage.getItem('quran-hifz-settings')
     // Fusionner avec les défauts pour gérer les nouveaux champs
@@ -57,12 +66,21 @@ function App() {
 
   return (
     <div className={`flex min-h-screen ${settings.darkMode ? 'dark bg-slate-900' : 'bg-gray-50'}`}>
-      <Sidebar
-        isOpen={sidebarOpen}
-        setIsOpen={setSidebarOpen}
-        settings={settings}
-        updateSettings={updateSettings}
-      />
+      {isArabicPage ? (
+        <ArabicSidebar
+          isOpen={sidebarOpen}
+          setIsOpen={setSidebarOpen}
+          settings={settings}
+          updateSettings={updateSettings}
+        />
+      ) : (
+        <Sidebar
+          isOpen={sidebarOpen}
+          setIsOpen={setSidebarOpen}
+          settings={settings}
+          updateSettings={updateSettings}
+        />
+      )}
 
       <main className={`flex-1 transition-all duration-300 ${sidebarOpen ? 'ml-64' : 'ml-16'}`}>
         <Routes>
@@ -73,6 +91,10 @@ function App() {
           <Route
             path="/training"
             element={<TrainingPage settings={settings} />}
+          />
+          <Route
+            path="/arabic"
+            element={<ArabicPage settings={settings} updateSettings={updateSettings} />}
           />
         </Routes>
       </main>

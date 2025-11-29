@@ -1,0 +1,157 @@
+Unité,Titre (AR),Titre (FR),Dial.,Pers.,Texte Arabe,Phonétique,Traduction
+5,الطعام والشراب,Nourriture,5.1,قاسم,أَيْنَ تَذْهَبُ يَا سَالِمُ ؟,Ayna tadh-habu yā Sālim?,Où vas-tu Salim ?
+5,الطعام والشراب,Nourriture,5.1,سالم,إِلَى الْمَطْعَمِ,Ilā l-maṭʿam,Au restaurant.
+5,الطعام والشراب,Nourriture,5.1,قاسم,كَمْ وَجْبَةً تَأْكُلُ فِي الْيَوْمِ ؟,Kam wajbatan ta'kulu fī l-yawm?,Combien de repas manges-tu par jour ?
+5,الطعام والشراب,Nourriture,5.1,سالم,آكُلُ ثَلاثَ وَجَبَات: الْفَطُورَ وَالْغَدَاءَ وَالْعَشَاءَ,Ākulu thalātha wajabāt: al-faṭūr wa l-ghadā' wa l-ʿashā',"Je mange trois repas : le petit-déjeuner, le déjeuner et le dîner."
+5,الطعام والشراب,Nourriture,5.1,قاسم,هَذَا كَثِيرٌ جِدّاً. أَنَا آكُلُ وَجْبَةً وَاحِدَةً,Hādhā kathīrun jiddan. Ana ākulu wajbatan wāḥidah,"C'est beaucoup. Moi, je mange un seul repas."
+5,الطعام والشراب,Nourriture,5.1,سالم,هَذَا قَلِيلٌ جِدّاً,Hādhā qalīlun jiddan,C'est très peu.
+5,الطعام والشراب,Nourriture,5.1,قاسم,مَاذَا تَأْكُلُ فِي الْغَدَاءِ ؟,Mādhā ta'kulu fī l-ghadā'?,Que manges-tu au déjeuner ?
+5,الطعام والشراب,Nourriture,5.1,سالم,آكُلُ الأَرُزَّ وَالْخُبْزَ. وَمَاذَا تَأْكُلُ أَنْتَ ؟,Ākulu l-aruzza wa l-khubz. Wa mādhā ta'kulu anta?,Je mange du riz et du pain. Et que manges-tu toi ?
+5,الطعام والشراب,Nourriture,5.1,قاسم,آكُلُ السَّمَكَ وَالسَّلَطَةَ وَالْفَاكِهَةَ,Ākulu s-samaka wa s-salaṭata wa l-fākihah,"Je mange du poisson, de la salade et des fruits."
+5,الطعام والشراب,Nourriture,5.1,سالم,مَا وَزْنُكَ ؟,Mā waznuka?,Quel est ton poids ?
+5,الطعام والشراب,Nourriture,5.1,قاسم,سِتُّونَ كَيْلاً. وَمَا وَزْنُكَ أَنْتَ ؟,Sittūna kaylan. Wa mā waznuka anta?,60 kilos. Et quel est ton poids toi ?
+5,الطعام والشراب,Nourriture,5.1,سالم,مِائَةُ كَيْلٍ,Mi'atu kayl,100 kilos.
+5,الطعام والشراب,Nourriture,5.1,قاسم,أَنْتَ سَمِينٌ جِدّاً,Anta samīnun jiddan,Tu es très gros.
+5,الطعام والشراب,Nourriture,5.1,سالم,وَأَنْتَ نَحِيفٌ جِدّاً,Wa anta naḥīfun jiddan,Et tu es très maigre.
+5,الطعام والشراب,Nourriture,5.2,المضيفة,مَاذَا تَطْلُبِينَ مِنَ الطَّعَامِ ؟,Mādhā taṭlubīna mina ṭ-ṭaʿām?,Que désirez-vous comme nourriture ?
+5,الطعام والشراب,Nourriture,5.2,المسافرة,بَعْضَ السَّمَكِ وَالأَرُزِّ مِنْ فَضْلِكِ,Baʿḍa s-samaki wa l-aruzzi min faḍliki,Du poisson et du riz s'il vous plaît.
+5,الطعام والشراب,Nourriture,5.2,المضيفة,وَمَاذَا تَطْلُبِينَ مِنَ الشَّرَابِ ؟,Wa mādhā taṭlubīna mina sh-sharāb?,Et que désirez-vous comme boisson ?
+5,الطعام والشراب,Nourriture,5.2,المسافرة,مَاءً مِنْ فَضْلِكِ,Mā'an min faḍliki,De l'eau s'il vous plaît.
+5,الطعام والشراب,Nourriture,5.2,المضيفة,وَمَاذَا تُفَضِّلِينَ مِنَ الْفَاكِهَةِ ؟,Wa mādhā tufaḍḍilīna mina l-fākihah?,Et que préférez-vous comme fruits ?
+5,الطعام والشراب,Nourriture,5.2,المسافرة,التَّمْرَ أَوِ الْعِنَبَ,At-tamra awi l-ʿinab,Des dattes ou du raisin.
+5,الطعام والشراب,Nourriture,5.2,المضيفة,هَلْ تَشْرَبِينَ الشَّايَ ؟,Hal tashrabīna sh-shāy?,Buvez-vous du thé ?
+5,الطعام والشراب,Nourriture,5.2,المسافرة,لا، أُفَضِّلُ الْقَهْوَةَ,"Lā, ufaḍḍilu l-qahwah","Non, je préfère le café."
+5,الطعام والشراب,Nourriture,5.2,المضيفة,الْقَهْوَةَ بِالْحَلِيبِ ؟,Al-qahwata bi-l-ḥalīb?,Du café au lait ?
+5,الطعام والشراب,Nourriture,5.2,المسافرة,نَعَمْ، الْقَهْوَةَ بِالْحَلِيبِ,"Naʿam, al-qahwata bi-l-ḥalīb","Oui, du café au lait."
+5,الطعام والشراب,Nourriture,5.2,المضيفة,هَلْ تُرِيدِينَ شَيْئاً آخَرَ ؟,Hal turīdīna shay'an ākhar?,Voulez-vous autre chose ?
+5,الطعام والشراب,Nourriture,5.2,المسافرة,لا، وَشُكْراً,"Lā, wa shukran","Non, merci."
+5,الطعام والشراب,Nourriture,5.2,المضيفة,عَفْواً,ʿAfwan,Je vous en prie.
+5,الطعام والشراب,Nourriture,5.3,الزوج,السَّلامُ عَلَيْكُم,As-salāmu ʿalaykum,Que la paix soit sur vous.
+5,الطعام والشراب,Nourriture,5.3,الزوجة,وَعَلَيْكُمُ السَّلام,Wa ʿalaykumu s-salām,Et sur vous la paix.
+5,الطعام والشراب,Nourriture,5.3,الزوج,أَنَا جَوْعَانٌ جِدّاً,Ana jawʿānun jiddan,J'ai très faim.
+5,الطعام والشراب,Nourriture,5.3,الزوجة,الْغَدَاءُ عَلَى الْمَائِدَةِ,Al-ghadā'u ʿalā l-mā'idah,Le déjeuner est sur la table.
+5,الطعام والشراب,Nourriture,5.3,الزوج,مَا هَذَا ؟! سَمَكٌ وَلَحْمٌ وَدَجَاجٌ وَأَرُزٌّ وَسَلَطَةٌ وَفَاكِهَةٌ !,Mā hādhā?! Samak wa laḥm wa dajāj wa aruz wa salaṭah wa fākihah!,"Qu'est-ce que c'est ?! Poisson, viande, poulet, riz, salade et fruits !"
+5,الطعام والشراب,Nourriture,5.3,الزوج,هَذَا كَثِيرٌ جِدّاً,Hādhā kathīrun jiddan,C'est énormément (trop).
+5,الطعام والشراب,Nourriture,5.3,الزوجة,لا تَأْكُلْ ... لا تَأْكُلْ ... اجْلِسْ,Lā ta'kul... Lā ta'kul... Ijlis,Ne mange pas... Ne mange pas... Assieds-toi.
+5,الطعام والشراب,Nourriture,5.3,الزوج,لِمَاذَا ؟ أَنَا جَوْعَانٌ,Limādhā? Ana jawʿān,Pourquoi ? J'ai faim.
+5,الطعام والشراب,Nourriture,5.3,الزوجة,لَدَيْنَا ضُيُوفٌ,Ladaynā ḍuyūf,Nous avons des invités.
+5,الطعام والشراب,Nourriture,5.3,الزوج,لَدَيْنَا ضُيُوفٌ ! مَنْ ؟!,Ladaynā ḍuyūf! Man?!,Nous avons des invités ! Qui ?!
+5,الطعام والشراب,Nourriture,5.3,الزوجة,وَالِدِي وَوَالِدَتِي وَأَخِي,Wālidī wa wālidatī wa akhī,"Mon père, ma mère et mon frère."
+5,الطعام والشراب,Nourriture,5.3,الزوج,أَيْنَ الضُّيُوفُ ؟,Ayna ḍ-ḍuyūf?,Où sont les invités ?
+5,الطعام والشراب,Nourriture,5.3,الزوجة,فِي غُرْفَةِ الْجُلُوسِ,Fī ghurfati l-julūs,Dans le salon.
+6,الصلاة,La Prière,6.1,مصطفى,أَيْنَ تُصَلِّي الصَّلَوَاتِ الْخَمْسَ ؟,Ayna tuṣallī ṣ-ṣalawāti l-khams?,Où pries-tu les cinq prières ?
+6,الصلاة,La Prière,6.1,قصي,أُصَلِّي الظُّهْرَ وَالْعَصْرَ وَالْمَغْرِبَ وَالْعِشَاءَ فِي مَسْجِدِ بِلال,Uṣallī ẓ-Ẓuhr wa l-ʿAṣr wa l-Maghrib wa l-ʿIshā' fī masjidi Bilāl,"Je prie le Dhuhr, le Asr, le Maghrib et l'Isha à la mosquée Bilal."
+6,الصلاة,La Prière,6.1,مصطفى,وَأَيْنَ تُصَلِّي الْفَجْرَ ؟,Wa ayna tuṣallī l-Fajr?,Et où pries-tu le Fajr ?
+6,الصلاة,La Prière,6.1,قصي,أُصَلِّي الْفَجْرَ فِي الْبَيْتِ,Uṣallī l-Fajra fī l-bayt,Je prie le Fajr à la maison.
+6,الصلاة,La Prière,6.1,مصطفى,لِمَاذَا تُصَلِّي الْفَجْرَ فِي الْبَيْتِ ؟,Limādhā tuṣallī l-Fajra fī l-bayt?,Pourquoi pries-tu le Fajr à la maison ?
+6,الصلاة,La Prière,6.1,قصي,لا أَسْمَعُ الأَذَانَ,Lā asmaʿu l-adhān,Je n'entends pas l'appel à la prière.
+6,الصلاة,La Prière,6.1,مصطفى,هَلْ تَسْتَيْقِظُ مُتَأَخِّراً ؟,Hal tastayqiẓu muta'akhkhiran?,Te réveilles-tu tard ?
+6,الصلاة,La Prière,6.1,قصي,نَعَمْ، بَعْدَ صَلاةِ الْفَجْرِ,"Naʿam, baʿda ṣalāti l-Fajr","Oui, après la prière du Fajr."
+6,الصلاة,La Prière,6.1,مصطفى,اسْتَيْقِظْ مُبَكِّراً,Istayqiẓ mubakkiran,Réveille-toi tôt !
+6,الصلاة,La Prière,6.1,قصي,لا أَسْتَطِيعُ، أَعْمَلُ فِي اللَّيْلِ,"Lā astaṭīʿ, aʿmalu fī l-layl","Je ne peux pas, je travaille la nuit."
+6,الصلاة,La Prière,6.1,مصطفى,ضَعِ الْمُنَبِّهَ بِجَانِبِكَ,Ḍaʿi l-munabbiha bi-jānibik,Mets le réveil à côté de toi.
+6,الصلاة,La Prière,6.1,قصي,هَذِهِ فِكْرَةٌ طَيِّبَةٌ، جَزَاكَ اللهُ خَيْراً,"Hādhihi fikratun ṭayyibah, jazāka llāhu khayran","C'est une bonne idée, qu'Allah te récompense."
+6,الصلاة,La Prière,6.2,عصام,السَّلامُ عَلَيْكُم,As-salāmu ʿalaykum,Que la paix soit sur vous.
+6,الصلاة,La Prière,6.2,صالح,وَعَلَيْكُمُ السَّلام,Wa ʿalaykumu s-salām,Et sur vous la paix.
+6,الصلاة,La Prière,6.2,عصام,أَنَا مُسَافِرٌ إِلَى مَكَّةَ، إِلَى أَيْنَ أَنْتَ مُسَافِرٌ ؟,"Ana musāfirun ilā Makkah, ilā ayna anta musāfir?","Je voyage vers La Mecque, vers où voyages-tu ?"
+6,الصلاة,La Prière,6.2,صالح,أَنَا مُسَافِرٌ إِلَى الْمَدِينَةِ,Ana musāfirun ilā l-Madīnah,Je voyage vers Médine.
+6,الصلاة,La Prière,6.2,صالح,لِمَاذَا أَنْتَ مُسَافِرٌ إِلَى مَكَّةَ ؟,Limādhā anta musāfirun ilā Makkah?,Pourquoi voyages-tu vers La Mecque ?
+6,الصلاة,La Prière,6.2,عصام,لِلصَّلاةِ فِي الْمَسْجِدِ الْحَرَامِ,Li-ṣ-ṣalāti fī l-Masjidi l-Ḥarām,Pour prier dans la Mosquée Sacrée.
+6,الصلاة,La Prière,6.2,عصام,وَلِمَاذَا أَنْتَ مُسَافِرٌ إِلَى الْمَدِينَةِ ؟,Wa limādhā anta musāfirun ilā l-Madīnah?,Et pourquoi voyages-tu vers Médine ?
+6,الصلاة,La Prière,6.2,صالح,لِلصَّلاةِ فِي الْمَسْجِدِ النَّبَوِيِّ,Li-ṣ-ṣalāti fī l-Masjidi n-Nabawī,Pour prier dans la Mosquée du Prophète.
+6,الصلاة,La Prière,6.2,صالح,أَيْنَ سَتُصَلِّي الْجُمُعَةَ ؟,Ayna satuṣallī l-Jumuʿah?,Où prieras-tu le Vendredi ?
+6,الصلاة,La Prière,6.2,عصام,فِي الْمَسْجِدِ الْحَرَامِ إِنْ شَاءَ الله,Fī l-Masjidi l-Ḥarām in shā'a llāh,"À la Mosquée Sacrée, si Dieu le veut."
+6,الصلاة,La Prière,6.2,عصام,وَأَيْنَ سَتُصَلِّي الْجُمُعَةَ ؟,Wa ayna satuṣallī l-Jumuʿah?,Et où prieras-tu le Vendredi ?
+6,الصلاة,La Prière,6.2,صالح,فِي الْمَسْجِدِ النَّبَوِيِّ إِنْ شَاءَ الله,Fī l-Masjidi n-Nabawī in shā'a llāh,"À la Mosquée du Prophète, si Dieu le veut."
+6,الصلاة,La Prière,6.2,عصام,كَيْفَ سَتُسَافِرُ إِلَى الْمَدِينَةِ ؟,Kayfa satusāfiru ilā l-Madīnah?,Comment voyageras-tu vers Médine ?
+6,الصلاة,La Prière,6.2,صالح,أَرْكَبُ الطَّائِرَةَ,Arkabu ṭ-ṭā'irah,Je prends l'avion.
+6,الصلاة,La Prière,6.3,صادق,هَذَا أَذَانُ الْعَصْرِ,Hādhā adhānu l-ʿAṣr,C'est l'appel à la prière du Asr.
+6,الصلاة,La Prière,6.3,صابر,هَيَّا بِنَا إِلَى الْمَسْجِدِ,Hayyā binā ilā l-masjid,Allons à la mosquée.
+6,الصلاة,La Prière,6.3,صادق,أَنَا أُصَلِّي فِي الْبَيْتِ,Ana uṣallī fī l-bayt,"Moi, je prie à la maison."
+6,الصلاة,La Prière,6.3,صابر,الصَّلاةُ فِي الْمَسْجِدِ أَفْضَلُ,Aṣ-ṣalātu fī l-masjidi afḍal,La prière à la mosquée est meilleure.
+6,الصلاة,La Prière,6.3,صادق,الْمَسْجِدُ بَعِيدٌ,Al-masjidu baʿīd,La mosquée est loin.
+6,الصلاة,La Prière,6.3,صابر,الْمَسْجِدُ قَرِيبٌ. هَلْ أَنْتَ مَرِيضٌ ؟,Al-masjidu qarīb. Hal anta marīḍ?,La mosquée est proche. Es-tu malade ?
+6,الصلاة,La Prière,6.3,صادق,لا، أَنَا بِخَيْرٍ,"Lā, ana bi-khayr","Non, je vais bien."
+6,الصلاة,La Prière,6.3,صابر,أَنْتَ كَسْلانُ,Anta kaslān,Tu es paresseux.
+6,الصلاة,La Prière,6.3,صادق,هَذَا صَحِيحٌ. آسِفٌ,Hādhā ṣaḥīḥ. Āsif,C'est vrai. Désolé.
+6,الصلاة,La Prière,6.3,صابر,أَنَا ذَاهِبٌ إِلَى الْمَسْجِدِ,Ana dhāhibun ilā l-masjid,"Moi, je vais à la mosquée."
+6,الصلاة,La Prière,6.3,صادق,انْتَظِرْ، أَنَا ذَاهِبٌ مَعَكَ,"Intaẓir, ana dhāhibun maʿak","Attends, je viens avec toi."
+7,الدراسة,Les Études,7.1,غانم,انْظُرْ إِلَى اللَّوْحَةِ، اقْرَأِ الْجَدْوَلَ الدِّرَاسِيَّ,"Unẓur ilā l-lawḥah, iqra'i l-jadwala d-dirāsiyy","Regarde le tableau, lis l'emploi du temps."
+7,الدراسة,Les Études,7.1,غالب,الدِّرَاسَةُ خَمْسَةُ أَيَّامٍ فِي الأُسْبُوعِ,Ad-dirāsatu khamsatu ayyāmin fī l-usbūʿ,Les cours sont cinq jours par semaine.
+7,الدراسة,Les Études,7.1,غانم,نَعَمْ، يَوْمُ السَّبْتِ، وَيَوْمُ الأَحَدِ، وَيَوْمُ الاثْنَيْنِ، وَيَوْمُ الثُّلاثَاءِ، وَيَوْمُ الأَرْبِعَاءِ,"Naʿam, yawmu s-sabt, wa yawmu l-aḥad...","Oui, samedi, dimanche, lundi, mardi et mercredi."
+7,الدراسة,Les Études,7.1,غالب,الْعُطْلَةُ يَوْمُ الْخَمِيسِ وَيَوْمُ الْجُمُعَةِ,Al-ʿuṭlatu yawmu l-khamīs wa yawmu l-jumuʿah,Le congé est jeudi et vendredi.
+7,الدراسة,Les Études,7.1,غانم,اكْتُبِ الْمَوَادَّ الدِّرَاسِيَّةَ,Uktubi l-mawādda d-dirāsiyyah,Écris les matières scolaires.
+7,الدراسة,Les Études,7.1,غالب,الثَّقَافَةُ الإِسْلامِيَّةُ، وَاللُّغَةُ الْعَرَبِيَّةُ، وَالرِّيَاضِيَّاتُ، وَالْعُلُومُ، وَالْحَاسُوبُ,"Ath-thaqāfatu l-islāmiyyah, wa l-lughatu l-ʿarabiyyah...","La culture islamique, l'arabe, les maths, les sciences, l'informatique."
+7,الدراسة,Les Études,7.1,غانم,مَتَى تَبْدَأُ الاخْتِبَارَاتُ ؟,Matā tabda'u l-ikhtibārāt?,Quand commencent les examens ?
+7,الدراسة,Les Études,7.1,غالب,فِي شَهْرِ شَعْبَانَ,Fī shahri Shaʿbān,Au mois de Cha'ban.
+7,الدراسة,Les Études,7.1,غانم,وَمَتَى يَنْ تَهِي الْعَامُ الدِّرَاسِيُّ ؟,Wa matā yantahī l-ʿāmu d-dirāsiyy?,Et quand finit l'année scolaire ?
+7,الدراسة,Les Études,7.1,غالب,فِي شَهْرِ رَمَضَانَ,Fī shahri Ramaḍān,Au mois de Ramadan.
+7,الدراسة,Les Études,7.1,غانم,الْعُطْلَةُ ثَلاثَةُ أَشْهُرٍ,Al-ʿuṭlatu thalāthatu ashhur,Les vacances durent trois mois.
+7,الدراسة,Les Études,7.1,غالب,الْحَمْدُ للهِ، الْعُطْلَةُ طَوِيلَةٌ,"Al-ḥamdu lillāh, al-ʿuṭlatu ṭawīlah","Louange à Dieu, les vacances sont longues."
+7,الدراسة,Les Études,7.1,غالب,بَدَأَتِ الْحِصَّةُ، وَجَاءَ الْمُعَلِّمُ,"Bada'ati l-ḥiṣṣah, wa jā'a l-muʿallim","Le cours a commencé, et le professeur est arrivé."
+7,الدراسة,Les Études,7.1,غالب,هَيَّا بِنَا إِلَى الصَّفِّ,Hayyā binā ilā ṣ-ṣaff,Allons en classe.
+7,الدراسة,Les Études,7.1,غانم,هَيَّا بِنَا,Hayyā binā,Allons-y.
+7,الدراسة,Les Études,7.2,ندى,السَّلامُ عَلَيْكُم,As-salāmu ʿalaykum,Que la paix soit sur vous.
+7,الدراسة,Les Études,7.2,إلهام,وَعَلَيْكُمُ السَّلام,Wa ʿalaykumu s-salām,Et sur vous la paix.
+7,الدراسة,Les Études,7.2,ندى,اسْمِي نَدَى، أَنَا سُورِيَّةٌ,"Ismī Nadā, ana Sūriyyah","Je m'appelle Nada, je suis Syrienne."
+7,الدراسة,Les Études,7.2,إلهام,اسْمِي إِلْهَام، أَنَا سُعُودِيَّةٌ,"Ismī Ilhām, ana Suʿūdiyyah","Je m'appelle Ilham, je suis Saoudienne."
+7,الدراسة,Les Études,7.2,ندى,أَنَا طَالِبَةٌ فِي جَامِعَةِ دِمَشْقَ,Ana ṭālibah fī jāmiʿati Dimashq,Je suis étudiante à l'Université de Damas.
+7,الدراسة,Les Études,7.2,إلهام,أَنَا طَالِبَةٌ فِي جَامِعَةِ أُمِّ الْقُرَى,Ana ṭālibah fī jāmiʿati Umm al-Qurā,Je suis étudiante à l'Université Umm Al-Qura.
+7,الدراسة,Les Études,7.2,ندى,فِي أَيِّ كُلِّيَّةٍ تَدْرُسِينَ ؟,Fī ayyi kulliyyatin tadrusīn?,Dans quelle faculté étudies-tu ?
+7,الدراسة,Les Études,7.2,إلهام,أَدْرُسُ فِي كُلِّيَّةِ التَّرْبِيَةِ,Adrusu fī kulliyyati t-tarbiyah,J'étudie à la faculté de pédagogie.
+7,الدراسة,Les Études,7.2,إلهام,وَفِي أَيِّ كُلِّيَّةٍ تَدْرُسِينَ أَنْتِ ؟,Wa fī ayyi kulliyyatin tadrusīna anti?,Et dans quelle faculté étudies-tu toi ?
+7,الدراسة,Les Études,7.2,ندى,أَدْرُسُ فِي كُلِّيَّةِ الطِّبِّ,Adrusu fī kulliyyati ṭ-ṭibb,J'étudie à la faculté de médecine.
+7,الدراسة,Les Études,7.2,إلهام,سَأَكُونُ مُدَرِّسَةً إِنْ شَاءَ الله,Sa-akūnu mudarrisah in shā'a llāh,"Je serai enseignante, inchallah."
+7,الدراسة,Les Études,7.2,ندى,وَسَأَكُونُ طَبِيبَةً إِنْ شَاءَ الله,Wa sa-akūnu ṭabībah in shā'a llāh,"Et je serai médecin, inchallah."
+7,الدراسة,Les Études,7.3,قاسم,أَيْنَ تَذْهَبُ يَا غَسَّانُ ؟,Ayna tadh-habu yā Ghassān?,Où vas-tu Ghassan ?
+7,الدراسة,Les Études,7.3,غسان,أَذْهَبُ إِلَى الْمَدْرَسَةِ,Adh-habu ilā l-madrasah,Je vais à l'école.
+7,الدراسة,Les Études,7.3,قاسم,الْوَقْتُ مُبَكِّرٌ. السَّاعَةُ الآنَ السَّادِسَةُ صَبَاحاً,Al-waqtu mubakkir. As-sāʿatu l-āna s-sādisatu ṣabāḥan,Il est tôt. Il est maintenant six heures du matin.
+7,الدراسة,Les Études,7.3,غسان,الْمَدْرَسَةُ بَعِيدَةٌ عَنِ الْبَيْتِ,Al-madrasatu baʿīdatun ʿani l-bayt,L'école est loin de la maison.
+7,الدراسة,Les Études,7.3,قاسم,مَتَى يَبْدَأُ الْيَوْمُ الدِّرَاسِيُّ ؟,Matā yabda'u l-yawmu d-dirāsiyy?,Quand commence la journée scolaire ?
+7,الدراسة,Les Études,7.3,غسان,يَبْدَأُ السَّاعَةَ السَّابِعَةَ صَبَاحاً,Yabda'u s-sāʿata s-sābiʿata ṣabāḥan,Elle commence à sept heures du matin.
+7,الدراسة,Les Études,7.3,قاسم,هَلْ تَذْهَبُ بِالْحَافِلَةِ ؟,Hal tadh-habu bi-l-ḥāfilah?,Y vas-tu en bus ?
+7,الدراسة,Les Études,7.3,غسان,لا، أَذْهَبُ بِالسَّيَّارَةِ,"Lā, adh-habu bi-s-sayyārah","Non, j'y vais en voiture."
+7,الدراسة,Les Études,7.3,قاسم,مَتَى يَنْ تَهِي الْيَوْمُ الدِّرَاسِيُّ ؟,Matā yantahī l-yawmu d-dirāsiyy?,Quand finit la journée scolaire ?
+7,الدراسة,Les Études,7.3,غسان,يَنْ تَهِي السَّاعَةَ الْوَاحِدَةَ ظُهْراً,Yantahī s-sāʿata l-wāḥidata ẓuhran,Elle finit à une heure de l'après-midi.
+7,الدراسة,Les Études,7.3,قاسم,كَمْ حِصَّةً تَدْرُسُ فِي الْيَوْمِ ؟,Kam ḥiṣṣatan tadrusu fī l-yawm?,Combien de cours étudies-tu par jour ?
+7,الدراسة,Les Études,7.3,غسان,أَدْرُسُ سِتَّ حِصَصٍ فِي الْيَوْمِ,Adrusu sitta ḥiṣaṣin fī l-yawm,J'étudie six cours par jour.
+7,الدراسة,Les Études,7.3,قاسم,مَاذَا تَفْعَلُ فِي الاسْتِرَاحَةِ ؟,Mādhā tafʿalu fī l-istirāḥah?,Que fais-tu pendant la récréation ?
+7,الدراسة,Les Études,7.3,غسان,أَذْهَبُ إِلَى الْمَكْتَبَةِ أَوْ إِلَى الْمُخْتَبَرِ,Adh-habu ilā l-maktabah aw ilā l-mukhtabar,Je vais à la bibliothèque ou au laboratoire.
+8,العمل,Le Travail,8.1,عثمان,أَعْمَلُ طَبِيباً، مَاذَا تَعْمَلُ أَنْتَ ؟,"Aʿmalu ṭabīban, mādhā taʿmalu anta?","Je travaille comme médecin, que fais-tu comme travail ?"
+8,العمل,Le Travail,8.1,علي,أَعْمَلُ مُهَنْدِساً,Aʿmalu muhandisan,Je travaille comme ingénieur.
+8,العمل,Le Travail,8.1,عثمان,أَيْنَ تَعْمَلُ ؟,Ayna taʿmalu?,Où travailles-tu ?
+8,العمل,Le Travail,8.1,علي,أَعْمَلُ فِي شَرِكَةٍ، وَأَيْنَ تَعْمَلُ أَنْتَ ؟,"Aʿmalu fī sharikah, wa ayna taʿmalu anta?","Je travaille dans une entreprise, et où travailles-tu toi ?"
+8,العمل,Le Travail,8.1,عثمان,أَعْمَلُ فِي الْمُسْتَشْفَى,Aʿmalu fī l-mustashfā,Je travaille à l'hôpital.
+8,العمل,Le Travail,8.1,علي,كَمْ سَاعَةً تَعْمَلُ فِي الْيَوْمِ ؟,Kam sāʿatan taʿmalu fī l-yawm?,Combien d'heures travailles-tu par jour ?
+8,العمل,Le Travail,8.1,عثمان,أَعْمَلُ ثَمَانِيَ سَاعَاتٍ فِي الْيَوْمِ,Aʿmalu thamāniya sāʿātin fī l-yawm,Je travaille huit heures par jour.
+8,العمل,Le Travail,8.1,عثمان,وَكَمْ سَاعَةً تَعْمَلُ أَنْتَ ؟,Wa kam sāʿatan taʿmalu anta?,Et combien d'heures travailles-tu toi ?
+8,العمل,Le Travail,8.1,علي,أَعْمَلُ سَبْعَ سَاعَاتٍ,Aʿmalu sabʿa sāʿāt,Je travaille sept heures.
+8,العمل,Le Travail,8.1,عثمان,هَلْ تُحِبُّ عَمَلَكَ ؟,Hal tuḥibbu ʿamalak?,Aimes-tu ton travail ?
+8,العمل,Le Travail,8.1,علي,نَعَمْ، أُحِبُّ عَمَلِي,"Naʿam, uḥibbu ʿamalī","Oui, j'aime mon travail."
+8,العمل,Le Travail,8.1,عثمان,وَأَنَا أُحِبُّ عَمَلِي أَيْضاً,Wa ana uḥibbu ʿamalī ayḍan,Et moi j'aime mon travail aussi.
+8,العمل,Le Travail,8.2,الطالب 1,مَاذَا سَنَعْمَلُ بَعْدَ الدِّرَاسَةِ ؟,Mādhā sanaʿmalu baʿda d-dirāsah?,Que ferons-nous après les études ?
+8,العمل,Le Travail,8.2,الطالب 2,أَنَا أَدْرُسُ الطِّبَّ فِي كُلِّيَّةِ الطِّبِّ,Ana adrusu ṭ-ṭibba fī kulliyyati ṭ-ṭibb,J'étudie la médecine à la faculté de médecine.
+8,العمل,Le Travail,8.2,الطالب 2,سَأَعْمَلُ طَبِيباً إِنْ شَاءَ الله,Sa-aʿmalu ṭabīban in shā'a llāh,"Je travaillerai comme médecin, inchallah."
+8,العمل,Le Travail,8.2,الطالب 3,أَنَا أَدْرُسُ الصَّيْدَلَةَ فِي كُلِّيَّةِ الصَّيْدَلَةِ,Ana adrusu ṣ-ṣaydalah fī kulliyyati ṣ-ṣaydalah,J'étudie la pharmacie à la faculté de pharmacie.
+8,العمل,Le Travail,8.2,الطالب 3,سَأَعْمَلُ صَيْدَلِيّاً إِنْ شَاءَ الله,Sa-aʿmalu ṣaydaliyyan in shā'a llāh,"Je travaillerai comme pharmacien, inchallah."
+8,العمل,Le Travail,8.2,الطالب 4,أَنَا أَدْرُسُ التَّمْرِيضَ فِي كُلِّيَّةِ التَّمْرِيضِ,Ana adrusu t-tamrīḍ fī kulliyyati t-tamrīḍ,J'étudie les soins infirmiers à la faculté d'infirmiers.
+8,العمل,Le Travail,8.2,الطالب 4,سَأَعْمَلُ مُمَرِّضاً إِنْ شَاءَ الله,Sa-aʿmalu mumarriḍan in shā'a llāh,"Je travaillerai comme infirmier, inchallah."
+8,العمل,Le Travail,8.2,الطالب 5,أَنَا أَدْرُسُ الْهَنْدَسَةَ فِي كُلِّيَّةِ الْهَنْدَسَةِ,Ana adrusu l-handasah fī kulliyyati l-handasah,J'étudie l'ingénierie à la faculté d'ingénierie.
+8,العمل,Le Travail,8.2,الطالب 5,سَأَعْمَلُ مُهَنْدِساً إِنْ شَاءَ الله,Sa-aʿmalu muhandisan in shā'a llāh,"Je travaillerai comme ingénieur, inchallah."
+8,العمل,Le Travail,8.2,الطالب 6,أَنَا أَدْرُسُ الطَّيَرَانَ فِي كُلِّيَّةِ الطَّيَرَانِ,Ana adrusu ṭ-ṭayarān fī kulliyyati ṭ-ṭayarān,J'étudie l'aviation à la faculté d'aviation.
+8,العمل,Le Travail,8.2,الطالب 6,سَأَعْمَلُ طَيَّاراً إِنْ شَاءَ الله,Sa-aʿmalu ṭayyāran in shā'a llāh,"Je travaillerai comme pilote, inchallah."
+8,العمل,Le Travail,8.2,الطالب 1,أَنَا أَدْرُسُ التَّرْبِيَةَ فِي كُلِّيَّةِ التَّرْبِيَةِ,Ana adrusu t-tarbiyah fī kulliyyati t-tarbiyah,J'étudie l'éducation à la faculté de pédagogie.
+8,العمل,Le Travail,8.2,الطالب 1,سَأَعْمَلُ مُدَرِّساً إِنْ شَاءَ الله,Sa-aʿmalu mudarrisan in shā'a llāh,"Je travaillerai comme enseignant, inchallah."
+8,العمل,Le Travail,8.3,مريم,أَنَا مُدَرِّسَةٌ. مَا مِهْنَتُكِ ؟,Ana mudarrisah. Mā mihnatuki?,Je suis enseignante. Quel est ton métier ?
+8,العمل,Le Travail,8.3,زينب,أَنَا مُدَرِّسَةٌ أَيْضاً,Ana mudarrisah ayḍan,Je suis enseignante aussi.
+8,العمل,Le Travail,8.3,مريم,فِي أَيِّ مَرْحَلَةٍ تُدَرِّسِينَ ؟,Fī ayyi marḥalatin tudarrisīn?,Dans quel niveau enseignes-tu ?
+8,العمل,Le Travail,8.3,زينب,أُدَرِّسُ فِي الْمَرْحَلَةِ الابْتِدَائِيَّةِ,Udarrisu fī l-marḥalati l-ibtidā'iyyah,J'enseigne au niveau primaire.
+8,العمل,Le Travail,8.3,زينب,وَفِي أَيِّ مَرْحَلَةٍ تُدَرِّسِينَ أَنْتِ ؟,Wa fī ayyi marḥalatin tudarrisīna anti?,Et dans quel niveau enseignes-tu toi ?
+8,العمل,Le Travail,8.3,مريم,أُدَرِّسُ فِي الْمَرْحَلَةِ الْمُتَوَسِّطَةِ,Udarrisu fī l-marḥalati l-mutawassiṭah,J'enseigne au niveau moyen (collège).
+8,العمل,Le Travail,8.3,زينب,هَلْ لَكِ أَطْفَالٌ ؟,Hal laki aṭfāl?,As-tu des enfants ?
+8,العمل,Le Travail,8.3,مريم,نَعَمْ، لِي أَطْفَالٌ,"Naʿam, lī aṭfāl","Oui, j'ai des enfants."
+8,العمل,Le Travail,8.3,زينب,كَمْ طِفْلاً لَكِ ؟,Kam ṭiflan laki?,Combien d'enfants as-tu ?
+8,العمل,Le Travail,8.3,مريم,لِي خَمْسَةُ أَطْفَالٍ,Lī khamsatu aṭfāl,J'ai cinq enfants.
+8,العمل,Le Travail,8.3,زينب,هَلْ تُحِبِّينَ عَمَلَكِ ؟,Hal tuḥibbīna ʿamalaki?,Aimes-tu ton travail ?
+8,العمل,Le Travail,8.3,مريم,نَعَمْ، أُحِبُّ عَمَلِي,"Naʿam, uḥibbu ʿamalī","Oui, j'aime mon travail."
+8,العمل,Le Travail,8.3,زينب,وَأَنَا أُحِبُّ عَمَلِي أَيْضاً,Wa ana uḥibbu ʿamalī ayḍan,Et moi j'aime mon travail aussi.
