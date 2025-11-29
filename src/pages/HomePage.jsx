@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback } from 'react'
+import { useSearchParams } from 'react-router-dom'
 import { BookOpen, ChevronRight, ChevronLeft, Check, List, Music } from 'lucide-react'
 import {
   getPageWithLines,
@@ -20,11 +21,14 @@ const PORTION_CONFIG = {
 }
 
 export default function HomePage({ settings, updateSettings }) {
+  const [searchParams, setSearchParams] = useSearchParams()
   const [verses, setVerses] = useState([])
   const [portionLines, setPortionLines] = useState([]) // Lignes de la portion pour affichage Mushaf
   const [secondPageLines, setSecondPageLines] = useState([]) // Lignes de la 2ème page (mode 2 pages)
   const [overflowVerse, setOverflowVerse] = useState(null) // Verset dépassant
+  const [overflowLines, setOverflowLines] = useState([]) // Lignes du verset dépassant
   const [previewVerses, setPreviewVerses] = useState([]) // Aperçu page suivante
+  const [previewLines, setPreviewLines] = useState([]) // Lignes de l'aperçu page suivante
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
   const [portionInfo, setPortionInfo] = useState(null)
@@ -38,6 +42,37 @@ export default function HomePage({ settings, updateSettings }) {
   const portionIndex = settings.currentPortionIndex || 0
   const portionSize = settings.portionSize || '1/3'
   const config = PORTION_CONFIG[portionSize] || PORTION_CONFIG['1/3']
+
+  // Synchroniser les paramètres URL avec les settings
+  useEffect(() => {
+    const urlPage = searchParams.get('page')
+    const urlPortion = searchParams.get('portion')
+    
+    if (urlPage) {
+      const pageNum = parseInt(urlPage)
+      if (pageNum >= 1 && pageNum <= 604 && pageNum !== currentPage) {
+        updateSettings({ currentPage: pageNum })
+      }
+    }
+    
+    if (urlPortion !== null) {
+      const portionNum = parseInt(urlPortion)
+      const maxPortions = config.portions
+      if (portionNum >= 0 && portionNum < maxPortions && portionNum !== portionIndex) {
+        updateSettings({ currentPortionIndex: portionNum })
+      }
+    }
+  }, [searchParams])
+
+  // Mettre à jour l'URL quand la page/portion change
+  useEffect(() => {
+    const newParams = new URLSearchParams()
+    newParams.set('page', String(currentPage))
+    if (config.portions > 1 && portionSize !== '1' && portionSize !== '2') {
+      newParams.set('portion', String(portionIndex))
+    }
+    setSearchParams(newParams, { replace: true })
+  }, [currentPage, portionIndex, portionSize])
 
   // Nouveau système simple: tableau des pages validées
   // S'assurer que validatedPages est bien un tableau (migration depuis ancien système)
@@ -136,7 +171,9 @@ export default function HomePage({ settings, updateSettings }) {
       setLoading(true)
       setError(null)
       setOverflowVerse(null)
+      setOverflowLines([])
       setPreviewVerses([])
+      setPreviewLines([])
       setPortionLines([])
       setSelectedVerses(new Set()) // Reset selection when portion changes
 
@@ -204,11 +241,11 @@ export default function HomePage({ settings, updateSettings }) {
       })
 
       // Collect verses for the portion lines
-      // Only include verses that are FULLY within the portion lines
-      // Verses that extend beyond go to overflow
+      // Include ALL verses that touch the portion lines (start OR end within)
+      // Only the LAST verse that extends beyond goes to overflow
       const portionVerses = []
-      const overflowVerses = []
       const seenKeys = new Set()
+      let lastOverflowVerse = null
 
       for (let line = startLine; line <= endLine; line++) {
         const versesOnLine = lineMap.get(line) || []
@@ -216,21 +253,25 @@ export default function HomePage({ settings, updateSettings }) {
           if (!seenKeys.has(verse.verseKey)) {
             seenKeys.add(verse.verseKey)
             const maxLine = Math.max(...verse.lineNumbers)
+            const minLine = Math.min(...verse.lineNumbers)
 
-            // If verse extends beyond our portion, it's an overflow
-            if (maxLine > endLine) {
-              overflowVerses.push(verse)
-            } else {
+            // Include verse if it touches our portion
+            // A verse "touches" the portion if any of its lines are in [startLine, endLine]
+            const touchesPortion = verse.lineNumbers.some(l => l >= startLine && l <= endLine)
+
+            if (touchesPortion) {
+              // If verse extends beyond our portion (ends after endLine), track as potential overflow
+              if (maxLine > endLine) {
+                lastOverflowVerse = verse
+              }
+              // Add to portion verses (for audio and counting)
               portionVerses.push(verse)
             }
           }
         })
       }
 
-      // Get the first overflow verse (the one that extends beyond)
-      let overflow = overflowVerses.length > 0 ? overflowVerses[0] : null
-
-      // Transform verses
+      // Transform verses for audio/counting (all verses that touch the portion)
       const transformedVerses = portionVerses.map(verse => ({
         number: verse.id,
         text: verse.text,
@@ -242,14 +283,22 @@ export default function HomePage({ settings, updateSettings }) {
 
       setVerses(transformedVerses)
 
-      // Set overflow verse if exists
-      if (overflow) {
+      // Set overflow verse if exists - extract lines that are beyond our portion
+      if (lastOverflowVerse) {
         setOverflowVerse({
-          number: overflow.id,
-          text: overflow.text,
-          numberInSurah: overflow.verseNumber,
-          verseKey: overflow.verseKey
+          number: lastOverflowVerse.id,
+          text: lastOverflowVerse.text,
+          numberInSurah: lastOverflowVerse.verseNumber,
+          verseKey: lastOverflowVerse.verseKey
         })
+        // Extract lines for the overflow verse (lines after endLine)
+        const overflowLinesData = (pageData.lines || []).filter(
+          line => line.lineNumber > endLine && lastOverflowVerse.lineNumbers.includes(line.lineNumber)
+        ).map(line => ({
+          ...line,
+          words: line.words.filter(w => w.verseKey === lastOverflowVerse.verseKey)
+        }))
+        setOverflowLines(overflowLinesData)
       }
 
       setPortionInfo({
@@ -268,9 +317,13 @@ export default function HomePage({ settings, updateSettings }) {
           let nextPage = portionSize === '2' ? currentPage + 2 : currentPage + 1
           if (nextPage <= 604) {
             const nextPageData = await getPageWithLines(nextPage, settings.tajweedEnabled)
-            // Get ONLY the first line (not full verse)
+            // Get ONLY the first line
+            const firstLine = (nextPageData.lines || []).find(l => l.lineNumber === 1)
+            if (firstLine) {
+              setPreviewLines([firstLine])
+            }
+            // Keep verse info for marker
             const firstLineVerses = nextPageData.verses.filter(v => v.lineNumbers.includes(1))
-            // Take just the first verse fragment on line 1
             const previewVerse = firstLineVerses[0]
             if (previewVerse) {
               setPreviewVerses([{
@@ -417,7 +470,12 @@ export default function HomePage({ settings, updateSettings }) {
       return isPageValidated(currentPage) && isPageValidated(currentPage + 1)
     }
 
-    // Mode fractionné (1/4, 1/3, 1/2): vérifier la portion spécifique
+    // Mode fractionné (1/4, 1/3, 1/2):
+    // Si la page entière est déjà validée (via mode 1p ou 2p), toutes les portions sont validées
+    if (isPageValidated(currentPage)) {
+      return true
+    }
+    // Sinon vérifier la portion spécifique
     const pageProgress = portionProgress[String(currentPage)] || []
     return pageProgress.includes(portionIndex)
   }
@@ -431,6 +489,10 @@ export default function HomePage({ settings, updateSettings }) {
   const getValidatedPortionsCount = () => {
     if (portionSize === '1' || portionSize === '2') {
       return isPageValidated(currentPage) ? 1 : 0
+    }
+    // Si la page est déjà validée (via mode 1p ou 2p), toutes les portions sont validées
+    if (isPageValidated(currentPage)) {
+      return config.portions
     }
     const pageProgress = portionProgress[String(currentPage)] || []
     return pageProgress.length
@@ -585,28 +647,6 @@ export default function HomePage({ settings, updateSettings }) {
         </div>
       </div>
 
-      {/* Current Surah Info */}
-      {currentSurah && (
-        <div className={`mb-6 p-4 rounded-2xl ${settings.darkMode ? 'bg-slate-800' : 'bg-white'} shadow-sm`}>
-          <div className="flex items-center justify-between">
-            <div>
-              <p className={`text-sm ${settings.darkMode ? 'text-gray-400' : 'text-gray-500'}`}>
-                Sourate actuelle
-              </p>
-              <h2 className={`text-xl font-bold ${settings.darkMode ? 'text-white' : 'text-gray-800'}`}>
-                {currentSurah.name} - {currentSurah.englishName}
-              </h2>
-              <p className={`text-sm ${settings.darkMode ? 'text-gray-500' : 'text-gray-400'}`}>
-                Page {currentPage} • {currentSurah.ayahCount} versets
-              </p>
-            </div>
-            <div className="arabic-text text-3xl text-primary-600 dark:text-primary-400">
-              {currentSurah.number}
-            </div>
-          </div>
-        </div>
-      )}
-
       {/* Main Content */}
       <div className="grid lg:grid-cols-3 gap-6">
         {/* Verses */}
@@ -743,21 +783,35 @@ export default function HomePage({ settings, updateSettings }) {
               </div>
 
               {/* Overflow verse (verse extending beyond portion) */}
-              {overflowVerse && (
+              {overflowVerse && overflowLines.length > 0 && (
                 <div className={`mt-4 pt-4 border-t border-dashed ${settings.darkMode ? 'border-slate-600' : 'border-gray-300'}`}>
-                  <p className={`text-xs mb-2 ${settings.darkMode ? 'text-amber-400' : 'text-amber-600'}`}>
+                  <p className={`text-xs mb-2 text-center ${settings.darkMode ? 'text-amber-400' : 'text-amber-600'}`}>
                     Verset dépassant la partie du jour :
                   </p>
                   <div
-                    className={`text-2xl md:text-3xl arabic-text text-center ${settings.darkMode ? 'text-amber-200' : 'text-amber-700'} opacity-80`}
+                    className={`text-2xl md:text-3xl arabic-text ${settings.tajweedEnabled ? 'tajweed-text' : ''}`}
                     style={{ fontFamily: getFontFamily() }}
                   >
-                    {settings.tajweedEnabled ? (
-                      <span dangerouslySetInnerHTML={{ __html: overflowVerse.text.replace(/<span class=end>.*?<\/span>/g, '') }} />
-                    ) : (
-                      overflowVerse.text
-                    )}
-                    {renderVerseMarker(overflowVerse.numberInSurah)}
+                    {overflowLines.map((line) => (
+                      <div
+                        key={`overflow-line-${line.lineNumber}`}
+                        className={`mushaf-line text-center mb-2 ${settings.darkMode ? 'text-amber-200' : 'text-amber-700'} opacity-80`}
+                        dir="rtl"
+                      >
+                        {line.words.map((word, wordIdx) => (
+                          <span key={`${word.verseKey}-${word.position}-overflow`}>
+                            {word.isEndMarker ? (
+                              renderVerseMarker(word.verseNumber)
+                            ) : settings.tajweedEnabled && word.tajweedHtml ? (
+                              <span dangerouslySetInnerHTML={{ __html: word.tajweedHtml }} />
+                            ) : (
+                              word.text
+                            )}
+                            {wordIdx < line.words.length - 1 && !word.isEndMarker && ' '}
+                          </span>
+                        ))}
+                      </div>
+                    ))}
                   </div>
                 </div>
               )}
@@ -806,26 +860,36 @@ export default function HomePage({ settings, updateSettings }) {
               )}
 
               {/* Preview of next page (only first LINE) */}
-              {previewVerses.length > 0 && (
+              {previewLines.length > 0 && (
                 <div className={`mt-6 pt-4 border-t border-dashed ${settings.darkMode ? 'border-slate-600' : 'border-gray-300'}`}>
-                  <p className={`text-xs mb-2 ${settings.darkMode ? 'text-gray-500' : 'text-gray-400'}`}>
+                  <p className={`text-xs mb-2 text-center ${settings.darkMode ? 'text-gray-500' : 'text-gray-400'}`}>
                     Première ligne page suivante :
                   </p>
                   <div
-                    className={`text-2xl md:text-3xl arabic-text text-center text-red-500 dark:text-red-400 opacity-70`}
+                    className={`text-2xl md:text-3xl arabic-text ${settings.tajweedEnabled ? 'tajweed-text' : ''}`}
                     style={{ fontFamily: getFontFamily() }}
                   >
-                    {previewVerses.map((ayah) => (
-                      <span key={ayah.verseKey || ayah.number}>
-                        {settings.tajweedEnabled ? (
-                          <span dangerouslySetInnerHTML={{ __html: ayah.text.replace(/<span class=end>.*?<\/span>/g, '') }} />
-                        ) : (
-                          ayah.text
-                        )}
-                        {renderVerseMarker(ayah.numberInSurah)}
-                      </span>
+                    {previewLines.map((line) => (
+                      <div
+                        key={`preview-line-${line.lineNumber}`}
+                        className="mushaf-line text-center mb-2 text-red-500 dark:text-red-400 opacity-70"
+                        dir="rtl"
+                      >
+                        {line.words.map((word, wordIdx) => (
+                          <span key={`${word.verseKey}-${word.position}-preview`}>
+                            {word.isEndMarker ? (
+                              renderVerseMarker(word.verseNumber)
+                            ) : settings.tajweedEnabled && word.tajweedHtml ? (
+                              <span dangerouslySetInnerHTML={{ __html: word.tajweedHtml }} />
+                            ) : (
+                              word.text
+                            )}
+                            {wordIdx < line.words.length - 1 && !word.isEndMarker && ' '}
+                          </span>
+                        ))}
+                        <span className="text-sm mr-2">...</span>
+                      </div>
                     ))}
-                    <span className="text-sm ml-2">...</span>
                   </div>
                 </div>
               )}
@@ -834,69 +898,98 @@ export default function HomePage({ settings, updateSettings }) {
 
         </div>
 
-        {/* Audio Player Sidebar */}
-        <div className="lg:col-span-1">
-          <h3 className={`text-lg font-semibold mb-4 ${settings.darkMode ? 'text-white' : 'text-gray-800'}`}>
-            Écouter la récitation
+        {/* Sidebar: Surah Info + Audio */}
+        <div className="lg:col-span-1 space-y-4">
+          {/* Current Surah Info */}
+          <h3 className={`text-lg font-semibold mb-2 ${settings.darkMode ? 'text-white' : 'text-gray-800'}`}>
+            Sourate actuelle
           </h3>
+          {currentSurah && (
+            <div className={`p-4 rounded-2xl ${settings.darkMode ? 'bg-slate-800' : 'bg-white'} shadow-sm`}>
+              <div className="flex items-center gap-4">
+                {/* Numéro de sourate stylisé */}
+                <div className={`w-14 h-14 rounded-xl ${settings.darkMode ? 'bg-slate-700' : 'bg-gray-100'} flex items-center justify-center relative overflow-hidden`}>
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary-500/20 to-gold-500/20"></div>
+                  <span className={`text-2xl font-bold ${settings.darkMode ? 'text-primary-400' : 'text-primary-600'}`} style={{ fontFamily: "'Amiri', serif" }}>
+                    {settings.arabicNumerals ? toArabicNumeral(currentSurah.number) : currentSurah.number}
+                  </span>
+                </div>
+                {/* Infos sourate */}
+                <div className="flex-1">
+                  <h2 className={`text-xl font-bold ${settings.darkMode ? 'text-white' : 'text-gray-800'}`} style={{ fontFamily: "'Amiri', serif" }}>
+                    {currentSurah.name}
+                  </h2>
+                  <p className={`text-sm ${settings.darkMode ? 'text-gray-400' : 'text-gray-500'}`}>
+                    {currentSurah.englishName} • {currentSurah.ayahCount} versets
+                  </p>
+                </div>
+              </div>
+            </div>
+          )}
 
-          {/* Audio Mode Selection */}
-          <div className={`mb-4 p-3 rounded-xl ${settings.darkMode ? 'bg-slate-700' : 'bg-gray-100'}`}>
-            <div className="flex flex-col gap-2">
-              {/* Mode: Portion entière */}
-              <button
-                onClick={() => setAudioMode('portion')}
-                className={`flex items-center gap-2 px-3 py-2 rounded-lg text-sm transition-colors ${
-                  audioMode === 'portion'
-                    ? 'bg-primary-500 text-white'
-                    : settings.darkMode
-                      ? 'bg-slate-600 text-gray-300 hover:bg-slate-500'
-                      : 'bg-white text-gray-700 hover:bg-gray-200'
-                }`}
-              >
-                <Music className="w-4 h-4" />
-                <span>Toute la portion</span>
-              </button>
+          {/* Audio Player */}
+          <h3 className={`text-lg font-semibold mb-2 ${settings.darkMode ? 'text-white' : 'text-gray-800'}`}>
+            Écouter l'audio
+          </h3>
+          <div className={`p-4 rounded-2xl ${settings.darkMode ? 'bg-slate-800' : 'bg-white'} shadow-sm`}>
+            {/* Audio Mode Selection */}
+            <div className={`mb-4 p-3 rounded-xl ${settings.darkMode ? 'bg-slate-700' : 'bg-gray-100'}`}>
+              <div className="flex flex-col gap-2">
+                {/* Mode: Partie du jour */}
+                <button
+                  onClick={() => setAudioMode('portion')}
+                  className={`flex items-center gap-2 px-3 py-2 rounded-lg text-sm transition-colors ${
+                    audioMode === 'portion'
+                      ? 'bg-primary-500 text-white'
+                      : settings.darkMode
+                        ? 'bg-slate-600 text-gray-300 hover:bg-slate-500'
+                        : 'bg-white text-gray-700 hover:bg-gray-200'
+                  }`}
+                >
+                  <Music className="w-4 h-4" />
+                  <span>Toute la partie du jour</span>
+                </button>
 
-              {/* Mode: Sélection */}
-              <button
-                onClick={() => setAudioMode('selection')}
-                className={`flex items-center gap-2 px-3 py-2 rounded-lg text-sm transition-colors ${
-                  audioMode === 'selection'
-                    ? 'bg-primary-500 text-white'
-                    : settings.darkMode
-                      ? 'bg-slate-600 text-gray-300 hover:bg-slate-500'
-                      : 'bg-white text-gray-700 hover:bg-gray-200'
-                }`}
-              >
-                <List className="w-4 h-4" />
-                <span>Versets sélectionnés ({selectedVerses.size})</span>
-              </button>
+                {/* Mode: Sélection */}
+                <button
+                  onClick={() => setAudioMode('selection')}
+                  className={`flex items-center gap-2 px-3 py-2 rounded-lg text-sm transition-colors ${
+                    audioMode === 'selection'
+                      ? 'bg-primary-500 text-white'
+                      : settings.darkMode
+                        ? 'bg-slate-600 text-gray-300 hover:bg-slate-500'
+                        : 'bg-white text-gray-700 hover:bg-gray-200'
+                  }`}
+                >
+                  <List className="w-4 h-4" />
+                  <span>Versets sélectionnés ({selectedVerses.size})</span>
+                </button>
+              </div>
+
+              {/* Clear selection button */}
+              {selectedVerses.size > 0 && (
+                <button
+                  onClick={clearSelection}
+                  className={`mt-2 w-full text-xs py-1 rounded ${
+                    settings.darkMode
+                      ? 'text-gray-400 hover:text-gray-200'
+                      : 'text-gray-500 hover:text-gray-700'
+                  }`}
+                >
+                  Effacer la sélection
+                </button>
+              )}
             </div>
 
-            {/* Clear selection button */}
-            {selectedVerses.size > 0 && (
-              <button
-                onClick={clearSelection}
-                className={`mt-2 w-full text-xs py-1 rounded ${
-                  settings.darkMode
-                    ? 'text-gray-400 hover:text-gray-200'
-                    : 'text-gray-500 hover:text-gray-700'
-                }`}
-              >
-                Effacer la sélection
-              </button>
-            )}
+            <AudioPlayer
+              key={`${audioKey}-${audioMode}-${selectedVerses.size}`}
+              ayahs={getAudioVerses()}
+              reciterId={settings.reciter}
+              darkMode={settings.darkMode}
+              loopAll={loopAudio}
+              onLoopChange={setLoopAudio}
+            />
           </div>
-
-          <AudioPlayer
-            key={`${audioKey}-${audioMode}-${selectedVerses.size}`}
-            ayahs={getAudioVerses()}
-            reciterId={settings.reciter}
-            darkMode={settings.darkMode}
-            loopAll={loopAudio}
-            onLoopChange={setLoopAudio}
-          />
         </div>
       </div>
     </div>
