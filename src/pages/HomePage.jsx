@@ -1,10 +1,13 @@
-import { useState, useEffect, useCallback } from 'react'
+import { useState, useEffect, useCallback, useRef } from 'react'
 import { useSearchParams } from 'react-router-dom'
-import { BookOpen, ChevronRight, ChevronLeft, Check, List, Music, ChevronUp, ChevronDown } from 'lucide-react'
+import { BookOpen, ChevronRight, ChevronLeft, Check, List, Music, ChevronUp, ChevronDown, Play, Pause } from 'lucide-react'
 import {
   getPageWithLines,
   SURAH_INFO,
-  ARABIC_FONTS
+  ARABIC_FONTS,
+  JUZ_INFO,
+  getEveryAyahUrl,
+  RECITERS
 } from '../services/quranApi'
 import AudioPlayer from '../components/AudioPlayer'
 
@@ -41,6 +44,13 @@ export default function HomePage({ settings, updateSettings }) {
   const [loopAudio, setLoopAudio] = useState(false) // Lecture en boucle
   const [showCutVerse, setShowCutVerse] = useState(false) // Afficher début du verset (portion précédente)
   const [showOverflowVerse, setShowOverflowVerse] = useState(false) // Afficher fin du verset (dépassant)
+
+  // Mini player state
+  const [miniPlayerPlaying, setMiniPlayerPlaying] = useState(false)
+  const [miniPlayerProgress, setMiniPlayerProgress] = useState(0)
+  const [miniPlayerDuration, setMiniPlayerDuration] = useState(0)
+  const [miniPlayerCurrentIndex, setMiniPlayerCurrentIndex] = useState(0)
+  const miniPlayerRef = useRef(null)
 
   const currentPage = settings.currentPage || 1
   const portionIndex = settings.currentPortionIndex || 0
@@ -184,6 +194,14 @@ export default function HomePage({ settings, updateSettings }) {
       setSelectedVerses(new Set()) // Reset selection when portion changes
       setShowCutVerse(false) // Reset toggle states
       setShowOverflowVerse(false)
+      // Reset mini player
+      if (miniPlayerRef.current) {
+        miniPlayerRef.current.pause()
+        miniPlayerRef.current.currentTime = 0
+      }
+      setMiniPlayerPlaying(false)
+      setMiniPlayerProgress(0)
+      setMiniPlayerCurrentIndex(0)
 
       // Handle special pages (1 and 2)
       if (SPECIAL_PAGES.includes(currentPage) && portionSize !== '2') {
@@ -601,19 +619,122 @@ export default function HomePage({ settings, updateSettings }) {
   const canGoPrevious = currentPage > 1 || portionIndex > 0
   const canGoNext = verses.length > 0
 
+  // Mini player functions
+  const getMiniPlayerVerses = () => {
+    // Si des versets sont sélectionnés, les utiliser, sinon toute la portion
+    const portionVerses = verses.filter(v => !v.isSecondPage && !v.isPreview)
+    if (selectedVerses.size > 0) {
+      return portionVerses.filter(v => selectedVerses.has(v.verseKey))
+    }
+    return portionVerses
+  }
+
+  // Sync playback speed in real-time
+  useEffect(() => {
+    if (miniPlayerRef.current) {
+      miniPlayerRef.current.playbackRate = settings.playbackSpeed || 1
+    }
+  }, [settings.playbackSpeed])
+
+  // Reset mini player when selection changes
+  useEffect(() => {
+    if (miniPlayerRef.current && miniPlayerPlaying) {
+      miniPlayerRef.current.pause()
+      miniPlayerRef.current.currentTime = 0
+    }
+    setMiniPlayerPlaying(false)
+    setMiniPlayerProgress(0)
+    setMiniPlayerCurrentIndex(0)
+  }, [selectedVerses.size])
+
+  const loadMiniPlayerAudio = (index) => {
+    const miniVerses = getMiniPlayerVerses()
+    if (!miniPlayerRef.current || index >= miniVerses.length) return
+
+    const verse = miniVerses[index]
+    const reciter = RECITERS.find(r => r.id === settings.reciter) || RECITERS[0]
+    const [surahNumber, ayahNumber] = verse.verseKey
+      ? verse.verseKey.split(':').map(Number)
+      : [verse.surah?.number || 1, verse.numberInSurah || 1]
+
+    const audioUrl = getEveryAyahUrl(surahNumber, ayahNumber, reciter.everyAyahId)
+    miniPlayerRef.current.src = audioUrl
+    miniPlayerRef.current.playbackRate = settings.playbackSpeed || 1
+  }
+
+  const handleMiniPlayerPlayPause = () => {
+    if (!miniPlayerRef.current) return
+
+    if (miniPlayerPlaying) {
+      miniPlayerRef.current.pause()
+      setMiniPlayerPlaying(false)
+    } else {
+      const miniVerses = getMiniPlayerVerses()
+      if (miniVerses.length === 0) return
+
+      // Si c'est la première fois ou si terminé, charger le premier verset
+      if (miniPlayerRef.current.src === '' || miniPlayerCurrentIndex >= miniVerses.length) {
+        setMiniPlayerCurrentIndex(0)
+        loadMiniPlayerAudio(0)
+      }
+      miniPlayerRef.current.play().catch(err => {
+        console.error('Mini player error:', err)
+        setMiniPlayerPlaying(false)
+      })
+      setMiniPlayerPlaying(true)
+    }
+  }
+
+  const handleMiniPlayerTimeUpdate = () => {
+    if (!miniPlayerRef.current) return
+    setMiniPlayerProgress(miniPlayerRef.current.currentTime)
+  }
+
+  const handleMiniPlayerLoadedMetadata = () => {
+    if (!miniPlayerRef.current) return
+    setMiniPlayerDuration(miniPlayerRef.current.duration)
+  }
+
+  const handleMiniPlayerEnded = () => {
+    const miniVerses = getMiniPlayerVerses()
+    if (miniPlayerCurrentIndex < miniVerses.length - 1) {
+      // Passer au verset suivant
+      const nextIndex = miniPlayerCurrentIndex + 1
+      setMiniPlayerCurrentIndex(nextIndex)
+      loadMiniPlayerAudio(nextIndex)
+      setTimeout(() => {
+        miniPlayerRef.current?.play()
+      }, 100)
+    } else {
+      // Fin de tous les versets
+      setMiniPlayerPlaying(false)
+      setMiniPlayerProgress(0)
+      setMiniPlayerCurrentIndex(0)
+    }
+  }
+
+  // Get current Juz number
+  const getCurrentJuz = () => {
+    const juz = JUZ_INFO.find(j => currentPage >= j.startPage && currentPage <= j.endPage)
+    return juz ? juz.number : 1
+  }
+
   // Get portion label for display
   const getPortionLabel = () => {
+    const juzNum = getCurrentJuz()
+    const juzLabel = `[Juz ${juzNum}]`
+
     if (portionInfo?.isSpecialPage) {
-      return `Page ${currentPage} complète`
+      return `${juzLabel} Page ${currentPage} complète`
     }
     if (portionSize === '2') {
-      return `Pages ${currentPage}-${Math.min(currentPage + 1, 604)}`
+      return `${juzLabel} Pages ${currentPage}-${Math.min(currentPage + 1, 604)}`
     }
     if (portionSize === '1') {
-      return `Page ${currentPage}`
+      return `${juzLabel} Page ${currentPage}`
     }
-    // Mode fractionné: Page X - 1/3, 2/3, etc.
-    return `Page ${currentPage} - ${portionIndex + 1}/${config.portions}`
+    // Mode fractionné: [Juz X] Page Y - 1/3, 2/3, etc.
+    return `${juzLabel} Page ${currentPage} - ${portionIndex + 1}/${config.portions}`
   }
 
   // Get position display text
@@ -750,10 +871,79 @@ export default function HomePage({ settings, updateSettings }) {
                   <ChevronRight className="w-5 h-5" />
                 </button>
               </div>
+
             </div>
-            <span className={`text-sm ${settings.darkMode ? 'text-gray-400' : 'text-gray-500'}`}>
-              {verses.length} versets
-            </span>
+          </div>
+
+          {/* Mini Player - Full width bar */}
+          <div className={`mb-4 rounded-2xl p-3 ${settings.darkMode ? 'bg-slate-800' : 'bg-white'} shadow-sm`}>
+            <audio
+              ref={miniPlayerRef}
+              onTimeUpdate={handleMiniPlayerTimeUpdate}
+              onLoadedMetadata={handleMiniPlayerLoadedMetadata}
+              onEnded={handleMiniPlayerEnded}
+              onCanPlay={() => {
+                if (miniPlayerRef.current) miniPlayerRef.current.playbackRate = settings.playbackSpeed || 1
+              }}
+            />
+            <div className="flex items-center gap-3">
+              {/* Play/Pause Button */}
+              <button
+                onClick={handleMiniPlayerPlayPause}
+                disabled={getMiniPlayerVerses().length === 0}
+                className={`w-10 h-10 rounded-full flex items-center justify-center transition-all flex-shrink-0 ${
+                  getMiniPlayerVerses().length === 0
+                    ? 'bg-gray-200 dark:bg-slate-700 text-gray-400 cursor-not-allowed'
+                    : miniPlayerPlaying
+                      ? 'bg-primary-500 hover:bg-primary-600 text-white shadow-lg'
+                      : 'bg-gradient-to-br from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white shadow-lg hover:scale-105'
+                }`}
+                title={miniPlayerPlaying ? "Pause" : (selectedVerses.size > 0 ? "Écouter la sélection" : "Écouter la portion")}
+              >
+                {miniPlayerPlaying ? (
+                  <Pause className="w-5 h-5" />
+                ) : (
+                  <Play className="w-5 h-5 ml-0.5" />
+                )}
+              </button>
+
+              {/* Progress Section */}
+              <div className="flex-1 flex flex-col gap-1">
+                {/* Progress bar */}
+                <div className={`h-2 rounded-full ${settings.darkMode ? 'bg-slate-700' : 'bg-gray-200'} overflow-hidden cursor-pointer`}>
+                  <div
+                    className="h-full bg-gradient-to-r from-primary-500 to-primary-400 rounded-full transition-all duration-150"
+                    style={{
+                      width: getMiniPlayerVerses().length > 0 && miniPlayerDuration > 0
+                        ? `${((miniPlayerCurrentIndex / getMiniPlayerVerses().length) * 100) + ((miniPlayerProgress / miniPlayerDuration) * (100 / getMiniPlayerVerses().length))}%`
+                        : '0%'
+                    }}
+                  />
+                </div>
+                {/* Info row */}
+                <div className="flex items-center justify-between">
+                  <span className={`text-xs ${settings.darkMode ? 'text-gray-400' : 'text-gray-500'}`}>
+                    {selectedVerses.size > 0 ? (
+                      <span className="text-primary-500 font-medium">{selectedVerses.size} verset{selectedVerses.size > 1 ? 's' : ''} sélectionné{selectedVerses.size > 1 ? 's' : ''}</span>
+                    ) : (
+                      `${getMiniPlayerVerses().length} verset${getMiniPlayerVerses().length > 1 ? 's' : ''}`
+                    )}
+                  </span>
+                  <span className={`text-xs font-medium ${settings.darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
+                    {miniPlayerCurrentIndex + 1}/{getMiniPlayerVerses().length || 1}
+                  </span>
+                </div>
+              </div>
+
+              {/* Speed indicator */}
+              {settings.playbackSpeed !== 1 && (
+                <span className={`text-xs font-bold px-2 py-1 rounded-lg flex-shrink-0 ${
+                  settings.darkMode ? 'bg-primary-900/50 text-primary-400' : 'bg-primary-100 text-primary-600'
+                }`}>
+                  x{settings.playbackSpeed}
+                </span>
+              )}
+            </div>
           </div>
 
           {loading ? (
@@ -996,7 +1186,7 @@ export default function HomePage({ settings, updateSettings }) {
                     {currentSurah.name}
                   </h2>
                   <p className={`text-sm ${settings.darkMode ? 'text-gray-400' : 'text-gray-500'}`}>
-                    {currentSurah.englishName} • {currentSurah.ayahCount} versets
+                    {currentSurah.englishName}
                   </p>
                 </div>
               </div>
