@@ -1,7 +1,5 @@
 // Quran API Service
-// Uses AlQuran.cloud for text, cpfair/quran-tajweed for accurate tajweed, and EveryAyah/Islamic Network CDN for audio
-
-import { getVerseWithTajweed, hasTajweedData, getCpfairText, getVerseWordsWithTajweed } from './cpfairTajweed'
+// Uses AlQuran.cloud for text and EveryAyah/Islamic Network CDN for audio
 
 const TEXT_API_BASE = 'https://api.alquran.cloud/v1';
 const QURAN_COM_API = 'https://api.quran.com/api/v4';
@@ -15,28 +13,6 @@ export const RECITERS = [
   { id: 'ar.minshawi', name: 'Mohamed Siddiq El-Minshawi', everyAyahId: 'Minshawy_Murattal_128kbps' },
   { id: 'ar.abdulsamad', name: 'Abdul Samad', everyAyahId: 'AbdulSamad_64kbps_QuranExplorer.Com' },
 ];
-
-// Tajweed CSS classes from Quran.com API
-// The API returns HTML with <tajweed class=...> tags
-// We just need to define the CSS colors for these classes
-export const TAJWEED_CLASSES = {
-  'ham_wasl': { color: '#AAAAAA', name: 'Hamza Wasl' },
-  'slnt': { color: '#AAAAAA', name: 'Silent' },
-  'laam_shamsiyah': { color: '#AAAAAA', name: 'Lam Shamsiyya' },
-  'madda_normal': { color: '#537FFF', name: 'Madd Normal' },
-  'madda_permissible': { color: '#4DBA6F', name: 'Madd Permissible' },
-  'madda_obligatory': { color: '#000EAD', name: 'Madd Obligatory' },
-  'madda_necessary': { color: '#DD2222', name: 'Madd Necessary' },
-  'qalpieces': { color: '#DD2222', name: 'Qalqala' },
-  'ikhf_shfw': { color: '#D500B7', name: 'Ikhfa Shafawi' },
-  'ikhf': { color: '#9400A8', name: 'Ikhfa' },
-  'idghm_shfw': { color: '#58B800', name: 'Idgham Shafawi' },
-  'iqlb': { color: '#26BFFD', name: 'Iqlab' },
-  'idgh_ghn': { color: '#169777', name: 'Idgham with Ghunna' },
-  'idgh_w_ghn': { color: '#169200', name: 'Idgham without Ghunna' },
-  'idgh_mus': { color: '#A1A1A1', name: 'Idgham Mutajanisayn' },
-  'ghn': { color: '#FF7E1E', name: 'Ghunna' },
-};
 
 // Available Arabic fonts
 export const ARABIC_FONTS = [
@@ -61,30 +37,12 @@ export const ARABIC_FONTS = [
 ];
 
 // Fetch a specific page of the Mushaf (1-604)
-// Uses cpfair/quran-tajweed for accurate tajweed when enabled
-export async function getPage(pageNumber, useTajweed = false, options = {}) {
+export async function getPage(pageNumber) {
   try {
     // Use AlQuran.cloud for text
     const response = await fetch(`${TEXT_API_BASE}/page/${pageNumber}/quran-uthmani`);
     if (!response.ok) throw new Error('Failed to fetch page');
     const data = await response.json();
-
-    // Apply cpfair tajweed if enabled - uses cpfair's own text for accurate positions
-    if (useTajweed && data.data && data.data.ayahs) {
-      data.data.ayahs = data.data.ayahs.map(ayah => {
-        if (hasTajweedData(ayah.surah.number, ayah.numberInSurah)) {
-          const tajweedText = getVerseWithTajweed(ayah.surah.number, ayah.numberInSurah);
-          if (tajweedText) {
-            return {
-              ...ayah,
-              text: tajweedText
-            };
-          }
-        }
-        return ayah;
-      });
-    }
-
     return data.data;
   } catch (error) {
     console.error('Error fetching page:', error);
@@ -159,10 +117,10 @@ export function getAyahsOnPage(pageData) {
 }
 
 // Get ayahs for a range of pages
-export async function getAyahsInPageRange(startPage, endPage, useTajweed = false) {
+export async function getAyahsInPageRange(startPage, endPage) {
   const allAyahs = [];
   for (let page = startPage; page <= endPage; page++) {
-    const pageData = await getPage(page, useTajweed);
+    const pageData = await getPage(page);
     allAyahs.push(...pageData.ayahs);
   }
   return allAyahs;
@@ -228,10 +186,8 @@ export async function getJuz(juzNumber) {
 }
 
 // Get page with word-level line numbers from Quran.com API
-// Uses cpfair/quran-tajweed for accurate character-level tajweed annotations
-export async function getPageWithLines(pageNumber, useTajweed = false, options = {}) {
+export async function getPageWithLines(pageNumber) {
   try {
-    // Always fetch plain text - we'll apply cpfair tajweed if needed
     const response = await fetch(
       `${QURAN_COM_API}/verses/by_page/${pageNumber}?words=true&word_fields=line_number,page_number,text_uthmani`
     );
@@ -251,31 +207,14 @@ export async function getPageWithLines(pageNumber, useTajweed = false, options =
       const surahNumber = parseInt(verse.verse_key.split(':')[0]);
       const verseNumber = verse.verse_number;
 
-      // Get word-level tajweed if enabled
-      let cpfairWords = null;
-      if (useTajweed && hasTajweedData(surahNumber, verseNumber)) {
-        cpfairWords = getVerseWordsWithTajweed(surahNumber, verseNumber);
-      }
-
-      // Track cpfair word index (skip end markers)
-      let cpfairWordIndex = 0;
-
       // Track which words go on which lines (for line-by-line display)
       words.forEach(word => {
         const lineNum = word.line_number;
         if (lineNum >= 1 && lineNum <= 15) {
           const isEndMarker = word.char_type_name === 'end';
 
-          // Get tajweed HTML for this word
-          let tajweedHtml = null;
-          if (!isEndMarker && cpfairWords && cpfairWordIndex < cpfairWords.length) {
-            tajweedHtml = cpfairWords[cpfairWordIndex].html;
-            cpfairWordIndex++;
-          }
-
           linesMap.get(lineNum).push({
             text: word.text_uthmani,
-            tajweedHtml: tajweedHtml,
             charType: word.char_type_name,
             position: word.position,
             verseKey: verse.verse_key,
@@ -292,15 +231,6 @@ export async function getPageWithLines(pageNumber, useTajweed = false, options =
         .map(w => w.text_uthmani)
         .join(' ');
 
-      // Apply cpfair tajweed if enabled - uses cpfair's own text for accurate positions
-      let text = plainText;
-      if (useTajweed && hasTajweedData(surahNumber, verseNumber)) {
-        const tajweedText = getVerseWithTajweed(surahNumber, verseNumber);
-        if (tajweedText) {
-          text = tajweedText;
-        }
-      }
-
       return {
         id: verse.id,
         verseKey: verse.verse_key,
@@ -308,7 +238,7 @@ export async function getPageWithLines(pageNumber, useTajweed = false, options =
         surahNumber: surahNumber,
         pageNumber: verse.page_number,
         juzNumber: verse.juz_number,
-        text: text,
+        text: plainText,
         words: words,
         lineNumbers: lineNumbers,
         startLine: Math.min(...lineNumbers),
@@ -410,7 +340,7 @@ export async function getPageMushafStyle(pageNumber, options = {}) {
 }
 
 // Get verses for a specific range of lines across pages
-export async function getVersesByLineRange(startPage, startLine, lineCount, useTajweed = false) {
+export async function getVersesByLineRange(startPage, startLine, lineCount) {
   const result = {
     verses: [],
     startPage,
@@ -427,7 +357,7 @@ export async function getVersesByLineRange(startPage, startLine, lineCount, useT
 
   // Continue until we have enough lines WITH verses
   while (linesWithVerses < lineCount && currentPage <= 604) {
-    const pageData = await getPageWithLines(currentPage, useTajweed);
+    const pageData = await getPageWithLines(currentPage);
     const lineMap = groupVersesByLines(pageData);
 
     while (currentLine <= 15 && linesWithVerses < lineCount) {

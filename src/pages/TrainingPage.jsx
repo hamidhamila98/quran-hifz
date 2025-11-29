@@ -80,7 +80,7 @@ export default function TrainingPage({ settings }) {
   const loadAyahs = async () => {
     try {
       setLoading(true)
-      const fetchedAyahs = await getAyahsInPageRange(startPage, endPage, settings.tajweedEnabled)
+      const fetchedAyahs = await getAyahsInPageRange(startPage, endPage)
       setAyahs(fetchedAyahs)
       return fetchedAyahs
     } catch (error) {
@@ -195,25 +195,13 @@ export default function TrainingPage({ settings }) {
 
   const getFirstWords = (text, count = 2) => {
     if (!text) return ''
-    // Pour le tajweed, on doit gérer le HTML
-    const cleanText = text.replace(/<[^>]*>/g, '')
-    const words = cleanText.split(' ')
+    const words = text.split(' ')
     return words.slice(0, count).join(' ')
   }
 
-  // Fonction pour extraire le texte brut (sans HTML du tajweed)
+  // Fonction pour extraire le texte brut
   const getPlainText = (text) => {
     if (!text) return ''
-    return text.replace(/<[^>]*>/g, '')
-  }
-
-  // Fonction pour rendre le texte (avec ou sans tajweed)
-  const renderText = (text) => {
-    if (settings.tajweedEnabled) {
-      // Nettoyer les balises end du tajweed
-      const cleanedText = text.replace(/<span class=end>.*?<\/span>/g, '')
-      return <span dangerouslySetInnerHTML={{ __html: cleanedText }} />
-    }
     return text
   }
 
@@ -690,7 +678,7 @@ export default function TrainingPage({ settings }) {
               </div>
 
               {/* Verses */}
-              <div className={`space-y-6 ${settings.tajweedEnabled ? 'tajweed-text' : ''}`} style={{ fontFamily: getFontFamily() }}>
+              <div className="space-y-6" style={{ fontFamily: getFontFamily() }}>
                 {currentAyahs.map((ayah, index) => {
                   const isFirst = index === 0
                   const isRevealed = revealedVerses.includes(index)
@@ -713,9 +701,9 @@ export default function TrainingPage({ settings }) {
                         <div className="arabic-text text-2xl md:text-3xl leading-loose" style={{ fontFamily: getFontFamily() }}>
                           {renderVerseMarker(ayah.numberInSurah)}
                           {isRevealed ? (
-                            // Révélé: afficher tout le verset avec Tajweed
+                            // Révélé: afficher tout le verset
                             <span className={settings.darkMode ? 'text-white' : 'text-gray-800'}>
-                              {renderText(ayah.text)}
+                              {ayah.text}
                             </span>
                           ) : (
                             // Non révélé: partie visible + partie cachée
@@ -738,9 +726,9 @@ export default function TrainingPage({ settings }) {
                         <div className="arabic-text text-2xl md:text-3xl leading-loose" style={{ fontFamily: getFontFamily() }}>
                           {renderVerseMarker(ayah.numberInSurah)}
                           {isRevealed ? (
-                            // Complètement révélé - avec Tajweed
+                            // Complètement révélé
                             <span className={settings.darkMode ? 'text-white' : 'text-gray-800'}>
-                              {renderText(ayah.text)}
+                              {ayah.text}
                             </span>
                           ) : isPartiallyRevealed ? (
                             // Partiellement révélé (1er clic effectué) - affiche juste les 2 premiers mots
