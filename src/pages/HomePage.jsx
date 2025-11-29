@@ -776,7 +776,7 @@ export default function HomePage({ settings, updateSettings }) {
               {/* Cut verse from previous portion (verse starting before this portion) */}
               {cutVerse && cutVerseLines.length > 0 && (
                 <div className={`mb-4 pb-4 border-b border-dashed ${settings.darkMode ? 'border-slate-600' : 'border-gray-300'}`}>
-                  <p className={`text-xs mb-2 text-center ${settings.darkMode ? 'text-blue-400' : 'text-blue-600'}`}>
+                  <p className={`text-xs mb-2 text-center ${settings.darkMode ? 'text-amber-400' : 'text-amber-600'}`}>
                     Début du verset (portion précédente) :
                   </p>
                   <div
@@ -786,7 +786,7 @@ export default function HomePage({ settings, updateSettings }) {
                     {cutVerseLines.map((line) => (
                       <div
                         key={`cut-line-${line.lineNumber}`}
-                        className={`mushaf-line text-center mb-2 ${settings.darkMode ? 'text-blue-200' : 'text-blue-700'} opacity-80`}
+                        className={`mushaf-line text-center mb-2 ${settings.darkMode ? 'text-amber-200' : 'text-amber-700'} opacity-80`}
                         dir="rtl"
                       >
                         {line.words.map((word, wordIdx) => (
