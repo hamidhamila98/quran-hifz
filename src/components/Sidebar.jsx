@@ -273,6 +273,28 @@ export default function Sidebar({ isOpen, setIsOpen, settings, updateSettings })
             )}
           </div>
 
+          {/* Playback Speed */}
+          <div className={`flex items-center justify-between px-3 py-2 rounded-xl ${darkMode ? 'bg-slate-700/50' : 'bg-gray-50'}`}>
+            <span className={`text-sm font-medium ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>Vitesse</span>
+            <div className="flex gap-1">
+              {[1, 1.5, 2].map((speed) => (
+                <button
+                  key={speed}
+                  onClick={() => updateSettings({ playbackSpeed: speed })}
+                  className={`px-2 py-1 text-xs font-medium rounded-lg transition-colors ${
+                    settings.playbackSpeed === speed
+                      ? 'bg-primary-500 text-white'
+                      : darkMode
+                        ? 'bg-slate-600 text-gray-300 hover:bg-slate-500'
+                        : 'bg-gray-200 text-gray-600 hover:bg-gray-300'
+                  }`}
+                >
+                  {speed}x
+                </button>
+              ))}
+            </div>
+          </div>
+
           {/* Dark Mode Toggle */}
           <div className={`flex items-center justify-between px-3 py-2 rounded-xl ${darkMode ? 'bg-slate-700/50' : 'bg-gray-50'}`}>
             <div className="flex items-center gap-2">

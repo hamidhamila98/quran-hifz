@@ -1,13 +1,15 @@
 import { useState, useRef, useEffect } from 'react'
 import { Play, Pause, SkipBack, SkipForward, Volume2, VolumeX, RefreshCw } from 'lucide-react'
-import { getAudioUrl, RECITERS } from '../services/quranApi'
+import { getEveryAyahUrl, RECITERS } from '../services/quranApi'
 
 export default function AudioPlayer({
   ayahs,
   reciterId = 'ar.alafasy',
   darkMode,
   loopAll = false,
-  onLoopChange = null
+  onLoopChange = null,
+  playbackSpeed = 1,
+  onSpeedChange = null
 }) {
   const [isPlaying, setIsPlaying] = useState(false)
   const [currentAyahIndex, setCurrentAyahIndex] = useState(0)
@@ -15,7 +17,6 @@ export default function AudioPlayer({
   const [duration, setDuration] = useState(0)
   const [volume, setVolume] = useState(1)
   const [isMuted, setIsMuted] = useState(false)
-  const [playbackSpeed, setPlaybackSpeed] = useState(1) // 1, 1.5, ou 2
   const [isLoading, setIsLoading] = useState(false)
 
   const audioRef = useRef(null)
@@ -46,14 +47,21 @@ export default function AudioPlayer({
   const loadAudio = () => {
     if (!currentAyah || !audioRef.current) return
 
-    const audioUrl = getAudioUrl(currentAyah.number, reciterId)
+    // Extraire surah et ayah du verseKey (format: "2:255")
+    const [surahNumber, ayahNumber] = currentAyah.verseKey
+      ? currentAyah.verseKey.split(':').map(Number)
+      : [currentAyah.surah?.number || 1, currentAyah.numberInSurah || 1]
+
+    // Utiliser l'everyAyahId du réciteur pour EveryAyah.com
+    const audioUrl = getEveryAyahUrl(surahNumber, ayahNumber, reciter.everyAyahId)
+    console.log('Loading audio:', { surahNumber, ayahNumber, reciter: reciter.name, everyAyahId: reciter.everyAyahId, url: audioUrl })
     audioRef.current.src = audioUrl
     setIsLoading(true)
   }
 
   useEffect(() => {
     loadAudio()
-  }, [currentAyahIndex, currentAyah, reciterId])
+  }, [currentAyahIndex, currentAyah, reciterId, reciter])
 
   const handlePlayPause = () => {
     if (!audioRef.current) return
@@ -178,7 +186,10 @@ export default function AudioPlayer({
       <div className="flex items-center justify-center gap-3">
         {/* Speed Control */}
         <button
-          onClick={() => setPlaybackSpeed(s => s === 1 ? 1.5 : s === 1.5 ? 2 : 1)}
+          onClick={() => {
+            const newSpeed = playbackSpeed === 1 ? 1.5 : playbackSpeed === 1.5 ? 2 : 1
+            if (onSpeedChange) onSpeedChange(newSpeed)
+          }}
           title="Vitesse de lecture"
           className={`p-2 rounded-full transition-colors text-xs font-bold min-w-[40px] ${
             playbackSpeed !== 1

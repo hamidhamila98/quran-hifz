@@ -18,6 +18,7 @@ const defaultSettings = {
   portionProgress: {},
   lastVerseKey: null, // Dernier verset affiché pour éviter répétitions
   reciter: 'ar.minshawimujawwad',
+  playbackSpeed: 1, // Vitesse de lecture audio: 1, 1.5 ou 2
   startDate: new Date().toISOString().split('T')[0],
   darkMode: false,
   tajweedEnabled: false,

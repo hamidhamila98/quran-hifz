@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from 'react'
 import { useSearchParams } from 'react-router-dom'
-import { BookOpen, ChevronRight, ChevronLeft, Check, List, Music } from 'lucide-react'
+import { BookOpen, ChevronRight, ChevronLeft, Check, List, Music, ChevronUp, ChevronDown } from 'lucide-react'
 import {
   getPageWithLines,
   SURAH_INFO,
@@ -39,6 +39,8 @@ export default function HomePage({ settings, updateSettings }) {
   const [selectedVerses, setSelectedVerses] = useState(new Set()) // Versets sélectionnés pour audio
   const [audioMode, setAudioMode] = useState('portion') // 'portion' ou 'selection'
   const [loopAudio, setLoopAudio] = useState(false) // Lecture en boucle
+  const [showCutVerse, setShowCutVerse] = useState(false) // Afficher début du verset (portion précédente)
+  const [showOverflowVerse, setShowOverflowVerse] = useState(false) // Afficher fin du verset (dépassant)
 
   const currentPage = settings.currentPage || 1
   const portionIndex = settings.currentPortionIndex || 0
@@ -180,6 +182,8 @@ export default function HomePage({ settings, updateSettings }) {
       setPreviewLines([])
       setPortionLines([])
       setSelectedVerses(new Set()) // Reset selection when portion changes
+      setShowCutVerse(false) // Reset toggle states
+      setShowOverflowVerse(false)
 
       // Handle special pages (1 and 2)
       if (SPECIAL_PAGES.includes(currentPage) && portionSize !== '2') {
@@ -773,37 +777,20 @@ export default function HomePage({ settings, updateSettings }) {
             </div>
           ) : (
             <div className={`rounded-2xl p-6 ${settings.darkMode ? 'bg-slate-800' : 'bg-white'} shadow-lg`}>
-              {/* Cut verse from previous portion (verse starting before this portion) */}
+              {/* Toggle button for cut verse (verse starting before this portion) */}
               {cutVerse && cutVerseLines.length > 0 && (
-                <div className={`mb-4 pb-4 border-b border-dashed ${settings.darkMode ? 'border-slate-600' : 'border-gray-300'}`}>
-                  <p className={`text-xs mb-2 text-center ${settings.darkMode ? 'text-amber-400' : 'text-amber-600'}`}>
-                    Début du verset (portion précédente) :
-                  </p>
-                  <div
-                    className={`text-2xl md:text-3xl arabic-text ${settings.tajweedEnabled ? 'tajweed-text' : ''}`}
-                    style={{ fontFamily: getFontFamily() }}
+                <div className="mb-4">
+                  <button
+                    onClick={() => setShowCutVerse(!showCutVerse)}
+                    className={`w-full flex items-center justify-center gap-2 py-2 px-4 rounded-xl text-sm font-medium transition-all ${
+                      showCutVerse
+                        ? settings.darkMode ? 'bg-amber-900/30 text-amber-400 border border-amber-700' : 'bg-amber-50 text-amber-700 border border-amber-200'
+                        : settings.darkMode ? 'bg-slate-700 text-gray-300 hover:bg-slate-600' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                    }`}
                   >
-                    {cutVerseLines.map((line) => (
-                      <div
-                        key={`cut-line-${line.lineNumber}`}
-                        className={`mushaf-line text-center mb-2 ${settings.darkMode ? 'text-amber-200' : 'text-amber-700'} opacity-80`}
-                        dir="rtl"
-                      >
-                        {line.words.map((word, wordIdx) => (
-                          <span key={`${word.verseKey}-${word.position}-cut`}>
-                            {word.isEndMarker ? (
-                              renderVerseMarker(word.verseNumber)
-                            ) : settings.tajweedEnabled && word.tajweedHtml ? (
-                              <span dangerouslySetInnerHTML={{ __html: word.tajweedHtml }} />
-                            ) : (
-                              word.text
-                            )}
-                            {wordIdx < line.words.length - 1 && !word.isEndMarker && ' '}
-                          </span>
-                        ))}
-                      </div>
-                    ))}
-                  </div>
+                    <ChevronUp className={`w-4 h-4 transition-transform ${showCutVerse ? 'rotate-180' : ''}`} />
+                    {showCutVerse ? 'Masquer le début du verset' : 'Afficher le début du verset'}
+                  </button>
                 </div>
               )}
 
@@ -812,6 +799,29 @@ export default function HomePage({ settings, updateSettings }) {
                 className={`text-2xl md:text-3xl arabic-text ${settings.tajweedEnabled ? 'tajweed-text' : ''}`}
                 style={{ fontFamily: getFontFamily() }}
               >
+                {/* Cut verse lines (before portion) - shown inline when toggled */}
+                {showCutVerse && cutVerseLines.map((line) => (
+                  <div
+                    key={`cut-line-${line.lineNumber}`}
+                    className={`mushaf-line text-center mb-2 ${settings.darkMode ? 'text-amber-200' : 'text-amber-700'} opacity-80`}
+                    dir="rtl"
+                  >
+                    {line.words.map((word, wordIdx) => (
+                      <span key={`${word.verseKey}-${word.position}-cut`}>
+                        {word.isEndMarker ? (
+                          renderVerseMarker(word.verseNumber)
+                        ) : settings.tajweedEnabled && word.tajweedHtml ? (
+                          <span dangerouslySetInnerHTML={{ __html: word.tajweedHtml }} />
+                        ) : (
+                          word.text
+                        )}
+                        {wordIdx < line.words.length - 1 && !word.isEndMarker && ' '}
+                      </span>
+                    ))}
+                  </div>
+                ))}
+
+                {/* Main portion lines */}
                 {portionLines.map((line, lineIdx) => (
                   <div
                     key={`line-${line.lineNumber}`}
@@ -841,39 +851,44 @@ export default function HomePage({ settings, updateSettings }) {
                     ))}
                   </div>
                 ))}
-              </div>
 
-              {/* Overflow verse (verse extending beyond portion) */}
-              {overflowVerse && overflowLines.length > 0 && (
-                <div className={`mt-4 pt-4 border-t border-dashed ${settings.darkMode ? 'border-slate-600' : 'border-gray-300'}`}>
-                  <p className={`text-xs mb-2 text-center ${settings.darkMode ? 'text-amber-400' : 'text-amber-600'}`}>
-                    Verset dépassant la partie du jour :
-                  </p>
+                {/* Overflow verse lines (after portion) - shown inline when toggled */}
+                {showOverflowVerse && overflowLines.map((line) => (
                   <div
-                    className={`text-2xl md:text-3xl arabic-text ${settings.tajweedEnabled ? 'tajweed-text' : ''}`}
-                    style={{ fontFamily: getFontFamily() }}
+                    key={`overflow-line-${line.lineNumber}`}
+                    className={`mushaf-line text-center mb-2 ${settings.darkMode ? 'text-amber-200' : 'text-amber-700'} opacity-80`}
+                    dir="rtl"
                   >
-                    {overflowLines.map((line) => (
-                      <div
-                        key={`overflow-line-${line.lineNumber}`}
-                        className={`mushaf-line text-center mb-2 ${settings.darkMode ? 'text-amber-200' : 'text-amber-700'} opacity-80`}
-                        dir="rtl"
-                      >
-                        {line.words.map((word, wordIdx) => (
-                          <span key={`${word.verseKey}-${word.position}-overflow`}>
-                            {word.isEndMarker ? (
-                              renderVerseMarker(word.verseNumber)
-                            ) : settings.tajweedEnabled && word.tajweedHtml ? (
-                              <span dangerouslySetInnerHTML={{ __html: word.tajweedHtml }} />
-                            ) : (
-                              word.text
-                            )}
-                            {wordIdx < line.words.length - 1 && !word.isEndMarker && ' '}
-                          </span>
-                        ))}
-                      </div>
+                    {line.words.map((word, wordIdx) => (
+                      <span key={`${word.verseKey}-${word.position}-overflow`}>
+                        {word.isEndMarker ? (
+                          renderVerseMarker(word.verseNumber)
+                        ) : settings.tajweedEnabled && word.tajweedHtml ? (
+                          <span dangerouslySetInnerHTML={{ __html: word.tajweedHtml }} />
+                        ) : (
+                          word.text
+                        )}
+                        {wordIdx < line.words.length - 1 && !word.isEndMarker && ' '}
+                      </span>
                     ))}
                   </div>
+                ))}
+              </div>
+
+              {/* Toggle button for overflow verse (verse extending beyond portion) */}
+              {overflowVerse && overflowLines.length > 0 && (
+                <div className="mt-4">
+                  <button
+                    onClick={() => setShowOverflowVerse(!showOverflowVerse)}
+                    className={`w-full flex items-center justify-center gap-2 py-2 px-4 rounded-xl text-sm font-medium transition-all ${
+                      showOverflowVerse
+                        ? settings.darkMode ? 'bg-amber-900/30 text-amber-400 border border-amber-700' : 'bg-amber-50 text-amber-700 border border-amber-200'
+                        : settings.darkMode ? 'bg-slate-700 text-gray-300 hover:bg-slate-600' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                    }`}
+                  >
+                    <ChevronDown className={`w-4 h-4 transition-transform ${showOverflowVerse ? 'rotate-180' : ''}`} />
+                    {showOverflowVerse ? 'Masquer la fin du verset' : 'Afficher la fin du verset'}
+                  </button>
                 </div>
               )}
 
@@ -1049,6 +1064,8 @@ export default function HomePage({ settings, updateSettings }) {
               darkMode={settings.darkMode}
               loopAll={loopAudio}
               onLoopChange={setLoopAudio}
+              playbackSpeed={settings.playbackSpeed || 1}
+              onSpeedChange={(speed) => updateSettings({ playbackSpeed: speed })}
             />
           </div>
         </div>

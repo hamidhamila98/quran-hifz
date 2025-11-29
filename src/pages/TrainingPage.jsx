@@ -1,6 +1,6 @@
-import { useState, useCallback } from 'react'
-import { Shuffle, Eye, RotateCcw, Check, X, Lightbulb, Trophy, BookOpen, ChevronDown } from 'lucide-react'
-import { getAyahsInPageRange, SURAH_INFO, JUZ_INFO, HIZB_INFO, ARABIC_FONTS } from '../services/quranApi'
+import { useState, useCallback, useRef } from 'react'
+import { Shuffle, Eye, RotateCcw, Check, X, Lightbulb, Trophy, BookOpen, ChevronDown, Play, Pause } from 'lucide-react'
+import { getAyahsInPageRange, SURAH_INFO, JUZ_INFO, HIZB_INFO, ARABIC_FONTS, getEveryAyahUrl, RECITERS } from '../services/quranApi'
 
 export default function TrainingPage({ settings }) {
   // Selection mode: 'juz', 'hizb', 'surah', 'custom'
@@ -26,6 +26,9 @@ export default function TrainingPage({ settings }) {
   const [sessionEnded, setSessionEnded] = useState(false)
   const [allRevealed, setAllRevealed] = useState(false)
   const [currentQuestion, setCurrentQuestion] = useState(1)
+  const [playingAyahIndex, setPlayingAyahIndex] = useState(null)
+
+  const audioRef = useRef(null)
 
   // Update pages when selection changes
   const updatePagesFromSelection = (mode, value) => {
@@ -151,6 +154,13 @@ export default function TrainingPage({ settings }) {
   }
 
   const handleAnswer = (points) => {
+    // Arrêter l'audio en cours avant de passer à la question suivante
+    if (audioRef.current) {
+      audioRef.current.pause()
+      audioRef.current.currentTime = 0
+    }
+    setPlayingAyahIndex(null)
+
     // points: 0 = incorrect, 0.5 = partiel, 1 = correct
     const newScore = {
       correct: score.correct + points,
@@ -167,6 +177,13 @@ export default function TrainingPage({ settings }) {
   }
 
   const handleReset = () => {
+    // Arrêter l'audio en cours
+    if (audioRef.current) {
+      audioRef.current.pause()
+      audioRef.current.currentTime = 0
+    }
+    setPlayingAyahIndex(null)
+
     setSessionStarted(false)
     setSessionEnded(false)
     setCurrentAyahs([])
@@ -245,6 +262,56 @@ export default function TrainingPage({ settings }) {
         </span>
       )
     }
+  }
+
+  // Stop audio playback
+  const stopAudio = () => {
+    if (audioRef.current) {
+      audioRef.current.pause()
+      audioRef.current.currentTime = 0
+    }
+    setPlayingAyahIndex(null)
+  }
+
+  // Play/Pause audio for a specific ayah
+  const toggleAyahAudio = (ayah, index) => {
+    if (!audioRef.current) return
+
+    // Si on clique sur le même verset en cours de lecture, on met en pause
+    if (playingAyahIndex === index) {
+      if (audioRef.current.paused) {
+        audioRef.current.play().catch(err => {
+          console.error('Error playing audio:', err)
+          setPlayingAyahIndex(null)
+        })
+      } else {
+        audioRef.current.pause()
+        setPlayingAyahIndex(null)
+      }
+      return
+    }
+
+    // Si un autre verset est en cours, on l'arrête d'abord
+    if (playingAyahIndex !== null) {
+      audioRef.current.pause()
+    }
+
+    const reciter = RECITERS.find(r => r.id === settings.reciter) || RECITERS[0]
+    const surahNumber = ayah.surah?.number || 1
+    const ayahNumber = ayah.numberInSurah || 1
+    const audioUrl = getEveryAyahUrl(surahNumber, ayahNumber, reciter.everyAyahId)
+
+    audioRef.current.src = audioUrl
+    audioRef.current.playbackRate = settings.playbackSpeed || 1
+    setPlayingAyahIndex(index)
+    audioRef.current.play().catch(err => {
+      console.error('Error playing audio:', err)
+      setPlayingAyahIndex(null)
+    })
+  }
+
+  const handleAudioEnded = () => {
+    setPlayingAyahIndex(null)
   }
 
   const getScoreMessage = () => {
@@ -663,6 +730,9 @@ export default function TrainingPage({ settings }) {
           {/* Verses Display */}
           {currentAyahs.length > 0 && (
             <div className={`p-6 rounded-2xl ${settings.darkMode ? 'bg-slate-800' : 'bg-white'} shadow-lg`}>
+              {/* Hidden audio element */}
+              <audio ref={audioRef} onEnded={handleAudioEnded} />
+
               {/* Header Info with Page Number */}
               <div className="flex items-center justify-between mb-4">
                 <div>
@@ -706,11 +776,30 @@ export default function TrainingPage({ settings }) {
                   return (
                     <div
                       key={ayah.number}
-                      className={`p-4 rounded-xl ${settings.darkMode ? 'bg-slate-700/50' : 'bg-gray-50'}`}
+                      className={`p-4 rounded-xl ${settings.darkMode ? 'bg-slate-700/50' : 'bg-gray-50'} flex items-start gap-3`}
                     >
+                      {/* Play/Pause button */}
+                      <button
+                        onClick={() => toggleAyahAudio(ayah, index)}
+                        className={`flex-shrink-0 p-2 rounded-full transition-colors ${
+                          playingAyahIndex === index
+                            ? 'bg-primary-500 text-white'
+                            : settings.darkMode
+                              ? 'bg-slate-600 hover:bg-slate-500 text-gray-300'
+                              : 'bg-gray-200 hover:bg-gray-300 text-gray-600'
+                        }`}
+                        title={playingAyahIndex === index ? "Mettre en pause" : "Écouter ce verset"}
+                      >
+                        {playingAyahIndex === index ? (
+                          <Pause className="w-4 h-4" />
+                        ) : (
+                          <Play className="w-4 h-4" />
+                        )}
+                      </button>
+
                       {isFirst || currentAyahs.length === 1 ? (
                         // Premier verset ou verset unique: révélation directe
-                        <div className="arabic-text text-2xl md:text-3xl leading-loose" style={{ fontFamily: getFontFamily() }}>
+                        <div className="arabic-text text-2xl md:text-3xl leading-loose flex-1" dir="rtl" style={{ fontFamily: getFontFamily() }}>
                           {renderVerseMarker(ayah.numberInSurah)}
                           {isRevealed ? (
                             // Révélé: afficher tout le verset avec Tajweed
@@ -735,7 +824,7 @@ export default function TrainingPage({ settings }) {
                         </div>
                       ) : (
                         // Autres versets: révélation en 2 étapes
-                        <div className="arabic-text text-2xl md:text-3xl leading-loose" style={{ fontFamily: getFontFamily() }}>
+                        <div className="arabic-text text-2xl md:text-3xl leading-loose flex-1" dir="rtl" style={{ fontFamily: getFontFamily() }}>
                           {renderVerseMarker(ayah.numberInSurah)}
                           {isRevealed ? (
                             // Complètement révélé - avec Tajweed
