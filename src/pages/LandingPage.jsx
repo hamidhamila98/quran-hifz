@@ -1,131 +1,384 @@
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { BookOpen, Languages, BookMarked, Library } from 'lucide-react'
+import { BookOpen, Languages, BookMarked, Library, GraduationCap, Moon, Sun, User, LogOut, LogIn, UserPlus } from 'lucide-react'
+import { useUser } from '../contexts/UserContext'
 
 const modules = [
   {
     id: 'quran',
     path: '/quran',
     icon: BookOpen,
-    title: 'Quran Hifz',
+    title: 'MyHifz',
     titleAr: 'حفظ القرآن',
-    description: 'Mémorisation du Coran avec audio synchronisé',
+    description: 'Memorisation du Coran avec audio synchronise',
     color: 'emerald',
   },
   {
     id: 'arabic',
     path: '/arabic',
     icon: Languages,
-    title: 'Arabic Learning',
+    title: 'MyArabic',
     titleAr: 'تعلم العربية',
-    description: 'Al-Arabiya Bayna Yadayk (Tomes 1-4)',
+    description: 'Apprentissage de la langue arabe',
     color: 'amber',
   },
   {
     id: 'hadith',
     path: '/hadith',
     icon: BookMarked,
-    title: 'Hadiths',
+    title: 'MyHadith',
     titleAr: 'الأحاديث النبوية',
     description: '6 recueils majeurs - Recherche & Navigation',
     color: 'rose',
   },
   {
+    id: 'dourous',
+    path: '/dourous',
+    icon: GraduationCap,
+    title: 'MyDourous',
+    titleAr: 'دروسي',
+    description: 'Mes notes & Playlists',
+    color: 'cyan',
+    comingSoon: true,
+  },
+  {
     id: 'library',
     path: '/library',
     icon: Library,
-    title: 'Bibliothèque',
+    title: 'MyLibrary',
     titleAr: 'المكتبة الإسلامية',
-    description: 'Livres islamiques, Tafsir (Bientôt)',
+    description: 'Livres islamiques',
     color: 'indigo',
     comingSoon: true,
   },
 ]
 
-export default function LandingPage({ darkMode }) {
+export default function LandingPage({ darkMode, toggleDarkMode }) {
+  const { user, isLoggedIn, login, register, logout } = useUser()
+  const [showAuthModal, setShowAuthModal] = useState(false)
+  const [authMode, setAuthMode] = useState('login') // 'login' ou 'register'
+  const [pseudo, setPseudo] = useState('')
+  const [password, setPassword] = useState('')
+  const [error, setError] = useState('')
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    setError('')
+
+    const result = authMode === 'login'
+      ? login(pseudo, password)
+      : register(pseudo, password)
+
+    if (result.success) {
+      setShowAuthModal(false)
+      setPseudo('')
+      setPassword('')
+    } else {
+      setError(result.error)
+    }
+  }
+
+  const handleLogout = () => {
+    logout()
+  }
+
+  const openAuth = (mode) => {
+    setAuthMode(mode)
+    setError('')
+    setPseudo('')
+    setPassword('')
+    setShowAuthModal(true)
+  }
+
+  const colorClasses = {
+    emerald: {
+      bg: darkMode ? 'bg-emerald-900/30' : 'bg-emerald-50',
+      border: darkMode ? 'border-emerald-700' : 'border-emerald-200',
+      hover: darkMode ? 'hover:bg-emerald-900/50' : 'hover:bg-emerald-100',
+      icon: darkMode ? 'text-emerald-400' : 'text-emerald-600',
+      title: darkMode ? 'text-emerald-300' : 'text-emerald-700',
+    },
+    amber: {
+      bg: darkMode ? 'bg-amber-900/30' : 'bg-amber-50',
+      border: darkMode ? 'border-amber-700' : 'border-amber-200',
+      hover: darkMode ? 'hover:bg-amber-900/50' : 'hover:bg-amber-100',
+      icon: darkMode ? 'text-amber-400' : 'text-amber-600',
+      title: darkMode ? 'text-amber-300' : 'text-amber-700',
+    },
+    rose: {
+      bg: darkMode ? 'bg-rose-900/30' : 'bg-rose-50',
+      border: darkMode ? 'border-rose-700' : 'border-rose-200',
+      hover: darkMode ? 'hover:bg-rose-900/50' : 'hover:bg-rose-100',
+      icon: darkMode ? 'text-rose-400' : 'text-rose-600',
+      title: darkMode ? 'text-rose-300' : 'text-rose-700',
+    },
+    indigo: {
+      bg: darkMode ? 'bg-indigo-900/30' : 'bg-indigo-50',
+      border: darkMode ? 'border-indigo-700' : 'border-indigo-200',
+      hover: darkMode ? 'hover:bg-indigo-900/50' : 'hover:bg-indigo-100',
+      icon: darkMode ? 'text-indigo-400' : 'text-indigo-600',
+      title: darkMode ? 'text-indigo-300' : 'text-indigo-700',
+    },
+    cyan: {
+      bg: darkMode ? 'bg-cyan-900/30' : 'bg-cyan-50',
+      border: darkMode ? 'border-cyan-700' : 'border-cyan-200',
+      hover: darkMode ? 'hover:bg-cyan-900/50' : 'hover:bg-cyan-100',
+      icon: darkMode ? 'text-cyan-400' : 'text-cyan-600',
+      title: darkMode ? 'text-cyan-300' : 'text-cyan-700',
+    },
+  }
+
+  const renderModuleCard = (module) => {
+    const Icon = module.icon
+    const colors = colorClasses[module.color]
+
+    const cardContent = (
+      <div className="flex flex-col items-center text-center">
+        <Icon className={`w-14 h-14 mb-4 ${colors.icon}`} strokeWidth={1.5} />
+        <h2 className={`text-2xl font-bold mb-1 ${colors.title}`}>
+          {module.title}
+        </h2>
+        <p className={`text-xl font-arabic mb-2 ${colors.title}`} dir="rtl">
+          {module.titleAr}
+        </p>
+        <p className={`text-sm ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+          {module.description}
+        </p>
+        {module.comingSoon && (
+          <span className={`mt-2 text-xs px-2 py-1 rounded-full ${darkMode ? 'bg-gray-700 text-gray-300' : 'bg-gray-200 text-gray-600'}`}>
+            Bientot
+          </span>
+        )}
+      </div>
+    )
+
+    const baseClasses = `
+      p-6 rounded-2xl border-2 transition-all duration-200
+      ${colors.bg} ${colors.border} ${colors.hover}
+      ${module.comingSoon ? 'cursor-not-allowed opacity-75' : 'transform hover:scale-[1.02] hover:shadow-lg'}
+    `
+
+    if (module.comingSoon) {
+      return (
+        <div key={module.id} className={baseClasses}>
+          {cardContent}
+        </div>
+      )
+    }
+
+    return (
+      <Link key={module.id} to={module.path} className={baseClasses}>
+        {cardContent}
+      </Link>
+    )
+  }
+
   return (
-    <div className={`min-h-screen flex flex-col items-center justify-center p-8 ${darkMode ? 'bg-slate-900' : 'bg-gray-50'}`}>
-      {/* Header */}
-      <div className="text-center mb-12">
-        <h1 className={`text-4xl font-bold mb-2 ${darkMode ? 'text-white' : 'text-gray-900'}`}>
-          بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
-        </h1>
-        <p className={`text-lg ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-          Apprentissage du Coran et de la langue arabe
-        </p>
-      </div>
-
-      {/* Module Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl w-full">
-        {modules.map((module) => {
-          const Icon = module.icon
-          const colorClasses = {
-            emerald: {
-              bg: darkMode ? 'bg-emerald-900/30' : 'bg-emerald-50',
-              border: darkMode ? 'border-emerald-700' : 'border-emerald-200',
-              hover: darkMode ? 'hover:bg-emerald-900/50' : 'hover:bg-emerald-100',
-              icon: darkMode ? 'text-emerald-400' : 'text-emerald-600',
-              title: darkMode ? 'text-emerald-300' : 'text-emerald-700',
-            },
-            amber: {
-              bg: darkMode ? 'bg-amber-900/30' : 'bg-amber-50',
-              border: darkMode ? 'border-amber-700' : 'border-amber-200',
-              hover: darkMode ? 'hover:bg-amber-900/50' : 'hover:bg-amber-100',
-              icon: darkMode ? 'text-amber-400' : 'text-amber-600',
-              title: darkMode ? 'text-amber-300' : 'text-amber-700',
-            },
-            rose: {
-              bg: darkMode ? 'bg-rose-900/30' : 'bg-rose-50',
-              border: darkMode ? 'border-rose-700' : 'border-rose-200',
-              hover: darkMode ? 'hover:bg-rose-900/50' : 'hover:bg-rose-100',
-              icon: darkMode ? 'text-rose-400' : 'text-rose-600',
-              title: darkMode ? 'text-rose-300' : 'text-rose-700',
-            },
-            indigo: {
-              bg: darkMode ? 'bg-indigo-900/30' : 'bg-indigo-50',
-              border: darkMode ? 'border-indigo-700' : 'border-indigo-200',
-              hover: darkMode ? 'hover:bg-indigo-900/50' : 'hover:bg-indigo-100',
-              icon: darkMode ? 'text-indigo-400' : 'text-indigo-600',
-              title: darkMode ? 'text-indigo-300' : 'text-indigo-700',
-            },
-          }
-          const colors = colorClasses[module.color]
-
-          return (
-            <Link
-              key={module.id}
-              to={module.path}
-              className={`
-                p-8 rounded-2xl border-2 transition-all duration-200
-                ${colors.bg} ${colors.border} ${colors.hover}
-                transform hover:scale-[1.02] hover:shadow-lg
-              `}
+    <div className={`min-h-screen flex flex-col pb-16 ${darkMode ? 'bg-slate-900' : 'bg-gray-50'}`}>
+      {/* Top bar avec dark mode et auth */}
+      <div className="absolute top-4 right-4 z-50 flex items-center gap-2">
+        {/* User info / Auth buttons */}
+        {isLoggedIn ? (
+          <div className="flex items-center gap-2">
+            <div className={`flex items-center gap-2 px-3 py-2 rounded-full ${
+              darkMode ? 'bg-slate-700 text-white' : 'bg-white text-gray-700 shadow-md'
+            }`}>
+              <User className="w-4 h-4" />
+              <span className="text-sm font-medium">{user.pseudo}</span>
+            </div>
+            <button
+              onClick={handleLogout}
+              className={`p-2.5 rounded-full transition-colors ${
+                darkMode
+                  ? 'bg-slate-700 hover:bg-slate-600 text-red-400'
+                  : 'bg-white hover:bg-gray-100 text-red-500 shadow-md'
+              }`}
+              title="Deconnexion"
             >
-              <div className="flex flex-col items-center text-center">
-                <Icon className={`w-16 h-16 mb-4 ${colors.icon}`} strokeWidth={1.5} />
-                <h2 className={`text-2xl font-bold mb-1 ${colors.title}`}>
-                  {module.title}
-                </h2>
-                <p className={`text-xl font-arabic mb-3 ${colors.title}`} dir="rtl">
-                  {module.titleAr}
-                </p>
-                <p className={`text-sm ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-                  {module.description}
-                </p>
-              </div>
-            </Link>
-          )
-        })}
+              <LogOut className="w-4 h-4" />
+            </button>
+          </div>
+        ) : (
+          <div className="flex items-center gap-2">
+            <button
+              onClick={() => openAuth('login')}
+              className={`flex items-center gap-1.5 px-3 py-2 rounded-full text-sm font-medium transition-colors ${
+                darkMode
+                  ? 'bg-slate-700 hover:bg-slate-600 text-white'
+                  : 'bg-white hover:bg-gray-100 text-gray-700 shadow-md'
+              }`}
+            >
+              <LogIn className="w-4 h-4" />
+              Connexion
+            </button>
+            <button
+              onClick={() => openAuth('register')}
+              className={`flex items-center gap-1.5 px-3 py-2 rounded-full text-sm font-medium transition-colors ${
+                darkMode
+                  ? 'bg-emerald-600 hover:bg-emerald-500 text-white'
+                  : 'bg-emerald-500 hover:bg-emerald-600 text-white shadow-md'
+              }`}
+            >
+              <UserPlus className="w-4 h-4" />
+              Inscription
+            </button>
+          </div>
+        )}
+
+        {/* Dark mode toggle */}
+        <button
+          onClick={toggleDarkMode}
+          className={`p-3 rounded-full transition-colors ${
+            darkMode
+              ? 'bg-slate-700 hover:bg-slate-600 text-yellow-400'
+              : 'bg-white hover:bg-gray-100 text-gray-700 shadow-md'
+          }`}
+          title={darkMode ? 'Mode clair' : 'Mode sombre'}
+        >
+          {darkMode ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+        </button>
       </div>
 
-      {/* Footer */}
-      <div className={`mt-12 text-center ${darkMode ? 'text-gray-500' : 'text-gray-400'}`}>
-        <p className="text-2xl font-arabic" dir="rtl">
-          وَرَتِّلِ الْقُرْآنَ تَرْتِيلًا
-        </p>
-        <p className="text-sm mt-1 italic">
-          "Et récite le Coran lentement et clairement" - Al-Muzzammil:4
-        </p>
+      {/* Auth Modal */}
+      {showAuthModal && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/50 backdrop-blur-sm">
+          <div className={`w-full max-w-sm mx-4 p-6 rounded-2xl shadow-xl ${
+            darkMode ? 'bg-slate-800' : 'bg-white'
+          }`}>
+            <h2 className={`text-xl font-bold mb-4 text-center ${darkMode ? 'text-white' : 'text-gray-900'}`}>
+              {authMode === 'login' ? 'Connexion' : 'Inscription'}
+            </h2>
+
+            <form onSubmit={handleSubmit} className="space-y-4">
+              <div>
+                <label className={`block text-sm font-medium mb-1 ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                  Pseudo
+                </label>
+                <input
+                  type="text"
+                  value={pseudo}
+                  onChange={(e) => setPseudo(e.target.value)}
+                  className={`w-full px-4 py-2.5 rounded-lg border transition-colors ${
+                    darkMode
+                      ? 'bg-slate-700 border-slate-600 text-white placeholder-gray-400 focus:border-emerald-500'
+                      : 'bg-gray-50 border-gray-300 text-gray-900 placeholder-gray-500 focus:border-emerald-500'
+                  } focus:outline-none focus:ring-2 focus:ring-emerald-500/20`}
+                  placeholder="Ton pseudo"
+                  autoFocus
+                />
+              </div>
+
+              <div>
+                <label className={`block text-sm font-medium mb-1 ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                  Mot de passe
+                </label>
+                <input
+                  type="password"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  className={`w-full px-4 py-2.5 rounded-lg border transition-colors ${
+                    darkMode
+                      ? 'bg-slate-700 border-slate-600 text-white placeholder-gray-400 focus:border-emerald-500'
+                      : 'bg-gray-50 border-gray-300 text-gray-900 placeholder-gray-500 focus:border-emerald-500'
+                  } focus:outline-none focus:ring-2 focus:ring-emerald-500/20`}
+                  placeholder="Ton mot de passe"
+                />
+              </div>
+
+              {error && (
+                <p className="text-red-500 text-sm text-center">{error}</p>
+              )}
+
+              <button
+                type="submit"
+                className="w-full py-2.5 rounded-lg font-medium transition-colors bg-emerald-500 hover:bg-emerald-600 text-white"
+              >
+                {authMode === 'login' ? 'Se connecter' : "S'inscrire"}
+              </button>
+            </form>
+
+            <div className="mt-4 text-center">
+              <button
+                onClick={() => {
+                  setAuthMode(authMode === 'login' ? 'register' : 'login')
+                  setError('')
+                }}
+                className={`text-sm ${darkMode ? 'text-emerald-400 hover:text-emerald-300' : 'text-emerald-600 hover:text-emerald-700'}`}
+              >
+                {authMode === 'login' ? "Pas de compte ? S'inscrire" : 'Deja un compte ? Se connecter'}
+              </button>
+            </div>
+
+            <button
+              onClick={() => setShowAuthModal(false)}
+              className={`mt-4 w-full py-2 rounded-lg text-sm transition-colors ${
+                darkMode
+                  ? 'bg-slate-700 hover:bg-slate-600 text-gray-300'
+                  : 'bg-gray-100 hover:bg-gray-200 text-gray-600'
+              }`}
+            >
+              Continuer sans compte
+            </button>
+          </div>
+        </div>
+      )}
+
+      <div className="flex-1 flex flex-col items-center justify-center p-8">
+        {/* Header - Bismillah */}
+        <div className="text-center mb-12">
+          <h1 className={`text-4xl font-bold mb-2 ${darkMode ? 'text-white' : 'text-gray-900'}`}>
+            بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
+          </h1>
+          <p className={`text-lg ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+            Votre compagnon pour l'apprentissage islamique
+          </p>
+          {isLoggedIn && (
+            <p className={`text-sm mt-2 ${darkMode ? 'text-emerald-400' : 'text-emerald-600'}`}>
+              Connecte en tant que <span className="font-semibold">{user.pseudo}</span>
+            </p>
+          )}
+        </div>
+
+        {/* Module Cards - First Row (2 cards) */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-3xl w-full mb-8">
+          {modules.slice(0, 2).map(module => renderModuleCard(module))}
+        </div>
+
+        {/* Module Cards - Second Row (3 cards) */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-4xl w-full">
+          {modules.slice(2).map(module => renderModuleCard(module))}
+        </div>
+
+        {/* Hadith Quote */}
+        <div className={`mt-10 max-w-2xl text-center ${darkMode ? 'text-gray-400' : 'text-gray-500'}`}>
+          <p className="text-2xl font-arabic mb-3" dir="rtl">
+            طَلَبُ الْعِلْمِ فَرِيضَةٌ عَلَى كُلِّ مُسْلِمٍ
+          </p>
+          <p className={`text-base italic mb-2 ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
+            "Apprendre la science est une obligation pour chaque musulman"
+          </p>
+          <p className={`text-sm ${darkMode ? 'text-gray-500' : 'text-gray-400'}`}>
+            Rapporte par Ibn Majah - Sahih Targhib n°72
+          </p>
+        </div>
       </div>
+
+      {/* Fixed Footer */}
+      <footer className={`
+        fixed bottom-0 left-0 right-0 z-50
+        ${darkMode
+          ? 'bg-slate-800 border-t border-slate-700/50'
+          : 'bg-white border-t border-gray-200 shadow-[0_-2px_10px_rgba(0,0,0,0.04)]'
+        }
+      `}>
+        <div className="flex items-center justify-center py-3">
+          <p style={{ fontFamily: "'Inter', 'Segoe UI', system-ui, sans-serif", letterSpacing: '0.01em' }}>
+            <span className={`text-base font-semibold ${darkMode ? 'text-white' : 'text-gray-800'}`}>MyIslam</span>
+            <span className={`mx-2 ${darkMode ? 'text-slate-500' : 'text-gray-300'}`}>•</span>
+            <span className={`text-base font-medium ${darkMode ? 'text-emerald-400' : 'text-emerald-600'}`}>AbuZayd93</span>
+          </p>
+        </div>
+      </footer>
     </div>
   )
 }

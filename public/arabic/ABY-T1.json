@@ -6,163 +6,264 @@
       "titleFr": "Salutations",
       "dialogues": [
         {
-          "id": "1.1",
-          "youtubeUrl": "",
+          "id": "1",
+          "youtubeUrl": "https://www.youtube.com/embed/k8_EYLMjfVU",
           "lines": [
             {
               "speaker": "خالد",
               "arabic": "السَّلامُ عَلَيْكُم",
-              "phonetic": "As-salāmu ʿalaykum",
               "french": "Que la paix soit sur vous."
             },
             {
               "speaker": "خليل",
               "arabic": "وَعَلَيْكُمُ السَّلام",
-              "phonetic": "Wa ʿalaykumu s-salām",
               "french": "Et sur vous la paix."
             },
             {
               "speaker": "خالد",
               "arabic": "اِسْمِي خَالِد ، مَا اِسْمُكَ ؟",
-              "phonetic": "Ismī Khālid, mā ismuka?",
               "french": "Je m'appelle Khalid, quel est ton nom ?"
             },
             {
               "speaker": "خليل",
               "arabic": "اِسْمِي خَلِيل",
-              "phonetic": "Ismī Khalīl",
               "french": "Je m'appelle Khalil."
             },
             {
               "speaker": "خالد",
               "arabic": "كَيْفَ حَالُكَ ؟",
-              "phonetic": "Kayfa ḥāluka?",
               "french": "Comment vas-tu ?"
             },
             {
               "speaker": "خليل",
-              "arabic": "بِخَيْرٍ ، وَالْحَمْدُ لله",
-              "phonetic": "Bi-khayr, wa l-ḥamdu lillāh",
-              "french": "Bien, louange à Dieu."
+              "arabic": "بِخَيْرٍ ، وَالْحَمْدُ لله\nوَكَيْفَ حَالُكَ أَنْتَ ؟",
+              "french": "Bien, louange à Dieu. Et comment vas-tu toi ?"
             },
             {
               "speaker": "خالد",
-              "arabic": "وَكَيْفَ حَالُكَ أَنْتَ ؟",
-              "phonetic": "Wa kayfa ḥāluka anta?",
-              "french": "Et comment vas-tu toi ?"
+              "arabic": "بِخَيْرٍ ، وَالْحَمْدُ لله",
+              "french": "Bien, louange à Dieu."
             },
             {
-              "speaker": "خليل",
+              "speaker": "",
+              "arabic": "",
+              "french": ""
+            },
+            {
+              "speaker": "خَوْلَة",
+              "arabic": "السَّلامُ عَلَيْكُم",
+              "french": "Que la paix soit sur vous."
+            },
+            {
+              "speaker": "خديجة",
+              "arabic": "وَعَلَيْكُمُ السَّلام",
+              "french": "Et sur vous la paix."
+            },
+            {
+              "speaker": "خَوْلَة",
+              "arabic": "اِسْمِي خَوْلَة ، مَا اسْمُكِ ؟",
+              "french": "Je m'appelle Khawla, quel est ton nom ?"
+            },
+            {
+              "speaker": "خديجة",
+              "arabic": "اِسْمِي خَدِيجَة",
+              "french": "Je m'appelle Khadija."
+            },
+            {
+              "speaker": "خَوْلَة",
+              "arabic": "كَيْفَ حَالُكِ ؟",
+              "french": "Comment vas-tu ?"
+            },
+            {
+              "speaker": "خديجة",
+              "arabic": "بِخَيْرٍ ، وَالْحَمْدُ لله\nوَكَيْفَ حَالُكِ أَنْتِ ؟",
+              "french": "Bien, louange à Dieu. Et comment vas-tu toi ?"
+            },
+            {
+              "speaker": "خَوْلَة",
               "arabic": "بِخَيْرٍ ، وَالْحَمْدُ لله",
-              "phonetic": "Bi-khayr, wa l-ḥamdu lillāh",
               "french": "Bien, louange à Dieu."
             }
           ]
         },
         {
-          "id": "1.2",
-          "youtubeUrl": "",
+          "id": "2",
+          "youtubeUrl": "https://www.youtube.com/embed/k8_EYLMjfVU",
           "lines": [
             {
               "speaker": "محمد",
               "arabic": "السَّلامُ عَلَيْكُم",
-              "phonetic": "As-salāmu ʿalaykum",
               "french": "Que la paix soit sur vous."
             },
             {
               "speaker": "شريف",
               "arabic": "وَعَلَيْكُمُ السَّلام",
-              "phonetic": "Wa ʿalaykumu s-salām",
               "french": "Et sur vous la paix."
             },
             {
               "speaker": "محمد",
               "arabic": "مِنْ أَيْنَ أَنْتَ ؟",
-              "phonetic": "Min ayna anta?",
               "french": "D'où viens-tu ?"
             },
             {
               "speaker": "شريف",
               "arabic": "أَنَا مِنْ بَاكِسْتَان",
-              "phonetic": "Ana min Pākistān",
               "french": "Je suis du Pakistan."
             },
             {
               "speaker": "محمد",
               "arabic": "هَلْ أَنْتَ بَاكِسْتَانِي ؟",
-              "phonetic": "Hal anta Pākistānī?",
               "french": "Es-tu Pakistanais ?"
             },
             {
               "speaker": "شريف",
               "arabic": "نَعَمْ، أَنَا بَاكِسْتَانِي. وَمَا جِنْسِيَّتُكَ أَنْتَ؟",
-              "phonetic": "Naʿam, ana Pākistānī. Wa mā jinsiyyatuka anta?",
               "french": "Oui, je suis Pakistanais. Et quelle est ta nationalité ?"
             },
             {
               "speaker": "محمد",
-              "arabic": "أَنَا تُرْكِيّ . أَنَا مِنْ تُرْكِيَا",
-              "phonetic": "Ana Turkiyy. Ana min Turkiyā",
+              "arabic": "أَنَا تُرْكِيّ\nأَنَا مِنْ تُرْكِيَا",
               "french": "Je suis Turc. Je viens de Turquie."
             },
             {
               "speaker": "شريف",
               "arabic": "أَهْلاً وَسَهْلاً",
-              "phonetic": "Ahlan wa sahlan",
               "french": "Bienvenue (Enchanté)."
+            },
+            {
+              "speaker": "",
+              "arabic": "",
+              "french": ""
+            },
+            {
+              "speaker": "مَرْيَم",
+              "arabic": "السَّلامُ عَلَيْكُم",
+              "french": "Que la paix soit sur vous."
+            },
+            {
+              "speaker": "زَيْنَب",
+              "arabic": "وَعَلَيْكُمُ السَّلام",
+              "french": "Et sur vous la paix."
+            },
+            {
+              "speaker": "مَرْيَم",
+              "arabic": "مِنْ أَيْنَ أَنْتِ ؟",
+              "french": "D'où viens-tu ?"
+            },
+            {
+              "speaker": "زَيْنَب",
+              "arabic": "أَنَا مِنْ مِصْر",
+              "french": "Je suis d'Égypte."
+            },
+            {
+              "speaker": "مَرْيَم",
+              "arabic": "هَلْ أَنْتِ مِصْرِيَّة ؟",
+              "french": "Es-tu Égyptienne ?"
+            },
+            {
+              "speaker": "زَيْنَب",
+              "arabic": "نَعَمْ، أَنَا مِصْرِيَّة\nوَمَا جِنْسِيَّتُكِ أَنْتِ ؟",
+              "french": "Oui, je suis Égyptienne. Et quelle est ta nationalité ?"
+            },
+            {
+              "speaker": "مَرْيَم",
+              "arabic": "أَنَا سُورِيَّة\nأَنَا مِنْ سُورِيَا",
+              "french": "Je suis Syrienne. Je viens de Syrie."
+            },
+            {
+              "speaker": "زَيْنَب",
+              "arabic": "أَهْلاً وَسَهْلاً",
+              "french": "Bienvenue (Enchantée)."
             }
           ]
         },
         {
-          "id": "1.3",
-          "youtubeUrl": "",
+          "id": "3",
+          "youtubeUrl": "https://www.youtube.com/embed/Ryj7xBWn5ug",
           "lines": [
             {
               "speaker": "أحمد",
               "arabic": "السَّلامُ عَلَيْكُم",
-              "phonetic": "As-salāmu ʿalaykum",
               "french": "Que la paix soit sur vous."
             },
             {
               "speaker": "بدر",
               "arabic": "وَعَلَيْكُمُ السَّلام",
-              "phonetic": "Wa ʿalaykumu s-salām",
               "french": "Et sur vous la paix."
             },
             {
               "speaker": "أحمد",
-              "arabic": "هَذَا أَخِي . هُوَ مُدَرِّس",
-              "phonetic": "Hādhā akhī. Huwa mudarris",
+              "arabic": "هَذَا أَخِي\nهُوَ مُدَرِّس",
               "french": "Voici mon frère. Il est enseignant."
             },
             {
               "speaker": "بدر",
               "arabic": "أَهْلاً وَسَهْلاً",
-              "phonetic": "Ahlan wa sahlan",
               "french": "Bienvenue."
             },
             {
               "speaker": "أحمد",
-              "arabic": "هَذَا صَدِيقِي . هُوَ مُهَنْدِس",
-              "phonetic": "Hādhā ṣadīqī. Huwa muhandis",
+              "arabic": "هَذَا صَدِيقِي\nهُوَ مُهَنْدِس",
               "french": "Voici mon ami. Il est ingénieur."
             },
             {
               "speaker": "الأخ",
               "arabic": "أَهْلاً وَسَهْلاً",
-              "phonetic": "Ahlan wa sahlan",
               "french": "Bienvenue."
             },
             {
               "speaker": "أحمد",
               "arabic": "مَعَ السَّلامَة",
-              "phonetic": "Maʿa s-salāmah",
               "french": "Au revoir."
             },
             {
               "speaker": "بدر",
               "arabic": "مَعَ السَّلامَة",
-              "phonetic": "Maʿa s-salāmah",
+              "french": "Au revoir."
+            },
+            {
+              "speaker": "",
+              "arabic": "",
+              "french": ""
+            },
+            {
+              "speaker": "نَدَى",
+              "arabic": "السَّلامُ عَلَيْكُم",
+              "french": "Que la paix soit sur vous."
+            },
+            {
+              "speaker": "هُدَى",
+              "arabic": "وَعَلَيْكُمُ السَّلام",
+              "french": "Et sur vous la paix."
+            },
+            {
+              "speaker": "نَدَى",
+              "arabic": "هَذِهِ أُخْتِي\nهِيَ طَبِيبَة",
+              "french": "Voici ma sœur. Elle est médecin."
+            },
+            {
+              "speaker": "هُدَى",
+              "arabic": "أَهْلاً وَسَهْلاً",
+              "french": "Bienvenue."
+            },
+            {
+              "speaker": "نَدَى",
+              "arabic": "هَذِهِ صَدِيقَتِي\nهِيَ طَالِبَة",
+              "french": "Voici mon amie. Elle est étudiante."
+            },
+            {
+              "speaker": "الأخت",
+              "arabic": "أَهْلاً وَسَهْلاً",
+              "french": "Bienvenue."
+            },
+            {
+              "speaker": "نَدَى",
+              "arabic": "مَعَ السَّلامَة",
+              "french": "Au revoir."
+            },
+            {
+              "speaker": "هُدَى",
+              "arabic": "مَعَ السَّلامَة",
               "french": "Au revoir."
             }
           ]
@@ -175,283 +276,229 @@
       "titleFr": "La Famille",
       "dialogues": [
         {
-          "id": "2.1",
-          "youtubeUrl": "",
+          "id": "1",
+          "youtubeUrl": "https://www.youtube.com/embed/vWoclD7YPIo",
           "lines": [
             {
               "speaker": "علي",
               "arabic": "السَّلامُ عَلَيْكُم",
-              "phonetic": "As-salāmu ʿalaykum",
               "french": "Que la paix soit sur vous."
             },
             {
               "speaker": "عمار",
               "arabic": "وَعَلَيْكُمُ السَّلام",
-              "phonetic": "Wa ʿalaykumu s-salām",
               "french": "Et sur vous la paix."
             },
             {
               "speaker": "علي",
               "arabic": "هَذِهِ صُورَةُ أُسْرَتِي",
-              "phonetic": "Hādhihi ṣūratu usratī",
               "french": "C'est une photo de ma famille."
             },
             {
               "speaker": "عمار",
               "arabic": "مَا شَاءَ الله ! مَنْ هَذَا ؟",
-              "phonetic": "Mā shā'a llāh! Man hādhā?",
               "french": "Masha'Allah ! Qui est-ce ?"
             },
             {
               "speaker": "علي",
               "arabic": "هَذَا وَالِدِي عَدْنَان وَهُوَ مُهَنْدِس",
-              "phonetic": "Hādhā wālidī ʿAdnān wa huwa muhandis",
               "french": "C'est mon père Adnan et il est ingénieur."
             },
             {
               "speaker": "عمار",
               "arabic": "وَمَنْ هَذِهِ ؟",
-              "phonetic": "Wa man hādhihi?",
               "french": "Et qui est celle-ci ?"
             },
             {
               "speaker": "علي",
               "arabic": "هَذِهِ وَالِدَتِي سَعِيدَة وَهِيَ طَبِيبَة",
-              "phonetic": "Hādhihi wālidatī Saʿīdah wa hiya ṭabībah",
               "french": "C'est ma mère Saida et elle est médecin."
             },
             {
               "speaker": "عمار",
               "arabic": "وَمَنْ هَذَا ؟",
-              "phonetic": "Wa man hādhā?",
               "french": "Et qui est celui-ci ?"
             },
             {
               "speaker": "علي",
               "arabic": "هَذَا أَخِي عِيسَى وَهُوَ طَالِب",
-              "phonetic": "Hādhā akhī ʿĪsā wa huwa ṭālib",
               "french": "C'est mon frère Issa et il est étudiant."
             },
             {
               "speaker": "عمار",
               "arabic": "وَمَنْ هَذِهِ ؟",
-              "phonetic": "Wa man hādhihi?",
               "french": "Et qui est celle-ci ?"
             },
             {
               "speaker": "علي",
-              "arabic": "هَذِهِ أُخْتِي عَبْلَة وَهِيَ مُعَلِّمَة",
-              "phonetic": "Hādhihi ukhtī ʿAblah wa hiya muʿallimah",
-              "french": "C'est ma sœur Abla et elle est enseignante."
-            },
-            {
-              "speaker": "علي",
-              "arabic": "وَهَذَا جَدِّي . وَهَذِهِ جَدَّتِي",
-              "phonetic": "Wa hādhā jaddī. Wa hādhihi jaddatī",
-              "french": "Et voici mon grand-père. Et voici ma grand-mère."
+              "arabic": "هَذِهِ أُخْتِي عَبْلَة وَهِيَ مُعَلِّمَة\nوَهَذَا جَدِّي\nوَهَذِهِ جَدَّتِي",
+              "french": "C'est ma sœur Abla et elle est enseignante. Et voici mon grand-père. Et voici ma grand-mère."
             },
             {
               "speaker": "عمار",
               "arabic": "مَا شَاءَ الله !",
-              "phonetic": "Mā shā'a llāh!",
               "french": "Masha'Allah !"
             }
           ]
         },
         {
-          "id": "2.2",
-          "youtubeUrl": "",
+          "id": "2",
+          "youtubeUrl": "https://www.youtube.com/embed/vWoclD7YPIo",
           "lines": [
             {
               "speaker": "عمر",
               "arabic": "هَلْ هَذِهِ شَجَرَةٌ ؟",
-              "phonetic": "Hal hādhihi shajarah?",
               "french": "Est-ce un arbre ?"
             },
             {
               "speaker": "عثمان",
               "arabic": "نَعَمْ، هَذِهِ أُسْرَةُ الرَّسُول ﷺ",
-              "phonetic": "Naʿam, hādhihi usratu r-Rasūl",
               "french": "Oui, c'est la famille du Messager ﷺ."
             },
             {
               "speaker": "عمر",
               "arabic": "صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ",
-              "phonetic": "Ṣallā llāhu ʿalayhi wa sallam",
               "french": "Paix et salut sur lui."
             },
             {
               "speaker": "عثمان",
               "arabic": "هَذَا وَالِدُهُ عَبْدُ الله",
-              "phonetic": "Hādhā wāliduhu ʿAbdullāh",
               "french": "C'est son père Abdallah."
             },
             {
               "speaker": "عمر",
               "arabic": "وَهَذِهِ وَالِدَتُهُ آمِنَة",
-              "phonetic": "Wa hādhihi wālidatuhu Āminah",
               "french": "Et c'est sa mère Amina."
             },
             {
               "speaker": "عثمان",
               "arabic": "وَهَذَا جَدُّهُ عَبْدُ المُطَّلِب",
-              "phonetic": "Wa hādhā jadduhu ʿAbd al-Muṭṭalib",
               "french": "Et c'est son grand-père Abd al-Muttalib."
             },
             {
               "speaker": "عمر",
               "arabic": "وَهَذَا عَمُّهُ العَبَّاس",
-              "phonetic": "Wa hādhā ʿammuhu al-ʿAbbās",
               "french": "Et c'est son oncle Al-Abbas."
             },
             {
               "speaker": "عثمان",
               "arabic": "وَهَذَا عَمُّهُ حَمْزَة",
-              "phonetic": "Wa hādhā ʿammuhu Ḥamzah",
               "french": "Et c'est son oncle Hamza."
             },
             {
               "speaker": "عمر",
               "arabic": "وَهَذَا عَمُّهُ أَبُو طَالِب",
-              "phonetic": "Wa hādhā ʿammuhu Abū Ṭālib",
               "french": "Et c'est son oncle Abou Talib."
             },
             {
               "speaker": "عثمان",
               "arabic": "وَهَذِهِ عَمَّتُهُ صَفِيَّة",
-              "phonetic": "Wa hādhihi ʿammatuhu Ṣafiyyah",
               "french": "Et c'est sa tante Safiyyah."
             },
             {
               "speaker": "عمر",
               "arabic": "وَهَذَا ابْنُهُ القَاسِم",
-              "phonetic": "Wa hādhā ibnuhu al-Qāsim",
               "french": "Et c'est son fils Al-Qasim."
             },
             {
               "speaker": "عثمان",
               "arabic": "وَهَذَا ابْنُهُ عَبْدُ الله",
-              "phonetic": "Wa hādhā ibnuhu ʿAbdullāh",
               "french": "Et c'est son fils Abdallah."
             },
             {
               "speaker": "عمر",
               "arabic": "وَهَذَا ابْنُهُ إِبْرَاهِيم",
-              "phonetic": "Wa hādhā ibnuhu Ibrāhīm",
               "french": "Et c'est son fils Ibrahim."
             },
             {
               "speaker": "عثمان",
               "arabic": "وَهَذِهِ ابْنَتُهُ فَاطِمَة",
-              "phonetic": "Wa hādhihi ibnatuhu Fāṭimah",
               "french": "Et c'est sa fille Fatima."
             },
             {
               "speaker": "عمر",
               "arabic": "وَهَذِهِ ابْنَتُهُ رُقَيَّة",
-              "phonetic": "Wa hādhihi ibnatuhu Ruqayyah",
               "french": "Et c'est sa fille Ruqayyah."
             },
             {
               "speaker": "عثمان",
               "arabic": "وَهَذِهِ ابْنَتُهُ زَيْنَب",
-              "phonetic": "Wa hādhihi ibnatuhu Zaynab",
               "french": "Et c'est sa fille Zaynab."
             },
             {
               "speaker": "عمر",
               "arabic": "وَهَذِهِ ابْنَتُهُ أُمُّ كُلْثُوم",
-              "phonetic": "Wa hādhihi ibnatuhu Umm Kulthūm",
               "french": "Et c'est sa fille Oum Kalthoum."
             }
           ]
         },
         {
-          "id": "2.3",
-          "youtubeUrl": "",
+          "id": "3",
+          "youtubeUrl": "https://www.youtube.com/embed/0M7MpiV4TFg",
           "lines": [
             {
               "speaker": "الأم",
               "arabic": "هَذَا أَذَانُ الفَجْر",
-              "phonetic": "Hādhā adhānu l-fajr",
               "french": "C'est l'appel à la prière de l'aube."
             },
             {
               "speaker": "الأب",
-              "arabic": "اللهُ أَكْبَرُ . اللهُ أَكْبَرُ",
-              "phonetic": "Allāhu akbar, Allāhu akbar",
-              "french": "Dieu est le plus Grand."
-            },
-            {
-              "speaker": "الأب",
-              "arabic": "أَيْنَ الأَوْلادُ ؟",
-              "phonetic": "Ayna l-awlād?",
-              "french": "Où sont les enfants ?"
+              "arabic": "اللهُ أَكْبَرُ\nاللهُ أَكْبَرُ\nأَيْنَ الأَوْلادُ ؟",
+              "french": "Dieu est le plus Grand. Où sont les enfants ?"
             },
             {
               "speaker": "الأم",
               "arabic": "سَعْدٌ فِي الحَمَّامِ يَتَوَضَّأُ",
-              "phonetic": "Saʿd fī l-ḥammām yatawaḍḍa'",
               "french": "Saad est dans la salle de bain, il fait ses ablutions."
             },
             {
               "speaker": "الأب",
               "arabic": "وَأَيْنَ سَعِيدٌ ؟",
-              "phonetic": "Wa ayna Saʿīd?",
               "french": "Et où est Said ?"
             },
             {
               "speaker": "الأم",
               "arabic": "سَعِيدٌ فِي الغُرْفَةِ يَقْرَأُ القُرْآنَ",
-              "phonetic": "Saʿīd fī l-ghurfah yaqra'u l-Qur'ān",
               "french": "Said est dans la chambre, il lit le Coran."
             },
             {
               "speaker": "الأب",
               "arabic": "وَأَيْنَ سَعِيدَةُ ؟",
-              "phonetic": "Wa ayna Saʿīdah?",
               "french": "Et où est Saida ?"
             },
             {
               "speaker": "الأم",
               "arabic": "سَعِيدَةُ فِي المُصَلَّى تُصَلِّي",
-              "phonetic": "Saʿīdah fī l-muṣallā tuṣallī",
               "french": "Saida est dans le lieu de prière, elle prie."
             },
             {
               "speaker": "الأب",
               "arabic": "أَيْنَ المِعْطَفُ ؟",
-              "phonetic": "Ayna l-miʿṭaf?",
               "french": "Où est le manteau ?"
             },
             {
               "speaker": "سعد",
               "arabic": "هَذَا هُوَ المِعْطَفُ يَا وَالِدِي",
-              "phonetic": "Hādhā huwa l-miʿṭaf yā wālidī",
               "french": "Voici le manteau, ô mon père."
             },
             {
               "speaker": "الأب",
               "arabic": "وَأَيْنَ النَّظَّارَةُ ؟",
-              "phonetic": "Wa ayna n-naẓẓārah?",
               "french": "Et où sont les lunettes ?"
             },
             {
               "speaker": "سعيد",
               "arabic": "هَذِهِ هِيَ النَّظَّارَةُ يَا وَالِدِي",
-              "phonetic": "Hādhihi hiya n-naẓẓārah yā wālidī",
               "french": "Voici les lunettes, ô mon père."
             },
             {
               "speaker": "الأب",
               "arabic": "هَيَّا بِنَا إِلَى المَسْجِدِ",
-              "phonetic": "Hayyā binā ilā l-masjid",
               "french": "Allons à la mosquée."
             },
             {
               "speaker": "سعد وسعيد",
               "arabic": "هَيَّا بِنَا",
-              "phonetic": "Hayyā binā",
               "french": "Allons-y."
             }
           ]
@@ -464,241 +511,199 @@
       "titleFr": "Le Logement",
       "dialogues": [
         {
-          "id": "3.1",
-          "youtubeUrl": "",
+          "id": "1",
+          "youtubeUrl": "https://www.youtube.com/embed/NkifmY0u9Qs",
           "lines": [
             {
               "speaker": "أحمد",
               "arabic": "السَّلامُ عَلَيْكُم",
-              "phonetic": "As-salāmu ʿalaykum",
               "french": "Que la paix soit sur vous."
             },
             {
               "speaker": "حسان",
               "arabic": "وَعَلَيْكُمُ السَّلام",
-              "phonetic": "Wa ʿalaykumu s-salām",
               "french": "Et sur vous la paix."
             },
             {
               "speaker": "أحمد",
               "arabic": "أَيْنَ تَسْكُنُ ؟",
-              "phonetic": "Ayna taskunu?",
               "french": "Où habites-tu ?"
             },
             {
               "speaker": "حسان",
               "arabic": "أَسْكُنُ فِي حَيِّ الْمَطَار. وَأَيْنَ تَسْكُنُ أَنْتَ ؟",
-              "phonetic": "Askunu fī ḥayyi l-maṭār. Wa ayna taskunu anta?",
               "french": "J'habite quartier de l'aéroport. Et où habites-tu toi ?"
             },
             {
               "speaker": "أحمد",
               "arabic": "أَسْكُنُ فِي حَيِّ الْجَامِعَة",
-              "phonetic": "Askunu fī ḥayyi l-jāmiʿah",
               "french": "J'habite dans le quartier de l'université."
             },
             {
               "speaker": "حسان",
               "arabic": "هَلْ تَسْكُنُ فِي بَيْتٍ ؟",
-              "phonetic": "Hal taskunu fī bayt?",
               "french": "Habites-tu dans une maison ?"
             },
             {
               "speaker": "أحمد",
-              "arabic": "نَعَمْ، أَسْكُنُ فِي بَيْتٍ",
-              "phonetic": "Naʿam, askunu fī bayt",
-              "french": "Oui, j'habite dans une maison."
-            },
-            {
-              "speaker": "أحمد",
-              "arabic": "وَهَلْ تَسْكُنُ فِي بَيْتٍ ؟",
-              "phonetic": "Wa hal taskunu fī bayt?",
-              "french": "Et habites-tu dans une maison ?"
+              "arabic": "نَعَمْ، أَسْكُنُ فِي بَيْتٍ\nوَهَلْ تَسْكُنُ فِي بَيْتٍ ؟",
+              "french": "Oui, j'habite dans une maison. Et habites-tu dans une maison ?"
             },
             {
               "speaker": "حسان",
               "arabic": "لا، أَسْكُنُ فِي شَقَّةٍ",
-              "phonetic": "Lā, askunu fī shaqqah",
               "french": "Non, j'habite dans un appartement."
             },
             {
               "speaker": "أحمد",
               "arabic": "مَا رَقْمُ شَقَّتِكَ ؟",
-              "phonetic": "Mā raqmu shaqqatika?",
               "french": "Quel est le numéro de ton appartement ?"
             },
             {
               "speaker": "حسان",
-              "arabic": "خَمْسَة . وَمَا رَقْمُ بَيْتِكَ ؟",
-              "phonetic": "Khamsah. Wa mā raqmu baytika?",
+              "arabic": "خَمْسَة\nوَمَا رَقْمُ بَيْتِكَ ؟",
               "french": "Cinq. Et quel est le numéro de ta maison ?"
             },
             {
               "speaker": "أحمد",
               "arabic": "تِسْعَة",
-              "phonetic": "Tisʿah",
               "french": "Neuf."
             }
           ]
         },
         {
-          "id": "3.2",
-          "youtubeUrl": "",
+          "id": "2",
+          "youtubeUrl": "https://www.youtube.com/embed/NkifmY0u9Qs",
           "lines": [
             {
               "speaker": "المستأجر",
               "arabic": "السَّلامُ عَلَيْكُم",
-              "phonetic": "As-salāmu ʿalaykum",
               "french": "Que la paix soit sur vous."
             },
             {
               "speaker": "المؤجر",
               "arabic": "وَعَلَيْكُمُ السَّلام",
-              "phonetic": "Wa ʿalaykumu s-salām",
               "french": "Et sur vous la paix."
             },
             {
               "speaker": "المستأجر",
               "arabic": "أُرِيدُ شَقَّةً مِنْ فَضْلِكَ",
-              "phonetic": "Urīdu shaqqatan min faḍlika",
               "french": "Je voudrais un appartement, s'il vous plaît."
             },
             {
               "speaker": "المؤجر",
               "arabic": "لَدَيْنَا شَقَّةٌ جَمِيلَة",
-              "phonetic": "Ladaynā shaqqatun jamīlah",
               "french": "Nous avons un bel appartement."
             },
             {
               "speaker": "المستأجر",
               "arabic": "كَمْ غُرْفَةً فِي الشَّقَّةِ ؟",
-              "phonetic": "Kam ghurfatan fī sh-shaqqah?",
               "french": "Combien de pièces y a-t-il dans l'appartement ?"
             },
             {
               "speaker": "المؤجر",
               "arabic": "فِي الشَّقَّةِ خَمْسُ غُرَفٍ",
-              "phonetic": "Fī sh-shaqqati khamsu ghuraf",
               "french": "Dans l'appartement, il y a cinq pièces."
             },
             {
               "speaker": "المستأجر",
               "arabic": "فِي أَيِّ دَوْرٍ الشَّقَّةُ ؟",
-              "phonetic": "Fī ayyi dawrin ash-shaqqah?",
               "french": "À quel étage est l'appartement ?"
             },
             {
               "speaker": "المؤجر",
               "arabic": "الشَّقَّةُ فِي الدَّوْرِ الْخَامِس",
-              "phonetic": "Ash-shaqqatu fī d-dawri l-khāmis",
               "french": "L'appartement est au cinquième étage."
             },
             {
               "speaker": "المستأجر",
               "arabic": "أُرِيدُ مُشَاهَدَةَ الشَّقَّةِ",
-              "phonetic": "Urīdu mushāhadata sh-shaqqah",
               "french": "Je voudrais voir l'appartement."
             },
             {
               "speaker": "المؤجر",
               "arabic": "تَفَضَّلْ، ادْخُلْ، هَذَا بَابُ الشَّقَّةِ",
-              "phonetic": "Tafaḍḍal, udkhul, hādhā bābu sh-shaqqah",
               "french": "Entrez, voici la porte de l'appartement."
             },
             {
               "speaker": "المستأجر",
               "arabic": "هَذِهِ شَقَّةٌ جَمِيلَةٌ",
-              "phonetic": "Hādhihi shaqqatun jamīlah",
               "french": "C'est un bel appartement."
             }
           ]
         },
         {
-          "id": "3.3",
-          "youtubeUrl": "",
+          "id": "3",
+          "youtubeUrl": "https://www.youtube.com/embed/qSYmUyOdZ6M",
           "lines": [
             {
               "speaker": "المشتري",
               "arabic": "السَّلامُ عَلَيْكُم",
-              "phonetic": "As-salāmu ʿalaykum",
               "french": "Que la paix soit sur vous."
             },
             {
               "speaker": "البائع",
               "arabic": "وَعَلَيْكُمُ السَّلام. أَيَّ خِدْمَةٍ ؟",
-              "phonetic": "Wa ʿalaykumu s-salām. Ayya khidmah?",
               "french": "Et sur vous la paix. Puis-je vous aider ?"
             },
             {
               "speaker": "المشتري",
               "arabic": "أُرِيدُ بَعْضَ الأَثَاثِ",
-              "phonetic": "Urīdu baʿḍa l-athāth",
               "french": "Je voudrais quelques meubles."
             },
             {
               "speaker": "البائع",
               "arabic": "مَاذَا تُرِيدُ لِغُرْفَةِ النَّوْمِ ؟",
-              "phonetic": "Mādhā turīdu li-ghurfati n-nawm?",
               "french": "Que voulez-vous pour la chambre à coucher ?"
             },
             {
               "speaker": "المشتري",
               "arabic": "أُرِيدُ سَرِيراً وَسِتَارَةً",
-              "phonetic": "Urīdu sarīran wa sitārah",
               "french": "Je veux un lit et un rideau."
             },
             {
               "speaker": "البائع",
               "arabic": "وَمَاذَا تُرِيدُ لِغُرْفَةِ الْجُلُوسِ ؟",
-              "phonetic": "Wa mādhā turīdu li-ghurfati l-julūs?",
               "french": "Et que voulez-vous pour le salon ?"
             },
             {
               "speaker": "المشتري",
               "arabic": "أُرِيدُ أَرِيكَةً وَسَجَّادَةً",
-              "phonetic": "Urīdu arīkatan wa sajjādah",
               "french": "Je veux un canapé et un tapis."
             },
             {
               "speaker": "البائع",
               "arabic": "وَمَاذَا تُرِيدُ لِلْمَطْبَخِ ؟",
-              "phonetic": "Wa mādhā turīdu li-l-maṭbakh?",
               "french": "Et que voulez-vous pour la cuisine ?"
             },
             {
               "speaker": "المشتري",
               "arabic": "أُرِيدُ فُرْناً وَثَلاجَةً",
-              "phonetic": "Urīdu furnan wa thallājah",
               "french": "Je veux un four et un frigo."
             },
             {
               "speaker": "البائع",
               "arabic": "وَمَاذَا تُرِيدُ لِلْحَمَّامِ ؟",
-              "phonetic": "Wa mādhā turīdu li-l-ḥammām?",
               "french": "Et que voulez-vous pour la salle de bain ?"
             },
             {
               "speaker": "المشتري",
               "arabic": "أُرِيدُ سَخَّاناً وَمِرْآةً",
-              "phonetic": "Urīdu sakkhānan wa mir'āh",
               "french": "Je veux un chauffe-eau et un miroir."
             },
             {
               "speaker": "البائع",
               "arabic": "هَلْ تُرِيدُ شَيْئاً آخَرَ ؟",
-              "phonetic": "Hal turīdu shay'an ākhar?",
               "french": "Voulez-vous autre chose ?"
             },
             {
               "speaker": "المشتري",
               "arabic": "شُكْراً، أُرِيدُ مُشَاهَدَةَ الأَثَاثِ",
-              "phonetic": "Shukran, urīdu mushāhadata l-athāth",
               "french": "Merci, je voudrais voir les meubles."
             },
             {
               "speaker": "البائع",
               "arabic": "تَفَضَّلْ",
-              "phonetic": "Tafaḍḍal",
               "french": "Allez-y (Je vous en prie)."
             }
           ]
@@ -711,230 +716,185 @@
       "titleFr": "Vie Quotidienne",
       "dialogues": [
         {
-          "id": "4.1",
-          "youtubeUrl": "",
+          "id": "1",
+          "youtubeUrl": "https://www.youtube.com/embed/-wWppSok6gc",
           "lines": [
             {
               "speaker": "طارق",
               "arabic": "مَتَى تَسْتَيْقِظُ ؟",
-              "phonetic": "Matā tastayqiẓu?",
               "french": "Quand te réveilles-tu ?"
             },
             {
               "speaker": "طاهر",
               "arabic": "أَسْتَيْقِظُ عِنْدَ الْفَجْرِ",
-              "phonetic": "Astayqiẓu ʿinda l-fajr",
               "french": "Je me réveille à l'aube."
             },
             {
               "speaker": "طارق",
               "arabic": "أَيْنَ تُصَلِّي الْفَجْرَ ؟",
-              "phonetic": "Ayna tuṣallī l-fajra?",
               "french": "Où pries-tu le Fajr ?"
             },
             {
               "speaker": "طاهر",
               "arabic": "أُصَلِّي الْفَجْرَ فِي الْمَسْجِدِ",
-              "phonetic": "Uṣallī l-fajra fī l-masjid",
               "french": "Je prie le Fajr à la mosquée."
             },
             {
               "speaker": "طارق",
               "arabic": "هَلْ تَنَامُ بَعْدَ الصَّلاةِ ؟",
-              "phonetic": "Hal tanāmu baʿda ṣ-ṣalāh?",
               "french": "Dors-tu après la prière ?"
             },
             {
               "speaker": "طاهر",
               "arabic": "لا، لا أَنَامُ بَعْدَ الصَّلاةِ",
-              "phonetic": "Lā, lā anāmu baʿda ṣ-ṣalāh",
               "french": "Non, je ne dors pas après la prière."
             },
             {
               "speaker": "طارق",
               "arabic": "مَاذَا تَفْعَلُ بَعْدَ الصَّلاةِ ؟",
-              "phonetic": "Mādhā tafʿalu baʿda ṣ-ṣalāh?",
               "french": "Que fais-tu après la prière ?"
             },
             {
               "speaker": "طاهر",
               "arabic": "أَقْرَأُ الْقُرْآنَ",
-              "phonetic": "Aqra'u l-Qur'ān",
               "french": "Je lis le Coran."
             },
             {
               "speaker": "طارق",
               "arabic": "وَمَتَى تَذْهَبُ إِلَى الْمَدْرَسَةِ ؟",
-              "phonetic": "Wa matā tadh-habu ilā l-madrasah?",
               "french": "Et quand vas-tu à l'école ?"
             },
             {
               "speaker": "طاهر",
               "arabic": "أَذْهَبُ السَّاعَةَ السَّابِعَةَ",
-              "phonetic": "Adh-habu as-sāʿata s-sābiʿah",
               "french": "J'y vais à sept heures."
             },
             {
               "speaker": "طارق",
               "arabic": "هَلْ تَذْهَبُ بِالسَّيَّارَةِ ؟",
-              "phonetic": "Hal tadh-habu bi-s-sayyārah?",
               "french": "Y vas-tu en voiture ?"
             },
             {
               "speaker": "طاهر",
               "arabic": "لا، أَذْهَبُ بِالْحَافِلَةِ",
-              "phonetic": "Lā, adh-habu bi-l-ḥāfilah",
               "french": "Non, j'y vais en bus."
             }
           ]
         },
         {
-          "id": "4.2",
-          "youtubeUrl": "",
+          "id": "2",
+          "youtubeUrl": "https://www.youtube.com/embed/-wWppSok6gc",
           "lines": [
             {
               "speaker": "الأم",
               "arabic": "هَذَا يَوْمُ الْعُطْلَةِ",
-              "phonetic": "Hādhā yawmu l-ʿuṭlah",
               "french": "C'est le jour de congé."
             },
             {
               "speaker": "الأب",
               "arabic": "هَذَا يَوْمُ الْعَمَلِ",
-              "phonetic": "Hādhā yawmu l-ʿamal",
               "french": "C'est un jour de travail."
             },
             {
               "speaker": "الأم",
               "arabic": "مَاذَا سَتَفْعَلُ يَا طَارِقُ ؟",
-              "phonetic": "Mādhā satafʿalu yā Ṭāriq?",
               "french": "Que vas-tu faire, Tariq ?"
             },
             {
               "speaker": "طارق",
               "arabic": "سَأَكْنُسُ غُرْفَةَ الْجُلُوسِ",
-              "phonetic": "Sa-aknusu ghurfata l-julūs",
               "french": "Je vais balayer le salon."
             },
             {
               "speaker": "الأم",
               "arabic": "وَمَاذَا سَتَفْعَلِينَ يَا فَاطِمَةُ ؟",
-              "phonetic": "Wa mādhā satafʿalīna yā Fāṭimah?",
               "french": "Et que vas-tu faire, Fatima ?"
             },
             {
               "speaker": "فاطمة",
               "arabic": "سَأَكْنُسُ غُرْفَةَ النَّوْمِ",
-              "phonetic": "Sa-aknusu ghurfata n-nawm",
               "french": "Je vais balayer la chambre."
             },
             {
               "speaker": "الأم",
               "arabic": "وَمَاذَا سَتَفْعَلُ يَا أَحْمَدُ ؟",
-              "phonetic": "Wa mādhā satafʿalu yā Aḥmad?",
               "french": "Et que vas-tu faire, Ahmed ?"
             },
             {
               "speaker": "أحمد",
               "arabic": "سَأَغْسِلُ الْمَلابِسَ",
-              "phonetic": "Sa-aghsilu l-malābis",
               "french": "Je vais laver les vêtements."
             },
             {
               "speaker": "الأم",
               "arabic": "وَمَاذَا سَتَفْعَلِينَ يَا لَطِيفَةُ ؟",
-              "phonetic": "Wa mādhā satafʿalīna yā Laṭīfah?",
               "french": "Et que vas-tu faire, Latifa ?"
             },
             {
               "speaker": "لطيفة",
               "arabic": "سَأَكْوِي الْمَلابِسَ",
-              "phonetic": "Sa-akwī l-malābis",
               "french": "Je vais repasser les vêtements."
             },
             {
               "speaker": "الجدة",
               "arabic": "أَنَا سَأَغْسِلُ الأَطْبَاقَ",
-              "phonetic": "Ana sa-aghsilu l-aṭbāq",
               "french": "Moi, je vais laver la vaisselle."
             },
             {
               "speaker": "الجد",
               "arabic": "وَأَنَا سَأَقْرَأُ الْقُرْآنَ",
-              "phonetic": "Wa ana sa-aqra'u l-Qur'ān",
               "french": "Et moi, je vais lire le Coran."
             }
           ]
         },
         {
-          "id": "4.3",
-          "youtubeUrl": "",
+          "id": "3",
+          "youtubeUrl": "https://www.youtube.com/embed/m_zWX6MdH2Y",
           "lines": [
             {
               "speaker": "عادل",
               "arabic": "مَتَى تَسْتَيْقِظُ يَوْمَ الْعُطْلَةِ ؟",
-              "phonetic": "Matā tastayqiẓu yawma l-ʿuṭlah?",
               "french": "Quand te réveilles-tu le jour de congé ?"
             },
             {
               "speaker": "فيصل",
-              "arabic": "أَسْتَيْقِظُ مُبَكِّراً",
-              "phonetic": "Astayqiẓu mubakkiran",
-              "french": "Je me réveille tôt."
-            },
-            {
-              "speaker": "فيصل",
-              "arabic": "وَمَتَى تَسْتَيْقِظُ أَنْتَ ؟",
-              "phonetic": "Wa matā tastayqiẓu anta?",
-              "french": "Et quand te réveilles-tu toi ?"
+              "arabic": "أَسْتَيْقِظُ مُبَكِّراً\nوَمَتَى تَسْتَيْقِظُ أَنْتَ ؟",
+              "french": "Je me réveille tôt. Et quand te réveilles-tu toi ?"
             },
             {
               "speaker": "عادل",
               "arabic": "أَسْتَيْقِظُ مُتَأَخِّراً",
-              "phonetic": "Astayqiẓu muta'akhkhiran",
               "french": "Je me réveille tard."
             },
             {
               "speaker": "فيصل",
               "arabic": "مَاذَا تَفْعَلُ فِي الصَّبَاحِ ؟",
-              "phonetic": "Mādhā tafʿalu fī ṣ-ṣabāḥ?",
               "french": "Que fais-tu le matin ?"
             },
             {
               "speaker": "عادل",
               "arabic": "أُشَاهِدُ التِّلْفَازَ. وَمَاذَا تَفْعَلُ أَنْتَ ؟",
-              "phonetic": "Ushāhidu t-tilfāz. Wa mādhā tafʿalu anta?",
               "french": "Je regarde la TV. Et que fais-tu toi ?"
             },
             {
               "speaker": "فيصل",
               "arabic": "أَقْرَأُ صَحِيفَةً أَوْ كِتَاباً",
-              "phonetic": "Aqra'u ṣaḥīfatan aw kitāban",
               "french": "Je lis un journal ou un livre."
             },
             {
               "speaker": "عادل",
               "arabic": "أَيْنَ تُصَلِّي الْجُمُعَةَ ؟",
-              "phonetic": "Ayna tuṣallī l-Jumuʿah?",
               "french": "Où pries-tu le Vendredi ?"
             },
             {
               "speaker": "فيصل",
               "arabic": "أُصَلِّي الْجُمُعَةَ فِي الْمَسْجِدِ الْكَبِيرِ",
-              "phonetic": "Uṣallī l-Jumuʿah fī l-masjidi l-kabīr",
               "french": "Je prie le Vendredi à la grande mosquée."
             },
             {
               "speaker": "عادل",
-              "arabic": "وَأَيْنَ تُصَلِّي أَنْتَ ؟",
-              "phonetic": "Wa ayna tuṣallī anta?",
-              "french": "Et où pries-tu toi ?"
-            },
-            {
-              "speaker": "عادل",
-              "arabic": "أُصَلِّي فِي الْمَسْجِدِ الْكَبِيرِ أَيْضاً",
-              "phonetic": "Uṣallī fī l-masjidi l-kabīr ayḍan",
-              "french": "Je prie à la grande mosquée aussi."
+              "arabic": "وَأَيْنَ تُصَلِّي أَنْتَ ؟\nأُصَلِّي فِي الْمَسْجِدِ الْكَبِيرِ أَيْضاً",
+              "french": "Et où pries-tu toi ? Je prie à la grande mosquée aussi."
             }
           ]
         }
@@ -946,259 +906,214 @@
       "titleFr": "Nourriture",
       "dialogues": [
         {
-          "id": "5.1",
-          "youtubeUrl": "",
+          "id": "1",
+          "youtubeUrl": "https://www.youtube.com/embed/V8hqPd-02Ts",
           "lines": [
             {
               "speaker": "قاسم",
               "arabic": "أَيْنَ تَذْهَبُ يَا سَالِمُ ؟",
-              "phonetic": "Ayna tadh-habu yā Sālim?",
               "french": "Où vas-tu Salim ?"
             },
             {
               "speaker": "سالم",
               "arabic": "إِلَى الْمَطْعَمِ",
-              "phonetic": "Ilā l-maṭʿam",
               "french": "Au restaurant."
             },
             {
               "speaker": "قاسم",
               "arabic": "كَمْ وَجْبَةً تَأْكُلُ فِي الْيَوْمِ ؟",
-              "phonetic": "Kam wajbatan ta'kulu fī l-yawm?",
               "french": "Combien de repas manges-tu par jour ?"
             },
             {
               "speaker": "سالم",
               "arabic": "آكُلُ ثَلاثَ وَجَبَات: الْفَطُورَ وَالْغَدَاءَ وَالْعَشَاءَ",
-              "phonetic": "Ākulu thalātha wajabāt: al-faṭūr wa l-ghadā' wa l-ʿashā'",
               "french": "Je mange trois repas : le petit-déjeuner, le déjeuner et le dîner."
             },
             {
               "speaker": "قاسم",
               "arabic": "هَذَا كَثِيرٌ جِدّاً. أَنَا آكُلُ وَجْبَةً وَاحِدَةً",
-              "phonetic": "Hādhā kathīrun jiddan. Ana ākulu wajbatan wāḥidah",
               "french": "C'est beaucoup. Moi, je mange un seul repas."
             },
             {
               "speaker": "سالم",
               "arabic": "هَذَا قَلِيلٌ جِدّاً",
-              "phonetic": "Hādhā qalīlun jiddan",
               "french": "C'est très peu."
             },
             {
               "speaker": "قاسم",
               "arabic": "مَاذَا تَأْكُلُ فِي الْغَدَاءِ ؟",
-              "phonetic": "Mādhā ta'kulu fī l-ghadā'?",
               "french": "Que manges-tu au déjeuner ?"
             },
             {
               "speaker": "سالم",
               "arabic": "آكُلُ الأَرُزَّ وَالْخُبْزَ. وَمَاذَا تَأْكُلُ أَنْتَ ؟",
-              "phonetic": "Ākulu l-aruzza wa l-khubz. Wa mādhā ta'kulu anta?",
               "french": "Je mange du riz et du pain. Et que manges-tu toi ?"
             },
             {
               "speaker": "قاسم",
               "arabic": "آكُلُ السَّمَكَ وَالسَّلَطَةَ وَالْفَاكِهَةَ",
-              "phonetic": "Ākulu s-samaka wa s-salaṭata wa l-fākihah",
               "french": "Je mange du poisson, de la salade et des fruits."
             },
             {
               "speaker": "سالم",
               "arabic": "مَا وَزْنُكَ ؟",
-              "phonetic": "Mā waznuka?",
               "french": "Quel est ton poids ?"
             },
             {
               "speaker": "قاسم",
               "arabic": "سِتُّونَ كَيْلاً. وَمَا وَزْنُكَ أَنْتَ ؟",
-              "phonetic": "Sittūna kaylan. Wa mā waznuka anta?",
               "french": "60 kilos. Et quel est ton poids toi ?"
             },
             {
               "speaker": "سالم",
               "arabic": "مِائَةُ كَيْلٍ",
-              "phonetic": "Mi'atu kayl",
               "french": "100 kilos."
             },
             {
               "speaker": "قاسم",
               "arabic": "أَنْتَ سَمِينٌ جِدّاً",
-              "phonetic": "Anta samīnun jiddan",
               "french": "Tu es très gros."
             },
             {
               "speaker": "سالم",
               "arabic": "وَأَنْتَ نَحِيفٌ جِدّاً",
-              "phonetic": "Wa anta naḥīfun jiddan",
               "french": "Et tu es très maigre."
             }
           ]
         },
         {
-          "id": "5.2",
-          "youtubeUrl": "",
+          "id": "2",
+          "youtubeUrl": "https://www.youtube.com/embed/m9Tw3KpFsWU",
           "lines": [
             {
               "speaker": "المضيفة",
               "arabic": "مَاذَا تَطْلُبِينَ مِنَ الطَّعَامِ ؟",
-              "phonetic": "Mādhā taṭlubīna mina ṭ-ṭaʿām?",
               "french": "Que désirez-vous comme nourriture ?"
             },
             {
               "speaker": "المسافرة",
               "arabic": "بَعْضَ السَّمَكِ وَالأَرُزِّ مِنْ فَضْلِكِ",
-              "phonetic": "Baʿḍa s-samaki wa l-aruzzi min faḍliki",
               "french": "Du poisson et du riz s'il vous plaît."
             },
             {
               "speaker": "المضيفة",
               "arabic": "وَمَاذَا تَطْلُبِينَ مِنَ الشَّرَابِ ؟",
-              "phonetic": "Wa mādhā taṭlubīna mina sh-sharāb?",
               "french": "Et que désirez-vous comme boisson ?"
             },
             {
               "speaker": "المسافرة",
               "arabic": "مَاءً مِنْ فَضْلِكِ",
-              "phonetic": "Mā'an min faḍliki",
               "french": "De l'eau s'il vous plaît."
             },
             {
               "speaker": "المضيفة",
               "arabic": "وَمَاذَا تُفَضِّلِينَ مِنَ الْفَاكِهَةِ ؟",
-              "phonetic": "Wa mādhā tufaḍḍilīna mina l-fākihah?",
               "french": "Et que préférez-vous comme fruits ?"
             },
             {
               "speaker": "المسافرة",
               "arabic": "التَّمْرَ أَوِ الْعِنَبَ",
-              "phonetic": "At-tamra awi l-ʿinab",
               "french": "Des dattes ou du raisin."
             },
             {
               "speaker": "المضيفة",
               "arabic": "هَلْ تَشْرَبِينَ الشَّايَ ؟",
-              "phonetic": "Hal tashrabīna sh-shāy?",
               "french": "Buvez-vous du thé ?"
             },
             {
               "speaker": "المسافرة",
               "arabic": "لا، أُفَضِّلُ الْقَهْوَةَ",
-              "phonetic": "Lā, ufaḍḍilu l-qahwah",
               "french": "Non, je préfère le café."
             },
             {
               "speaker": "المضيفة",
               "arabic": "الْقَهْوَةَ بِالْحَلِيبِ ؟",
-              "phonetic": "Al-qahwata bi-l-ḥalīb?",
               "french": "Du café au lait ?"
             },
             {
               "speaker": "المسافرة",
               "arabic": "نَعَمْ، الْقَهْوَةَ بِالْحَلِيبِ",
-              "phonetic": "Naʿam, al-qahwata bi-l-ḥalīb",
               "french": "Oui, du café au lait."
             },
             {
               "speaker": "المضيفة",
               "arabic": "هَلْ تُرِيدِينَ شَيْئاً آخَرَ ؟",
-              "phonetic": "Hal turīdīna shay'an ākhar?",
               "french": "Voulez-vous autre chose ?"
             },
             {
               "speaker": "المسافرة",
               "arabic": "لا، وَشُكْراً",
-              "phonetic": "Lā, wa shukran",
               "french": "Non, merci."
             },
             {
               "speaker": "المضيفة",
               "arabic": "عَفْواً",
-              "phonetic": "ʿAfwan",
               "french": "Je vous en prie."
             }
           ]
         },
         {
-          "id": "5.3",
-          "youtubeUrl": "",
+          "id": "3",
+          "youtubeUrl": "https://www.youtube.com/embed/BRh81_OdaJU",
           "lines": [
             {
               "speaker": "الزوج",
               "arabic": "السَّلامُ عَلَيْكُم",
-              "phonetic": "As-salāmu ʿalaykum",
               "french": "Que la paix soit sur vous."
             },
             {
               "speaker": "الزوجة",
               "arabic": "وَعَلَيْكُمُ السَّلام",
-              "phonetic": "Wa ʿalaykumu s-salām",
               "french": "Et sur vous la paix."
             },
             {
               "speaker": "الزوج",
               "arabic": "أَنَا جَوْعَانٌ جِدّاً",
-              "phonetic": "Ana jawʿānun jiddan",
               "french": "J'ai très faim."
             },
             {
               "speaker": "الزوجة",
               "arabic": "الْغَدَاءُ عَلَى الْمَائِدَةِ",
-              "phonetic": "Al-ghadā'u ʿalā l-mā'idah",
               "french": "Le déjeuner est sur la table."
             },
             {
               "speaker": "الزوج",
-              "arabic": "مَا هَذَا ؟! سَمَكٌ وَلَحْمٌ وَدَجَاجٌ وَأَرُزٌّ وَسَلَطَةٌ وَفَاكِهَةٌ !",
-              "phonetic": "Mā hādhā?! Samak wa laḥm wa dajāj wa aruz wa salaṭah wa fākihah!",
-              "french": "Qu'est-ce que c'est ?! Poisson, viande, poulet, riz, salade et fruits !"
-            },
-            {
-              "speaker": "الزوج",
-              "arabic": "هَذَا كَثِيرٌ جِدّاً",
-              "phonetic": "Hādhā kathīrun jiddan",
-              "french": "C'est énormément (trop)."
+              "arabic": "مَا هَذَا ؟! سَمَكٌ وَلَحْمٌ وَدَجَاجٌ وَأَرُزٌّ وَسَلَطَةٌ وَفَاكِهَةٌ !\nهَذَا كَثِيرٌ جِدّاً",
+              "french": "Qu'est-ce que c'est ?! Poisson, viande, poulet, riz, salade et fruits ! C'est énormément (trop)."
             },
             {
               "speaker": "الزوجة",
               "arabic": "لا تَأْكُلْ ... لا تَأْكُلْ ... اجْلِسْ",
-              "phonetic": "Lā ta'kul... Lā ta'kul... Ijlis",
               "french": "Ne mange pas... Ne mange pas... Assieds-toi."
             },
             {
               "speaker": "الزوج",
               "arabic": "لِمَاذَا ؟ أَنَا جَوْعَانٌ",
-              "phonetic": "Limādhā? Ana jawʿān",
               "french": "Pourquoi ? J'ai faim."
             },
             {
               "speaker": "الزوجة",
               "arabic": "لَدَيْنَا ضُيُوفٌ",
-              "phonetic": "Ladaynā ḍuyūf",
               "french": "Nous avons des invités."
             },
             {
               "speaker": "الزوج",
               "arabic": "لَدَيْنَا ضُيُوفٌ ! مَنْ ؟!",
-              "phonetic": "Ladaynā ḍuyūf! Man?!",
               "french": "Nous avons des invités ! Qui ?!"
             },
             {
               "speaker": "الزوجة",
               "arabic": "وَالِدِي وَوَالِدَتِي وَأَخِي",
-              "phonetic": "Wālidī wa wālidatī wa akhī",
               "french": "Mon père, ma mère et mon frère."
             },
             {
               "speaker": "الزوج",
               "arabic": "أَيْنَ الضُّيُوفُ ؟",
-              "phonetic": "Ayna ḍ-ḍuyūf?",
               "french": "Où sont les invités ?"
             },
             {
               "speaker": "الزوجة",
               "arabic": "فِي غُرْفَةِ الْجُلُوسِ",
-              "phonetic": "Fī ghurfati l-julūs",
               "french": "Dans le salon."
             }
           ]
@@ -1211,241 +1126,184 @@
       "titleFr": "La Prière",
       "dialogues": [
         {
-          "id": "6.1",
-          "youtubeUrl": "",
+          "id": "1",
+          "youtubeUrl": "https://www.youtube.com/embed/WfyZ9kge4r4",
           "lines": [
             {
               "speaker": "مصطفى",
               "arabic": "أَيْنَ تُصَلِّي الصَّلَوَاتِ الْخَمْسَ ؟",
-              "phonetic": "Ayna tuṣallī ṣ-ṣalawāti l-khams?",
               "french": "Où pries-tu les cinq prières ?"
             },
             {
               "speaker": "قصي",
               "arabic": "أُصَلِّي الظُّهْرَ وَالْعَصْرَ وَالْمَغْرِبَ وَالْعِشَاءَ فِي مَسْجِدِ بِلال",
-              "phonetic": "Uṣallī ẓ-Ẓuhr wa l-ʿAṣr wa l-Maghrib wa l-ʿIshā' fī masjidi Bilāl",
               "french": "Je prie le Dhuhr, le Asr, le Maghrib et l'Isha à la mosquée Bilal."
             },
             {
               "speaker": "مصطفى",
               "arabic": "وَأَيْنَ تُصَلِّي الْفَجْرَ ؟",
-              "phonetic": "Wa ayna tuṣallī l-Fajr?",
               "french": "Et où pries-tu le Fajr ?"
             },
             {
               "speaker": "قصي",
               "arabic": "أُصَلِّي الْفَجْرَ فِي الْبَيْتِ",
-              "phonetic": "Uṣallī l-Fajra fī l-bayt",
               "french": "Je prie le Fajr à la maison."
             },
             {
               "speaker": "مصطفى",
               "arabic": "لِمَاذَا تُصَلِّي الْفَجْرَ فِي الْبَيْتِ ؟",
-              "phonetic": "Limādhā tuṣallī l-Fajra fī l-bayt?",
               "french": "Pourquoi pries-tu le Fajr à la maison ?"
             },
             {
               "speaker": "قصي",
               "arabic": "لا أَسْمَعُ الأَذَانَ",
-              "phonetic": "Lā asmaʿu l-adhān",
               "french": "Je n'entends pas l'appel à la prière."
             },
             {
               "speaker": "مصطفى",
               "arabic": "هَلْ تَسْتَيْقِظُ مُتَأَخِّراً ؟",
-              "phonetic": "Hal tastayqiẓu muta'akhkhiran?",
               "french": "Te réveilles-tu tard ?"
             },
             {
               "speaker": "قصي",
               "arabic": "نَعَمْ، بَعْدَ صَلاةِ الْفَجْرِ",
-              "phonetic": "Naʿam, baʿda ṣalāti l-Fajr",
               "french": "Oui, après la prière du Fajr."
             },
             {
               "speaker": "مصطفى",
               "arabic": "اسْتَيْقِظْ مُبَكِّراً",
-              "phonetic": "Istayqiẓ mubakkiran",
               "french": "Réveille-toi tôt !"
             },
             {
               "speaker": "قصي",
               "arabic": "لا أَسْتَطِيعُ، أَعْمَلُ فِي اللَّيْلِ",
-              "phonetic": "Lā astaṭīʿ, aʿmalu fī l-layl",
               "french": "Je ne peux pas, je travaille la nuit."
             },
             {
               "speaker": "مصطفى",
               "arabic": "ضَعِ الْمُنَبِّهَ بِجَانِبِكَ",
-              "phonetic": "Ḍaʿi l-munabbiha bi-jānibik",
               "french": "Mets le réveil à côté de toi."
             },
             {
               "speaker": "قصي",
               "arabic": "هَذِهِ فِكْرَةٌ طَيِّبَةٌ، جَزَاكَ اللهُ خَيْراً",
-              "phonetic": "Hādhihi fikratun ṭayyibah, jazāka llāhu khayran",
               "french": "C'est une bonne idée, qu'Allah te récompense."
             }
           ]
         },
         {
-          "id": "6.2",
-          "youtubeUrl": "",
+          "id": "2",
+          "youtubeUrl": "https://www.youtube.com/embed/lvz5bmdtMRo",
           "lines": [
             {
               "speaker": "عصام",
               "arabic": "السَّلامُ عَلَيْكُم",
-              "phonetic": "As-salāmu ʿalaykum",
               "french": "Que la paix soit sur vous."
             },
             {
               "speaker": "صالح",
               "arabic": "وَعَلَيْكُمُ السَّلام",
-              "phonetic": "Wa ʿalaykumu s-salām",
               "french": "Et sur vous la paix."
             },
             {
               "speaker": "عصام",
               "arabic": "أَنَا مُسَافِرٌ إِلَى مَكَّةَ، إِلَى أَيْنَ أَنْتَ مُسَافِرٌ ؟",
-              "phonetic": "Ana musāfirun ilā Makkah, ilā ayna anta musāfir?",
               "french": "Je voyage vers La Mecque, vers où voyages-tu ?"
             },
             {
               "speaker": "صالح",
-              "arabic": "أَنَا مُسَافِرٌ إِلَى الْمَدِينَةِ",
-              "phonetic": "Ana musāfirun ilā l-Madīnah",
-              "french": "Je voyage vers Médine."
+              "arabic": "أَنَا مُسَافِرٌ إِلَى الْمَدِينَةِ\nلِمَاذَا أَنْتَ مُسَافِرٌ إِلَى مَكَّةَ ؟",
+              "french": "Je voyage vers Médine. Pourquoi voyages-tu vers La Mecque ?"
+            },
+            {
+              "speaker": "عصام",
+              "arabic": "لِلصَّلاةِ فِي الْمَسْجِدِ الْحَرَامِ\nوَلِمَاذَا أَنْتَ مُسَافِرٌ إِلَى الْمَدِينَةِ ؟",
+              "french": "Pour prier dans la Mosquée Sacrée. Et pourquoi voyages-tu vers Médine ?"
             },
             {
               "speaker": "صالح",
-              "arabic": "لِمَاذَا أَنْتَ مُسَافِرٌ إِلَى مَكَّةَ ؟",
-              "phonetic": "Limādhā anta musāfirun ilā Makkah?",
-              "french": "Pourquoi voyages-tu vers La Mecque ?"
+              "arabic": "لِلصَّلاةِ فِي الْمَسْجِدِ النَّبَوِيِّ\nأَيْنَ سَتُصَلِّي الْجُمُعَةَ ؟",
+              "french": "Pour prier dans la Mosquée du Prophète. Où prieras-tu le Vendredi ?"
             },
             {
               "speaker": "عصام",
-              "arabic": "لِلصَّلاةِ فِي الْمَسْجِدِ الْحَرَامِ",
-              "phonetic": "Li-ṣ-ṣalāti fī l-Masjidi l-Ḥarām",
-              "french": "Pour prier dans la Mosquée Sacrée."
-            },
-            {
-              "speaker": "عصام",
-              "arabic": "وَلِمَاذَا أَنْتَ مُسَافِرٌ إِلَى الْمَدِينَةِ ؟",
-              "phonetic": "Wa limādhā anta musāfirun ilā l-Madīnah?",
-              "french": "Et pourquoi voyages-tu vers Médine ?"
-            },
-            {
-              "speaker": "صالح",
-              "arabic": "لِلصَّلاةِ فِي الْمَسْجِدِ النَّبَوِيِّ",
-              "phonetic": "Li-ṣ-ṣalāti fī l-Masjidi n-Nabawī",
-              "french": "Pour prier dans la Mosquée du Prophète."
-            },
-            {
-              "speaker": "صالح",
-              "arabic": "أَيْنَ سَتُصَلِّي الْجُمُعَةَ ؟",
-              "phonetic": "Ayna satuṣallī l-Jumuʿah?",
-              "french": "Où prieras-tu le Vendredi ?"
-            },
-            {
-              "speaker": "عصام",
-              "arabic": "فِي الْمَسْجِدِ الْحَرَامِ إِنْ شَاءَ الله",
-              "phonetic": "Fī l-Masjidi l-Ḥarām in shā'a llāh",
-              "french": "À la Mosquée Sacrée, si Dieu le veut."
-            },
-            {
-              "speaker": "عصام",
-              "arabic": "وَأَيْنَ سَتُصَلِّي الْجُمُعَةَ ؟",
-              "phonetic": "Wa ayna satuṣallī l-Jumuʿah?",
-              "french": "Et où prieras-tu le Vendredi ?"
+              "arabic": "فِي الْمَسْجِدِ الْحَرَامِ إِنْ شَاءَ الله\nوَأَيْنَ سَتُصَلِّي الْجُمُعَةَ ؟",
+              "french": "À la Mosquée Sacrée, si Dieu le veut. Et où prieras-tu le Vendredi ?"
             },
             {
               "speaker": "صالح",
               "arabic": "فِي الْمَسْجِدِ النَّبَوِيِّ إِنْ شَاءَ الله",
-              "phonetic": "Fī l-Masjidi n-Nabawī in shā'a llāh",
               "french": "À la Mosquée du Prophète, si Dieu le veut."
             },
             {
               "speaker": "عصام",
               "arabic": "كَيْفَ سَتُسَافِرُ إِلَى الْمَدِينَةِ ؟",
-              "phonetic": "Kayfa satusāfiru ilā l-Madīnah?",
               "french": "Comment voyageras-tu vers Médine ?"
             },
             {
               "speaker": "صالح",
               "arabic": "أَرْكَبُ الطَّائِرَةَ",
-              "phonetic": "Arkabu ṭ-ṭā'irah",
               "french": "Je prends l'avion."
             }
           ]
         },
         {
-          "id": "6.3",
-          "youtubeUrl": "",
+          "id": "3",
+          "youtubeUrl": "https://www.youtube.com/embed/7qxWQjLsjHY",
           "lines": [
             {
               "speaker": "صادق",
               "arabic": "هَذَا أَذَانُ الْعَصْرِ",
-              "phonetic": "Hādhā adhānu l-ʿAṣr",
               "french": "C'est l'appel à la prière du Asr."
             },
             {
               "speaker": "صابر",
               "arabic": "هَيَّا بِنَا إِلَى الْمَسْجِدِ",
-              "phonetic": "Hayyā binā ilā l-masjid",
               "french": "Allons à la mosquée."
             },
             {
               "speaker": "صادق",
               "arabic": "أَنَا أُصَلِّي فِي الْبَيْتِ",
-              "phonetic": "Ana uṣallī fī l-bayt",
               "french": "Moi, je prie à la maison."
             },
             {
               "speaker": "صابر",
               "arabic": "الصَّلاةُ فِي الْمَسْجِدِ أَفْضَلُ",
-              "phonetic": "Aṣ-ṣalātu fī l-masjidi afḍal",
               "french": "La prière à la mosquée est meilleure."
             },
             {
               "speaker": "صادق",
               "arabic": "الْمَسْجِدُ بَعِيدٌ",
-              "phonetic": "Al-masjidu baʿīd",
               "french": "La mosquée est loin."
             },
             {
               "speaker": "صابر",
               "arabic": "الْمَسْجِدُ قَرِيبٌ. هَلْ أَنْتَ مَرِيضٌ ؟",
-              "phonetic": "Al-masjidu qarīb. Hal anta marīḍ?",
               "french": "La mosquée est proche. Es-tu malade ?"
             },
             {
               "speaker": "صادق",
               "arabic": "لا، أَنَا بِخَيْرٍ",
-              "phonetic": "Lā, ana bi-khayr",
               "french": "Non, je vais bien."
             },
             {
               "speaker": "صابر",
               "arabic": "أَنْتَ كَسْلانُ",
-              "phonetic": "Anta kaslān",
               "french": "Tu es paresseux."
             },
             {
               "speaker": "صادق",
               "arabic": "هَذَا صَحِيحٌ. آسِفٌ",
-              "phonetic": "Hādhā ṣaḥīḥ. Āsif",
               "french": "C'est vrai. Désolé."
             },
             {
               "speaker": "صابر",
               "arabic": "أَنَا ذَاهِبٌ إِلَى الْمَسْجِدِ",
-              "phonetic": "Ana dhāhibun ilā l-masjid",
               "french": "Moi, je vais à la mosquée."
             },
             {
               "speaker": "صادق",
               "arabic": "انْتَظِرْ، أَنَا ذَاهِبٌ مَعَكَ",
-              "phonetic": "Intaẓir, ana dhāhibun maʿak",
               "french": "Attends, je viens avec toi."
             }
           ]
@@ -1458,265 +1316,209 @@
       "titleFr": "Les Études",
       "dialogues": [
         {
-          "id": "7.1",
-          "youtubeUrl": "",
+          "id": "1",
+          "youtubeUrl": "https://www.youtube.com/embed/f3owgXyjLDw",
           "lines": [
             {
               "speaker": "غانم",
               "arabic": "انْظُرْ إِلَى اللَّوْحَةِ، اقْرَأِ الْجَدْوَلَ الدِّرَاسِيَّ",
-              "phonetic": "Unẓur ilā l-lawḥah, iqra'i l-jadwala d-dirāsiyy",
               "french": "Regarde le tableau, lis l'emploi du temps."
             },
             {
               "speaker": "غالب",
               "arabic": "الدِّرَاسَةُ خَمْسَةُ أَيَّامٍ فِي الأُسْبُوعِ",
-              "phonetic": "Ad-dirāsatu khamsatu ayyāmin fī l-usbūʿ",
               "french": "Les cours sont cinq jours par semaine."
             },
             {
               "speaker": "غانم",
               "arabic": "نَعَمْ، يَوْمُ السَّبْتِ، وَيَوْمُ الأَحَدِ، وَيَوْمُ الاثْنَيْنِ، وَيَوْمُ الثُّلاثَاءِ، وَيَوْمُ الأَرْبِعَاءِ",
-              "phonetic": "Naʿam, yawmu s-sabt, wa yawmu l-aḥad...",
               "french": "Oui, samedi, dimanche, lundi, mardi et mercredi."
             },
             {
               "speaker": "غالب",
               "arabic": "الْعُطْلَةُ يَوْمُ الْخَمِيسِ وَيَوْمُ الْجُمُعَةِ",
-              "phonetic": "Al-ʿuṭlatu yawmu l-khamīs wa yawmu l-jumuʿah",
               "french": "Le congé est jeudi et vendredi."
             },
             {
               "speaker": "غانم",
               "arabic": "اكْتُبِ الْمَوَادَّ الدِّرَاسِيَّةَ",
-              "phonetic": "Uktubi l-mawādda d-dirāsiyyah",
               "french": "Écris les matières scolaires."
             },
             {
               "speaker": "غالب",
               "arabic": "الثَّقَافَةُ الإِسْلامِيَّةُ، وَاللُّغَةُ الْعَرَبِيَّةُ، وَالرِّيَاضِيَّاتُ، وَالْعُلُومُ، وَالْحَاسُوبُ",
-              "phonetic": "Ath-thaqāfatu l-islāmiyyah, wa l-lughatu l-ʿarabiyyah...",
               "french": "La culture islamique, l'arabe, les maths, les sciences, l'informatique."
             },
             {
               "speaker": "غانم",
               "arabic": "مَتَى تَبْدَأُ الاخْتِبَارَاتُ ؟",
-              "phonetic": "Matā tabda'u l-ikhtibārāt?",
               "french": "Quand commencent les examens ?"
             },
             {
               "speaker": "غالب",
               "arabic": "فِي شَهْرِ شَعْبَانَ",
-              "phonetic": "Fī shahri Shaʿbān",
               "french": "Au mois de Cha'ban."
             },
             {
               "speaker": "غانم",
               "arabic": "وَمَتَى يَنْ تَهِي الْعَامُ الدِّرَاسِيُّ ؟",
-              "phonetic": "Wa matā yantahī l-ʿāmu d-dirāsiyy?",
               "french": "Et quand finit l'année scolaire ?"
             },
             {
               "speaker": "غالب",
               "arabic": "فِي شَهْرِ رَمَضَانَ",
-              "phonetic": "Fī shahri Ramaḍān",
               "french": "Au mois de Ramadan."
             },
             {
               "speaker": "غانم",
               "arabic": "الْعُطْلَةُ ثَلاثَةُ أَشْهُرٍ",
-              "phonetic": "Al-ʿuṭlatu thalāthatu ashhur",
               "french": "Les vacances durent trois mois."
             },
             {
               "speaker": "غالب",
-              "arabic": "الْحَمْدُ للهِ، الْعُطْلَةُ طَوِيلَةٌ",
-              "phonetic": "Al-ḥamdu lillāh, al-ʿuṭlatu ṭawīlah",
-              "french": "Louange à Dieu, les vacances sont longues."
-            },
-            {
-              "speaker": "غالب",
-              "arabic": "بَدَأَتِ الْحِصَّةُ، وَجَاءَ الْمُعَلِّمُ",
-              "phonetic": "Bada'ati l-ḥiṣṣah, wa jā'a l-muʿallim",
-              "french": "Le cours a commencé, et le professeur est arrivé."
-            },
-            {
-              "speaker": "غالب",
-              "arabic": "هَيَّا بِنَا إِلَى الصَّفِّ",
-              "phonetic": "Hayyā binā ilā ṣ-ṣaff",
-              "french": "Allons en classe."
+              "arabic": "الْحَمْدُ للهِ، الْعُطْلَةُ طَوِيلَةٌ\nبَدَأَتِ الْحِصَّةُ، وَجَاءَ الْمُعَلِّمُ\nهَيَّا بِنَا إِلَى الصَّفِّ",
+              "french": "Louange à Dieu, les vacances sont longues. Le cours a commencé, et le professeur est arrivé. Allons en classe."
             },
             {
               "speaker": "غانم",
               "arabic": "هَيَّا بِنَا",
-              "phonetic": "Hayyā binā",
               "french": "Allons-y."
             }
           ]
         },
         {
-          "id": "7.2",
-          "youtubeUrl": "",
+          "id": "2",
+          "youtubeUrl": "https://www.youtube.com/embed/NY75tONaxs0",
           "lines": [
             {
               "speaker": "ندى",
               "arabic": "السَّلامُ عَلَيْكُم",
-              "phonetic": "As-salāmu ʿalaykum",
               "french": "Que la paix soit sur vous."
             },
             {
               "speaker": "إلهام",
               "arabic": "وَعَلَيْكُمُ السَّلام",
-              "phonetic": "Wa ʿalaykumu s-salām",
               "french": "Et sur vous la paix."
             },
             {
               "speaker": "ندى",
               "arabic": "اسْمِي نَدَى، أَنَا سُورِيَّةٌ",
-              "phonetic": "Ismī Nadā, ana Sūriyyah",
               "french": "Je m'appelle Nada, je suis Syrienne."
             },
             {
               "speaker": "إلهام",
               "arabic": "اسْمِي إِلْهَام، أَنَا سُعُودِيَّةٌ",
-              "phonetic": "Ismī Ilhām, ana Suʿūdiyyah",
               "french": "Je m'appelle Ilham, je suis Saoudienne."
             },
             {
               "speaker": "ندى",
               "arabic": "أَنَا طَالِبَةٌ فِي جَامِعَةِ دِمَشْقَ",
-              "phonetic": "Ana ṭālibah fī jāmiʿati Dimashq",
               "french": "Je suis étudiante à l'Université de Damas."
             },
             {
               "speaker": "إلهام",
               "arabic": "أَنَا طَالِبَةٌ فِي جَامِعَةِ أُمِّ الْقُرَى",
-              "phonetic": "Ana ṭālibah fī jāmiʿati Umm al-Qurā",
               "french": "Je suis étudiante à l'Université Umm Al-Qura."
             },
             {
               "speaker": "ندى",
               "arabic": "فِي أَيِّ كُلِّيَّةٍ تَدْرُسِينَ ؟",
-              "phonetic": "Fī ayyi kulliyyatin tadrusīn?",
               "french": "Dans quelle faculté étudies-tu ?"
             },
             {
               "speaker": "إلهام",
-              "arabic": "أَدْرُسُ فِي كُلِّيَّةِ التَّرْبِيَةِ",
-              "phonetic": "Adrusu fī kulliyyati t-tarbiyah",
-              "french": "J'étudie à la faculté de pédagogie."
-            },
-            {
-              "speaker": "إلهام",
-              "arabic": "وَفِي أَيِّ كُلِّيَّةٍ تَدْرُسِينَ أَنْتِ ؟",
-              "phonetic": "Wa fī ayyi kulliyyatin tadrusīna anti?",
-              "french": "Et dans quelle faculté étudies-tu toi ?"
+              "arabic": "أَدْرُسُ فِي كُلِّيَّةِ التَّرْبِيَةِ\nوَفِي أَيِّ كُلِّيَّةٍ تَدْرُسِينَ أَنْتِ ؟",
+              "french": "J'étudie à la faculté de pédagogie. Et dans quelle faculté étudies-tu toi ?"
             },
             {
               "speaker": "ندى",
               "arabic": "أَدْرُسُ فِي كُلِّيَّةِ الطِّبِّ",
-              "phonetic": "Adrusu fī kulliyyati ṭ-ṭibb",
               "french": "J'étudie à la faculté de médecine."
             },
             {
               "speaker": "إلهام",
               "arabic": "سَأَكُونُ مُدَرِّسَةً إِنْ شَاءَ الله",
-              "phonetic": "Sa-akūnu mudarrisah in shā'a llāh",
               "french": "Je serai enseignante, inchallah."
             },
             {
               "speaker": "ندى",
               "arabic": "وَسَأَكُونُ طَبِيبَةً إِنْ شَاءَ الله",
-              "phonetic": "Wa sa-akūnu ṭabībah in shā'a llāh",
               "french": "Et je serai médecin, inchallah."
             }
           ]
         },
         {
-          "id": "7.3",
-          "youtubeUrl": "",
+          "id": "3",
+          "youtubeUrl": "https://www.youtube.com/embed/NY75tONaxs0",
           "lines": [
             {
               "speaker": "قاسم",
               "arabic": "أَيْنَ تَذْهَبُ يَا غَسَّانُ ؟",
-              "phonetic": "Ayna tadh-habu yā Ghassān?",
               "french": "Où vas-tu Ghassan ?"
             },
             {
               "speaker": "غسان",
               "arabic": "أَذْهَبُ إِلَى الْمَدْرَسَةِ",
-              "phonetic": "Adh-habu ilā l-madrasah",
               "french": "Je vais à l'école."
             },
             {
               "speaker": "قاسم",
               "arabic": "الْوَقْتُ مُبَكِّرٌ. السَّاعَةُ الآنَ السَّادِسَةُ صَبَاحاً",
-              "phonetic": "Al-waqtu mubakkir. As-sāʿatu l-āna s-sādisatu ṣabāḥan",
               "french": "Il est tôt. Il est maintenant six heures du matin."
             },
             {
               "speaker": "غسان",
               "arabic": "الْمَدْرَسَةُ بَعِيدَةٌ عَنِ الْبَيْتِ",
-              "phonetic": "Al-madrasatu baʿīdatun ʿani l-bayt",
               "french": "L'école est loin de la maison."
             },
             {
               "speaker": "قاسم",
               "arabic": "مَتَى يَبْدَأُ الْيَوْمُ الدِّرَاسِيُّ ؟",
-              "phonetic": "Matā yabda'u l-yawmu d-dirāsiyy?",
               "french": "Quand commence la journée scolaire ?"
             },
             {
               "speaker": "غسان",
               "arabic": "يَبْدَأُ السَّاعَةَ السَّابِعَةَ صَبَاحاً",
-              "phonetic": "Yabda'u s-sāʿata s-sābiʿata ṣabāḥan",
               "french": "Elle commence à sept heures du matin."
             },
             {
               "speaker": "قاسم",
               "arabic": "هَلْ تَذْهَبُ بِالْحَافِلَةِ ؟",
-              "phonetic": "Hal tadh-habu bi-l-ḥāfilah?",
               "french": "Y vas-tu en bus ?"
             },
             {
               "speaker": "غسان",
               "arabic": "لا، أَذْهَبُ بِالسَّيَّارَةِ",
-              "phonetic": "Lā, adh-habu bi-s-sayyārah",
               "french": "Non, j'y vais en voiture."
             },
             {
               "speaker": "قاسم",
               "arabic": "مَتَى يَنْ تَهِي الْيَوْمُ الدِّرَاسِيُّ ؟",
-              "phonetic": "Matā yantahī l-yawmu d-dirāsiyy?",
               "french": "Quand finit la journée scolaire ?"
             },
             {
               "speaker": "غسان",
               "arabic": "يَنْ تَهِي السَّاعَةَ الْوَاحِدَةَ ظُهْراً",
-              "phonetic": "Yantahī s-sāʿata l-wāḥidata ẓuhran",
               "french": "Elle finit à une heure de l'après-midi."
             },
             {
               "speaker": "قاسم",
               "arabic": "كَمْ حِصَّةً تَدْرُسُ فِي الْيَوْمِ ؟",
-              "phonetic": "Kam ḥiṣṣatan tadrusu fī l-yawm?",
               "french": "Combien de cours étudies-tu par jour ?"
             },
             {
               "speaker": "غسان",
               "arabic": "أَدْرُسُ سِتَّ حِصَصٍ فِي الْيَوْمِ",
-              "phonetic": "Adrusu sitta ḥiṣaṣin fī l-yawm",
               "french": "J'étudie six cours par jour."
             },
             {
               "speaker": "قاسم",
               "arabic": "مَاذَا تَفْعَلُ فِي الاسْتِرَاحَةِ ؟",
-              "phonetic": "Mādhā tafʿalu fī l-istirāḥah?",
               "french": "Que fais-tu pendant la récréation ?"
             },
             {
               "speaker": "غسان",
               "arabic": "أَذْهَبُ إِلَى الْمَكْتَبَةِ أَوْ إِلَى الْمُخْتَبَرِ",
-              "phonetic": "Adh-habu ilā l-maktabah aw ilā l-mukhtabar",
               "french": "Je vais à la bibliothèque ou au laboratoire."
             }
           ]
@@ -1729,247 +1531,169 @@
       "titleFr": "Le Travail",
       "dialogues": [
         {
-          "id": "8.1",
-          "youtubeUrl": "",
+          "id": "1",
+          "youtubeUrl": "https://www.youtube.com/embed/CxgCg-nRS54",
           "lines": [
             {
               "speaker": "عثمان",
               "arabic": "أَعْمَلُ طَبِيباً، مَاذَا تَعْمَلُ أَنْتَ ؟",
-              "phonetic": "Aʿmalu ṭabīban, mādhā taʿmalu anta?",
               "french": "Je travaille comme médecin, que fais-tu comme travail ?"
             },
             {
               "speaker": "علي",
               "arabic": "أَعْمَلُ مُهَنْدِساً",
-              "phonetic": "Aʿmalu muhandisan",
               "french": "Je travaille comme ingénieur."
             },
             {
               "speaker": "عثمان",
               "arabic": "أَيْنَ تَعْمَلُ ؟",
-              "phonetic": "Ayna taʿmalu?",
               "french": "Où travailles-tu ?"
             },
             {
               "speaker": "علي",
               "arabic": "أَعْمَلُ فِي شَرِكَةٍ، وَأَيْنَ تَعْمَلُ أَنْتَ ؟",
-              "phonetic": "Aʿmalu fī sharikah, wa ayna taʿmalu anta?",
               "french": "Je travaille dans une entreprise, et où travailles-tu toi ?"
             },
             {
               "speaker": "عثمان",
               "arabic": "أَعْمَلُ فِي الْمُسْتَشْفَى",
-              "phonetic": "Aʿmalu fī l-mustashfā",
               "french": "Je travaille à l'hôpital."
             },
             {
               "speaker": "علي",
               "arabic": "كَمْ سَاعَةً تَعْمَلُ فِي الْيَوْمِ ؟",
-              "phonetic": "Kam sāʿatan taʿmalu fī l-yawm?",
               "french": "Combien d'heures travailles-tu par jour ?"
             },
             {
               "speaker": "عثمان",
-              "arabic": "أَعْمَلُ ثَمَانِيَ سَاعَاتٍ فِي الْيَوْمِ",
-              "phonetic": "Aʿmalu thamāniya sāʿātin fī l-yawm",
-              "french": "Je travaille huit heures par jour."
-            },
-            {
-              "speaker": "عثمان",
-              "arabic": "وَكَمْ سَاعَةً تَعْمَلُ أَنْتَ ؟",
-              "phonetic": "Wa kam sāʿatan taʿmalu anta?",
-              "french": "Et combien d'heures travailles-tu toi ?"
+              "arabic": "أَعْمَلُ ثَمَانِيَ سَاعَاتٍ فِي الْيَوْمِ\nوَكَمْ سَاعَةً تَعْمَلُ أَنْتَ ؟",
+              "french": "Je travaille huit heures par jour. Et combien d'heures travailles-tu toi ?"
             },
             {
               "speaker": "علي",
               "arabic": "أَعْمَلُ سَبْعَ سَاعَاتٍ",
-              "phonetic": "Aʿmalu sabʿa sāʿāt",
               "french": "Je travaille sept heures."
             },
             {
               "speaker": "عثمان",
               "arabic": "هَلْ تُحِبُّ عَمَلَكَ ؟",
-              "phonetic": "Hal tuḥibbu ʿamalak?",
               "french": "Aimes-tu ton travail ?"
             },
             {
               "speaker": "علي",
               "arabic": "نَعَمْ، أُحِبُّ عَمَلِي",
-              "phonetic": "Naʿam, uḥibbu ʿamalī",
               "french": "Oui, j'aime mon travail."
             },
             {
               "speaker": "عثمان",
               "arabic": "وَأَنَا أُحِبُّ عَمَلِي أَيْضاً",
-              "phonetic": "Wa ana uḥibbu ʿamalī ayḍan",
               "french": "Et moi j'aime mon travail aussi."
             }
           ]
         },
         {
-          "id": "8.2",
-          "youtubeUrl": "",
+          "id": "2",
+          "youtubeUrl": "https://www.youtube.com/embed/CxgCg-nRS54",
           "lines": [
             {
               "speaker": "الطالب 1",
               "arabic": "مَاذَا سَنَعْمَلُ بَعْدَ الدِّرَاسَةِ ؟",
-              "phonetic": "Mādhā sanaʿmalu baʿda d-dirāsah?",
               "french": "Que ferons-nous après les études ?"
             },
             {
               "speaker": "الطالب 2",
-              "arabic": "أَنَا أَدْرُسُ الطِّبَّ فِي كُلِّيَّةِ الطِّبِّ",
-              "phonetic": "Ana adrusu ṭ-ṭibba fī kulliyyati ṭ-ṭibb",
-              "french": "J'étudie la médecine à la faculté de médecine."
-            },
-            {
-              "speaker": "الطالب 2",
-              "arabic": "سَأَعْمَلُ طَبِيباً إِنْ شَاءَ الله",
-              "phonetic": "Sa-aʿmalu ṭabīban in shā'a llāh",
-              "french": "Je travaillerai comme médecin, inchallah."
+              "arabic": "أَنَا أَدْرُسُ الطِّبَّ فِي كُلِّيَّةِ الطِّبِّ\nسَأَعْمَلُ طَبِيباً إِنْ شَاءَ الله",
+              "french": "J'étudie la médecine à la faculté de médecine. Je travaillerai comme médecin, inchallah."
             },
             {
               "speaker": "الطالب 3",
-              "arabic": "أَنَا أَدْرُسُ الصَّيْدَلَةَ فِي كُلِّيَّةِ الصَّيْدَلَةِ",
-              "phonetic": "Ana adrusu ṣ-ṣaydalah fī kulliyyati ṣ-ṣaydalah",
-              "french": "J'étudie la pharmacie à la faculté de pharmacie."
-            },
-            {
-              "speaker": "الطالب 3",
-              "arabic": "سَأَعْمَلُ صَيْدَلِيّاً إِنْ شَاءَ الله",
-              "phonetic": "Sa-aʿmalu ṣaydaliyyan in shā'a llāh",
-              "french": "Je travaillerai comme pharmacien, inchallah."
+              "arabic": "أَنَا أَدْرُسُ الصَّيْدَلَةَ فِي كُلِّيَّةِ الصَّيْدَلَةِ\nسَأَعْمَلُ صَيْدَلِيّاً إِنْ شَاءَ الله",
+              "french": "J'étudie la pharmacie à la faculté de pharmacie. Je travaillerai comme pharmacien, inchallah."
             },
             {
               "speaker": "الطالب 4",
-              "arabic": "أَنَا أَدْرُسُ التَّمْرِيضَ فِي كُلِّيَّةِ التَّمْرِيضِ",
-              "phonetic": "Ana adrusu t-tamrīḍ fī kulliyyati t-tamrīḍ",
-              "french": "J'étudie les soins infirmiers à la faculté d'infirmiers."
-            },
-            {
-              "speaker": "الطالب 4",
-              "arabic": "سَأَعْمَلُ مُمَرِّضاً إِنْ شَاءَ الله",
-              "phonetic": "Sa-aʿmalu mumarriḍan in shā'a llāh",
-              "french": "Je travaillerai comme infirmier, inchallah."
+              "arabic": "أَنَا أَدْرُسُ التَّمْرِيضَ فِي كُلِّيَّةِ التَّمْرِيضِ\nسَأَعْمَلُ مُمَرِّضاً إِنْ شَاءَ الله",
+              "french": "J'étudie les soins infirmiers à la faculté d'infirmiers. Je travaillerai comme infirmier, inchallah."
             },
             {
               "speaker": "الطالب 5",
-              "arabic": "أَنَا أَدْرُسُ الْهَنْدَسَةَ فِي كُلِّيَّةِ الْهَنْدَسَةِ",
-              "phonetic": "Ana adrusu l-handasah fī kulliyyati l-handasah",
-              "french": "J'étudie l'ingénierie à la faculté d'ingénierie."
-            },
-            {
-              "speaker": "الطالب 5",
-              "arabic": "سَأَعْمَلُ مُهَنْدِساً إِنْ شَاءَ الله",
-              "phonetic": "Sa-aʿmalu muhandisan in shā'a llāh",
-              "french": "Je travaillerai comme ingénieur, inchallah."
+              "arabic": "أَنَا أَدْرُسُ الْهَنْدَسَةَ فِي كُلِّيَّةِ الْهَنْدَسَةِ\nسَأَعْمَلُ مُهَنْدِساً إِنْ شَاءَ الله",
+              "french": "J'étudie l'ingénierie à la faculté d'ingénierie. Je travaillerai comme ingénieur, inchallah."
             },
             {
               "speaker": "الطالب 6",
-              "arabic": "أَنَا أَدْرُسُ الطَّيَرَانَ فِي كُلِّيَّةِ الطَّيَرَانِ",
-              "phonetic": "Ana adrusu ṭ-ṭayarān fī kulliyyati ṭ-ṭayarān",
-              "french": "J'étudie l'aviation à la faculté d'aviation."
-            },
-            {
-              "speaker": "الطالب 6",
-              "arabic": "سَأَعْمَلُ طَيَّاراً إِنْ شَاءَ الله",
-              "phonetic": "Sa-aʿmalu ṭayyāran in shā'a llāh",
-              "french": "Je travaillerai comme pilote, inchallah."
+              "arabic": "أَنَا أَدْرُسُ الطَّيَرَانَ فِي كُلِّيَّةِ الطَّيَرَانِ\nسَأَعْمَلُ طَيَّاراً إِنْ شَاءَ الله",
+              "french": "J'étudie l'aviation à la faculté d'aviation. Je travaillerai comme pilote, inchallah."
             },
             {
               "speaker": "الطالب 1",
-              "arabic": "أَنَا أَدْرُسُ التَّرْبِيَةَ فِي كُلِّيَّةِ التَّرْبِيَةِ",
-              "phonetic": "Ana adrusu t-tarbiyah fī kulliyyati t-tarbiyah",
-              "french": "J'étudie l'éducation à la faculté de pédagogie."
-            },
-            {
-              "speaker": "الطالب 1",
-              "arabic": "سَأَعْمَلُ مُدَرِّساً إِنْ شَاءَ الله",
-              "phonetic": "Sa-aʿmalu mudarrisan in shā'a llāh",
-              "french": "Je travaillerai comme enseignant, inchallah."
+              "arabic": "أَنَا أَدْرُسُ التَّرْبِيَةَ فِي كُلِّيَّةِ التَّرْبِيَةِ\nسَأَعْمَلُ مُدَرِّساً إِنْ شَاءَ الله",
+              "french": "J'étudie l'éducation à la faculté de pédagogie. Je travaillerai comme enseignant, inchallah."
             }
           ]
         },
         {
-          "id": "8.3",
-          "youtubeUrl": "",
+          "id": "3",
+          "youtubeUrl": "https://www.youtube.com/embed/CxgCg-nRS54",
           "lines": [
             {
               "speaker": "مريم",
               "arabic": "أَنَا مُدَرِّسَةٌ. مَا مِهْنَتُكِ ؟",
-              "phonetic": "Ana mudarrisah. Mā mihnatuki?",
               "french": "Je suis enseignante. Quel est ton métier ?"
             },
             {
               "speaker": "زينب",
               "arabic": "أَنَا مُدَرِّسَةٌ أَيْضاً",
-              "phonetic": "Ana mudarrisah ayḍan",
               "french": "Je suis enseignante aussi."
             },
             {
               "speaker": "مريم",
               "arabic": "فِي أَيِّ مَرْحَلَةٍ تُدَرِّسِينَ ؟",
-              "phonetic": "Fī ayyi marḥalatin tudarrisīn?",
               "french": "Dans quel niveau enseignes-tu ?"
             },
             {
               "speaker": "زينب",
-              "arabic": "أُدَرِّسُ فِي الْمَرْحَلَةِ الابْتِدَائِيَّةِ",
-              "phonetic": "Udarrisu fī l-marḥalati l-ibtidā'iyyah",
-              "french": "J'enseigne au niveau primaire."
-            },
-            {
-              "speaker": "زينب",
-              "arabic": "وَفِي أَيِّ مَرْحَلَةٍ تُدَرِّسِينَ أَنْتِ ؟",
-              "phonetic": "Wa fī ayyi marḥalatin tudarrisīna anti?",
-              "french": "Et dans quel niveau enseignes-tu toi ?"
+              "arabic": "أُدَرِّسُ فِي الْمَرْحَلَةِ الابْتِدَائِيَّةِ\nوَفِي أَيِّ مَرْحَلَةٍ تُدَرِّسِينَ أَنْتِ ؟",
+              "french": "J'enseigne au niveau primaire. Et dans quel niveau enseignes-tu toi ?"
             },
             {
               "speaker": "مريم",
               "arabic": "أُدَرِّسُ فِي الْمَرْحَلَةِ الْمُتَوَسِّطَةِ",
-              "phonetic": "Udarrisu fī l-marḥalati l-mutawassiṭah",
               "french": "J'enseigne au niveau moyen (collège)."
             },
             {
               "speaker": "زينب",
               "arabic": "هَلْ لَكِ أَطْفَالٌ ؟",
-              "phonetic": "Hal laki aṭfāl?",
               "french": "As-tu des enfants ?"
             },
             {
               "speaker": "مريم",
               "arabic": "نَعَمْ، لِي أَطْفَالٌ",
-              "phonetic": "Naʿam, lī aṭfāl",
               "french": "Oui, j'ai des enfants."
             },
             {
               "speaker": "زينب",
               "arabic": "كَمْ طِفْلاً لَكِ ؟",
-              "phonetic": "Kam ṭiflan laki?",
               "french": "Combien d'enfants as-tu ?"
             },
             {
               "speaker": "مريم",
               "arabic": "لِي خَمْسَةُ أَطْفَالٍ",
-              "phonetic": "Lī khamsatu aṭfāl",
               "french": "J'ai cinq enfants."
             },
             {
               "speaker": "زينب",
               "arabic": "هَلْ تُحِبِّينَ عَمَلَكِ ؟",
-              "phonetic": "Hal tuḥibbīna ʿamalaki?",
               "french": "Aimes-tu ton travail ?"
             },
             {
               "speaker": "مريم",
               "arabic": "نَعَمْ، أُحِبُّ عَمَلِي",
-              "phonetic": "Naʿam, uḥibbu ʿamalī",
               "french": "Oui, j'aime mon travail."
             },
             {
               "speaker": "زينب",
               "arabic": "وَأَنَا أُحِبُّ عَمَلِي أَيْضاً",
-              "phonetic": "Wa ana uḥibbu ʿamalī ayḍan",
               "french": "Et moi j'aime mon travail aussi."
             }
           ]
@@ -1982,253 +1706,209 @@
       "titleFr": "Le Shopping",
       "dialogues": [
         {
-          "id": "9.1",
-          "youtubeUrl": "",
+          "id": "1",
+          "youtubeUrl": "https://www.youtube.com/embed/cvZbvvh3EBU",
           "lines": [
             {
               "speaker": "البائع",
               "arabic": "أَهْلاً وسَهْلاً",
-              "phonetic": "Ahlan wa sahlan",
               "french": "Bienvenue."
             },
             {
               "speaker": "الطالب",
               "arabic": "أُرِيدُ مُعْجَماً مِنْ فَضْلِكَ",
-              "phonetic": "Urīdu muʿjaman min faḍlika",
               "french": "Je voudrais un dictionnaire s'il vous plaît."
             },
             {
               "speaker": "البائع",
               "arabic": "أَيَّ مُعْجَمٍ تُرِيدُ ؟",
-              "phonetic": "Ayya muʿjamin turīd?",
               "french": "Quel dictionnaire voulez-vous ?"
             },
             {
               "speaker": "الطالب",
               "arabic": "أُرِيدُ الْمُعْجَمَ العَرَبِيَّ",
-              "phonetic": "Urīdu l-muʿjama l-ʿarabiyy",
               "french": "Je veux le dictionnaire arabe."
             },
             {
               "speaker": "البائع",
-              "arabic": "تَفَضَّلِ المُعْجَمَ العَرَبِيَّ . وماذا تُرِيدُ أَيْضاً ؟",
-              "phonetic": "Tafaḍḍali l-muʿjama l-ʿarabiyy. Wa mādhā turīdu ayḍan?",
+              "arabic": "تَفَضَّلِ المُعْجَمَ العَرَبِيَّ\nوماذا تُرِيدُ أَيْضاً ؟",
               "french": "Voici le dictionnaire arabe. Et que voulez-vous aussi ?"
             },
             {
               "speaker": "الطالب",
               "arabic": "أُريدُ كِتابَ القِرَاءَةِ ، وكِتابَ القَوَاعِدِ",
-              "phonetic": "Urīdu kitāba l-qirā'ah, wa kitāba l-qawāʿid",
               "french": "Je veux le livre de lecture et le livre de grammaire."
             },
             {
               "speaker": "البائع",
               "arabic": "هَذا كِتابُ القِراءَةِ ، وَهَذَا كِتَابُ القَوَاعِدِ",
-              "phonetic": "Hādhā kitābu l-qirā'ah, wa hādhā kitābu l-qawāʿid",
               "french": "Voici le livre de lecture, et voici le livre de grammaire."
             },
             {
               "speaker": "الطالب",
               "arabic": "أُريدُ دَفْتَراً وقَلَماً",
-              "phonetic": "Urīdu daftaran wa qalaman",
               "french": "Je veux un cahier et un stylo."
             },
             {
               "speaker": "البائع",
               "arabic": "تَفَضَّلِ الدَّفْتَرَ والقَلَمَ ، هَلْ تُرِيدُ شَيْئاً آخَرَ ؟",
-              "phonetic": "Tafaḍḍali d-daftar wa l-qalam, hal turīdu shay'an ākhar?",
               "french": "Voici le cahier et le stylo. Voulez-vous autre chose ?"
             },
             {
               "speaker": "الطالب",
               "arabic": "لا ، وشكراً",
-              "phonetic": "Lā, wa shukran",
               "french": "Non, merci."
             },
             {
               "speaker": "البائع",
               "arabic": "المَطْلُوبُ ثَلاثُونَ رِيالاً",
-              "phonetic": "Al-maṭlūbu thalāthūna riyālan",
               "french": "Le total est de trente riyals."
             },
             {
               "speaker": "الطالب",
               "arabic": "ماذا تَقولُ ؟ ثَلاثونَ رِيالاً !",
-              "phonetic": "Mādhā taqūl? Thalāthūna riyālan!",
               "french": "Que dites-vous ? Trente riyals !"
             },
             {
               "speaker": "البائع",
               "arabic": "نَعَمْ ، ثَلاثون ريالاً",
-              "phonetic": "Naʿam, thalāthūna riyālan",
               "french": "Oui, trente riyals."
             },
             {
               "speaker": "الطالب",
               "arabic": "تَفَضَّلْ، هَذِهِ ثَلَاثُونَ رِيالاً",
-              "phonetic": "Tafaḍḍal, hādhihi thalāthūna riyālan",
               "french": "Tenez, voici trente riyals."
             }
           ]
         },
         {
-          "id": "9.2",
-          "youtubeUrl": "",
+          "id": "2",
+          "youtubeUrl": "https://www.youtube.com/embed/cvZbvvh3EBU",
           "lines": [
             {
               "speaker": "البائع",
               "arabic": "مَرْحَباً ، أَيَّ خِدْمَةٍ",
-              "phonetic": "Marḥaban, ayya khidmah",
               "french": "Bonjour (Bienvenue), puis-je vous aider ?"
             },
             {
               "speaker": "المرأة",
               "arabic": "أُريدُ سَمَكاً ولَحْماً ودجاجاً",
-              "phonetic": "Urīdu samakan wa laḥman wa dajājan",
               "french": "Je veux du poisson, de la viande et du poulet."
             },
             {
               "speaker": "البائع",
-              "arabic": "تَفَضَّلِي السَّمَكَ وَاللَّحْمَ وَالدَّجَاجَ . وماذا تريدين أيضاً ؟",
-              "phonetic": "Tafaḍḍalī... Wa mādhā turīdīna ayḍan?",
+              "arabic": "تَفَضَّلِي السَّمَكَ وَاللَّحْمَ وَالدَّجَاجَ\nوماذا تريدين أيضاً ؟",
               "french": "Voici le poisson, la viande et le poulet. Et que voulez-vous aussi ?"
             },
             {
               "speaker": "المرأة",
               "arabic": "أريد خياراً وبَصَلاً وطَماطم",
-              "phonetic": "Urīdu khiyāran wa baṣalan wa ṭamāṭim",
               "french": "Je veux des concombres, des oignons et des tomates."
             },
             {
               "speaker": "البائع",
               "arabic": "تفضّلي الخيار والبَصَلَ والطماطم. وماذا تريدين أيضاً ؟",
-              "phonetic": "Tafaḍḍalī...",
               "french": "Voici les concombres, oignons et tomates. Et que voulez-vous aussi ?"
             },
             {
               "speaker": "المرأة",
               "arabic": "أُريدُ سُكَّراً وشاياً وبُنّاً",
-              "phonetic": "Urīdu sukkaran wa shāyan wa bunnan",
               "french": "Je veux du sucre, du thé et du café (grains/moulu)."
             },
             {
               "speaker": "البائع",
               "arabic": "تَفَضَّلي... هَلْ تُرِيدِينَ شَيْئاً آخَرَ ؟",
-              "phonetic": "Tafaḍḍalī... Hal turīdīna shay'an ākhar?",
               "french": "Voici... Voulez-vous autre chose ?"
             },
             {
               "speaker": "المرأة",
               "arabic": "نَعَمْ ، طَبَقَ بَيْضٍ ، وعُلبَةَ مِلْحٍ",
-              "phonetic": "Naʿam, ṭabaqa bayḍin wa ʿulbata milḥ",
               "french": "Oui, un plateau d'œufs et une boîte de sel."
             },
             {
               "speaker": "البائع",
               "arabic": "هَذا طَبَقُ البَيْضِ، وَهَذِهِ عُلْبَةُ المِلْحِ. المَطْلُوبُ ثَمانونَ ديناراً",
-              "phonetic": "...Al-maṭlūbu thamānūna dīnāran",
               "french": "Voici... Le total est de quatre-vingts dinars."
             },
             {
               "speaker": "المرأة",
               "arabic": "تَفَضَّلْ ، هَذِهِ ثَمانون ديناراً",
-              "phonetic": "Tafaḍḍal, hādhihi thamānūna dīnāran",
               "french": "Tenez, voici quatre-vingts dinars."
             }
           ]
         },
         {
-          "id": "9.3",
-          "youtubeUrl": "",
+          "id": "3",
+          "youtubeUrl": "https://www.youtube.com/embed/cvZbvvh3EBU",
           "lines": [
             {
               "speaker": "البائع",
               "arabic": "تَفَضَّلْ ، أَيَّ خِدْمَة",
-              "phonetic": "Tafaḍḍal, ayya khidmah",
               "french": "Entrez, puis-je vous aider ?"
             },
             {
               "speaker": "المشتري",
               "arabic": "أُرِيدُ قَميصاً لَو سَمَحْتَ",
-              "phonetic": "Urīdu qamīṣan law samaḥt",
               "french": "Je voudrais une chemise s'il vous plaît."
             },
             {
               "speaker": "البائع",
-              "arabic": "تَفَضَّلْ هُنا ، هذا قِسْمُ القُمْصَانِ",
-              "phonetic": "Tafaḍḍal hunā, hādhā qismu l-qumṣān",
-              "french": "Venez par ici, c'est le rayon des chemises."
-            },
-            {
-              "speaker": "البائع",
-              "arabic": "هَذَا قَمِيصٌ أَبْيَضُ، وهَذَا أَصْفَرُ، وهَذَا أَزْرَقُ، وهَذَا أَحْمَرُ، وهَذَا أَسْوَدُ",
-              "phonetic": "...abyaḍ, aṣfar, azraq, aḥmar, aswad",
-              "french": "Voici une chemise blanche, une jaune, une bleue, une rouge et une noire."
+              "arabic": "تَفَضَّلْ هُنا ، هذا قِسْمُ القُمْصَانِ\nهَذَا قَمِيصٌ أَبْيَضُ، وهَذَا أَصْفَرُ، وهَذَا أَزْرَقُ، وهَذَا أَحْمَرُ، وهَذَا أَسْوَدُ",
+              "french": "Venez par ici, c'est le rayon des chemises. Voici une chemise blanche, une jaune, une bleue, une rouge et une noire."
             },
             {
               "speaker": "المشتري",
               "arabic": "بِكُم القميص ؟",
-              "phonetic": "Bikai al-qamīṣ?",
               "french": "Combien coûte la chemise ?"
             },
             {
               "speaker": "البائع",
-              "arabic": "القَمِيصُ بِعِشْرِينَ ديناراً . أَيَّ قَميصٍ تُريدُ ؟",
-              "phonetic": "Al-qamīṣu bi-ʿishrīna dīnāran. Ayya qamīṣin turīd?",
+              "arabic": "القَمِيصُ بِعِشْرِينَ ديناراً\nأَيَّ قَميصٍ تُريدُ ؟",
               "french": "La chemise est à vingt dinars. Quelle chemise voulez-vous ?"
             },
             {
               "speaker": "المشتري",
               "arabic": "سَأَشْتَرِي القَمِيصَ الأَزْرَقَ",
-              "phonetic": "Sa-ashtarī l-qamīṣa l-azraq",
               "french": "J'achèterai la chemise bleue."
             },
             {
               "speaker": "البائع",
               "arabic": "هَذَا هُوَ القَمِيصُ الْأَزْرَقُ",
-              "phonetic": "Hādhā huwa l-qamīṣu l-azraq",
               "french": "Voici la chemise bleue."
             },
             {
               "speaker": "المشتري",
               "arabic": "شُكْراً",
-              "phonetic": "Shukran",
               "french": "Merci."
             },
             {
               "speaker": "البائع",
               "arabic": "لَدَيْنَا أَثْوابٌ جَمِيلَةٌ",
-              "phonetic": "Ladaynā athwābun jamīlah",
               "french": "Nous avons de beaux vêtements (thobes)."
             },
             {
               "speaker": "المشتري",
               "arabic": "بِكُمِ الثَّوْبُ ؟",
-              "phonetic": "Bikami ath-thawb?",
               "french": "Combien coûte le thobe ?"
             },
             {
               "speaker": "البائع",
               "arabic": "الثَّوْبُ بِثَلاثين ديناراً",
-              "phonetic": "Ath-thawbu bi-thalāthīna dīnāran",
               "french": "Le thobe est à trente dinars."
             },
             {
               "speaker": "المشتري",
               "arabic": "أُرِيدُ الثَّوْبَ الأبيض",
-              "phonetic": "Urīdu ath-thawba l-abyaḍ",
               "french": "Je veux le thobe blanc."
             },
             {
               "speaker": "البائع",
               "arabic": "تَفَضَّلِ الثَّوْبَ الأَبْيَضَ ، المَطْلُوبُ خَمْسُونَ ديناراً",
-              "phonetic": "...Al-maṭlūbu khamsūna dīnāran",
               "french": "Voici le thobe blanc. Le total est de cinquante dinars."
             },
             {
               "speaker": "المشتري",
               "arabic": "تَفَضَّلْ ، هَذِهِ خَمْسُونَ ديناراً",
-              "phonetic": "Tafaḍḍal, hādhihi khamsūna dīnāran",
               "french": "Tenez, voici cinquante dinars."
             }
           ]
@@ -2241,235 +1921,199 @@
       "titleFr": "La Météo",
       "dialogues": [
         {
-          "id": "10.1",
-          "youtubeUrl": "",
+          "id": "1",
+          "youtubeUrl": "https://www.youtube.com/embed/cvZbvvh3EBU",
           "lines": [
             {
               "speaker": "الزوجة",
               "arabic": "كَيْفَ الجَوُّ في الخارج ؟",
-              "phonetic": "Kayfa l-jawwu fī l-khārij?",
               "french": "Quel temps fait-il dehors ?"
             },
             {
               "speaker": "الزوج",
               "arabic": "السَّمَاءُ تُمْطِرُ الآنَ : هَذَا فَصْلُ الخَرِيفِ",
-              "phonetic": "As-samā'u tumṭiru l-ān. Hādhā faṣlu l-kharīf",
               "french": "Il pleut maintenant. C'est l'automne."
             },
             {
               "speaker": "الزوجة",
               "arabic": "ثَوْبُكَ مُبْتَلٌ ، أَيْنَ المِعْطَفُ ؟",
-              "phonetic": "Thawbuka mubtall, ayna l-miʿṭaf?",
               "french": "Ton vêtement est mouillé, où est le manteau ?"
             },
             {
               "speaker": "الزوج",
               "arabic": "تَرَكْتُهُ في الشركة",
-              "phonetic": "Taraktuhu fī sh-sharikah",
               "french": "Je l'ai laissé à l'entreprise."
             },
             {
               "speaker": "الزوجة",
               "arabic": "وَأَيْنَ المِظَلَّةُ ؟",
-              "phonetic": "Wa ayna l-miẓallah?",
               "french": "Et où est le parapluie ?"
             },
             {
               "speaker": "الزوج",
               "arabic": "تَرَكْتُها في السَّيَّارَةِ",
-              "phonetic": "Taraktuhā fī s-sayyārah",
               "french": "Je l'ai laissé dans la voiture."
             },
             {
               "speaker": "الزوجة",
               "arabic": "اشْرَبْ هَذَا الشَّايَ الدَّافِئَ",
-              "phonetic": "Ishrab hādhā sh-shāya d-dāfi'",
               "french": "Bois ce thé chaud."
             },
             {
               "speaker": "الزوج",
               "arabic": "بارَكَ اللهُ فيكِ",
-              "phonetic": "Bāraka llāhu fīki",
               "french": "Que Dieu te bénisse."
             },
             {
               "speaker": "الزوجة",
               "arabic": "هَلْ نَخْرُجُ إلى السوق الآن ؟",
-              "phonetic": "Hal nakhruju ilā s-sūqi l-ān?",
               "french": "Sortons-nous au marché maintenant ?"
             },
             {
               "speaker": "الزوج",
               "arabic": "الماءُ كَثِيرٌ جِداً في الخَارِجِ",
-              "phonetic": "Al-mā'u kathīrun jiddan fī l-khārij",
               "french": "Il y a beaucoup d'eau dehors."
             },
             {
               "speaker": "الزوجة",
               "arabic": "ماذا نَفْعَلُ ؟",
-              "phonetic": "Mādhā nafʿal?",
               "french": "Que faisons-nous ?"
             },
             {
               "speaker": "الزوج",
               "arabic": "نَبْقَى اللَّيْلَةَ فِي البَيْتِ",
-              "phonetic": "Nabqā l-laylata fī l-bayt",
               "french": "Nous restons à la maison ce soir."
             },
             {
               "speaker": "الزوجة",
               "arabic": "وَنَذْهَبُ غَداً إلى السوق ، إِنْ شَاءَ الله",
-              "phonetic": "Wa nadh-habu ghadan ilā s-sūq...",
               "french": "Et nous irons au marché demain, si Dieu le veut."
             },
             {
               "speaker": "الزوج",
               "arabic": "هَذِهِ فِكْرَةٌ طَيِّبَةٌ",
-              "phonetic": "Hādhihi fikratun ṭayyibah",
               "french": "C'est une bonne idée."
             }
           ]
         },
         {
-          "id": "10.2",
-          "youtubeUrl": "",
+          "id": "2",
+          "youtubeUrl": "https://www.youtube.com/embed/cvZbvvh3EBU",
           "lines": [
             {
               "speaker": "حسان",
               "arabic": "السَّلامُ عَلَيْكُم يا بَدْرُ. أَنا حَسّانُ ، أَتَكَلَّمُ مِنْ لَنْدَن",
-              "phonetic": "...Ana Ḥassān, atakallamu min London",
               "french": "Paix sur toi Badr. Je suis Hassan, j'appelle de Londres."
             },
             {
               "speaker": "بدر",
-              "arabic": "وَعَلَيْكُم السَّلامُ يَا حَسّانُ . كَيْفَ الجَوُّ فِي لَنْدَن ؟",
-              "phonetic": "...Kayfa l-jawwu fī London?",
+              "arabic": "وَعَلَيْكُم السَّلامُ يَا حَسّانُ\nكَيْفَ الجَوُّ فِي لَنْدَن ؟",
               "french": "Et sur toi la paix Hassan. Quel temps fait-il à Londres ?"
             },
             {
               "speaker": "حسان",
-              "arabic": "الجو بارد في لَنْدَن . هَذا فَصْلُ الشَّتاءِ",
-              "phonetic": "Al-jawwu bārid fī London. Hādhā faṣlu sh-shitā'",
+              "arabic": "الجو بارد في لَنْدَن\nهَذا فَصْلُ الشَّتاءِ",
               "french": "Il fait froid à Londres. C'est l'hiver."
             },
             {
               "speaker": "بدر",
               "arabic": "كَمْ دَرَجَةُ الحَرارَةِ فِي لَنْدَن ؟",
-              "phonetic": "Kam darajatu l-ḥarārah fī London?",
               "french": "Quelle est la température à Londres ?"
             },
             {
               "speaker": "حسان",
-              "arabic": "تَحْتَ الصِّفْرِ . كَيْفَ الجَوُّ فِي الرِّياضِ ؟",
-              "phonetic": "Taḥta ṣ-ṣifr. Kayfa l-jawwu fī r-Riyāḍ?",
+              "arabic": "تَحْتَ الصِّفْرِ\nكَيْفَ الجَوُّ فِي الرِّياضِ ؟",
               "french": "En dessous de zéro. Quel temps fait-il à Riyad ?"
             },
             {
               "speaker": "بدر",
               "arabic": "كان الجو حاراً، وَهُوَ الآنَ مُعْتَدِل",
-              "phonetic": "Kāna l-jawwu ḥārran, wa huwa l-āna muʿtadil",
               "french": "Il faisait chaud, et maintenant c'est tempéré."
             },
             {
               "speaker": "حسان",
               "arabic": "كَمْ دَرَجَةُ الحَرارَةِ فِي الرِّياضِ ؟",
-              "phonetic": "Kam darajatu l-ḥarārah fī r-Riyāḍ?",
               "french": "Quelle est la température à Riyad ?"
             },
             {
               "speaker": "بدر",
               "arabic": "دَرَجَةُ الحَرَارَةِ عِشْرُونَ",
-              "phonetic": "Darajatu l-ḥarārah ʿishrūn",
               "french": "La température est de vingt."
             },
             {
               "speaker": "حسان",
               "arabic": "هَلْ سَتَقْضِي العُطْلَةَ فِي لَنْدَنَ ؟",
-              "phonetic": "Hal sataqḍī l-ʿuṭlata fī London?",
               "french": "Vas-tu passer les vacances à Londres ?"
             },
             {
               "speaker": "بدر",
               "arabic": "لا ، سأقضيها في تونس ، إن شاء الله",
-              "phonetic": "Lā, sa-aqḍīhā fī Tūnis...",
               "french": "Non, je les passerai en Tunisie, inchallah."
             }
           ]
         },
         {
-          "id": "10.3",
-          "youtubeUrl": "",
+          "id": "3",
+          "youtubeUrl": "https://www.youtube.com/embed/cvZbvvh3EBU",
           "lines": [
             {
               "speaker": "خالد",
               "arabic": "الجَوُّ مُعْتَدِلٌ هَذِهِ الأَيَّامِ",
-              "phonetic": "Al-jawwu muʿtadil hādhihi l-ayyām",
               "french": "Le temps est tempéré (doux) ces jours-ci."
             },
             {
               "speaker": "حازم",
               "arabic": "هَذَا فَصْلُ الرَّبِيعِ",
-              "phonetic": "Hādhā faṣlu r-rabīʿ",
               "french": "C'est le printemps."
             },
             {
               "speaker": "خالد",
               "arabic": "الحَمْدُ لله ، ذَهَبَ الصَّيْفُ ، وَذَهَبَ الحَرُّ",
-              "phonetic": "...Dhahaba ṣ-ṣayf, wa dhahaba l-ḥarr",
               "french": "Louange à Dieu, l'été est parti, et la chaleur est partie."
             },
             {
               "speaker": "حازم",
               "arabic": "وَذَهَبَ الشَّتَاءُ ، وَذَهَبَ البَرْدُ",
-              "phonetic": "Wa dhahaba sh-shitā', wa dhahaba l-bard",
               "french": "Et l'hiver est parti, et le froid est parti."
             },
             {
               "speaker": "خالد",
               "arabic": "أَيْنَ نَقْضِي عُطْلَةَ الأُسْبُوعِ ؟",
-              "phonetic": "Ayna naqḍī ʿuṭlata l-usbūʿ?",
               "french": "Où passons-nous le week-end ?"
             },
             {
               "speaker": "حازم",
               "arabic": "نَذهَبُ إِلى الشَّاطِئِ",
-              "phonetic": "Nadh-habu ilā sh-shāṭi'",
               "french": "Nous allons à la plage."
             },
             {
               "speaker": "خالد",
               "arabic": "الشَّاطِئُ بَعِيدٌ ، نَذهَبُ إِلى البَرِّ",
-              "phonetic": "Ash-shāṭi'u baʿīd, nadh-habu ilā l-barr",
               "french": "La plage est loin, allons dans le désert (la campagne/terre ferme)."
             },
             {
               "speaker": "حازم",
               "arabic": "هَذِهِ فِكْرَةٌ طَيِّبَةٌ ، نَذْهَبُ إِلى البَرِّ",
-              "phonetic": "Hādhihi fikratun ṭayyibah...",
               "french": "C'est une bonne idée, allons dans le désert."
             },
             {
               "speaker": "خالد",
               "arabic": "سَأُحْضِرُ الخَيْمَةَ وَالسَّجَادَةَ",
-              "phonetic": "Sa-uḥḍiru l-khaymata wa s-sajjādah",
               "french": "J'apporterai la tente et le tapis."
             },
             {
               "speaker": "حازم",
               "arabic": "سَأُحْضِرُ الطَّعَامَ وَالشَّرَابَ",
-              "phonetic": "Sa-uḥḍiru ṭ-ṭaʿāma wa sh-sharāb",
               "french": "J'apporterai la nourriture et les boissons."
             },
             {
               "speaker": "خالد",
               "arabic": "أُسْرَتِي سَتَحْضُرُ مَعِي",
-              "phonetic": "Usratī sataḥḍuru maʿī",
               "french": "Ma famille viendra avec moi."
             },
             {
               "speaker": "حازم",
               "arabic": "وأُسْرَتِي سَتَحْضُرُ مَعِي أَيْضاً",
-              "phonetic": "Wa usratī sataḥḍuru maʿī ayḍan",
               "french": "Et ma famille viendra avec moi aussi."
             }
           ]
@@ -2482,247 +2126,209 @@
       "titleFr": "Gens et Lieux",
       "dialogues": [
         {
-          "id": "11.1",
-          "youtubeUrl": "",
+          "id": "1",
+          "youtubeUrl": "https://www.youtube.com/embed/cvZbvvh3EBU",
           "lines": [
             {
               "speaker": "ثابت",
               "arabic": "لماذا تَرَكْتَ العِراقَ ؟",
-              "phonetic": "Limādhā tarakta l-ʿIrāq?",
               "french": "Pourquoi as-tu quitté l'Irak ?"
             },
             {
               "speaker": "حارث",
               "arabic": "انتَقَلَتِ الشَّرِكَةُ إِلى جُدَّةً ، وأنا مدير الشَّرِكَةِ هنا",
-              "phonetic": "Intaqalati sh-sharikatu ilā Jeddah...",
               "french": "La compagnie a déménagé à Jeddah, et je suis le directeur de la compagnie ici."
             },
             {
               "speaker": "ثابت",
               "arabic": "كُنْتَ سَعيداً في العراق",
-              "phonetic": "Kunta saʿīdan fī l-ʿIrāq",
               "french": "Tu étais heureux en Irak."
             },
             {
               "speaker": "حارث",
               "arabic": "هذا صَحِيحٌ، العِراقُ بَلَدٌ جَمِيلٌ ، ولي أصدقاء هناك",
-              "phonetic": "Hādhā ṣaḥīḥ, al-ʿIrāqu baladun jamīl...",
               "french": "C'est vrai, l'Irak est un beau pays, et j'y ai des amis."
             },
             {
               "speaker": "ثابت",
               "arabic": "ما رَأَيْكَ فِي جُدَّةَ ؟",
-              "phonetic": "Mā ra'yuka fī Jeddah?",
               "french": "Quel est ton avis sur Jeddah ?"
             },
             {
               "speaker": "حارث",
               "arabic": "جُدَّةٌ مَدِينَةٌ كَبِيرَةٌ ، وجَمِيلَةٌ جداً",
-              "phonetic": "Jeddah madīnatun kabīrah, wa jamīlah jiddan",
               "french": "Jeddah est une grande ville, et très belle."
             },
             {
               "speaker": "ثابت",
               "arabic": "كَيْفَ تَقْضِي الوَقْتَ فِي جُدَّةَ ؟",
-              "phonetic": "Kayfa taqḍī l-waqta fī Jeddah?",
               "french": "Comment passes-tu le temps à Jeddah ?"
             },
             {
               "speaker": "حارث",
               "arabic": "أذهَبُ مَعَ الأُسْرَةِ إِلَى شَاطِئِ البَحْرِ",
-              "phonetic": "Adh-habu maʿa l-usrati ilā shāṭi'i l-baḥr",
               "french": "Je vais avec la famille au bord de la mer."
             },
             {
               "speaker": "ثابت",
               "arabic": "وإلى أَيْنَ تَذهَبُ الآن ؟",
-              "phonetic": "Wa ilā ayna tadh-habu l-ān?",
               "french": "Et où vas-tu maintenant ?"
             },
             {
               "speaker": "حارث",
               "arabic": "أَذهَبُ إِلى مَكَّةَ : لِلْعُمْرَةِ والصلاة في المسجد الحرام",
-              "phonetic": "...lil-ʿumrati wa ṣ-ṣalāti fī l-Masjidi l-Ḥarām",
               "french": "Je vais à La Mecque : pour la Omra et la prière à la Mosquée Sacrée."
             },
             {
               "speaker": "ثابت",
               "arabic": "كَمْ تَسْتَغْرِقُ الرِّحْلَةُ إِلَى مَكَّةَ ؟",
-              "phonetic": "Kam tastaghriqu r-riḥlatu ilā Makkah?",
               "french": "Combien de temps dure le voyage vers La Mecque ?"
             },
             {
               "speaker": "حارث",
               "arabic": "تَسْتَغْرِقُ سَاعَةً واحِدَةً تَقْريباً",
-              "phonetic": "Tastaghriqu sāʿatan wāḥidatan taqrīban",
               "french": "Cela prend environ une heure."
             }
           ]
         },
         {
-          "id": "11.2",
-          "youtubeUrl": "",
+          "id": "2",
+          "youtubeUrl": "https://www.youtube.com/embed/cvZbvvh3EBU",
           "lines": [
             {
               "speaker": "ليث",
               "arabic": "مِنْ أَيْنَ حَضَرْتَ ؟",
-              "phonetic": "Min ayna ḥaḍarta?",
               "french": "D'où es-tu venu (arrivé) ?"
             },
             {
               "speaker": "ثامر",
               "arabic": "حَضَرْتُ مِنَ اليَمَنِ، أَنَا يَمَنِيٌّ",
-              "phonetic": "Ḥaḍartu mina l-Yaman, ana Yamaniyy",
               "french": "Je suis venu du Yémen, je suis Yéménite."
             },
             {
               "speaker": "ليث",
               "arabic": "ومَتى حَضَرْتَ مِنَ اليَمَنِ ؟",
-              "phonetic": "Wa matā ḥaḍarta mina l-Yaman?",
               "french": "Et quand es-tu venu du Yémen ?"
             },
             {
               "speaker": "ثامر",
               "arabic": "حَضَرْتُ قَبْلَ عَشْرِ سَنَوَاتٍ",
-              "phonetic": "Ḥaḍartu qabla ʿashri sanawāt",
               "french": "Je suis venu il y a dix ans."
             },
             {
               "speaker": "ليث",
               "arabic": "هَلْ مَعَكَ الْجِنْسِيَّةُ اليَمَنِيَّةُ ؟",
-              "phonetic": "Hal maʿaka l-jinsiyyatu l-yamaniyyah?",
               "french": "As-tu la nationalité yéménite ?"
             },
             {
               "speaker": "ثامر",
               "arabic": "نعم، ومعي جَوازُ السَّفَرِ اليَمَنِيُّ",
-              "phonetic": "Naʿam, wa maʿī jawāzu s-safari l-yamaniyy",
               "french": "Oui, et j'ai le passeport yéménite."
             },
             {
               "speaker": "ليث",
               "arabic": "هَلْ حَضَرْتَ لِلعَمَلِ؟",
-              "phonetic": "Hal ḥaḍarta lil-ʿamal?",
               "french": "Es-tu venu pour le travail ?"
             },
             {
               "speaker": "ثامر",
               "arabic": "لا ، حَضَرْتُ للدراسة، وبَعْدَ الدَّرَاسَةِ تَزَوَّجْتُ",
-              "phonetic": "Lā, ḥaḍartu lid-dirāsah, wa baʿda d-dirāsati tazawwajtu",
               "french": "Non, je suis venu pour les études, et après les études je me suis marié."
             },
             {
               "speaker": "ليث",
               "arabic": "وماذا تَعْمَلُ هُنا؟",
-              "phonetic": "Wa mādhā taʿmalu hunā?",
               "french": "Et que fais-tu (travailles-tu) ici ?"
             },
             {
               "speaker": "ثامر",
               "arabic": "أنا أستاذ في الجامعة",
-              "phonetic": "Ana ustādh fī l-jāmiʿah",
               "french": "Je suis professeur à l'université."
             },
             {
               "speaker": "ليث",
               "arabic": "هَلْ تَزُورُ اليَمَنَ؟",
-              "phonetic": "Hal tazūru l-Yaman?",
               "french": "Visites-tu le Yémen ?"
             },
             {
               "speaker": "ثامر",
               "arabic": "نعم، أقضي العُطْلَةَ مَعَ الأَسْرَةِ فِي اليَمَنِ",
-              "phonetic": "Naʿam, aqḍī l-ʿuṭlata maʿa l-usrati fī l-Yaman",
               "french": "Oui, je passe les vacances avec la famille au Yémen."
             },
             {
               "speaker": "ليث",
               "arabic": "هَلْ أَنْتَ سَعِيدٌ هُنا ؟",
-              "phonetic": "Hal anta saʿīdun hunā?",
               "french": "Es-tu heureux ici ?"
             },
             {
               "speaker": "ثامر",
               "arabic": "نَعَمْ ، والحَمْدُ لله",
-              "phonetic": "Naʿam, wa l-ḥamdu lillāh",
               "french": "Oui, louange à Dieu."
             }
           ]
         },
         {
-          "id": "11.3",
-          "youtubeUrl": "",
+          "id": "3",
+          "youtubeUrl": "https://www.youtube.com/embed/cvZbvvh3EBU",
           "lines": [
             {
               "speaker": "أحمد",
               "arabic": "أَيْنَ تَسْكُنُ الآنَ يا بَدْرُ؟",
-              "phonetic": "Ayna taskunu l-āna yā Badr?",
               "french": "Où habites-tu maintenant Badr ?"
             },
             {
               "speaker": "بدر",
               "arabic": "أَسْكُنُ فِي القَرْيَةِ",
-              "phonetic": "Askunu fī l-qaryah",
               "french": "J'habite au village."
             },
             {
               "speaker": "أحمد",
               "arabic": "لماذا تَرَكْتَ المَدِينَةَ؟",
-              "phonetic": "Limādhā tarakta l-madīnah?",
               "french": "Pourquoi as-tu quitté la ville ?"
             },
             {
               "speaker": "بدر",
               "arabic": "القَرْيَةُ هَادِئَةٌ، والهواء نَقِيّ",
-              "phonetic": "Al-qaryatu hādi'ah, wa l-hawā'u naqiyy",
               "french": "Le village est calme, et l'air est pur."
             },
             {
               "speaker": "أحمد",
               "arabic": "وَلَكِنْ فِي المَدِينَةِ جامعات، ومُسْتَشْفَياتٌ وشركات، وأسواق",
-              "phonetic": "Wa lakin fī l-madīnati jāmiʿāt...",
               "french": "Mais en ville il y a des universités, des hôpitaux, des entreprises et des marchés."
             },
             {
               "speaker": "بدر",
               "arabic": "وفي المدينَةِ أَيْضًا ضَوْضَاءُ، وَتَلَوُّثٌ وازدحام",
-              "phonetic": "Wa fī l-madīnati ayḍan ḍawḍā' wa talawwuth wa izdiḥām",
               "french": "Et en ville il y a aussi du bruit, de la pollution et des embouteillages."
             },
             {
               "speaker": "أحمد",
               "arabic": "لماذا تَسْكُنُ فِي القَرْيَةِ، وَأَنْتَ تَعْمَلُ فِي المدينة ؟",
-              "phonetic": "Limādhā taskunu fī l-qaryah, wa anta taʿmalu fī l-madīnah?",
               "french": "Pourquoi habites-tu au village, alors que tu travailles en ville ?"
             },
             {
               "speaker": "بدر",
               "arabic": "لَيْسَ هُناكَ مُشْكِلَةٌ",
-              "phonetic": "Laysa hunāka mushkilah",
               "french": "Il n'y a pas de problème."
             },
             {
               "speaker": "أحمد",
               "arabic": "كَيْفَ تَذْهَبُ إِلى المَدِينَةِ؟",
-              "phonetic": "Kayfa tadh-habu ilā l-madīnah?",
               "french": "Comment vas-tu en ville ?"
             },
             {
               "speaker": "بدر",
               "arabic": "أَذْهَبُ بِالقِطار",
-              "phonetic": "Adh-habu bi-l-qiṭār",
               "french": "J'y vais en train."
             },
             {
               "speaker": "أحمد",
               "arabic": "كَمْ تَسْتَغْرِقُ الرِّحْلَةُ إِلى المَدِينَةِ ؟",
-              "phonetic": "Kam tastaghriqu r-riḥlatu ilā l-madīnah?",
               "french": "Combien de temps dure le trajet vers la ville ?"
             },
             {
               "speaker": "بدر",
               "arabic": "تَسْتَغْرِقُ سَاعَةً وَنِصْفَ السَّاعَةِ تَقْرِيباً",
-              "phonetic": "Tastaghriqu sāʿatan wa niṣfa s-sāʿati taqrīban",
               "french": "Cela prend environ une heure et demie."
             }
           ]
@@ -2735,272 +2341,210 @@
       "titleFr": "Les Loisirs",
       "dialogues": [
         {
-          "id": "12.1",
-          "youtubeUrl": "",
+          "id": "1",
+          "youtubeUrl": "https://www.youtube.com/embed/cvZbvvh3EBU",
           "lines": [
             {
               "speaker": "شاكر",
               "arabic": "ما هوايَتُكَ يا شَريف ؟",
-              "phonetic": "Mā hiwāyatuka yā Sharīf?",
               "french": "Quel est ton hobby (passe-temps) Sharif ?"
             },
             {
               "speaker": "شريف",
-              "arabic": "هواياتي كثيرة: القراءة، والسَّفَرُ والمراسلة",
-              "phonetic": "Hiwāyātī kathīrah: al-qirā'ah, wa s-safar wa l-murāsalah",
-              "french": "Mes loisirs sont nombreux : la lecture, le voyage et la correspondance."
-            },
-            {
-              "speaker": "شريف",
-              "arabic": "وما هواياتكَ أنتَ ؟",
-              "phonetic": "Wa mā hiwāyātuka anta?",
-              "french": "Et quels sont tes loisirs toi ?"
+              "arabic": "هواياتي كثيرة: القراءة، والسَّفَرُ والمراسلة\nوما هواياتكَ أنتَ ؟",
+              "french": "Mes loisirs sont nombreux : la lecture, le voyage et la correspondance. Et quels sont tes loisirs toi ?"
             },
             {
               "speaker": "شاكر",
               "arabic": "هواياتي: الرياضة ، والرَّحْلاتُ والقِراءَةُ أَيْضًا",
-              "phonetic": "Hiwāyātī: ar-riyāḍah, wa r-raḥalāt wa l-qirā'atu ayḍan",
               "french": "Mes loisirs : le sport, les excursions et la lecture aussi."
             },
             {
               "speaker": "شريف",
               "arabic": "ماذا تقرأُ يا شاكر ؟",
-              "phonetic": "Mādhā taqra'u yā Shākir?",
               "french": "Que lis-tu Shaker ?"
             },
             {
               "speaker": "شاكر",
-              "arabic": "أقرأُ الكُتُبَ والمَجَلاتِ الإِسْلامِيَّةَ",
-              "phonetic": "Aqra'u l-kutuba wa l-majallāti l-islāmiyyah",
-              "french": "Je lis des livres et des magazines islamiques."
-            },
-            {
-              "speaker": "شاكر",
-              "arabic": "وماذا تَقرَأُ أَنْتَ؟",
-              "phonetic": "Wa mādhā taqra'u anta?",
-              "french": "Et que lis-tu toi ?"
+              "arabic": "أقرأُ الكُتُبَ والمَجَلاتِ الإِسْلامِيَّةَ\nوماذا تَقرَأُ أَنْتَ؟",
+              "french": "Je lis des livres et des magazines islamiques. Et que lis-tu toi ?"
             },
             {
               "speaker": "شريف",
               "arabic": "أقرأُ الكُتُبَ الإِسْلامِيَّةَ ، والمَجَلاتِ العلمية",
-              "phonetic": "...wal-majallāti l-ʿilmiyyah",
               "french": "Je lis des livres islamiques et des magazines scientifiques."
             },
             {
               "speaker": "شاكر",
               "arabic": "هَلْ لَدَيْكَ مَكَتَبَةٌ ؟",
-              "phonetic": "Hal ladayka maktabah?",
               "french": "As-tu une bibliothèque ?"
             },
             {
               "speaker": "شريف",
               "arabic": "نَعَمْ، لَدَيَّ مَكْتَبَةٌ كَبِيرَةٌ",
-              "phonetic": "Naʿam, ladayya maktabatun kabīrah",
               "french": "Oui, j'ai une grande bibliothèque."
             },
             {
               "speaker": "شاكر",
               "arabic": "كَمْ سَاعَةً تَقْرَأُ فِي اليَوْمِ؟",
-              "phonetic": "Kam sāʿatan taqra'u fī l-yawm?",
               "french": "Combien d'heures lis-tu par jour ?"
             },
             {
               "speaker": "شريف",
               "arabic": "أقرأُ ثَلاثَ ساعات تقريباً",
-              "phonetic": "Aqra'u thalātha sāʿātin taqrīban",
               "french": "Je lis environ trois heures."
             },
             {
               "speaker": "شاكر",
               "arabic": "أنا أقرَأُ أَرْبَعَ ساعات في اليَوْمِ",
-              "phonetic": "Ana aqra'u arbaʿa sāʿātin fī l-yawm",
               "french": "Moi je lis quatre heures par jour."
             },
             {
               "speaker": "شريف",
               "arabic": "القراءة هواية مفيدة",
-              "phonetic": "Al-qirā'atu hiwāyatun mufīdah",
               "french": "La lecture est un passe-temps utile."
             }
           ]
         },
         {
-          "id": "12.2",
-          "youtubeUrl": "",
+          "id": "2",
+          "youtubeUrl": "https://www.youtube.com/embed/cvZbvvh3EBU",
           "lines": [
             {
               "speaker": "شهاب",
               "arabic": "هَلْ زُرْتَ مَعْرِضَ الهوايَاتِ؟",
-              "phonetic": "Hal zurta maʿriḍa l-hiwāyāt?",
               "french": "As-tu visité l'exposition des loisirs ?"
             },
             {
               "speaker": "شعيب",
               "arabic": "لَا ، مَا زُرْتُهُ، هَيَّا بِنَا إِلَيْهِ",
-              "phonetic": "Lā, mā zurtuhu, hayyā binā ilayh",
               "french": "Non, je ne l'ai pas visité, allons-y."
             },
             {
               "speaker": "شهاب",
               "arabic": "هَذَا هُوَ مَعْرِضُ الهوايات",
-              "phonetic": "Hādhā huwa maʿriḍu l-hiwāyāt",
               "french": "Voici l'exposition des loisirs."
             },
             {
               "speaker": "شعيب",
               "arabic": "هَذِهِ هِوَايَاتٌ كَثِيرَةٌ جِدًا",
-              "phonetic": "Hādhihi hiwāyātun kathīratun jiddan",
               "french": "Ce sont de très nombreux loisirs."
             },
             {
               "speaker": "شهاب",
               "arabic": "هَذَا جَنَاحُ جَمْعِ الطَّوَابِعِ",
-              "phonetic": "Hādhā janāḥu jamʿi ṭ-ṭawābiʿ",
               "french": "C'est le pavillon (section) de la collection de timbres."
             },
             {
               "speaker": "شعيب",
               "arabic": "هَذِهِ طَوابِعُ جَمِيلَةٌ. هَذَا طَابَعٌ هِنْدِيٌّ، وهَذا طَابَعٌ فَرَنْسي",
-              "phonetic": "...Hādhā ṭābaʿun hindiyy, wa hādhā ṭābaʿun faransiyy",
               "french": "Ce sont de beaux timbres. C'est un timbre indien, et c'est un timbre français."
             },
             {
               "speaker": "شهاب",
               "arabic": "وهَذا جَناحُ الخَطِّ العربي",
-              "phonetic": "Wa hādhā janāḥu l-khaṭṭi l-ʿarabiyy",
               "french": "Et c'est le pavillon de la calligraphie arabe."
             },
             {
               "speaker": "شعيب",
               "arabic": "هَذِهِ كَلِمَاتٌ بِخَطِّ النَّسْخِ، وَتِلكَ كَلِمَاتٌ بِخَطِّ الرقعة",
-              "phonetic": "...bi-khaṭṭi n-naskh... bi-khaṭṭi r-ruqʿah",
               "french": "Ce sont des mots en écriture Naskh, et ceux-là en écriture Ruq'ah."
             },
             {
               "speaker": "شهاب",
               "arabic": "وهذا جَناحُ الصَّحافة",
-              "phonetic": "Wa hādhā janāḥu ṣ-ṣaḥāfah",
               "french": "Et c'est le pavillon du journalisme."
             },
             {
               "speaker": "شعيب",
               "arabic": "وَهَذِهِ صُحُفٌ بِجَمِيعِ اللُّغَاتِ",
-              "phonetic": "Wa hādhihi ṣuḥufun bi-jamīʿi l-lughāt",
               "french": "Et ce sont des journaux dans toutes les langues."
             },
             {
               "speaker": "شهاب",
               "arabic": "وهذا جَناح التدبير المنزلي",
-              "phonetic": "Wa hādhā janāḥu t-tadbīri l-manziliyy",
               "french": "Et c'est le pavillon de l'économie domestique."
             },
             {
               "speaker": "شعيب",
               "arabic": "هَذا طَعَامٌ صِينِيُّ، وَهَذَا طَعَامٌ عَرَبِيٌّ",
-              "phonetic": "Hādhā ṭaʿāmun ṣīniyy, wa hādhā ṭaʿāmun ʿarabiyy",
               "french": "C'est de la nourriture chinoise, et c'est de la nourriture arabe."
             },
             {
               "speaker": "شهاب",
               "arabic": "وهذا جَناح الرياضة",
-              "phonetic": "Wa hādhā janāḥu r-riyāḍah",
               "french": "Et c'est le pavillon du sport."
             },
             {
               "speaker": "شعيب",
               "arabic": "كُرَةُ القَدَم والسباحَةُ والفُرُوسِيَّةُ",
-              "phonetic": "Kuratu l-qadam wa s-sibāḥatu wa l-furūsiyyah",
               "french": "Le football, la natation et l'équitation."
             }
           ]
         },
         {
-          "id": "12.3",
-          "youtubeUrl": "",
+          "id": "3",
+          "youtubeUrl": "https://www.youtube.com/embed/cvZbvvh3EBU",
           "lines": [
             {
               "speaker": "المدرسة",
               "arabic": "أَيَّ جَمْعِيَّةٍ تَخْتَارِينَ يا شَرِيفَةُ ؟",
-              "phonetic": "Ayya jamʿiyyatin takhtārīna yā Sharīfah?",
               "french": "Quelle association (club) choisis-tu Charifa ?"
             },
             {
               "speaker": "شريفة",
               "arabic": "أَخْتَارُ جَمْعِيَّةَ الصَّحَافَةِ",
-              "phonetic": "Akhtāru jamʿiyyata ṣ-ṣaḥāfah",
               "french": "Je choisis l'association de journalisme."
             },
             {
               "speaker": "المدرسة",
               "arabic": "أَيَّ جَمْعِيَّةٍ تَخْتَارِينَ يا شَادِيةُ ؟",
-              "phonetic": "...yā Shādiyah?",
               "french": "Quelle association choisis-tu Shadia ?"
             },
             {
               "speaker": "شادية",
               "arabic": "أَخْتَارُ جَمْعِيَّةَ الثَّقَافَةِ الإسلامية",
-              "phonetic": "Akhtāru jamʿiyyata th-thaqāfati l-islāmiyyah",
               "french": "Je choisis l'association de culture islamique."
             },
             {
               "speaker": "المدرسة",
               "arabic": "أي جَمْعِيَّةٍ تَخْتَارِينَ يا شَيْمَاءُ ؟",
-              "phonetic": "...yā Shaymā'?",
               "french": "Quelle association choisis-tu Shayma ?"
             },
             {
               "speaker": "شيماء",
               "arabic": "أَخْتَارُ جَمعِيَّةَ الحاسوب",
-              "phonetic": "Akhtāru jamʿiyyata l-ḥāsūb",
               "french": "Je choisis l'association d'informatique."
             },
             {
               "speaker": "المدرسة",
               "arabic": "أي جَمْعِيَّةِ تَخْتَارِينَ يا شَقْراء ؟",
-              "phonetic": "...yā Shaqrā'?",
               "french": "Quelle association choisis-tu Shaqra ?"
             },
             {
               "speaker": "شقراء",
               "arabic": "أَخْتَارُ جَمْعِيَّةَ العُلومِ",
-              "phonetic": "Akhtāru jamʿiyyata l-ʿulūm",
               "french": "Je choisis l'association des sciences."
             },
             {
               "speaker": "المدرسة",
               "arabic": "أَي جَمْعِيَّةٍ تَخْتَارِينَ يَا شَمْسُ ؟",
-              "phonetic": "...yā Shams?",
               "french": "Quelle association choisis-tu Shams ?"
             },
             {
               "speaker": "شمس",
-              "arabic": "أَخْتَارُ جَمْعِيَّةَ اللُّغَةِ العَرَبِيَّةِ",
-              "phonetic": "Akhtāru jamʿiyyata l-lughati l-ʿarabiyyah",
-              "french": "Je choisis l'association de langue arabe."
-            },
-            {
-              "speaker": "شمس",
-              "arabic": "أَنَا أُحِبُّ الخَطَّ العَرَبِيَّ، وَلَدَيَّ آيَاتٌ بِخَطْ النَّسْخِ، وأحاديثُ بِخَط الرقعة",
-              "phonetic": "Ana uḥibbu l-khaṭṭa l-ʿarabiyy...",
-              "french": "J'aime la calligraphie arabe, et j'ai des versets en écriture Naskh et des hadiths en écriture Ruq'ah."
+              "arabic": "أَخْتَارُ جَمْعِيَّةَ اللُّغَةِ العَرَبِيَّةِ\nأَنَا أُحِبُّ الخَطَّ العَرَبِيَّ، وَلَدَيَّ آيَاتٌ بِخَطْ النَّسْخِ، وأحاديثُ بِخَط الرقعة",
+              "french": "Je choisis l'association de langue arabe. J'aime la calligraphie arabe, et j'ai des versets en écriture Naskh et des hadiths en écriture Ruq'ah."
             },
             {
               "speaker": "المدرسة",
               "arabic": "أَيَّ جَمْعِيَّةٍ تَخْتَارِينَ يا سَمِيرَةُ ؟",
-              "phonetic": "...yā Samīrah?",
               "french": "Quelle association choisis-tu Samira ?"
             },
             {
               "speaker": "سميرة",
-              "arabic": "أَخْتَارُ جَمْعِيَّةَ التَّدْبِيرِ المَنْزِلِيِّ",
-              "phonetic": "Akhtāru jamʿiyyata t-tadbīri l-manziliyy",
-              "french": "Je choisis l'association d'économie domestique."
-            },
-            {
-              "speaker": "سميرة",
-              "arabic": "أَنَا أُحِبُّ الطَّبْخَ وَالخِياطَةَ",
-              "phonetic": "Ana uḥibbu ṭ-ṭabkha wa l-khiyāṭah",
-              "french": "J'aime la cuisine et la couture."
+              "arabic": "أَخْتَارُ جَمْعِيَّةَ التَّدْبِيرِ المَنْزِلِيِّ\nأَنَا أُحِبُّ الطَّبْخَ وَالخِياطَةَ",
+              "french": "Je choisis l'association d'économie domestique. J'aime la cuisine et la couture."
             }
           ]
         }
@@ -3012,271 +2556,219 @@
       "titleFr": "Le Voyage",
       "dialogues": [
         {
-          "id": "13.1",
-          "youtubeUrl": "",
+          "id": "1",
+          "youtubeUrl": "https://www.youtube.com/embed/cvZbvvh3EBU",
           "lines": [
             {
               "speaker": "الموظف",
               "arabic": "أَيَّ خِدمَةٍ ؟",
-              "phonetic": "Ayya khidmah?",
               "french": "Puis-je vous aider ?"
             },
             {
               "speaker": "المسافر",
               "arabic": "لَدَيَّ حَجْزُ إلى جُدَّةَ، وأريد تأكيد الحجز",
-              "phonetic": "Ladayya ḥajzun ilā Jeddah, wa urīdu ta'kīda l-ḥajz",
               "french": "J'ai une réservation pour Jeddah, et je veux confirmer la réservation."
             },
             {
               "speaker": "الموظف",
               "arabic": "هَلِ الحَجْزُ عَلَى الخُطوط السعودِيَّةِ ؟",
-              "phonetic": "Hali l-ḥajzu ʿalā l-khuṭūṭi s-suʿūdiyyah?",
               "french": "Est-ce que la réservation est sur la Saudi Airlines ?"
             },
             {
               "speaker": "المسافر",
               "arabic": "لا ، هُوَ على الخطوط الإندونيسية",
-              "phonetic": "Lā, huwa ʿalā l-khuṭūṭi l-indūnīsiyyah",
               "french": "Non, c'est sur les lignes indonésiennes."
             },
             {
               "speaker": "الموظف",
               "arabic": "أَيْنَ التَّذاكِرُ ؟",
-              "phonetic": "Ayna t-tadhākir?",
               "french": "Où sont les billets ?"
             },
             {
               "speaker": "المسافر",
-              "arabic": "هَذِهِ هِيَ التَّذاكِرُ : تَذْكِرَتِي، وَتَذْكِرَةُ زَوْجَتِي",
-              "phonetic": "Hādhihi hiya t-tadhākir: tadhkiratī, wa tadhkiratu zawjatī",
-              "french": "Voici les billets : mon billet, et le billet de ma femme."
-            },
-            {
-              "speaker": "المسافر",
-              "arabic": "وتَذْكِرَةُ ابْنِي، وَتَذْكِرَةُ بِنْتِي",
-              "phonetic": "Wa tadhkiratu ibnī, wa tadhkiratu bintī",
-              "french": "Et le billet de mon fils, et le billet de ma fille."
+              "arabic": "هَذِهِ هِيَ التَّذاكِرُ : تَذْكِرَتِي، وَتَذْكِرَةُ زَوْجَتِي\nوتَذْكِرَةُ ابْنِي، وَتَذْكِرَةُ بِنْتِي",
+              "french": "Voici les billets : mon billet, et le billet de ma femme. Et le billet de mon fils, et le billet de ma fille."
             },
             {
               "speaker": "الموظف",
               "arabic": "وَأَيْنَ جَوازاتُ السَّفَرِ ؟",
-              "phonetic": "Wa ayna jawāzātu s-safar?",
               "french": "Et où sont les passeports ?"
             },
             {
               "speaker": "المسافر",
               "arabic": "هَذِهِ هِيَ جَوازَاتُ السَّفَرِ",
-              "phonetic": "Hādhihi hiya jawāzātu s-safar",
               "french": "Voici les passeports."
             },
             {
               "speaker": "الموظف",
               "arabic": "أَيْنَ تَأشِيرَةُ الخُرُوجِ ؟",
-              "phonetic": "Ayna ta'shīratu l-khurūj?",
               "french": "Où est le visa de sortie ?"
             },
             {
               "speaker": "المسافر",
               "arabic": "هَذِهِ تَأْشِيرَةُ الخُرُوجِ، وَهَذِهِ تَأْشِيرَةُ الدخول",
-              "phonetic": "Hādhihi ta'shīratu l-khurūj, wa hādhihi ta'shīratu d-dukhūl",
               "french": "Voici le visa de sortie, et voici le visa d'entrée."
             },
             {
               "speaker": "الموظف",
-              "arabic": "الرَّحلَةُ رَقْمُ ٧٧٧ . تُغَادِرُ الطَّائِرَةُ السَّاعَةَ الثَّالِثَةَ فَجْراً",
-              "phonetic": "Ar-riḥlatu raqm sab'ami'ah wa sab'a wa sab'ūn...",
-              "french": "Le vol numéro 777. L'avion part à trois heures de l'aube."
-            },
-            {
-              "speaker": "الموظف",
-              "arabic": "احْضُرْ إِلى المَطارِ قَبْلَ سَاعَتَيْنِ",
-              "phonetic": "Uḥḍur ilā l-maṭāri qabla sāʿatayn",
-              "french": "Présentez-vous à l'aéroport deux heures avant."
+              "arabic": "الرَّحلَةُ رَقْمُ ٧٧٧\nتُغَادِرُ الطَّائِرَةُ السَّاعَةَ الثَّالِثَةَ فَجْراً\nاحْضُرْ إِلى المَطارِ قَبْلَ سَاعَتَيْنِ",
+              "french": "Le vol numéro 777. L'avion part à trois heures de l'aube. Présentez-vous à l'aéroport deux heures avant."
             },
             {
               "speaker": "المسافر",
               "arabic": "شكراً",
-              "phonetic": "Shukran",
               "french": "Merci."
             },
             {
               "speaker": "الموظف",
               "arabic": "رِحْلَةً سَعِيدَةً",
-              "phonetic": "Riḥlatan saʿīdah",
               "french": "Bon voyage."
             }
           ]
         },
         {
-          "id": "13.2",
-          "youtubeUrl": "",
+          "id": "2",
+          "youtubeUrl": "https://www.youtube.com/embed/cvZbvvh3EBU",
           "lines": [
             {
               "speaker": "المسافر",
               "arabic": "السَّلامُ عَلَيْكُم",
-              "phonetic": "As-salāmu ʿalaykum",
               "french": "Que la paix soit sur vous."
             },
             {
               "speaker": "الضابط",
               "arabic": "وَعَلَيْكُمُ السَّلَامُ أَهْلاً وَسَهْلاً جَوازَ السَّفَرِ مِنْ فَضْلِكَ",
-              "phonetic": "...jawāza s-safari min faḍlika",
               "french": "Et sur vous la paix, bienvenue. Votre passeport s'il vous plaît."
             },
             {
               "speaker": "المسافر",
               "arabic": "هَذَا هُوَ جَوازُ السَّفَرِ",
-              "phonetic": "Hādhā huwa jawāzu s-safar",
               "french": "Voici le passeport."
             },
             {
               "speaker": "الضابط",
               "arabic": "هَلْ أَنْتَ ماليزي ؟",
-              "phonetic": "Hal anta Mālīziyy?",
               "french": "Êtes-vous Malaisien ?"
             },
             {
               "speaker": "المسافر",
               "arabic": "لا ، أنا كَشْمِيرِي",
-              "phonetic": "Lā, ana Kashmīriyy",
               "french": "Non, je suis Cachemiri."
             },
             {
               "speaker": "الضابط",
               "arabic": "هَلْ أَنْتَ قَادِمٌ لِلعَمَلِ ؟",
-              "phonetic": "Hal anta qādimun lil-ʿamal?",
               "french": "Venez-vous pour travailler ?"
             },
             {
               "speaker": "المسافر",
               "arabic": "لا ، أنا قادِمٌ لِلزِّيارَةِ والعُمْرَةِ",
-              "phonetic": "Lā, ana qādimun liz-ziyārati wa l-ʿumrah",
               "french": "Non, je viens pour une visite et la Omra."
             },
             {
               "speaker": "الضابط",
               "arabic": "كَم يَوْماً سَتُقِيمُ هُنا ؟",
-              "phonetic": "Kam yawman satuqīmu hunā?",
               "french": "Combien de jours resterez-vous ici ?"
             },
             {
               "speaker": "المسافر",
               "arabic": "ثَلَاثَةَ أسابيع تَقْرِيباً",
-              "phonetic": "Thalāthata asābīʿ taqrīban",
               "french": "Environ trois semaines."
             },
             {
               "speaker": "الضابط",
               "arabic": "أَيْنَ سَتُقِيمُ ؟",
-              "phonetic": "Ayna satuqīm?",
               "french": "Où résiderez-vous ?"
             },
             {
               "speaker": "المسافر",
               "arabic": "سَأُقِيمُ فِي فُنْدُقٍ قَرِيبٍ مِنَ المَسْجِدِ الحرام",
-              "phonetic": "Sa-uqīmu fī funduqin qarīb min al-Masjidi l-Ḥarām",
               "french": "Je résiderai dans un hôtel proche de la Mosquée Sacrée."
             },
             {
               "speaker": "الضابط",
               "arabic": "إقَامَةً طَيِّبَةً، وعُمْرَةً مَقْبُولَةً إِنْ شَاءَ الله",
-              "phonetic": "Iqāmatan ṭayyibah, wa ʿumratan maqbūlah...",
               "french": "Bon séjour, et Omra acceptée si Dieu le veut."
             },
             {
               "speaker": "المسافر",
               "arabic": "جَزَاكَ اللهُ خَيْرًا",
-              "phonetic": "Jazāka llāhu khayran",
               "french": "Qu'Allah vous récompense."
             }
           ]
         },
         {
-          "id": "13.3",
-          "youtubeUrl": "",
+          "id": "3",
+          "youtubeUrl": "https://www.youtube.com/embed/cvZbvvh3EBU",
           "lines": [
             {
               "speaker": "الموظف",
               "arabic": "أَهْلاً وسهلا",
-              "phonetic": "Ahlan wa sahlan",
               "french": "Bienvenue."
             },
             {
               "speaker": "المسافر",
               "arabic": "فَقَدْتُ حقيبتي",
-              "phonetic": "Faqadtu ḥaqībatī",
               "french": "J'ai perdu ma valise."
             },
             {
               "speaker": "الموظف",
               "arabic": "مِنْ أَيْنَ أَنْتَ قَادِمٌ ؟",
-              "phonetic": "Min ayna anta qādim?",
               "french": "D'où venez-vous (arrivez-vous) ?"
             },
             {
               "speaker": "المسافر",
               "arabic": "أنا قادِمٌ مِنْ بَنْغَلاديش",
-              "phonetic": "Ana qādimun min Banghalādīsh",
               "french": "Je viens du Bangladesh."
             },
             {
               "speaker": "الموظف",
               "arabic": "أَيْنَ الجَوازُ ؟ وَأَيْنَ التَّذْكِرَةُ ؟",
-              "phonetic": "Ayna l-jawāz? Wa ayna t-tadhkirah?",
               "french": "Où est le passeport ? Et où est le billet ?"
             },
             {
               "speaker": "المسافر",
               "arabic": "هذا هُوَ الجَوازُ، وَهَذِهِ هِيَ التَّذْكِرَةُ",
-              "phonetic": "Hādhā huwa l-jawāz, wa hādhihi hiya t-tadhkirah",
               "french": "Voici le passeport, et voici le billet."
             },
             {
               "speaker": "الموظف",
               "arabic": "مَا لَوْنُ الحَقِيبَةِ ؟",
-              "phonetic": "Mā lawnu l-ḥaqībah?",
               "french": "Quelle est la couleur de la valise ?"
             },
             {
               "speaker": "المسافر",
               "arabic": "لَونُها أَسْوَدُ",
-              "phonetic": "Lawnuhā aswad",
               "french": "Sa couleur est noire."
             },
             {
               "speaker": "الموظف",
               "arabic": "هَلْ هَذِهِ حَقِيبَتُكَ ؟",
-              "phonetic": "Hal hādhihi ḥaqībatuk?",
               "french": "Est-ce votre valise ?"
             },
             {
               "speaker": "المسافر",
               "arabic": "نَعَمْ، هَذِهِ حقيبتي",
-              "phonetic": "Naʿam, hādhihi ḥaqībatī",
               "french": "Oui, c'est ma valise."
             },
             {
               "speaker": "الموظف",
               "arabic": "ماذا في الحقيبة ؟",
-              "phonetic": "Mādhā fī l-ḥaqībah?",
               "french": "Qu'y a-t-il dans la valise ?"
             },
             {
               "speaker": "المسافر",
               "arabic": "في الحقيبة ملابس",
-              "phonetic": "Fī l-ḥaqībati malābis",
               "french": "Dans la valise il y a des vêtements."
             },
             {
               "speaker": "الموظف",
               "arabic": "افْتَحِ الحَقِيبَةَ",
-              "phonetic": "Iftaḥi l-ḥaqībah",
               "french": "Ouvrez la valise."
             },
             {
               "speaker": "المسافر",
               "arabic": "نَعَمْ، هذه حقيبتي",
-              "phonetic": "Naʿam, hādhihi ḥaqībatī",
               "french": "Oui, c'est ma valise."
             }
           ]
@@ -3289,289 +2781,229 @@
       "titleFr": "Hajj et Omra",
       "dialogues": [
         {
-          "id": "14.1",
-          "youtubeUrl": "",
+          "id": "1",
+          "youtubeUrl": "https://www.youtube.com/embed/cvZbvvh3EBU",
           "lines": [
             {
               "speaker": "سليم",
               "arabic": "متى العُطْلَةُ يا جميل ؟",
-              "phonetic": "Matā l-ʿuṭlatu yā Jamīl?",
               "french": "Quand sont les vacances Jamil ?"
             },
             {
               "speaker": "جميل",
               "arabic": "العُطْلَةُ فِي شَهْرِ رَمَضانَ",
-              "phonetic": "Al-ʿuṭlatu fī shahri Ramaḍān",
               "french": "Les vacances sont au mois de Ramadan."
             },
             {
               "speaker": "سليم",
               "arabic": "أَيْنَ تَقْضِي العطلَةَ ؟",
-              "phonetic": "Ayna taqḍī l-ʿuṭlah?",
               "french": "Où passes-tu les vacances ?"
             },
             {
               "speaker": "جميل",
               "arabic": "أقضي العُطْلَةَ في مَكَّةَ المُكَرَّمَةِ ، والمدينة المنورة",
-              "phonetic": "Aqḍī l-ʿuṭlata fī Makkata l-Mukarramah, wa l-Madīnati l-Munawwarah",
               "french": "Je passe les vacances à La Mecque la Sainte, et Médine l'Illuminée."
             },
             {
               "speaker": "سليم",
               "arabic": "كَيْفَ تَقْضِي العُطْلَةَ فِي مَكَّةَ ؟",
-              "phonetic": "Kayfa taqḍī l-ʿuṭlata fī Makkah?",
               "french": "Comment passes-tu les vacances à La Mecque ?"
             },
             {
               "speaker": "جميل",
               "arabic": "أَعْتَمِرُ وأصوم، وأصلي في المَسْجِدِ الحرام",
-              "phonetic": "Aʿtamiru wa aṣūm, wa uṣallī fī l-Masjidi l-Ḥarām",
               "french": "Je fais la Omra, je jeûne et je prie à la Mosquée Sacrée."
             },
             {
               "speaker": "سليم",
               "arabic": "وماذا تَفْعَلُ في المدينة ؟",
-              "phonetic": "Wa mādhā tafʿalu fī l-Madīnah?",
               "french": "Et que fais-tu à Médine ?"
             },
             {
               "speaker": "جميل",
               "arabic": "أزورُ المَسْجِدَ النَّبَوِيَّ",
-              "phonetic": "Azūru l-Masjida n-Nabawiyy",
               "french": "Je visite la Mosquée du Prophète."
             },
             {
               "speaker": "سليم",
               "arabic": "وأَيْنَ تَقْضِي أَيَّامَ العيد ؟",
-              "phonetic": "Wa ayna taqḍī ayyāma l-ʿīd?",
               "french": "Et où passes-tu les jours de l'Aïd ?"
             },
             {
               "speaker": "جميل",
               "arabic": "أقضيها في مكة أو في المدينة",
-              "phonetic": "Aqḍīhā fī Makkah aw fī l-Madīnah",
               "french": "Je les passe à La Mecque ou à Médine."
             },
             {
               "speaker": "سليم",
               "arabic": "وماذا تَفْعَلُ فِي مَكَّةَ ؟",
-              "phonetic": "Wa mādhā tafʿalu fī Makkah?",
               "french": "Et que fais-tu à La Mecque ?"
             },
             {
               "speaker": "جميل",
-              "arabic": "أَطُوفُ حَوْلَ الكَعْبَةِ سَبْعَةَ أَشْواطٍ",
-              "phonetic": "Aṭūfu ḥawla l-Kaʿbati sabʿata ashwāṭ",
-              "french": "Je tourne autour de la Kaaba sept tours (Tawaf)."
-            },
-            {
-              "speaker": "جميل",
-              "arabic": "ثُمَّ أُصَلِّي رَكْعَتَينِ خَلْفَ مَقامِ إِبْرَاهِيمَ",
-              "phonetic": "Thumma uṣallī rakʿatayni khalfa maqāmi Ibrāhīm",
-              "french": "Ensuite je prie deux unités de prière derrière la station d'Ibrahim."
+              "arabic": "أَطُوفُ حَوْلَ الكَعْبَةِ سَبْعَةَ أَشْواطٍ\nثُمَّ أُصَلِّي رَكْعَتَينِ خَلْفَ مَقامِ إِبْرَاهِيمَ",
+              "french": "Je tourne autour de la Kaaba sept tours (Tawaf). Ensuite je prie deux unités de prière derrière la station d'Ibrahim."
             },
             {
               "speaker": "سليم",
               "arabic": "بِمَ تَشْعُرُ فِي مَكَّةَ والمَدِينَةِ ؟",
-              "phonetic": "Bima tashʿuru fī Makkah wa l-Madīnah?",
               "french": "Que ressens-tu à La Mecque et à Médine ?"
             },
             {
               "speaker": "جميل",
               "arabic": "أَشْعُرُ بالسرور",
-              "phonetic": "Ashʿuru bi-s-surūr",
               "french": "Je ressens de la joie."
             }
           ]
         },
         {
-          "id": "14.2",
-          "youtubeUrl": "",
+          "id": "2",
+          "youtubeUrl": "https://www.youtube.com/embed/cvZbvvh3EBU",
           "lines": [
             {
               "speaker": "الابن",
               "arabic": "كَيْفَ اعْتَمَرْتَ يا أبي ؟",
-              "phonetic": "Kayfa iʿtamarta yā abī?",
               "french": "Comment as-tu fait la Omra mon père ?"
             },
             {
               "speaker": "الأب",
               "arabic": "وَصَلْتُ إلى الميقاتِ عِنْدَ الظُّهْرِ",
-              "phonetic": "Waṣaltu ilā l-mīqāti ʿinda ẓ-ẓuhr",
               "french": "Je suis arrivé au Miquat à midi."
             },
             {
               "speaker": "الابن",
               "arabic": "وماذا فَعَلْتَ في الميقات ؟",
-              "phonetic": "Wa mādhā faʿalta fī l-mīqāt?",
               "french": "Et qu'as-tu fait au Miquat ?"
             },
             {
               "speaker": "الأب",
               "arabic": "خَلَعْتُ ثَوْبِي ، وَلَبِسْتُ مَلَابِسَ الإِحْرامِ وَلَبَّيْتُ بِالعُمْرَةِ",
-              "phonetic": "Khalaʿtu thawbī, wa labistu malābisa l-iḥrām...",
               "french": "J'ai enlevé mon vêtement, j'ai mis les habits de l'Ihram et j'ai prononcé la Talbiya pour la Omra."
             },
             {
               "speaker": "الابن",
               "arabic": "وَمَتى وَصَلْتَ إِلَى المَسْجِدِ الحَرَامِ ؟",
-              "phonetic": "Wa matā waṣalta ilā l-Masjidi l-Ḥarām?",
               "french": "Et quand es-tu arrivé à la Mosquée Sacrée ?"
             },
             {
               "speaker": "الأب",
               "arabic": "وَصَلْتُ بَعْدَ العَصْرِ",
-              "phonetic": "Waṣaltu baʿda l-ʿaṣr",
               "french": "Je suis arrivé après l'Asr."
             },
             {
               "speaker": "الابن",
               "arabic": "بِمَ شَعَرْتَ فِي المَسْجِدِ الْحَرَامِ ؟",
-              "phonetic": "Bima shaʿarta fī l-Masjidi l-Ḥarām?",
               "french": "Qu'as-tu ressenti dans la Mosquée Sacrée ?"
             },
             {
               "speaker": "الأب",
               "arabic": "شَعَرْتُ بِالسُّرُورِ",
-              "phonetic": "Shaʿartu bi-s-surūr",
               "french": "J'ai ressenti de la joie."
             },
             {
               "speaker": "الابن",
               "arabic": "كَمْ شَوْطاً طُفْتَ حَوْلَ الكَعْبَةِ ؟",
-              "phonetic": "Kam shawṭan ṭufta ḥawla l-Kaʿbah?",
               "french": "Combien de tours as-tu fait autour de la Kaaba ?"
             },
             {
               "speaker": "الأب",
               "arabic": "طُفْتُ سَبْعَةَ أَشْواطٍ، ثُمَّ صَلَّيْتُ رَكْعَتَينِ خَلْفَ مَقامِ إِبْراهيمَ",
-              "phonetic": "Ṭuftu sabʿata ashwāṭ...",
               "french": "J'ai fait sept tours, puis j'ai prié deux unités derrière la station d'Ibrahim."
             },
             {
               "speaker": "الابن",
               "arabic": "وماذا فَعَلْتَ بَعْدَ ذَلِكَ ؟",
-              "phonetic": "Wa mādhā faʿalta baʿda dhālik?",
               "french": "Et qu'as-tu fait après cela ?"
             },
             {
               "speaker": "الأب",
               "arabic": "سَعَيْتُ بَيْنَ الصَّفا والمَرْوَةِ سَبْعَةَ أَشْواطٍ ثُمَّ حَلَقْتُ رَأسي",
-              "phonetic": "Saʿaytu bayna ṣ-Ṣafā wa l-Marwah...",
               "french": "J'ai fait le Sa'y entre Safa et Marwa sept fois, puis je me suis rasé la tête."
             },
             {
               "speaker": "الابن",
               "arabic": "وَأَيْنَ خَلَعْتَ مَلَابِسَ الإِحْرَامِ ؟",
-              "phonetic": "Wa ayna khalaʿta malābisa l-iḥrām?",
               "french": "Et où as-tu enlevé les vêtements de l'Ihram ?"
             },
             {
               "speaker": "الأب",
               "arabic": "خَلَعْتُها فِي الفُنْدُقِ",
-              "phonetic": "Khalaʿtuhā fī l-funduq",
               "french": "Je les ai enlevés à l'hôtel."
             }
           ]
         },
         {
-          "id": "14.3",
-          "youtubeUrl": "",
+          "id": "3",
+          "youtubeUrl": "https://www.youtube.com/embed/cvZbvvh3EBU",
           "lines": [
             {
               "speaker": "الرجل",
               "arabic": "مَتى يَبْدَأُ الوُقوفُ بِعَرَفَةَ ؟",
-              "phonetic": "Matā yabda'u l-wuqūfu bi-ʿArafah?",
               "french": "Quand commence la station à Arafat ?"
             },
             {
               "speaker": "عدنان",
               "arabic": "يَبْدَأُ غَداً فِي اليَوْمِ النَّاسِعِ بَعْدَ الزَّوالِ",
-              "phonetic": "Yabda'u ghadan fī l-yawmi t-tāsiʿ baʿda z-zawāl",
               "french": "Elle commence demain, le neuvième jour, après le zénith."
             },
             {
               "speaker": "الرجل",
               "arabic": "ومَتى يَنْتَهي ؟",
-              "phonetic": "Wa matā yantahī?",
               "french": "Et quand finit-elle ?"
             },
             {
               "speaker": "عدنان",
               "arabic": "يَنْتَهِي عِنْدَ الفَجْرِ",
-              "phonetic": "Yantahī ʿinda l-fajr",
               "french": "Elle finit à l'aube."
             },
             {
               "speaker": "الرجل",
               "arabic": "هَلْ نُصَلِّي الظُّهْرَ والعَصْرَ فِي عَرَفَاتِ ؟",
-              "phonetic": "Hal nuṣallī ẓ-Ẓuhr wa l-ʿAṣr fī ʿArafāt?",
               "french": "Prions-nous le Dhuhr et le Asr à Arafat ?"
             },
             {
               "speaker": "عدنان",
               "arabic": "نَعَمْ، جَمْعاً وقَصْراً وَقْتَ الظَّهْرِ",
-              "phonetic": "Naʿam, jamʿan wa qaṣran waqta ẓ-Ẓuhr",
               "french": "Oui, groupées et raccourcies à l'heure du Dhuhr."
             },
             {
               "speaker": "الرجل",
               "arabic": "ومَتى نَذْهَبُ إِلى مُزْدَلِفَةَ ؟",
-              "phonetic": "Wa matā nadh-habu ilā Muzdalifah?",
               "french": "Et quand allons-nous à Muzdalifa ?"
             },
             {
               "speaker": "عدنان",
-              "arabic": "نَذْهَبُ بَعْدَ غُروبِ الشَّمْسِ",
-              "phonetic": "Nadh-habu baʿda ghurūbi sh-shams",
-              "french": "Nous irons après le coucher du soleil."
-            },
-            {
-              "speaker": "عدنان",
-              "arabic": "وَنُصَلِّي فيها المَغْرِبَ والعِشَاءَ جَمْعاً وقَصْراً",
-              "phonetic": "Wa nuṣallī fīhā l-Maghriba wa l-ʿIshā' jamʿan wa qaṣran",
-              "french": "Et nous y prierons le Maghrib et l'Isha groupées et raccourcies."
+              "arabic": "نَذْهَبُ بَعْدَ غُروبِ الشَّمْسِ\nوَنُصَلِّي فيها المَغْرِبَ والعِشَاءَ جَمْعاً وقَصْراً",
+              "french": "Nous irons après le coucher du soleil. Et nous y prierons le Maghrib et l'Isha groupées et raccourcies."
             },
             {
               "speaker": "الرجل",
               "arabic": "وماذا نَفْعَلُ بَعْدَ ذَلِكَ ؟",
-              "phonetic": "Wa mādhā nafʿalu baʿda dhālik?",
               "french": "Et que ferons-nous après cela ?"
             },
             {
               "speaker": "عدنان",
-              "arabic": "نَذْهَبُ إِلى مِنى قَبْلَ شُروقِ الشَّمْسِ",
-              "phonetic": "Nadh-habu ilā Minā qabla shurūqi sh-shams",
-              "french": "Nous irons à Mina avant le lever du soleil."
-            },
-            {
-              "speaker": "عدنان",
-              "arabic": "وَنَرْمي الجَمْرَةَ الكُبرى، ثُمَّ نَذْبَحُ الهَدْيَ، وَنَحْلِقُ رُؤوسَنا",
-              "phonetic": "Wa narmī l-jamrata l-kubrā, thumma nadhbaḥu...",
-              "french": "Et nous jetterons (les pierres) à la grande Jamra, puis nous sacrifierons l'offrande, et nous nous raserons la tête."
+              "arabic": "نَذْهَبُ إِلى مِنى قَبْلَ شُروقِ الشَّمْسِ\nوَنَرْمي الجَمْرَةَ الكُبرى، ثُمَّ نَذْبَحُ الهَدْيَ، وَنَحْلِقُ رُؤوسَنا",
+              "french": "Nous irons à Mina avant le lever du soleil. Et nous jetterons (les pierres) à la grande Jamra, puis nous sacrifierons l'offrande, et nous nous raserons la tête."
             },
             {
               "speaker": "الرجل",
               "arabic": "وماذا نَفْعَلُ بَعْدَ ذَلِكَ ؟",
-              "phonetic": "Wa mādhā nafʿalu baʿda dhālik?",
               "french": "Et que ferons-nous après cela ?"
             },
             {
               "speaker": "عدنان",
               "arabic": "نَذْهَبُ إِلى المَسْجِدِ الحرام لِطَوَافِ الإِفَاضَةِ وَسَعْيِ الْحَجِّ",
-              "phonetic": "...li-ṭawāfi l-ifāḍah wa saʿyi l-ḥajj",
               "french": "Nous irons à la Mosquée Sacrée pour le Tawaf al-Ifada et le Sa'y du Hajj."
             },
             {
               "speaker": "الرجل",
               "arabic": "وَمَتى نَطُوفُ طَوافَ الوَداع ؟",
-              "phonetic": "Wa matā naṭūfu ṭawāfa l-wadāʿ?",
               "french": "Et quand ferons-nous le Tawaf d'adieu ?"
             },
             {
               "speaker": "عدنان",
               "arabic": "بَعْدَ رَمْيِ الجَمَرَاتِ فِي اليَوْمِ الثَّانِي عَشَرَ، أَوِ الثَّالِثَ عَشَرَ",
-              "phonetic": "Baʿda ramyi l-jamarāt...",
               "french": "Après le jet des Jamarat le douzième ou le treizième jour."
             }
           ]
@@ -3584,265 +3016,214 @@
       "titleFr": "La Santé",
       "dialogues": [
         {
-          "id": "15.1",
-          "youtubeUrl": "",
+          "id": "1",
+          "youtubeUrl": "https://www.youtube.com/embed/cvZbvvh3EBU",
           "lines": [
             {
               "speaker": "مسعود",
               "arabic": "السَّلامُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكاتُهُ",
-              "phonetic": "As-salāmu ʿalaykum...",
               "french": "Que la paix, la miséricorde d'Allah et Ses bénédictions soient sur vous."
             },
             {
               "speaker": "محمود",
               "arabic": "وَعَلَيْكُمُ السَّلامُ وَرَحْمَةُ اللهِ وَبَرَكاتُهُ",
-              "phonetic": "Wa ʿalaykumu s-salām...",
               "french": "Et sur vous la paix..."
             },
             {
               "speaker": "مسعود",
               "arabic": "لماذا حَضَرْتَ اليَوْمَ إلى المُسْتَشْفَى ؟",
-              "phonetic": "Limādhā ḥaḍarta l-yawma ilā l-mustashfā?",
               "french": "Pourquoi es-tu venu aujourd'hui à l'hôpital ?"
             },
             {
               "speaker": "محمود",
               "arabic": "حَضَرْتُ لِزِيارَةِ طَبِيبِ الأَسْنان",
-              "phonetic": "Ḥaḍartu li-ziyārati ṭabībi l-asnān",
               "french": "Je suis venu voir le dentiste."
             },
             {
               "speaker": "مسعود",
               "arabic": "بِمَ تَشْعُرُ ؟",
-              "phonetic": "Bima tashʿur?",
               "french": "Que ressens-tu ?"
             },
             {
               "speaker": "محمود",
-              "arabic": "أَشْعُرُ بِأَلَم شَديد في أَسناني",
-              "phonetic": "Ashʿuru bi-alamin shadīd fī asnānī",
-              "french": "Je ressens une forte douleur dans mes dents."
-            },
-            {
-              "speaker": "محمود",
-              "arabic": "ولماذا حَضَرْتَ أَنْتَ إِلَى المُسْتَشْفَى ؟",
-              "phonetic": "Wa limādhā ḥaḍarta anta...",
-              "french": "Et pourquoi es-tu venu à l'hôpital toi ?"
+              "arabic": "أَشْعُرُ بِأَلَم شَديد في أَسناني\nولماذا حَضَرْتَ أَنْتَ إِلَى المُسْتَشْفَى ؟",
+              "french": "Je ressens une forte douleur dans mes dents. Et pourquoi es-tu venu à l'hôpital toi ?"
             },
             {
               "speaker": "مسعود",
               "arabic": "حَضَرْتُ لِزِيارَةِ طَبِيبِ الأَنْفِ وَالْأُذُنِ والحَنْجَرَة",
-              "phonetic": "...ṭabībi l-anfi wa l-udhuni wa l-ḥanjarah",
               "french": "Je suis venu voir l'ORL (médecin du nez, de l'oreille et de la gorge)."
             },
             {
               "speaker": "محمود",
               "arabic": "بِمَ تَشْعُرُ ؟",
-              "phonetic": "Bima tashʿur?",
               "french": "Que ressens-tu ?"
             },
             {
               "speaker": "مسعود",
               "arabic": "أَشْعُرُ بِأَلم شَدِيدٍ في أُذُني",
-              "phonetic": "Ashʿuru bi-alamin shadīd fī udhunī",
               "french": "Je ressens une forte douleur dans mon oreille."
             },
             {
               "speaker": "محمود",
               "arabic": "هَلْ لَدَيْكَ مَوْعِدٌ مَعَ الطَّبِيبِ ؟",
-              "phonetic": "Hal ladayka mawʿidun maʿa ṭ-ṭabīb?",
               "french": "As-tu un rendez-vous avec le médecin ?"
             },
             {
               "speaker": "مسعود",
               "arabic": "نَعَمْ ، مَوْعِدِي السَّاعَةَ العَاشِرَةَ",
-              "phonetic": "Naʿam, mawʿidī as-sāʿata l-ʿāshirah",
               "french": "Oui, mon rendez-vous est à dix heures."
             },
             {
               "speaker": "محمود",
               "arabic": "مَوْعِدِي السَّاعَةَ العَاشِرَةَ أَيْضاً",
-              "phonetic": "Mawʿidī as-sāʿata l-ʿāshirata ayḍan",
               "french": "Mon rendez-vous est à dix heures aussi."
             },
             {
               "speaker": "مسعود",
               "arabic": "السَّاعَةُ الْآنَ التَّاسِعَةُ وَالنِّصْفُ ، الباقي نِصْفُ سَاعَةٍ",
-              "phonetic": "...al-bāqī niṣfu sāʿah",
               "french": "Il est neuf heures et demie maintenant, il reste une demi-heure."
             }
           ]
         },
         {
-          "id": "15.2",
-          "youtubeUrl": "",
+          "id": "2",
+          "youtubeUrl": "https://www.youtube.com/embed/cvZbvvh3EBU",
           "lines": [
             {
               "speaker": "المدرس",
               "arabic": "السَّلامُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكاتُهُ",
-              "phonetic": "As-salāmu ʿalaykum...",
               "french": "Que la paix soit sur vous..."
             },
             {
               "speaker": "الطالب",
               "arabic": "وَعَلَيْكُمُ السَّلامُ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ",
-              "phonetic": "Wa ʿalaykumu s-salām...",
               "french": "Et sur vous la paix..."
             },
             {
               "speaker": "المدرس",
               "arabic": "لماذا تَغَيَّبْتَ عَنِ الدِّرَاسَةِ ؟",
-              "phonetic": "Limādhā taghayyabta ʿani d-dirāsah?",
               "french": "Pourquoi t'es-tu absenté des cours ?"
             },
             {
               "speaker": "الطالب",
               "arabic": "أُصِبْتُ بِزُكَامٍ شَدِيدٍ",
-              "phonetic": "Uṣibtu bi-zukāmin shadīd",
               "french": "J'ai attrapé un gros rhume."
             },
             {
               "speaker": "المدرس",
               "arabic": "بِمَ شَعَرْتَ ؟",
-              "phonetic": "Bima shaʿarta?",
               "french": "Qu'as-tu ressenti ?"
             },
             {
               "speaker": "الطالب",
               "arabic": "شَعَرْتُ بِصُداع شَدِيدٍ فِي اللَّيلِ، وَارتَفَعَتْ درجة حرارتي",
-              "phonetic": "Shaʿartu bi-ṣudāʿin shadīd...",
               "french": "J'ai ressenti un violent mal de tête la nuit, et ma température est montée."
             },
             {
               "speaker": "المدرس",
               "arabic": "هل قَابَلْتَ الطَّبِيبَ ؟",
-              "phonetic": "Hal qābalta ṭ-ṭabīb?",
               "french": "As-tu vu le médecin ?"
             },
             {
               "speaker": "الطالب",
               "arabic": "نَعَمْ ، ذَهَبْتُ إلى المُسْتَشْفَى بالإسعاف ، وقابلت الطبيب",
-              "phonetic": "Naʿam, dhahabtu ilā l-mustashfā bi-l-isʿāf...",
               "french": "Oui, je suis allé à l'hôpital en ambulance, et j'ai vu le médecin."
             },
             {
               "speaker": "المدرس",
               "arabic": "وبِمَ نَصَحَكَ الطَّبِيبُ ؟",
-              "phonetic": "Wa bima naṣaḥaka ṭ-ṭabīb?",
               "french": "Et que t'a conseillé le médecin ?"
             },
             {
               "speaker": "الطالب",
               "arabic": "نَصَحَنِي بِالرَّاحَةِ وَتَنَاوُلِ الدَّواءِ، وَهَذَا هُوَ التقرير الطبي",
-              "phonetic": "Naṣaḥanī bi-r-rāḥati wa tanāwuli d-dawā'...",
               "french": "Il m'a conseillé le repos et de prendre des médicaments, et voici le rapport médical."
             },
             {
               "speaker": "المدرس",
-              "arabic": "شُكْراً لَكَ . وَبِمَ تَشْعُرُ الآن ؟",
-              "phonetic": "Shukran lak. Wa bima tashʿuru l-ān?",
+              "arabic": "شُكْراً لَكَ\nوَبِمَ تَشْعُرُ الآن ؟",
               "french": "Merci à toi. Et comment te sens-tu maintenant ?"
             },
             {
               "speaker": "الطالب",
               "arabic": "الحَمْدُ لله ، أنا بِخَيْرٍ",
-              "phonetic": "Al-ḥamdu lillāh, ana bi-khayr",
               "french": "Louange à Dieu, je vais bien."
             }
           ]
         },
         {
-          "id": "15.3",
-          "youtubeUrl": "",
+          "id": "3",
+          "youtubeUrl": "https://www.youtube.com/embed/cvZbvvh3EBU",
           "lines": [
             {
               "speaker": "الزوجة",
               "arabic": "السَّلامُ عَلَيْكُم وَرَحْمَةُ اللهِ وَبَرَكاتُهُ",
-              "phonetic": "As-salāmu ʿalaykum...",
               "french": "Que la paix soit sur vous..."
             },
             {
               "speaker": "الزوج",
               "arabic": "وَعَلَيْكُمُ السَّلامُ وَرَحْمَةُ اللهِ وَبَرَكاتُهُ",
-              "phonetic": "Wa ʿalaykumu s-salām...",
               "french": "Et sur vous la paix..."
             },
             {
               "speaker": "الزوجة",
               "arabic": "خَيْراً ، هَلْ قَابَلْتَ الطَّبِيبَ ؟",
-              "phonetic": "Khayran, hal qābalta ṭ-ṭabīb?",
               "french": "J'espère que c'est bon, as-tu vu le médecin ?"
             },
             {
               "speaker": "الزوج",
               "arabic": "نَعَمْ ، وفَحَصَ الصَّدْرَ، والقَلْبَ، والكُلْيَةَ وقاس الضغط",
-              "phonetic": "Naʿam, wa faḥaṣa ṣ-ṣadra wa l-qalba wa l-kulyah...",
               "french": "Oui, et il a examiné la poitrine, le cœur, le rein et a mesuré la tension."
             },
             {
               "speaker": "الزوجة",
               "arabic": "وما النتيجة ؟",
-              "phonetic": "Wa mā n-natījah?",
               "french": "Et quel est le résultat ?"
             },
             {
               "speaker": "الزوج",
-              "arabic": "القَلْبُ سَليم، والحَمْدُ للهِ",
-              "phonetic": "Al-qalbu salīm, wa l-ḥamdu lillāh",
-              "french": "Le cœur est sain, louange à Dieu."
-            },
-            {
-              "speaker": "الزوج",
-              "arabic": "هُناكَ ارتفاع قَلِيلٌ في الضَّغْطِ والسُّكَّري",
-              "phonetic": "Hunāka irtifāʿun qalīl fī ḍ-ḍaghṭi wa s-sukkariyy",
-              "french": "Il y a une légère augmentation de la tension et du diabète."
+              "arabic": "القَلْبُ سَليم، والحَمْدُ للهِ\nهُناكَ ارتفاع قَلِيلٌ في الضَّغْطِ والسُّكَّري",
+              "french": "Le cœur est sain, louange à Dieu. Il y a une légère augmentation de la tension et du diabète."
             },
             {
               "speaker": "الزوجة",
               "arabic": "مَا سَبَبُ ذَلِكَ ؟",
-              "phonetic": "Mā sababu dhālik?",
               "french": "Quelle en est la cause ?"
             },
             {
               "speaker": "الزوج",
               "arabic": "زِيادَةُ الوَزْنِ",
-              "phonetic": "Ziyādatu l-wazn",
               "french": "L'augmentation du poids (surpoids)."
             },
             {
               "speaker": "الزوجة",
               "arabic": "وماذا طَلَبَ مِنْكَ الطَّبِيبُ ؟",
-              "phonetic": "Wa mādhā ṭalaba minka ṭ-ṭabīb?",
               "french": "Et que t'a demandé le médecin ?"
             },
             {
               "speaker": "الزوج",
               "arabic": "طَلَبَ مِنِّي تَرْكَ السُّكَرِيَّاتِ",
-              "phonetic": "Ṭalaba minnī tarka s-sukkariyyāt",
               "french": "Il m'a demandé d'arrêter les sucreries."
             },
             {
               "speaker": "الزوجة",
               "arabic": "وَهَلْ طَلَبَ مِنْكَ شَيئًا آخَرَ ؟",
-              "phonetic": "Wa hal ṭalaba minka shay'an ākhar?",
               "french": "Et t'a-t-il demandé autre chose ?"
             },
             {
               "speaker": "الزوج",
               "arabic": "نَعَمْ ، مُمارَسَةَ الرياضةِ ، وتَناول الفاكهة والخضراوات",
-              "phonetic": "Naʿam, mumārasata r-riyāḍah...",
               "french": "Oui, de faire du sport, et de manger des fruits et des légumes."
             },
             {
               "speaker": "الزوجة",
               "arabic": "شَفَاكَ اللَّهُ",
-              "phonetic": "Shafāka llāh",
               "french": "Qu'Allah te guérisse."
             },
             {
               "speaker": "الزوج",
               "arabic": "آمين ، شُكراً لكِ",
-              "phonetic": "Āmīn, shukran laki",
               "french": "Amen, merci à toi."
             }
           ]
@@ -3855,259 +3236,199 @@
       "titleFr": "Les Vacances",
       "dialogues": [
         {
-          "id": "16.1",
-          "youtubeUrl": "",
+          "id": "1",
+          "youtubeUrl": "https://www.youtube.com/embed/cvZbvvh3EBU",
           "lines": [
             {
               "speaker": "الابن",
               "arabic": "كَمْ عِيداً في الإسلام يا أبي ؟",
-              "phonetic": "Kam ʿīdan fī l-islāmi yā abī?",
               "french": "Combien de fêtes y a-t-il en Islam mon père ?"
             },
             {
               "speaker": "الأب",
               "arabic": "في الإسلام عيدان : عيد الفِطْرِ ، وَعِيدُ الأضحى",
-              "phonetic": "Fī l-islāmi ʿīdān: ʿĪdu l-Fiṭr wa ʿĪdu l-Aḍḥā",
               "french": "En Islam il y a deux fêtes : l'Aïd al-Fitr et l'Aïd al-Adha."
             },
             {
               "speaker": "الابن",
               "arabic": "مَتى عيدُ الفِطْرِ ؟",
-              "phonetic": "Matā ʿĪdu l-Fiṭr?",
               "french": "Quand est l'Aïd al-Fitr ?"
             },
             {
               "speaker": "الأب",
               "arabic": "بَعدَ شَهْرِ رَمَضَانَ : فِي اليَوْمِ الْأَوَّلِ مِنْ شَوَّالٍ",
-              "phonetic": "Baʿda shahri Ramaḍān: fī l-yawmi l-awwali min Shawwāl",
               "french": "Après le mois de Ramadan : le premier jour de Shawwal."
             },
             {
               "speaker": "الابن",
               "arabic": "ماذا نَعْمَلُ فِي يَوْمِ العيد ؟",
-              "phonetic": "Mādhā naʿmalu fī yawmi l-ʿīd?",
               "french": "Que faisons-nous le jour de la fête ?"
             },
             {
               "speaker": "الأب",
               "arabic": "نُعْطِي زَكَاةَ الفِطْرِ لِلْفُقَرَاءِ",
-              "phonetic": "Nuʿṭī zakāta l-fiṭri lil-fuqarā'",
               "french": "Nous donnons la Zakat al-Fitr aux pauvres."
             },
             {
               "speaker": "الابن",
               "arabic": "وما زَكَاةُ الفِطْرِ ؟",
-              "phonetic": "Wa mā zakātu l-fiṭr?",
               "french": "Et qu'est-ce que la Zakat al-Fitr ?"
             },
             {
               "speaker": "الأب",
               "arabic": "صَاعٌ مِنْ طَعَامٍ عَنْ كُلِّ شَخْصٍ",
-              "phonetic": "Ṣāʿun min ṭaʿāmin ʿan kulli shakhṣ",
               "french": "Un Sa' (mesure) de nourriture pour chaque personne."
             },
             {
               "speaker": "الابن",
               "arabic": "وماذا نَفْعَلُ بَعْدَ ذَلِكَ ؟",
-              "phonetic": "Wa mādhā nafʿalu baʿda dhālik?",
               "french": "Et que faisons-nous après cela ?"
             },
             {
               "speaker": "الأب",
               "arabic": "نُصَلِّي صَلاةَ العيد ، ونزورُ الأَهْل والأصدقاء",
-              "phonetic": "Nuṣallī ṣalāta l-ʿīd, wa nazūru l-ahla wa l-aṣdiqā'",
               "french": "Nous prions la prière de l'Aïd, et nous visitons la famille et les amis."
             },
             {
               "speaker": "الابن",
               "arabic": "وَمَتى عيد الأضحى ؟",
-              "phonetic": "Wa matā ʿĪdu l-Aḍḥā?",
               "french": "Et quand est l'Aïd al-Adha ?"
             },
             {
               "speaker": "الأب",
               "arabic": "في اليَوْمِ العاشر من ذي الحجة",
-              "phonetic": "Fī l-yawmi l-ʿāshiri min Dhī l-Ḥijjah",
               "french": "Le dixième jour de Dhu al-Hijjah."
             },
             {
               "speaker": "الابن",
               "arabic": "وماذا نَفْعَلُ في عيد الأضحى ؟",
-              "phonetic": "Wa mādhā nafʿalu fī ʿĪdi l-Aḍḥā?",
               "french": "Et que faisons-nous à l'Aïd al-Adha ?"
             },
             {
               "speaker": "الأب",
               "arabic": "نُصَلِّي صَلاةَ العيد، ونَدْبَحُ الأَضْحِيَّةَ، وَنَزُورُ الأهل والأصدقاء",
-              "phonetic": "Nuṣallī... wa nadhbaḥu l-uḍḥiyyah...",
               "french": "Nous prions la prière de l'Aïd, nous sacrifions la bête (l'offrande), et nous visitons famille et amis."
             }
           ]
         },
         {
-          "id": "16.2",
-          "youtubeUrl": "",
+          "id": "2",
+          "youtubeUrl": "https://www.youtube.com/embed/cvZbvvh3EBU",
           "lines": [
             {
               "speaker": "أحمد",
               "arabic": "اقْتَرَبَتِ العُطْلَةُ يا أبي",
-              "phonetic": "Iqtarabati l-ʿuṭlatu yā abī",
               "french": "Les vacances approchent mon père."
             },
             {
               "speaker": "الأب",
               "arabic": "ما رَأيكِ يَا نَدَى ؟ إِلَى أَيْنَ نُسَافِرُ ؟",
-              "phonetic": "Mā ra'yuki yā Nadā? Ilā ayna nusāfir?",
               "french": "Quel est ton avis Nada ? Où voyageons-nous ?"
             },
             {
               "speaker": "ندى",
               "arabic": "لَدَيَّ فِكْرَةٌ ، نُسَافِرُ إِلى مِصْرَ",
-              "phonetic": "Ladayya fikrah, nusāfiru ilā Miṣr",
               "french": "J'ai une idée, nous voyageons en Égypte."
             },
             {
               "speaker": "أحمد",
               "arabic": "لماذا نُسَافِرُ إِلى مِصْرَ ؟",
-              "phonetic": "Limādhā nusāfiru ilā Miṣr?",
               "french": "Pourquoi voyageons-nous en Égypte ?"
             },
             {
               "speaker": "ندى",
               "arabic": "لِنَرَى مِصْرَ ، وَنَهْرَ النِّيلِ",
-              "phonetic": "Linarā Miṣr, wa nahra n-Nīl",
               "french": "Pour voir l'Égypte et le fleuve Nil."
             },
             {
               "speaker": "أحمد",
               "arabic": "مُوافِقٌ ، فَكْرَةٌ طَيِّبَةٌ",
-              "phonetic": "Muwāfiq, fikratun ṭayyibah",
               "french": "D'accord, bonne idée."
             },
             {
               "speaker": "الأب",
               "arabic": "كَيْفَ نُسَافِرُ إِلَى مِصْرَ ؟",
-              "phonetic": "Kayfa nusāfiru ilā Miṣr?",
               "french": "Comment voyageons-nous en Égypte ?"
             },
             {
               "speaker": "ندى",
               "arabic": "نُسَافِرُ بِالجَو",
-              "phonetic": "Nusāfiru bi-l-jaw",
               "french": "Nous voyageons par les airs (avion)."
             },
             {
               "speaker": "الأب",
               "arabic": "السَّفَرُ بِالجو غال",
-              "phonetic": "As-safaru bi-l-jawwi ghāl",
               "french": "Le voyage par avion est cher."
             },
             {
               "speaker": "أحمد",
               "arabic": "إذن نُسَافِرُ بِالبَحْرِ السَّفَرُ بِالبَحْرِ رَخِيصٌ",
-              "phonetic": "Idhan nusāfiru bi-l-baḥr...",
               "french": "Alors voyageons par la mer, le voyage par mer est bon marché."
             },
             {
               "speaker": "الأب",
               "arabic": "كَمْ يَوْماً سَنَقْضِي فِي مِصْرَ ؟",
-              "phonetic": "Kam yawman sanaqḍī fī Miṣr?",
               "french": "Combien de jours passerons-nous en Égypte ?"
             },
             {
               "speaker": "ندى",
               "arabic": "سَبْعَةَ أَيَّامٍ",
-              "phonetic": "Sabʿata ayyām",
               "french": "Sept jours."
             },
             {
               "speaker": "الأب",
               "arabic": "سَبْعَةَ أَيَّامٍ ... جَمِيلٌ نُسَافِرُ يَوْمَ السَّبْتِ، إِنْ شَاءَ الله",
-              "phonetic": "...Jamīl, nusāfiru yawma s-sabt...",
               "french": "Sept jours... Bien, nous voyagerons samedi, si Dieu le veut."
             },
             {
               "speaker": "أحمد وندى",
               "arabic": "شُكْراً لَكَ يا أبي",
-              "phonetic": "Shukran laka yā abī",
               "french": "Merci à toi mon père."
             }
           ]
         },
         {
-          "id": "16.3",
-          "youtubeUrl": "",
+          "id": "3",
+          "youtubeUrl": "https://www.youtube.com/embed/cvZbvvh3EBU",
           "lines": [
             {
               "speaker": "المدرس",
-              "arabic": "أَيْنَ سَتَقْضُونَ عُطْلَةَ الصَّيْفِ يا أبنائي ؟",
-              "phonetic": "Ayna sataqḍūna ʿuṭlata ṣ-ṣayfi yā abnā'ī?",
-              "french": "Où passerez-vous les vacances d'été mes enfants (fils) ?"
-            },
-            {
-              "speaker": "المدرس",
-              "arabic": "إلى أَيْنَ سَتَذْهَبُ أَنْتَ ؟",
-              "phonetic": "Ilā ayna satadh-habu anta?",
-              "french": "Où iras-tu toi ?"
+              "arabic": "أَيْنَ سَتَقْضُونَ عُطْلَةَ الصَّيْفِ يا أبنائي ؟\nإلى أَيْنَ سَتَذْهَبُ أَنْتَ ؟",
+              "french": "Où passerez-vous les vacances d'été mes enfants (fils) ? Où iras-tu toi ?"
             },
             {
               "speaker": "الطالب 1",
-              "arabic": "سَأَقْضِي عُطْلَةَ الصَّيْفِ فِي القَرْيَةِ مَعَ جدي",
-              "phonetic": "Sa-aqḍī ʿuṭlata ṣ-ṣayfi fī l-qaryati maʿa jaddī",
-              "french": "Je passerai les vacances d'été au village avec mon grand-père."
-            },
-            {
-              "speaker": "الطالب 1",
-              "arabic": "المكانُ هُناكَ هَادِئٌ ، والهَواءُ نَقِيٌّ",
-              "phonetic": "Al-makānu hunāka hādi', wa l-hawā'u naqiyy",
-              "french": "L'endroit là-bas est calme, et l'air est pur."
+              "arabic": "سَأَقْضِي عُطْلَةَ الصَّيْفِ فِي القَرْيَةِ مَعَ جدي\nالمكانُ هُناكَ هَادِئٌ ، والهَواءُ نَقِيٌّ",
+              "french": "Je passerai les vacances d'été au village avec mon grand-père. L'endroit là-bas est calme, et l'air est pur."
             },
             {
               "speaker": "الطالب 2",
-              "arabic": "سَأقْضِي عُطْلَةَ الصَّيْفِ فِي العَاصِمَةِ مَعَ عَمِّي",
-              "phonetic": "Sa-aqḍī ʿuṭlata ṣ-ṣayfi fī l-ʿāṣimati maʿa ʿammī",
-              "french": "Je passerai les vacances d'été dans la capitale avec mon oncle paternel."
-            },
-            {
-              "speaker": "الطالب 2",
-              "arabic": "سأزور المكتبات والمتاحف",
-              "phonetic": "Sa-azūru l-maktabāti wa l-matāḥif",
-              "french": "Je visiterai les bibliothèques et les musées."
+              "arabic": "سَأقْضِي عُطْلَةَ الصَّيْفِ فِي العَاصِمَةِ مَعَ عَمِّي\nسأزور المكتبات والمتاحف",
+              "french": "Je passerai les vacances d'été dans la capitale avec mon oncle paternel. Je visiterai les bibliothèques et les musées."
             },
             {
               "speaker": "الطالب 3",
               "arabic": "سأقضي عُطْلَةَ الصَّيْفِ بَيْنِ الجِبالِ مَعَ فَرِيقِ الجوالة",
-              "phonetic": "Sa-aqḍī ʿuṭlata ṣ-ṣayfi bayna l-jibāli maʿa farīqi l-jawwālah",
               "french": "Je passerai les vacances d'été dans les montagnes avec l'équipe de scouts."
             },
             {
               "speaker": "الطالب 4",
-              "arabic": "سَأَقْضِي العُطْلَةَ فِي مَكَّةَ والمَدِينَةِ مَعَ أُسْرَتِي",
-              "phonetic": "Sa-aqḍī l-ʿuṭlata fī Makkata wa l-Madīnati maʿa usratī",
-              "french": "Je passerai les vacances à La Mecque et Médine avec ma famille."
-            },
-            {
-              "speaker": "الطالب 4",
-              "arabic": "سَنَعْتَمِرُ، وَنَحُجُّ ، وَنَزُورُ المَسْجِدَ النَّبَوِيَّ",
-              "phonetic": "Sanaʿtamiru, wa naḥujju, wa nazūru l-Masjida n-Nabawiyy",
-              "french": "Nous ferons la Omra, le Hajj, et nous visiterons la Mosquée du Prophète."
+              "arabic": "سَأَقْضِي العُطْلَةَ فِي مَكَّةَ والمَدِينَةِ مَعَ أُسْرَتِي\nسَنَعْتَمِرُ، وَنَحُجُّ ، وَنَزُورُ المَسْجِدَ النَّبَوِيَّ",
+              "french": "Je passerai les vacances à La Mecque et Médine avec ma famille. Nous ferons la Omra, le Hajj, et nous visiterons la Mosquée du Prophète."
             },
             {
               "speaker": "الطالب 5",
               "arabic": "سَأَقْضِي العُطْلَةَ فِي بَلَدِي سأساعد والدي في المَزْرَعَة",
-              "phonetic": "Sa-aqḍī l-ʿuṭlata fī baladī, sa-usāʿidu wālidī fī l-mazraʿah",
               "french": "Je passerai les vacances dans mon pays, j'aiderai mon père à la ferme."
             },
             {
               "speaker": "المدرس",
               "arabic": "عُطْلَةً سَعِيدَةً يا أبنائي",
-              "phonetic": "ʿUṭlatan saʿīdatan yā abnā'ī",
               "french": "Bonnes vacances mes enfants."
             },
             {
               "speaker": "الطلاب",
               "arabic": "عُطْلَةً سَعِيدَةً يَا أُسْتَاذُ",
-              "phonetic": "ʿUṭlatan saʿīdatan yā ustādh",
               "french": "Bonnes vacances professeur."
             }
           ]

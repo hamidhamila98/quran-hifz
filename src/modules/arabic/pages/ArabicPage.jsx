@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
-import { ChevronRight, ChevronLeft, Check, Languages, Youtube, Type } from 'lucide-react'
+import { ChevronRight, ChevronLeft, Check, Languages, Youtube, FileText, BookOpen } from 'lucide-react'
+import PdfViewer from '../components/PdfViewer'
 
 // Arabic fonts for learning
 const ARABIC_FONTS = [
@@ -11,11 +12,12 @@ const ARABIC_FONTS = [
 
 export default function ArabicPage({ settings, updateSettings }) {
   const [arabicData, setArabicData] = useState(null)
+  const [pdfPagesMapping, setPdfPagesMapping] = useState(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
   const [showTranslation, setShowTranslation] = useState(false)
-  const [hideTashkeel, setHideTashkeel] = useState(false) // Toggle to hide diacritics
   const [selectedLineIndex, setSelectedLineIndex] = useState(null) // For individual line translation
+  const [showVocabulary, setShowVocabulary] = useState(false) // For vocabulary PDF view
 
   // Function to remove Arabic diacritics (tashkeel) but KEEP shadda
   const removeTashkeel = (text) => {
@@ -55,13 +57,16 @@ export default function ArabicPage({ settings, updateSettings }) {
     }
   }
 
-  // Load Arabic data (reload when book changes)
+  // Load Arabic data and PDF mapping (reload when book changes)
   useEffect(() => {
     setLoading(true)
-    fetch(getDataFile())
-      .then(res => res.json())
-      .then(data => {
+    Promise.all([
+      fetch(getDataFile()).then(res => res.json()),
+      fetch('/arabic/aby-pages.json').then(res => res.json())
+    ])
+      .then(([data, pdfMapping]) => {
         setArabicData(data)
+        setPdfPagesMapping(pdfMapping)
         setLoading(false)
       })
       .catch(err => {
@@ -69,6 +74,27 @@ export default function ArabicPage({ settings, updateSettings }) {
         setLoading(false)
       })
   }, [currentBook])
+
+  // Get PDF file path for current lesson
+  const getPdfFile = () => {
+    if (!pdfPagesMapping) return null
+    const mapping = pdfPagesMapping[currentBook]
+    if (!mapping) return null
+    const key = `${currentUnit}-${currentDialogue}`
+    const fileName = mapping[key]
+    if (!fileName) return null
+    return `/arabic/pdf/${fileName}`
+  }
+
+  // Get Vocabulary PDF file path for current unit
+  const getVocabularyPdfFile = () => {
+    if (!pdfPagesMapping) return null
+    const vocMapping = pdfPagesMapping[`${currentBook}-voc`]
+    if (!vocMapping) return null
+    const fileName = vocMapping[`${currentUnit}`]
+    if (!fileName) return null
+    return `/arabic/pdf/${fileName}`
+  }
 
   // Get current unit and lesson (dialogue for tome 1, lesson for tome 2)
   const unit = arabicData?.units?.find(u => u.id === currentUnit)
@@ -157,7 +183,7 @@ export default function ArabicPage({ settings, updateSettings }) {
     setShowTranslation(!showTranslation)
   }
 
-  // Get speaker color classes
+  // Get speaker color classes (alternates Blue/Amber by line index)
   const getSpeakerColor = (speaker, index, isTexteType) => {
     // For texte type, use a neutral color (no speaker alternation)
     if (isTexteType) {
@@ -166,28 +192,27 @@ export default function ArabicPage({ settings, updateSettings }) {
       }
       return 'bg-gray-50 border-gray-200'
     }
-    // Alternate between two colors based on speaker or index
-    // Dark yellow (amber) for first speaker, dark blue for second
-    const isFirstSpeaker = index % 2 === 0
+    // Simple alternation: even index = Blue, odd index = Amber
+    const isEven = index % 2 === 0
     if (settings.darkMode) {
-      return isFirstSpeaker
-        ? 'bg-amber-900/50 border-amber-700/50'
-        : 'bg-blue-900/50 border-blue-700/50'
+      return isEven
+        ? 'bg-blue-900/50 border-blue-700/50'
+        : 'bg-amber-900/50 border-amber-700/50'
     }
-    return isFirstSpeaker
-      ? 'bg-amber-100 border-amber-300'
-      : 'bg-blue-100 border-blue-300'
+    return isEven
+      ? 'bg-blue-100 border-blue-300'
+      : 'bg-amber-100 border-amber-300'
   }
 
   const getSpeakerTextColor = (index, isTexteType) => {
     if (isTexteType) {
       return settings.darkMode ? 'text-emerald-400' : 'text-emerald-700'
     }
-    const isFirstSpeaker = index % 2 === 0
+    const isEven = index % 2 === 0
     if (settings.darkMode) {
-      return isFirstSpeaker ? 'text-amber-400' : 'text-blue-400'
+      return isEven ? 'text-blue-400' : 'text-amber-400'
     }
-    return isFirstSpeaker ? 'text-amber-700' : 'text-blue-700'
+    return isEven ? 'text-blue-700' : 'text-amber-700'
   }
 
   if (loading) {
@@ -251,15 +276,15 @@ export default function ArabicPage({ settings, updateSettings }) {
         </div>
       </div>
 
-      {/* Main Content */}
-      <div className="grid lg:grid-cols-3 gap-6">
-        {/* Left: Arabic Text */}
-        <div className="lg:col-span-2">
+      {/* Main Content - Flexible grid: Text takes more space, Video takes less */}
+      <div className="grid lg:grid-cols-5 gap-4">
+        {/* Left: Arabic Text - 3/5 of space */}
+        <div className="lg:col-span-3">
           {/* Navigation Header */}
           <div className="flex items-center justify-between mb-4">
             <div className="flex items-center gap-3">
               <h3 className={`text-lg font-semibold ${settings.darkMode ? 'text-white' : 'text-gray-800'}`}>
-                Unité {unit?.id} - {isTexte ? 'Texte' : 'Dialogue'} {lesson?.id}
+                Unité {unit?.id} - {unit?.titleFr} <span className={`${settings.darkMode ? 'text-amber-400' : 'text-amber-600'}`} dir="rtl" style={{ fontFamily: getFontFamily() }}>({unit?.titleAr})</span>
               </h3>
               {/* Type badge for tome 2 */}
               {currentBook !== 'aby1' && (
@@ -328,166 +353,174 @@ export default function ArabicPage({ settings, updateSettings }) {
 
             {/* Action Buttons */}
             <div className="flex items-center gap-2">
-              {/* Tashkeel Toggle Button */}
+              {/* Vocabulary PDF Button */}
               <button
-                onClick={() => setHideTashkeel(!hideTashkeel)}
-                className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-colors ${
-                  hideTashkeel
-                    ? 'bg-amber-500 text-white'
+                onClick={() => setShowVocabulary(!showVocabulary)}
+                className={`flex items-center gap-1.5 px-3 py-2 text-sm rounded-lg transition-colors ${
+                  showVocabulary
+                    ? 'bg-purple-500 text-white'
                     : settings.darkMode
                       ? 'bg-slate-700 text-gray-300 hover:bg-slate-600'
                       : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                 }`}
-                title={hideTashkeel ? "Afficher les diacritiques" : "Masquer les diacritiques"}
+                title="Afficher le vocabulaire"
               >
-                <Type className="w-4 h-4" />
-                تَشْكِيل {selectedLineIndex !== null && `(${selectedLineIndex + 1})`}
-              </button>
-
-              {/* Translate Button */}
-              <button
-                onClick={handleTranslate}
-                className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-colors ${
-                  showTranslation
-                    ? 'bg-sky-500 text-white'
-                    : settings.darkMode
-                      ? 'bg-slate-700 text-gray-300 hover:bg-slate-600'
-                      : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                }`}
-              >
-                <Languages className="w-4 h-4" />
-                Traduire {selectedLineIndex !== null && `(${selectedLineIndex + 1})`}
+                <BookOpen className="w-4 h-4" />
+                Voc
               </button>
             </div>
           </div>
 
-          {/* Unit/Lesson Info */}
-          <div className={`mb-4 px-4 py-3 rounded-xl ${settings.darkMode ? 'bg-slate-800' : 'bg-white'} shadow-sm`}>
+          {/* Dialogues bar with Translate button - Sticky */}
+          <div className={`mb-4 px-4 py-3 rounded-xl ${settings.darkMode ? 'bg-slate-800' : 'bg-white'} shadow-sm sticky top-0 z-10`}>
             <div className="flex items-center justify-between gap-4">
-              <div>
-                <p className={`text-lg font-semibold ${settings.darkMode ? 'text-white' : 'text-gray-800'}`}>
-                  {unit?.titleFr}
-                </p>
-                {/* Show lesson title for tome 2 */}
-                {lesson?.titleAr && (
-                  <p className={`text-sm ${settings.darkMode ? 'text-gray-400' : 'text-gray-500'}`} dir="rtl" style={{ fontFamily: getFontFamily() }}>
-                    {lesson.titleAr}
-                  </p>
-                )}
-                {lesson?.description && (
-                  <p className={`text-sm ${settings.darkMode ? 'text-gray-400' : 'text-gray-500'}`}>
-                    {lesson.description}
-                  </p>
-                )}
-              </div>
-              <p className={`text-xl font-bold ${settings.darkMode ? 'text-emerald-400' : 'text-emerald-600'}`} dir="rtl" style={{ fontFamily: getFontFamily() }}>
-                {unit?.titleAr}
-              </p>
-            </div>
-          </div>
-
-          {/* Lesson lines - Compact layout */}
-          <div className={`rounded-2xl ${settings.darkMode ? 'bg-slate-800' : 'bg-white'} shadow-sm`}>
-            <div className="divide-y divide-gray-200 dark:divide-slate-700">
-              {lesson?.lines?.map((line, index) => {
-                const isSelected = selectedLineIndex === index
-                const showThisTranslation = showTranslation && (selectedLineIndex === null || selectedLineIndex === index)
-                const hideThisTashkeel = hideTashkeel && (selectedLineIndex === null || selectedLineIndex === index)
-                const isFirst = index === 0
-                const isLast = index === (lesson?.lines?.length || 0) - 1
-                const displayArabic = hideThisTashkeel ? removeTashkeel(line.arabic) : line.arabic
-
-                return (
-                  <div
-                    key={index}
-                    onClick={() => handleLineClick(index)}
-                    className={`p-3 cursor-pointer transition-all border-l-4 ${getSpeakerColor(line.speaker, index, isTexte)} ${
-                      isFirst ? 'rounded-t-2xl' : ''
-                    } ${isLast ? 'rounded-b-2xl' : ''} ${
-                      isSelected
-                        ? settings.darkMode
-                          ? 'bg-emerald-900/30 border-l-emerald-500'
-                          : 'bg-emerald-50 border-l-emerald-500'
-                        : 'hover:opacity-80'
-                    }`}
-                  >
-                    {/* Arabic text with speaker name inline (no speaker for texte) */}
-                    <div
-                      className={`leading-relaxed ${settings.darkMode ? 'text-gray-100' : 'text-gray-800'}`}
-                      style={{
-                        fontFamily: getFontFamily(),
-                        fontSize: getFontSize(),
-                        lineHeight: 2
+              <div className="flex items-center flex-wrap gap-2">
+                {lessons?.map((d, idx) => {
+                  const isActive = idx === currentDialogue
+                  const isValidatedLesson = validatedDialogues[`${currentUnit}-${idx}`]
+                  return (
+                    <button
+                      key={idx}
+                      onClick={() => {
+                        updateSettings({ arabicDialogue: idx })
+                        setShowTranslation(false)
+                        setSelectedLineIndex(null)
                       }}
-                      dir="rtl"
+                      className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-colors ${
+                        isActive
+                          ? 'bg-emerald-500 text-white'
+                          : isValidatedLesson
+                            ? settings.darkMode
+                              ? 'bg-emerald-900/50 text-emerald-300 hover:bg-emerald-900/70'
+                              : 'bg-emerald-100 text-emerald-700 hover:bg-emerald-200'
+                            : settings.darkMode
+                              ? 'bg-slate-700 text-gray-300 hover:bg-slate-600'
+                              : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                      }`}
                     >
-                      {/* Only show speaker for dialogue type */}
-                      {!isTexte && line.speaker && (
-                        <>
-                          <span className={`font-bold ${getSpeakerTextColor(index, isTexte)}`} style={{ fontSize: '0.85em' }}>
-                            {line.speaker}:
-                          </span>
-                          {' '}
-                        </>
-                      )}
-                      {displayArabic}
-                    </div>
-
-                    {/* French translation */}
-                    {showThisTranslation && (
-                      <div
-                        className={`mt-2 text-sm ${settings.darkMode ? 'text-sky-400' : 'text-sky-600'}`}
-                        style={{ fontFamily: 'Georgia, serif' }}
-                      >
-                        {line.french}
-                      </div>
-                    )}
-                  </div>
-                )
-              })}
-            </div>
-          </div>
-
-          {/* Lesson selector */}
-          <div className="flex items-center justify-center gap-2 mt-4 flex-wrap">
-            {lessons?.map((d, idx) => (
-              <button
-                key={idx}
-                onClick={() => {
-                  updateSettings({ arabicDialogue: idx })
-                  setShowTranslation(false)
-                  setSelectedLineIndex(null)
-                }}
-                className={`w-9 h-9 rounded-full flex items-center justify-center text-sm font-medium transition-colors ${
-                  idx === currentDialogue
-                    ? 'bg-emerald-500 text-white'
-                    : validatedDialogues[`${currentUnit}-${idx}`]
-                      ? settings.darkMode
-                        ? 'bg-emerald-900/50 text-emerald-300'
-                        : 'bg-emerald-100 text-emerald-700'
+                      {isTexte ? 'Texte' : 'Dialogue'} {d.id}
+                    </button>
+                  )
+                })}
+              </div>
+              {/* Translate Button - Only show in text mode (not PDF mode and not vocabulary) */}
+              {!settings.pdfMode && !showVocabulary && (
+                <button
+                  onClick={handleTranslate}
+                  className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-colors flex-shrink-0 ${
+                    showTranslation
+                      ? 'bg-sky-500 text-white'
                       : settings.darkMode
                         ? 'bg-slate-700 text-gray-300 hover:bg-slate-600'
-                        : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
-                }`}
-              >
-                {d.id}
-              </button>
-            ))}
+                        : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                  }`}
+                >
+                  <Languages className="w-4 h-4" />
+                  Traduire
+                </button>
+              )}
+            </div>
           </div>
+
+          {/* Content: PDF Mode, Vocabulary PDF, or Text */}
+          {settings.pdfMode || showVocabulary ? (
+            <PdfViewer
+              pdfFile={showVocabulary ? getVocabularyPdfFile() : getPdfFile()}
+              darkMode={settings.darkMode}
+            />
+          ) : (
+            /* Lesson lines - Compact layout */
+            <div className={`rounded-2xl ${settings.darkMode ? 'bg-slate-800' : 'bg-white'} shadow-sm`}>
+              <div className="divide-y divide-gray-200 dark:divide-slate-700">
+                {lesson?.lines?.map((line, index) => {
+                  // Separator line (empty speaker) - render as white divider
+                  if (!line.speaker && !line.arabic) {
+                    return (
+                      <div
+                        key={index}
+                        className={`h-20 ${settings.darkMode ? 'bg-slate-900' : 'bg-white'}`}
+                      />
+                    )
+                  }
+
+                  const isSelected = selectedLineIndex === index
+                  const showThisTranslation = showTranslation && (selectedLineIndex === null || selectedLineIndex === index)
+                  const hideThisTashkeel = settings.hideTashkeel && (selectedLineIndex === null || selectedLineIndex === index)
+                  const isFirst = index === 0
+                  const isLast = index === (lesson?.lines?.length || 0) - 1
+                  const displayArabic = hideThisTashkeel ? removeTashkeel(line.arabic) : line.arabic
+
+                  return (
+                    <div
+                      key={index}
+                      onClick={() => handleLineClick(index)}
+                      className={`p-3 cursor-pointer transition-all border-l-4 ${getSpeakerColor(line.speaker, index, isTexte)} ${
+                        isFirst ? 'rounded-t-2xl' : ''
+                      } ${isLast ? 'rounded-b-2xl' : ''} ${
+                        isSelected
+                          ? settings.darkMode
+                            ? 'bg-emerald-900/30 border-l-emerald-500'
+                            : 'bg-emerald-50 border-l-emerald-500'
+                          : 'hover:opacity-80'
+                      }`}
+                    >
+                      {/* Arabic text with speaker name */}
+                      <div
+                        className={`leading-relaxed ${settings.darkMode ? 'text-gray-100' : 'text-gray-800'}`}
+                        style={{
+                          fontFamily: getFontFamily(),
+                          fontSize: getFontSize(),
+                          lineHeight: 2,
+                          display: 'flex',
+                          gap: '0.5em'
+                        }}
+                        dir="rtl"
+                      >
+                        {/* Speaker name (fixed width, no wrap) */}
+                        {!isTexte && line.speaker && (
+                          <span
+                            className={`font-bold ${getSpeakerTextColor(index, isTexte)}`}
+                            style={{ fontSize: '0.85em', whiteSpace: 'nowrap', flexShrink: 0 }}
+                          >
+                            {line.speaker}:
+                          </span>
+                        )}
+                        {/* Arabic text (wraps and aligns properly) */}
+                        <span style={{ whiteSpace: 'pre-line' }}>
+                          {displayArabic}
+                        </span>
+                      </div>
+
+                      {/* French translation */}
+                      {showThisTranslation && (
+                        <div
+                          className={`mt-2 text-sm ${settings.darkMode ? 'text-sky-400' : 'text-sky-600'}`}
+                          style={{ fontFamily: 'Georgia, serif' }}
+                        >
+                          {line.french}
+                        </div>
+                      )}
+                    </div>
+                  )
+                })}
+              </div>
+            </div>
+          )}
+
         </div>
 
-        {/* Right: YouTube iframe - Made bigger */}
-        <div className={`lg:col-span-1`}>
-          <div className={`p-5 rounded-2xl ${settings.darkMode ? 'bg-slate-800' : 'bg-white'} shadow-sm sticky top-6`}>
-            <div className="flex items-center gap-2 mb-4">
-              <Youtube className={`w-6 h-6 ${settings.darkMode ? 'text-red-400' : 'text-red-600'}`} />
-              <h2 className={`font-semibold text-lg ${settings.darkMode ? 'text-white' : 'text-gray-900'}`}>
+        {/* Right: YouTube iframe - 2/5 of space (40%) */}
+        <div className="lg:col-span-2">
+          <div className={`p-4 rounded-2xl ${settings.darkMode ? 'bg-slate-800' : 'bg-white'} shadow-sm sticky top-6`}>
+            <div className="flex items-center gap-2 mb-3">
+              <Youtube className={`w-5 h-5 ${settings.darkMode ? 'text-red-400' : 'text-red-600'}`} />
+              <h2 className={`font-semibold ${settings.darkMode ? 'text-white' : 'text-gray-900'}`}>
                 Vidéo
               </h2>
             </div>
 
             {lesson?.youtubeUrl ? (
-              <div style={{ aspectRatio: '16/10' }}>
+              <div style={{ aspectRatio: '16/9' }}>
                 <iframe
                   className="w-full h-full rounded-xl"
                   src={lesson.youtubeUrl}
@@ -500,11 +533,10 @@ export default function ArabicPage({ settings, updateSettings }) {
             ) : (
               <div className={`flex items-center justify-center rounded-xl border-2 border-dashed ${
                 settings.darkMode ? 'border-slate-600 text-gray-500' : 'border-gray-300 text-gray-400'
-              }`} style={{ aspectRatio: '16/10' }}>
+              }`} style={{ aspectRatio: '16/9' }}>
                 <div className="text-center p-6">
-                  <Youtube className="w-16 h-16 mx-auto mb-3 opacity-50" />
-                  <p className={`text-base ${settings.darkMode ? 'text-gray-400' : 'text-gray-500'}`}>Aucune vidéo configurée</p>
-                  <p className={`text-sm mt-1 ${settings.darkMode ? 'text-gray-500' : 'text-gray-400'}`}>Lien YouTube à ajouter</p>
+                  <Youtube className="w-12 h-12 mx-auto mb-2 opacity-50" />
+                  <p className={`text-sm ${settings.darkMode ? 'text-gray-400' : 'text-gray-500'}`}>Aucune vidéo</p>
                 </div>
               </div>
             )}

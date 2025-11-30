@@ -1,54 +1,45 @@
 import { useState } from 'react'
-import { NavLink } from 'react-router-dom'
 import {
+  Home,
   BookMarked,
-  ChevronLeft,
-  ChevronRight,
-  Moon,
-  Sun,
-  BookOpen,
-  Languages,
-  Library,
   Database,
   Cloud,
-  ChevronDown,
   Type,
   Link2,
-  Settings
+  Moon,
+  Sun
 } from 'lucide-react'
+import {
+  SidebarWrapper,
+  SidebarHeader,
+  SidebarNav,
+  SidebarDropdown,
+  SidebarToggle,
+  SidebarSizeSelector,
+  SidebarConfig,
+  SidebarFooter
+} from '../../../components/sidebar'
 import { HADITH_BOOKS } from '../services/hadithService'
 
 const navItems = [
-  { path: '/quran', icon: BookOpen, label: 'Quran Hifz' },
-  { path: '/arabic', icon: Languages, label: 'Arabe' },
-  { path: '/library', icon: Library, label: 'Bibliothèque' },
+  { path: '/', icon: Home, label: 'MyIslam' },
 ]
 
 const FONT_OPTIONS = [
-  { id: 'amiri', name: 'Amiri', nameAr: 'أميري' },
-  { id: 'scheherazade', name: 'Scheherazade', nameAr: 'شهرزاد' },
-  { id: 'noto-naskh', name: 'Noto Naskh', nameAr: 'نوتو نسخ' },
-  { id: 'kitab', name: 'Kitab', nameAr: 'كتاب' },
-]
-
-const SIZE_OPTIONS = [
-  { id: 'small', name: 'Petit' },
-  { id: 'medium', name: 'Moyen' },
-  { id: 'large', name: 'Grand' },
+  { id: 'amiri', name: 'Amiri' },
+  { id: 'scheherazade', name: 'Scheherazade New' },
+  { id: 'noto-naskh', name: 'Noto Naskh Arabic' },
+  { id: 'kitab', name: 'Kitab' },
 ]
 
 export default function HadithSidebar({ isOpen, setIsOpen, settings, updateSettings }) {
+  const [fontDropdownOpen, setFontDropdownOpen] = useState(false)
+  const [configOpen, setConfigOpen] = useState(false)
+
   const darkMode = settings.darkMode
   const selectedBook = settings.hadithBook
   const isDorar = settings.hadithSource === 'dorar'
-
-  // Dropdown states
-  const [fontDropdownOpen, setFontDropdownOpen] = useState(false)
-  const [sizeDropdownOpen, setSizeDropdownOpen] = useState(false)
-  const [configOpen, setConfigOpen] = useState(false)
-
   const currentFont = FONT_OPTIONS.find(f => f.id === settings.hadithFont) || FONT_OPTIONS[0]
-  const currentSize = SIZE_OPTIONS.find(s => s.id === settings.hadithFontSize) || SIZE_OPTIONS[1]
 
   const handleBookSelect = (bookId) => {
     updateSettings({ hadithBook: bookId })
@@ -56,36 +47,25 @@ export default function HadithSidebar({ isOpen, setIsOpen, settings, updateSetti
 
   const closeAllDropdowns = () => {
     setFontDropdownOpen(false)
-    setSizeDropdownOpen(false)
   }
 
   return (
-    <aside
-      className={`fixed top-0 left-0 h-full ${darkMode ? 'bg-slate-800 border-slate-700' : 'bg-white border-gray-200'} border-r transition-all duration-300 z-50 flex flex-col ${isOpen ? 'w-64' : 'w-16'}`}
-    >
-      {/* Header */}
-      <div className={`p-4 border-b ${darkMode ? 'border-slate-700' : 'border-gray-200'} flex items-center justify-between`}>
-        {isOpen && (
-          <div>
-            <h1 className={`font-bold text-lg ${darkMode ? 'text-white' : 'text-gray-800'}`}>
-              Kutub al-Sitta
-            </h1>
-            <p className={`text-xs font-arabic ${darkMode ? 'text-gray-400' : 'text-gray-500'}`}>
-              الكتب الستة
-            </p>
-          </div>
-        )}
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          className={`p-2 rounded-lg ${darkMode ? 'hover:bg-slate-700 text-gray-300' : 'hover:bg-gray-100 text-gray-600'}`}
-        >
-          {isOpen ? <ChevronLeft size={20} /> : <ChevronRight size={20} />}
-        </button>
-      </div>
+    <SidebarWrapper isOpen={isOpen} darkMode={darkMode}>
+      <SidebarHeader
+        isOpen={isOpen}
+        setIsOpen={setIsOpen}
+        darkMode={darkMode}
+        title="MyHadith"
+        icon="ح"
+        gradientFrom="from-rose-500"
+        gradientTo="to-rose-700"
+      />
+
+      <SidebarNav items={navItems} isOpen={isOpen} darkMode={darkMode} accentColor="rose" />
 
       {/* Data Source Toggle */}
       {isOpen && (
-        <div className={`px-3 py-2 border-b ${darkMode ? 'border-slate-700' : 'border-gray-200'}`}>
+        <div className={`px-3 py-3 border-t ${darkMode ? 'border-slate-700' : 'border-gray-100'}`}>
           <div className={`text-xs font-medium mb-2 ${darkMode ? 'text-gray-400' : 'text-gray-500'}`}>
             Source des données
           </div>
@@ -119,9 +99,9 @@ export default function HadithSidebar({ isOpen, setIsOpen, settings, updateSetti
       {/* Books List */}
       <div className="flex-1 overflow-y-auto">
         {isOpen && !isDorar && (
-          <div className={`px-3 py-2 border-b ${darkMode ? 'border-slate-700' : 'border-gray-200'}`}>
+          <div className={`px-3 py-2 border-t ${darkMode ? 'border-slate-700' : 'border-gray-100'}`}>
             <div className={`text-xs font-medium ${darkMode ? 'text-gray-400' : 'text-gray-500'}`}>
-              Les 6 Recueils Authentiques
+              Les 6 Recueils
             </div>
           </div>
         )}
@@ -155,7 +135,7 @@ export default function HadithSidebar({ isOpen, setIsOpen, settings, updateSetti
               <button
                 key={book.id}
                 onClick={() => handleBookSelect(book.id)}
-                className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-lg transition-colors border ${
+                className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-xl transition-colors border ${
                   isSelected
                     ? colorClasses[book.color]
                     : darkMode
@@ -176,202 +156,97 @@ export default function HadithSidebar({ isOpen, setIsOpen, settings, updateSetti
 
           {/* Dorar mode info */}
           {isDorar && isOpen && (
-            <div className={`p-3 rounded-lg ${darkMode ? 'bg-slate-700/50' : 'bg-gray-50'}`}>
+            <div className={`p-3 rounded-xl ${darkMode ? 'bg-slate-700/50' : 'bg-gray-50'}`}>
               <p className={`text-xs font-medium ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
                 Mode recherche Dorar
               </p>
               <p className={`text-xs mt-1 ${darkMode ? 'text-gray-500' : 'text-gray-400'}`}>
-                Recherchez dans tous les livres avec grades (صحيح، حسن، ضعيف)
+                Recherchez dans tous les livres avec grades
               </p>
             </div>
-          )}
-
-          {/* Separator */}
-          <div className={`my-3 border-t ${darkMode ? 'border-slate-700' : 'border-gray-200'}`} />
-
-          {/* Configuration Section */}
-          {isOpen && (
-            <div className="space-y-2">
-              {/* Config Header */}
-              <button
-                onClick={() => { setConfigOpen(!configOpen); closeAllDropdowns() }}
-                className={`w-full flex items-center justify-between px-3 py-2 rounded-lg transition-colors ${
-                  darkMode ? 'hover:bg-slate-700 text-gray-300' : 'hover:bg-gray-100 text-gray-600'
-                }`}
-              >
-                <div className="flex items-center gap-2">
-                  <Settings size={18} />
-                  <span className="text-sm font-medium">Configuration</span>
-                </div>
-                <ChevronDown size={16} className={`transition-transform ${configOpen ? 'rotate-180' : ''}`} />
-              </button>
-
-              {configOpen && (
-                <div className="space-y-2 pl-2">
-                  {/* Font Dropdown */}
-                  <div className="relative">
-                    <button
-                      onClick={() => { setFontDropdownOpen(!fontDropdownOpen); setSizeDropdownOpen(false) }}
-                      className={`w-full flex items-center justify-between px-3 py-2 rounded-lg transition-colors ${
-                        darkMode ? 'bg-slate-700/50 hover:bg-slate-700' : 'bg-gray-50 hover:bg-gray-100'
-                      }`}
-                    >
-                      <div className="flex items-center gap-2">
-                        <Type size={16} className="text-rose-500" />
-                        <span className={`text-sm ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
-                          {currentFont.name}
-                        </span>
-                      </div>
-                      <ChevronDown size={14} className={`transition-transform ${fontDropdownOpen ? 'rotate-180' : ''}`} />
-                    </button>
-                    {fontDropdownOpen && (
-                      <div className={`absolute top-full left-0 right-0 mt-1 rounded-lg shadow-lg border overflow-hidden z-50 ${
-                        darkMode ? 'bg-slate-800 border-slate-700' : 'bg-white border-gray-200'
-                      }`}>
-                        {FONT_OPTIONS.map((font) => (
-                          <button
-                            key={font.id}
-                            onClick={() => {
-                              updateSettings({ hadithFont: font.id })
-                              setFontDropdownOpen(false)
-                            }}
-                            className={`w-full px-3 py-2 text-left text-sm flex justify-between items-center ${
-                              settings.hadithFont === font.id
-                                ? darkMode ? 'bg-rose-900/30 text-rose-300' : 'bg-rose-50 text-rose-700'
-                                : darkMode ? 'text-gray-300 hover:bg-slate-700' : 'text-gray-700 hover:bg-gray-50'
-                            }`}
-                          >
-                            <span>{font.name}</span>
-                            <span className="font-arabic">{font.nameAr}</span>
-                          </button>
-                        ))}
-                      </div>
-                    )}
-                  </div>
-
-                  {/* Size Dropdown */}
-                  <div className="relative">
-                    <button
-                      onClick={() => { setSizeDropdownOpen(!sizeDropdownOpen); setFontDropdownOpen(false) }}
-                      className={`w-full flex items-center justify-between px-3 py-2 rounded-lg transition-colors ${
-                        darkMode ? 'bg-slate-700/50 hover:bg-slate-700' : 'bg-gray-50 hover:bg-gray-100'
-                      }`}
-                    >
-                      <div className="flex items-center gap-2">
-                        <span className={`text-sm font-medium ${darkMode ? 'text-gray-400' : 'text-gray-500'}`}>Aa</span>
-                        <span className={`text-sm ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
-                          Taille: {currentSize.name}
-                        </span>
-                      </div>
-                      <ChevronDown size={14} className={`transition-transform ${sizeDropdownOpen ? 'rotate-180' : ''}`} />
-                    </button>
-                    {sizeDropdownOpen && (
-                      <div className={`absolute top-full left-0 right-0 mt-1 rounded-lg shadow-lg border overflow-hidden z-50 ${
-                        darkMode ? 'bg-slate-800 border-slate-700' : 'bg-white border-gray-200'
-                      }`}>
-                        {SIZE_OPTIONS.map((size) => (
-                          <button
-                            key={size.id}
-                            onClick={() => {
-                              updateSettings({ hadithFontSize: size.id })
-                              setSizeDropdownOpen(false)
-                            }}
-                            className={`w-full px-3 py-2 text-left text-sm ${
-                              settings.hadithFontSize === size.id
-                                ? darkMode ? 'bg-rose-900/30 text-rose-300' : 'bg-rose-50 text-rose-700'
-                                : darkMode ? 'text-gray-300 hover:bg-slate-700' : 'text-gray-700 hover:bg-gray-50'
-                            }`}
-                          >
-                            {size.name}
-                          </button>
-                        ))}
-                      </div>
-                    )}
-                  </div>
-
-                  {/* Isnad Toggle */}
-                  <button
-                    onClick={() => updateSettings({ hadithShowIsnad: !settings.hadithShowIsnad })}
-                    className={`w-full flex items-center justify-between px-3 py-2 rounded-lg transition-colors ${
-                      darkMode ? 'bg-slate-700/50 hover:bg-slate-700' : 'bg-gray-50 hover:bg-gray-100'
-                    }`}
-                  >
-                    <div className="flex items-center gap-2">
-                      <Link2 size={16} className={settings.hadithShowIsnad ? 'text-rose-500' : (darkMode ? 'text-gray-500' : 'text-gray-400')} />
-                      <span className={`text-sm ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
-                        Isnad (chaîne)
-                      </span>
-                    </div>
-                    <div className={`w-9 h-5 rounded-full transition-colors relative ${
-                      settings.hadithShowIsnad
-                        ? 'bg-rose-500'
-                        : darkMode ? 'bg-slate-600' : 'bg-gray-300'
-                    }`}>
-                      <div className={`absolute top-0.5 w-4 h-4 rounded-full bg-white shadow transition-transform ${
-                        settings.hadithShowIsnad ? 'translate-x-4' : 'translate-x-0.5'
-                      }`} />
-                    </div>
-                  </button>
-                </div>
-              )}
-
-              {/* Separator */}
-              <div className={`my-2 border-t ${darkMode ? 'border-slate-700' : 'border-gray-200'}`} />
-
-              {/* Other modules */}
-              {navItems.map((item) => (
-                <NavLink
-                  key={item.path}
-                  to={item.path}
-                  className={({ isActive }) =>
-                    `flex items-center gap-3 px-3 py-2.5 rounded-lg transition-colors ${
-                      isActive
-                        ? darkMode ? 'bg-slate-700 text-white' : 'bg-gray-100 text-gray-900'
-                        : darkMode ? 'text-gray-400 hover:bg-slate-700 hover:text-gray-300' : 'text-gray-500 hover:bg-gray-100 hover:text-gray-700'
-                    }`
-                  }
-                >
-                  <item.icon size={18} />
-                  <span className="text-sm">{item.label}</span>
-                </NavLink>
-              ))}
-            </div>
-          )}
-
-          {/* Collapsed state - just icons */}
-          {!isOpen && (
-            <>
-              {navItems.map((item) => (
-                <NavLink
-                  key={item.path}
-                  to={item.path}
-                  className={({ isActive }) =>
-                    `flex items-center justify-center p-3 rounded-lg transition-colors ${
-                      isActive
-                        ? darkMode ? 'bg-slate-700 text-white' : 'bg-gray-100 text-gray-900'
-                        : darkMode ? 'text-gray-400 hover:bg-slate-700' : 'text-gray-500 hover:bg-gray-100'
-                    }`
-                  }
-                  title={item.label}
-                >
-                  <item.icon size={20} />
-                </NavLink>
-              ))}
-            </>
           )}
         </nav>
       </div>
 
-      {/* Dark Mode Toggle */}
-      <div className={`p-4 border-t ${darkMode ? 'border-slate-700' : 'border-gray-200'}`}>
-        <button
-          onClick={() => updateSettings({ darkMode: !darkMode })}
-          className={`flex items-center gap-3 w-full px-3 py-2 rounded-lg ${darkMode ? 'hover:bg-slate-700 text-gray-300' : 'hover:bg-gray-100 text-gray-600'}`}
-        >
-          {darkMode ? <Sun size={20} /> : <Moon size={20} />}
-          {isOpen && <span>{darkMode ? 'Mode clair' : 'Mode sombre'}</span>}
-        </button>
-      </div>
-    </aside>
+      {/* Configuration Section */}
+      {isOpen && (
+        <div className={`px-3 py-3 border-t ${darkMode ? 'border-slate-700' : 'border-gray-100'}`}>
+          <SidebarConfig
+            isOpen={configOpen}
+            setIsOpen={setConfigOpen}
+            darkMode={darkMode}
+            accentColor="rose"
+          >
+            {/* Font Dropdown */}
+            <SidebarDropdown
+              label="Police"
+              value={currentFont.name}
+              icon={Type}
+              isOpen={fontDropdownOpen}
+              setIsOpen={(open) => { closeAllDropdowns(); setFontDropdownOpen(open) }}
+              options={FONT_OPTIONS}
+              onSelect={(id) => updateSettings({ hadithFont: id })}
+              currentValue={settings.hadithFont || 'amiri'}
+              darkMode={darkMode}
+              accentColor="rose"
+            />
+
+            {/* Font Size */}
+            <SidebarSizeSelector
+              label="Taille"
+              value={settings.hadithFontSize || 'medium'}
+              onChange={(size) => updateSettings({ hadithFontSize: size })}
+              darkMode={darkMode}
+              accentColor="rose"
+            />
+
+            {/* Isnad Toggle */}
+            <SidebarToggle
+              label="Isnad (chaîne)"
+              icon={Link2}
+              value={settings.hadithShowIsnad}
+              onChange={() => updateSettings({ hadithShowIsnad: !settings.hadithShowIsnad })}
+              darkMode={darkMode}
+              accentColor="rose"
+            />
+
+            {/* Dark Mode Toggle */}
+            <SidebarToggle
+              label="Mode sombre"
+              icon={darkMode ? Moon : Sun}
+              value={darkMode}
+              onChange={() => updateSettings({ darkMode: !darkMode })}
+              darkMode={darkMode}
+              accentColor="rose"
+            />
+          </SidebarConfig>
+        </div>
+      )}
+
+      {/* Collapsed Icons */}
+      {!isOpen && (
+        <div className={`flex-1 px-2 py-4 space-y-2 border-t mt-2 ${darkMode ? 'border-slate-700' : 'border-gray-100'}`}>
+          <button
+            onClick={() => updateSettings({ darkMode: !darkMode })}
+            className={`w-full p-3 rounded-xl transition-colors ${
+              darkMode
+                ? 'bg-rose-900/30 text-rose-400'
+                : 'text-gray-500 hover:bg-gray-100'
+            }`}
+            title="Mode sombre"
+          >
+            {darkMode ? <Moon className="w-5 h-5 mx-auto" /> : <Sun className="w-5 h-5 mx-auto" />}
+          </button>
+        </div>
+      )}
+
+      <SidebarFooter
+        isOpen={isOpen}
+        darkMode={darkMode}
+        arabicText="الْحَدِيثُ النَّبَوِيُّ"
+        frenchText="Le hadith prophétique"
+        accentColor="rose"
+      />
+    </SidebarWrapper>
   )
 }

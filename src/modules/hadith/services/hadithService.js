@@ -18,20 +18,17 @@ export const HADITH_BOOKS = [
 let localHadithCache = null
 let chaptersCache = {}
 
-// Load all local hadith data
+// Load all local hadith data from the 3 part files
 export async function loadLocalHadiths() {
   if (localHadithCache) return localHadithCache
 
   try {
-    const [bukhari, muslim, abuDawud, tirmidhi, nasai, ibnMajah] = await Promise.all([
-      fetch('/hadith/Bukhari.json').then(r => r.json()),
-      fetch('/hadith/Muslim.json').then(r => r.json()),
-      fetch('/hadith/AbouDaoud.json').then(r => r.json()),
-      fetch('/hadith/Tirmidhi.json').then(r => r.json()),
-      fetch('/hadith/Nasai.json').then(r => r.json()),
-      fetch('/hadith/IbnMajah.json').then(r => r.json()),
+    const [part1, part2, part3] = await Promise.all([
+      fetch('/hadith/hadiths-part1.json').then(r => r.json()),
+      fetch('/hadith/hadiths-part2.json').then(r => r.json()),
+      fetch('/hadith/hadiths-part3.json').then(r => r.json()),
     ])
-    localHadithCache = [...bukhari, ...muslim, ...abuDawud, ...tirmidhi, ...nasai, ...ibnMajah]
+    localHadithCache = [...part1, ...part2, ...part3]
     return localHadithCache
   } catch (error) {
     console.error('Error loading local hadiths:', error)
@@ -39,10 +36,16 @@ export async function loadLocalHadiths() {
   }
 }
 
-// Get hadiths by book
+// Get hadiths by book (sorted by chapter and hadith number)
 export async function getHadithsByBook(bookSource) {
   const hadiths = await loadLocalHadiths()
-  return hadiths.filter(h => h.source === bookSource)
+  return hadiths
+    .filter(h => h.source === bookSource)
+    .sort((a, b) => {
+      // Sort by chapter first, then by hadith number
+      if (a.chapter_no !== b.chapter_no) return a.chapter_no - b.chapter_no
+      return a.hadith_no - b.hadith_no
+    })
 }
 
 // Get chapters for a book
