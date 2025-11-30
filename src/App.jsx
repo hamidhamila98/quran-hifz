@@ -1,10 +1,19 @@
 import { useState, useEffect } from 'react'
 import { Routes, Route, useLocation } from 'react-router-dom'
-import Sidebar from './components/Sidebar'
-import ArabicSidebar from './components/ArabicSidebar'
-import HomePage from './pages/HomePage'
-import TrainingPage from './pages/TrainingPage'
-import ArabicPage from './pages/ArabicPage'
+import LandingPage from './pages/LandingPage'
+// Quran module
+import QuranSidebar from './modules/quran/components/QuranSidebar'
+import HomePage from './modules/quran/pages/HomePage'
+import TrainingPage from './modules/quran/pages/TrainingPage'
+// Arabic module
+import ArabicSidebar from './modules/arabic/components/ArabicSidebar'
+import ArabicPage from './modules/arabic/pages/ArabicPage'
+// Hadith module
+import HadithSidebar from './modules/hadith/components/HadithSidebar'
+import HadithPage from './modules/hadith/pages/HadithPage'
+// Library module
+import LibrarySidebar from './modules/library/components/LibrarySidebar'
+import LibraryPage from './modules/library/pages/LibraryPage'
 
 // Default settings
 const defaultSettings = {
@@ -35,11 +44,21 @@ const defaultSettings = {
   arabicValidated: {}, // { "1-0": true, "1-1": true, ... }
   arabicLearningFont: 'amiri',
   arabicLearningFontSize: 'medium',
+  // Hadith settings
+  hadithSource: 'local', // 'local' or 'dorar' (API)
+  hadithBook: 'bukhari', // Selected book
+  hadithFont: 'amiri', // Font for Arabic text
+  hadithFontSize: 'medium', // small, medium, large
+  hadithShowIsnad: true, // Show chain of narration
 }
 
 function App() {
   const location = useLocation()
+  const isLandingPage = location.pathname === '/'
+  const isQuranPage = location.pathname.startsWith('/quran')
   const isArabicPage = location.pathname.startsWith('/arabic')
+  const isHadithPage = location.pathname.startsWith('/hadith')
+  const isLibraryPage = location.pathname.startsWith('/library')
 
   const [settings, setSettings] = useState(() => {
     const saved = localStorage.getItem('quran-hifz-settings')
@@ -67,37 +86,61 @@ function App() {
     setSettings(prev => ({ ...prev, ...newSettings }))
   }
 
+  // Landing page has no sidebar
+  if (isLandingPage) {
+    return (
+      <div className={settings.darkMode ? 'dark' : ''}>
+        <Routes>
+          <Route path="/" element={<LandingPage darkMode={settings.darkMode} />} />
+        </Routes>
+      </div>
+    )
+  }
+
+  // Determine which sidebar to show
+  const renderSidebar = () => {
+    const sidebarProps = {
+      isOpen: sidebarOpen,
+      setIsOpen: setSidebarOpen,
+      settings,
+      updateSettings,
+    }
+
+    if (isArabicPage) return <ArabicSidebar {...sidebarProps} />
+    if (isHadithPage) return <HadithSidebar {...sidebarProps} />
+    if (isLibraryPage) return <LibrarySidebar {...sidebarProps} />
+    return <QuranSidebar {...sidebarProps} />
+  }
+
   return (
     <div className={`flex min-h-screen ${settings.darkMode ? 'dark bg-slate-900' : 'bg-gray-50'}`}>
-      {isArabicPage ? (
-        <ArabicSidebar
-          isOpen={sidebarOpen}
-          setIsOpen={setSidebarOpen}
-          settings={settings}
-          updateSettings={updateSettings}
-        />
-      ) : (
-        <Sidebar
-          isOpen={sidebarOpen}
-          setIsOpen={setSidebarOpen}
-          settings={settings}
-          updateSettings={updateSettings}
-        />
-      )}
+      {renderSidebar()}
 
       <main className={`flex-1 transition-all duration-300 ${sidebarOpen ? 'ml-64' : 'ml-16'}`}>
         <Routes>
+          {/* Quran module */}
           <Route
-            path="/"
+            path="/quran"
             element={<HomePage settings={settings} updateSettings={updateSettings} />}
           />
           <Route
-            path="/training"
+            path="/quran/training"
             element={<TrainingPage settings={settings} />}
           />
+          {/* Arabic module */}
           <Route
             path="/arabic"
             element={<ArabicPage settings={settings} updateSettings={updateSettings} />}
+          />
+          {/* Hadith module */}
+          <Route
+            path="/hadith"
+            element={<HadithPage settings={settings} updateSettings={updateSettings} />}
+          />
+          {/* Library module */}
+          <Route
+            path="/library"
+            element={<LibraryPage settings={settings} updateSettings={updateSettings} />}
           />
         </Routes>
       </main>

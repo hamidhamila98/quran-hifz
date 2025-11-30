@@ -1,0 +1,1930 @@
+{
+  "bookId": "aby2",
+  "bookName": "Al-Arabiya Bayna Yadayk - Tome 2",
+  "units": [
+    {
+      "id": 5,
+      "titleAr": "العلم والتعلم",
+      "titleFr": "La science et l'apprentissage",
+      "lessons": [
+        {
+          "id": "5.1",
+          "type": "dialogue",
+          "titleAr": "الالتحاق بالجامعة",
+          "titleFr": "",
+          "youtubeUrl": "",
+          "lines": [
+            {
+              "speaker": "مبارك",
+              "arabic": "زُرْتُكَ أَمْسِ فِي البَيْتِ، وَلَمْ أَجِدْكَ",
+              "phonetic": "Zurtuka amsi fī l-bayt, wa lam ajidk",
+              "french": "Je t'ai rendu visite hier à la maison, et je ne t'ai pas trouvé."
+            },
+            {
+              "speaker": "سالم",
+              "arabic": "ذَهَبْتُ معَ ابْني طارق إلى الجامعة",
+              "phonetic": "Dhahabtu maʿa ibnī Ṭāriq ilā l-jāmiʿah",
+              "french": "Je suis allé avec mon fils Tariq à l'université."
+            },
+            {
+              "speaker": "سالم",
+              "arabic": "لِيُقَدِّمَ أَوْرَاقَهُ إِلَى كُلِّيَّةِ الْهَنْدَسَةِ",
+              "phonetic": "Liyuqaddima awrāqahu ilā kulliyyati l-handasah",
+              "french": "Pour qu'il présente ses papiers (dossier) à la faculté d'ingénierie."
+            },
+            {
+              "speaker": "مبارك",
+              "arabic": "سَيُقْبَلُ طارق في كُلِّيَّةِ الهَنْدَسَةِ - إِنْ شَاءَ اللهُ",
+              "phonetic": "Sayuqbalu Ṭāriq fī kulliyyati l-handasah - in shā'a llāh",
+              "french": "Tariq sera accepté à la faculté d'ingénierie, si Dieu le veut."
+            },
+            {
+              "speaker": "مبارك",
+              "arabic": "فَتَقْدِيرُهُ « مُمْتَازُ » فِي الثَّانَوِيَّةِ",
+              "phonetic": "Fa-taqdīruhu \"mumtāz\" fī th-thānawiyyah",
+              "french": "Car sa mention est \"Excellent\" au lycée (secondaire)."
+            },
+            {
+              "speaker": "سالم",
+              "arabic": "هَلْ قَدَّمَ ابْنُكَ أَوْرَاقَهُ إِلَى كُلِّيَّةِ الطَّبِّ؟",
+              "phonetic": "Hal qaddama ibnuka awrāqahu ilā kulliyyati ṭ-ṭibb?",
+              "french": "Est-ce que ton fils a présenté ses papiers à la faculté de médecine ?"
+            },
+            {
+              "speaker": "مبارك",
+              "arabic": "لا ، لَمْ يُقَدِّمُ أَوْرَاقَهُ إلى كُلِّيَّةِ الطَّبّ",
+              "phonetic": "Lā, lam yuqaddim awrāqahu ilā kulliyyati ṭ-ṭibb",
+              "french": "Non, il n'a pas présenté ses papiers à la faculté de médecine."
+            },
+            {
+              "speaker": "مبارك",
+              "arabic": "إِنَّهُ لَا يَرْغَبُ في دِرَاسَةِ الطَّبِ",
+              "phonetic": "Innahu lā yarghabu fī dirāsati ṭ-ṭibb",
+              "french": "Il ne désire pas étudier la médecine."
+            },
+            {
+              "speaker": "سالم",
+              "arabic": "لا يَرْغَبُ في دِرَاسَةِ الطِّبِّ ؟!",
+              "phonetic": "Lā yarghabu fī dirāsati ṭ-ṭibb?!",
+              "french": "Il ne désire pas étudier la médecine ?!"
+            },
+            {
+              "speaker": "سالم",
+              "arabic": "لَقَدْ حَصَلَ على تَقْدِير «ممتاز» في العلوم الطبيعية",
+              "phonetic": "Laqad ḥaṣala ʿalā taqdīr \"mumtāz\" fī l-ʿulūmi ṭ-ṭabīʿiyyah",
+              "french": "Il a pourtant obtenu la mention \"Excellent\" en sciences naturelles."
+            },
+            {
+              "speaker": "مبارك",
+              "arabic": "هَذَا صَحِيحٌ",
+              "phonetic": "Hādhā ṣaḥīḥ",
+              "french": "C'est vrai."
+            },
+            {
+              "speaker": "مبارك",
+              "arabic": "وَلَكِنَّهُ يَرْغَبُ في الالْتِحَاقِ بِقِسْمِ اللُّغَةِ الْعَرَبِيَّةِ",
+              "phonetic": "Wa lakinnahu yarghabu fī l-iltiḥāqi bi-qismi l-lughati l-ʿarabiyyah",
+              "french": "Mais il désire rejoindre le département de langue arabe."
+            },
+            {
+              "speaker": "مبارك",
+              "arabic": "أَحْمَدُ يُحِبُّ دِرَاسَةَ اللُّغَةِ العربية",
+              "phonetic": "Aḥmadu yuḥibbu dirāsata l-lughati l-ʿarabiyyah",
+              "french": "Ahmed aime l'étude de la langue arabe."
+            },
+            {
+              "speaker": "سالم",
+              "arabic": "لا عَجَبَ فِي ذَلِكَ فَالعَرَبِيَّةُ لُغَةُ القُرْآنِ الكَرِيمِ",
+              "phonetic": "Lā ʿajaba fī dhālik, fal-ʿarabiyyatu lughatu l-Qur'āni l-Karīm",
+              "french": "Pas d'étonnement à cela, car l'arabe est la langue du Saint Coran."
+            },
+            {
+              "speaker": "سالم",
+              "arabic": "وَلَكِنْ هَلْ سَيُقْبَلُ فِي قِسْمِ اللُّغَةِ العَرَبِيَّةِ؟",
+              "phonetic": "Wa lakin hal sayuqbalu fī qismi l-lughati l-ʿarabiyyah?",
+              "french": "Mais sera-t-il accepté au département de langue arabe ?"
+            },
+            {
+              "speaker": "مبارك",
+              "arabic": "قَابَلْتُ عَمِيدَ كُلِّيَّةِ الآدابِ",
+              "phonetic": "Qābaltu ʿamīda kulliyyati l-ādāb",
+              "french": "J'ai rencontré le doyen de la faculté des lettres."
+            },
+            {
+              "speaker": "مبارك",
+              "arabic": "وَدَرَسَ أَوْرَاقَهُ، وَوَافَقَ عَلَى قَبولِهِ",
+              "phonetic": "Wa darasa awrāqahu, wa wāfaqa ʿalā qabūlih",
+              "french": "Il a étudié son dossier (papiers) et a approuvé son admission."
+            },
+            {
+              "speaker": "سالم",
+              "arabic": "وَفَقَهُ اللهُ في دِرَاسَةِ اللُّغَةِ العَرَبِيَّةِ",
+              "phonetic": "Waffaqahu llāhu fī dirāsati l-lughati l-ʿarabiyyah",
+              "french": "Qu'Allah lui accorde le succès dans l'étude de la langue arabe."
+            },
+            {
+              "speaker": "مبارك",
+              "arabic": "شُكْراً لَكَ، وَوَفِّقَ اللهُ ابْنَكَ فِي دِرَاسَةِ الهَنْدَسَةِ أَيْضاً",
+              "phonetic": "Shukran laka, wa waffaqallāhu ibnaka fī dirāsati l-handasati ayḍan",
+              "french": "Merci à toi, et qu'Allah accorde aussi le succès à ton fils dans l'étude de l'ingénierie."
+            }
+          ]
+        },
+        {
+          "id": "5.2",
+          "type": "texte",
+          "titleAr": "التعليم بين الماضي والحاضر",
+          "titleFr": "",
+          "youtubeUrl": "",
+          "lines": [
+            {
+              "speaker": "",
+              "arabic": "هُناكَ اخْتِلافاتٌ كَثِيرَة، بَينَ التعليم في الماضي، والتعليم في الحاضرِ",
+              "phonetic": "Hunāka ikhtilāfātun kathīrah bayna t-taʿlīm fī l-māḍī wat-taʿlīm fī l-ḥāḍir",
+              "french": "Il y a beaucoup de différences entre l'enseignement dans le passé et l'enseignement dans le présent."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَمِنْ تِلْكَ الاختلافات، أَنْ فُرَصَ التَّعْلِيمِ، كَانَتْ قَليلَةً في الماضي",
+              "phonetic": "Wa min tilka l-ikhtilāfāt, anna furaṣa t-taʿlīmi kānat qalīlatan fī l-māḍī",
+              "french": "Parmi ces différences, le fait que les opportunités d'enseignement étaient rares dans le passé."
+            },
+            {
+              "speaker": "",
+              "arabic": "حَيْثُ كَانَ يَلْتَحِقُ بِالْمَدارِسِ طَلَابٌ قَلِيلُونَ",
+              "phonetic": "Ḥaythu kāna yaltaḥiqu bil-madārisi ṭullābun qalīlūn",
+              "french": "Où peu d'étudiants rejoignaient les écoles."
+            },
+            {
+              "speaker": "",
+              "arabic": "هُمْ فِي الغَالِبِ أَبْنَاءُ الْأَغْنِياءِ وَسُكَّانُ الْمُدْنِ",
+              "phonetic": "Hum fī l-ghālibi abnā'u l-aghniyā'i wa sukkānu l-mudun",
+              "french": "Ils étaient pour la plupart les enfants des riches et les habitants des villes."
+            },
+            {
+              "speaker": "",
+              "arabic": "أَمَّا اليَوْمَ، فَقَدْ أَصْبَحَ التَّعْلِيمُ حَقًّا لِكُلِّ مُواطِنٍ",
+              "phonetic": "Ammā l-yawm, faqad aṣbaḥa t-taʿlīmu ḥaqqan li-kulli muwāṭin",
+              "french": "Quant à aujourd'hui, l'enseignement est devenu un droit pour chaque citoyen."
+            },
+            {
+              "speaker": "",
+              "arabic": "فَكَثُرَ عَدَدُ الطَّلاب، وانْتَشَرَتِ المَدارِسُ فِي كُلِّ مَكَانٍ",
+              "phonetic": "Fa-kathura ʿadadu ṭ-ṭullāb, wantasharati l-madārisu fī kulli makān",
+              "french": "Le nombre d'étudiants a augmenté, et les écoles se sont répandues partout."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَشَاعَ القَوْلُ: «التَّعْلِيمُ كَالمَاءِ وَالهَواءِ»",
+              "phonetic": "Wa shāʿa l-qawl: at-taʿlīmu kal-mā'i wal-hawā'",
+              "french": "Et le dicton s'est répandu : \"L'éducation est comme l'eau et l'air\"."
+            },
+            {
+              "speaker": "",
+              "arabic": "كانَ طُلاب العلم - في الماضي - يُسافِرُونَ مِنْ بَلَدٍ إلى بَلَدٍ ؛ لِطَلَبِ العِلْمِ",
+              "phonetic": "Kāna ṭullābu l-ʿilmi - fī l-māḍī - yusāfirūna min baladin ilā balad li-ṭalabi l-ʿilm",
+              "french": "Les étudiants en science - dans le passé - voyageaient d'un pays à l'autre pour chercher la science."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَكانوا يُواجهون في سَفَرِهِم كَثيراً مِنَ التَّعَبِ",
+              "phonetic": "Wa kānū yuwājihūna fī safarihim kathīran min at-taʿab",
+              "french": "Et ils rencontraient dans leur voyage beaucoup de fatigue."
+            },
+            {
+              "speaker": "",
+              "arabic": "فَكَانُوا يَرْكَبُونَ الجَمَالَ أَيَّاماً وَأَشْهُراً",
+              "phonetic": "Fa-kānū yarkabūna l-jimāla ayyāman wa ash-huran",
+              "french": "Ils montaient des chameaux pendant des jours et des mois."
+            },
+            {
+              "speaker": "",
+              "arabic": "أما اليَوْمَ، فَالْمَدارِسُ وَالجَامِعاتُ كَثِيرَةٌ، في كُلِّ مَدِينَةٍ وقَرْيَةٍ تَقْريباً",
+              "phonetic": "Ammā l-yawm, fal-madārisu wal-jāmiʿātu kathīrah, fī kulli madīnatin wa qaryatin taqrīban",
+              "french": "Quant à aujourd'hui, les écoles et les universités sont nombreuses, dans presque chaque ville et village."
+            },
+            {
+              "speaker": "",
+              "arabic": "حَيْثُ يَذْهَبُ الطَّالِبُ إِلى مَدْرَسَتِهِ ، أَو جَامِعَتِهِ بِالسَّيَّارَةِ، أَوْ سَيْراً عَلَى الْأَقْدَامِ",
+              "phonetic": "Ḥaythu yadh-habu ṭ-ṭālibu ilā madrasatihi, aw jāmiʿatihi bis-sayyārah, aw sayran ʿalā l-aqdām",
+              "french": "Où l'étudiant va à son école ou son université en voiture, ou à pied."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَمِنْ نَاحِيَةٍ أُخْرَى، يَسْتَطِيعُ الطَّالِبُ أَنْ يَتَعَلَّمَ، وَهُوَ فِي بَيْتِهِ عَنْ طَرِيقِ الشَّبَكَةِ الدِّوْلِيَّةِ",
+              "phonetic": "Wa min nāḥiyatin ukhrā, yastaṭīʿu ṭ-ṭālibu an yataʿallama, wa huwa fī baytihi ʿan ṭarīqi sh-shabakati d-duwaliyyah",
+              "french": "D'autre part, l'étudiant peut apprendre tout en étant chez lui via le réseau international (Internet)."
+            },
+            {
+              "speaker": "",
+              "arabic": "مِنَ الاخْتِلَافاتِ أَيْضاً، أَنَّ الْمُعَلَّمَ كانَ لا يَطْلُبُ أَجْراً عَلى عَمَلِهِ في الماضي",
+              "phonetic": "Min al-ikhtilāfāti ayḍan, anna l-muʿallima kāna lā yaṭlubu ajran ʿalā ʿamalihi fī l-māḍī",
+              "french": "Parmi les différences aussi, l'enseignant ne demandait pas de salaire pour son travail dans le passé."
+            },
+            {
+              "speaker": "",
+              "arabic": "لِأَنَّهُ كَانَ يَطْلُبُ الأَجْرَ مِنَ اللهِ",
+              "phonetic": "Li-annahu kāna yaṭlubu l-ajra min Allāh",
+              "french": "Car il recherchait la récompense auprès de Dieu."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَكَانَ هَدَفُ الطَّالِبِ طَلَبَ العِلْم",
+              "phonetic": "Wa kāna hadafu ṭ-ṭālibi ṭalaba l-ʿilm",
+              "french": "Et le but de l'étudiant était la recherche de la science."
+            },
+            {
+              "speaker": "",
+              "arabic": "أمّا اليَوْمَ ، فَقَدِ اخْتَلَفَ الْأَمْرُ، فَالْمُعَلِّمُ يَطْلُبُ كثيراً مِنَ الأَجْرِ",
+              "phonetic": "Ammā l-yawm, faqad ikhtalafa l-amr, fal-muʿallimu yaṭlubu kathīran min al-ajr",
+              "french": "Quant à aujourd'hui, la chose a changé, l'enseignant demande un gros salaire."
+            },
+            {
+              "speaker": "",
+              "arabic": "والطَّالِبُ يُفَكِّرُ في الشَّهَادَةِ قَبْلَ العِلْمِ؛ لِأَنَّهَا وَسِيلَةٌ إِلَى العَمَلِ",
+              "phonetic": "Waṭ-ṭālibu yufakkiru fī sh-shahādati qabla l-ʿilm; li-annahā wasīlatun ilā l-ʿamal",
+              "french": "Et l'étudiant pense au diplôme avant la science ; car c'est un moyen pour (obtenir) un travail."
+            }
+          ]
+        },
+        {
+          "id": "5.3",
+          "type": "dialogue",
+          "titleAr": "حضارة المسلمين",
+          "titleFr": "",
+          "youtubeUrl": "",
+          "lines": [
+            {
+              "speaker": "فاطمة",
+              "arabic": "ماذا تَقْرَئِينَ - يَا عَائِشَةُ - هَذِهِ الأَيَّامَ؟",
+              "phonetic": "Mādhā taqra'īna - yā ʿĀ'ishah - hādhihi l-ayyām?",
+              "french": "Que lis-tu - ô Aisha - ces jours-ci ?"
+            },
+            {
+              "speaker": "عائشة",
+              "arabic": "أَقْرَأُ كُتُباً عَنْ حَضَارَةِ الْمُسْلِمِينَ",
+              "phonetic": "Aqra'u kutuban ʿan ḥaḍārati l-muslimīn",
+              "french": "Je lis des livres sur la civilisation des musulmans."
+            },
+            {
+              "speaker": "عائشة",
+              "arabic": "كَانَتْ حَضارَةً عَظِيمَةً تَقَدِّمَتْ فِي الطَّبِ، وَالصَّيْدَلَةِ، والعلوم، وَالرِّياضِيَّاتِ، وَالْجُغرافيا، والفَلَكِ، وَالعُلوم الإنسانية",
+              "phonetic": "Kānat ḥaḍāratan ʿaẓīmah taqaddamat fī ṭ-ṭibb...",
+              "french": "C'était une civilisation grandiose qui a progressé en médecine, pharmacie, sciences, mathématiques, géographie, astronomie et sciences humaines."
+            },
+            {
+              "speaker": "فاطمة",
+              "arabic": "هَلْ تَأَثَّرَتْ أوروبا بحضارَةِ المُسْلِمِينَ؟",
+              "phonetic": "Hal ta'aththarat Ūrubbā bi-ḥaḍārati l-muslimīn?",
+              "french": "L'Europe a-t-elle été influencée par la civilisation des musulmans ?"
+            },
+            {
+              "speaker": "عائشة",
+              "arabic": "نَعَمْ، تَأَثَّرَتْ بِها كثيراً",
+              "phonetic": "Naʿam, ta'aththarat bihā kathīran",
+              "french": "Oui, elle en a été très influencée."
+            },
+            {
+              "speaker": "عائشة",
+              "arabic": "فَقَدِ اتِّصَلَ عُلَماء أوروبا بِعُلَماءِ المُسْلِمِينَ، وَأَخَذُوا عَنْهُمُ العِلْمَ",
+              "phonetic": "Faqad ittaṣala ʿulamā'u Ūrubbā bi-ʿulamā'i l-muslimīn, wa akhadhū ʿanhumu l-ʿilm",
+              "french": "Les savants d'Europe ont contacté les savants musulmans et ont pris d'eux la science."
+            },
+            {
+              "speaker": "عائشة",
+              "arabic": "وَتَرْجَمُوا كُتُبَهُمْ، وَدَرْسوها في جامعاتهم",
+              "phonetic": "Wa tarjamū kutubahum, wa darrasūhā fī jāmiʿātihim",
+              "french": "Et ils ont traduit leurs livres et les ont enseignés dans leurs universités."
+            },
+            {
+              "speaker": "فاطمة",
+              "arabic": "وَلَكِنْ لِماذا تَأَخَّرَ الْمُسْلِمُونَ بَعْدَ ذَلِكَ؟",
+              "phonetic": "Wa lakin limādhā ta'akhkhara l-muslimūna baʿda dhālik?",
+              "french": "Mais pourquoi les musulmans ont-ils pris du retard après cela ?"
+            },
+            {
+              "speaker": "عائشة",
+              "arabic": "تَأَخَّروا : لأَنَّهُم تَرَكُوا العِلْمَ، وَابْتَعَدُوا عَنِ الدِّينِ",
+              "phonetic": "Ta'akhkharū: li-annahum tarakū l-ʿilm, wabtaʿadū ʿani d-dīn",
+              "french": "Ils ont pris du retard : parce qu'ils ont délaissé la science et se sont éloignés de la religion."
+            },
+            {
+              "speaker": "فاطمة",
+              "arabic": "كَيفَ يَتْرُكُونَ العِلْمَ، وَالإِسْلَامُ يَدْعُو إِلَيْهِ؟!",
+              "phonetic": "Kayfa yatrukūna l-ʿilm, wal-islāmu yadʿū ilayh?!",
+              "french": "Comment délaissent-ils la science, alors que l'Islam y appelle ?!"
+            },
+            {
+              "speaker": "عائشة",
+              "arabic": "أَحْسَنْتِ، فَأَوَّلُ كَلِمَةٍ نَزَلَتْ مِنَ القُرْآنِ، هِيَ: اقْرَأْ",
+              "phonetic": "Aḥsanti, fa-awwalu kalimatin nazalat min al-Qur'ān hiya: Iqra'",
+              "french": "Bien dit (Tu as bien agi), car le premier mot descendu du Coran est : \"Lis\"."
+            },
+            {
+              "speaker": "فاطمة",
+              "arabic": "وَدَعَا الرَّسُولُ الْمُسْلِمِينَ فِي كَثِيرٍ مِنْ أَحادِيثِهِ لِطَلَبِ العِلْمِ",
+              "phonetic": "Wa daʿā r-Rasūlu l-muslimīna fī kathīrin min aḥādīthihi li-ṭalabi l-ʿilm",
+              "french": "Et le Prophète a appelé les musulmans dans beaucoup de ses hadiths à la recherche de la science."
+            },
+            {
+              "speaker": "فاطمة",
+              "arabic": "كَقُولِهِ : « طَلَبُ العِلْمِ فَرِيضَةٌ عَلَى كُلِّ مُسْلِمٍ»",
+              "phonetic": "Ka-qawlihi: ṭalabu l-ʿilmi farīḍatun ʿalā kulli muslim",
+              "french": "Comme sa parole : \"La recherche de la science est une obligation pour chaque musulman\"."
+            },
+            {
+              "speaker": "عائشة",
+              "arabic": "الحَمْدُ للهِ، فَقَدْ رَجَعَ المُسْلِمُونَ مَرَّةً أُخْرَى إلى طَلَبِ العِلْمِ",
+              "phonetic": "Al-ḥamdu lillāh, faqad rajaʿa l-muslimūna marratan ukhrā ilā ṭalabi l-ʿilm",
+              "french": "Louange à Dieu, les musulmans sont revenus une autre fois à la recherche de la science."
+            },
+            {
+              "speaker": "عائشة",
+              "arabic": "فَهَا هِيَ الْمَدَارِسُ وَالجَامِعاتُ تَنْتَشِرُ فِي جَمِيعِ بِلادِ الْمُسْلِمِينَ",
+              "phonetic": "Fahā hiya l-madārisu wal-jāmiʿātu tantashiru fī jamīʿi bilādi l-muslimīn",
+              "french": "Voici les écoles et les universités qui se répandent dans tous les pays musulmans."
+            },
+            {
+              "speaker": "فاطمة",
+              "arabic": "وَعَلَى كُلِّ مُسْلِمٍ، رَجُلاً كَانَ أَوِ امْرَأَةً، أَنْ يَطْلُبَ العِلْمَ طُولَ حَيَاتِهِ",
+              "phonetic": "Wa ʿalā kulli muslim, rajulan kāna aw imra'ah, an yaṭluba l-ʿilma ṭūla ḥayātih",
+              "french": "Et chaque musulman, homme ou femme, doit chercher la science toute sa vie."
+            }
+          ]
+        },
+        {
+          "id": "5.4",
+          "type": "texte",
+          "titleAr": "مراحل التعليم",
+          "titleFr": "",
+          "youtubeUrl": "",
+          "lines": [
+            {
+              "speaker": "",
+              "arabic": "للتعليم مَراحِلُ مُخْتَلِفَةٌ، يَمُرُ بِها الطَّالِبُ خِلالَ دِرَاسَتِهِ",
+              "phonetic": "Lit-taʿlīmi marāḥilu mukhtalifah, yamurru bihā ṭ-ṭālibu khilāla dirāsatih",
+              "french": "L'enseignement a des étapes différentes, par lesquelles passe l'étudiant durant ses études."
+            },
+            {
+              "speaker": "",
+              "arabic": "فَإِذا أَنْهَى مَرْحَلَةً تَعْلِيمِيَّةً، انْتَقَلَ إِلَى الْمَرْحَلَةِ الَّتِي بَعْدَها",
+              "phonetic": "Fa-idhā anhā marḥalatan taʿlīmiyyah, intaqala ilā l-marḥalati llatī baʿdahā",
+              "french": "S'il termine une étape éducative, il passe à l'étape suivante."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَتَتَكَوْنُ مَراحِلُ التَّعْلِيمِ في كَثِيرٍ مِنَ الدُّوَلِ العَرَبِيَّةِ مِنْ أَرْبَعِ مَرَاحِلَ هِيَ",
+              "phonetic": "Wa tatakawwanu marāḥilu t-taʿlīmi fī kathīrin min ad-duwali l-ʿarabiyyati min arbaʿi marāḥila hiya",
+              "french": "Les étapes de l'enseignement dans beaucoup de pays arabes se composent de quatre étapes qui sont :"
+            },
+            {
+              "speaker": "",
+              "arabic": "الْمَرْحَلَةُ الابْتِدائِيَّةُ، فَالْمَرْحَلَةُ الْمُتَوَسِّطَةُ، فَالْمَرْحَلَةُ الثَّانَوِيَّةُ، ثُمَّ الْمَرْحَلَةُ الجَامِعِيَّةُ",
+              "phonetic": "Al-marḥalatu l-ibtidā'iyyah, fal-marḥalatu l-mutawassiṭah, fal-marḥalatu th-thānawiyyah, thumma l-marḥalatu l-jāmiʿiyyah",
+              "french": "L'étape primaire, puis l'étape moyenne (collège), puis l'étape secondaire (lycée), puis l'étape universitaire."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَفِي بَعْضِ البِلادِ العَرَبِيَّةِ، يَلْتَحِقُ التلاميذُ قَبْلَ الْمَدْرَسَةِ الابتدائية بِالْحَضَانَةِ، فَالرِّوْضَةِ، ثُمَّ التَّمْهِيدِي",
+              "phonetic": "Wa fī baʿḍi l-bilādi l-ʿarabiyyah, yaltaḥiqu t-talāmīdhu... bil-ḥaḍānah, far-rawḍah, thumma t-tamhīdī",
+              "french": "Dans certains pays arabes, les élèves rejoignent avant l'école primaire la crèche, puis le jardin d'enfants, puis la classe préparatoire."
+            },
+            {
+              "speaker": "",
+              "arabic": "يَلْتَحِقُ التلاميذُ بالمَدْرَسَةِ الابتدائية - عادَةً - في السّادِسَةِ مِنْ أَعْمَارِهِم",
+              "phonetic": "Yaltaḥiqu t-talāmīdhu bil-madrasati l-ibtidā'iyyah - ʿādatan - fī s-sādisati min aʿmārihim",
+              "french": "Les élèves rejoignent l'école primaire - habituellement - à la sixième (année) de leur âge."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَتَبْلُغُ سَنَوَاتُ الدِّرَاسَةِ في المَرْحَلَةِ الابتدائيَّةِ سِتُّ سَنَوَاتٍ",
+              "phonetic": "Wa tablughu sanawātu d-dirāsati fī l-marḥalati l-ibtidā'iyyati sittu sanawāt",
+              "french": "Les années d'études dans l'étape primaire atteignent six ans."
+            },
+            {
+              "speaker": "",
+              "arabic": "وتَبْلُغُ سَنواتُ الدّراسةِ فِي المَرْحَلَةِ الْمُتَوَسِّطَةِ ثَلَاثَ سَنَوَاتٍ",
+              "phonetic": "Wa tablughu sanawātu d-dirāsati fī l-marḥalati l-mutawassiṭati thalātha sanawāt",
+              "french": "Et les années d'études dans l'étape moyenne atteignent trois ans."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَكَذَلِكَ فِي الْمَرْحَلَةِ الثَّانَوِيَّةِ",
+              "phonetic": "Wa kadhālika fī l-marḥalati th-thānawiyyah",
+              "french": "Et de même dans l'étape secondaire."
+            },
+            {
+              "speaker": "",
+              "arabic": "أَمَّا المَرْحَلَةُ الجَامِعِيّةُ، فَتَتَراوَحُ بَينَ أَرْبَعِ وَسِتِّ سَنَوَاتٍ",
+              "phonetic": "Ammā l-marḥalatu l-jāmiʿiyyah, fa-tatarāwaḥu bayna arbaʿi wa sitti sanawāt",
+              "french": "Quant à l'étape universitaire, elle varie entre quatre et six ans."
+            },
+            {
+              "speaker": "",
+              "arabic": "بَعْدَ أَنْ يُنْهِيَ الطَّالِبُ المَرْحَلَةَ الثانَوِيَّةَ ، يَلْتَحِقُ بالجامعاتِ، أَوِ المَعاهِدِ",
+              "phonetic": "Baʿda an yunhiya ṭ-ṭālibu l-marḥalata th-thānawiyyah, yaltaḥiqu bil-jāmiʿāt, awi l-maʿāhid",
+              "french": "Après que l'étudiant termine l'étape secondaire, il rejoint les universités ou les instituts."
+            },
+            {
+              "speaker": "",
+              "arabic": "إِذا حَصَلَ على تقديرٍ طَيِّبٍ",
+              "phonetic": "Idhā ḥaṣala ʿalā taqdīrin ṭayyib",
+              "french": "S'il a obtenu une bonne mention (appréciation)."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَبَعْدَ أَنْ يَحْصُلَ الطَّالِبُ عَلَى الشَّهَادَةِ الجَامِعِيَّةِ بِتَقْدِيرِ جَيْدٍ جِدًا أَو مُمْتَازِ",
+              "phonetic": "Wa baʿda an yaḥṣula ṭ-ṭālibu ʿalā sh-shahādati l-jāmiʿiyyati bi-taqdīr jayyid jiddan aw mumtāz",
+              "french": "Et après que l'étudiant obtient le diplôme universitaire avec la mention \"Très bien\" ou \"Excellent\"."
+            },
+            {
+              "speaker": "",
+              "arabic": "يَلْتَحِقُ بِالدَّرَاسَاتِ العُلْيا لِلْحُصولِ على شَهَادَةِ الماجستير، ثُمَّ شَهَادَةِ الدكتوراه",
+              "phonetic": "Yaltaḥiqu bid-dirāsāti l-ʿulyā lil-ḥuṣūli ʿalā shahādati l-mājistīr, thumma shahādati d-duktūrāh",
+              "french": "Il rejoint les études supérieures pour obtenir le diplôme de Master, puis le diplôme de Doctorat."
+            },
+            {
+              "speaker": "",
+              "arabic": "مِنْ نَاحِيَةٍ أُخْرَى في البِلادِ العَرَبِيّة نوعانِ مِنَ التَّعْليم",
+              "phonetic": "Min nāḥiyatin ukhrā, fī l-bilādi l-ʿarabiyyati nawʿāni mina t-taʿlīm",
+              "french": "D'un autre côté, dans les pays arabes, il y a deux types d'enseignement."
+            },
+            {
+              "speaker": "",
+              "arabic": "هُما : التَّعْلِيمُ الْحُكومِيُّ، وَتُشْرِفُ عَلَيْهِ الدَّوْلَةُ: فَتَبْنِي المَدارِسَ، وَتُوَفِّرُ الكُتُبَ والمُدَرِّسِينَ",
+              "phonetic": "Humā: at-taʿlīmu l-ḥukūmiyy, wa tushrifu ʿalayhi d-dawlah: fa-tabnī l-madāris, wa tuwaffiru l-kutuba wal-mudarrisīn",
+              "french": "Ce sont : l'enseignement public, supervisé par l'État : il construit les écoles et fournit les livres et les enseignants."
+            },
+            {
+              "speaker": "",
+              "arabic": "والتَّعْلِيمُ الأَهْلِيَّ، وَتُشْرِفُ عَلَيْهِ بَعْضُ الْجَمْعِيَّاتِ وَالأَفْرادِ",
+              "phonetic": "Wat-taʿlīmu l-ahliyy, wa tushrifu ʿalayhi baʿḍu l-jamʿiyyāti wal-afrād",
+              "french": "Et l'enseignement privé, supervisé par certaines associations et des individus."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "titleAr": "المهن(Métiers)",
+      "titleFr": "Les métiers",
+      "lessons": [
+        {
+          "id": "6.1",
+          "type": "dialogue",
+          "titleAr": "البحث عن عمل",
+          "titleFr": "",
+          "youtubeUrl": "",
+          "lines": [
+            {
+              "speaker": "الأب",
+              "arabic": "لَعَلَّ نَتِيجَةَ الْمُقابَلَةِ طَيِّبة اليوم",
+              "phonetic": "Laʿalla natījata l-muqābalati ṭayyibah al-yawm",
+              "french": "Espérons que le résultat de l'entretien soit bon aujourd'hui."
+            },
+            {
+              "speaker": "الابن",
+              "arabic": "قابَلْتُ مُدِيرَ الشَّرِكَةِ، وَرَأَى شَهاداتي",
+              "phonetic": "Qābaltu mudīra sh-sharikah, wa ra'ā shahādātī",
+              "french": "J'ai rencontré le directeur de l'entreprise, et il a vu mes diplômes."
+            },
+            {
+              "speaker": "الابن",
+              "arabic": "لَكِنَّنِي غَيْرُ مُتَفَائِلٍ",
+              "phonetic": "Lakinnanī ghayru mutafā'il",
+              "french": "Mais je ne suis pas optimiste."
+            },
+            {
+              "speaker": "الأب",
+              "arabic": "مَا سَبَبُ ذَلِكَ؟",
+              "phonetic": "Mā sababu dhālik?",
+              "french": "Quelle en est la cause ?"
+            },
+            {
+              "speaker": "الابن",
+              "arabic": "الشَّرِكَةُ تَحْتاجُ إلى عَشَرَةِ مُهَنْدِسِينَ",
+              "phonetic": "Ash-sharikatu taḥtāju ilā ʿasharati muhandisīn",
+              "french": "L'entreprise a besoin de dix ingénieurs."
+            },
+            {
+              "speaker": "الابن",
+              "arabic": "وَقَدَّمَ لِلْعَمَلِ مِئَةٌ مُهَنْدِسٍ",
+              "phonetic": "Wa qaddama lil-ʿamali mi'atu muhandis",
+              "french": "Et cent ingénieurs ont postulé pour le travail."
+            },
+            {
+              "speaker": "الابن",
+              "arabic": "مُعْظَمُهُمْ لَهُمْ خِبْرَاتٌ طويلة",
+              "phonetic": "Muʿẓamuhum lahum khibrātun ṭawīlah",
+              "french": "La plupart d'entre eux ont de longues expériences."
+            },
+            {
+              "speaker": "الأب",
+              "arabic": "سَتَجِدُ العَمَلَ الْمُنَاسِبَ، إِنْ شَاءَ اللهُ",
+              "phonetic": "Satajidu l-ʿamala l-munāsiba in shā'a llāh",
+              "french": "Tu trouveras le travail qui convient, si Dieu le veut."
+            },
+            {
+              "speaker": "الابن",
+              "arabic": "أنا آسف يا أبي لأنَّني دَرَسْتُ الهَنْدَسَةَ",
+              "phonetic": "Ana āsif yā abī li-annanī darastu l-handasah",
+              "french": "Je suis désolé papa d'avoir étudié l'ingénierie."
+            },
+            {
+              "speaker": "الابن",
+              "arabic": "لَقَدْ تَخَرَّجْتُ في كُلِّيَّةِ الهَنْدَسَةِ مُنْذُ سَنَتَيْنِ",
+              "phonetic": "Laqad takharrajtu fī kulliyyati l-handasati mundhu sanatayn",
+              "french": "J'ai obtenu mon diplôme de la faculté d'ingénierie il y a deux ans."
+            },
+            {
+              "speaker": "الابن",
+              "arabic": "وَلَمْ أَعْمَلْ حَتَّى الآن",
+              "phonetic": "Wa lam aʿmal ḥattā l-ān",
+              "french": "Et je n'ai pas travaillé jusqu'à maintenant."
+            },
+            {
+              "speaker": "الأب",
+              "arabic": "لَيسَتِ الْمُشْكِلَةُ فِي دِرَاسَةِ الهَنْدَسَةِ",
+              "phonetic": "Laysati l-mushkilatu fī dirāsati l-handasah",
+              "french": "Le problème n'est pas dans l'étude de l'ingénierie."
+            },
+            {
+              "speaker": "الأب",
+              "arabic": "المُشْكِلَةُ في البِطالَة الَّتِي تَعُمُّ كُلَّ العَالَمِ",
+              "phonetic": "Al-mushkilatu fī l-biṭālati llatī taʿummu kulla l-ʿālam",
+              "french": "Le problème est dans le chômage qui touche le monde entier."
+            },
+            {
+              "speaker": "الأب",
+              "arabic": "حَيْثُ يَتَخَرَّجُ الطلاب في الجامعات والمعاهِدِ الْمُخْتَلِفَةِ، ولا يَجِدُونَ عَمَلاً",
+              "phonetic": "Ḥaythu yatakharraju ṭ-ṭullābu... wa lā yajidūna ʿamalan",
+              "french": "Où les étudiants sortent des universités et des instituts divers, et ne trouvent pas de travail."
+            },
+            {
+              "speaker": "الابن",
+              "arabic": "نُرِيدُ مُساعَدَةَ أَهْلِنا ، ونُرِيدُ الزَّواج، لَكِنَّنا لا نَسْتَطِيعُ",
+              "phonetic": "Nurīdu musāʿadata ahlinā, wa nurīdu z-zawāj, lakinnanā lā nastaṭīʿ",
+              "french": "Nous voulons aider nos familles, et nous voulons nous marier, mais nous ne pouvons pas."
+            },
+            {
+              "speaker": "الأب",
+              "arabic": "تَقولُ الحكومَةُ : سَتَكونُ هُناكَ فُرَصُ عَمَلٍ كَثِيرَةٌ لِلشَّبَابِ، هَذا العام",
+              "phonetic": "Taqūlu l-ḥukūmah: satakūnu hunāka furaṣu ʿamalin kathīrah lish-shabāb hādhā l-ʿām",
+              "french": "Le gouvernement dit : il y aura beaucoup d'opportunités de travail pour les jeunes cette année."
+            },
+            {
+              "speaker": "الابن",
+              "arabic": "سَمِعْنا هَذا الكَلامَ كَثيراً",
+              "phonetic": "Samiʿnā hādhā l-kalāma kathīran",
+              "french": "Nous avons beaucoup entendu ce discours."
+            },
+            {
+              "speaker": "الابن",
+              "arabic": "نَحْنُ نُرِيدُ عَمَلاً، لا كلاماً",
+              "phonetic": "Naḥnu nurīdu ʿamalan, lā kalāman",
+              "french": "Nous voulons du travail, pas des paroles."
+            },
+            {
+              "speaker": "الأب",
+              "arabic": "كُنْ مُتَفَائِلاً",
+              "phonetic": "Kun mutafā'ilan",
+              "french": "Sois optimiste."
+            }
+          ]
+        },
+        {
+          "id": "6.2",
+          "type": "texte",
+          "titleAr": "عمل المرأة",
+          "titleFr": "",
+          "youtubeUrl": "",
+          "lines": [
+            {
+              "speaker": "",
+              "arabic": "هَلْ تَعْمَلُ الْمَرْأَةُ خَارِجَ بَيْتِها ، أَمْ لا تَعْمَلُ؟",
+              "phonetic": "Hal taʿmalu l-mar'atu khārija baytihā, am lā taʿmal?",
+              "french": "Est-ce que la femme travaille hors de sa maison, ou ne travaille-t-elle pas ?"
+            },
+            {
+              "speaker": "",
+              "arabic": "يختلفُ النَّاسُ في الإِجَابَةِ عَنْ هَذَا السُّؤالِ إِلى ثَلاثِ فِرَقٍ",
+              "phonetic": "Yakhtalifu n-nāsu fī l-ijābati ʿan hādhā s-su'āli ilā thalāthi firaq",
+              "french": "Les gens diffèrent dans la réponse à cette question en trois groupes."
+            },
+            {
+              "speaker": "",
+              "arabic": "فَرِيقِ يَقولُ : نَعَمْ، يَجِبُّ أَنْ تَعْمَلَ المَرْأَةُ خَارِجَ بَيْتِها ، مِثْلَ الرَّجُلِ",
+              "phonetic": "Farīqun yaqūlu: naʿam, yajibu an taʿmala l-mar'atu khārija baytihā, mithla r-rajul",
+              "french": "Un groupe dit : oui, la femme doit travailler hors de sa maison, comme l'homme."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَفَرِيقِ آخَرَ يَقُولُ: لا يَصِحُّ أَنْ تَعْمَل المَرْأَةُ خارِجَ بَيْتِها",
+              "phonetic": "Wa farīqun ākharu yaqūlu: lā yaṣiḥḥu an taʿmala l-mar'atu khārija baytihā",
+              "french": "Et un autre groupe dit : il n'est pas correct que la femme travaille hors de sa maison."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَفَرِيقِ ثَالِثٍ يَقولُ : تَعْمَلُ المَرْأَةُ خارج بيتها ، وَلَكِنْ بِشَرْطٍ",
+              "phonetic": "Wa farīqun thālithun yaqūlu: taʿmalu l-mar'atu khārija baytihā, wa lakin bi-sharṭ",
+              "french": "Et un troisième groupe dit : la femme travaille hors de sa maison, mais à une condition."
+            },
+            {
+              "speaker": "",
+              "arabic": "يقولُ الفَرِيقُ الأَوَّلُ: إِنَّ الْمَرْأَةَ نِصْفُ الْمُجْتَمَعِ، وَلا يَصِحُ أَنْ تَجْلِسَ فِي بَيْتِهَا",
+              "phonetic": "Yaqūlu l-farīqu l-awwal: inna l-mar'ata niṣfu l-mujtamaʿ, wa lā yaṣiḥḥu an tajlisa fī baytihā",
+              "french": "Le premier groupe dit : la femme est la moitié de la société, et il n'est pas correct qu'elle reste assise dans sa maison."
+            },
+            {
+              "speaker": "",
+              "arabic": "تَغْسِلُ الملابس، وَتُعِدُّ الطَّعامَ، وَتُنَظِّفُ البَيْتَ، وَتُرَبِّي الأَوْلادَ",
+              "phonetic": "Taghsilu l-malābis, wa tuʿiddu ṭ-ṭaʿām, wa tunaẓẓifu l-bayt, wa turabbī l-awlād",
+              "french": "À laver les vêtements, préparer la nourriture, nettoyer la maison et élever les enfants."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَهِيَ عِنْدَهُمْ جُزْءٌ مِنَ الْاقْتِصَادِ، تَعْمَلُ وَتَأْخُذُ أَجْرَ عَمَلِها",
+              "phonetic": "Wa hiya ʿindahum juz'un min al-iqtiṣād, taʿmalu wa ta'khudhu ajra ʿamalihā",
+              "french": "Et elle est pour eux une partie de l'économie, elle travaille et prend le salaire de son travail."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَيَرَى الفَرِيقُ الثَّانِي، أَنَّ وَظِيفَةَ المَرْأَةِ الأَساسِيَّةَ تَكونُ في البَيْتِ حَيْثُ تُدِيرُهُ، وَتُرَبِّي أولادها",
+              "phonetic": "Wa yarā l-farīqu th-thānī, anna waẓīfata l-mar'ati l-asāsiyyata takūnu fī l-bayt...",
+              "french": "Et le deuxième groupe voit que la fonction fondamentale de la femme est dans la maison, où elle la gère et élève ses enfants."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَيَرَى هَذَا الفَرِيقُ أَنَّ الرَّاتِبَ الَّذِي تَأخُذُهُ الْمَرْأَةُ مِنْ عَمَلِهَا تُعْطِيهِ لِلخَادِمَةِ",
+              "phonetic": "Wa yarā hādhā l-farīqu anna r-rātiba... tuʿṭīhi lil-khādimah",
+              "french": "Et ce groupe voit que le salaire que la femme prend de son travail, elle le donne à la bonne (servante)."
+            },
+            {
+              "speaker": "",
+              "arabic": "لِلخَادِمَةِ الَّتِي تُفْسِدُ الأَوْلادَ ، وَلا تُصْلِحُهُمْ",
+              "phonetic": "Lil-khādimati llatī tufsidu l-awlād, wa lā tuṣliḥuhum",
+              "french": "À la bonne qui corrompt les enfants et ne les réforme pas."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَيَقُولُ هَذا الفَرِيقُ : إِنَّ خُروج المَرْأَةِ مِنَ البَيْتِ، يُؤَدِّي إِلَى تَفَكَّكِ الْأَسْرَةِ، وضياع الأولاد",
+              "phonetic": "Wa yaqūlu hādhā l-farīq: inna khurūja l-mar'ati mina l-bayt yu'addī ilā tafakkuki l-usrah...",
+              "french": "Et ce groupe dit : la sortie de la femme de la maison mène à la dislocation de la famille et à la perte des enfants."
+            },
+            {
+              "speaker": "",
+              "arabic": "أمَّا الفَرِيقُ الثَّالِثُ، فَيَرَى أَنَّ العَمَلَ حَقٌّ لِلْمَرْأَةِ، فَتَعْمَلُ عَمَلَها الأَساسِيَّ فِي بَيْتِهَا",
+              "phonetic": "Ammā l-farīqu th-thālith, fa-yarā anna l-ʿamala ḥaqqun lil-mar'ah...",
+              "french": "Quant au troisième groupe, il voit que le travail est un droit pour la femme, elle fait donc son travail fondamental dans sa maison."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَلَهَا أَنْ تَعْمَلَ خَارِجَ بيتِها ، بِشَرْطِ أَن تَعْمَلَ في المجالاتِ الَّتِي تُناسِبُهَا",
+              "phonetic": "Wa lahā an taʿmala khārija baytihā, bi-sharṭi an taʿmala fī l-majālāti llatī tunāsibuhā",
+              "french": "Et elle peut travailler hors de sa maison, à condition qu'elle travaille dans les domaines qui lui conviennent."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَتَحْفَظُ أَخِلاقَهَا، وَتُبْعِدَ عَنْ مُخالَطَةِ الرِّجَالِ",
+              "phonetic": "Wa taḥfaẓu akhlāqahā, wa tubʿida ʿan mukhālaṭati r-rijāl",
+              "french": "Et qui préservent sa moralité, et l'éloignent de la mixité avec les hommes."
+            },
+            {
+              "speaker": "",
+              "arabic": "كَالعَمَلِ فِي المَجالِ الطَّبّي؛ فَتَعْمَلُ طَبيبةً، أَوْ مُمَرِّضَةً",
+              "phonetic": "Kal-ʿamali fī l-majāli ṭ-ṭibbiyy; fa-taʿmalu ṭabībah, aw mumarriḍah",
+              "french": "Comme le travail dans le domaine médical ; elle travaille alors comme médecin ou infirmière."
+            },
+            {
+              "speaker": "",
+              "arabic": "أَوْ فِي الْمَجَالِ التَّعْلِيمِيّ فَتَعْمَلُ مُعَلِّمَةً ، أَوْ مُرَبِّيَةً، أَوْ غَيْرَ ذَلِكَ فِي مُجْتَمَعِ نِسائي",
+              "phonetic": "Aw fī l-majāli t-taʿlīmiyy fa-taʿmalu muʿallimah...",
+              "french": "Ou dans le domaine éducatif, elle travaille alors comme enseignante, ou éducatrice, ou autre dans une société féminine."
+            }
+          ]
+        },
+        {
+          "id": "6.3",
+          "type": "dialogue",
+          "titleAr": "الاغتراب للعمل",
+          "titleFr": "",
+          "youtubeUrl": "",
+          "lines": [
+            {
+              "speaker": "صلاح",
+              "arabic": "سَأَغْتَرِبُ لِلْعَمَلِ خَارِجَ وَطَني",
+              "phonetic": "Sa-aghtaribu lil-ʿamali khārija waṭanī",
+              "french": "Je vais m'expatrier pour travailler hors de ma patrie."
+            },
+            {
+              "speaker": "عماد",
+              "arabic": "لَكِنَّكَ تَعْمَلُ هُنا ، وَراتِبُكَ جَيْدٌ",
+              "phonetic": "Lakinnaka taʿmalu hunā, wa rātibuka jayyid",
+              "french": "Mais tu travailles ici, et ton salaire est bon."
+            },
+            {
+              "speaker": "صلاح",
+              "arabic": "المال كَثِيرٌ هُناكَ، وَالْحَيَاةُ سَهْلَةٌ",
+              "phonetic": "Al-mālu kathīrun hunāk, wal-ḥayātu sahlah",
+              "french": "L'argent est abondant là-bas, et la vie est facile."
+            },
+            {
+              "speaker": "عماد",
+              "arabic": "أَخْتَلِفُ مَعَكَ . بَلادُنا تَحْتَاجُ إِلَيْنَا",
+              "phonetic": "Akhtalifu maʿak. Bilādunā taḥtāju ilaynā",
+              "french": "Je ne suis pas d'accord avec toi. Notre pays a besoin de nous."
+            },
+            {
+              "speaker": "صلاح",
+              "arabic": "السَّفَرُ لِلْعَمَلِ حَلالٌ، وَلَيْسَ حَراماً",
+              "phonetic": "As-safaru lil-ʿamali ḥalāl, wa laysa ḥarāman",
+              "french": "Le voyage pour le travail est licite, et n'est pas illicite."
+            },
+            {
+              "speaker": "صلاح",
+              "arabic": "قالَ اللهُ تعالى: ﴿هُوَ الَّذِي جَعَلَ لَكُمُ الْأَرْضَ ذَلُولاً فَامْشُوا فِي مَنَاكِبِهَا وَكُلُوا مِنْ رِزْقِهِ وَإِلَيْهِ النُّشُورُ﴾",
+              "phonetic": "Qāla llāhu taʿālā...",
+              "french": "Dieu le Très-Haut a dit : \"C'est Lui qui vous a soumis la terre : parcourez donc ses grandes étendues et mangez de ce qu'Il vous fournit. Vers Lui est la résurrection.\""
+            },
+            {
+              "speaker": "عماد",
+              "arabic": "صَدَقَ اللهُ العَظِيمُ. ولكِنْ هَلْ فَكَّرْتَ فِي أَوْلَادِكَ؟",
+              "phonetic": "Ṣadaqa llāhu l-ʿaẓīm. Wa lakin hal fakkarta fī awlādik?",
+              "french": "Dieu Immense a dit vrai. Mais as-tu pensé à tes enfants ?"
+            },
+            {
+              "speaker": "صلاح",
+              "arabic": "سَأَصْحَبُهُمْ مَعِي، أَوْ أَرُورُهُمْ في العامِ مَرَّتَيْنِ",
+              "phonetic": "Sa-aṣḥabuhum maʿī, aw azūruhum fī l-ʿāmi marratayn",
+              "french": "Je les emmènerai avec moi, ou je leur rendrai visite deux fois par an."
+            },
+            {
+              "speaker": "عماد",
+              "arabic": "كَيْفَ تُحافِظُ عَلى دِينِهِمْ وَثَقافَتِهِمْ وَلُغَتِهِم، إِذَا اغْتَرَبُوا مَعَكَ؟",
+              "phonetic": "Kayfa tuḥāfiẓu ʿalā dīnihim wa thaqāfatihim wa lughatihim...",
+              "french": "Comment préserveras-tu leur religion, leur culture et leur langue s'ils s'expatrient avec toi ?"
+            },
+            {
+              "speaker": "صلاح",
+              "arabic": "لَنْ أَذْهَبَ إِلى بِلادٍ غَرِيبَةٍ عَنْ ثَقافَتي",
+              "phonetic": "Lan adh-haba ilā bilādin gharībatin ʿan thaqāfatī",
+              "french": "Je n'irai pas dans un pays étranger à ma culture."
+            },
+            {
+              "speaker": "عماد",
+              "arabic": "أَرْجُو أَنْ تَصْحَبَ أَوْلَادَكَ",
+              "phonetic": "Arjū an taṣḥaba awlādak",
+              "french": "J'espère que tu emmèneras tes enfants."
+            },
+            {
+              "speaker": "صلاح",
+              "arabic": "سَأُحاوِلُ ذَلِكَ، وَشُكْراً عَلَى نَصِيحَتِكَ",
+              "phonetic": "Sa-uḥāwilu dhālik, wa shukran ʿalā naṣīḥatik",
+              "french": "J'essaierai cela, et merci pour ton conseil."
+            },
+            {
+              "speaker": "عماد",
+              "arabic": "هَلْ وَافَقَ وَالِدُكَ عَلَى اغْتِرَابِكَ؟",
+              "phonetic": "Hal wāfaqa wāliduka ʿalā ightirābik?",
+              "french": "Ton père a-t-il accepté ton expatriation ?"
+            },
+            {
+              "speaker": "صلاح",
+              "arabic": "بالطَّبْع وافَقَ، وَإِلا مَا فَكَّرْتُ فِي الاغْتِرَابِ",
+              "phonetic": "Biṭ-ṭabʿ wāfaq, wa illā mā fakkartu fī l-ightirāb",
+              "french": "Bien sûr qu'il a accepté, sinon je n'aurais pas pensé à l'expatriation."
+            },
+            {
+              "speaker": "عماد",
+              "arabic": "هَلْ سَتُقِيمُ طَويلاً هُناكَ؟",
+              "phonetic": "Hal satuqīmu ṭawīlan hunāk?",
+              "french": "Resteras-tu longtemps là-bas ?"
+            },
+            {
+              "speaker": "صلاح",
+              "arabic": "خَمْسَ سَنَوَاتٍ فَقَطْ، ثُمَّ أَعودُ ، إِنْ شَاءَ اللهُ",
+              "phonetic": "Khamsa sanawātin faqaṭ, thumma aʿūdu in shā'a llāh",
+              "french": "Cinq ans seulement, puis je reviendrai si Dieu le veut."
+            },
+            {
+              "speaker": "عماد",
+              "arabic": "أَرْجُو أَنْ تَعود إلينا سالماً غانماً",
+              "phonetic": "Arjū an taʿūda ilaynā sāliman ghāniman",
+              "french": "J'espère que tu nous reviendras sain et sauf et gagnant."
+            },
+            {
+              "speaker": "صلاح",
+              "arabic": "بارَكَ الله فيك",
+              "phonetic": "Bāraka llāhu fīk",
+              "french": "Que Dieu te bénisse."
+            }
+          ]
+        },
+        {
+          "id": "6.4",
+          "type": "texte",
+          "titleAr": "عمل خير من مسألة",
+          "titleFr": "",
+          "youtubeUrl": "",
+          "lines": [
+            {
+              "speaker": "",
+              "arabic": "العَمَلُ نِعْمَةٌ مِنْ نِعَمِ اللهِ",
+              "phonetic": "Al-ʿamalu niʿmatun min niʿami llāh",
+              "french": "Le travail est un bienfait parmi les bienfaits de Dieu."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَلا يَعْرِفُ هَذِهِ النِّعْمَةَ، إِلَّا مَنْ فَقَدَها بِسَبَبِ الْمَرَضِ، أَو غَيْرِهِ",
+              "phonetic": "Wa lā yaʿrifu hādhihi n-niʿmah, illā man faqadahā bi-sababi l-maraḍ, aw ghayrih",
+              "french": "Et ne connaît ce bienfait que celui qui l'a perdu à cause de la maladie ou autre."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَمَعَ ذَلِكَ فَبَعْضُ النَّاسِ لَا يُحِبّونَ العَمَلَ",
+              "phonetic": "Wa maʿa dhālika fa-baʿḍu n-nāsi lā yuḥibbūna l-ʿamal",
+              "french": "Et malgré cela, certains gens n'aiment pas le travail."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَيَعْتَمِدُونَ على غَيْرِهِمْ، أَو يَتَسوَّلُونَ في الطَّرُقِ",
+              "phonetic": "Wa yaʿtamidūna ʿalā ghayrihim, aw yatasoowwalūna fī ṭ-ṭuruq",
+              "french": "Et ils dépendent des autres, ou mendient dans les chemins."
+            },
+            {
+              "speaker": "",
+              "arabic": "قال الرسولُ ﷺ: «ما أَكَلَ أَحَدٌ طَعاماً قَطُّ خَيْراً مِنْ أَنْ يَأْكُلَ مِنْ عَمَلِ يَدِهِ»",
+              "phonetic": "Qāla r-Rasūl...",
+              "french": "Le Prophète a dit : \"Personne n'a jamais mangé une nourriture meilleure que celle qu'il mange du travail de sa main.\""
+            },
+            {
+              "speaker": "",
+              "arabic": "«وَإِنَّ نَبِيَّ اللهِ داودَ كَانَ يَأْكُلُ مِنْ عَمَلِ يَدِهِ»",
+              "phonetic": "Wa inna nabiyya llāhi Dāwūda kāna ya'kulu min ʿamali yadih",
+              "french": "\"Et le prophète de Dieu David mangeait du travail de sa main.\""
+            },
+            {
+              "speaker": "",
+              "arabic": "وَقَالَ: «لأَنْ يَأْخُذَ أَحَدُكُمْ حَبْلَهُ ، ثُمَّ يَغْدو إلى الجَبَلِ، فَيَحْتَطِبَ»",
+              "phonetic": "Wa qāl...",
+              "french": "Et il a dit : \"Que l'un de vous prenne sa corde, puis parte tôt vers la montagne, et ramasse du bois.\""
+            },
+            {
+              "speaker": "",
+              "arabic": "«فَيَبِيعَ، فَيَأْكُلَ، وَيَتَصَدَّقَ خَيْرٌ مِنْ أَنْ يَسْأَلَ النَّاسَ»",
+              "phonetic": "Fa-yabīʿa, fa-ya'kula, wa yataṣaddaqa...",
+              "french": "\"Puis qu'il vende, mange et donne l'aumône est meilleur que de demander aux gens.\""
+            },
+            {
+              "speaker": "",
+              "arabic": "جَاءَ رَجُلٌ فَقير إلى رَسولِ اللهِ ﷺ وَسَأَلَهُ شَيْئاً",
+              "phonetic": "Jā'a rajulun faqīrun ilā Rasūli llāh...",
+              "french": "Un homme pauvre est venu au Messager de Dieu et lui a demandé quelque chose."
+            },
+            {
+              "speaker": "",
+              "arabic": "فَقَالَ لَهُ الرَّسُولُ ﷺ: هَلْ فِي بَيْتِكَ شَيْءٌ؟",
+              "phonetic": "Fa-qāla lahu r-Rasūl: Hal fī baytika shay'?",
+              "french": "Le Prophète lui dit : Y a-t-il quelque chose dans ta maison ?"
+            },
+            {
+              "speaker": "",
+              "arabic": "قَالَ : نَعَمْ، قَصْعَةٌ (إناء) نَأْكُلُ فيها ، ونَشْرَبُ مِنْها",
+              "phonetic": "Qāla: Naʿam, qaṣʿatun (inā') na'kulu fīhā wa nashrabu minhā",
+              "french": "Il dit : Oui, un bol (récipient) dans lequel nous mangeons et buvons."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَنَتَطَهَّرُ، وَحِلْسٌ (فِراش) نَجْلِسُ عَلَيْهَا، وَلا شَيْءَ غَيْرَ هَذا",
+              "phonetic": "Wa nataṭahharu, wa ḥilsun (firāsh) najlisu ʿalayhā...",
+              "french": "Et nous nous purifions, et une couverture (tapis) sur laquelle nous nous asseyons, et rien d'autre que cela."
+            },
+            {
+              "speaker": "",
+              "arabic": "فَقَالَ لَهُ الرَّسُولُ ﷺ: ائْتِني بهما",
+              "phonetic": "Fa-qāla lahu r-Rasūl: I'tinī bihimā",
+              "french": "Le Prophète lui dit : Apporte-les-moi."
+            },
+            {
+              "speaker": "",
+              "arabic": "فَأَتَاهُ بِهِمَا، فَأَمْسَكَهُما بَيْنَ يَدَيْهِ ، وَقالَ لأَصْحَابِهِ : مَنْ يَشْتَرِي هَذَيْنِ؟",
+              "phonetic": "Fa-atāhu bihimā...",
+              "french": "Il les lui apporta, il les tint entre ses mains et dit à ses compagnons : Qui achète ces deux-là ?"
+            },
+            {
+              "speaker": "",
+              "arabic": "فَقَامَ رَجُلٌ، فَقَالَ : أَنا أَشْتَرِيهِمَا بِدِرْهَم",
+              "phonetic": "Fa-qāma rajul, fa-qāla: ana ashtarīhimā bi-dirham",
+              "french": "Un homme se leva et dit : Je les achète pour un dirham."
+            },
+            {
+              "speaker": "",
+              "arabic": "فَقَالَ: مَنْ يَزِيدُ عَلَى دِرْهَم؟",
+              "phonetic": "Fa-qāla: Man yazīdu ʿalā dirham?",
+              "french": "Il dit : Qui offre plus d'un dirham ?"
+            },
+            {
+              "speaker": "",
+              "arabic": "فَقامَ رَجُلٌ آخَرُ ، وَقَالَ : أَنا أَشْتَرِيهِما بِدِرْهَمَيْنِ",
+              "phonetic": "Fa-qāma rajulun ākhar...",
+              "french": "Un autre homme se leva et dit : Je les achète pour deux dirhams."
+            },
+            {
+              "speaker": "",
+              "arabic": "فَدَفَعَهُما إِلَى الرَّسُولِ ﷺ الَّذِي سَلَّمُهمَا إِلَى الأَعرابي",
+              "phonetic": "Fa-dafaʿahumā ilā r-Rasūl...",
+              "french": "Il les donna au Prophète qui les remit au bédouin."
+            },
+            {
+              "speaker": "",
+              "arabic": "قائلاً : اشْتَرِ بِأَحَدِهِما طَعاماً ، وَاذْهَبْ بِهِ إِلَى أَهْلِكَ",
+              "phonetic": "Qā'ilan: Ishtari bi-aḥadihimā ṭaʿāman...",
+              "french": "En disant : Achète avec l'un de la nourriture et va la donner à ta famille."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَاشْتَرِ بِالْآخَرِ قَدُوماً وَائْتِنِي بِهِ",
+              "phonetic": "Washtari bil-ākhari qadūman wa'tinī bih",
+              "french": "Et achète avec l'autre une herminette (hache) et apporte-la-moi."
+            },
+            {
+              "speaker": "",
+              "arabic": "فَأَتَاهُ بِالقَدُومِ، فَوَضَعَ فِيهِ عوداً بِيَدِهِ",
+              "phonetic": "Fa-atāhu bil-qadūm, fa-waḍaʿa fīhi ʿūdan bi-yadih",
+              "french": "Il lui apporta l'herminette, et il (le Prophète) y fixa un manche de sa main."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَقَالَ لِلأَعرابي : اذْهَبْ وَاحْتَطِبْ وَبِعْ",
+              "phonetic": "Wa qāla lil-aʿrābiyy: Idh-hab waḥtaṭib wa biʿ",
+              "french": "Et il dit au bédouin : Va, coupe du bois et vends."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَلَا أَرَاكَ خَمْسَةَ عَشَرَ يَوْماً",
+              "phonetic": "Wa lā arāka khamsata ʿashara yawman",
+              "french": "Et que je ne te voie pas pendant quinze jours."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَبَعْدَ انتهاء هَذِهِ الْمُدَّةِ، رَجَعَ إِلَيْهِ الأَعْرابِيُّ",
+              "phonetic": "Wa baʿda intihā'i hādhihi l-muddah, rajaʿa ilayhi l-aʿrābiyy",
+              "french": "Après la fin de cette période, le bédouin revint à lui."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَقَدِ اشْتَرَى ثِياباً وَطَعاماً",
+              "phonetic": "Wa qad ishtarā thiyāban wa ṭaʿāman",
+              "french": "Il avait acheté des vêtements et de la nourriture."
+            },
+            {
+              "speaker": "",
+              "arabic": "فَقَالَ لَهُ الرَّسُولُ ﷺ: «أَلَيْسَ هَذا خَيْراً لَكَ مِنْ أَنْ تَسْأَلَ النَّاسَ أَعْطَوْكَ أَوْ مَنَعَوكَ »؟",
+              "phonetic": "Fa-qāla lahu r-Rasūl...",
+              "french": "Le Prophète lui dit : \"N'est-ce pas mieux pour toi que de demander aux gens, qu'ils te donnent ou te refusent ?\""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "titleAr": "اللغة العربية(La Langue)",
+      "titleFr": "Les voyages",
+      "lessons": [
+        {
+          "id": "7.1",
+          "type": "dialogue",
+          "titleAr": "بين طالبتين",
+          "titleFr": "",
+          "youtubeUrl": "",
+          "lines": [
+            {
+              "speaker": "الطالبة 1",
+              "arabic": "أَعْتَقِدُ أَنَّكِ طَالِبَةٌ جَدِيدَةٌ",
+              "phonetic": "Aʿtaqidu annaki ṭālibatun jadīdah",
+              "french": "Je pense que tu es une nouvelle étudiante."
+            },
+            {
+              "speaker": "الطالبة 2",
+              "arabic": "نعم، التَحَقْتُ بِالْمَعْهَدِ هَذِهِ السَّنَةَ",
+              "phonetic": "Naʿam, iltaḥaqtu bil-maʿhadi hādhihi s-sanah",
+              "french": "Oui, j'ai rejoint l'institut cette année."
+            },
+            {
+              "speaker": "الطالبة 1",
+              "arabic": "هَلْ دَرَسْتِ اللُّغَةَ العَرَبِيَّةَ فِي بَلَدِكِ؟",
+              "phonetic": "Hal darasti l-lughata l-ʿarabiyyata fī baladik?",
+              "french": "As-tu étudié la langue arabe dans ton pays ?"
+            },
+            {
+              "speaker": "الطالبة 2",
+              "arabic": "هَذِهِ أَوَّلُ مَرَّةٍ أَدْرُسُ فيها العَرَبِيَّةَ",
+              "phonetic": "Hādhihi awwalu marratin adrusu fīhā l-ʿarabiyyah",
+              "french": "C'est la première fois que j'étudie l'arabe."
+            },
+            {
+              "speaker": "الطالبة 1",
+              "arabic": "أَنا دَرَسْتُ العَرَبِيَّةَ ثَلَاثَ سَنَوَاتٍ فِي بَلَدي",
+              "phonetic": "Ana darastu l-ʿarabiyyata thalātha sanawātin fī baladī",
+              "french": "J'ai étudié l'arabe trois ans dans mon pays."
+            },
+            {
+              "speaker": "الطالبة 2",
+              "arabic": "لِماذا تَدْرُسِينَها مَرَّةً ثَانِيَةً، إِذَنْ ؟!",
+              "phonetic": "Limādhā tadrusīnahā marratan thāniyatan idhan?!",
+              "french": "Pourquoi l'étudies-tu une seconde fois, alors ?!"
+            },
+            {
+              "speaker": "الطالبة 1",
+              "arabic": "في بلدي نتَعَلَّمُ القِراءَةَ، وَالقَوَاعِدَ وَالتَّرْجَمَةَ",
+              "phonetic": "Fī baladī nataʿallamu l-qirā'ah, wal-qawāʿid wat-tarjamah",
+              "french": "Dans mon pays nous apprenons la lecture, la grammaire et la traduction."
+            },
+            {
+              "speaker": "الطالبة 1",
+              "arabic": "وَلَا نَتَعَلَّمُ الْحَدِيثَ بِاللُّغَةِ العَرَبِيَّةِ",
+              "phonetic": "Wa lā nataʿallamu l-ḥadītha bil-lughati l-ʿarabiyyah",
+              "french": "Et nous n'apprenons pas à parler en langue arabe."
+            },
+            {
+              "speaker": "الطالبة 2",
+              "arabic": "وَلَكِنَّكِ تَتَحَدَّثِينَ العَرَبِيَّةَ الْآنَ جَيِّداً !",
+              "phonetic": "Wa lakinnaki tataḥaddathīna l-ʿarabiyyata l-āna jayyidan!",
+              "french": "Mais tu parles l'arabe maintenant très bien !"
+            },
+            {
+              "speaker": "الطالبة 1",
+              "arabic": "تَعَلَّمتُ الحَدِيثَ بِاللُّغَةِ العَرَبِيَّةِ هُنا",
+              "phonetic": "Taʿallamtu l-ḥadītha bil-lughati l-ʿarabiyyati hunā",
+              "french": "J'ai appris à parler en langue arabe ici."
+            },
+            {
+              "speaker": "الطالبة 1",
+              "arabic": "في المَعهَدِ مُخْتَبَرٌ وَحاسوبٌ وَإِذاعَةٌ وَمَكْتَبَةٌ",
+              "phonetic": "Fī l-maʿhadi mukhtabarun wa ḥāsūbun wa idhāʿatun wa maktabah",
+              "french": "Dans l'institut il y a un laboratoire, un ordinateur, une radio et une bibliothèque."
+            },
+            {
+              "speaker": "الطالبة 2",
+              "arabic": "لَا أَسْتَطِيعُ نُطْقَ الأَصْوَاتِ: « ق، ظ، ح » جيداً",
+              "phonetic": "Lā astaṭīʿu nuṭqa l-aṣwāt: Qāf, Ẓā', Ḥā' jayyidan",
+              "french": "Je ne peux pas prononcer les sons : \"Qaf, Dha, Ha\" correctement."
+            },
+            {
+              "speaker": "الطالبة 1",
+              "arabic": "هُناكَ تَدْريباتٌ صَوْتِيَّةٌ جَيِّدَةٌ فِي مُخْتَبَرِ اللَّغَةِ",
+              "phonetic": "Hunāka tadrībātun ṣawtiyyatun jayyidatun fī mukhtabari l-lughah",
+              "french": "Il y a de bons exercices phonétiques au laboratoire de langue."
+            },
+            {
+              "speaker": "الطالبة 2",
+              "arabic": "وَلا أَسْتَطِيعُ التَّحَدُّثَ بِاللُّغَةِ العَرَبِيَّةِ",
+              "phonetic": "Wa lā astaṭīʿu t-taḥaddutha bil-lughati l-ʿarabiyyah",
+              "french": "Et je ne peux pas parler en langue arabe."
+            },
+            {
+              "speaker": "الطالبة 2",
+              "arabic": "وَلَا أَفْهَمُ كَلامَ الْمُدَرِّسَةِ وَالطَّالِباتِ",
+              "phonetic": "Wa lā afhamu kalāma l-mudarrisati waṭ-ṭālibāt",
+              "french": "Et je ne comprends pas les paroles de l'enseignante et des étudiantes."
+            },
+            {
+              "speaker": "الطالبة 2",
+              "arabic": "أُرِيدُ أَنْ أَتَعَلَّمَ العَرَبِيَّةَ جَيِّداً . ماذا أَفْعَلُ ؟!",
+              "phonetic": "Urīdu an ataʿallama l-ʿarabiyyata jayyidan. Mādhā afʿal?!",
+              "french": "Je veux apprendre l'arabe bien. Que faire ?!"
+            },
+            {
+              "speaker": "الطالبة 1",
+              "arabic": "احْفَظي جُزْءاً مِنَ القُرآنِ الكَرِيمِ، وَبَعْضَ الأَحادِيثِ النَّبَوِيَّةِ",
+              "phonetic": "Iḥfaẓī juz'an min al-Qur'āni l-Karīm, wa baʿḍa l-aḥādīthi n-nabawiyyah",
+              "french": "Mémorise une partie du Saint Coran, et quelques hadiths prophétiques."
+            },
+            {
+              "speaker": "الطالبة 1",
+              "arabic": "وَتَحَدَّثي بِالعَرَبِيَّةِ كثيراً",
+              "phonetic": "Wa taḥaddathī bil-ʿarabiyyati kathīran",
+              "french": "Et parle en arabe beaucoup."
+            },
+            {
+              "speaker": "الطالبة 2",
+              "arabic": "هَذِهِ نَصِيحَةٌ مُفِيدَةٌ، سَأَتَّبِعُها ، إِنْ شَاءَ اللهُ",
+              "phonetic": "Hādhihi naṣīḥatun mufīdah, sa-attabiʿuhā in shā'a llāh",
+              "french": "C'est un conseil utile, je le suivrai si Dieu le veut."
+            },
+            {
+              "speaker": "الطالبة 1",
+              "arabic": "إِذَنْ سَتَتَعَلَّمِينَ العَرَبِيَّةَ جَيِّداً",
+              "phonetic": "Idhan satataʿallamīna l-ʿarabiyyata jayyidan",
+              "french": "Alors tu apprendras l'arabe bien."
+            }
+          ]
+        },
+        {
+          "id": "7.2",
+          "type": "texte",
+          "titleAr": "العربية الفصيحة",
+          "titleFr": "",
+          "youtubeUrl": "",
+          "lines": [
+            {
+              "speaker": "",
+              "arabic": "نَشَأَتِ اللُّغَةُ العَرَبِيَّةُ فِي جَزِيرَةِ العَرَبِ قَبْلَ الإسلام",
+              "phonetic": "Nasha'ati l-lughatu l-ʿarabiyyah fī jazīrati l-ʿarab qabla l-islām",
+              "french": "La langue arabe est née dans la péninsule arabique avant l'Islam."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَكَانَ العَرَبُ قَبَائِلَ مُتَفَرِّقَةً",
+              "phonetic": "Wa kāna l-ʿarabu qabā'ila mutafarriqah",
+              "french": "Les Arabes étaient des tribus dispersées."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَكَانَتْ لِبَعْضِ القَبَائِلِ لَهَجَاتٌ خاصَّةٌ بِها",
+              "phonetic": "Wa kānat li-baʿḍi l-qabā'ili lahajātun khāṣṣatun bihā",
+              "french": "Et certaines tribus avaient des dialectes propres à elles."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَكَانَتِ الاخْتِلافاتُ قَلِيلَةٌ بَيْنَ تِلْكَ اللَّهَجاتِ",
+              "phonetic": "Wa kānat al-ikhtilāfātu qalīlatan bayna tilka l-lahajāt",
+              "french": "Les différences étaient faibles entre ces dialectes."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَكَانَتِ لِلْعَرَبِ لُغَةٌ مُشْتَرَكَةٌ، هِيَ اللُّغَةُ العَرَبِيَّةُ الفَصيحَةُ",
+              "phonetic": "Wa kānat lil-ʿarabi lughatun mushtarakah, hiya l-lughatu l-ʿarabiyyatu l-faṣīḥah",
+              "french": "Les Arabes avaient une langue commune, c'est la langue arabe classique (éloquente)."
+            },
+            {
+              "speaker": "",
+              "arabic": "لُغَةُ الشِّعْرِ وَالْخَطَابَةِ الَّتِي كَانَ العَرَبُ يَتَحَدَّثُونَ بِهَا",
+              "phonetic": "Lughatu sh-shiʿri wal-khaṭābah allatī kāna l-ʿarabu yataḥaddathūna bihā",
+              "french": "La langue de la poésie et du discours que les Arabes parlaient."
+            },
+            {
+              "speaker": "",
+              "arabic": "ثُمَّ جَاءَ الإِسْلامُ، وَأَنْزَلَ اللهُ القُرْآنَ الكَرِيمَ، بِاللُّغَةِ العَرَبِيَّةِ الفَصِيحَةِ",
+              "phonetic": "Thumma jā'a l-islām, wa anzala llāhu l-Qur'āna l-Karīma bil-lughati l-ʿarabiyyati l-faṣīḥah",
+              "french": "Puis l'Islam est venu, et Dieu a fait descendre le Saint Coran en langue arabe classique."
+            },
+            {
+              "speaker": "",
+              "arabic": "قال الله تعالى: ﴿إِنَّا أَنزَلْنَاهُ قُرْآناً عَرَبِيّاً لَعَلَّكُمْ تَعْقِلُونَ﴾",
+              "phonetic": "Qāla llāhu taʿālā: Innā anzalnāhu qur'ānan ʿarabiyyan laʿallakum taʿqilūn",
+              "french": "Dieu le Très-Haut a dit : \"Nous l'avons fait descendre, un Coran arabe, afin que vous raisonniez\"."
+            },
+            {
+              "speaker": "",
+              "arabic": "أَعْطَى القُرْآنُ الكَرِيمُ بَعْضَ الأَلْفاظِ العَرَبِيَّةِ القَديمةِ مَعانِي جَدِيدَةً",
+              "phonetic": "Aʿṭā l-Qur'ānu l-Karīmu baʿḍa l-alfāẓi l-ʿarabiyyati l-qadīmati maʿāniya jadīdah",
+              "french": "Le Saint Coran a donné à certains mots arabes anciens de nouvelles significations."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَجَاءَ بأساليب جديدة، لَمْ تَعْرِفْها العَرَبِيَّةُ مِنْ قَبْلُ",
+              "phonetic": "Wa jā'a bi-asālība jadīdah, lam taʿrifhā l-ʿarabiyyatu min qabl",
+              "french": "Et il a apporté de nouveaux styles que l'arabe ne connaissait pas auparavant."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَكَانَ القُرْآنُ سَبَباً في نَشَاةِ عُلوم اللُّغَةِ العَرَبِيَّةِ كَالنَّحْوِ وَالصَّرْفِ وَالبَلاغَةِ",
+              "phonetic": "Wa kāna l-Qur'ānu sababan fī nash'ati ʿulūmi l-lughati l-ʿarabiyyah kan-naḥwi waṣ-ṣarfi wal-balāghah",
+              "french": "Le Coran fut une cause de l'apparition des sciences de la langue arabe comme la grammaire, la morphologie et la rhétorique."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَالعُلوم الإسلاميَّةِ ؛ كَعِلْمِ التَّفْسِيرِ وَالْحَدِيثِ وَالفِقْهِ وَغَيْرِها",
+              "phonetic": "Wal-ʿulūmi l-islāmiyyah; ka-ʿilmi t-tafsīri wal-ḥadīthi wal-fiqhi wa ghayrihā",
+              "french": "Et des sciences islamiques ; comme la science de l'exégèse, du hadith, de la jurisprudence et autres."
+            },
+            {
+              "speaker": "",
+              "arabic": "أَثَّرَتِ اللُّغَةُ العَرَبِيَّةُ فِي لُغَاتِ الشُّعوبِ الإِسْلامِيَّةِ، كالفارِسِيَّةِ وَالْأُرْدِيَّةِ وَالسَّواحِلِيَّةِ",
+              "phonetic": "Aththarati l-lughatu l-ʿarabiyyatu fī lughāti sh-shuʿūbi l-islāmiyyah...",
+              "french": "La langue arabe a influencé les langues des peuples islamiques, comme le persan, l'ourdou et le swahili."
+            },
+            {
+              "speaker": "",
+              "arabic": "فَأَقْرَضَتْها كثيراً من الألفاظ، وَكُتِبَ كَثِيرٌ مِنْ تِلْكَ اللُّغَاتِ بِالْحَرْفِ الْعَرَبِيِّ",
+              "phonetic": "Fa-aqraḍathā kathīran min al-alfāẓ, wa kutiba kathīrun min tilka l-lughāti bil-ḥarfi l-ʿarabiyy",
+              "french": "Elle leur a prêté beaucoup de mots, et beaucoup de ces langues ont été écrites en caractères arabes."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَاقْتَرَضَتْ لُغَاتٌ أُخْرَى بَعْضَ الأَلْفاظِ العَرَبِيَّةِ، مِثْلُ : الإنجليزيَّةِ وَالْفِرَنْسِيَّةِ وَالإِسْبَانِيَّةِ",
+              "phonetic": "Wa q-taraḍat lughātun ukhrā baʿḍa l-alfāẓi l-ʿarabiyyah...",
+              "french": "Et d'autres langues ont emprunté certains mots arabes, comme : l'anglais, le français et l'espagnol."
+            }
+          ]
+        },
+        {
+          "id": "7.3",
+          "type": "dialogue",
+          "titleAr": "السفر لطلب العلم",
+          "titleFr": "",
+          "youtubeUrl": "",
+          "lines": [
+            {
+              "speaker": "شريف",
+              "arabic": "السَّلامُ عَلَيْكُمْ",
+              "phonetic": "As-salāmu ʿalaykum",
+              "french": "Que la paix soit sur vous."
+            },
+            {
+              "speaker": "هارون",
+              "arabic": "وعَلَيْكُمُ السَّلامُ",
+              "phonetic": "Wa ʿalaykumu s-salām",
+              "french": "Et sur vous la paix."
+            },
+            {
+              "speaker": "شريف",
+              "arabic": "إلى أَيْنَ أَنْتَ مُسافِرٌ ؟",
+              "phonetic": "Ilā ayna anta musāfir?",
+              "french": "Où voyages-tu ?"
+            },
+            {
+              "speaker": "هارون",
+              "arabic": "أنا مُسافِر إلى الرياض، سَأَلتَحِقُ بِجامِعَةِ الإمامِ، كُلِّيَّةِ الشَّرِيعَةِ",
+              "phonetic": "Ana musāfir ilā r-Riyāḍ, sa-altaḥiqu bi-jāmiʿati l-Imām...",
+              "french": "Je voyage à Riyad, je vais rejoindre l'université Al-Imam, faculté de la Charia."
+            },
+            {
+              "speaker": "هارون",
+              "arabic": "أُرِيدُ التَّخُصَّصَ فِي الدراسات الإسلامية",
+              "phonetic": "Urīdu t-takhaṣṣuṣa fī d-dirāsāti l-islāmiyyah",
+              "french": "Je veux me spécialiser dans les études islamiques."
+            },
+            {
+              "speaker": "شريف",
+              "arabic": "وَلَكِنَّكَ تَعْرِفُ الإِسْلامَ جَيِّداً",
+              "phonetic": "Wa lakinnaka taʿrifu l-islāma jayyidan",
+              "french": "Mais tu connais l'Islam bien."
+            },
+            {
+              "speaker": "هارون",
+              "arabic": "دَرَسْتُ الإِسْلامَ بِاللُّغَةِ الأَرْدِيَّةِ، وَهَذا لا يَكْفِي",
+              "phonetic": "Darastu l-islāma bil-lughati l-urdiyyah, wa hādhā lā yakfī",
+              "french": "J'ai étudié l'Islam en langue ourdou, et cela ne suffit pas."
+            },
+            {
+              "speaker": "هارون",
+              "arabic": "يَجِبُ أَنْ أَدْرُسَ الإِسْلامَ بِاللُّغَةِ العَرَبِيَّةِ",
+              "phonetic": "Yajibu an adrusa l-islāma bil-lughati l-ʿarabiyyah",
+              "french": "Je dois étudier l'Islam en langue arabe."
+            },
+            {
+              "speaker": "هارون",
+              "arabic": "لأَنَّهَا لُغَةُ القُرْآنِ الكَرِيمِ، وَلَا يُفْهَمُ القُرْآنُ إِلا بِها",
+              "phonetic": "Li-annahā lughatu l-Qur'āni l-Karīm, wa lā yufhamu l-Qur'ānu illā bihā",
+              "french": "Car c'est la langue du Saint Coran, et le Coran ne se comprend qu'à travers elle."
+            },
+            {
+              "speaker": "شريف",
+              "arabic": "أنا مُسافِرُ إلى القاهِرَةِ",
+              "phonetic": "Ana musāfir ilā l-Qāhirah",
+              "french": "Je voyage au Caire."
+            },
+            {
+              "speaker": "شريف",
+              "arabic": "سَوْفَ أَلْتَحِقُ بِجَامِعَةِ القَاهِرَةِ، كُلِّيَّةِ الآداب",
+              "phonetic": "Sawfa altaḥiqu bi-jāmiʿati l-Qāhirah, kulliyyati l-ādāb",
+              "french": "Je vais rejoindre l'Université du Caire, faculté des lettres."
+            },
+            {
+              "speaker": "هارون",
+              "arabic": "ماذا سَتَدْرُسُ فِي كُلِّيَّةِ الآداب ؟",
+              "phonetic": "Mādhā satadrusu fī kulliyyati l-ādāb?",
+              "french": "Que vas-tu étudier à la faculté des lettres ?"
+            },
+            {
+              "speaker": "شريف",
+              "arabic": "أُريدُ التَّخَصُّصَ فِي عُلومِ اللُّغَةِ العَرَبِيَّةِ النَّحْوِ وَالصَّرْفِ وَالبَلاغَةِ",
+              "phonetic": "Urīdu t-takhaṣṣuṣa fī ʿulūmi l-lughati l-ʿarabiyyah...",
+              "french": "Je veux me spécialiser dans les sciences de la langue arabe : la grammaire, la morphologie et la rhétorique."
+            },
+            {
+              "speaker": "هارون",
+              "arabic": "لماذا تُريدُ التَّخَصُّص في عُلوم اللُّغَةِ العَرَبِيَّةِ؟",
+              "phonetic": "Limādhā turīdu t-takhaṣṣuṣa fī ʿulūmi l-lughati l-ʿarabiyyah?",
+              "french": "Pourquoi veux-tu te spécialiser dans les sciences de la langue arabe ?"
+            },
+            {
+              "speaker": "شريف",
+              "arabic": "سَأَكونُ مُدَرِّساً لِلُّغَةِ العَرَبِيَّةِ في جَامِعَةِ إِسلام آباد، إنْ شَاءَ اللهُ",
+              "phonetic": "Sa-akūnu mudarrisan lil-lughati l-ʿarabiyyah...",
+              "french": "Je serai professeur de langue arabe à l'Université d'Islamabad, si Dieu le veut."
+            },
+            {
+              "speaker": "شريف",
+              "arabic": "وَيَجِبُّ أَنْ أَعْرِفَ هَذِهِ اللُّغَةَ جَيِّداً",
+              "phonetic": "Wa yajibu an aʿrifa hādhihi l-lughata jayyidan",
+              "french": "Et je dois connaître cette langue bien."
+            },
+            {
+              "speaker": "هارون",
+              "arabic": "عفواً : هَذَا هُوَ النَّداء الأخيرُ لِطائِرَةِ الرِّياضِ",
+              "phonetic": "ʿAfwan: hādhā huwa n-nidā'u l-akhīru li-ṭā'irati r-Riyāḍ",
+              "french": "Pardon : c'est le dernier appel pour l'avion de Riyad."
+            },
+            {
+              "speaker": "هارون",
+              "arabic": "مَعَ السَّلامَةِ",
+              "phonetic": "Maʿa s-salāmah",
+              "french": "Au revoir."
+            },
+            {
+              "speaker": "شريف",
+              "arabic": "في أمان الله",
+              "phonetic": "Fī amāni llāh",
+              "french": "À la protection de Dieu (Au revoir)."
+            }
+          ]
+        },
+        {
+          "id": "7.4",
+          "type": "texte",
+          "titleAr": "العربية لغة عالمية",
+          "titleFr": "",
+          "youtubeUrl": "",
+          "lines": [
+            {
+              "speaker": "",
+              "arabic": "كانَتِ اللُّغَةُ العَرَبِيَّةُ لُغَةً عَالَميَّةً فِي العَصْرِ العباسي",
+              "phonetic": "Kānat il-lughatu l-ʿarabiyyatu lughatan ʿālamiyyah fī l-ʿaṣri l-ʿabbāsiyy",
+              "french": "La langue arabe était une langue mondiale à l'époque abbasside."
+            },
+            {
+              "speaker": "",
+              "arabic": "الَّذِي ازْدَهَرَتْ فِيهِ الحَضَارَةُ الإِسْلامِيَّةُ",
+              "phonetic": "Alladhī izdaharat fīhi l-ḥaḍāratu l-islāmiyyah",
+              "french": "Durant laquelle la civilisation islamique a prospéré."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَكَانَتِ العَرَبِيَّةُ لُغَةَ تِلْكَ الحَضَارَةِ، التي تُرْجِمَتْ إِلَيْهَا الكُتُبُ مِنَ اليونانِيَّةِ وَالفَارِسِيَّةِ",
+              "phonetic": "Wa kānat al-ʿarabiyyatu lughata tilka l-ḥaḍārah...",
+              "french": "Et l'arabe était la langue de cette civilisation, vers laquelle furent traduits les livres du grec et du persan."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَأَلَّفَ بِها العلماء في الطِّبِّ، وَالهَندَسَةِ، وَالرِّياضِيَّاتِ، وَالعُلومِ، وَغَيْرِ ذَلْكَ",
+              "phonetic": "Wa allafa bihā l-ʿulamā'u fī ṭ-ṭibb...",
+              "french": "Et dans laquelle les savants ont composé en médecine, ingénierie, mathématiques, sciences et autre."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَحَمَلَتِ اللُّغَةُ العَرَبِيَّةُ تِلْكَ العُلوم إلى أوروبا",
+              "phonetic": "Wa ḥamalati l-lughatu l-ʿarabiyyatu tilka l-ʿulūma ilā Ūrubbā",
+              "french": "Et la langue arabe a porté ces sciences vers l'Europe."
+            },
+            {
+              "speaker": "",
+              "arabic": "فَكَانَتْ أَساسَ الحَضَارَةِ الغربية الحديثة",
+              "phonetic": "Fa-kānat asāsa l-ḥaḍārati l-gharbiyyati l-ḥadīthah",
+              "french": "Elle fut donc la base de la civilisation occidentale moderne."
+            },
+            {
+              "speaker": "",
+              "arabic": "مَرَّتْ بِالعَرَبِ بَعْدَ ذَلِكَ عُصُورٌ مِنَ الضَّعْفِ ابْتَعَدوا فيها عَنْ دِينِهِمْ",
+              "phonetic": "Marrat bil-ʿarabi baʿda dhālika ʿuṣūrun mina ḍ-ḍaʿfi ibtaʿadū fīhā ʿan dīnihim",
+              "french": "Les Arabes ont traversé après cela des époques de faiblesse où ils se sont éloignés de leur religion."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَهَجَرُوا اللَّغَةَ العَرَبِيَّةَ الفصيحةَ، وَاسْتَعْمَلُوا اللهَجاتِ",
+              "phonetic": "Wa hajarū l-lughata l-ʿarabiyyata l-faṣīḥah, wastaʿmalū l-lahajāt",
+              "french": "Et ils ont délaissé la langue arabe classique, et ont utilisé les dialectes."
+            },
+            {
+              "speaker": "",
+              "arabic": "ثُمَّ جَاءَ الاسْتِعمارُ، فَحارَبَ الثَّقَافَةَ الإِسْلامِيَّةَ، وَاللُّغَةَ العَرَبِيَّةَ الفَصيحَةَ",
+              "phonetic": "Thumma jā'a l-istiʿmār, fa-ḥāraba th-thaqāfata l-islāmiyyah...",
+              "french": "Puis vint la colonisation, qui combattit la culture islamique et la langue arabe classique."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَشَجَّعَ اللَّهَجاتِ، فَكَانَتْ هُناكَ لَهْجَةٌ مِصْرِيَّةٌ، وَأُخْرَى مَغْرِبِيَّةٌ، وَثَالِثَةٌ سورِيَّةٌ، وَهَكَذا",
+              "phonetic": "Wa shajjaʿa l-lahajāt...",
+              "french": "Et elle encouragea les dialectes, il y eut donc un dialecte égyptien, un autre marocain, un troisième syrien, et ainsi de suite."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَقَدْ أَدَّى هَذَا إِلى تَفَرُّقِ العَرَبِ، وَبُعْدِ بَعْضِهِم عَنْ بَعْضٍ",
+              "phonetic": "Wa qad addā hādhā ilā tafarruqi l-ʿarab...",
+              "french": "Et cela a conduit à la division des Arabes et à l'éloignement des uns des autres."
+            },
+            {
+              "speaker": "",
+              "arabic": "بِحَيْثُ إذا سافر العَرَبِيُّ مِنْ بَلَدِهِ إِلَى بَلَدٍ عَرَبِيٌّ آخَرَ ، وَجَدَ بَعْضَ الصُّعُوبَةِ في الاتِّصالِ بِأَهْلِ ذَلِكَ البَلَدِ ، إِذا تَحَدِّثُوا بِلَهَجاتِهِم",
+              "phonetic": "Bi-ḥaythu idhā sāfara l-ʿarabiyyu...",
+              "french": "De sorte que si l'Arabe voyageait de son pays vers un autre pays arabe, il trouvait une certaine difficulté à communiquer avec les gens de ce pays, s'ils parlaient leurs dialectes."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَلَا يَتَحَقَّقُ الاتصالُ النَّامُ بَيْنَهُ وَبَيْنَهُمْ، إلا إذا كانَ الحَديثُ بِاللُّغَةِ العَرَبِيَّةِ الفَصيحَة",
+              "phonetic": "Wa lā yataḥaqqaqu l-ittiṣālu t-tāmm...",
+              "french": "Et la communication complète ne se réalisait entre lui et eux que si la conversation était en langue arabe classique."
+            },
+            {
+              "speaker": "",
+              "arabic": "اخْتَلَفَ الأَمْرُ اليَوْمَ، فَضَعُفَتِ اللَّهَجاتُ، وَقَوِيَتِ اللُّغَةُ العَرَبِيَّةُ الفَصيحَةُ",
+              "phonetic": "Ikhtalafa l-amru l-yawm, fa-ḍaʿufati l-lahajāt, wa qawiyati l-lughatu l-ʿarabiyyatu l-faṣīḥah",
+              "french": "La situation a changé aujourd'hui, les dialectes ont faibli, et la langue arabe classique s'est renforcée."
+            },
+            {
+              "speaker": "",
+              "arabic": "بِسَبَبِ التَّعْلِيمِ وَوَسَائِلِ الاتصال الحَدِيثَةِ",
+              "phonetic": "Bi-sababi t-taʿlīmi wa wasā'ili l-ittiṣāli l-ḥadīthah",
+              "french": "À cause de l'enseignement et des moyens de communication modernes."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَأَصْبَحَتِ العَرَبِيَّةُ لُغَةً عَالَميَّةً مَرَّةً ثانيةً، كَالإِنْجِلِيزِيَّةِ، وَالْفِرَنْسِيَّةِ، وَالْإِسْبَانِيَّةِ",
+              "phonetic": "Wa aṣbaḥati l-ʿarabiyyatu lughatan ʿālamiyyatan marratan thāniyah...",
+              "french": "Et l'arabe est redevenu une langue mondiale une seconde fois, comme l'anglais, le français et l'espagnol."
+            },
+            {
+              "speaker": "",
+              "arabic": "فَهِيَ إِحْدَى اللُّغَاتِ الرَّسْمِيَّةِ فِي هَيْئَةِ الأُمَمِ الْمُتَّحِدَةِ",
+              "phonetic": "Fahiya iḥdā l-lughāti r-rasmiyyati fī hay'ati l-umami l-muttaḥidah",
+              "french": "C'est l'une des langues officielles à l'ONU (Organisation des Nations Unies)."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَهِيَ اللُّغَةُ السَّادِسَةُ فِي العَالَمِ",
+              "phonetic": "Wa hiya l-lughatu s-sādisatu fī l-ʿālam",
+              "french": "Et c'est la sixième langue dans le monde."
+            },
+            {
+              "speaker": "",
+              "arabic": "يَتَحَدَّثُ بِها أَكْثَرُ مِنْ ۲۰۰ مِلْيونِ عَرَبِيٍّ",
+              "phonetic": "Yataḥaddathu bihā aktharu min mi'atay milyūni ʿarabiyy",
+              "french": "Plus de 200 millions d'Arabes la parlent."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَيُؤَدِّي العِباداتِ بِها أَكْثَرُ مِنْ مِلْيَارِ مُسْلِمٍ",
+              "phonetic": "Wa yu'addī l-ʿibādāti bihā aktharu min milyāri muslim",
+              "french": "Et plus d'un milliard de musulmans accomplissent les adorations avec elle."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "titleAr": "الجوائز(Prix)",
+      "titleFr": "Les transports",
+      "lessons": [
+        {
+          "id": "8.1",
+          "type": "dialogue",
+          "titleAr": "الفرحة بالجوائز",
+          "titleFr": "",
+          "youtubeUrl": "",
+          "lines": [
+            {
+              "speaker": "الأم",
+              "arabic": "ماذا تَحْمِلُ يَا وَلَدِي؟ مَا هَذِهِ الْأَشْياءُ؟!",
+              "phonetic": "Mādhā taḥmilu yā waladī? Mā hādhihi l-ashyā'?",
+              "french": "Que portes-tu mon fils ? Quelles sont ces choses ?!"
+            },
+            {
+              "speaker": "الابن",
+              "arabic": "هَذِهِ جَوائِزُ. ساعدوني، فَالْجَوَائِزُ كَثِيرَةٌ",
+              "phonetic": "Hādhihi jawā'iz. Sāʿidūnī, fal-jawā'izu kathīrah",
+              "french": "Ce sont des prix. Aidez-moi, les prix sont nombreux."
+            },
+            {
+              "speaker": "الأب",
+              "arabic": "ما الْجَوائِزُ التي حَصَلْتَ عَليها ؟",
+              "phonetic": "Mā l-jawā'izu llatī ḥaṣalta ʿalayhā?",
+              "french": "Quels sont les prix que tu as obtenus ?"
+            },
+            {
+              "speaker": "الابن",
+              "arabic": "حَصَلْتُ عَلَى جَائِزَةِ القُرْآنِ الكَرِيمِ",
+              "phonetic": "Ḥaṣaltu ʿalā jā'izati l-Qur'āni l-Karīm",
+              "french": "J'ai obtenu le prix du Saint Coran."
+            },
+            {
+              "speaker": "الابن",
+              "arabic": "وَجَائِزَةِ السِّيرَةِ النَّبَوِيَّةِ، وَجَائِزَةِ المَعلوماتِ العامَّةِ",
+              "phonetic": "Wa jā'izati s-sīrati n-nabawiyyah, wa jā'izati l-maʿlūmāti l-ʿāmmah",
+              "french": "Et le prix de la biographie prophétique, et le prix de culture générale."
+            },
+            {
+              "speaker": "الأم",
+              "arabic": "ما شَاءَ اللهُ فَقَد حَصَلَ وَلَدِي عَلَى جَوائِزِ الْمُسَابَقَةِ",
+              "phonetic": "Mā shā'a llāh, faqad ḥaṣala waladī ʿalā jawā'izi l-musābaqah",
+              "french": "Masha'Allah, mon fils a obtenu les prix du concours."
+            },
+            {
+              "speaker": "الابن",
+              "arabic": "كَانَتِ الْمُنَافَسَةُ شَدِيدَةً جِدًا",
+              "phonetic": "Kānati l-munāfasatu shadīdatan jiddan",
+              "french": "La compétition était très rude."
+            },
+            {
+              "speaker": "الأب",
+              "arabic": "ماذا فَعَلَ صَدِيقُكَ حُسامٌ؟",
+              "phonetic": "Mādhā faʿala ṣadīquka Ḥusām?",
+              "french": "Qu'a fait ton ami Houssam ?"
+            },
+            {
+              "speaker": "الابن",
+              "arabic": "حَصَلَ عَلَى جَائِزَةِ الحَدِيثِ وَجَائِزَةِ الخَطَابَةِ",
+              "phonetic": "Ḥaṣala ʿalā jā'izati l-ḥadīthi wa jā'izati l-khaṭābah",
+              "french": "Il a obtenu le prix du Hadith et le prix de l'éloquence (discours)."
+            },
+            {
+              "speaker": "الأم",
+              "arabic": "هَذَا أَسْعَدُ يَوْمٍ في حياتي",
+              "phonetic": "Hādhā asʿadu yawmin fī ḥayātī",
+              "french": "C'est le jour le plus heureux de ma vie."
+            },
+            {
+              "speaker": "الأب",
+              "arabic": "لَقَدْ رَفَعْتَ رَأْسَنا",
+              "phonetic": "Laqad rafaʿta ra'sanā",
+              "french": "Tu as relevé notre tête (tu nous as fait honneur)."
+            },
+            {
+              "speaker": "الابن",
+              "arabic": "أَنْتُمَا السَّبَبُ في نجاحي. جَزاكُما اللهُ خَيْراً",
+              "phonetic": "Antumā s-sababu fī najāḥī. Jazākumā llāhu khayran",
+              "french": "Vous êtes la cause de ma réussite. Qu'Allah vous récompense."
+            },
+            {
+              "speaker": "الأب والأم",
+              "arabic": "وَنَحْنُ سَنُعْطِيكَ جَائِزَةً أَيْضاً",
+              "phonetic": "Wa naḥnu sanuʿṭīka jā'izatan ayḍan",
+              "french": "Et nous te donnerons un prix aussi."
+            },
+            {
+              "speaker": "الابن",
+              "arabic": "لا أُرِيدُ مِنْكُما جَائِزَةً: فَالْخَيْرُ كَثِيرٌ ، وَالْحَمْدُ للهِ",
+              "phonetic": "Lā urīdu minkumā jā'izah: fal-khayru kathīr...",
+              "french": "Je ne veux pas de prix de votre part : le bien est abondant, louange à Dieu."
+            },
+            {
+              "speaker": "الابن",
+              "arabic": "لَكِنَّنِي أُرِيدُ مِنْكُما شَيْئاً آخَرَ",
+              "phonetic": "Lakinnanī urīdu minkumā shay'an ākhar",
+              "french": "Mais je veux de vous autre chose."
+            },
+            {
+              "speaker": "الأب والأم",
+              "arabic": "ما هُوَ؟ سَنُعْطِيكَ مَا تُرِيدُ",
+              "phonetic": "Mā huwa? Sanuʿṭīka mā turīd",
+              "french": "Qu'est-ce que c'est ? Nous te donnerons ce que tu veux."
+            },
+            {
+              "speaker": "الابن",
+              "arabic": "أطلُبُ مِنْكُما العَفْوَ وَالدُّعاء",
+              "phonetic": "Aṭlubu minkumā l-ʿafwa wad-duʿā'",
+              "french": "Je vous demande le pardon et l'invocation."
+            },
+            {
+              "speaker": "الأب والأم",
+              "arabic": "عَفا اللهُ عَنْكَ، وَوَفَقَكَ فِي حَيَاتِكَ وَدِرَاسَتِكَ",
+              "phonetic": "ʿAfā llāhu ʿank, wa waffaqaka fī ḥayātika wa dirāsatik",
+              "french": "Qu'Allah te pardonne, et t'accorde le succès dans ta vie et tes études."
+            },
+            {
+              "speaker": "الابن",
+              "arabic": "جَزاكُما اللهُ خَيْراً",
+              "phonetic": "Jazākumā llāhu khayran",
+              "french": "Qu'Allah vous récompense."
+            }
+          ]
+        },
+        {
+          "id": "8.2",
+          "type": "texte",
+          "titleAr": "أنواع الجوائز",
+          "titleFr": "",
+          "youtubeUrl": "",
+          "lines": [
+            {
+              "speaker": "",
+              "arabic": "تَمْنَحُ كَثِيرٌ مِنَ الدُّوَلِ جَوائِزَ كَثِيرَةً لِلْمُبْدِعِينَ",
+              "phonetic": "Tamnaḥu kathīrun min ad-duwali jawā'iza kathīrah lil-mubdiʿīn",
+              "french": "Beaucoup d'États décernent de nombreux prix aux créateurs."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَالهَدَفُ مِنْ تِلْكَ الجَوَائِزِ خِدْمَةُ العُلومِ وَالآدابِ وغيرها",
+              "phonetic": "Wal-hadafu min tilka l-jawā'izi khidmatu l-ʿulūmi wal-ādābi wa ghayrihā",
+              "french": "Le but de ces prix est de servir les sciences, les lettres et autres."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَهِيَ تُمْنَحُ لِلأَشْخَاصِ الْمُبْدِعينَ في تلك المجالات",
+              "phonetic": "Wa hiya tumnaḥu lil-ashkhāṣi l-mubdiʿīna fī tilka l-majālāt",
+              "french": "Et ils sont décernés aux personnes créatives dans ces domaines."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَتَكونُ الجائزة في الغالب - مُكافَأَةً مالِيَّةً",
+              "phonetic": "Wa takūnu l-jā'izatu fī l-ghālib - mukāfa'atan māliyyah",
+              "french": "Le prix est le plus souvent une récompense financière."
+            },
+            {
+              "speaker": "",
+              "arabic": "تَخْتَلِفُ قِيمَتُهَا مِنْ بَلَدٍ إِلَى بَلَدٍ",
+              "phonetic": "Takhtalifu qīmatuhā min baladin ilā balad",
+              "french": "Sa valeur diffère d'un pays à l'autre."
+            },
+            {
+              "speaker": "",
+              "arabic": "فَقَدْ تَبْلُغُ مِئَاتِ الدولارات في بَعْضِ البِلادِ",
+              "phonetic": "Fa-qad tablughu mi'āti d-dūlārāt fī baʿḍi l-bilād",
+              "french": "Elle peut atteindre des centaines de dollars dans certains pays."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَقَدْ تَصِلُ إلى مِلْيَون دولار في بلادٍ أُخْرى",
+              "phonetic": "Wa qad taṣilu ilā milyōn dūlār fī bilādin ukhrā",
+              "french": "Et elle peut atteindre un million de dollars dans d'autres pays."
+            },
+            {
+              "speaker": "",
+              "arabic": "وقَدْ يَصْحَبُ المُكافَأَةَ المَالِيَّةَ : دِرْعٌ، أَوْ شَهَادَةٌ، أَوْ غَيْرُ ذَلِكَ",
+              "phonetic": "Wa qad yaṣḥabu l-mukāfa'ata l-māliyyah: dirʿun, aw shahādatun, aw ghayru dhālik",
+              "french": "Et la récompense financière peut être accompagnée de : un bouclier (trophée), ou un certificat, ou autre."
+            },
+            {
+              "speaker": "",
+              "arabic": "تَنْقَسِمُ الجَوائِزُ إِلى قِسْمَيْنِ : جَوائِزَ مَحَلِّيَّةٍ، وَجَوائِزَ عالَميَّةٍ",
+              "phonetic": "Tanqasimu l-jawā'izu ilā qismayn: jawā'iz maḥalliyyah, wa jawā'iz ʿālamiyyah",
+              "french": "Les prix se divisent en deux parties : des prix locaux et des prix mondiaux."
+            },
+            {
+              "speaker": "",
+              "arabic": "والجوائِزُ المَحَلِّيَّةُ، هِيَ الَّتِي تَمْنَحُها الدَّوْلَةُ لأَبْنَائِها",
+              "phonetic": "Wal-jawā'izu l-maḥalliyyatu, hiya llatī tamnaḥuhā d-dawlatu li-abnā'ihā",
+              "french": "Les prix locaux sont ceux que l'État décerne à ses citoyens (fils)."
+            },
+            {
+              "speaker": "",
+              "arabic": "الَّذِينَ يَخْدِمُونَ العِلْمَ وَالثَّقَافَةَ فِي بَلَدِهِمْ",
+              "phonetic": "Alladhīna yakhdumūna l-ʿilma wath-thaqāfata fī baladihim",
+              "french": "Qui servent la science et la culture dans leur pays."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَمِنْ ذَلِكَ جَوَائِزُ الدَّوْلَةِ التَّقْدِيرِيَّةُ ، وجَوائِزُ الدَّوْلَةِ التَّشْجِيعِيَّةُ",
+              "phonetic": "Wa min dhālika jawā'izu d-dawlati t-taqdīriyyah, wa jawā'izu d-dawlati t-tashjīʿiyyah",
+              "french": "Parmi cela, les prix d'appréciation de l'État, et les prix d'encouragement de l'État."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَتُمْنَحُ هَذِهِ الجَوائِزُ فِي كَثِيرٍ مِنَ البِلادِ العَرَبِيَّة كُلِّ سَنَةٍ",
+              "phonetic": "Wa tumnaḥu hādhihi l-jawā'izu fī kathīrin mina l-bilādi l-ʿarabiyyati kulla sanah",
+              "french": "Ces prix sont décernés dans beaucoup de pays arabes chaque année."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَتُكَوَّنُ لِجانٌ، لاخْتِيارِ الَّذِينَ يُمْنَحُونَ تِلْكَ الجَوائِزَ",
+              "phonetic": "Wa tukawwanu lijānun, likhtiyāri lladhīna yumnaḥūna tilka l-jawā'iz",
+              "french": "Et des comités sont formés pour choisir ceux qui recevront ces prix."
+            },
+            {
+              "speaker": "",
+              "arabic": "أَما الجوائز العالَميَّةُ، فَتَمْنَحُها هَيْئَاتٌ عالَميَّةٌ لِلأَشْخَاصِ الَّذِينَ يَخْدِمُونَ الإِنْسانِيَّةَ في جَمِيعِ أنحاء العالم",
+              "phonetic": "Ammā l-jawā'izu l-ʿālamiyyah, fa-tamnaḥuhā hay'ātun ʿālamiyyatun...",
+              "french": "Quant aux prix mondiaux, des organismes mondiaux les décernent aux personnes qui servent l'humanité dans toutes les parties du monde."
+            },
+            {
+              "speaker": "",
+              "arabic": "في مجالات العلوم والآداب وغيرها",
+              "phonetic": "Fī majālāti l-ʿulūmi wal-ādābi wa ghayrihā",
+              "french": "Dans les domaines des sciences, des lettres et autres."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَمِنَ الجَوائِزِ العالَميَّةِ المَشْهُورَةِ، جَوائِزُ الْمَلِكِ فَيْصَلِ العالميَّة",
+              "phonetic": "Wa min al-jawā'izi l-ʿālamiyyati l-mashhūrah, jawā'izu l-Malik Fayṣal al-ʿālamiyyah",
+              "french": "Et parmi les prix mondiaux célèbres, les prix mondiaux du Roi Fayçal."
+            },
+            {
+              "speaker": "",
+              "arabic": "التي تَمْنَحُها مُؤَسَّسَةُ المَلِكِ فَيْصَلِ الْخَيْرِيَّةُ، بِالْمَمْلَكَةِ العَرَبِيَّةِ السُّعودِيَّةِ",
+              "phonetic": "Allatī tamnaḥuhā mu'assasatu l-Malik Fayṣal al-khayriyyah, bil-mamlakati l-ʿarabiyyati s-suʿūdiyyah",
+              "french": "Que décerne la Fondation de Bienfaisance Roi Fayçal, en Arabie Saoudite."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَهُناكَ جوائز نوبِلَ العالَميَّةُ",
+              "phonetic": "Wa hunāka jawā'izu Nobel al-ʿālamiyyah",
+              "french": "Et il y a les prix mondiaux Nobel."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَتُكَوِّنُ كُلُّ مُؤَسَّسَةٍ، أَوْ هَيْئَةٍ لجاناً، وَتَضَعُ شُروطاً ؛ لِمَنْحِ جَوائِزها",
+              "phonetic": "Wa tukawwinu kullu mu'assasatin aw hay'atin lijānan, wa taḍaʿu shurūṭan li-manḥi jawā'izihā",
+              "french": "Et chaque institution ou organisme forme des comités et pose des conditions pour l'attribution de ses prix."
+            }
+          ]
+        },
+        {
+          "id": "8.3",
+          "type": "dialogue",
+          "titleAr": "اختيار الطالب المثالي",
+          "titleFr": "",
+          "youtubeUrl": "",
+          "lines": [
+            {
+              "speaker": "مدير المدرسة",
+              "arabic": "نَجْتَمِعُ اليَوْمَ، لاختيار الطالب المثالي",
+              "phonetic": "Najtamiʿu l-yawm, likhtiyāri ṭ-ṭālibi l-mithāliyy",
+              "french": "Nous nous réunissons aujourd'hui pour choisir l'étudiant exemplaire."
+            },
+            {
+              "speaker": "مدير المدرسة",
+              "arabic": "ما صفات الطالب المثالِي فِي رَأَيْكُمْ؟",
+              "phonetic": "Mā ṣifātu ṭ-ṭālibi l-mithāliyy fī ra'yikum?",
+              "french": "Quelles sont les qualités de l'étudiant exemplaire à votre avis ?"
+            },
+            {
+              "speaker": "مدرس الدين",
+              "arabic": "أَنْ يُحَافِظَ عَلى صَلَاتِهِ، وَأَنْ يَكُونَ حَسَنَ الأَخْلاقِ",
+              "phonetic": "An yuḥāfiẓa ʿalā ṣalātih, wa an yakūna ḥasana l-akhlāq",
+              "french": "Qu'il soit assidu à sa prière, et qu'il ait un bon comportement."
+            },
+            {
+              "speaker": "مدرس العلوم",
+              "arabic": "أَن يَهْتَمَّ بِنَظَافَتِهِ وَمَظْهَرِهِ",
+              "phonetic": "An yahtamma bi-naẓāfatihi wa maẓharih",
+              "french": "Qu'il prenne soin de sa propreté et de son apparence."
+            },
+            {
+              "speaker": "مدرس العلوم",
+              "arabic": "وَأَنْ يَكُونَ مَحْبُوباً لَدَى زُمَلائِهِ وَمُدَرِّسِيهِ",
+              "phonetic": "Wa an yakūna maḥbūban ladā zumalā'ihi wa mudarrisīh",
+              "french": "Et qu'il soit aimé de ses camarades et de ses enseignants."
+            },
+            {
+              "speaker": "مدرس الرياضيات",
+              "arabic": "أَنْ يَحْصُل على امتياز في الاختبارات",
+              "phonetic": "An yaḥṣula ʿalā imtiyāz fī l-ikhtibārāt",
+              "french": "Qu'il obtienne l'excellence aux examens."
+            },
+            {
+              "speaker": "مدرس اللغة العربية",
+              "arabic": "أَنْ يُشارك في المسابقات الثقافية",
+              "phonetic": "An yushārika fī l-musābaqāti th-thaqāfiyyah",
+              "french": "Qu'il participe aux concours culturels."
+            },
+            {
+              "speaker": "مدرس الرياضة",
+              "arabic": "وَأَنْ يُشَارِكَ فِي الْأَنْشِطَةِ الرِّياضِيَّةِ أَيْضاً",
+              "phonetic": "Wa an yushārika fī l-anshiṭati r-riyāḍiyyati ayḍan",
+              "french": "Et qu'il participe aux activités sportives aussi."
+            },
+            {
+              "speaker": "مدير المدرسة",
+              "arabic": "والآنَ يَخْتَارُ كُلِّ وَاحِدٍ مِنْكُمْ ثَلَاثَةَ طُلابِ، وَيَكْتُبُ أَسْمَاءَهُم في البطاقة",
+              "phonetic": "Wal-āna yakhtāru kullu wāḥidin minkum...",
+              "french": "Et maintenant chacun de vous choisit trois étudiants et écrit leurs noms sur la carte."
+            },
+            {
+              "speaker": "مدير المدرسة",
+              "arabic": "هُناكَ اسْمٌ مُشْتَرَكَ في جَمِيعِ البطاقاتِ: أَحْمَدُ بْنُ عَلَامٍ",
+              "phonetic": "Hunāka ismun mushtarak... Aḥmad bin ʿAllām",
+              "french": "Il y a un nom commun dans toutes les cartes : Ahmed Ben Allam."
+            },
+            {
+              "speaker": "مدير المدرسة",
+              "arabic": "هُوَ الطَّالِبُ المثالي",
+              "phonetic": "Huwa ṭ-ṭālibu l-mithāliyy",
+              "french": "C'est l'étudiant exemplaire."
+            },
+            {
+              "speaker": "مدرس الرياضة",
+              "arabic": "سَنُعَلِنُ النَّتِيجَةَ لِلطَّلابِ في الأسبوع القادم، إن شاء الله",
+              "phonetic": "Sanuʿlinu n-natījata liṭ-ṭullābi fī l-usbūʿi l-qādim...",
+              "french": "Nous annoncerons le résultat aux étudiants la semaine prochaine, si Dieu le veut."
+            },
+            {
+              "speaker": "مدير المدرسة",
+              "arabic": "الجائزة: كُتُبٌ، وَحَقيبَةٌ، وَمَبْلَغَ مِنَ المالِ",
+              "phonetic": "Al-jā'izah: kutubun, wa ḥaqībah, wa mablaghun mina l-māl",
+              "french": "Le prix : des livres, un cartable, et une somme d'argent."
+            },
+            {
+              "speaker": "مدير المدرسة",
+              "arabic": "وَسَوْفَ يَكُونُ هُناكَ حَفْلٌ كَبِيرٌ، يَحْضُرُهُ آبَاءُ الطَّلابِ",
+              "phonetic": "Wa sawfa yakūnu hunāka ḥaflun kabīr, yaḥḍuruhu ābā'u ṭ-ṭullāb",
+              "french": "Et il y aura une grande fête, à laquelle assisteront les pères des étudiants."
+            }
+          ]
+        },
+        {
+          "id": "8.4",
+          "type": "texte",
+          "titleAr": "جائزة الملك فيصل العالمية",
+          "titleFr": "",
+          "youtubeUrl": "",
+          "lines": [
+            {
+              "speaker": "",
+              "arabic": "تَمْنَحُ مُؤَسَّسَةُ المَلِكِ فَيْصَلِ الخَيْرِيَّةُ، مُنْذُ عام ۱۳۹۷هـ ، خَمْسَ جَوائِزَ عَالَميَّةٍ",
+              "phonetic": "Tamnaḥu mu'assasatu l-Malik Fayṣal al-khayriyyah, mundhu ʿām 1397 AH, khamsa jawā'iza ʿālamiyyah",
+              "french": "La Fondation de Bienfaisance Roi Fayçal décerne, depuis l'an 1397 de l'Hégire, cinq prix mondiaux."
+            },
+            {
+              "speaker": "",
+              "arabic": "فِي خَمْسَةِ مجالات، هِيَ خِدْمَةُ الإِسْلامِ، والدراسات الإسْلامِيَّةُ",
+              "phonetic": "Fī khamsati majālāt, hiya khidmatul-islām, wad-dirāsātu l-islāmiyyah",
+              "french": "Dans cinq domaines, qui sont : le service de l'Islam, les études islamiques."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَالْأَدَبُ العَرَبِيُّ، وَالطَّبُّ، وَالعُلُومُ",
+              "phonetic": "Wal-adabu l-ʿarabiyyu, waṭ-ṭabbu, wal-ʿulūm",
+              "french": "La littérature arabe, la médecine et les sciences."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَتَتَكَوَّنُ الجَائِزَةُ مِنْ شَهَادَةٍ، تَحْمِلُ اسْمَ الفَائِرِ",
+              "phonetic": "Wa tatakawwanu l-jā'izatu min shahādah, taḥmilu isma l-fā'iz",
+              "french": "Le prix se compose d'un certificat portant le nom du lauréat."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَمُلَخَّص لِلْعَمَلِ الَّذِي حَصَلَ بِهِ عَلَى الجَائِزَةِ",
+              "phonetic": "Wa mulakhkhaṣin lil-ʿamali lladhī ḥaṣala bihi ʿalā l-jā'izah",
+              "french": "Et un résumé du travail pour lequel il a obtenu le prix."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَمِيدالِيَّةٍ ذَهَبِيَّةٍ، وَمَبْلَغ مالي",
+              "phonetic": "Wa mīdāliyyatin dhahabiyyah, wa mablaghin māliyy",
+              "french": "Et une médaille d'or, et une somme d'argent."
+            },
+            {
+              "speaker": "",
+              "arabic": "فازَ بِجَوائِزِ المَلِكِ فَيْصَلٍ كَثِيرٌ مِنَ العُلَمَاءِ، مِنَ الشَّرْقِ وَالغَرْبِ",
+              "phonetic": "Fāza bi-jawā'izi l-Malik Fayṣal kathīrun min al-ʿulamā', min ash-sharqi wal-gharb",
+              "french": "Beaucoup de savants, d'Orient et d'Occident, ont remporté les prix Roi Fayçal."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَمِنْ أَشْهَرِ الَّذِينَ نالوا جَائِزَةَ خِدْمَةِ الإسلام : أبو الأَعْلى المودودِيُّ مِنْ باكستان",
+              "phonetic": "Wa min ash-hari lladhīna nālū... Abu l-Aʿlā l-Mawdūdiyy min Bākistān",
+              "french": "Et parmi les plus célèbres ayant reçu le prix du Service de l'Islam : Abul A'la Maududi du Pakistan."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَأَبو الحَسَنِ النَّدْوِيُّ مِنَ الهِنْدِ، وَأَحْمَدُ ديدات مِنْ جَنوب إفريقيا",
+              "phonetic": "Wa Abu l-Ḥasani n-Nadwiyy min al-Hind, wa Aḥmad Dīdāt min Janūb Ifrīqyā",
+              "french": "Et Abul Hasan Ali Nadwi d'Inde, et Ahmed Deedat d'Afrique du Sud."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَعَبْدُ العزيز بن باز مِنَ السُّعودِيَّةِ",
+              "phonetic": "Wa ʿAbd al-ʿAzīz bin Bāz min as-Suʿūdiyyah",
+              "french": "Et Abdul Aziz bin Baz d'Arabie Saoudite."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَمِنَ الَّذِينَ حَصَلوا على جائزة الدراسات الإِسْلامِيَّةِ : فَؤَادُ سِرْكينُ مِنْ تُركيا",
+              "phonetic": "Wa min alladhīna ḥaṣalū... Fu'ād Sezgīn min Turkiyā",
+              "french": "Et parmi ceux qui ont obtenu le prix des Études Islamiques : Fuat Sezgin de Turquie."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَيُوسُفُ القَرَضَاوِيُّ مِنْ مِصْرَ ، ومُصْطَفَى الزَّرْقَاءُ مِنْ سوريا",
+              "phonetic": "Wa Yūsuf al-Qaraḍāwiyy min Miṣr, wa Muṣṭafā z-Zarqā' min Sūriyā",
+              "french": "Et Yusuf al-Qaradawi d'Égypte, et Mustafa al-Zarqa de Syrie."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَمِنَ الَّذِينَ حَصَلوا عَلَى جَائِزَةِ المَلِكِ فَيْصَلٍ في الأَدَبِ العَرَبِيِّ : عَبْدُ السَّلام هَارُونُ",
+              "phonetic": "Wa min alladhīna ḥaṣalū... ʿAbd as-Salām Hārūn",
+              "french": "Et parmi ceux qui ont obtenu le prix Roi Fayçal en Littérature Arabe : Abd al-Salam Harun."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَعَائِشَةُ عَبْدُ الرَّحْمَنِ مِنْ مِصْرَ، وَناصِرُ الدِّينِ الأَسَدُ مِنْ الأَرْدُن",
+              "phonetic": "Wa ʿĀ'ishah ʿAbd ar-Raḥmān min Miṣr, wa Nāṣir ad-Dīn al-Asad min al-Urdun",
+              "french": "Et Aisha Abd al-Rahman d'Égypte, et Nasir al-Din al-Asad de Jordanie."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَعَبْدُ اللهِ الطَّيِّبُ من السودان",
+              "phonetic": "Wa ʿAbdullāh aṭ-Ṭayyib min as-Sūdān",
+              "french": "Et Abdullah"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "bookId": "aby3",
+  "bookName": "Al-Arabiya Bayna Yadayk - Tome 3",
+  "units": [
+    {
+      "id": 1,
+      "titleAr": "الشباب والمجتمع",
+      "titleFr": "La jeunesse et la société",
+      "lessons": [
+        {
+          "id": "1.1",
+          "type": "texte",
+          "titleAr": "مشكلات الشباب",
+          "titleFr": "Les problèmes de la jeunesse",
+          "youtubeUrl": "",
+          "lines": [
+            {
+              "speaker": "",
+              "arabic": "يُواجِهُ الشَّبابُ مُشْكِلاتٍ كَثِيرَةً في هذَا العَصْرِ، وَمِنْ ذَلِكَ مُشْكِلَةُ الغَزْوِ الثَّقافِيِّ، الَّذِي يَأْتِي",
+              "phonetic": "",
+              "french": "Les jeunes font face à de nombreux problèmes à notre époque, parmi lesquels le problème de l'invasion culturelle, qui se manifeste"
+            },
+            {
+              "speaker": "",
+              "arabic": "في صُوَرٍ كَثِيرَةٍ مِثْلِ: مُحارَبَةِ اللُّغَةِ وَالثَّقافَةِ، وَفَرْضِ لُغاتٍ وَثَقافاتٍ أَجْنَبِيَّةٍ مَحَلَّها، كَالدَّعْوَةِ",
+              "phonetic": "",
+              "french": "sous plusieurs formes comme : la lutte contre la langue et la culture, l'imposition de langues et cultures étrangères à leur place, comme l'appel"
+            },
+            {
+              "speaker": "",
+              "arabic": "الَّتِي نادَتْ بِتَرْكِ اللُّغَةِ العَرَبِيَّةِ، وَاسْتِعْمالِ اللَّهَجاتِ المَحَلِّيَّةِ، لِتَمْزِيقِ الأُمَّةِ، وَفَصْلِها عَنْ تُراثِها،",
+              "phonetic": "",
+              "french": "qui a prôné l'abandon de la langue arabe et l'utilisation des dialectes locaux, pour diviser la nation et la séparer de son patrimoine,"
+            },
+            {
+              "speaker": "",
+              "arabic": "أَوْ كَالدَّعْوَةِ إِلى تَدْرِيسِ العُلومِ فِي الجامِعاتِ العَرَبِيَّةِ بِاللُّغاتِ الأَجْنَبِيَّةِ. وَقَدْ تَأَثَّرَ بَعْضُ الشَّبابِ",
+              "phonetic": "",
+              "french": "ou comme l'appel à enseigner les sciences dans les universités arabes en langues étrangères. Certains jeunes ont été influencés"
+            },
+            {
+              "speaker": "",
+              "arabic": "بِهذِهِ الدَّعَواتِ، فَأَخَذَ يُقَلِّدُ أَصْحابَ اللُّغاتِ وَالثَّقافاتِ الأَجْنَبِيَّةِ فِي كَلامِهِمْ، وَسُلوكِهِمْ.",
+              "phonetic": "",
+              "french": "par ces appels, et ont commencé à imiter les locuteurs des langues et cultures étrangères dans leur parole et leur comportement."
+            },
+            {
+              "speaker": "",
+              "arabic": "يَشْعُرُ الشَّبابُ -أَحْياناً- بِالتَّناقُضِ بَيْنَ ما تَعَلَّمَهُ في بَيْتِهِ وَمَدْرَسَتِهِ وَمُجْتَمَعِهِ مِنْ أَخْلاقٍ، وَبَيْنَ",
+              "phonetic": "",
+              "french": "Les jeunes ressentent parfois une contradiction entre ce qu'ils ont appris de morale à la maison, à l'école et dans leur société, et"
+            },
+            {
+              "speaker": "",
+              "arabic": "ما يُبَثُّ في وَسائِلِ الإعْلامِ مِنْ أَخْلاقٍ تُخالِفُ أَخْلاقَ مُجْتَمَعِهِ وَدِينِهِ.",
+              "phonetic": "",
+              "french": "ce qui est diffusé dans les médias comme morale contraire à celle de leur société et de leur religion."
+            },
+            {
+              "speaker": "",
+              "arabic": "وَكَثِيراً ما تَنْجَحُ تِلْكَ الوَسائِلُ فِي التَّأْثِيرِ فِي بَعْضِ الشَّبابِ، وَلَعَلَّ هذا سَبَبُ انْتِشارِ المُخَدِّراتِ،",
+              "phonetic": "",
+              "french": "Ces médias réussissent souvent à influencer certains jeunes, et c'est peut-être la cause de la propagation des drogues,"
+            },
+            {
+              "speaker": "",
+              "arabic": "وَالجَرِيمَةِ بِصُوَرِها المُخْتَلِفَةِ فِي بَعْضِ المُجْتَمَعاتِ.",
+              "phonetic": "",
+              "french": "et du crime sous ses différentes formes dans certaines sociétés."
+            },
+            {
+              "speaker": "",
+              "arabic": "يَشْكو الشَّبابُ مِنْ أَنَّ المُجْتَمَعَ لا يَهْتَمُّ بِهِمْ كَثِيراً، وَيَقولونَ إِنَّ فُرَصَ التَّعْليمِ العالي أَصْبَحَتْ قَليلَةً،",
+              "phonetic": "",
+              "french": "Les jeunes se plaignent que la société ne s'intéresse pas beaucoup à eux, et ils disent que les opportunités d'enseignement supérieur sont devenues rares,"
+            },
+            {
+              "speaker": "",
+              "arabic": "وَإِنَّ الشّابَّ بَعْدَ أَنْ يَتَخَرَّجَ فِي الجامِعَةِ، لا يَجِدُ العَمَلَ المُناسِبَ، وَيَرى أَنَّ الزَّواجَ يُكَلِّفُ كَثِيراً",
+              "phonetic": "",
+              "french": "et que le jeune, après avoir obtenu son diplôme universitaire, ne trouve pas de travail convenable, et considère que le mariage coûte beaucoup"
+            },
+            {
+              "speaker": "",
+              "arabic": "مِنَ المالِ. وَلا شَكَّ أَنَّ الشَّبابَ عَلى حَقٍّ فِي كَثِيرٍ مِمّا يَقولونَ، وَعَلى المُجْتَمَعِ أَنْ يَعْمَلَ عَلى حَلِّ",
+              "phonetic": "",
+              "french": "d'argent. Il ne fait aucun doute que les jeunes ont raison dans beaucoup de ce qu'ils disent, et la société doit travailler à résoudre"
+            },
+            {
+              "speaker": "",
+              "arabic": "مُشْكِلاتِ الشَّبابِ؛ حَتّى يُشارِكوا فِي عَمَلِيَّةِ البِناءِ.",
+              "phonetic": "",
+              "french": "les problèmes des jeunes afin qu'ils participent au processus de construction."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
