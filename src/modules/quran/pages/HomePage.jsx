@@ -85,6 +85,10 @@ export default function HomePage({ settings, updateSettings }) {
   // Selected verses for page 2
   const [selectedVerses2, setSelectedVerses2] = useState(new Set())
 
+  // Validated pages popup
+  const [showValidatedPagesPopup, setShowValidatedPagesPopup] = useState(false)
+  const [showResetConfirm, setShowResetConfirm] = useState(false)
+
   const currentPage = settings.currentPage || 1
   const portionIndex = settings.currentPortionIndex || 0
   const portionSize = settings.portionSize || '1/3'
@@ -706,15 +710,19 @@ export default function HomePage({ settings, updateSettings }) {
     } else {
       // Mode fractionné (1/4, 1/3, 1/2)
       const pageKey = String(currentPage)
-      const pageProgress = newPortionProgress[pageKey] || []
+      let pageProgress = newPortionProgress[pageKey] || []
+
+      // Si la page est déjà validée (via mode 1p) mais portionProgress est vide,
+      // on considère que toutes les portions sont validées
+      if (isPageValidated(currentPage) && pageProgress.length === 0) {
+        pageProgress = Array.from({ length: config.portions }, (_, i) => i)
+      }
 
       if (pageProgress.includes(portionIndex)) {
         // Dévalider cette portion
         newPortionProgress[pageKey] = pageProgress.filter(p => p !== portionIndex)
-        // Si c'était la dernière portion, retirer la page des validées
-        if (newPortionProgress[pageKey].length < config.portions) {
-          newValidatedPages = newValidatedPages.filter(p => p !== currentPage)
-        }
+        // Retirer la page des validées (elle n'est plus complète)
+        newValidatedPages = newValidatedPages.filter(p => p !== currentPage)
       } else {
         // Valider cette portion
         newPortionProgress[pageKey] = [...pageProgress, portionIndex]
@@ -1365,7 +1373,7 @@ export default function HomePage({ settings, updateSettings }) {
   }
 
   return (
-    <div className={`min-h-screen p-6 ${settings.darkMode ? 'bg-slate-900' : 'bg-gray-50'}`}>
+    <div className={`p-6 pb-16 ${settings.darkMode ? 'bg-slate-900' : 'bg-gray-50'}`}>
       {/* Progress Bar Header */}
       <div className={`mb-6 p-4 rounded-2xl ${settings.darkMode ? 'bg-slate-800' : 'bg-white'} shadow-sm`}>
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-3">
@@ -1380,7 +1388,12 @@ export default function HomePage({ settings, updateSettings }) {
               <p className={`text-sm ${settings.darkMode ? 'text-gray-400' : 'text-gray-500'}`}>
                 Vous apprenez <span className="font-semibold text-primary-500">{getPortionSizeLabel()}</span> du Coran par jour.
                 {completePagesCount > 0 && (
-                  <> Vous avez appris <span className="font-semibold text-green-500">{completePagesCount} page{completePagesCount > 1 ? 's' : ''}</span>.</>
+                  <> Vous avez actuellement appris <button
+                    onClick={() => setShowValidatedPagesPopup(true)}
+                    className="font-semibold text-green-500 hover:text-green-400 hover:underline cursor-pointer"
+                  >
+                    {completePagesCount} page{completePagesCount > 1 ? 's' : ''}
+                  </button>.</>
                 )}
               </p>
             </div>
@@ -1739,7 +1752,7 @@ export default function HomePage({ settings, updateSettings }) {
 
               {/* Line-by-line display with tajweed */}
               <div
-                className={`text-2xl md:text-3xl arabic-text ${settings.tajweedEnabled ? 'tajweed-text' : ''} font-size-${settings.fontSize || 'medium'}`}
+                className={`text-2xl md:text-3xl arabic-text ${settings.tajweedEnabled ? 'tajweed-text' : ''} font-size-${settings.fontSize || 'medium'} line-height-${settings.lineHeight || 'normal'}`}
                 style={{ fontFamily: getFontFamily() }}
               >
                 {/* Cut verse lines (before portion) - shown inline when toggled */}
@@ -2193,7 +2206,7 @@ export default function HomePage({ settings, updateSettings }) {
 
                   {/* Page 2 verses with highlighting */}
                   <div
-                    className={`text-2xl md:text-3xl arabic-text ${settings.tajweedEnabled ? 'tajweed-text' : ''} font-size-${settings.fontSize || 'medium'}`}
+                    className={`text-2xl md:text-3xl arabic-text ${settings.tajweedEnabled ? 'tajweed-text' : ''} font-size-${settings.fontSize || 'medium'} line-height-${settings.lineHeight || 'normal'}`}
                     style={{ fontFamily: getFontFamily() }}
                   >
                     {secondPageLines.map((line) => (
@@ -2276,56 +2289,119 @@ export default function HomePage({ settings, updateSettings }) {
             </div>
           )}
 
-          {/* Liens utiles */}
-          <div className={`p-4 rounded-2xl ${settings.darkMode ? 'bg-slate-800' : 'bg-white'} shadow-sm flex-1`}>
-            <h3 className={`text-lg font-semibold mb-3 ${settings.darkMode ? 'text-white' : 'text-gray-800'}`}>
-              Liens utiles
-            </h3>
-            <div className="space-y-2">
-              <a
-                href="https://quran.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`flex items-center gap-3 px-3 py-2 rounded-lg transition-colors ${
-                  settings.darkMode
-                    ? 'bg-slate-700/50 hover:bg-slate-700 text-gray-300'
-                    : 'bg-gray-50 hover:bg-gray-100 text-gray-700'
-                }`}
-              >
-                <span className="text-lg">📖</span>
-                <span className="text-sm font-medium">Quran.com</span>
-              </a>
-              <a
-                href="https://sunnah.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`flex items-center gap-3 px-3 py-2 rounded-lg transition-colors ${
-                  settings.darkMode
-                    ? 'bg-slate-700/50 hover:bg-slate-700 text-gray-300'
-                    : 'bg-gray-50 hover:bg-gray-100 text-gray-700'
-                }`}
-              >
-                <span className="text-lg">📚</span>
-                <span className="text-sm font-medium">Sunnah.com</span>
-              </a>
-              <a
-                href="https://islamqa.info"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`flex items-center gap-3 px-3 py-2 rounded-lg transition-colors ${
-                  settings.darkMode
-                    ? 'bg-slate-700/50 hover:bg-slate-700 text-gray-300'
-                    : 'bg-gray-50 hover:bg-gray-100 text-gray-700'
-                }`}
-              >
-                <span className="text-lg">❓</span>
-                <span className="text-sm font-medium">IslamQA</span>
-              </a>
-            </div>
-          </div>
-
         </div>
       </div>
+
+      {/* Validated Pages Popup */}
+      {showValidatedPagesPopup && (
+        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50" onClick={() => setShowValidatedPagesPopup(false)}>
+          <div
+            className={`mx-4 p-6 rounded-2xl shadow-xl max-w-md w-full max-h-[80vh] overflow-hidden flex flex-col ${
+              settings.darkMode ? 'bg-slate-800' : 'bg-white'
+            }`}
+            onClick={e => e.stopPropagation()}
+          >
+            <div className="flex items-center justify-between mb-4">
+              <h3 className={`text-lg font-bold ${settings.darkMode ? 'text-white' : 'text-gray-800'}`}>
+                Pages validées ({completePagesCount})
+              </h3>
+              <button
+                onClick={() => setShowValidatedPagesPopup(false)}
+                className={`p-2 rounded-lg transition-colors ${
+                  settings.darkMode ? 'hover:bg-slate-700 text-gray-400' : 'hover:bg-gray-100 text-gray-500'
+                }`}
+              >
+                ✕
+              </button>
+            </div>
+            <div className="overflow-y-auto flex-1 space-y-2">
+              {validatedPages.sort((a, b) => a - b).map((page) => {
+                // Find the surah for this page
+                const surah = SURAH_INFO.find(s => page >= s.startPage && page <= s.endPage)
+                return (
+                  <button
+                    key={page}
+                    onClick={() => {
+                      updateSettings({ currentPage: page, currentPortionIndex: 0 })
+                      setShowValidatedPagesPopup(false)
+                    }}
+                    className={`w-full flex items-center gap-3 p-3 rounded-xl transition-colors text-left ${
+                      settings.darkMode
+                        ? 'bg-slate-700/50 hover:bg-slate-700 text-gray-200'
+                        : 'bg-gray-50 hover:bg-gray-100 text-gray-700'
+                    }`}
+                  >
+                    <div className={`w-10 h-10 rounded-lg flex items-center justify-center text-sm font-bold ${
+                      settings.darkMode ? 'bg-green-900/50 text-green-400' : 'bg-green-100 text-green-600'
+                    }`}>
+                      {page}
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <p className={`font-medium truncate ${settings.darkMode ? 'text-white' : 'text-gray-800'}`}>
+                        {surah ? surah.name : `Page ${page}`}
+                      </p>
+                      <p className={`text-sm ${settings.darkMode ? 'text-gray-400' : 'text-gray-500'}`}>
+                        {surah ? surah.englishName : ''}
+                      </p>
+                    </div>
+                    <Check className="w-5 h-5 text-green-500 flex-shrink-0" />
+                  </button>
+                )
+              })}
+              {completePagesCount === 0 && (
+                <p className={`text-center py-8 ${settings.darkMode ? 'text-gray-500' : 'text-gray-400'}`}>
+                  Aucune page validée
+                </p>
+              )}
+            </div>
+
+            {/* Reset Progress Button */}
+            {completePagesCount > 0 && !showResetConfirm && (
+              <button
+                onClick={() => setShowResetConfirm(true)}
+                className={`mt-4 w-full py-2.5 px-4 rounded-xl text-sm font-medium transition-colors ${
+                  settings.darkMode
+                    ? 'bg-red-900/30 text-red-400 hover:bg-red-900/50'
+                    : 'bg-red-50 text-red-600 hover:bg-red-100'
+                }`}
+              >
+                Réinitialiser ma progression
+              </button>
+            )}
+
+            {/* Reset Confirmation */}
+            {showResetConfirm && (
+              <div className={`mt-4 p-4 rounded-xl ${settings.darkMode ? 'bg-red-900/20 border border-red-800' : 'bg-red-50 border border-red-200'}`}>
+                <p className={`text-sm mb-3 ${settings.darkMode ? 'text-red-300' : 'text-red-700'}`}>
+                  Êtes-vous sûr de vouloir réinitialiser toute votre progression ? Cette action est irréversible.
+                </p>
+                <div className="flex gap-2">
+                  <button
+                    onClick={() => {
+                      updateSettings({ validatedPages: [] })
+                      setShowResetConfirm(false)
+                      setShowValidatedPagesPopup(false)
+                    }}
+                    className="flex-1 py-2 px-3 rounded-lg text-sm font-medium bg-red-500 hover:bg-red-600 text-white transition-colors"
+                  >
+                    Oui, réinitialiser
+                  </button>
+                  <button
+                    onClick={() => setShowResetConfirm(false)}
+                    className={`flex-1 py-2 px-3 rounded-lg text-sm font-medium transition-colors ${
+                      settings.darkMode
+                        ? 'bg-slate-700 hover:bg-slate-600 text-gray-300'
+                        : 'bg-gray-200 hover:bg-gray-300 text-gray-700'
+                    }`}
+                  >
+                    Annuler
+                  </button>
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+      )}
     </div>
   )
 }

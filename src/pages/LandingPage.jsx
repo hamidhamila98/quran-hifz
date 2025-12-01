@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { BookOpen, Languages, BookMarked, Library, GraduationCap, Moon, Sun, User, LogOut, LogIn, UserPlus } from 'lucide-react'
+import { BookOpen, Languages, User, LogOut, LogIn, UserPlus } from 'lucide-react'
 import { useUser } from '../contexts/UserContext'
+import Footer from '../components/Footer'
 
 const modules = [
   {
@@ -11,7 +12,7 @@ const modules = [
     title: 'MyHifz',
     titleAr: 'حفظ القرآن',
     description: 'Memorisation du Coran avec audio synchronise',
-    color: 'emerald',
+    color: 'blue',
   },
   {
     id: 'arabic',
@@ -20,36 +21,7 @@ const modules = [
     title: 'MyArabic',
     titleAr: 'تعلم العربية',
     description: 'Apprentissage de la langue arabe',
-    color: 'amber',
-  },
-  {
-    id: 'hadith',
-    path: '/hadith',
-    icon: BookMarked,
-    title: 'MyHadith',
-    titleAr: 'الأحاديث النبوية',
-    description: '6 recueils majeurs - Recherche & Navigation',
-    color: 'rose',
-  },
-  {
-    id: 'dourous',
-    path: '/dourous',
-    icon: GraduationCap,
-    title: 'MyDourous',
-    titleAr: 'دروسي',
-    description: 'Mes notes & Playlists',
-    color: 'cyan',
-    comingSoon: true,
-  },
-  {
-    id: 'library',
-    path: '/library',
-    icon: Library,
-    title: 'MyLibrary',
-    titleAr: 'المكتبة الإسلامية',
-    description: 'Livres islamiques',
-    color: 'indigo',
-    comingSoon: true,
+    color: 'red',
   },
 ]
 
@@ -91,40 +63,19 @@ export default function LandingPage({ darkMode, toggleDarkMode }) {
   }
 
   const colorClasses = {
-    emerald: {
-      bg: darkMode ? 'bg-emerald-900/30' : 'bg-emerald-50',
-      border: darkMode ? 'border-emerald-700' : 'border-emerald-200',
-      hover: darkMode ? 'hover:bg-emerald-900/50' : 'hover:bg-emerald-100',
-      icon: darkMode ? 'text-emerald-400' : 'text-emerald-600',
-      title: darkMode ? 'text-emerald-300' : 'text-emerald-700',
+    blue: {
+      bg: darkMode ? 'bg-sky-900/30' : 'bg-sky-50',
+      border: darkMode ? 'border-sky-700' : 'border-sky-200',
+      hover: darkMode ? 'hover:bg-sky-900/50' : 'hover:bg-sky-100',
+      icon: darkMode ? 'text-sky-400' : 'text-sky-600',
+      title: darkMode ? 'text-sky-300' : 'text-sky-700',
     },
-    amber: {
-      bg: darkMode ? 'bg-amber-900/30' : 'bg-amber-50',
-      border: darkMode ? 'border-amber-700' : 'border-amber-200',
-      hover: darkMode ? 'hover:bg-amber-900/50' : 'hover:bg-amber-100',
-      icon: darkMode ? 'text-amber-400' : 'text-amber-600',
-      title: darkMode ? 'text-amber-300' : 'text-amber-700',
-    },
-    rose: {
-      bg: darkMode ? 'bg-rose-900/30' : 'bg-rose-50',
-      border: darkMode ? 'border-rose-700' : 'border-rose-200',
-      hover: darkMode ? 'hover:bg-rose-900/50' : 'hover:bg-rose-100',
-      icon: darkMode ? 'text-rose-400' : 'text-rose-600',
-      title: darkMode ? 'text-rose-300' : 'text-rose-700',
-    },
-    indigo: {
-      bg: darkMode ? 'bg-indigo-900/30' : 'bg-indigo-50',
-      border: darkMode ? 'border-indigo-700' : 'border-indigo-200',
-      hover: darkMode ? 'hover:bg-indigo-900/50' : 'hover:bg-indigo-100',
-      icon: darkMode ? 'text-indigo-400' : 'text-indigo-600',
-      title: darkMode ? 'text-indigo-300' : 'text-indigo-700',
-    },
-    cyan: {
-      bg: darkMode ? 'bg-cyan-900/30' : 'bg-cyan-50',
-      border: darkMode ? 'border-cyan-700' : 'border-cyan-200',
-      hover: darkMode ? 'hover:bg-cyan-900/50' : 'hover:bg-cyan-100',
-      icon: darkMode ? 'text-cyan-400' : 'text-cyan-600',
-      title: darkMode ? 'text-cyan-300' : 'text-cyan-700',
+    red: {
+      bg: darkMode ? 'bg-red-900/30' : 'bg-red-50',
+      border: darkMode ? 'border-red-700' : 'border-red-200',
+      hover: darkMode ? 'hover:bg-red-900/50' : 'hover:bg-red-100',
+      icon: darkMode ? 'text-red-400' : 'text-red-600',
+      title: darkMode ? 'text-red-300' : 'text-red-700',
     },
   }
 
@@ -225,18 +176,6 @@ export default function LandingPage({ darkMode, toggleDarkMode }) {
           </div>
         )}
 
-        {/* Dark mode toggle */}
-        <button
-          onClick={toggleDarkMode}
-          className={`p-3 rounded-full transition-colors ${
-            darkMode
-              ? 'bg-slate-700 hover:bg-slate-600 text-yellow-400'
-              : 'bg-white hover:bg-gray-100 text-gray-700 shadow-md'
-          }`}
-          title={darkMode ? 'Mode clair' : 'Mode sombre'}
-        >
-          {darkMode ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
-        </button>
       </div>
 
       {/* Auth Modal */}
@@ -252,7 +191,7 @@ export default function LandingPage({ darkMode, toggleDarkMode }) {
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
                 <label className={`block text-sm font-medium mb-1 ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
-                  Pseudo
+                  {authMode === 'login' ? 'Pseudo' : 'Choisit un nouveau Pseudo'}
                 </label>
                 <input
                   type="text"
@@ -334,19 +273,14 @@ export default function LandingPage({ darkMode, toggleDarkMode }) {
           </p>
           {isLoggedIn && (
             <p className={`text-sm mt-2 ${darkMode ? 'text-emerald-400' : 'text-emerald-600'}`}>
-              Connecte en tant que <span className="font-semibold">{user.pseudo}</span>
+              Connecté en tant que <span className="font-semibold">{user.pseudo}</span>
             </p>
           )}
         </div>
 
-        {/* Module Cards - First Row (2 cards) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-3xl w-full mb-8">
-          {modules.slice(0, 2).map(module => renderModuleCard(module))}
-        </div>
-
-        {/* Module Cards - Second Row (3 cards) */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-4xl w-full">
-          {modules.slice(2).map(module => renderModuleCard(module))}
+        {/* Module Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-3xl w-full">
+          {modules.map(module => renderModuleCard(module))}
         </div>
 
         {/* Hadith Quote */}
@@ -363,22 +297,7 @@ export default function LandingPage({ darkMode, toggleDarkMode }) {
         </div>
       </div>
 
-      {/* Fixed Footer */}
-      <footer className={`
-        fixed bottom-0 left-0 right-0 z-50
-        ${darkMode
-          ? 'bg-slate-800 border-t border-slate-700/50'
-          : 'bg-white border-t border-gray-200 shadow-[0_-2px_10px_rgba(0,0,0,0.04)]'
-        }
-      `}>
-        <div className="flex items-center justify-center py-3">
-          <p style={{ fontFamily: "'Inter', 'Segoe UI', system-ui, sans-serif", letterSpacing: '0.01em' }}>
-            <span className={`text-base font-semibold ${darkMode ? 'text-white' : 'text-gray-800'}`}>MyIslam</span>
-            <span className={`mx-2 ${darkMode ? 'text-slate-500' : 'text-gray-300'}`}>•</span>
-            <span className={`text-base font-medium ${darkMode ? 'text-emerald-400' : 'text-emerald-600'}`}>AbuZayd93</span>
-          </p>
-        </div>
-      </footer>
+      <Footer darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
     </div>
   )
 }

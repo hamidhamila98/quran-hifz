@@ -1,16 +1,18 @@
 import { useState, useEffect } from 'react'
 import { Document, Page, pdfjs } from 'react-pdf'
-import { ZoomIn, ZoomOut, RotateCw, Loader2, FileWarning } from 'lucide-react'
+import { ZoomIn, ZoomOut, RotateCw, Loader2, FileWarning, ChevronLeft, ChevronRight } from 'lucide-react'
 import 'react-pdf/dist/Page/AnnotationLayer.css'
 import 'react-pdf/dist/Page/TextLayer.css'
 
 // Configure PDF.js worker
 pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`
 
-export default function PdfViewer({ pdfFile, darkMode }) {
+export default function PdfViewer({ pdfFile, pageNumber = 1, darkMode }) {
   const [scale, setScale] = useState(1.2)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
+  const [numPages, setNumPages] = useState(null)
+  const [currentPage, setCurrentPage] = useState(pageNumber)
 
   // Reset loading state when PDF file changes
   useEffect(() => {
@@ -18,11 +20,17 @@ export default function PdfViewer({ pdfFile, darkMode }) {
     setError(null)
   }, [pdfFile])
 
+  // Update current page when pageNumber prop changes
+  useEffect(() => {
+    setCurrentPage(pageNumber)
+  }, [pageNumber])
+
   const handleZoomIn = () => setScale(prev => Math.min(prev + 0.2, 2.5))
   const handleZoomOut = () => setScale(prev => Math.max(prev - 0.2, 0.5))
   const handleResetZoom = () => setScale(1.2)
 
-  const onLoadSuccess = () => {
+  const onLoadSuccess = ({ numPages }) => {
+    setNumPages(numPages)
     setLoading(false)
     setError(null)
   }
@@ -56,9 +64,37 @@ export default function PdfViewer({ pdfFile, darkMode }) {
     <div className={`rounded-2xl overflow-hidden ${darkMode ? 'bg-slate-800' : 'bg-white'} shadow-sm`}>
       {/* Controls */}
       <div className={`flex items-center justify-between p-3 border-b ${darkMode ? 'border-slate-700' : 'border-gray-200'}`}>
-        <div className={`text-sm font-medium truncate max-w-[200px] ${darkMode ? 'text-gray-300' : 'text-gray-600'}`} title={getFileName()}>
-          {getFileName()}
+        {/* Page Navigation */}
+        <div className="flex items-center gap-2">
+          <button
+            onClick={() => setCurrentPage(p => Math.max(1, p - 1))}
+            disabled={currentPage <= 1}
+            className={`p-2 rounded-lg transition-colors ${
+              currentPage <= 1
+                ? darkMode ? 'text-gray-600 cursor-not-allowed' : 'text-gray-300 cursor-not-allowed'
+                : darkMode ? 'hover:bg-slate-700 text-gray-300' : 'hover:bg-gray-100 text-gray-600'
+            }`}
+            title="Page précédente"
+          >
+            <ChevronLeft className="w-4 h-4" />
+          </button>
+          <span className={`text-sm min-w-[80px] text-center ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
+            {currentPage} / {numPages || '?'}
+          </span>
+          <button
+            onClick={() => setCurrentPage(p => Math.min(numPages || p, p + 1))}
+            disabled={currentPage >= numPages}
+            className={`p-2 rounded-lg transition-colors ${
+              currentPage >= numPages
+                ? darkMode ? 'text-gray-600 cursor-not-allowed' : 'text-gray-300 cursor-not-allowed'
+                : darkMode ? 'hover:bg-slate-700 text-gray-300' : 'hover:bg-gray-100 text-gray-600'
+            }`}
+            title="Page suivante"
+          >
+            <ChevronRight className="w-4 h-4" />
+          </button>
         </div>
+        {/* Zoom Controls */}
         <div className="flex items-center gap-2">
           <button
             onClick={handleZoomOut}
@@ -119,7 +155,7 @@ export default function PdfViewer({ pdfFile, darkMode }) {
           loading={null}
         >
           <Page
-            pageNumber={1}
+            pageNumber={currentPage}
             scale={scale}
             renderTextLayer={false}
             renderAnnotationLayer={false}

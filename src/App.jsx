@@ -2,54 +2,22 @@ import { useState, useEffect, useCallback, useRef } from 'react'
 import { Routes, Route, useLocation } from 'react-router-dom'
 import { useUser } from './contexts/UserContext'
 import LandingPage from './pages/LandingPage'
+import Footer from './components/Footer'
 // Quran module
 import QuranSidebar from './modules/quran/components/QuranSidebar'
 import HomePage from './modules/quran/pages/HomePage'
 import TrainingPage from './modules/quran/pages/TrainingPage'
 // Arabic module
 import ArabicSidebar from './modules/arabic/components/ArabicSidebar'
+import ArabicBooksPage from './modules/arabic/pages/ArabicBooksPage'
 import ArabicPage from './modules/arabic/pages/ArabicPage'
 import ArabicTrainingPage from './modules/arabic/pages/ArabicTrainingPage'
-// Hadith module
-import HadithSidebar from './modules/hadith/components/HadithSidebar'
-import HadithPage from './modules/hadith/pages/HadithPage'
-// Library module
-import LibrarySidebar from './modules/library/components/LibrarySidebar'
-import LibraryPage from './modules/library/pages/LibraryPage'
-// Dourous module
-import DourousSidebar from './modules/dourous/components/DourousSidebar'
-import DourousPage from './modules/dourous/pages/DourousPage'
-
-// Footer component for all pages
-function Footer({ darkMode }) {
-  return (
-    <footer className={`
-      fixed bottom-0 left-0 right-0 z-50
-      ${darkMode
-        ? 'bg-slate-800 border-t border-slate-700/50'
-        : 'bg-white border-t border-gray-200 shadow-[0_-2px_10px_rgba(0,0,0,0.04)]'
-      }
-    `}>
-      <div className="flex items-center justify-center py-3">
-        <p style={{ fontFamily: "'Inter', 'Segoe UI', system-ui, sans-serif", letterSpacing: '0.01em' }}>
-          <span className={`text-base font-semibold ${darkMode ? 'text-white' : 'text-gray-800'}`}>MyIslam</span>
-          <span className={`mx-2 ${darkMode ? 'text-slate-500' : 'text-gray-300'}`}>•</span>
-          <span className={`text-base font-medium ${darkMode ? 'text-emerald-400' : 'text-emerald-600'}`}>AbuZayd93</span>
-        </p>
-      </div>
-    </footer>
-  )
-}
 
 // Page titles and favicon colors per module
 const pageConfig = {
   '/': { title: 'MyIslam', color: '#10b981', letter: 'M' },
   '/quran': { title: 'MyHifz - MyIslam', color: '#10b981', letter: 'H' },
   '/arabic': { title: 'MyArabic - MyIslam', color: '#f59e0b', letter: 'A' },
-  '/hadith': { title: 'MyHadith - MyIslam', color: '#f43f5e', letter: 'H' },
-  '/library': { title: 'MyLibrary - MyIslam', color: '#6366f1', letter: 'L' },
-  '/dourous': { title: 'MyDourous - MyIslam', color: '#06b6d4', letter: 'D' },
-  '/conseils': { title: 'Conseils - MyIslam', color: '#a855f7', letter: 'C' },
 }
 
 // Generate SVG favicon
@@ -78,6 +46,7 @@ const defaultSettings = {
   darkMode: false,
   tajweedEnabled: false,
   arabicFont: 'hafs-uthmanic-v14',
+  lineHeight: 'normal',
   flowMode: false,
   arabicNumerals: true,
   wordHighlight: true,
@@ -85,13 +54,8 @@ const defaultSettings = {
   arabicUnit: 1,
   arabicDialogue: 0,
   arabicValidated: {},
-  arabicLearningFont: 'amiri',
+  arabicLearningFont: 'noto-naskh',
   arabicLearningFontSize: 'medium',
-  hadithSource: 'local',
-  hadithBook: 'bukhari',
-  hadithFont: 'amiri',
-  hadithFontSize: 'medium',
-  hadithShowIsnad: true,
 }
 
 function App() {
@@ -101,9 +65,6 @@ function App() {
   const isLandingPage = location.pathname === '/'
   const isQuranPage = location.pathname.startsWith('/quran')
   const isArabicPage = location.pathname.startsWith('/arabic')
-  const isHadithPage = location.pathname.startsWith('/hadith')
-  const isLibraryPage = location.pathname.startsWith('/library')
-  const isDourousPage = location.pathname.startsWith('/dourous')
 
   // Track if this is the initial load to avoid saving on first render
   const isInitialMount = useRef(true)
@@ -203,17 +164,14 @@ function App() {
     }
 
     if (isArabicPage) return <ArabicSidebar {...sidebarProps} />
-    if (isHadithPage) return <HadithSidebar {...sidebarProps} />
-    if (isLibraryPage) return <LibrarySidebar {...sidebarProps} />
-    if (isDourousPage) return <DourousSidebar {...sidebarProps} />
     return <QuranSidebar {...sidebarProps} />
   }
 
   return (
-    <div className={`flex min-h-screen ${settings.darkMode ? 'dark bg-slate-900' : 'bg-gray-50'}`}>
+    <div className={`flex h-screen overflow-hidden ${settings.darkMode ? 'dark bg-slate-900' : 'bg-gray-50'}`}>
       {renderSidebar()}
 
-      <main className={`flex-1 transition-all duration-300 pb-12 ${sidebarOpen ? 'ml-64' : 'ml-16'}`}>
+      <main className={`flex-1 transition-all duration-300 h-[calc(100vh-41px)] overflow-y-auto ${sidebarOpen ? 'ml-64' : 'ml-16'}`}>
         <Routes>
           {/* Quran module */}
           <Route
@@ -227,31 +185,20 @@ function App() {
           {/* Arabic module */}
           <Route
             path="/arabic"
-            element={<ArabicPage settings={settings} updateSettings={updateSettings} />}
+            element={<ArabicBooksPage settings={settings} updateSettings={updateSettings} />}
           />
           <Route
             path="/arabic/training"
             element={<ArabicTrainingPage settings={settings} updateSettings={updateSettings} />}
           />
-          {/* Hadith module */}
           <Route
-            path="/hadith"
-            element={<HadithPage settings={settings} updateSettings={updateSettings} />}
-          />
-          {/* Library module */}
-          <Route
-            path="/library"
-            element={<LibraryPage settings={settings} updateSettings={updateSettings} />}
-          />
-          {/* Dourous module */}
-          <Route
-            path="/dourous"
-            element={<DourousPage settings={settings} updateSettings={updateSettings} />}
+            path="/arabic/:bookId"
+            element={<ArabicPage settings={settings} updateSettings={updateSettings} />}
           />
         </Routes>
       </main>
 
-      <Footer darkMode={settings.darkMode} />
+      <Footer darkMode={settings.darkMode} toggleDarkMode={toggleDarkMode} />
     </div>
   )
 }

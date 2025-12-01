@@ -1,13 +1,13 @@
 import { useState, useEffect } from 'react'
+import { useNavigate, useLocation } from 'react-router-dom'
 import {
   Home,
   BookOpen,
   BookText,
   ChevronDown,
   Type,
-  Moon,
-  Sun,
-  Brain
+  Brain,
+  Lock
 } from 'lucide-react'
 import {
   SidebarWrapper,
@@ -22,88 +22,65 @@ import {
 
 const navItems = [
   { path: '/', icon: Home, label: 'MyIslam' },
-  { path: '/arabic', icon: BookText, label: 'Livres' },
+  { path: '/arabic', icon: BookText, label: 'Ma Progression' },
   { path: '/arabic/training', icon: Brain, label: 'Entraînement' },
 ]
 
 const ARABIC_FONTS = [
+  { id: 'noto-naskh', name: 'Noto Naskh Arabic' },
   { id: 'amiri', name: 'Amiri' },
   { id: 'scheherazade', name: 'Scheherazade New' },
-  { id: 'noto-naskh', name: 'Noto Naskh Arabic' },
-  { id: 'lateef', name: 'Lateef' },
 ]
 
 const BOOKS = [
-  { id: 'aby1', name: 'Al-Arabiya Bayna Yadayk - Tome 1', shortName: 'ABY Tome 1' },
-  { id: 'aby2', name: 'Al-Arabiya Bayna Yadayk - Tome 2', shortName: 'ABY Tome 2' },
-  { id: 'aby3', name: 'Al-Arabiya Bayna Yadayk - Tome 3', shortName: 'ABY Tome 3' },
-  { id: 'aby4', name: 'Al-Arabiya Bayna Yadayk - Tome 4', shortName: 'ABY Tome 4' },
+  { id: 'aby-t1', key: 'aby1', name: 'A. Bayna Yadayk T1', available: true, dataFile: '/arabic/ABY-T1.json' },
+  { id: 'aby-t2', key: 'aby2', name: 'A. Bayna Yadayk T2', available: false, dataFile: null },
+  { id: 'aby-t3', key: 'aby3', name: 'A. Bayna Yadayk T3', available: false, dataFile: null },
+  { id: 'aby-t4', key: 'aby4', name: 'A. Bayna Yadayk T4', available: false, dataFile: null },
+  { id: 'qiraatu', key: 'qiraatu', name: 'Qiraatu al Rachida', available: false, dataFile: null },
+  { id: 'qassas', key: 'qassas', name: 'Qassas al Nabiyeen', available: false, dataFile: null },
 ]
 
 export default function ArabicSidebar({ isOpen, setIsOpen, settings, updateSettings }) {
-  const [openTomeDropdown, setOpenTomeDropdown] = useState(null)
+  const navigate = useNavigate()
+  const location = useLocation()
+  const [openBookDropdown, setOpenBookDropdown] = useState(null)
   const [configOpen, setConfigOpen] = useState(false)
   const [fontDropdownOpen, setFontDropdownOpen] = useState(false)
-  const [arabicDataTome1, setArabicDataTome1] = useState(null)
-  const [arabicDataTome2, setArabicDataTome2] = useState(null)
-  const [arabicDataTome3, setArabicDataTome3] = useState(null)
+  const [booksData, setBooksData] = useState({})
 
   const darkMode = settings.darkMode
-  const currentBook = settings.arabicBook || 'aby1'
-  const currentUnit = settings.arabicUnit || 1
   const currentFont = ARABIC_FONTS.find(f => f.id === settings.arabicLearningFont) || ARABIC_FONTS[0]
 
-  // Load Arabic data for all tomes
+  // Get current book from URL
+  const currentBookId = location.pathname.split('/arabic/')[1] || null
+
+  // Load Arabic data for available books
   useEffect(() => {
-    fetch('/arabic/ABY-T1.json')
-      .then(res => res.json())
-      .then(data => setArabicDataTome1(data))
-      .catch(err => console.error('Error loading arabic data tome 1:', err))
-
-    fetch('/arabic/ABY-T2.json')
-      .then(res => res.json())
-      .then(data => setArabicDataTome2(data))
-      .catch(err => console.error('Error loading arabic data tome 2:', err))
-
-    fetch('/arabic/ABY-T3.json')
-      .then(res => res.json())
-      .then(data => setArabicDataTome3(data))
-      .catch(err => console.error('Error loading arabic data tome 3:', err))
+    BOOKS.filter(b => b.available && b.dataFile).forEach(book => {
+      fetch(book.dataFile)
+        .then(res => res.json())
+        .then(data => setBooksData(prev => ({ ...prev, [book.id]: data })))
+        .catch(err => console.error(`Error loading ${book.id}:`, err))
+    })
   }, [])
 
-  const toggleTomeDropdown = (tomeId) => {
-    setOpenTomeDropdown(openTomeDropdown === tomeId ? null : tomeId)
+  const toggleBookDropdown = (bookId) => {
+    setOpenBookDropdown(openBookDropdown === bookId ? null : bookId)
   }
 
   const getUnitsForBook = (bookId) => {
-    if (bookId === 'aby1') return arabicDataTome1?.units || []
-    if (bookId === 'aby2') return arabicDataTome2?.units || []
-    if (bookId === 'aby3') return arabicDataTome3?.units || []
-    return []
-  }
-
-  const getLessonsCount = (bookId, unit) => {
-    if (bookId === 'aby1') return unit.dialogues?.length || 0
-    return unit.lessons?.length || 0
-  }
-
-  const getBookProgress = (bookId) => {
-    const units = getUnitsForBook(bookId)
-    if (units.length === 0) return { validated: 0, total: 0 }
-
-    const validated = settings.arabicValidated || {}
-    const bookValidations = Object.keys(validated).filter(key => {
-      const unitId = parseInt(key.split('-')[0])
-      return units.some(u => u.id === unitId)
-    }).length
-
-    const totalLessons = units.reduce((acc, u) => acc + getLessonsCount(bookId, u), 0)
-    return { validated: bookValidations, total: totalLessons }
+    return booksData[bookId]?.units || []
   }
 
   const closeAllDropdowns = () => {
     setFontDropdownOpen(false)
-    setOpenTomeDropdown(null)
+    setOpenBookDropdown(null)
+  }
+
+  const handleBookClick = (book) => {
+    if (!book.available) return
+    navigate(`/arabic/${book.id}?unit=1&dialogue=1`)
   }
 
   return (
@@ -113,102 +90,94 @@ export default function ArabicSidebar({ isOpen, setIsOpen, settings, updateSetti
         setIsOpen={setIsOpen}
         darkMode={darkMode}
         title="MyArabic"
-        icon="ع"
-        gradientFrom="from-amber-500"
-        gradientTo="to-amber-700"
+        icon=""
+        gradientFrom="from-red-500"
+        gradientTo="to-red-700"
       />
 
-      <SidebarNav items={navItems} isOpen={isOpen} darkMode={darkMode} accentColor="amber" />
+      <SidebarNav items={navItems} isOpen={isOpen} darkMode={darkMode} accentColor="red" />
 
       {/* Books Section */}
       {isOpen && (
-        <div className={`flex-1 px-3 py-4 space-y-2 border-t mt-2 overflow-y-auto ${darkMode ? 'border-slate-700' : 'border-gray-100'}`}>
+        <div className={`flex-1 px-3 py-4 space-y-2 border-t mt-2 overflow-y-auto overflow-x-hidden ${darkMode ? 'border-slate-700' : 'border-gray-100'}`}>
           <div className={`text-xs font-semibold uppercase tracking-wider px-3 mb-2 ${darkMode ? 'text-gray-500' : 'text-gray-400'}`}>
             Livres
           </div>
 
           {BOOKS.map((book) => {
             const bookUnits = getUnitsForBook(book.id)
-            const progress = getBookProgress(book.id)
-            const isCurrentBook = currentBook === book.id
+            const isCurrentBook = currentBookId === book.id
             const hasUnits = bookUnits.length > 0
 
             return (
               <div key={book.id} className="relative">
-                <button
-                  onClick={() => hasUnits && toggleTomeDropdown(book.id)}
-                  className={`w-full flex items-center justify-between px-3 py-2.5 rounded-xl transition-colors ${
-                    isCurrentBook
-                      ? darkMode ? 'bg-amber-900/30 text-amber-400' : 'bg-amber-50 text-amber-600'
-                      : darkMode ? 'bg-slate-700/50 hover:bg-slate-700' : 'bg-gray-50 hover:bg-gray-100'
-                  } ${!hasUnits && 'opacity-50 cursor-not-allowed'}`}
-                  disabled={!hasUnits}
-                >
-                  <div className="flex items-center gap-2 flex-1 min-w-0">
-                    <BookOpen className={`w-4 h-4 flex-shrink-0 ${isCurrentBook ? 'text-amber-500' : 'text-gray-500'}`} />
+                <div className="flex items-center gap-1 overflow-hidden">
+                  {/* Book button - navigates to book */}
+                  <button
+                    onClick={() => handleBookClick(book)}
+                    className={`flex-1 min-w-0 flex items-center gap-2 px-3 py-2.5 rounded-xl transition-colors overflow-hidden ${
+                      isCurrentBook
+                        ? darkMode ? 'bg-red-900/30 text-red-400' : 'bg-red-50 text-red-600'
+                        : darkMode ? 'bg-slate-700/50 hover:bg-slate-700' : 'bg-gray-50 hover:bg-gray-100'
+                    } ${!book.available && 'opacity-50 cursor-not-allowed'}`}
+                    disabled={!book.available}
+                  >
+                    <BookOpen className={`w-4 h-4 flex-shrink-0 ${isCurrentBook ? 'text-red-500' : 'text-gray-500'}`} />
                     <span className={`text-sm font-medium truncate ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
-                      {book.shortName}
+                      {book.name}
                     </span>
-                    {hasUnits && progress.total > 0 && (
-                      <span className={`text-xs px-1.5 py-0.5 rounded ${
-                        darkMode ? 'bg-slate-600 text-gray-400' : 'bg-gray-200 text-gray-500'
-                      }`}>
-                        {progress.validated}/{progress.total}
-                      </span>
+                    {!book.available && (
+                      <Lock className="w-3 h-3 text-gray-500 ml-auto flex-shrink-0" />
                     )}
-                  </div>
-                  {hasUnits && (
-                    <ChevronDown className={`w-4 h-4 text-gray-500 transition-transform flex-shrink-0 ${
-                      openTomeDropdown === book.id ? 'rotate-180' : ''
-                    }`} />
-                  )}
-                </button>
+                  </button>
 
-                {/* Units dropdown */}
-                {openTomeDropdown === book.id && hasUnits && (
-                  <div className={`mt-1 ml-2 rounded-lg border max-h-64 overflow-y-auto ${
-                    darkMode ? 'bg-slate-700 border-slate-600' : 'bg-white border-gray-200'
+                  {/* Dropdown toggle for units (only for available books with units) */}
+                  {book.available && hasUnits && (
+                    <button
+                      onClick={() => toggleBookDropdown(book.id)}
+                      className={`p-2.5 rounded-xl transition-colors ${
+                        darkMode ? 'bg-slate-700/50 hover:bg-slate-700' : 'bg-gray-50 hover:bg-gray-100'
+                      }`}
+                    >
+                      <ChevronDown className={`w-4 h-4 text-gray-500 transition-transform ${
+                        openBookDropdown === book.id ? 'rotate-180' : ''
+                      }`} />
+                    </button>
+                  )}
+                </div>
+
+                {/* Units dropdown - clickable to navigate */}
+                {openBookDropdown === book.id && hasUnits && (
+                  <div className={`mt-2 rounded-xl max-h-64 overflow-y-auto overflow-x-hidden p-1.5 ${
+                    darkMode ? 'bg-slate-800/90 shadow-lg shadow-black/20' : 'bg-gray-50 shadow-md'
                   }`}>
-                    {bookUnits.map((unit) => {
-                      const lessons = book.id === 'aby1' ? unit.dialogues : unit.lessons
-                      const isUnitSelected = unit.id === currentUnit && currentBook === book.id
-                      return (
-                        <div key={unit.id} className="border-b last:border-b-0 border-slate-600/30">
-                          {/* Unit header with Arabic title */}
-                          <div className={`px-3 py-2 ${darkMode ? 'bg-slate-600/50' : 'bg-gray-100'}`}>
-                            <div className={`text-sm font-bold ${darkMode ? 'text-amber-400' : 'text-amber-600'}`} dir="rtl">
-                              {unit.titleAr}
-                            </div>
-                          </div>
-                          {/* Dialogues list */}
-                          <div className="py-1">
-                            {lessons?.map((lesson, idx) => {
-                              const isSelected = isUnitSelected && settings.arabicDialogue === idx
-                              // For Unit 1, show A/B suffix if dialogue id ends with 'b'
-                              const dialogueLabel = lesson.id?.toString().includes('b')
-                                ? `Unité ${unit.id} - Dialogue ${lesson.id}`
-                                : `Unité ${unit.id} - Dialogue ${lesson.id}`
-                              return (
-                                <button
-                                  key={idx}
-                                  onClick={() => {
-                                    updateSettings({ arabicBook: book.id, arabicUnit: unit.id, arabicDialogue: idx })
-                                    setOpenTomeDropdown(null)
-                                  }}
-                                  className={`w-full text-left px-3 py-1.5 text-xs transition-colors ${
-                                    isSelected
-                                      ? darkMode ? 'bg-amber-900/50 text-amber-300' : 'bg-amber-100 text-amber-700'
-                                      : darkMode ? 'hover:bg-slate-600 text-gray-300' : 'hover:bg-gray-50 text-gray-600'
-                                  }`}
-                                >
-                                  {dialogueLabel}
-                                </button>
-                              )
-                            })}
-                          </div>
-                        </div>
-                      )
-                    })}
+                    {bookUnits.map((unit) => (
+                      <button
+                        type="button"
+                        key={unit.id}
+                        onClick={(e) => {
+                          e.stopPropagation()
+                          e.preventDefault()
+                          const url = `/arabic/${book.id}?unit=${unit.id}&dialogue=1`
+                          setOpenBookDropdown(null)
+                          navigate(url)
+                        }}
+                        className={`w-full flex items-center gap-2.5 px-2.5 py-2 rounded-lg mb-1 last:mb-0 transition-colors cursor-pointer ${
+                          darkMode
+                            ? 'hover:bg-slate-700/70 text-gray-300'
+                            : 'hover:bg-white hover:shadow-sm text-gray-600'
+                        }`}
+                      >
+                        <span className={`flex-shrink-0 w-7 h-7 rounded-lg flex items-center justify-center text-xs font-bold ${
+                          darkMode
+                            ? 'bg-red-900/50 text-red-400'
+                            : 'bg-red-100 text-red-600'
+                        }`}>
+                          {unit.id}
+                        </span>
+                        <span className="text-sm truncate text-left">{unit.titleFr} <span className={darkMode ? 'text-gray-500' : 'text-gray-400'}>({unit.titleAr})</span></span>
+                      </button>
+                    ))}
                   </div>
                 )}
               </div>
@@ -221,11 +190,11 @@ export default function ArabicSidebar({ isOpen, setIsOpen, settings, updateSetti
               isOpen={configOpen}
               setIsOpen={setConfigOpen}
               darkMode={darkMode}
-              accentColor="amber"
+              accentColor="red"
             >
               {/* Font Dropdown */}
               <SidebarDropdown
-                label="Police"
+                label=""
                 value={currentFont.name}
                 icon={Type}
                 isOpen={fontDropdownOpen}
@@ -234,7 +203,7 @@ export default function ArabicSidebar({ isOpen, setIsOpen, settings, updateSetti
                 onSelect={(id) => updateSettings({ arabicLearningFont: id })}
                 currentValue={settings.arabicLearningFont || 'amiri'}
                 darkMode={darkMode}
-                accentColor="amber"
+                accentColor="red"
               />
 
               {/* Font Size */}
@@ -243,7 +212,7 @@ export default function ArabicSidebar({ isOpen, setIsOpen, settings, updateSetti
                 value={settings.arabicLearningFontSize || 'medium'}
                 onChange={(size) => updateSettings({ arabicLearningFontSize: size })}
                 darkMode={darkMode}
-                accentColor="amber"
+                accentColor="red"
               />
 
               {/* Tashkeel Toggle */}
@@ -253,57 +222,23 @@ export default function ArabicSidebar({ isOpen, setIsOpen, settings, updateSetti
                 value={settings.hideTashkeel || false}
                 onChange={() => updateSettings({ hideTashkeel: !settings.hideTashkeel })}
                 darkMode={darkMode}
-                accentColor="amber"
+                accentColor="red"
               />
 
-              {/* PDF Mode Toggle */}
-              <SidebarToggle
-                label="Mode PDF"
-                icon={BookOpen}
-                value={settings.pdfMode || false}
-                onChange={() => updateSettings({ pdfMode: !settings.pdfMode })}
-                darkMode={darkMode}
-                accentColor="amber"
-              />
-
-              {/* Dark Mode Toggle */}
-              <SidebarToggle
-                label="Mode sombre"
-                icon={darkMode ? Moon : Sun}
-                value={darkMode}
-                onChange={() => updateSettings({ darkMode: !darkMode })}
-                darkMode={darkMode}
-                accentColor="amber"
-              />
             </SidebarConfig>
           </div>
         </div>
       )}
 
-      {/* Collapsed Icons */}
-      {!isOpen && (
-        <div className={`flex-1 px-2 py-4 space-y-2 border-t mt-2 ${darkMode ? 'border-slate-700' : 'border-gray-100'}`}>
-          <button
-            onClick={() => updateSettings({ darkMode: !darkMode })}
-            className={`w-full p-3 rounded-xl transition-colors ${
-              darkMode
-                ? 'bg-amber-900/30 text-amber-400'
-                : 'text-gray-500 hover:bg-gray-100'
-            }`}
-            title="Mode sombre"
-          >
-            {darkMode ? <Moon className="w-5 h-5 mx-auto" /> : <Sun className="w-5 h-5 mx-auto" />}
-          </button>
-        </div>
+      {isOpen && (
+        <SidebarFooter
+          isOpen={isOpen}
+          darkMode={darkMode}
+          arabicText="إِنَّا أَنزَلْنَاهُ قُرْآنًا عَرَبِيًّا"
+          frenchText="Yusuf : 2"
+          accentColor="red"
+        />
       )}
-
-      <SidebarFooter
-        isOpen={isOpen}
-        darkMode={darkMode}
-        arabicText="اللُّغَةُ العَرَبِيَّةُ"
-        frenchText="La langue arabe"
-        accentColor="amber"
-      />
     </SidebarWrapper>
   )
 }

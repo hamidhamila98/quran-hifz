@@ -76,13 +76,26 @@ export const ARABIC_FONTS = [
   { id: 'hafs-nastaleeq', name: 'Hafs Nastaleeq', family: "'Hafs Nastaleeq', 'Noto Nastaliq Urdu', serif", category: 'Nastaliq' },
 ];
 
+// Helper function to fetch with retry
+async function fetchWithRetry(url, retries = 2, delay = 300) {
+  for (let i = 0; i <= retries; i++) {
+    try {
+      const response = await fetch(url);
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      return response;
+    } catch (error) {
+      if (i === retries) throw error;
+      await new Promise(resolve => setTimeout(resolve, delay));
+    }
+  }
+}
+
 // Fetch a specific page of the Mushaf (1-604)
 // Uses cpfair/quran-tajweed for accurate tajweed when enabled
 export async function getPage(pageNumber, useTajweed = false, options = {}) {
   try {
-    // Use AlQuran.cloud for text
-    const response = await fetch(`${TEXT_API_BASE}/page/${pageNumber}/quran-uthmani`);
-    if (!response.ok) throw new Error('Failed to fetch page');
+    // Use AlQuran.cloud for text with retry mechanism
+    const response = await fetchWithRetry(`${TEXT_API_BASE}/page/${pageNumber}/quran-uthmani`);
     const data = await response.json();
 
     // Apply cpfair tajweed if enabled - uses cpfair's own text for accurate positions

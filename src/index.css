@@ -145,7 +145,8 @@
 body {
   font-family: 'Inter', system-ui, sans-serif;
   background-color: #f8fafc;
-  min-height: 100vh;
+  height: 100vh;
+  overflow: hidden;
 }
 
 /* Custom Arabic text styling */
@@ -362,43 +363,43 @@ html {
   background-color: #78350f; /* solid dark amber */
 }
 
-/* Verse selected for audio playback - solid colors to avoid opacity stacking */
+/* Verse selected for audio playback - reduced height to avoid line overlap */
 .verse-selected {
-  background-color: #dbeafe; /* solid light blue */
+  background: linear-gradient(to bottom, transparent 15%, #dbeafe 15%, #dbeafe 85%, transparent 85%);
   border-radius: 2px;
 }
 
 /* Dark mode verse selected */
 .dark .verse-selected {
-  background-color: #1e3a5f; /* solid dark blue */
+  background: linear-gradient(to bottom, transparent 15%, #1e3a5f 15%, #1e3a5f 85%, transparent 85%);
 }
 
-/* Word highlight during audio playback - solid colors */
+/* Word highlight during audio playback - reduced height to avoid line overlap */
 .word-highlight {
-  background-color: #fde68a; /* solid yellow */
+  background: linear-gradient(to bottom, transparent 15%, #fde68a 15%, #fde68a 85%, transparent 85%);
   border-radius: 2px;
 }
 
 /* Word highlight for inner tajweed spans */
 .word-highlight-inner {
-  background-color: #fde68a; /* solid yellow */
+  background: linear-gradient(to bottom, transparent 15%, #fde68a 15%, #fde68a 85%, transparent 85%);
   border-radius: 2px;
 }
 
 /* Dark mode word highlight */
 .dark .word-highlight,
 .dark .word-highlight-inner {
-  background-color: #b45309; /* solid dark orange */
+  background: linear-gradient(to bottom, transparent 15%, #b45309 15%, #b45309 85%, transparent 85%);
 }
 
-/* Verse playing highlight - for non-Afasy reciters - solid colors */
+/* Verse playing highlight - for non-Afasy reciters - reduced height to avoid line overlap */
 .verse-playing {
-  background-color: #fef9c3; /* solid very light yellow */
+  background: linear-gradient(to bottom, transparent 15%, #fef9c3 15%, #fef9c3 85%, transparent 85%);
   border-radius: 4px;
 }
 
 .dark .verse-playing {
-  background-color: #713f12; /* solid dark brown/amber */
+  background: linear-gradient(to bottom, transparent 15%, #422006 15%, #422006 85%, transparent 85%);
 }
 
 /* Font size classes for Quran text */
@@ -430,6 +431,22 @@ html {
   .font-size-large.arabic-text {
     font-size: 2.5rem !important;
   }
+}
+
+/* Line height classes for Quran text */
+.line-height-compact .mushaf-line,
+.line-height-compact.arabic-text {
+  line-height: 1 !important;
+}
+
+.line-height-normal .mushaf-line,
+.line-height-normal.arabic-text {
+  line-height: 1.5 !important;
+}
+
+.line-height-relaxed .mushaf-line,
+.line-height-relaxed.arabic-text {
+  line-height: 2 !important;
 }
 
 /* Hide text for memorization practice */

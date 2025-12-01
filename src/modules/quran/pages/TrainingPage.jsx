@@ -304,30 +304,91 @@ export default function TrainingPage({ settings }) {
     return text
   }
 
+  // Parse tajweed HTML into words while preserving HTML tags
+  const parseTajweedWords = (html) => {
+    if (!html) return []
+
+    // Remove end markers first
+    const cleanHtml = html.replace(/<span class=end>.*?<\/span>/g, '')
+
+    // Split by spaces but keep track of HTML tags
+    const words = []
+    let currentWord = ''
+    let inTag = false
+    let tagDepth = 0
+
+    for (let i = 0; i < cleanHtml.length; i++) {
+      const char = cleanHtml[i]
+
+      if (char === '<') {
+        inTag = true
+        if (cleanHtml[i + 1] !== '/') tagDepth++
+        else tagDepth--
+        currentWord += char
+      } else if (char === '>') {
+        inTag = false
+        currentWord += char
+      } else if (char === ' ' && !inTag && tagDepth === 0) {
+        if (currentWord.trim()) {
+          words.push(currentWord)
+        }
+        currentWord = ''
+      } else {
+        currentWord += char
+      }
+    }
+
+    if (currentWord.trim()) {
+      words.push(currentWord)
+    }
+
+    return words
+  }
+
   // Render text with word-by-word highlighting
   const renderTextWithWordHighlight = (ayah, index) => {
     const surahNumber = ayah.surah?.number || 1
     const ayahNumber = ayah.numberInSurah || 1
-    const plainText = getPlainText(ayah.text)
-    const words = plainText.split(' ')
 
     // Check if this verse should have word highlighting
     const isPlaying = playingAyahIndex === index
     const shouldHighlight = settings.wordHighlight && isPlaying && highlightedWord &&
       highlightedWord.surah === surahNumber && highlightedWord.ayah === ayahNumber
 
-    return words.map((word, wordIndex) => {
-      const isHighlighted = shouldHighlight && wordIndex === highlightedWord?.wordIndex
-      return (
-        <span
-          key={wordIndex}
-          className={isHighlighted ? 'word-highlight' : ''}
-        >
-          {word}
-          {wordIndex < words.length - 1 ? ' ' : ''}
-        </span>
-      )
-    })
+    // Use tajweed HTML if enabled, otherwise plain text
+    if (settings.tajweedEnabled) {
+      const tajweedWords = parseTajweedWords(ayah.text)
+      return tajweedWords.map((wordHtml, wordIndex) => {
+        const isHighlighted = shouldHighlight && wordIndex === highlightedWord?.wordIndex
+        return (
+          <span
+            key={wordIndex}
+            className={isHighlighted ? 'word-highlight' : ''}
+          >
+            <span
+              className={isHighlighted ? 'word-highlight-inner' : ''}
+              dangerouslySetInnerHTML={{ __html: wordHtml }}
+            />
+            {wordIndex < tajweedWords.length - 1 ? ' ' : ''}
+          </span>
+        )
+      })
+    } else {
+      const plainText = getPlainText(ayah.text)
+      const words = plainText.split(' ')
+      return words.map((word, wordIndex) => {
+        const isHighlighted = shouldHighlight && wordIndex === highlightedWord?.wordIndex
+        return (
+          <span
+            key={wordIndex}
+            className={isHighlighted ? 'word-highlight' : ''}
+          >
+            {word}
+            {wordIndex < words.length - 1 ? ' ' : ''}
+          </span>
+        )
+      })
+    }
   }
 
   // Get font family from settings
@@ -453,7 +514,7 @@ export default function TrainingPage({ settings }) {
     const percentage = Math.round((score.correct / score.total) * 100)
 
     return (
-      <div className={`min-h-screen p-6 ${settings.darkMode ? 'bg-slate-900' : 'bg-gray-50'}`}>
+      <div className={`p-6 pb-16 ${settings.darkMode ? 'bg-slate-900' : 'bg-gray-50'}`}>
         <div className={`max-w-md mx-auto mt-12 p-8 rounded-2xl ${settings.darkMode ? 'bg-slate-800' : 'bg-white'} shadow-lg text-center`}>
           <div className="text-6xl mb-4">{emoji}</div>
           <h2 className={`text-2xl font-bold mb-2 ${settings.darkMode ? 'text-white' : 'text-gray-800'}`}>
@@ -509,7 +570,7 @@ export default function TrainingPage({ settings }) {
   }
 
   return (
-    <div className={`min-h-screen p-6 ${settings.darkMode ? 'bg-slate-900' : 'bg-gray-50'}`}>
+    <div className={`p-6 pb-16 ${settings.darkMode ? 'bg-slate-900' : 'bg-gray-50'}`}>
       <header className="mb-8">
         <h1 className={`text-3xl font-bold ${settings.darkMode ? 'text-white' : 'text-gray-800'}`}>
           Entraînement
@@ -926,7 +987,7 @@ export default function TrainingPage({ settings }) {
 
                       {isFirst || currentAyahs.length === 1 ? (
                         // Premier verset ou verset unique: révélation directe
-                        <div className={`arabic-text text-2xl md:text-3xl leading-loose flex-1 font-size-${settings.fontSize || 'medium'}`} dir="rtl" style={{ fontFamily: getFontFamily() }}>
+                        <div className={`arabic-text text-2xl md:text-3xl flex-1 font-size-${settings.fontSize || 'medium'} line-height-${settings.lineHeight || 'normal'}`} dir="rtl" style={{ fontFamily: getFontFamily() }}>
                           {isRevealed ? (
                             // Révélé: afficher tout le verset avec surlignage des mots si actif
                             <span className={settings.darkMode ? 'text-white' : 'text-gray-800'}>
@@ -957,7 +1018,7 @@ export default function TrainingPage({ settings }) {
                         </div>
                       ) : (
                         // Autres versets: révélation en 2 étapes
-                        <div className={`arabic-text text-2xl md:text-3xl leading-loose flex-1 font-size-${settings.fontSize || 'medium'}`} dir="rtl" style={{ fontFamily: getFontFamily() }}>
+                        <div className={`arabic-text text-2xl md:text-3xl flex-1 font-size-${settings.fontSize || 'medium'} line-height-${settings.lineHeight || 'normal'}`} dir="rtl" style={{ fontFamily: getFontFamily() }}>
                           {isRevealed ? (
                             // Complètement révélé - avec surlignage des mots si actif
                             <span className={settings.darkMode ? 'text-white' : 'text-gray-800'}>
