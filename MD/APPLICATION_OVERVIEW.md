@@ -1,10 +1,11 @@
-# Quran Hifz & Arabic Learning - Application Overview
+# MyIslam - Application Overview
 
 ## Vue d'ensemble
 
-Application web moderne pour la mémorisation du Coran et l'apprentissage de l'arabe. Combine deux modules principaux :
-1. **Quran Hifz** - Mémorisation progressive du Coran avec audio synchronisé
-2. **Arabic Learning** - Apprentissage de l'arabe via Al-Arabiya Bayna Yadayk (4 tomes)
+Application web moderne d'apprentissage islamique combinant 3 modules principaux :
+1. **MyHifz** - Mémorisation progressive du Coran avec audio synchronisé
+2. **MyArabic** - Apprentissage de l'arabe via Al-Arabiya Bayna Yadayk (4 tomes)
+3. **MyNotes** - Organisation de ressources islamiques (catégories, playlists, citations)
 
 ---
 
@@ -17,6 +18,7 @@ Application web moderne pour la mémorisation du Coran et l'apprentissage de l'a
 | Vite | 7.2.4 | Build tool |
 | Tailwind CSS | 3.4.18 | Styling |
 | Lucide React | 0.555.0 | Icônes |
+| React PDF | 10.2.0 | Affichage PDF |
 
 ---
 
@@ -26,14 +28,18 @@ Application web moderne pour la mémorisation du Coran et l'apprentissage de l'a
 src/
 ├── App.jsx                 # Routeur principal + gestion settings
 ├── main.jsx                # Point d'entrée React
+├── contexts/
+│   └── UserContext.jsx     # Contexte utilisateur (auth locale)
+├── services/
+│   └── authService.js      # Service d'authentification
 ├── pages/
 │   └── LandingPage.jsx     # Page d'accueil (sélection module)
-├── shared/                 # Code partagé entre modules
-│   ├── components/         # Composants partagés (futur)
-│   ├── hooks/              # Hooks personnalisés (futur)
-│   └── utils/              # Fonctions utilitaires (futur)
+├── components/
+│   ├── Footer.jsx          # Footer global avec dark mode toggle
+│   └── sidebar/            # Composants sidebar partagés
+│       └── index.jsx       # SidebarWrapper, Header, Nav, Footer
 └── modules/
-    ├── quran/              # Module Quran Hifz
+    ├── quran/              # Module MyHifz
     │   ├── pages/
     │   │   ├── HomePage.jsx        # Portion quotidienne
     │   │   └── TrainingPage.jsx    # Quiz mémorisation
@@ -42,25 +48,37 @@ src/
     │   │   ├── AudioPlayer.jsx     # Lecteur audio
     │   │   ├── MushafDisplay.jsx   # Affichage Mushaf
     │   │   └── VerseDisplay.jsx    # Affichage versets
-    │   ├── services/
-    │   │   ├── quranApi.js         # APIs Quran
-    │   │   ├── tajweed.js          # Tajweed (cpfair)
-    │   │   └── wordTiming.js       # Sync audio mot-à-mot
-    │   └── data/
-    │       ├── quran-uthmani.txt   # Texte Coran
-    │       └── tajweed-cpfair.json # Données Tajweed
-    └── arabic/             # Module Arabic Learning
+    │   └── services/
+    │       ├── quranApi.js         # APIs Quran + données statiques
+    │       ├── tajweed.js          # Tajweed (cpfair)
+    │       └── wordTiming.js       # Sync audio mot-à-mot
+    ├── arabic/             # Module MyArabic
+    │   ├── pages/
+    │   │   ├── ArabicBooksPage.jsx   # Sélection livre + progression
+    │   │   ├── ArabicPage.jsx        # Apprentissage dialogues/textes
+    │   │   └── ArabicTrainingPage.jsx # Entraînement vocabulaire
+    │   └── components/
+    │       ├── ArabicSidebar.jsx     # Navigation Arabic
+    │       └── PdfViewer.jsx         # Visualiseur PDF avec navigation
+    └── notes/              # Module MyNotes
         ├── pages/
-        │   └── ArabicPage.jsx      # Apprentissage arabe
+        │   └── NotesPage.jsx         # Page principale notes
         ├── components/
-        │   └── ArabicSidebar.jsx   # Navigation Arabic
-        └── services/               # (futur)
+        │   ├── NotesSidebar.jsx      # Sidebar avec arbre navigation
+        │   ├── FolderView.jsx        # Vue catégories/dossiers
+        │   ├── PlaylistView.jsx      # Vue playlists audio/vidéo
+        │   ├── CitationsView.jsx     # Vue citations
+        │   └── ContentViewer.jsx     # Modal iframe (PDF, YouTube, GDoc)
+        └── services/
+            └── notesService.js       # CRUD localStorage notes
 
 public/
 ├── arabic/                 # Données Al-Arabiya Bayna Yadayk
 │   ├── ABY-T1.json         # Tome 1 (16 unités, 48 dialogues)
-│   ├── ABY-T2.json         # Tome 2 (4 unités, 16 leçons dialogue/texte)
-│   └── ABY-T3.json         # Tome 3 (textes OCR)
+│   ├── ABY-T2.json         # Tome 2 (unités 5-8, dialogue/texte)
+│   ├── ABY-T3.json         # Tome 3 (textes OCR)
+│   ├── aby-pages.json      # Mapping pages PDF par dialogue
+│   └── pdf/                # PDFs mergés (ABY-T1.pdf, ABY-T1-VOC.pdf)
 └── quran-timing-data/      # Données synchronisation audio (12 récitateurs)
 ```
 
@@ -73,11 +91,14 @@ public/
 | `/` | LandingPage | Page d'accueil - sélection du module |
 | `/quran` | HomePage | Portion Coran quotidienne, navigation Mushaf, audio |
 | `/quran/training` | TrainingPage | Quiz mémorisation (Juz/Hizb/Sourate/Pages) |
-| `/arabic` | ArabicPage | Dialogues/textes arabes avec traduction |
+| `/arabic` | ArabicBooksPage | Sélection livre + progression globale |
+| `/arabic/:bookId` | ArabicPage | Dialogues/textes avec traduction, vidéo, PDF |
+| `/arabic/training` | ArabicTrainingPage | Entraînement vocabulaire |
+| `/notes` | NotesPage | Organisation ressources (catégories, playlists, citations) |
 
 ---
 
-## Module 1: Quran Hifz (HomePage)
+## Module 1: MyHifz (Quran)
 
 ### Fonctionnalités Principales
 - **Portions fractionnées** : 1/4, 1/3, 1/2, 1 ou 2 pages par jour
@@ -108,7 +129,7 @@ public/
 
 ---
 
-## Module 2: Training (TrainingPage)
+## Module 2: Training (Entraînement Quran)
 
 ### Modes d'Entraînement
 - **Par Juz** (30 parties)
@@ -124,7 +145,7 @@ public/
 
 ---
 
-## Module 3: Arabic Learning (ArabicPage)
+## Module 3: MyArabic (Arabic Learning)
 
 ### Contenu Al-Arabiya Bayna Yadayk
 - **Tome 1** : 16 unités × 3 dialogues = 48 dialogues
@@ -134,11 +155,19 @@ public/
 
 ### Fonctionnalités
 - **Types de leçons** : حوار (dialogue) ou نص (texte)
-- **Couleurs locuteurs** : Amber/Bleu alternés
+- **Couleurs locuteurs** : Rouge/Bleu alternés pour dialogues
 - **Traduction** : Affichage ligne par ligne ou global
 - **Tashkeel toggle** : Masquer diacritiques (garde shadda)
 - **YouTube** : Vidéos intégrées par leçon
+- **PDF intégré** : Affichage PDF avec navigation pages
+- **Vocabulaire** : PDF vocabulaire par unité
 - **Validation** : Progression par dialogue/texte
+- **Progression** : Comptage livres complétés (100%)
+
+### Pages
+- **ArabicBooksPage** : Vue globale des 4 tomes avec progression
+- **ArabicPage** : Interface d'apprentissage avec vidéo, PDF, traduction
+- **ArabicTrainingPage** : Entraînement vocabulaire
 
 ### Structure JSON (Tome 2+)
 ```json
@@ -163,9 +192,62 @@ public/
 
 ---
 
+## Module 4: MyNotes
+
+### Fonctionnalités
+Système d'organisation de ressources islamiques avec structure hiérarchique flexible.
+
+### Types d'Éléments
+| Type | Description | Contenu |
+|------|-------------|---------|
+| **Catégorie** (folder) | Dossier avec profondeur illimitée | Sous-dossiers, PDFs, YouTube, Google Docs, liens |
+| **Playlist** | Collection audio/vidéo | Pistes MP3, vidéos YouTube, MP4 |
+| **Citations** | Stockage de citations | Texte, auteur, source |
+
+### Structure Hiérarchique
+```
+Catégorie (ex: Fiqh)
+├── Sous-catégorie (ex: Maliki)
+│   ├── Livre (ex: Al-Risala)
+│   │   ├── Chapitre 1 (PDF iframe)
+│   │   └── Chapitre 2 (PDF iframe)
+│   └── Autre livre...
+└── Sous-catégorie (ex: Hanbali)
+    └── ...
+```
+
+### Types de Contenu Supportés
+- **PDF** : Iframe Google Drive ou lien direct
+- **YouTube** : Embed vidéo avec extraction ID
+- **Google Docs** : Iframe avec conversion /preview
+- **Liens externes** : Ouverture nouvel onglet
+
+### Lecteur Audio/Vidéo
+- Contrôles play/pause/prev/next
+- Barre de progression avec seek
+- Contrôle volume et mute
+- Lecture YouTube intégrée
+- Passage automatique piste suivante
+
+### Stockage
+- localStorage clé : `myislam_notes`
+- Structure récursive avec IDs uniques
+- CRUD complet (Create, Read, Update, Delete)
+
+---
+
 ## Gestion d'État (Settings)
 
-Stockage `localStorage` sous clé `quran-hifz-settings` :
+### Authentification
+- Système local avec `localStorage`
+- Clé utilisateurs : `myislam_users`
+- Contexte : `UserContext.jsx`
+- Service : `authService.js`
+
+### Settings Globaux
+Stockage `localStorage` :
+- Connecté : dans `user.settings`
+- Invité : clé `guest_settings`
 
 ### Settings Coran
 | Clé | Type | Description |
@@ -188,9 +270,21 @@ Stockage `localStorage` sous clé `quran-hifz-settings` :
 | `arabicBook` | string | 'aby1', 'aby2', 'aby3', 'aby4' |
 | `arabicUnit` | number | Unité courante |
 | `arabicDialogue` | number | Index dialogue/leçon |
-| `arabicValidated` | object | { "unit-dialogue": true } |
+| `arabicValidated` | object | { "book-unit-dialogue": true } |
 | `arabicLearningFont` | string | Police (amiri, scheherazade...) |
 | `arabicLearningFontSize` | string | 'small', 'medium', 'large' |
+
+### Settings Notes
+Stockage séparé dans `myislam_notes` :
+```js
+{
+  items: [
+    { id, type: 'folder', name, children: [...] },
+    { id, type: 'playlist', name, tracks: [...] },
+    { id, type: 'citations', name, quotes: [...] }
+  ]
+}
+```
 
 ---
 
@@ -237,6 +331,17 @@ Stockage `localStorage` sous clé `quran-hifz-settings` :
 
 ---
 
+## Couleurs par Module
+
+| Module | Couleur | Tailwind | Hex |
+|--------|---------|----------|-----|
+| MyIslam (Landing) | Emerald | `emerald-*` | #10b981 |
+| MyHifz | Emerald | `emerald-*` | #10b981 |
+| MyArabic | Rouge | `red-*` | #ef4444 |
+| MyNotes | Amber | `amber-*` | #f59e0b |
+
+---
+
 ## Commandes
 
 ```bash
@@ -256,6 +361,7 @@ npm run lint     # ESLint
 - [ ] Synchronisation cloud multi-appareils
 - [ ] Statistiques avancées de progression
 - [ ] Export PDF des progrès
+- [ ] Drag & drop pour réorganiser notes
 
 ---
 

@@ -12,12 +12,16 @@ import ArabicSidebar from './modules/arabic/components/ArabicSidebar'
 import ArabicBooksPage from './modules/arabic/pages/ArabicBooksPage'
 import ArabicPage from './modules/arabic/pages/ArabicPage'
 import ArabicTrainingPage from './modules/arabic/pages/ArabicTrainingPage'
+// Notes module
+import NotesSidebar from './modules/notes/components/NotesSidebar'
+import NotesPage from './modules/notes/pages/NotesPage'
 
 // Page titles and favicon colors per module
 const pageConfig = {
   '/': { title: 'MyIslam', color: '#10b981', letter: 'M' },
   '/quran': { title: 'MyHifz - MyIslam', color: '#10b981', letter: 'H' },
-  '/arabic': { title: 'MyArabic - MyIslam', color: '#f59e0b', letter: 'A' },
+  '/arabic': { title: 'MyArabic - MyIslam', color: '#ef4444', letter: 'A' },
+  '/notes': { title: 'MyNotes - MyIslam', color: '#f59e0b', letter: 'N' },
 }
 
 // Generate SVG favicon
@@ -65,6 +69,7 @@ function App() {
   const isLandingPage = location.pathname === '/'
   const isQuranPage = location.pathname.startsWith('/quran')
   const isArabicPage = location.pathname.startsWith('/arabic')
+  const isNotesPage = location.pathname.startsWith('/notes')
 
   // Track if this is the initial load to avoid saving on first render
   const isInitialMount = useRef(true)
@@ -164,6 +169,7 @@ function App() {
     }
 
     if (isArabicPage) return <ArabicSidebar {...sidebarProps} />
+    if (isNotesPage) return <NotesSidebar {...sidebarProps} />
     return <QuranSidebar {...sidebarProps} />
   }
 
@@ -194,6 +200,11 @@ function App() {
           <Route
             path="/arabic/:bookId"
             element={<ArabicPage settings={settings} updateSettings={updateSettings} />}
+          />
+          {/* Notes module */}
+          <Route
+            path="/notes"
+            element={<NotesPage settings={settings} updateSettings={updateSettings} />}
           />
         </Routes>
       </main>

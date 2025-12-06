@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { BookOpen, Languages, User, LogOut, LogIn, UserPlus } from 'lucide-react'
+import { BookOpen, Languages, FileText, User, LogOut, LogIn, UserPlus } from 'lucide-react'
 import { useUser } from '../contexts/UserContext'
 import Footer from '../components/Footer'
 
@@ -22,6 +22,15 @@ const modules = [
     titleAr: 'تعلم العربية',
     description: 'Apprentissage de la langue arabe',
     color: 'red',
+  },
+  {
+    id: 'notes',
+    path: '/notes',
+    icon: FileText,
+    title: 'MyNotes',
+    titleAr: 'ملاحظاتي',
+    description: 'Organisez vos ressources islamiques',
+    color: 'amber',
   },
 ]
 
@@ -76,6 +85,13 @@ export default function LandingPage({ darkMode, toggleDarkMode }) {
       hover: darkMode ? 'hover:bg-red-900/50' : 'hover:bg-red-100',
       icon: darkMode ? 'text-red-400' : 'text-red-600',
       title: darkMode ? 'text-red-300' : 'text-red-700',
+    },
+    amber: {
+      bg: darkMode ? 'bg-amber-900/30' : 'bg-amber-50',
+      border: darkMode ? 'border-amber-700' : 'border-amber-200',
+      hover: darkMode ? 'hover:bg-amber-900/50' : 'hover:bg-amber-100',
+      icon: darkMode ? 'text-amber-400' : 'text-amber-600',
+      title: darkMode ? 'text-amber-300' : 'text-amber-700',
     },
   }
 
@@ -279,7 +295,7 @@ export default function LandingPage({ darkMode, toggleDarkMode }) {
         </div>
 
         {/* Module Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-3xl w-full">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-4xl w-full">
           {modules.map(module => renderModuleCard(module))}
         </div>
 

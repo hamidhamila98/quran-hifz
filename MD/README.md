@@ -1,4 +1,4 @@
-# Quran Hifz & Arabic Learning
+# MyIslam
 
 <div align="center">
 
@@ -6,15 +6,15 @@
 ![Vite](https://img.shields.io/badge/Vite-7.2.4-646CFF?logo=vite)
 ![Tailwind](https://img.shields.io/badge/Tailwind-3.4.18-06B6D4?logo=tailwindcss)
 
-Application web pour la mémorisation du Coran et l'apprentissage de l'arabe
+Application web pour la mémorisation du Coran, l'apprentissage de l'arabe et l'organisation de ressources islamiques
 
 </div>
 
 ---
 
-## Fonctionnalités
+## Modules
 
-### Quran Hifz (Mémorisation)
+### MyHifz - Mémorisation du Coran
 - Affichage Mushaf authentique (15 lignes/page)
 - Portions quotidiennes configurables (¼, ⅓, ½, 1 ou 2 pages/jour)
 - 12 récitateurs avec synchronisation audio mot-à-mot
@@ -22,17 +22,25 @@ Application web pour la mémorisation du Coran et l'apprentissage de l'arabe
 - Traduction française + Tafsir Ibn Kathir (AR/EN)
 - Suivi de progression avec validation
 
-### Training (Entraînement)
+### Training - Entraînement Quran
 - Quiz par Juz, Hizb, Sourate ou pages personnalisées
 - Versets partiellement cachés avec révélation progressive
 - Score en temps réel
 
-### Arabic Learning (Arabe)
+### MyArabic - Apprentissage de l'Arabe
 - Al-Arabiya Bayna Yadayk (Tomes 1-4)
 - Dialogues et textes avec traduction ligne par ligne
 - Toggle diacritiques (tashkeel) - garde le shadda
 - Vidéos YouTube intégrées
+- PDF intégré avec navigation par page
 - Progression par unité/leçon
+
+### MyNotes - Organisation de Ressources
+- **Catégories** : Dossiers hiérarchiques avec profondeur illimitée
+- **Playlists** : Collections audio/vidéo (MP3, YouTube, MP4)
+- **Citations** : Stockage de citations avec auteur et source
+- Contenu via iframe (PDF Google Drive, YouTube, Google Docs)
+- Lecteur audio/vidéo intégré
 
 ---
 
@@ -41,7 +49,7 @@ Application web pour la mémorisation du Coran et l'apprentissage de l'arabe
 ```bash
 # Cloner le projet
 git clone <repo-url>
-cd quran-hifz
+cd myislam
 
 # Installer les dépendances
 npm install
@@ -70,19 +78,29 @@ Accès : http://localhost:5173
 ```
 src/
 ├── App.jsx                     # Routeur principal
+├── contexts/UserContext.jsx    # Auth locale
 ├── pages/LandingPage.jsx       # Page d'accueil
-├── shared/                     # Code partagé (futur)
+├── components/
+│   ├── Footer.jsx              # Footer global
+│   └── sidebar/                # Composants sidebar partagés
 └── modules/
-    ├── quran/                  # Module Quran Hifz (/quran, /quran/training)
+    ├── quran/                  # Module MyHifz (/quran, /quran/training)
     │   ├── pages/              # HomePage, TrainingPage
     │   ├── components/         # QuranSidebar, AudioPlayer
     │   └── services/           # quranApi, tajweed, wordTiming
-    └── arabic/                 # Module Arabic Learning (/arabic)
-        ├── pages/              # ArabicPage
-        └── components/         # ArabicSidebar
+    ├── arabic/                 # Module MyArabic (/arabic, /arabic/:bookId)
+    │   ├── pages/              # ArabicBooksPage, ArabicPage, ArabicTrainingPage
+    │   └── components/         # ArabicSidebar, PdfViewer
+    └── notes/                  # Module MyNotes (/notes)
+        ├── pages/              # NotesPage
+        ├── components/         # NotesSidebar, FolderView, PlaylistView, CitationsView
+        └── services/           # notesService
 
 public/
-├── arabic/                 # Données Al-Arabiya Bayna Yadayk (ABY-T1/T2/T3.json)
+├── arabic/                 # Données Al-Arabiya Bayna Yadayk
+│   ├── ABY-T1/T2/T3.json   # Contenus tomes
+│   ├── aby-pages.json      # Mapping pages PDF
+│   └── pdf/                # PDFs mergés
 └── quran-timing-data/      # Données timing audio (12 récitateurs)
 ```
 
@@ -123,6 +141,8 @@ Les paramètres sont sauvegardés automatiquement dans `localStorage` :
 
 **Arabe** : tome, unité, dialogue, police, taille, validations...
 
+**Notes** : stockage séparé avec structure hiérarchique
+
 ---
 
 ## Polices Arabes
@@ -140,6 +160,7 @@ Les paramètres sont sauvegardés automatiquement dans `localStorage` :
 - [ ] Mode PWA hors ligne
 - [ ] Synchronisation cloud
 - [ ] Export PDF progression
+- [ ] Drag & drop réorganisation notes
 
 ---
 
@@ -149,6 +170,7 @@ Les paramètres sont sauvegardés automatiquement dans `localStorage` :
 - **Vite 7** - Build tool
 - **Tailwind CSS 3** - Styling
 - **React Router 7** - Navigation
+- **React PDF** - Affichage PDF
 - **Lucide React** - Icônes
 
 ---
