@@ -1,0 +1,3655 @@
+{
+  "meta": {
+    "id": "aby-t1",
+    "title": "Al-Arabiya Bayna Yadayk - Tome 1",
+    "structure": {
+      "sectionLabel": {
+        "ar": "الوحدة",
+        "fr": "Unité"
+      },
+      "itemLabels": {
+        "dialogue": {
+          "ar": "حوار",
+          "fr": "Dialogue"
+        },
+        "text": {
+          "ar": "نص",
+          "fr": "Texte"
+        }
+      }
+    },
+    "resources": {
+      "pdf": "/arabic/pdf/ABY-T1.pdf",
+      "vocabulary": "/arabic/pdf/ABY-T1-VOC.pdf"
+    }
+  },
+  "sections": [
+    {
+      "id": 1,
+      "titleAr": "التحية والتعارف",
+      "titleFr": "Salutations",
+      "items": [
+        {
+          "id": "1.1",
+          "type": "dialogue",
+          "titleAr": "",
+          "titleFr": "",
+          "youtube": "https://www.youtube.com/embed/k8_EYLMjfVU",
+          "pdfPage": null,
+          "lines": [
+            {
+              "speaker": "خالد",
+              "ar": "السَّلامُ عَلَيْكُم",
+              "fr": "Que la paix soit sur vous."
+            },
+            {
+              "speaker": "خليل",
+              "ar": "وَعَلَيْكُمُ السَّلام",
+              "fr": "Et sur vous la paix."
+            },
+            {
+              "speaker": "خالد",
+              "ar": "اِسْمِي خَالِد ، مَا اِسْمُكَ ؟",
+              "fr": "Je m'appelle Khalid, quel est ton nom ?"
+            },
+            {
+              "speaker": "خليل",
+              "ar": "اِسْمِي خَلِيل",
+              "fr": "Je m'appelle Khalil."
+            },
+            {
+              "speaker": "خالد",
+              "ar": "كَيْفَ حَالُكَ ؟",
+              "fr": "Comment vas-tu ?"
+            },
+            {
+              "speaker": "خليل",
+              "ar": "بِخَيْرٍ ، وَالْحَمْدُ لله\nوَكَيْفَ حَالُكَ أَنْتَ ؟",
+              "fr": "Bien, louange à Dieu. Et comment vas-tu toi ?"
+            },
+            {
+              "speaker": "خالد",
+              "ar": "بِخَيْرٍ ، وَالْحَمْدُ لله",
+              "fr": "Bien, louange à Dieu."
+            },
+            {
+              "speaker": "",
+              "ar": "",
+              "fr": ""
+            },
+            {
+              "speaker": "خَوْلَة",
+              "ar": "السَّلامُ عَلَيْكُم",
+              "fr": "Que la paix soit sur vous."
+            },
+            {
+              "speaker": "خديجة",
+              "ar": "وَعَلَيْكُمُ السَّلام",
+              "fr": "Et sur vous la paix."
+            },
+            {
+              "speaker": "خَوْلَة",
+              "ar": "اِسْمِي خَوْلَة ، مَا اسْمُكِ ؟",
+              "fr": "Je m'appelle Khawla, quel est ton nom ?"
+            },
+            {
+              "speaker": "خديجة",
+              "ar": "اِسْمِي خَدِيجَة",
+              "fr": "Je m'appelle Khadija."
+            },
+            {
+              "speaker": "خَوْلَة",
+              "ar": "كَيْفَ حَالُكِ ؟",
+              "fr": "Comment vas-tu ?"
+            },
+            {
+              "speaker": "خديجة",
+              "ar": "بِخَيْرٍ ، وَالْحَمْدُ لله\nوَكَيْفَ حَالُكِ أَنْتِ ؟",
+              "fr": "Bien, louange à Dieu. Et comment vas-tu toi ?"
+            },
+            {
+              "speaker": "خَوْلَة",
+              "ar": "بِخَيْرٍ ، وَالْحَمْدُ لله",
+              "fr": "Bien, louange à Dieu."
+            }
+          ]
+        },
+        {
+          "id": "1.2",
+          "type": "dialogue",
+          "titleAr": "",
+          "titleFr": "",
+          "youtube": "https://www.youtube.com/embed/k8_EYLMjfVU",
+          "pdfPage": null,
+          "lines": [
+            {
+              "speaker": "محمد",
+              "ar": "السَّلامُ عَلَيْكُم",
+              "fr": "Que la paix soit sur vous."
+            },
+            {
+              "speaker": "شريف",
+              "ar": "وَعَلَيْكُمُ السَّلام",
+              "fr": "Et sur vous la paix."
+            },
+            {
+              "speaker": "محمد",
+              "ar": "مِنْ أَيْنَ أَنْتَ ؟",
+              "fr": "D'où viens-tu ?"
+            },
+            {
+              "speaker": "شريف",
+              "ar": "أَنَا مِنْ بَاكِسْتَان",
+              "fr": "Je suis du Pakistan."
+            },
+            {
+              "speaker": "محمد",
+              "ar": "هَلْ أَنْتَ بَاكِسْتَانِي ؟",
+              "fr": "Es-tu Pakistanais ?"
+            },
+            {
+              "speaker": "شريف",
+              "ar": "نَعَمْ، أَنَا بَاكِسْتَانِي. وَمَا جِنْسِيَّتُكَ أَنْتَ؟",
+              "fr": "Oui, je suis Pakistanais. Et quelle est ta nationalité ?"
+            },
+            {
+              "speaker": "محمد",
+              "ar": "أَنَا تُرْكِيّ\nأَنَا مِنْ تُرْكِيَا",
+              "fr": "Je suis Turc. Je viens de Turquie."
+            },
+            {
+              "speaker": "شريف",
+              "ar": "أَهْلاً وَسَهْلاً",
+              "fr": "Bienvenue (Enchanté)."
+            },
+            {
+              "speaker": "",
+              "ar": "",
+              "fr": ""
+            },
+            {
+              "speaker": "مَرْيَم",
+              "ar": "السَّلامُ عَلَيْكُم",
+              "fr": "Que la paix soit sur vous."
+            },
+            {
+              "speaker": "زَيْنَب",
+              "ar": "وَعَلَيْكُمُ السَّلام",
+              "fr": "Et sur vous la paix."
+            },
+            {
+              "speaker": "مَرْيَم",
+              "ar": "مِنْ أَيْنَ أَنْتِ ؟",
+              "fr": "D'où viens-tu ?"
+            },
+            {
+              "speaker": "زَيْنَب",
+              "ar": "أَنَا مِنْ مِصْر",
+              "fr": "Je suis d'Égypte."
+            },
+            {
+              "speaker": "مَرْيَم",
+              "ar": "هَلْ أَنْتِ مِصْرِيَّة ؟",
+              "fr": "Es-tu Égyptienne ?"
+            },
+            {
+              "speaker": "زَيْنَب",
+              "ar": "نَعَمْ، أَنَا مِصْرِيَّة\nوَمَا جِنْسِيَّتُكِ أَنْتِ ؟",
+              "fr": "Oui, je suis Égyptienne. Et quelle est ta nationalité ?"
+            },
+            {
+              "speaker": "مَرْيَم",
+              "ar": "أَنَا سُورِيَّة\nأَنَا مِنْ سُورِيَا",
+              "fr": "Je suis Syrienne. Je viens de Syrie."
+            },
+            {
+              "speaker": "زَيْنَب",
+              "ar": "أَهْلاً وَسَهْلاً",
+              "fr": "Bienvenue (Enchantée)."
+            }
+          ]
+        },
+        {
+          "id": "1.3",
+          "type": "dialogue",
+          "titleAr": "",
+          "titleFr": "",
+          "youtube": "https://www.youtube.com/embed/Ryj7xBWn5ug",
+          "pdfPage": null,
+          "lines": [
+            {
+              "speaker": "أحمد",
+              "ar": "السَّلامُ عَلَيْكُم",
+              "fr": "Que la paix soit sur vous."
+            },
+            {
+              "speaker": "بدر",
+              "ar": "وَعَلَيْكُمُ السَّلام",
+              "fr": "Et sur vous la paix."
+            },
+            {
+              "speaker": "أحمد",
+              "ar": "هَذَا أَخِي\nهُوَ مُدَرِّس",
+              "fr": "Voici mon frère. Il est enseignant."
+            },
+            {
+              "speaker": "بدر",
+              "ar": "أَهْلاً وَسَهْلاً",
+              "fr": "Bienvenue."
+            },
+            {
+              "speaker": "أحمد",
+              "ar": "هَذَا صَدِيقِي\nهُوَ مُهَنْدِس",
+              "fr": "Voici mon ami. Il est ingénieur."
+            },
+            {
+              "speaker": "الأخ",
+              "ar": "أَهْلاً وَسَهْلاً",
+              "fr": "Bienvenue."
+            },
+            {
+              "speaker": "أحمد",
+              "ar": "مَعَ السَّلامَة",
+              "fr": "Au revoir."
+            },
+            {
+              "speaker": "بدر",
+              "ar": "مَعَ السَّلامَة",
+              "fr": "Au revoir."
+            },
+            {
+              "speaker": "",
+              "ar": "",
+              "fr": ""
+            },
+            {
+              "speaker": "نَدَى",
+              "ar": "السَّلامُ عَلَيْكُم",
+              "fr": "Que la paix soit sur vous."
+            },
+            {
+              "speaker": "هُدَى",
+              "ar": "وَعَلَيْكُمُ السَّلام",
+              "fr": "Et sur vous la paix."
+            },
+            {
+              "speaker": "نَدَى",
+              "ar": "هَذِهِ أُخْتِي\nهِيَ طَبِيبَة",
+              "fr": "Voici ma sœur. Elle est médecin."
+            },
+            {
+              "speaker": "هُدَى",
+              "ar": "أَهْلاً وَسَهْلاً",
+              "fr": "Bienvenue."
+            },
+            {
+              "speaker": "نَدَى",
+              "ar": "هَذِهِ صَدِيقَتِي\nهِيَ طَالِبَة",
+              "fr": "Voici mon amie. Elle est étudiante."
+            },
+            {
+              "speaker": "الأخت",
+              "ar": "أَهْلاً وَسَهْلاً",
+              "fr": "Bienvenue."
+            },
+            {
+              "speaker": "نَدَى",
+              "ar": "مَعَ السَّلامَة",
+              "fr": "Au revoir."
+            },
+            {
+              "speaker": "هُدَى",
+              "ar": "مَعَ السَّلامَة",
+              "fr": "Au revoir."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "titleAr": "الأسرة",
+      "titleFr": "La Famille",
+      "items": [
+        {
+          "id": "2.1",
+          "type": "dialogue",
+          "titleAr": "",
+          "titleFr": "",
+          "youtube": "https://www.youtube.com/embed/vWoclD7YPIo",
+          "pdfPage": null,
+          "lines": [
+            {
+              "speaker": "علي",
+              "ar": "السَّلامُ عَلَيْكُم",
+              "fr": "Que la paix soit sur vous."
+            },
+            {
+              "speaker": "عمار",
+              "ar": "وَعَلَيْكُمُ السَّلام",
+              "fr": "Et sur vous la paix."
+            },
+            {
+              "speaker": "علي",
+              "ar": "هَذِهِ صُورَةُ أُسْرَتِي",
+              "fr": "C'est une photo de ma famille."
+            },
+            {
+              "speaker": "عمار",
+              "ar": "مَا شَاءَ الله ! مَنْ هَذَا ؟",
+              "fr": "Masha'Allah ! Qui est-ce ?"
+            },
+            {
+              "speaker": "علي",
+              "ar": "هَذَا وَالِدِي عَدْنَان وَهُوَ مُهَنْدِس",
+              "fr": "C'est mon père Adnan et il est ingénieur."
+            },
+            {
+              "speaker": "عمار",
+              "ar": "وَمَنْ هَذِهِ ؟",
+              "fr": "Et qui est celle-ci ?"
+            },
+            {
+              "speaker": "علي",
+              "ar": "هَذِهِ وَالِدَتِي سَعِيدَة وَهِيَ طَبِيبَة",
+              "fr": "C'est ma mère Saida et elle est médecin."
+            },
+            {
+              "speaker": "عمار",
+              "ar": "وَمَنْ هَذَا ؟",
+              "fr": "Et qui est celui-ci ?"
+            },
+            {
+              "speaker": "علي",
+              "ar": "هَذَا أَخِي عِيسَى وَهُوَ طَالِب",
+              "fr": "C'est mon frère Issa et il est étudiant."
+            },
+            {
+              "speaker": "عمار",
+              "ar": "وَمَنْ هَذِهِ ؟",
+              "fr": "Et qui est celle-ci ?"
+            },
+            {
+              "speaker": "علي",
+              "ar": "هَذِهِ أُخْتِي عَبْلَة وَهِيَ مُعَلِّمَة\nوَهَذَا جَدِّي\nوَهَذِهِ جَدَّتِي",
+              "fr": "C'est ma sœur Abla et elle est enseignante. Et voici mon grand-père. Et voici ma grand-mère."
+            },
+            {
+              "speaker": "عمار",
+              "ar": "مَا شَاءَ الله !",
+              "fr": "Masha'Allah !"
+            }
+          ]
+        },
+        {
+          "id": "2.2",
+          "type": "dialogue",
+          "titleAr": "",
+          "titleFr": "",
+          "youtube": "https://www.youtube.com/embed/vWoclD7YPIo",
+          "pdfPage": null,
+          "lines": [
+            {
+              "speaker": "عمر",
+              "ar": "هَلْ هَذِهِ شَجَرَةٌ ؟",
+              "fr": "Est-ce un arbre ?"
+            },
+            {
+              "speaker": "عثمان",
+              "ar": "نَعَمْ، هَذِهِ أُسْرَةُ الرَّسُول ﷺ",
+              "fr": "Oui, c'est la famille du Messager ﷺ."
+            },
+            {
+              "speaker": "عمر",
+              "ar": "صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ",
+              "fr": "Paix et salut sur lui."
+            },
+            {
+              "speaker": "عثمان",
+              "ar": "هَذَا وَالِدُهُ عَبْدُ الله",
+              "fr": "C'est son père Abdallah."
+            },
+            {
+              "speaker": "عمر",
+              "ar": "وَهَذِهِ وَالِدَتُهُ آمِنَة",
+              "fr": "Et c'est sa mère Amina."
+            },
+            {
+              "speaker": "عثمان",
+              "ar": "وَهَذَا جَدُّهُ عَبْدُ المُطَّلِب",
+              "fr": "Et c'est son grand-père Abd al-Muttalib."
+            },
+            {
+              "speaker": "عمر",
+              "ar": "وَهَذَا عَمُّهُ العَبَّاس",
+              "fr": "Et c'est son oncle Al-Abbas."
+            },
+            {
+              "speaker": "عثمان",
+              "ar": "وَهَذَا عَمُّهُ حَمْزَة",
+              "fr": "Et c'est son oncle Hamza."
+            },
+            {
+              "speaker": "عمر",
+              "ar": "وَهَذَا عَمُّهُ أَبُو طَالِب",
+              "fr": "Et c'est son oncle Abou Talib."
+            },
+            {
+              "speaker": "عثمان",
+              "ar": "وَهَذِهِ عَمَّتُهُ صَفِيَّة",
+              "fr": "Et c'est sa tante Safiyyah."
+            },
+            {
+              "speaker": "عمر",
+              "ar": "وَهَذَا ابْنُهُ القَاسِم",
+              "fr": "Et c'est son fils Al-Qasim."
+            },
+            {
+              "speaker": "عثمان",
+              "ar": "وَهَذَا ابْنُهُ عَبْدُ الله",
+              "fr": "Et c'est son fils Abdallah."
+            },
+            {
+              "speaker": "عمر",
+              "ar": "وَهَذَا ابْنُهُ إِبْرَاهِيم",
+              "fr": "Et c'est son fils Ibrahim."
+            },
+            {
+              "speaker": "عثمان",
+              "ar": "وَهَذِهِ ابْنَتُهُ فَاطِمَة",
+              "fr": "Et c'est sa fille Fatima."
+            },
+            {
+              "speaker": "عمر",
+              "ar": "وَهَذِهِ ابْنَتُهُ رُقَيَّة",
+              "fr": "Et c'est sa fille Ruqayyah."
+            },
+            {
+              "speaker": "عثمان",
+              "ar": "وَهَذِهِ ابْنَتُهُ زَيْنَب",
+              "fr": "Et c'est sa fille Zaynab."
+            },
+            {
+              "speaker": "عمر",
+              "ar": "وَهَذِهِ ابْنَتُهُ أُمُّ كُلْثُوم",
+              "fr": "Et c'est sa fille Oum Kalthoum."
+            }
+          ]
+        },
+        {
+          "id": "2.3",
+          "type": "dialogue",
+          "titleAr": "",
+          "titleFr": "",
+          "youtube": "https://www.youtube.com/embed/0M7MpiV4TFg",
+          "pdfPage": null,
+          "lines": [
+            {
+              "speaker": "الأم",
+              "ar": "هَذَا أَذَانُ الفَجْر",
+              "fr": "C'est l'appel à la prière de l'aube."
+            },
+            {
+              "speaker": "الأب",
+              "ar": "اللهُ أَكْبَرُ\nاللهُ أَكْبَرُ\nأَيْنَ الأَوْلادُ ؟",
+              "fr": "Dieu est le plus Grand. Où sont les enfants ?"
+            },
+            {
+              "speaker": "الأم",
+              "ar": "سَعْدٌ فِي الحَمَّامِ يَتَوَضَّأُ",
+              "fr": "Saad est dans la salle de bain, il fait ses ablutions."
+            },
+            {
+              "speaker": "الأب",
+              "ar": "وَأَيْنَ سَعِيدٌ ؟",
+              "fr": "Et où est Said ?"
+            },
+            {
+              "speaker": "الأم",
+              "ar": "سَعِيدٌ فِي الغُرْفَةِ يَقْرَأُ القُرْآنَ",
+              "fr": "Said est dans la chambre, il lit le Coran."
+            },
+            {
+              "speaker": "الأب",
+              "ar": "وَأَيْنَ سَعِيدَةُ ؟",
+              "fr": "Et où est Saida ?"
+            },
+            {
+              "speaker": "الأم",
+              "ar": "سَعِيدَةُ فِي المُصَلَّى تُصَلِّي",
+              "fr": "Saida est dans le lieu de prière, elle prie."
+            },
+            {
+              "speaker": "الأب",
+              "ar": "أَيْنَ المِعْطَفُ ؟",
+              "fr": "Où est le manteau ?"
+            },
+            {
+              "speaker": "سعد",
+              "ar": "هَذَا هُوَ المِعْطَفُ يَا وَالِدِي",
+              "fr": "Voici le manteau, ô mon père."
+            },
+            {
+              "speaker": "الأب",
+              "ar": "وَأَيْنَ النَّظَّارَةُ ؟",
+              "fr": "Et où sont les lunettes ?"
+            },
+            {
+              "speaker": "سعيد",
+              "ar": "هَذِهِ هِيَ النَّظَّارَةُ يَا وَالِدِي",
+              "fr": "Voici les lunettes, ô mon père."
+            },
+            {
+              "speaker": "الأب",
+              "ar": "هَيَّا بِنَا إِلَى المَسْجِدِ",
+              "fr": "Allons à la mosquée."
+            },
+            {
+              "speaker": "سعد وسعيد",
+              "ar": "هَيَّا بِنَا",
+              "fr": "Allons-y."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "titleAr": "السكن",
+      "titleFr": "Le Logement",
+      "items": [
+        {
+          "id": "3.1",
+          "type": "dialogue",
+          "titleAr": "",
+          "titleFr": "",
+          "youtube": "https://www.youtube.com/embed/NkifmY0u9Qs",
+          "pdfPage": null,
+          "lines": [
+            {
+              "speaker": "أحمد",
+              "ar": "السَّلامُ عَلَيْكُم",
+              "fr": "Que la paix soit sur vous."
+            },
+            {
+              "speaker": "حسان",
+              "ar": "وَعَلَيْكُمُ السَّلام",
+              "fr": "Et sur vous la paix."
+            },
+            {
+              "speaker": "أحمد",
+              "ar": "أَيْنَ تَسْكُنُ ؟",
+              "fr": "Où habites-tu ?"
+            },
+            {
+              "speaker": "حسان",
+              "ar": "أَسْكُنُ فِي حَيِّ الْمَطَار. وَأَيْنَ تَسْكُنُ أَنْتَ ؟",
+              "fr": "J'habite quartier de l'aéroport. Et où habites-tu toi ?"
+            },
+            {
+              "speaker": "أحمد",
+              "ar": "أَسْكُنُ فِي حَيِّ الْجَامِعَة",
+              "fr": "J'habite dans le quartier de l'université."
+            },
+            {
+              "speaker": "حسان",
+              "ar": "هَلْ تَسْكُنُ فِي بَيْتٍ ؟",
+              "fr": "Habites-tu dans une maison ?"
+            },
+            {
+              "speaker": "أحمد",
+              "ar": "نَعَمْ، أَسْكُنُ فِي بَيْتٍ\nوَهَلْ تَسْكُنُ فِي بَيْتٍ ؟",
+              "fr": "Oui, j'habite dans une maison. Et habites-tu dans une maison ?"
+            },
+            {
+              "speaker": "حسان",
+              "ar": "لا، أَسْكُنُ فِي شَقَّةٍ",
+              "fr": "Non, j'habite dans un appartement."
+            },
+            {
+              "speaker": "أحمد",
+              "ar": "مَا رَقْمُ شَقَّتِكَ ؟",
+              "fr": "Quel est le numéro de ton appartement ?"
+            },
+            {
+              "speaker": "حسان",
+              "ar": "خَمْسَة\nوَمَا رَقْمُ بَيْتِكَ ؟",
+              "fr": "Cinq. Et quel est le numéro de ta maison ?"
+            },
+            {
+              "speaker": "أحمد",
+              "ar": "تِسْعَة",
+              "fr": "Neuf."
+            }
+          ]
+        },
+        {
+          "id": "3.2",
+          "type": "dialogue",
+          "titleAr": "",
+          "titleFr": "",
+          "youtube": "https://www.youtube.com/embed/NkifmY0u9Qs",
+          "pdfPage": null,
+          "lines": [
+            {
+              "speaker": "المستأجر",
+              "ar": "السَّلامُ عَلَيْكُم",
+              "fr": "Que la paix soit sur vous."
+            },
+            {
+              "speaker": "المؤجر",
+              "ar": "وَعَلَيْكُمُ السَّلام",
+              "fr": "Et sur vous la paix."
+            },
+            {
+              "speaker": "المستأجر",
+              "ar": "أُرِيدُ شَقَّةً مِنْ فَضْلِكَ",
+              "fr": "Je voudrais un appartement, s'il vous plaît."
+            },
+            {
+              "speaker": "المؤجر",
+              "ar": "لَدَيْنَا شَقَّةٌ جَمِيلَة",
+              "fr": "Nous avons un bel appartement."
+            },
+            {
+              "speaker": "المستأجر",
+              "ar": "كَمْ غُرْفَةً فِي الشَّقَّةِ ؟",
+              "fr": "Combien de pièces y a-t-il dans l'appartement ?"
+            },
+            {
+              "speaker": "المؤجر",
+              "ar": "فِي الشَّقَّةِ خَمْسُ غُرَفٍ",
+              "fr": "Dans l'appartement, il y a cinq pièces."
+            },
+            {
+              "speaker": "المستأجر",
+              "ar": "فِي أَيِّ دَوْرٍ الشَّقَّةُ ؟",
+              "fr": "À quel étage est l'appartement ?"
+            },
+            {
+              "speaker": "المؤجر",
+              "ar": "الشَّقَّةُ فِي الدَّوْرِ الْخَامِس",
+              "fr": "L'appartement est au cinquième étage."
+            },
+            {
+              "speaker": "المستأجر",
+              "ar": "أُرِيدُ مُشَاهَدَةَ الشَّقَّةِ",
+              "fr": "Je voudrais voir l'appartement."
+            },
+            {
+              "speaker": "المؤجر",
+              "ar": "تَفَضَّلْ، ادْخُلْ، هَذَا بَابُ الشَّقَّةِ",
+              "fr": "Entrez, voici la porte de l'appartement."
+            },
+            {
+              "speaker": "المستأجر",
+              "ar": "هَذِهِ شَقَّةٌ جَمِيلَةٌ",
+              "fr": "C'est un bel appartement."
+            }
+          ]
+        },
+        {
+          "id": "3.3",
+          "type": "dialogue",
+          "titleAr": "",
+          "titleFr": "",
+          "youtube": "https://www.youtube.com/embed/qSYmUyOdZ6M",
+          "pdfPage": null,
+          "lines": [
+            {
+              "speaker": "المشتري",
+              "ar": "السَّلامُ عَلَيْكُم",
+              "fr": "Que la paix soit sur vous."
+            },
+            {
+              "speaker": "البائع",
+              "ar": "وَعَلَيْكُمُ السَّلام. أَيَّ خِدْمَةٍ ؟",
+              "fr": "Et sur vous la paix. Puis-je vous aider ?"
+            },
+            {
+              "speaker": "المشتري",
+              "ar": "أُرِيدُ بَعْضَ الأَثَاثِ",
+              "fr": "Je voudrais quelques meubles."
+            },
+            {
+              "speaker": "البائع",
+              "ar": "مَاذَا تُرِيدُ لِغُرْفَةِ النَّوْمِ ؟",
+              "fr": "Que voulez-vous pour la chambre à coucher ?"
+            },
+            {
+              "speaker": "المشتري",
+              "ar": "أُرِيدُ سَرِيراً وَسِتَارَةً",
+              "fr": "Je veux un lit et un rideau."
+            },
+            {
+              "speaker": "البائع",
+              "ar": "وَمَاذَا تُرِيدُ لِغُرْفَةِ الْجُلُوسِ ؟",
+              "fr": "Et que voulez-vous pour le salon ?"
+            },
+            {
+              "speaker": "المشتري",
+              "ar": "أُرِيدُ أَرِيكَةً وَسَجَّادَةً",
+              "fr": "Je veux un canapé et un tapis."
+            },
+            {
+              "speaker": "البائع",
+              "ar": "وَمَاذَا تُرِيدُ لِلْمَطْبَخِ ؟",
+              "fr": "Et que voulez-vous pour la cuisine ?"
+            },
+            {
+              "speaker": "المشتري",
+              "ar": "أُرِيدُ فُرْناً وَثَلاجَةً",
+              "fr": "Je veux un four et un frigo."
+            },
+            {
+              "speaker": "البائع",
+              "ar": "وَمَاذَا تُرِيدُ لِلْحَمَّامِ ؟",
+              "fr": "Et que voulez-vous pour la salle de bain ?"
+            },
+            {
+              "speaker": "المشتري",
+              "ar": "أُرِيدُ سَخَّاناً وَمِرْآةً",
+              "fr": "Je veux un chauffe-eau et un miroir."
+            },
+            {
+              "speaker": "البائع",
+              "ar": "هَلْ تُرِيدُ شَيْئاً آخَرَ ؟",
+              "fr": "Voulez-vous autre chose ?"
+            },
+            {
+              "speaker": "المشتري",
+              "ar": "شُكْراً، أُرِيدُ مُشَاهَدَةَ الأَثَاثِ",
+              "fr": "Merci, je voudrais voir les meubles."
+            },
+            {
+              "speaker": "البائع",
+              "ar": "تَفَضَّلْ",
+              "fr": "Allez-y (Je vous en prie)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "titleAr": "الحياة اليومية",
+      "titleFr": "Vie Quotidienne",
+      "items": [
+        {
+          "id": "4.1",
+          "type": "dialogue",
+          "titleAr": "",
+          "titleFr": "",
+          "youtube": "https://www.youtube.com/embed/-wWppSok6gc",
+          "pdfPage": null,
+          "lines": [
+            {
+              "speaker": "طارق",
+              "ar": "مَتَى تَسْتَيْقِظُ ؟",
+              "fr": "Quand te réveilles-tu ?"
+            },
+            {
+              "speaker": "طاهر",
+              "ar": "أَسْتَيْقِظُ عِنْدَ الْفَجْرِ",
+              "fr": "Je me réveille à l'aube."
+            },
+            {
+              "speaker": "طارق",
+              "ar": "أَيْنَ تُصَلِّي الْفَجْرَ ؟",
+              "fr": "Où pries-tu le Fajr ?"
+            },
+            {
+              "speaker": "طاهر",
+              "ar": "أُصَلِّي الْفَجْرَ فِي الْمَسْجِدِ",
+              "fr": "Je prie le Fajr à la mosquée."
+            },
+            {
+              "speaker": "طارق",
+              "ar": "هَلْ تَنَامُ بَعْدَ الصَّلاةِ ؟",
+              "fr": "Dors-tu après la prière ?"
+            },
+            {
+              "speaker": "طاهر",
+              "ar": "لا، لا أَنَامُ بَعْدَ الصَّلاةِ",
+              "fr": "Non, je ne dors pas après la prière."
+            },
+            {
+              "speaker": "طارق",
+              "ar": "مَاذَا تَفْعَلُ بَعْدَ الصَّلاةِ ؟",
+              "fr": "Que fais-tu après la prière ?"
+            },
+            {
+              "speaker": "طاهر",
+              "ar": "أَقْرَأُ الْقُرْآنَ",
+              "fr": "Je lis le Coran."
+            },
+            {
+              "speaker": "طارق",
+              "ar": "وَمَتَى تَذْهَبُ إِلَى الْمَدْرَسَةِ ؟",
+              "fr": "Et quand vas-tu à l'école ?"
+            },
+            {
+              "speaker": "طاهر",
+              "ar": "أَذْهَبُ السَّاعَةَ السَّابِعَةَ",
+              "fr": "J'y vais à sept heures."
+            },
+            {
+              "speaker": "طارق",
+              "ar": "هَلْ تَذْهَبُ بِالسَّيَّارَةِ ؟",
+              "fr": "Y vas-tu en voiture ?"
+            },
+            {
+              "speaker": "طاهر",
+              "ar": "لا، أَذْهَبُ بِالْحَافِلَةِ",
+              "fr": "Non, j'y vais en bus."
+            }
+          ]
+        },
+        {
+          "id": "4.2",
+          "type": "dialogue",
+          "titleAr": "",
+          "titleFr": "",
+          "youtube": "https://www.youtube.com/embed/-wWppSok6gc",
+          "pdfPage": null,
+          "lines": [
+            {
+              "speaker": "الأم",
+              "ar": "هَذَا يَوْمُ الْعُطْلَةِ",
+              "fr": "C'est le jour de congé."
+            },
+            {
+              "speaker": "الأب",
+              "ar": "هَذَا يَوْمُ الْعَمَلِ",
+              "fr": "C'est un jour de travail."
+            },
+            {
+              "speaker": "الأم",
+              "ar": "مَاذَا سَتَفْعَلُ يَا طَارِقُ ؟",
+              "fr": "Que vas-tu faire, Tariq ?"
+            },
+            {
+              "speaker": "طارق",
+              "ar": "سَأَكْنُسُ غُرْفَةَ الْجُلُوسِ",
+              "fr": "Je vais balayer le salon."
+            },
+            {
+              "speaker": "الأم",
+              "ar": "وَمَاذَا سَتَفْعَلِينَ يَا فَاطِمَةُ ؟",
+              "fr": "Et que vas-tu faire, Fatima ?"
+            },
+            {
+              "speaker": "فاطمة",
+              "ar": "سَأَكْنُسُ غُرْفَةَ النَّوْمِ",
+              "fr": "Je vais balayer la chambre."
+            },
+            {
+              "speaker": "الأم",
+              "ar": "وَمَاذَا سَتَفْعَلُ يَا أَحْمَدُ ؟",
+              "fr": "Et que vas-tu faire, Ahmed ?"
+            },
+            {
+              "speaker": "أحمد",
+              "ar": "سَأَغْسِلُ الْمَلابِسَ",
+              "fr": "Je vais laver les vêtements."
+            },
+            {
+              "speaker": "الأم",
+              "ar": "وَمَاذَا سَتَفْعَلِينَ يَا لَطِيفَةُ ؟",
+              "fr": "Et que vas-tu faire, Latifa ?"
+            },
+            {
+              "speaker": "لطيفة",
+              "ar": "سَأَكْوِي الْمَلابِسَ",
+              "fr": "Je vais repasser les vêtements."
+            },
+            {
+              "speaker": "الجدة",
+              "ar": "أَنَا سَأَغْسِلُ الأَطْبَاقَ",
+              "fr": "Moi, je vais laver la vaisselle."
+            },
+            {
+              "speaker": "الجد",
+              "ar": "وَأَنَا سَأَقْرَأُ الْقُرْآنَ",
+              "fr": "Et moi, je vais lire le Coran."
+            }
+          ]
+        },
+        {
+          "id": "4.3",
+          "type": "dialogue",
+          "titleAr": "",
+          "titleFr": "",
+          "youtube": "https://www.youtube.com/embed/m_zWX6MdH2Y",
+          "pdfPage": null,
+          "lines": [
+            {
+              "speaker": "عادل",
+              "ar": "مَتَى تَسْتَيْقِظُ يَوْمَ الْعُطْلَةِ ؟",
+              "fr": "Quand te réveilles-tu le jour de congé ?"
+            },
+            {
+              "speaker": "فيصل",
+              "ar": "أَسْتَيْقِظُ مُبَكِّراً\nوَمَتَى تَسْتَيْقِظُ أَنْتَ ؟",
+              "fr": "Je me réveille tôt. Et quand te réveilles-tu toi ?"
+            },
+            {
+              "speaker": "عادل",
+              "ar": "أَسْتَيْقِظُ مُتَأَخِّراً",
+              "fr": "Je me réveille tard."
+            },
+            {
+              "speaker": "فيصل",
+              "ar": "مَاذَا تَفْعَلُ فِي الصَّبَاحِ ؟",
+              "fr": "Que fais-tu le matin ?"
+            },
+            {
+              "speaker": "عادل",
+              "ar": "أُشَاهِدُ التِّلْفَازَ. وَمَاذَا تَفْعَلُ أَنْتَ ؟",
+              "fr": "Je regarde la TV. Et que fais-tu toi ?"
+            },
+            {
+              "speaker": "فيصل",
+              "ar": "أَقْرَأُ صَحِيفَةً أَوْ كِتَاباً",
+              "fr": "Je lis un journal ou un livre."
+            },
+            {
+              "speaker": "عادل",
+              "ar": "أَيْنَ تُصَلِّي الْجُمُعَةَ ؟",
+              "fr": "Où pries-tu le Vendredi ?"
+            },
+            {
+              "speaker": "فيصل",
+              "ar": "أُصَلِّي الْجُمُعَةَ فِي الْمَسْجِدِ الْكَبِيرِ",
+              "fr": "Je prie le Vendredi à la grande mosquée."
+            },
+            {
+              "speaker": "عادل",
+              "ar": "وَأَيْنَ تُصَلِّي أَنْتَ ؟\nأُصَلِّي فِي الْمَسْجِدِ الْكَبِيرِ أَيْضاً",
+              "fr": "Et où pries-tu toi ? Je prie à la grande mosquée aussi."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "titleAr": "الطعام والشراب",
+      "titleFr": "Nourriture",
+      "items": [
+        {
+          "id": "5.1",
+          "type": "dialogue",
+          "titleAr": "",
+          "titleFr": "",
+          "youtube": "https://www.youtube.com/embed/V8hqPd-02Ts",
+          "pdfPage": null,
+          "lines": [
+            {
+              "speaker": "قاسم",
+              "ar": "أَيْنَ تَذْهَبُ يَا سَالِمُ ؟",
+              "fr": "Où vas-tu Salim ?"
+            },
+            {
+              "speaker": "سالم",
+              "ar": "إِلَى الْمَطْعَمِ",
+              "fr": "Au restaurant."
+            },
+            {
+              "speaker": "قاسم",
+              "ar": "كَمْ وَجْبَةً تَأْكُلُ فِي الْيَوْمِ ؟",
+              "fr": "Combien de repas manges-tu par jour ?"
+            },
+            {
+              "speaker": "سالم",
+              "ar": "آكُلُ ثَلاثَ وَجَبَات: الْفَطُورَ وَالْغَدَاءَ وَالْعَشَاءَ",
+              "fr": "Je mange trois repas : le petit-déjeuner, le déjeuner et le dîner."
+            },
+            {
+              "speaker": "قاسم",
+              "ar": "هَذَا كَثِيرٌ جِدّاً. أَنَا آكُلُ وَجْبَةً وَاحِدَةً",
+              "fr": "C'est beaucoup. Moi, je mange un seul repas."
+            },
+            {
+              "speaker": "سالم",
+              "ar": "هَذَا قَلِيلٌ جِدّاً",
+              "fr": "C'est très peu."
+            },
+            {
+              "speaker": "قاسم",
+              "ar": "مَاذَا تَأْكُلُ فِي الْغَدَاءِ ؟",
+              "fr": "Que manges-tu au déjeuner ?"
+            },
+            {
+              "speaker": "سالم",
+              "ar": "آكُلُ الأَرُزَّ وَالْخُبْزَ. وَمَاذَا تَأْكُلُ أَنْتَ ؟",
+              "fr": "Je mange du riz et du pain. Et que manges-tu toi ?"
+            },
+            {
+              "speaker": "قاسم",
+              "ar": "آكُلُ السَّمَكَ وَالسَّلَطَةَ وَالْفَاكِهَةَ",
+              "fr": "Je mange du poisson, de la salade et des fruits."
+            },
+            {
+              "speaker": "سالم",
+              "ar": "مَا وَزْنُكَ ؟",
+              "fr": "Quel est ton poids ?"
+            },
+            {
+              "speaker": "قاسم",
+              "ar": "سِتُّونَ كَيْلاً. وَمَا وَزْنُكَ أَنْتَ ؟",
+              "fr": "60 kilos. Et quel est ton poids toi ?"
+            },
+            {
+              "speaker": "سالم",
+              "ar": "مِائَةُ كَيْلٍ",
+              "fr": "100 kilos."
+            },
+            {
+              "speaker": "قاسم",
+              "ar": "أَنْتَ سَمِينٌ جِدّاً",
+              "fr": "Tu es très gros."
+            },
+            {
+              "speaker": "سالم",
+              "ar": "وَأَنْتَ نَحِيفٌ جِدّاً",
+              "fr": "Et tu es très maigre."
+            }
+          ]
+        },
+        {
+          "id": "5.2",
+          "type": "dialogue",
+          "titleAr": "",
+          "titleFr": "",
+          "youtube": "https://www.youtube.com/embed/m9Tw3KpFsWU",
+          "pdfPage": null,
+          "lines": [
+            {
+              "speaker": "المضيفة",
+              "ar": "مَاذَا تَطْلُبِينَ مِنَ الطَّعَامِ ؟",
+              "fr": "Que désirez-vous comme nourriture ?"
+            },
+            {
+              "speaker": "المسافرة",
+              "ar": "بَعْضَ السَّمَكِ وَالأَرُزِّ مِنْ فَضْلِكِ",
+              "fr": "Du poisson et du riz s'il vous plaît."
+            },
+            {
+              "speaker": "المضيفة",
+              "ar": "وَمَاذَا تَطْلُبِينَ مِنَ الشَّرَابِ ؟",
+              "fr": "Et que désirez-vous comme boisson ?"
+            },
+            {
+              "speaker": "المسافرة",
+              "ar": "مَاءً مِنْ فَضْلِكِ",
+              "fr": "De l'eau s'il vous plaît."
+            },
+            {
+              "speaker": "المضيفة",
+              "ar": "وَمَاذَا تُفَضِّلِينَ مِنَ الْفَاكِهَةِ ؟",
+              "fr": "Et que préférez-vous comme fruits ?"
+            },
+            {
+              "speaker": "المسافرة",
+              "ar": "التَّمْرَ أَوِ الْعِنَبَ",
+              "fr": "Des dattes ou du raisin."
+            },
+            {
+              "speaker": "المضيفة",
+              "ar": "هَلْ تَشْرَبِينَ الشَّايَ ؟",
+              "fr": "Buvez-vous du thé ?"
+            },
+            {
+              "speaker": "المسافرة",
+              "ar": "لا، أُفَضِّلُ الْقَهْوَةَ",
+              "fr": "Non, je préfère le café."
+            },
+            {
+              "speaker": "المضيفة",
+              "ar": "الْقَهْوَةَ بِالْحَلِيبِ ؟",
+              "fr": "Du café au lait ?"
+            },
+            {
+              "speaker": "المسافرة",
+              "ar": "نَعَمْ، الْقَهْوَةَ بِالْحَلِيبِ",
+              "fr": "Oui, du café au lait."
+            },
+            {
+              "speaker": "المضيفة",
+              "ar": "هَلْ تُرِيدِينَ شَيْئاً آخَرَ ؟",
+              "fr": "Voulez-vous autre chose ?"
+            },
+            {
+              "speaker": "المسافرة",
+              "ar": "لا، وَشُكْراً",
+              "fr": "Non, merci."
+            },
+            {
+              "speaker": "المضيفة",
+              "ar": "عَفْواً",
+              "fr": "Je vous en prie."
+            }
+          ]
+        },
+        {
+          "id": "5.3",
+          "type": "dialogue",
+          "titleAr": "",
+          "titleFr": "",
+          "youtube": "https://www.youtube.com/embed/BRh81_OdaJU",
+          "pdfPage": null,
+          "lines": [
+            {
+              "speaker": "الزوج",
+              "ar": "السَّلامُ عَلَيْكُم",
+              "fr": "Que la paix soit sur vous."
+            },
+            {
+              "speaker": "الزوجة",
+              "ar": "وَعَلَيْكُمُ السَّلام",
+              "fr": "Et sur vous la paix."
+            },
+            {
+              "speaker": "الزوج",
+              "ar": "أَنَا جَوْعَانٌ جِدّاً",
+              "fr": "J'ai très faim."
+            },
+            {
+              "speaker": "الزوجة",
+              "ar": "الْغَدَاءُ عَلَى الْمَائِدَةِ",
+              "fr": "Le déjeuner est sur la table."
+            },
+            {
+              "speaker": "الزوج",
+              "ar": "مَا هَذَا ؟! سَمَكٌ وَلَحْمٌ وَدَجَاجٌ وَأَرُزٌّ وَسَلَطَةٌ وَفَاكِهَةٌ !\nهَذَا كَثِيرٌ جِدّاً",
+              "fr": "Qu'est-ce que c'est ?! Poisson, viande, poulet, riz, salade et fruits ! C'est énormément (trop)."
+            },
+            {
+              "speaker": "الزوجة",
+              "ar": "لا تَأْكُلْ ... لا تَأْكُلْ ... اجْلِسْ",
+              "fr": "Ne mange pas... Ne mange pas... Assieds-toi."
+            },
+            {
+              "speaker": "الزوج",
+              "ar": "لِمَاذَا ؟ أَنَا جَوْعَانٌ",
+              "fr": "Pourquoi ? J'ai faim."
+            },
+            {
+              "speaker": "الزوجة",
+              "ar": "لَدَيْنَا ضُيُوفٌ",
+              "fr": "Nous avons des invités."
+            },
+            {
+              "speaker": "الزوج",
+              "ar": "لَدَيْنَا ضُيُوفٌ ! مَنْ ؟!",
+              "fr": "Nous avons des invités ! Qui ?!"
+            },
+            {
+              "speaker": "الزوجة",
+              "ar": "وَالِدِي وَوَالِدَتِي وَأَخِي",
+              "fr": "Mon père, ma mère et mon frère."
+            },
+            {
+              "speaker": "الزوج",
+              "ar": "أَيْنَ الضُّيُوفُ ؟",
+              "fr": "Où sont les invités ?"
+            },
+            {
+              "speaker": "الزوجة",
+              "ar": "فِي غُرْفَةِ الْجُلُوسِ",
+              "fr": "Dans le salon."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "titleAr": "الصلاة",
+      "titleFr": "La Prière",
+      "items": [
+        {
+          "id": "6.1",
+          "type": "dialogue",
+          "titleAr": "",
+          "titleFr": "",
+          "youtube": "https://www.youtube.com/embed/WfyZ9kge4r4",
+          "pdfPage": null,
+          "lines": [
+            {
+              "speaker": "مصطفى",
+              "ar": "أَيْنَ تُصَلِّي الصَّلَوَاتِ الْخَمْسَ ؟",
+              "fr": "Où pries-tu les cinq prières ?"
+            },
+            {
+              "speaker": "قصي",
+              "ar": "أُصَلِّي الظُّهْرَ وَالْعَصْرَ وَالْمَغْرِبَ وَالْعِشَاءَ فِي مَسْجِدِ بِلال",
+              "fr": "Je prie le Dhuhr, le Asr, le Maghrib et l'Isha à la mosquée Bilal."
+            },
+            {
+              "speaker": "مصطفى",
+              "ar": "وَأَيْنَ تُصَلِّي الْفَجْرَ ؟",
+              "fr": "Et où pries-tu le Fajr ?"
+            },
+            {
+              "speaker": "قصي",
+              "ar": "أُصَلِّي الْفَجْرَ فِي الْبَيْتِ",
+              "fr": "Je prie le Fajr à la maison."
+            },
+            {
+              "speaker": "مصطفى",
+              "ar": "لِمَاذَا تُصَلِّي الْفَجْرَ فِي الْبَيْتِ ؟",
+              "fr": "Pourquoi pries-tu le Fajr à la maison ?"
+            },
+            {
+              "speaker": "قصي",
+              "ar": "لا أَسْمَعُ الأَذَانَ",
+              "fr": "Je n'entends pas l'appel à la prière."
+            },
+            {
+              "speaker": "مصطفى",
+              "ar": "هَلْ تَسْتَيْقِظُ مُتَأَخِّراً ؟",
+              "fr": "Te réveilles-tu tard ?"
+            },
+            {
+              "speaker": "قصي",
+              "ar": "نَعَمْ، بَعْدَ صَلاةِ الْفَجْرِ",
+              "fr": "Oui, après la prière du Fajr."
+            },
+            {
+              "speaker": "مصطفى",
+              "ar": "اسْتَيْقِظْ مُبَكِّراً",
+              "fr": "Réveille-toi tôt !"
+            },
+            {
+              "speaker": "قصي",
+              "ar": "لا أَسْتَطِيعُ، أَعْمَلُ فِي اللَّيْلِ",
+              "fr": "Je ne peux pas, je travaille la nuit."
+            },
+            {
+              "speaker": "مصطفى",
+              "ar": "ضَعِ الْمُنَبِّهَ بِجَانِبِكَ",
+              "fr": "Mets le réveil à côté de toi."
+            },
+            {
+              "speaker": "قصي",
+              "ar": "هَذِهِ فِكْرَةٌ طَيِّبَةٌ، جَزَاكَ اللهُ خَيْراً",
+              "fr": "C'est une bonne idée, qu'Allah te récompense."
+            }
+          ]
+        },
+        {
+          "id": "6.2",
+          "type": "dialogue",
+          "titleAr": "",
+          "titleFr": "",
+          "youtube": "https://www.youtube.com/embed/lvz5bmdtMRo",
+          "pdfPage": null,
+          "lines": [
+            {
+              "speaker": "عصام",
+              "ar": "السَّلامُ عَلَيْكُم",
+              "fr": "Que la paix soit sur vous."
+            },
+            {
+              "speaker": "صالح",
+              "ar": "وَعَلَيْكُمُ السَّلام",
+              "fr": "Et sur vous la paix."
+            },
+            {
+              "speaker": "عصام",
+              "ar": "أَنَا مُسَافِرٌ إِلَى مَكَّةَ، إِلَى أَيْنَ أَنْتَ مُسَافِرٌ ؟",
+              "fr": "Je voyage vers La Mecque, vers où voyages-tu ?"
+            },
+            {
+              "speaker": "صالح",
+              "ar": "أَنَا مُسَافِرٌ إِلَى الْمَدِينَةِ\nلِمَاذَا أَنْتَ مُسَافِرٌ إِلَى مَكَّةَ ؟",
+              "fr": "Je voyage vers Médine. Pourquoi voyages-tu vers La Mecque ?"
+            },
+            {
+              "speaker": "عصام",
+              "ar": "لِلصَّلاةِ فِي الْمَسْجِدِ الْحَرَامِ\nوَلِمَاذَا أَنْتَ مُسَافِرٌ إِلَى الْمَدِينَةِ ؟",
+              "fr": "Pour prier dans la Mosquée Sacrée. Et pourquoi voyages-tu vers Médine ?"
+            },
+            {
+              "speaker": "صالح",
+              "ar": "لِلصَّلاةِ فِي الْمَسْجِدِ النَّبَوِيِّ\nأَيْنَ سَتُصَلِّي الْجُمُعَةَ ؟",
+              "fr": "Pour prier dans la Mosquée du Prophète. Où prieras-tu le Vendredi ?"
+            },
+            {
+              "speaker": "عصام",
+              "ar": "فِي الْمَسْجِدِ الْحَرَامِ إِنْ شَاءَ الله\nوَأَيْنَ سَتُصَلِّي الْجُمُعَةَ ؟",
+              "fr": "À la Mosquée Sacrée, si Dieu le veut. Et où prieras-tu le Vendredi ?"
+            },
+            {
+              "speaker": "صالح",
+              "ar": "فِي الْمَسْجِدِ النَّبَوِيِّ إِنْ شَاءَ الله",
+              "fr": "À la Mosquée du Prophète, si Dieu le veut."
+            },
+            {
+              "speaker": "عصام",
+              "ar": "كَيْفَ سَتُسَافِرُ إِلَى الْمَدِينَةِ ؟",
+              "fr": "Comment voyageras-tu vers Médine ?"
+            },
+            {
+              "speaker": "صالح",
+              "ar": "أَرْكَبُ الطَّائِرَةَ",
+              "fr": "Je prends l'avion."
+            }
+          ]
+        },
+        {
+          "id": "6.3",
+          "type": "dialogue",
+          "titleAr": "",
+          "titleFr": "",
+          "youtube": "https://www.youtube.com/embed/7qxWQjLsjHY",
+          "pdfPage": null,
+          "lines": [
+            {
+              "speaker": "صادق",
+              "ar": "هَذَا أَذَانُ الْعَصْرِ",
+              "fr": "C'est l'appel à la prière du Asr."
+            },
+            {
+              "speaker": "صابر",
+              "ar": "هَيَّا بِنَا إِلَى الْمَسْجِدِ",
+              "fr": "Allons à la mosquée."
+            },
+            {
+              "speaker": "صادق",
+              "ar": "أَنَا أُصَلِّي فِي الْبَيْتِ",
+              "fr": "Moi, je prie à la maison."
+            },
+            {
+              "speaker": "صابر",
+              "ar": "الصَّلاةُ فِي الْمَسْجِدِ أَفْضَلُ",
+              "fr": "La prière à la mosquée est meilleure."
+            },
+            {
+              "speaker": "صادق",
+              "ar": "الْمَسْجِدُ بَعِيدٌ",
+              "fr": "La mosquée est loin."
+            },
+            {
+              "speaker": "صابر",
+              "ar": "الْمَسْجِدُ قَرِيبٌ. هَلْ أَنْتَ مَرِيضٌ ؟",
+              "fr": "La mosquée est proche. Es-tu malade ?"
+            },
+            {
+              "speaker": "صادق",
+              "ar": "لا، أَنَا بِخَيْرٍ",
+              "fr": "Non, je vais bien."
+            },
+            {
+              "speaker": "صابر",
+              "ar": "أَنْتَ كَسْلانُ",
+              "fr": "Tu es paresseux."
+            },
+            {
+              "speaker": "صادق",
+              "ar": "هَذَا صَحِيحٌ. آسِفٌ",
+              "fr": "C'est vrai. Désolé."
+            },
+            {
+              "speaker": "صابر",
+              "ar": "أَنَا ذَاهِبٌ إِلَى الْمَسْجِدِ",
+              "fr": "Moi, je vais à la mosquée."
+            },
+            {
+              "speaker": "صادق",
+              "ar": "انْتَظِرْ، أَنَا ذَاهِبٌ مَعَكَ",
+              "fr": "Attends, je viens avec toi."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "titleAr": "الدراسة",
+      "titleFr": "Les Études",
+      "items": [
+        {
+          "id": "7.1",
+          "type": "dialogue",
+          "titleAr": "",
+          "titleFr": "",
+          "youtube": "https://www.youtube.com/embed/f3owgXyjLDw",
+          "pdfPage": null,
+          "lines": [
+            {
+              "speaker": "غانم",
+              "ar": "انْظُرْ إِلَى اللَّوْحَةِ، اقْرَأِ الْجَدْوَلَ الدِّرَاسِيَّ",
+              "fr": "Regarde le tableau, lis l'emploi du temps."
+            },
+            {
+              "speaker": "غالب",
+              "ar": "الدِّرَاسَةُ خَمْسَةُ أَيَّامٍ فِي الأُسْبُوعِ",
+              "fr": "Les cours sont cinq jours par semaine."
+            },
+            {
+              "speaker": "غانم",
+              "ar": "نَعَمْ، يَوْمُ السَّبْتِ، وَيَوْمُ الأَحَدِ، وَيَوْمُ الاثْنَيْنِ، وَيَوْمُ الثُّلاثَاءِ، وَيَوْمُ الأَرْبِعَاءِ",
+              "fr": "Oui, samedi, dimanche, lundi, mardi et mercredi."
+            },
+            {
+              "speaker": "غالب",
+              "ar": "الْعُطْلَةُ يَوْمُ الْخَمِيسِ وَيَوْمُ الْجُمُعَةِ",
+              "fr": "Le congé est jeudi et vendredi."
+            },
+            {
+              "speaker": "غانم",
+              "ar": "اكْتُبِ الْمَوَادَّ الدِّرَاسِيَّةَ",
+              "fr": "Écris les matières scolaires."
+            },
+            {
+              "speaker": "غالب",
+              "ar": "الثَّقَافَةُ الإِسْلامِيَّةُ، وَاللُّغَةُ الْعَرَبِيَّةُ، وَالرِّيَاضِيَّاتُ، وَالْعُلُومُ، وَالْحَاسُوبُ",
+              "fr": "La culture islamique, l'arabe, les maths, les sciences, l'informatique."
+            },
+            {
+              "speaker": "غانم",
+              "ar": "مَتَى تَبْدَأُ الاخْتِبَارَاتُ ؟",
+              "fr": "Quand commencent les examens ?"
+            },
+            {
+              "speaker": "غالب",
+              "ar": "فِي شَهْرِ شَعْبَانَ",
+              "fr": "Au mois de Cha'ban."
+            },
+            {
+              "speaker": "غانم",
+              "ar": "وَمَتَى يَنْ تَهِي الْعَامُ الدِّرَاسِيُّ ؟",
+              "fr": "Et quand finit l'année scolaire ?"
+            },
+            {
+              "speaker": "غالب",
+              "ar": "فِي شَهْرِ رَمَضَانَ",
+              "fr": "Au mois de Ramadan."
+            },
+            {
+              "speaker": "غانم",
+              "ar": "الْعُطْلَةُ ثَلاثَةُ أَشْهُرٍ",
+              "fr": "Les vacances durent trois mois."
+            },
+            {
+              "speaker": "غالب",
+              "ar": "الْحَمْدُ للهِ، الْعُطْلَةُ طَوِيلَةٌ\nبَدَأَتِ الْحِصَّةُ، وَجَاءَ الْمُعَلِّمُ\nهَيَّا بِنَا إِلَى الصَّفِّ",
+              "fr": "Louange à Dieu, les vacances sont longues. Le cours a commencé, et le professeur est arrivé. Allons en classe."
+            },
+            {
+              "speaker": "غانم",
+              "ar": "هَيَّا بِنَا",
+              "fr": "Allons-y."
+            }
+          ]
+        },
+        {
+          "id": "7.2",
+          "type": "dialogue",
+          "titleAr": "",
+          "titleFr": "",
+          "youtube": "https://www.youtube.com/embed/NY75tONaxs0",
+          "pdfPage": null,
+          "lines": [
+            {
+              "speaker": "ندى",
+              "ar": "السَّلامُ عَلَيْكُم",
+              "fr": "Que la paix soit sur vous."
+            },
+            {
+              "speaker": "إلهام",
+              "ar": "وَعَلَيْكُمُ السَّلام",
+              "fr": "Et sur vous la paix."
+            },
+            {
+              "speaker": "ندى",
+              "ar": "اسْمِي نَدَى، أَنَا سُورِيَّةٌ",
+              "fr": "Je m'appelle Nada, je suis Syrienne."
+            },
+            {
+              "speaker": "إلهام",
+              "ar": "اسْمِي إِلْهَام، أَنَا سُعُودِيَّةٌ",
+              "fr": "Je m'appelle Ilham, je suis Saoudienne."
+            },
+            {
+              "speaker": "ندى",
+              "ar": "أَنَا طَالِبَةٌ فِي جَامِعَةِ دِمَشْقَ",
+              "fr": "Je suis étudiante à l'Université de Damas."
+            },
+            {
+              "speaker": "إلهام",
+              "ar": "أَنَا طَالِبَةٌ فِي جَامِعَةِ أُمِّ الْقُرَى",
+              "fr": "Je suis étudiante à l'Université Umm Al-Qura."
+            },
+            {
+              "speaker": "ندى",
+              "ar": "فِي أَيِّ كُلِّيَّةٍ تَدْرُسِينَ ؟",
+              "fr": "Dans quelle faculté étudies-tu ?"
+            },
+            {
+              "speaker": "إلهام",
+              "ar": "أَدْرُسُ فِي كُلِّيَّةِ التَّرْبِيَةِ\nوَفِي أَيِّ كُلِّيَّةٍ تَدْرُسِينَ أَنْتِ ؟",
+              "fr": "J'étudie à la faculté de pédagogie. Et dans quelle faculté étudies-tu toi ?"
+            },
+            {
+              "speaker": "ندى",
+              "ar": "أَدْرُسُ فِي كُلِّيَّةِ الطِّبِّ",
+              "fr": "J'étudie à la faculté de médecine."
+            },
+            {
+              "speaker": "إلهام",
+              "ar": "سَأَكُونُ مُدَرِّسَةً إِنْ شَاءَ الله",
+              "fr": "Je serai enseignante, inchallah."
+            },
+            {
+              "speaker": "ندى",
+              "ar": "وَسَأَكُونُ طَبِيبَةً إِنْ شَاءَ الله",
+              "fr": "Et je serai médecin, inchallah."
+            }
+          ]
+        },
+        {
+          "id": "7.3",
+          "type": "dialogue",
+          "titleAr": "",
+          "titleFr": "",
+          "youtube": "https://www.youtube.com/embed/NY75tONaxs0",
+          "pdfPage": null,
+          "lines": [
+            {
+              "speaker": "قاسم",
+              "ar": "أَيْنَ تَذْهَبُ يَا غَسَّانُ ؟",
+              "fr": "Où vas-tu Ghassan ?"
+            },
+            {
+              "speaker": "غسان",
+              "ar": "أَذْهَبُ إِلَى الْمَدْرَسَةِ",
+              "fr": "Je vais à l'école."
+            },
+            {
+              "speaker": "قاسم",
+              "ar": "الْوَقْتُ مُبَكِّرٌ. السَّاعَةُ الآنَ السَّادِسَةُ صَبَاحاً",
+              "fr": "Il est tôt. Il est maintenant six heures du matin."
+            },
+            {
+              "speaker": "غسان",
+              "ar": "الْمَدْرَسَةُ بَعِيدَةٌ عَنِ الْبَيْتِ",
+              "fr": "L'école est loin de la maison."
+            },
+            {
+              "speaker": "قاسم",
+              "ar": "مَتَى يَبْدَأُ الْيَوْمُ الدِّرَاسِيُّ ؟",
+              "fr": "Quand commence la journée scolaire ?"
+            },
+            {
+              "speaker": "غسان",
+              "ar": "يَبْدَأُ السَّاعَةَ السَّابِعَةَ صَبَاحاً",
+              "fr": "Elle commence à sept heures du matin."
+            },
+            {
+              "speaker": "قاسم",
+              "ar": "هَلْ تَذْهَبُ بِالْحَافِلَةِ ؟",
+              "fr": "Y vas-tu en bus ?"
+            },
+            {
+              "speaker": "غسان",
+              "ar": "لا، أَذْهَبُ بِالسَّيَّارَةِ",
+              "fr": "Non, j'y vais en voiture."
+            },
+            {
+              "speaker": "قاسم",
+              "ar": "مَتَى يَنْ تَهِي الْيَوْمُ الدِّرَاسِيُّ ؟",
+              "fr": "Quand finit la journée scolaire ?"
+            },
+            {
+              "speaker": "غسان",
+              "ar": "يَنْ تَهِي السَّاعَةَ الْوَاحِدَةَ ظُهْراً",
+              "fr": "Elle finit à une heure de l'après-midi."
+            },
+            {
+              "speaker": "قاسم",
+              "ar": "كَمْ حِصَّةً تَدْرُسُ فِي الْيَوْمِ ؟",
+              "fr": "Combien de cours étudies-tu par jour ?"
+            },
+            {
+              "speaker": "غسان",
+              "ar": "أَدْرُسُ سِتَّ حِصَصٍ فِي الْيَوْمِ",
+              "fr": "J'étudie six cours par jour."
+            },
+            {
+              "speaker": "قاسم",
+              "ar": "مَاذَا تَفْعَلُ فِي الاسْتِرَاحَةِ ؟",
+              "fr": "Que fais-tu pendant la récréation ?"
+            },
+            {
+              "speaker": "غسان",
+              "ar": "أَذْهَبُ إِلَى الْمَكْتَبَةِ أَوْ إِلَى الْمُخْتَبَرِ",
+              "fr": "Je vais à la bibliothèque ou au laboratoire."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "titleAr": "العمل",
+      "titleFr": "Le Travail",
+      "items": [
+        {
+          "id": "8.1",
+          "type": "dialogue",
+          "titleAr": "",
+          "titleFr": "",
+          "youtube": "https://www.youtube.com/embed/CxgCg-nRS54",
+          "pdfPage": null,
+          "lines": [
+            {
+              "speaker": "عثمان",
+              "ar": "أَعْمَلُ طَبِيباً، مَاذَا تَعْمَلُ أَنْتَ ؟",
+              "fr": "Je travaille comme médecin, que fais-tu comme travail ?"
+            },
+            {
+              "speaker": "علي",
+              "ar": "أَعْمَلُ مُهَنْدِساً",
+              "fr": "Je travaille comme ingénieur."
+            },
+            {
+              "speaker": "عثمان",
+              "ar": "أَيْنَ تَعْمَلُ ؟",
+              "fr": "Où travailles-tu ?"
+            },
+            {
+              "speaker": "علي",
+              "ar": "أَعْمَلُ فِي شَرِكَةٍ، وَأَيْنَ تَعْمَلُ أَنْتَ ؟",
+              "fr": "Je travaille dans une entreprise, et où travailles-tu toi ?"
+            },
+            {
+              "speaker": "عثمان",
+              "ar": "أَعْمَلُ فِي الْمُسْتَشْفَى",
+              "fr": "Je travaille à l'hôpital."
+            },
+            {
+              "speaker": "علي",
+              "ar": "كَمْ سَاعَةً تَعْمَلُ فِي الْيَوْمِ ؟",
+              "fr": "Combien d'heures travailles-tu par jour ?"
+            },
+            {
+              "speaker": "عثمان",
+              "ar": "أَعْمَلُ ثَمَانِيَ سَاعَاتٍ فِي الْيَوْمِ\nوَكَمْ سَاعَةً تَعْمَلُ أَنْتَ ؟",
+              "fr": "Je travaille huit heures par jour. Et combien d'heures travailles-tu toi ?"
+            },
+            {
+              "speaker": "علي",
+              "ar": "أَعْمَلُ سَبْعَ سَاعَاتٍ",
+              "fr": "Je travaille sept heures."
+            },
+            {
+              "speaker": "عثمان",
+              "ar": "هَلْ تُحِبُّ عَمَلَكَ ؟",
+              "fr": "Aimes-tu ton travail ?"
+            },
+            {
+              "speaker": "علي",
+              "ar": "نَعَمْ، أُحِبُّ عَمَلِي",
+              "fr": "Oui, j'aime mon travail."
+            },
+            {
+              "speaker": "عثمان",
+              "ar": "وَأَنَا أُحِبُّ عَمَلِي أَيْضاً",
+              "fr": "Et moi j'aime mon travail aussi."
+            }
+          ]
+        },
+        {
+          "id": "8.2",
+          "type": "dialogue",
+          "titleAr": "",
+          "titleFr": "",
+          "youtube": "https://www.youtube.com/embed/CxgCg-nRS54",
+          "pdfPage": null,
+          "lines": [
+            {
+              "speaker": "الطالب 1",
+              "ar": "مَاذَا سَنَعْمَلُ بَعْدَ الدِّرَاسَةِ ؟",
+              "fr": "Que ferons-nous après les études ?"
+            },
+            {
+              "speaker": "الطالب 2",
+              "ar": "أَنَا أَدْرُسُ الطِّبَّ فِي كُلِّيَّةِ الطِّبِّ\nسَأَعْمَلُ طَبِيباً إِنْ شَاءَ الله",
+              "fr": "J'étudie la médecine à la faculté de médecine. Je travaillerai comme médecin, inchallah."
+            },
+            {
+              "speaker": "الطالب 3",
+              "ar": "أَنَا أَدْرُسُ الصَّيْدَلَةَ فِي كُلِّيَّةِ الصَّيْدَلَةِ\nسَأَعْمَلُ صَيْدَلِيّاً إِنْ شَاءَ الله",
+              "fr": "J'étudie la pharmacie à la faculté de pharmacie. Je travaillerai comme pharmacien, inchallah."
+            },
+            {
+              "speaker": "الطالب 4",
+              "ar": "أَنَا أَدْرُسُ التَّمْرِيضَ فِي كُلِّيَّةِ التَّمْرِيضِ\nسَأَعْمَلُ مُمَرِّضاً إِنْ شَاءَ الله",
+              "fr": "J'étudie les soins infirmiers à la faculté d'infirmiers. Je travaillerai comme infirmier, inchallah."
+            },
+            {
+              "speaker": "الطالب 5",
+              "ar": "أَنَا أَدْرُسُ الْهَنْدَسَةَ فِي كُلِّيَّةِ الْهَنْدَسَةِ\nسَأَعْمَلُ مُهَنْدِساً إِنْ شَاءَ الله",
+              "fr": "J'étudie l'ingénierie à la faculté d'ingénierie. Je travaillerai comme ingénieur, inchallah."
+            },
+            {
+              "speaker": "الطالب 6",
+              "ar": "أَنَا أَدْرُسُ الطَّيَرَانَ فِي كُلِّيَّةِ الطَّيَرَانِ\nسَأَعْمَلُ طَيَّاراً إِنْ شَاءَ الله",
+              "fr": "J'étudie l'aviation à la faculté d'aviation. Je travaillerai comme pilote, inchallah."
+            },
+            {
+              "speaker": "الطالب 1",
+              "ar": "أَنَا أَدْرُسُ التَّرْبِيَةَ فِي كُلِّيَّةِ التَّرْبِيَةِ\nسَأَعْمَلُ مُدَرِّساً إِنْ شَاءَ الله",
+              "fr": "J'étudie l'éducation à la faculté de pédagogie. Je travaillerai comme enseignant, inchallah."
+            }
+          ]
+        },
+        {
+          "id": "8.3",
+          "type": "dialogue",
+          "titleAr": "",
+          "titleFr": "",
+          "youtube": "https://www.youtube.com/embed/CxgCg-nRS54",
+          "pdfPage": null,
+          "lines": [
+            {
+              "speaker": "مريم",
+              "ar": "أَنَا مُدَرِّسَةٌ. مَا مِهْنَتُكِ ؟",
+              "fr": "Je suis enseignante. Quel est ton métier ?"
+            },
+            {
+              "speaker": "زينب",
+              "ar": "أَنَا مُدَرِّسَةٌ أَيْضاً",
+              "fr": "Je suis enseignante aussi."
+            },
+            {
+              "speaker": "مريم",
+              "ar": "فِي أَيِّ مَرْحَلَةٍ تُدَرِّسِينَ ؟",
+              "fr": "Dans quel niveau enseignes-tu ?"
+            },
+            {
+              "speaker": "زينب",
+              "ar": "أُدَرِّسُ فِي الْمَرْحَلَةِ الابْتِدَائِيَّةِ\nوَفِي أَيِّ مَرْحَلَةٍ تُدَرِّسِينَ أَنْتِ ؟",
+              "fr": "J'enseigne au niveau primaire. Et dans quel niveau enseignes-tu toi ?"
+            },
+            {
+              "speaker": "مريم",
+              "ar": "أُدَرِّسُ فِي الْمَرْحَلَةِ الْمُتَوَسِّطَةِ",
+              "fr": "J'enseigne au niveau moyen (collège)."
+            },
+            {
+              "speaker": "زينب",
+              "ar": "هَلْ لَكِ أَطْفَالٌ ؟",
+              "fr": "As-tu des enfants ?"
+            },
+            {
+              "speaker": "مريم",
+              "ar": "نَعَمْ، لِي أَطْفَالٌ",
+              "fr": "Oui, j'ai des enfants."
+            },
+            {
+              "speaker": "زينب",
+              "ar": "كَمْ طِفْلاً لَكِ ؟",
+              "fr": "Combien d'enfants as-tu ?"
+            },
+            {
+              "speaker": "مريم",
+              "ar": "لِي خَمْسَةُ أَطْفَالٍ",
+              "fr": "J'ai cinq enfants."
+            },
+            {
+              "speaker": "زينب",
+              "ar": "هَلْ تُحِبِّينَ عَمَلَكِ ؟",
+              "fr": "Aimes-tu ton travail ?"
+            },
+            {
+              "speaker": "مريم",
+              "ar": "نَعَمْ، أُحِبُّ عَمَلِي",
+              "fr": "Oui, j'aime mon travail."
+            },
+            {
+              "speaker": "زينب",
+              "ar": "وَأَنَا أُحِبُّ عَمَلِي أَيْضاً",
+              "fr": "Et moi j'aime mon travail aussi."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "titleAr": "التسوق",
+      "titleFr": "Le Shopping",
+      "items": [
+        {
+          "id": "9.1",
+          "type": "dialogue",
+          "titleAr": "",
+          "titleFr": "",
+          "youtube": "https://www.youtube.com/embed/cvZbvvh3EBU",
+          "pdfPage": null,
+          "lines": [
+            {
+              "speaker": "البائع",
+              "ar": "أَهْلاً وسَهْلاً",
+              "fr": "Bienvenue."
+            },
+            {
+              "speaker": "الطالب",
+              "ar": "أُرِيدُ مُعْجَماً مِنْ فَضْلِكَ",
+              "fr": "Je voudrais un dictionnaire s'il vous plaît."
+            },
+            {
+              "speaker": "البائع",
+              "ar": "أَيَّ مُعْجَمٍ تُرِيدُ ؟",
+              "fr": "Quel dictionnaire voulez-vous ?"
+            },
+            {
+              "speaker": "الطالب",
+              "ar": "أُرِيدُ الْمُعْجَمَ العَرَبِيَّ",
+              "fr": "Je veux le dictionnaire arabe."
+            },
+            {
+              "speaker": "البائع",
+              "ar": "تَفَضَّلِ المُعْجَمَ العَرَبِيَّ\nوماذا تُرِيدُ أَيْضاً ؟",
+              "fr": "Voici le dictionnaire arabe. Et que voulez-vous aussi ?"
+            },
+            {
+              "speaker": "الطالب",
+              "ar": "أُريدُ كِتابَ القِرَاءَةِ ، وكِتابَ القَوَاعِدِ",
+              "fr": "Je veux le livre de lecture et le livre de grammaire."
+            },
+            {
+              "speaker": "البائع",
+              "ar": "هَذا كِتابُ القِراءَةِ ، وَهَذَا كِتَابُ القَوَاعِدِ",
+              "fr": "Voici le livre de lecture, et voici le livre de grammaire."
+            },
+            {
+              "speaker": "الطالب",
+              "ar": "أُريدُ دَفْتَراً وقَلَماً",
+              "fr": "Je veux un cahier et un stylo."
+            },
+            {
+              "speaker": "البائع",
+              "ar": "تَفَضَّلِ الدَّفْتَرَ والقَلَمَ ، هَلْ تُرِيدُ شَيْئاً آخَرَ ؟",
+              "fr": "Voici le cahier et le stylo. Voulez-vous autre chose ?"
+            },
+            {
+              "speaker": "الطالب",
+              "ar": "لا ، وشكراً",
+              "fr": "Non, merci."
+            },
+            {
+              "speaker": "البائع",
+              "ar": "المَطْلُوبُ ثَلاثُونَ رِيالاً",
+              "fr": "Le total est de trente riyals."
+            },
+            {
+              "speaker": "الطالب",
+              "ar": "ماذا تَقولُ ؟ ثَلاثونَ رِيالاً !",
+              "fr": "Que dites-vous ? Trente riyals !"
+            },
+            {
+              "speaker": "البائع",
+              "ar": "نَعَمْ ، ثَلاثون ريالاً",
+              "fr": "Oui, trente riyals."
+            },
+            {
+              "speaker": "الطالب",
+              "ar": "تَفَضَّلْ، هَذِهِ ثَلَاثُونَ رِيالاً",
+              "fr": "Tenez, voici trente riyals."
+            }
+          ]
+        },
+        {
+          "id": "9.2",
+          "type": "dialogue",
+          "titleAr": "",
+          "titleFr": "",
+          "youtube": "https://www.youtube.com/embed/cvZbvvh3EBU",
+          "pdfPage": null,
+          "lines": [
+            {
+              "speaker": "البائع",
+              "ar": "مَرْحَباً ، أَيَّ خِدْمَةٍ",
+              "fr": "Bonjour (Bienvenue), puis-je vous aider ?"
+            },
+            {
+              "speaker": "المرأة",
+              "ar": "أُريدُ سَمَكاً ولَحْماً ودجاجاً",
+              "fr": "Je veux du poisson, de la viande et du poulet."
+            },
+            {
+              "speaker": "البائع",
+              "ar": "تَفَضَّلِي السَّمَكَ وَاللَّحْمَ وَالدَّجَاجَ\nوماذا تريدين أيضاً ؟",
+              "fr": "Voici le poisson, la viande et le poulet. Et que voulez-vous aussi ?"
+            },
+            {
+              "speaker": "المرأة",
+              "ar": "أريد خياراً وبَصَلاً وطَماطم",
+              "fr": "Je veux des concombres, des oignons et des tomates."
+            },
+            {
+              "speaker": "البائع",
+              "ar": "تفضّلي الخيار والبَصَلَ والطماطم. وماذا تريدين أيضاً ؟",
+              "fr": "Voici les concombres, oignons et tomates. Et que voulez-vous aussi ?"
+            },
+            {
+              "speaker": "المرأة",
+              "ar": "أُريدُ سُكَّراً وشاياً وبُنّاً",
+              "fr": "Je veux du sucre, du thé et du café (grains/moulu)."
+            },
+            {
+              "speaker": "البائع",
+              "ar": "تَفَضَّلي... هَلْ تُرِيدِينَ شَيْئاً آخَرَ ؟",
+              "fr": "Voici... Voulez-vous autre chose ?"
+            },
+            {
+              "speaker": "المرأة",
+              "ar": "نَعَمْ ، طَبَقَ بَيْضٍ ، وعُلبَةَ مِلْحٍ",
+              "fr": "Oui, un plateau d'œufs et une boîte de sel."
+            },
+            {
+              "speaker": "البائع",
+              "ar": "هَذا طَبَقُ البَيْضِ، وَهَذِهِ عُلْبَةُ المِلْحِ. المَطْلُوبُ ثَمانونَ ديناراً",
+              "fr": "Voici... Le total est de quatre-vingts dinars."
+            },
+            {
+              "speaker": "المرأة",
+              "ar": "تَفَضَّلْ ، هَذِهِ ثَمانون ديناراً",
+              "fr": "Tenez, voici quatre-vingts dinars."
+            }
+          ]
+        },
+        {
+          "id": "9.3",
+          "type": "dialogue",
+          "titleAr": "",
+          "titleFr": "",
+          "youtube": "https://www.youtube.com/embed/cvZbvvh3EBU",
+          "pdfPage": null,
+          "lines": [
+            {
+              "speaker": "البائع",
+              "ar": "تَفَضَّلْ ، أَيَّ خِدْمَة",
+              "fr": "Entrez, puis-je vous aider ?"
+            },
+            {
+              "speaker": "المشتري",
+              "ar": "أُرِيدُ قَميصاً لَو سَمَحْتَ",
+              "fr": "Je voudrais une chemise s'il vous plaît."
+            },
+            {
+              "speaker": "البائع",
+              "ar": "تَفَضَّلْ هُنا ، هذا قِسْمُ القُمْصَانِ\nهَذَا قَمِيصٌ أَبْيَضُ، وهَذَا أَصْفَرُ، وهَذَا أَزْرَقُ، وهَذَا أَحْمَرُ، وهَذَا أَسْوَدُ",
+              "fr": "Venez par ici, c'est le rayon des chemises. Voici une chemise blanche, une jaune, une bleue, une rouge et une noire."
+            },
+            {
+              "speaker": "المشتري",
+              "ar": "بِكُم القميص ؟",
+              "fr": "Combien coûte la chemise ?"
+            },
+            {
+              "speaker": "البائع",
+              "ar": "القَمِيصُ بِعِشْرِينَ ديناراً\nأَيَّ قَميصٍ تُريدُ ؟",
+              "fr": "La chemise est à vingt dinars. Quelle chemise voulez-vous ?"
+            },
+            {
+              "speaker": "المشتري",
+              "ar": "سَأَشْتَرِي القَمِيصَ الأَزْرَقَ",
+              "fr": "J'achèterai la chemise bleue."
+            },
+            {
+              "speaker": "البائع",
+              "ar": "هَذَا هُوَ القَمِيصُ الْأَزْرَقُ",
+              "fr": "Voici la chemise bleue."
+            },
+            {
+              "speaker": "المشتري",
+              "ar": "شُكْراً",
+              "fr": "Merci."
+            },
+            {
+              "speaker": "البائع",
+              "ar": "لَدَيْنَا أَثْوابٌ جَمِيلَةٌ",
+              "fr": "Nous avons de beaux vêtements (thobes)."
+            },
+            {
+              "speaker": "المشتري",
+              "ar": "بِكُمِ الثَّوْبُ ؟",
+              "fr": "Combien coûte le thobe ?"
+            },
+            {
+              "speaker": "البائع",
+              "ar": "الثَّوْبُ بِثَلاثين ديناراً",
+              "fr": "Le thobe est à trente dinars."
+            },
+            {
+              "speaker": "المشتري",
+              "ar": "أُرِيدُ الثَّوْبَ الأبيض",
+              "fr": "Je veux le thobe blanc."
+            },
+            {
+              "speaker": "البائع",
+              "ar": "تَفَضَّلِ الثَّوْبَ الأَبْيَضَ ، المَطْلُوبُ خَمْسُونَ ديناراً",
+              "fr": "Voici le thobe blanc. Le total est de cinquante dinars."
+            },
+            {
+              "speaker": "المشتري",
+              "ar": "تَفَضَّلْ ، هَذِهِ خَمْسُونَ ديناراً",
+              "fr": "Tenez, voici cinquante dinars."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "titleAr": "الجو",
+      "titleFr": "La Météo",
+      "items": [
+        {
+          "id": "10.1",
+          "type": "dialogue",
+          "titleAr": "",
+          "titleFr": "",
+          "youtube": "https://www.youtube.com/embed/cvZbvvh3EBU",
+          "pdfPage": null,
+          "lines": [
+            {
+              "speaker": "الزوجة",
+              "ar": "كَيْفَ الجَوُّ في الخارج ؟",
+              "fr": "Quel temps fait-il dehors ?"
+            },
+            {
+              "speaker": "الزوج",
+              "ar": "السَّمَاءُ تُمْطِرُ الآنَ : هَذَا فَصْلُ الخَرِيفِ",
+              "fr": "Il pleut maintenant. C'est l'automne."
+            },
+            {
+              "speaker": "الزوجة",
+              "ar": "ثَوْبُكَ مُبْتَلٌ ، أَيْنَ المِعْطَفُ ؟",
+              "fr": "Ton vêtement est mouillé, où est le manteau ?"
+            },
+            {
+              "speaker": "الزوج",
+              "ar": "تَرَكْتُهُ في الشركة",
+              "fr": "Je l'ai laissé à l'entreprise."
+            },
+            {
+              "speaker": "الزوجة",
+              "ar": "وَأَيْنَ المِظَلَّةُ ؟",
+              "fr": "Et où est le parapluie ?"
+            },
+            {
+              "speaker": "الزوج",
+              "ar": "تَرَكْتُها في السَّيَّارَةِ",
+              "fr": "Je l'ai laissé dans la voiture."
+            },
+            {
+              "speaker": "الزوجة",
+              "ar": "اشْرَبْ هَذَا الشَّايَ الدَّافِئَ",
+              "fr": "Bois ce thé chaud."
+            },
+            {
+              "speaker": "الزوج",
+              "ar": "بارَكَ اللهُ فيكِ",
+              "fr": "Que Dieu te bénisse."
+            },
+            {
+              "speaker": "الزوجة",
+              "ar": "هَلْ نَخْرُجُ إلى السوق الآن ؟",
+              "fr": "Sortons-nous au marché maintenant ?"
+            },
+            {
+              "speaker": "الزوج",
+              "ar": "الماءُ كَثِيرٌ جِداً في الخَارِجِ",
+              "fr": "Il y a beaucoup d'eau dehors."
+            },
+            {
+              "speaker": "الزوجة",
+              "ar": "ماذا نَفْعَلُ ؟",
+              "fr": "Que faisons-nous ?"
+            },
+            {
+              "speaker": "الزوج",
+              "ar": "نَبْقَى اللَّيْلَةَ فِي البَيْتِ",
+              "fr": "Nous restons à la maison ce soir."
+            },
+            {
+              "speaker": "الزوجة",
+              "ar": "وَنَذْهَبُ غَداً إلى السوق ، إِنْ شَاءَ الله",
+              "fr": "Et nous irons au marché demain, si Dieu le veut."
+            },
+            {
+              "speaker": "الزوج",
+              "ar": "هَذِهِ فِكْرَةٌ طَيِّبَةٌ",
+              "fr": "C'est une bonne idée."
+            }
+          ]
+        },
+        {
+          "id": "10.2",
+          "type": "dialogue",
+          "titleAr": "",
+          "titleFr": "",
+          "youtube": "https://www.youtube.com/embed/cvZbvvh3EBU",
+          "pdfPage": null,
+          "lines": [
+            {
+              "speaker": "حسان",
+              "ar": "السَّلامُ عَلَيْكُم يا بَدْرُ. أَنا حَسّانُ ، أَتَكَلَّمُ مِنْ لَنْدَن",
+              "fr": "Paix sur toi Badr. Je suis Hassan, j'appelle de Londres."
+            },
+            {
+              "speaker": "بدر",
+              "ar": "وَعَلَيْكُم السَّلامُ يَا حَسّانُ\nكَيْفَ الجَوُّ فِي لَنْدَن ؟",
+              "fr": "Et sur toi la paix Hassan. Quel temps fait-il à Londres ?"
+            },
+            {
+              "speaker": "حسان",
+              "ar": "الجو بارد في لَنْدَن\nهَذا فَصْلُ الشَّتاءِ",
+              "fr": "Il fait froid à Londres. C'est l'hiver."
+            },
+            {
+              "speaker": "بدر",
+              "ar": "كَمْ دَرَجَةُ الحَرارَةِ فِي لَنْدَن ؟",
+              "fr": "Quelle est la température à Londres ?"
+            },
+            {
+              "speaker": "حسان",
+              "ar": "تَحْتَ الصِّفْرِ\nكَيْفَ الجَوُّ فِي الرِّياضِ ؟",
+              "fr": "En dessous de zéro. Quel temps fait-il à Riyad ?"
+            },
+            {
+              "speaker": "بدر",
+              "ar": "كان الجو حاراً، وَهُوَ الآنَ مُعْتَدِل",
+              "fr": "Il faisait chaud, et maintenant c'est tempéré."
+            },
+            {
+              "speaker": "حسان",
+              "ar": "كَمْ دَرَجَةُ الحَرارَةِ فِي الرِّياضِ ؟",
+              "fr": "Quelle est la température à Riyad ?"
+            },
+            {
+              "speaker": "بدر",
+              "ar": "دَرَجَةُ الحَرَارَةِ عِشْرُونَ",
+              "fr": "La température est de vingt."
+            },
+            {
+              "speaker": "حسان",
+              "ar": "هَلْ سَتَقْضِي العُطْلَةَ فِي لَنْدَنَ ؟",
+              "fr": "Vas-tu passer les vacances à Londres ?"
+            },
+            {
+              "speaker": "بدر",
+              "ar": "لا ، سأقضيها في تونس ، إن شاء الله",
+              "fr": "Non, je les passerai en Tunisie, inchallah."
+            }
+          ]
+        },
+        {
+          "id": "10.3",
+          "type": "dialogue",
+          "titleAr": "",
+          "titleFr": "",
+          "youtube": "https://www.youtube.com/embed/cvZbvvh3EBU",
+          "pdfPage": null,
+          "lines": [
+            {
+              "speaker": "خالد",
+              "ar": "الجَوُّ مُعْتَدِلٌ هَذِهِ الأَيَّامِ",
+              "fr": "Le temps est tempéré (doux) ces jours-ci."
+            },
+            {
+              "speaker": "حازم",
+              "ar": "هَذَا فَصْلُ الرَّبِيعِ",
+              "fr": "C'est le printemps."
+            },
+            {
+              "speaker": "خالد",
+              "ar": "الحَمْدُ لله ، ذَهَبَ الصَّيْفُ ، وَذَهَبَ الحَرُّ",
+              "fr": "Louange à Dieu, l'été est parti, et la chaleur est partie."
+            },
+            {
+              "speaker": "حازم",
+              "ar": "وَذَهَبَ الشَّتَاءُ ، وَذَهَبَ البَرْدُ",
+              "fr": "Et l'hiver est parti, et le froid est parti."
+            },
+            {
+              "speaker": "خالد",
+              "ar": "أَيْنَ نَقْضِي عُطْلَةَ الأُسْبُوعِ ؟",
+              "fr": "Où passons-nous le week-end ?"
+            },
+            {
+              "speaker": "حازم",
+              "ar": "نَذهَبُ إِلى الشَّاطِئِ",
+              "fr": "Nous allons à la plage."
+            },
+            {
+              "speaker": "خالد",
+              "ar": "الشَّاطِئُ بَعِيدٌ ، نَذهَبُ إِلى البَرِّ",
+              "fr": "La plage est loin, allons dans le désert (la campagne/terre ferme)."
+            },
+            {
+              "speaker": "حازم",
+              "ar": "هَذِهِ فِكْرَةٌ طَيِّبَةٌ ، نَذْهَبُ إِلى البَرِّ",
+              "fr": "C'est une bonne idée, allons dans le désert."
+            },
+            {
+              "speaker": "خالد",
+              "ar": "سَأُحْضِرُ الخَيْمَةَ وَالسَّجَادَةَ",
+              "fr": "J'apporterai la tente et le tapis."
+            },
+            {
+              "speaker": "حازم",
+              "ar": "سَأُحْضِرُ الطَّعَامَ وَالشَّرَابَ",
+              "fr": "J'apporterai la nourriture et les boissons."
+            },
+            {
+              "speaker": "خالد",
+              "ar": "أُسْرَتِي سَتَحْضُرُ مَعِي",
+              "fr": "Ma famille viendra avec moi."
+            },
+            {
+              "speaker": "حازم",
+              "ar": "وأُسْرَتِي سَتَحْضُرُ مَعِي أَيْضاً",
+              "fr": "Et ma famille viendra avec moi aussi."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "titleAr": "الناس والأماكن",
+      "titleFr": "Gens et Lieux",
+      "items": [
+        {
+          "id": "11.1",
+          "type": "dialogue",
+          "titleAr": "",
+          "titleFr": "",
+          "youtube": "https://www.youtube.com/embed/cvZbvvh3EBU",
+          "pdfPage": null,
+          "lines": [
+            {
+              "speaker": "ثابت",
+              "ar": "لماذا تَرَكْتَ العِراقَ ؟",
+              "fr": "Pourquoi as-tu quitté l'Irak ?"
+            },
+            {
+              "speaker": "حارث",
+              "ar": "انتَقَلَتِ الشَّرِكَةُ إِلى جُدَّةً ، وأنا مدير الشَّرِكَةِ هنا",
+              "fr": "La compagnie a déménagé à Jeddah, et je suis le directeur de la compagnie ici."
+            },
+            {
+              "speaker": "ثابت",
+              "ar": "كُنْتَ سَعيداً في العراق",
+              "fr": "Tu étais heureux en Irak."
+            },
+            {
+              "speaker": "حارث",
+              "ar": "هذا صَحِيحٌ، العِراقُ بَلَدٌ جَمِيلٌ ، ولي أصدقاء هناك",
+              "fr": "C'est vrai, l'Irak est un beau pays, et j'y ai des amis."
+            },
+            {
+              "speaker": "ثابت",
+              "ar": "ما رَأَيْكَ فِي جُدَّةَ ؟",
+              "fr": "Quel est ton avis sur Jeddah ?"
+            },
+            {
+              "speaker": "حارث",
+              "ar": "جُدَّةٌ مَدِينَةٌ كَبِيرَةٌ ، وجَمِيلَةٌ جداً",
+              "fr": "Jeddah est une grande ville, et très belle."
+            },
+            {
+              "speaker": "ثابت",
+              "ar": "كَيْفَ تَقْضِي الوَقْتَ فِي جُدَّةَ ؟",
+              "fr": "Comment passes-tu le temps à Jeddah ?"
+            },
+            {
+              "speaker": "حارث",
+              "ar": "أذهَبُ مَعَ الأُسْرَةِ إِلَى شَاطِئِ البَحْرِ",
+              "fr": "Je vais avec la famille au bord de la mer."
+            },
+            {
+              "speaker": "ثابت",
+              "ar": "وإلى أَيْنَ تَذهَبُ الآن ؟",
+              "fr": "Et où vas-tu maintenant ?"
+            },
+            {
+              "speaker": "حارث",
+              "ar": "أَذهَبُ إِلى مَكَّةَ : لِلْعُمْرَةِ والصلاة في المسجد الحرام",
+              "fr": "Je vais à La Mecque : pour la Omra et la prière à la Mosquée Sacrée."
+            },
+            {
+              "speaker": "ثابت",
+              "ar": "كَمْ تَسْتَغْرِقُ الرِّحْلَةُ إِلَى مَكَّةَ ؟",
+              "fr": "Combien de temps dure le voyage vers La Mecque ?"
+            },
+            {
+              "speaker": "حارث",
+              "ar": "تَسْتَغْرِقُ سَاعَةً واحِدَةً تَقْريباً",
+              "fr": "Cela prend environ une heure."
+            }
+          ]
+        },
+        {
+          "id": "11.2",
+          "type": "dialogue",
+          "titleAr": "",
+          "titleFr": "",
+          "youtube": "https://www.youtube.com/embed/cvZbvvh3EBU",
+          "pdfPage": null,
+          "lines": [
+            {
+              "speaker": "ليث",
+              "ar": "مِنْ أَيْنَ حَضَرْتَ ؟",
+              "fr": "D'où es-tu venu (arrivé) ?"
+            },
+            {
+              "speaker": "ثامر",
+              "ar": "حَضَرْتُ مِنَ اليَمَنِ، أَنَا يَمَنِيٌّ",
+              "fr": "Je suis venu du Yémen, je suis Yéménite."
+            },
+            {
+              "speaker": "ليث",
+              "ar": "ومَتى حَضَرْتَ مِنَ اليَمَنِ ؟",
+              "fr": "Et quand es-tu venu du Yémen ?"
+            },
+            {
+              "speaker": "ثامر",
+              "ar": "حَضَرْتُ قَبْلَ عَشْرِ سَنَوَاتٍ",
+              "fr": "Je suis venu il y a dix ans."
+            },
+            {
+              "speaker": "ليث",
+              "ar": "هَلْ مَعَكَ الْجِنْسِيَّةُ اليَمَنِيَّةُ ؟",
+              "fr": "As-tu la nationalité yéménite ?"
+            },
+            {
+              "speaker": "ثامر",
+              "ar": "نعم، ومعي جَوازُ السَّفَرِ اليَمَنِيُّ",
+              "fr": "Oui, et j'ai le passeport yéménite."
+            },
+            {
+              "speaker": "ليث",
+              "ar": "هَلْ حَضَرْتَ لِلعَمَلِ؟",
+              "fr": "Es-tu venu pour le travail ?"
+            },
+            {
+              "speaker": "ثامر",
+              "ar": "لا ، حَضَرْتُ للدراسة، وبَعْدَ الدَّرَاسَةِ تَزَوَّجْتُ",
+              "fr": "Non, je suis venu pour les études, et après les études je me suis marié."
+            },
+            {
+              "speaker": "ليث",
+              "ar": "وماذا تَعْمَلُ هُنا؟",
+              "fr": "Et que fais-tu (travailles-tu) ici ?"
+            },
+            {
+              "speaker": "ثامر",
+              "ar": "أنا أستاذ في الجامعة",
+              "fr": "Je suis professeur à l'université."
+            },
+            {
+              "speaker": "ليث",
+              "ar": "هَلْ تَزُورُ اليَمَنَ؟",
+              "fr": "Visites-tu le Yémen ?"
+            },
+            {
+              "speaker": "ثامر",
+              "ar": "نعم، أقضي العُطْلَةَ مَعَ الأَسْرَةِ فِي اليَمَنِ",
+              "fr": "Oui, je passe les vacances avec la famille au Yémen."
+            },
+            {
+              "speaker": "ليث",
+              "ar": "هَلْ أَنْتَ سَعِيدٌ هُنا ؟",
+              "fr": "Es-tu heureux ici ?"
+            },
+            {
+              "speaker": "ثامر",
+              "ar": "نَعَمْ ، والحَمْدُ لله",
+              "fr": "Oui, louange à Dieu."
+            }
+          ]
+        },
+        {
+          "id": "11.3",
+          "type": "dialogue",
+          "titleAr": "",
+          "titleFr": "",
+          "youtube": "https://www.youtube.com/embed/cvZbvvh3EBU",
+          "pdfPage": null,
+          "lines": [
+            {
+              "speaker": "أحمد",
+              "ar": "أَيْنَ تَسْكُنُ الآنَ يا بَدْرُ؟",
+              "fr": "Où habites-tu maintenant Badr ?"
+            },
+            {
+              "speaker": "بدر",
+              "ar": "أَسْكُنُ فِي القَرْيَةِ",
+              "fr": "J'habite au village."
+            },
+            {
+              "speaker": "أحمد",
+              "ar": "لماذا تَرَكْتَ المَدِينَةَ؟",
+              "fr": "Pourquoi as-tu quitté la ville ?"
+            },
+            {
+              "speaker": "بدر",
+              "ar": "القَرْيَةُ هَادِئَةٌ، والهواء نَقِيّ",
+              "fr": "Le village est calme, et l'air est pur."
+            },
+            {
+              "speaker": "أحمد",
+              "ar": "وَلَكِنْ فِي المَدِينَةِ جامعات، ومُسْتَشْفَياتٌ وشركات، وأسواق",
+              "fr": "Mais en ville il y a des universités, des hôpitaux, des entreprises et des marchés."
+            },
+            {
+              "speaker": "بدر",
+              "ar": "وفي المدينَةِ أَيْضًا ضَوْضَاءُ، وَتَلَوُّثٌ وازدحام",
+              "fr": "Et en ville il y a aussi du bruit, de la pollution et des embouteillages."
+            },
+            {
+              "speaker": "أحمد",
+              "ar": "لماذا تَسْكُنُ فِي القَرْيَةِ، وَأَنْتَ تَعْمَلُ فِي المدينة ؟",
+              "fr": "Pourquoi habites-tu au village, alors que tu travailles en ville ?"
+            },
+            {
+              "speaker": "بدر",
+              "ar": "لَيْسَ هُناكَ مُشْكِلَةٌ",
+              "fr": "Il n'y a pas de problème."
+            },
+            {
+              "speaker": "أحمد",
+              "ar": "كَيْفَ تَذْهَبُ إِلى المَدِينَةِ؟",
+              "fr": "Comment vas-tu en ville ?"
+            },
+            {
+              "speaker": "بدر",
+              "ar": "أَذْهَبُ بِالقِطار",
+              "fr": "J'y vais en train."
+            },
+            {
+              "speaker": "أحمد",
+              "ar": "كَمْ تَسْتَغْرِقُ الرِّحْلَةُ إِلى المَدِينَةِ ؟",
+              "fr": "Combien de temps dure le trajet vers la ville ?"
+            },
+            {
+              "speaker": "بدر",
+              "ar": "تَسْتَغْرِقُ سَاعَةً وَنِصْفَ السَّاعَةِ تَقْرِيباً",
+              "fr": "Cela prend environ une heure et demie."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "titleAr": "الهوايات",
+      "titleFr": "Les Loisirs",
+      "items": [
+        {
+          "id": "12.1",
+          "type": "dialogue",
+          "titleAr": "",
+          "titleFr": "",
+          "youtube": "https://www.youtube.com/embed/cvZbvvh3EBU",
+          "pdfPage": null,
+          "lines": [
+            {
+              "speaker": "شاكر",
+              "ar": "ما هوايَتُكَ يا شَريف ؟",
+              "fr": "Quel est ton hobby (passe-temps) Sharif ?"
+            },
+            {
+              "speaker": "شريف",
+              "ar": "هواياتي كثيرة: القراءة، والسَّفَرُ والمراسلة\nوما هواياتكَ أنتَ ؟",
+              "fr": "Mes loisirs sont nombreux : la lecture, le voyage et la correspondance. Et quels sont tes loisirs toi ?"
+            },
+            {
+              "speaker": "شاكر",
+              "ar": "هواياتي: الرياضة ، والرَّحْلاتُ والقِراءَةُ أَيْضًا",
+              "fr": "Mes loisirs : le sport, les excursions et la lecture aussi."
+            },
+            {
+              "speaker": "شريف",
+              "ar": "ماذا تقرأُ يا شاكر ؟",
+              "fr": "Que lis-tu Shaker ?"
+            },
+            {
+              "speaker": "شاكر",
+              "ar": "أقرأُ الكُتُبَ والمَجَلاتِ الإِسْلامِيَّةَ\nوماذا تَقرَأُ أَنْتَ؟",
+              "fr": "Je lis des livres et des magazines islamiques. Et que lis-tu toi ?"
+            },
+            {
+              "speaker": "شريف",
+              "ar": "أقرأُ الكُتُبَ الإِسْلامِيَّةَ ، والمَجَلاتِ العلمية",
+              "fr": "Je lis des livres islamiques et des magazines scientifiques."
+            },
+            {
+              "speaker": "شاكر",
+              "ar": "هَلْ لَدَيْكَ مَكَتَبَةٌ ؟",
+              "fr": "As-tu une bibliothèque ?"
+            },
+            {
+              "speaker": "شريف",
+              "ar": "نَعَمْ، لَدَيَّ مَكْتَبَةٌ كَبِيرَةٌ",
+              "fr": "Oui, j'ai une grande bibliothèque."
+            },
+            {
+              "speaker": "شاكر",
+              "ar": "كَمْ سَاعَةً تَقْرَأُ فِي اليَوْمِ؟",
+              "fr": "Combien d'heures lis-tu par jour ?"
+            },
+            {
+              "speaker": "شريف",
+              "ar": "أقرأُ ثَلاثَ ساعات تقريباً",
+              "fr": "Je lis environ trois heures."
+            },
+            {
+              "speaker": "شاكر",
+              "ar": "أنا أقرَأُ أَرْبَعَ ساعات في اليَوْمِ",
+              "fr": "Moi je lis quatre heures par jour."
+            },
+            {
+              "speaker": "شريف",
+              "ar": "القراءة هواية مفيدة",
+              "fr": "La lecture est un passe-temps utile."
+            }
+          ]
+        },
+        {
+          "id": "12.2",
+          "type": "dialogue",
+          "titleAr": "",
+          "titleFr": "",
+          "youtube": "https://www.youtube.com/embed/cvZbvvh3EBU",
+          "pdfPage": null,
+          "lines": [
+            {
+              "speaker": "شهاب",
+              "ar": "هَلْ زُرْتَ مَعْرِضَ الهوايَاتِ؟",
+              "fr": "As-tu visité l'exposition des loisirs ?"
+            },
+            {
+              "speaker": "شعيب",
+              "ar": "لَا ، مَا زُرْتُهُ، هَيَّا بِنَا إِلَيْهِ",
+              "fr": "Non, je ne l'ai pas visité, allons-y."
+            },
+            {
+              "speaker": "شهاب",
+              "ar": "هَذَا هُوَ مَعْرِضُ الهوايات",
+              "fr": "Voici l'exposition des loisirs."
+            },
+            {
+              "speaker": "شعيب",
+              "ar": "هَذِهِ هِوَايَاتٌ كَثِيرَةٌ جِدًا",
+              "fr": "Ce sont de très nombreux loisirs."
+            },
+            {
+              "speaker": "شهاب",
+              "ar": "هَذَا جَنَاحُ جَمْعِ الطَّوَابِعِ",
+              "fr": "C'est le pavillon (section) de la collection de timbres."
+            },
+            {
+              "speaker": "شعيب",
+              "ar": "هَذِهِ طَوابِعُ جَمِيلَةٌ. هَذَا طَابَعٌ هِنْدِيٌّ، وهَذا طَابَعٌ فَرَنْسي",
+              "fr": "Ce sont de beaux timbres. C'est un timbre indien, et c'est un timbre français."
+            },
+            {
+              "speaker": "شهاب",
+              "ar": "وهَذا جَناحُ الخَطِّ العربي",
+              "fr": "Et c'est le pavillon de la calligraphie arabe."
+            },
+            {
+              "speaker": "شعيب",
+              "ar": "هَذِهِ كَلِمَاتٌ بِخَطِّ النَّسْخِ، وَتِلكَ كَلِمَاتٌ بِخَطِّ الرقعة",
+              "fr": "Ce sont des mots en écriture Naskh, et ceux-là en écriture Ruq'ah."
+            },
+            {
+              "speaker": "شهاب",
+              "ar": "وهذا جَناحُ الصَّحافة",
+              "fr": "Et c'est le pavillon du journalisme."
+            },
+            {
+              "speaker": "شعيب",
+              "ar": "وَهَذِهِ صُحُفٌ بِجَمِيعِ اللُّغَاتِ",
+              "fr": "Et ce sont des journaux dans toutes les langues."
+            },
+            {
+              "speaker": "شهاب",
+              "ar": "وهذا جَناح التدبير المنزلي",
+              "fr": "Et c'est le pavillon de l'économie domestique."
+            },
+            {
+              "speaker": "شعيب",
+              "ar": "هَذا طَعَامٌ صِينِيُّ، وَهَذَا طَعَامٌ عَرَبِيٌّ",
+              "fr": "C'est de la nourriture chinoise, et c'est de la nourriture arabe."
+            },
+            {
+              "speaker": "شهاب",
+              "ar": "وهذا جَناح الرياضة",
+              "fr": "Et c'est le pavillon du sport."
+            },
+            {
+              "speaker": "شعيب",
+              "ar": "كُرَةُ القَدَم والسباحَةُ والفُرُوسِيَّةُ",
+              "fr": "Le football, la natation et l'équitation."
+            }
+          ]
+        },
+        {
+          "id": "12.3",
+          "type": "dialogue",
+          "titleAr": "",
+          "titleFr": "",
+          "youtube": "https://www.youtube.com/embed/cvZbvvh3EBU",
+          "pdfPage": null,
+          "lines": [
+            {
+              "speaker": "المدرسة",
+              "ar": "أَيَّ جَمْعِيَّةٍ تَخْتَارِينَ يا شَرِيفَةُ ؟",
+              "fr": "Quelle association (club) choisis-tu Charifa ?"
+            },
+            {
+              "speaker": "شريفة",
+              "ar": "أَخْتَارُ جَمْعِيَّةَ الصَّحَافَةِ",
+              "fr": "Je choisis l'association de journalisme."
+            },
+            {
+              "speaker": "المدرسة",
+              "ar": "أَيَّ جَمْعِيَّةٍ تَخْتَارِينَ يا شَادِيةُ ؟",
+              "fr": "Quelle association choisis-tu Shadia ?"
+            },
+            {
+              "speaker": "شادية",
+              "ar": "أَخْتَارُ جَمْعِيَّةَ الثَّقَافَةِ الإسلامية",
+              "fr": "Je choisis l'association de culture islamique."
+            },
+            {
+              "speaker": "المدرسة",
+              "ar": "أي جَمْعِيَّةٍ تَخْتَارِينَ يا شَيْمَاءُ ؟",
+              "fr": "Quelle association choisis-tu Shayma ?"
+            },
+            {
+              "speaker": "شيماء",
+              "ar": "أَخْتَارُ جَمعِيَّةَ الحاسوب",
+              "fr": "Je choisis l'association d'informatique."
+            },
+            {
+              "speaker": "المدرسة",
+              "ar": "أي جَمْعِيَّةِ تَخْتَارِينَ يا شَقْراء ؟",
+              "fr": "Quelle association choisis-tu Shaqra ?"
+            },
+            {
+              "speaker": "شقراء",
+              "ar": "أَخْتَارُ جَمْعِيَّةَ العُلومِ",
+              "fr": "Je choisis l'association des sciences."
+            },
+            {
+              "speaker": "المدرسة",
+              "ar": "أَي جَمْعِيَّةٍ تَخْتَارِينَ يَا شَمْسُ ؟",
+              "fr": "Quelle association choisis-tu Shams ?"
+            },
+            {
+              "speaker": "شمس",
+              "ar": "أَخْتَارُ جَمْعِيَّةَ اللُّغَةِ العَرَبِيَّةِ\nأَنَا أُحِبُّ الخَطَّ العَرَبِيَّ، وَلَدَيَّ آيَاتٌ بِخَطْ النَّسْخِ، وأحاديثُ بِخَط الرقعة",
+              "fr": "Je choisis l'association de langue arabe. J'aime la calligraphie arabe, et j'ai des versets en écriture Naskh et des hadiths en écriture Ruq'ah."
+            },
+            {
+              "speaker": "المدرسة",
+              "ar": "أَيَّ جَمْعِيَّةٍ تَخْتَارِينَ يا سَمِيرَةُ ؟",
+              "fr": "Quelle association choisis-tu Samira ?"
+            },
+            {
+              "speaker": "سميرة",
+              "ar": "أَخْتَارُ جَمْعِيَّةَ التَّدْبِيرِ المَنْزِلِيِّ\nأَنَا أُحِبُّ الطَّبْخَ وَالخِياطَةَ",
+              "fr": "Je choisis l'association d'économie domestique. J'aime la cuisine et la couture."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "titleAr": "السفر",
+      "titleFr": "Le Voyage",
+      "items": [
+        {
+          "id": "13.1",
+          "type": "dialogue",
+          "titleAr": "",
+          "titleFr": "",
+          "youtube": "https://www.youtube.com/embed/cvZbvvh3EBU",
+          "pdfPage": null,
+          "lines": [
+            {
+              "speaker": "الموظف",
+              "ar": "أَيَّ خِدمَةٍ ؟",
+              "fr": "Puis-je vous aider ?"
+            },
+            {
+              "speaker": "المسافر",
+              "ar": "لَدَيَّ حَجْزُ إلى جُدَّةَ، وأريد تأكيد الحجز",
+              "fr": "J'ai une réservation pour Jeddah, et je veux confirmer la réservation."
+            },
+            {
+              "speaker": "الموظف",
+              "ar": "هَلِ الحَجْزُ عَلَى الخُطوط السعودِيَّةِ ؟",
+              "fr": "Est-ce que la réservation est sur la Saudi Airlines ?"
+            },
+            {
+              "speaker": "المسافر",
+              "ar": "لا ، هُوَ على الخطوط الإندونيسية",
+              "fr": "Non, c'est sur les lignes indonésiennes."
+            },
+            {
+              "speaker": "الموظف",
+              "ar": "أَيْنَ التَّذاكِرُ ؟",
+              "fr": "Où sont les billets ?"
+            },
+            {
+              "speaker": "المسافر",
+              "ar": "هَذِهِ هِيَ التَّذاكِرُ : تَذْكِرَتِي، وَتَذْكِرَةُ زَوْجَتِي\nوتَذْكِرَةُ ابْنِي، وَتَذْكِرَةُ بِنْتِي",
+              "fr": "Voici les billets : mon billet, et le billet de ma femme. Et le billet de mon fils, et le billet de ma fille."
+            },
+            {
+              "speaker": "الموظف",
+              "ar": "وَأَيْنَ جَوازاتُ السَّفَرِ ؟",
+              "fr": "Et où sont les passeports ?"
+            },
+            {
+              "speaker": "المسافر",
+              "ar": "هَذِهِ هِيَ جَوازَاتُ السَّفَرِ",
+              "fr": "Voici les passeports."
+            },
+            {
+              "speaker": "الموظف",
+              "ar": "أَيْنَ تَأشِيرَةُ الخُرُوجِ ؟",
+              "fr": "Où est le visa de sortie ?"
+            },
+            {
+              "speaker": "المسافر",
+              "ar": "هَذِهِ تَأْشِيرَةُ الخُرُوجِ، وَهَذِهِ تَأْشِيرَةُ الدخول",
+              "fr": "Voici le visa de sortie, et voici le visa d'entrée."
+            },
+            {
+              "speaker": "الموظف",
+              "ar": "الرَّحلَةُ رَقْمُ ٧٧٧\nتُغَادِرُ الطَّائِرَةُ السَّاعَةَ الثَّالِثَةَ فَجْراً\nاحْضُرْ إِلى المَطارِ قَبْلَ سَاعَتَيْنِ",
+              "fr": "Le vol numéro 777. L'avion part à trois heures de l'aube. Présentez-vous à l'aéroport deux heures avant."
+            },
+            {
+              "speaker": "المسافر",
+              "ar": "شكراً",
+              "fr": "Merci."
+            },
+            {
+              "speaker": "الموظف",
+              "ar": "رِحْلَةً سَعِيدَةً",
+              "fr": "Bon voyage."
+            }
+          ]
+        },
+        {
+          "id": "13.2",
+          "type": "dialogue",
+          "titleAr": "",
+          "titleFr": "",
+          "youtube": "https://www.youtube.com/embed/cvZbvvh3EBU",
+          "pdfPage": null,
+          "lines": [
+            {
+              "speaker": "المسافر",
+              "ar": "السَّلامُ عَلَيْكُم",
+              "fr": "Que la paix soit sur vous."
+            },
+            {
+              "speaker": "الضابط",
+              "ar": "وَعَلَيْكُمُ السَّلَامُ أَهْلاً وَسَهْلاً جَوازَ السَّفَرِ مِنْ فَضْلِكَ",
+              "fr": "Et sur vous la paix, bienvenue. Votre passeport s'il vous plaît."
+            },
+            {
+              "speaker": "المسافر",
+              "ar": "هَذَا هُوَ جَوازُ السَّفَرِ",
+              "fr": "Voici le passeport."
+            },
+            {
+              "speaker": "الضابط",
+              "ar": "هَلْ أَنْتَ ماليزي ؟",
+              "fr": "Êtes-vous Malaisien ?"
+            },
+            {
+              "speaker": "المسافر",
+              "ar": "لا ، أنا كَشْمِيرِي",
+              "fr": "Non, je suis Cachemiri."
+            },
+            {
+              "speaker": "الضابط",
+              "ar": "هَلْ أَنْتَ قَادِمٌ لِلعَمَلِ ؟",
+              "fr": "Venez-vous pour travailler ?"
+            },
+            {
+              "speaker": "المسافر",
+              "ar": "لا ، أنا قادِمٌ لِلزِّيارَةِ والعُمْرَةِ",
+              "fr": "Non, je viens pour une visite et la Omra."
+            },
+            {
+              "speaker": "الضابط",
+              "ar": "كَم يَوْماً سَتُقِيمُ هُنا ؟",
+              "fr": "Combien de jours resterez-vous ici ?"
+            },
+            {
+              "speaker": "المسافر",
+              "ar": "ثَلَاثَةَ أسابيع تَقْرِيباً",
+              "fr": "Environ trois semaines."
+            },
+            {
+              "speaker": "الضابط",
+              "ar": "أَيْنَ سَتُقِيمُ ؟",
+              "fr": "Où résiderez-vous ?"
+            },
+            {
+              "speaker": "المسافر",
+              "ar": "سَأُقِيمُ فِي فُنْدُقٍ قَرِيبٍ مِنَ المَسْجِدِ الحرام",
+              "fr": "Je résiderai dans un hôtel proche de la Mosquée Sacrée."
+            },
+            {
+              "speaker": "الضابط",
+              "ar": "إقَامَةً طَيِّبَةً، وعُمْرَةً مَقْبُولَةً إِنْ شَاءَ الله",
+              "fr": "Bon séjour, et Omra acceptée si Dieu le veut."
+            },
+            {
+              "speaker": "المسافر",
+              "ar": "جَزَاكَ اللهُ خَيْرًا",
+              "fr": "Qu'Allah vous récompense."
+            }
+          ]
+        },
+        {
+          "id": "13.3",
+          "type": "dialogue",
+          "titleAr": "",
+          "titleFr": "",
+          "youtube": "https://www.youtube.com/embed/cvZbvvh3EBU",
+          "pdfPage": null,
+          "lines": [
+            {
+              "speaker": "الموظف",
+              "ar": "أَهْلاً وسهلا",
+              "fr": "Bienvenue."
+            },
+            {
+              "speaker": "المسافر",
+              "ar": "فَقَدْتُ حقيبتي",
+              "fr": "J'ai perdu ma valise."
+            },
+            {
+              "speaker": "الموظف",
+              "ar": "مِنْ أَيْنَ أَنْتَ قَادِمٌ ؟",
+              "fr": "D'où venez-vous (arrivez-vous) ?"
+            },
+            {
+              "speaker": "المسافر",
+              "ar": "أنا قادِمٌ مِنْ بَنْغَلاديش",
+              "fr": "Je viens du Bangladesh."
+            },
+            {
+              "speaker": "الموظف",
+              "ar": "أَيْنَ الجَوازُ ؟ وَأَيْنَ التَّذْكِرَةُ ؟",
+              "fr": "Où est le passeport ? Et où est le billet ?"
+            },
+            {
+              "speaker": "المسافر",
+              "ar": "هذا هُوَ الجَوازُ، وَهَذِهِ هِيَ التَّذْكِرَةُ",
+              "fr": "Voici le passeport, et voici le billet."
+            },
+            {
+              "speaker": "الموظف",
+              "ar": "مَا لَوْنُ الحَقِيبَةِ ؟",
+              "fr": "Quelle est la couleur de la valise ?"
+            },
+            {
+              "speaker": "المسافر",
+              "ar": "لَونُها أَسْوَدُ",
+              "fr": "Sa couleur est noire."
+            },
+            {
+              "speaker": "الموظف",
+              "ar": "هَلْ هَذِهِ حَقِيبَتُكَ ؟",
+              "fr": "Est-ce votre valise ?"
+            },
+            {
+              "speaker": "المسافر",
+              "ar": "نَعَمْ، هَذِهِ حقيبتي",
+              "fr": "Oui, c'est ma valise."
+            },
+            {
+              "speaker": "الموظف",
+              "ar": "ماذا في الحقيبة ؟",
+              "fr": "Qu'y a-t-il dans la valise ?"
+            },
+            {
+              "speaker": "المسافر",
+              "ar": "في الحقيبة ملابس",
+              "fr": "Dans la valise il y a des vêtements."
+            },
+            {
+              "speaker": "الموظف",
+              "ar": "افْتَحِ الحَقِيبَةَ",
+              "fr": "Ouvrez la valise."
+            },
+            {
+              "speaker": "المسافر",
+              "ar": "نَعَمْ، هذه حقيبتي",
+              "fr": "Oui, c'est ma valise."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "titleAr": "الحج والعمرة",
+      "titleFr": "Hajj et Omra",
+      "items": [
+        {
+          "id": "14.1",
+          "type": "dialogue",
+          "titleAr": "",
+          "titleFr": "",
+          "youtube": "https://www.youtube.com/embed/cvZbvvh3EBU",
+          "pdfPage": null,
+          "lines": [
+            {
+              "speaker": "سليم",
+              "ar": "متى العُطْلَةُ يا جميل ؟",
+              "fr": "Quand sont les vacances Jamil ?"
+            },
+            {
+              "speaker": "جميل",
+              "ar": "العُطْلَةُ فِي شَهْرِ رَمَضانَ",
+              "fr": "Les vacances sont au mois de Ramadan."
+            },
+            {
+              "speaker": "سليم",
+              "ar": "أَيْنَ تَقْضِي العطلَةَ ؟",
+              "fr": "Où passes-tu les vacances ?"
+            },
+            {
+              "speaker": "جميل",
+              "ar": "أقضي العُطْلَةَ في مَكَّةَ المُكَرَّمَةِ ، والمدينة المنورة",
+              "fr": "Je passe les vacances à La Mecque la Sainte, et Médine l'Illuminée."
+            },
+            {
+              "speaker": "سليم",
+              "ar": "كَيْفَ تَقْضِي العُطْلَةَ فِي مَكَّةَ ؟",
+              "fr": "Comment passes-tu les vacances à La Mecque ?"
+            },
+            {
+              "speaker": "جميل",
+              "ar": "أَعْتَمِرُ وأصوم، وأصلي في المَسْجِدِ الحرام",
+              "fr": "Je fais la Omra, je jeûne et je prie à la Mosquée Sacrée."
+            },
+            {
+              "speaker": "سليم",
+              "ar": "وماذا تَفْعَلُ في المدينة ؟",
+              "fr": "Et que fais-tu à Médine ?"
+            },
+            {
+              "speaker": "جميل",
+              "ar": "أزورُ المَسْجِدَ النَّبَوِيَّ",
+              "fr": "Je visite la Mosquée du Prophète."
+            },
+            {
+              "speaker": "سليم",
+              "ar": "وأَيْنَ تَقْضِي أَيَّامَ العيد ؟",
+              "fr": "Et où passes-tu les jours de l'Aïd ?"
+            },
+            {
+              "speaker": "جميل",
+              "ar": "أقضيها في مكة أو في المدينة",
+              "fr": "Je les passe à La Mecque ou à Médine."
+            },
+            {
+              "speaker": "سليم",
+              "ar": "وماذا تَفْعَلُ فِي مَكَّةَ ؟",
+              "fr": "Et que fais-tu à La Mecque ?"
+            },
+            {
+              "speaker": "جميل",
+              "ar": "أَطُوفُ حَوْلَ الكَعْبَةِ سَبْعَةَ أَشْواطٍ\nثُمَّ أُصَلِّي رَكْعَتَينِ خَلْفَ مَقامِ إِبْرَاهِيمَ",
+              "fr": "Je tourne autour de la Kaaba sept tours (Tawaf). Ensuite je prie deux unités de prière derrière la station d'Ibrahim."
+            },
+            {
+              "speaker": "سليم",
+              "ar": "بِمَ تَشْعُرُ فِي مَكَّةَ والمَدِينَةِ ؟",
+              "fr": "Que ressens-tu à La Mecque et à Médine ?"
+            },
+            {
+              "speaker": "جميل",
+              "ar": "أَشْعُرُ بالسرور",
+              "fr": "Je ressens de la joie."
+            }
+          ]
+        },
+        {
+          "id": "14.2",
+          "type": "dialogue",
+          "titleAr": "",
+          "titleFr": "",
+          "youtube": "https://www.youtube.com/embed/cvZbvvh3EBU",
+          "pdfPage": null,
+          "lines": [
+            {
+              "speaker": "الابن",
+              "ar": "كَيْفَ اعْتَمَرْتَ يا أبي ؟",
+              "fr": "Comment as-tu fait la Omra mon père ?"
+            },
+            {
+              "speaker": "الأب",
+              "ar": "وَصَلْتُ إلى الميقاتِ عِنْدَ الظُّهْرِ",
+              "fr": "Je suis arrivé au Miquat à midi."
+            },
+            {
+              "speaker": "الابن",
+              "ar": "وماذا فَعَلْتَ في الميقات ؟",
+              "fr": "Et qu'as-tu fait au Miquat ?"
+            },
+            {
+              "speaker": "الأب",
+              "ar": "خَلَعْتُ ثَوْبِي ، وَلَبِسْتُ مَلَابِسَ الإِحْرامِ وَلَبَّيْتُ بِالعُمْرَةِ",
+              "fr": "J'ai enlevé mon vêtement, j'ai mis les habits de l'Ihram et j'ai prononcé la Talbiya pour la Omra."
+            },
+            {
+              "speaker": "الابن",
+              "ar": "وَمَتى وَصَلْتَ إِلَى المَسْجِدِ الحَرَامِ ؟",
+              "fr": "Et quand es-tu arrivé à la Mosquée Sacrée ?"
+            },
+            {
+              "speaker": "الأب",
+              "ar": "وَصَلْتُ بَعْدَ العَصْرِ",
+              "fr": "Je suis arrivé après l'Asr."
+            },
+            {
+              "speaker": "الابن",
+              "ar": "بِمَ شَعَرْتَ فِي المَسْجِدِ الْحَرَامِ ؟",
+              "fr": "Qu'as-tu ressenti dans la Mosquée Sacrée ?"
+            },
+            {
+              "speaker": "الأب",
+              "ar": "شَعَرْتُ بِالسُّرُورِ",
+              "fr": "J'ai ressenti de la joie."
+            },
+            {
+              "speaker": "الابن",
+              "ar": "كَمْ شَوْطاً طُفْتَ حَوْلَ الكَعْبَةِ ؟",
+              "fr": "Combien de tours as-tu fait autour de la Kaaba ?"
+            },
+            {
+              "speaker": "الأب",
+              "ar": "طُفْتُ سَبْعَةَ أَشْواطٍ، ثُمَّ صَلَّيْتُ رَكْعَتَينِ خَلْفَ مَقامِ إِبْراهيمَ",
+              "fr": "J'ai fait sept tours, puis j'ai prié deux unités derrière la station d'Ibrahim."
+            },
+            {
+              "speaker": "الابن",
+              "ar": "وماذا فَعَلْتَ بَعْدَ ذَلِكَ ؟",
+              "fr": "Et qu'as-tu fait après cela ?"
+            },
+            {
+              "speaker": "الأب",
+              "ar": "سَعَيْتُ بَيْنَ الصَّفا والمَرْوَةِ سَبْعَةَ أَشْواطٍ ثُمَّ حَلَقْتُ رَأسي",
+              "fr": "J'ai fait le Sa'y entre Safa et Marwa sept fois, puis je me suis rasé la tête."
+            },
+            {
+              "speaker": "الابن",
+              "ar": "وَأَيْنَ خَلَعْتَ مَلَابِسَ الإِحْرَامِ ؟",
+              "fr": "Et où as-tu enlevé les vêtements de l'Ihram ?"
+            },
+            {
+              "speaker": "الأب",
+              "ar": "خَلَعْتُها فِي الفُنْدُقِ",
+              "fr": "Je les ai enlevés à l'hôtel."
+            }
+          ]
+        },
+        {
+          "id": "14.3",
+          "type": "dialogue",
+          "titleAr": "",
+          "titleFr": "",
+          "youtube": "https://www.youtube.com/embed/cvZbvvh3EBU",
+          "pdfPage": null,
+          "lines": [
+            {
+              "speaker": "الرجل",
+              "ar": "مَتى يَبْدَأُ الوُقوفُ بِعَرَفَةَ ؟",
+              "fr": "Quand commence la station à Arafat ?"
+            },
+            {
+              "speaker": "عدنان",
+              "ar": "يَبْدَأُ غَداً فِي اليَوْمِ النَّاسِعِ بَعْدَ الزَّوالِ",
+              "fr": "Elle commence demain, le neuvième jour, après le zénith."
+            },
+            {
+              "speaker": "الرجل",
+              "ar": "ومَتى يَنْتَهي ؟",
+              "fr": "Et quand finit-elle ?"
+            },
+            {
+              "speaker": "عدنان",
+              "ar": "يَنْتَهِي عِنْدَ الفَجْرِ",
+              "fr": "Elle finit à l'aube."
+            },
+            {
+              "speaker": "الرجل",
+              "ar": "هَلْ نُصَلِّي الظُّهْرَ والعَصْرَ فِي عَرَفَاتِ ؟",
+              "fr": "Prions-nous le Dhuhr et le Asr à Arafat ?"
+            },
+            {
+              "speaker": "عدنان",
+              "ar": "نَعَمْ، جَمْعاً وقَصْراً وَقْتَ الظَّهْرِ",
+              "fr": "Oui, groupées et raccourcies à l'heure du Dhuhr."
+            },
+            {
+              "speaker": "الرجل",
+              "ar": "ومَتى نَذْهَبُ إِلى مُزْدَلِفَةَ ؟",
+              "fr": "Et quand allons-nous à Muzdalifa ?"
+            },
+            {
+              "speaker": "عدنان",
+              "ar": "نَذْهَبُ بَعْدَ غُروبِ الشَّمْسِ\nوَنُصَلِّي فيها المَغْرِبَ والعِشَاءَ جَمْعاً وقَصْراً",
+              "fr": "Nous irons après le coucher du soleil. Et nous y prierons le Maghrib et l'Isha groupées et raccourcies."
+            },
+            {
+              "speaker": "الرجل",
+              "ar": "وماذا نَفْعَلُ بَعْدَ ذَلِكَ ؟",
+              "fr": "Et que ferons-nous après cela ?"
+            },
+            {
+              "speaker": "عدنان",
+              "ar": "نَذْهَبُ إِلى مِنى قَبْلَ شُروقِ الشَّمْسِ\nوَنَرْمي الجَمْرَةَ الكُبرى، ثُمَّ نَذْبَحُ الهَدْيَ، وَنَحْلِقُ رُؤوسَنا",
+              "fr": "Nous irons à Mina avant le lever du soleil. Et nous jetterons (les pierres) à la grande Jamra, puis nous sacrifierons l'offrande, et nous nous raserons la tête."
+            },
+            {
+              "speaker": "الرجل",
+              "ar": "وماذا نَفْعَلُ بَعْدَ ذَلِكَ ؟",
+              "fr": "Et que ferons-nous après cela ?"
+            },
+            {
+              "speaker": "عدنان",
+              "ar": "نَذْهَبُ إِلى المَسْجِدِ الحرام لِطَوَافِ الإِفَاضَةِ وَسَعْيِ الْحَجِّ",
+              "fr": "Nous irons à la Mosquée Sacrée pour le Tawaf al-Ifada et le Sa'y du Hajj."
+            },
+            {
+              "speaker": "الرجل",
+              "ar": "وَمَتى نَطُوفُ طَوافَ الوَداع ؟",
+              "fr": "Et quand ferons-nous le Tawaf d'adieu ?"
+            },
+            {
+              "speaker": "عدنان",
+              "ar": "بَعْدَ رَمْيِ الجَمَرَاتِ فِي اليَوْمِ الثَّانِي عَشَرَ، أَوِ الثَّالِثَ عَشَرَ",
+              "fr": "Après le jet des Jamarat le douzième ou le treizième jour."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "titleAr": "الصحة",
+      "titleFr": "La Santé",
+      "items": [
+        {
+          "id": "15.1",
+          "type": "dialogue",
+          "titleAr": "",
+          "titleFr": "",
+          "youtube": "https://www.youtube.com/embed/cvZbvvh3EBU",
+          "pdfPage": null,
+          "lines": [
+            {
+              "speaker": "مسعود",
+              "ar": "السَّلامُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكاتُهُ",
+              "fr": "Que la paix, la miséricorde d'Allah et Ses bénédictions soient sur vous."
+            },
+            {
+              "speaker": "محمود",
+              "ar": "وَعَلَيْكُمُ السَّلامُ وَرَحْمَةُ اللهِ وَبَرَكاتُهُ",
+              "fr": "Et sur vous la paix..."
+            },
+            {
+              "speaker": "مسعود",
+              "ar": "لماذا حَضَرْتَ اليَوْمَ إلى المُسْتَشْفَى ؟",
+              "fr": "Pourquoi es-tu venu aujourd'hui à l'hôpital ?"
+            },
+            {
+              "speaker": "محمود",
+              "ar": "حَضَرْتُ لِزِيارَةِ طَبِيبِ الأَسْنان",
+              "fr": "Je suis venu voir le dentiste."
+            },
+            {
+              "speaker": "مسعود",
+              "ar": "بِمَ تَشْعُرُ ؟",
+              "fr": "Que ressens-tu ?"
+            },
+            {
+              "speaker": "محمود",
+              "ar": "أَشْعُرُ بِأَلَم شَديد في أَسناني\nولماذا حَضَرْتَ أَنْتَ إِلَى المُسْتَشْفَى ؟",
+              "fr": "Je ressens une forte douleur dans mes dents. Et pourquoi es-tu venu à l'hôpital toi ?"
+            },
+            {
+              "speaker": "مسعود",
+              "ar": "حَضَرْتُ لِزِيارَةِ طَبِيبِ الأَنْفِ وَالْأُذُنِ والحَنْجَرَة",
+              "fr": "Je suis venu voir l'ORL (médecin du nez, de l'oreille et de la gorge)."
+            },
+            {
+              "speaker": "محمود",
+              "ar": "بِمَ تَشْعُرُ ؟",
+              "fr": "Que ressens-tu ?"
+            },
+            {
+              "speaker": "مسعود",
+              "ar": "أَشْعُرُ بِأَلم شَدِيدٍ في أُذُني",
+              "fr": "Je ressens une forte douleur dans mon oreille."
+            },
+            {
+              "speaker": "محمود",
+              "ar": "هَلْ لَدَيْكَ مَوْعِدٌ مَعَ الطَّبِيبِ ؟",
+              "fr": "As-tu un rendez-vous avec le médecin ?"
+            },
+            {
+              "speaker": "مسعود",
+              "ar": "نَعَمْ ، مَوْعِدِي السَّاعَةَ العَاشِرَةَ",
+              "fr": "Oui, mon rendez-vous est à dix heures."
+            },
+            {
+              "speaker": "محمود",
+              "ar": "مَوْعِدِي السَّاعَةَ العَاشِرَةَ أَيْضاً",
+              "fr": "Mon rendez-vous est à dix heures aussi."
+            },
+            {
+              "speaker": "مسعود",
+              "ar": "السَّاعَةُ الْآنَ التَّاسِعَةُ وَالنِّصْفُ ، الباقي نِصْفُ سَاعَةٍ",
+              "fr": "Il est neuf heures et demie maintenant, il reste une demi-heure."
+            }
+          ]
+        },
+        {
+          "id": "15.2",
+          "type": "dialogue",
+          "titleAr": "",
+          "titleFr": "",
+          "youtube": "https://www.youtube.com/embed/cvZbvvh3EBU",
+          "pdfPage": null,
+          "lines": [
+            {
+              "speaker": "المدرس",
+              "ar": "السَّلامُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكاتُهُ",
+              "fr": "Que la paix soit sur vous..."
+            },
+            {
+              "speaker": "الطالب",
+              "ar": "وَعَلَيْكُمُ السَّلامُ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ",
+              "fr": "Et sur vous la paix..."
+            },
+            {
+              "speaker": "المدرس",
+              "ar": "لماذا تَغَيَّبْتَ عَنِ الدِّرَاسَةِ ؟",
+              "fr": "Pourquoi t'es-tu absenté des cours ?"
+            },
+            {
+              "speaker": "الطالب",
+              "ar": "أُصِبْتُ بِزُكَامٍ شَدِيدٍ",
+              "fr": "J'ai attrapé un gros rhume."
+            },
+            {
+              "speaker": "المدرس",
+              "ar": "بِمَ شَعَرْتَ ؟",
+              "fr": "Qu'as-tu ressenti ?"
+            },
+            {
+              "speaker": "الطالب",
+              "ar": "شَعَرْتُ بِصُداع شَدِيدٍ فِي اللَّيلِ، وَارتَفَعَتْ درجة حرارتي",
+              "fr": "J'ai ressenti un violent mal de tête la nuit, et ma température est montée."
+            },
+            {
+              "speaker": "المدرس",
+              "ar": "هل قَابَلْتَ الطَّبِيبَ ؟",
+              "fr": "As-tu vu le médecin ?"
+            },
+            {
+              "speaker": "الطالب",
+              "ar": "نَعَمْ ، ذَهَبْتُ إلى المُسْتَشْفَى بالإسعاف ، وقابلت الطبيب",
+              "fr": "Oui, je suis allé à l'hôpital en ambulance, et j'ai vu le médecin."
+            },
+            {
+              "speaker": "المدرس",
+              "ar": "وبِمَ نَصَحَكَ الطَّبِيبُ ؟",
+              "fr": "Et que t'a conseillé le médecin ?"
+            },
+            {
+              "speaker": "الطالب",
+              "ar": "نَصَحَنِي بِالرَّاحَةِ وَتَنَاوُلِ الدَّواءِ، وَهَذَا هُوَ التقرير الطبي",
+              "fr": "Il m'a conseillé le repos et de prendre des médicaments, et voici le rapport médical."
+            },
+            {
+              "speaker": "المدرس",
+              "ar": "شُكْراً لَكَ\nوَبِمَ تَشْعُرُ الآن ؟",
+              "fr": "Merci à toi. Et comment te sens-tu maintenant ?"
+            },
+            {
+              "speaker": "الطالب",
+              "ar": "الحَمْدُ لله ، أنا بِخَيْرٍ",
+              "fr": "Louange à Dieu, je vais bien."
+            }
+          ]
+        },
+        {
+          "id": "15.3",
+          "type": "dialogue",
+          "titleAr": "",
+          "titleFr": "",
+          "youtube": "https://www.youtube.com/embed/cvZbvvh3EBU",
+          "pdfPage": null,
+          "lines": [
+            {
+              "speaker": "الزوجة",
+              "ar": "السَّلامُ عَلَيْكُم وَرَحْمَةُ اللهِ وَبَرَكاتُهُ",
+              "fr": "Que la paix soit sur vous..."
+            },
+            {
+              "speaker": "الزوج",
+              "ar": "وَعَلَيْكُمُ السَّلامُ وَرَحْمَةُ اللهِ وَبَرَكاتُهُ",
+              "fr": "Et sur vous la paix..."
+            },
+            {
+              "speaker": "الزوجة",
+              "ar": "خَيْراً ، هَلْ قَابَلْتَ الطَّبِيبَ ؟",
+              "fr": "J'espère que c'est bon, as-tu vu le médecin ?"
+            },
+            {
+              "speaker": "الزوج",
+              "ar": "نَعَمْ ، وفَحَصَ الصَّدْرَ، والقَلْبَ، والكُلْيَةَ وقاس الضغط",
+              "fr": "Oui, et il a examiné la poitrine, le cœur, le rein et a mesuré la tension."
+            },
+            {
+              "speaker": "الزوجة",
+              "ar": "وما النتيجة ؟",
+              "fr": "Et quel est le résultat ?"
+            },
+            {
+              "speaker": "الزوج",
+              "ar": "القَلْبُ سَليم، والحَمْدُ للهِ\nهُناكَ ارتفاع قَلِيلٌ في الضَّغْطِ والسُّكَّري",
+              "fr": "Le cœur est sain, louange à Dieu. Il y a une légère augmentation de la tension et du diabète."
+            },
+            {
+              "speaker": "الزوجة",
+              "ar": "مَا سَبَبُ ذَلِكَ ؟",
+              "fr": "Quelle en est la cause ?"
+            },
+            {
+              "speaker": "الزوج",
+              "ar": "زِيادَةُ الوَزْنِ",
+              "fr": "L'augmentation du poids (surpoids)."
+            },
+            {
+              "speaker": "الزوجة",
+              "ar": "وماذا طَلَبَ مِنْكَ الطَّبِيبُ ؟",
+              "fr": "Et que t'a demandé le médecin ?"
+            },
+            {
+              "speaker": "الزوج",
+              "ar": "طَلَبَ مِنِّي تَرْكَ السُّكَرِيَّاتِ",
+              "fr": "Il m'a demandé d'arrêter les sucreries."
+            },
+            {
+              "speaker": "الزوجة",
+              "ar": "وَهَلْ طَلَبَ مِنْكَ شَيئًا آخَرَ ؟",
+              "fr": "Et t'a-t-il demandé autre chose ?"
+            },
+            {
+              "speaker": "الزوج",
+              "ar": "نَعَمْ ، مُمارَسَةَ الرياضةِ ، وتَناول الفاكهة والخضراوات",
+              "fr": "Oui, de faire du sport, et de manger des fruits et des légumes."
+            },
+            {
+              "speaker": "الزوجة",
+              "ar": "شَفَاكَ اللَّهُ",
+              "fr": "Qu'Allah te guérisse."
+            },
+            {
+              "speaker": "الزوج",
+              "ar": "آمين ، شُكراً لكِ",
+              "fr": "Amen, merci à toi."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "titleAr": "العطلة",
+      "titleFr": "Les Vacances",
+      "items": [
+        {
+          "id": "16.1",
+          "type": "dialogue",
+          "titleAr": "",
+          "titleFr": "",
+          "youtube": "https://www.youtube.com/embed/cvZbvvh3EBU",
+          "pdfPage": null,
+          "lines": [
+            {
+              "speaker": "الابن",
+              "ar": "كَمْ عِيداً في الإسلام يا أبي ؟",
+              "fr": "Combien de fêtes y a-t-il en Islam mon père ?"
+            },
+            {
+              "speaker": "الأب",
+              "ar": "في الإسلام عيدان : عيد الفِطْرِ ، وَعِيدُ الأضحى",
+              "fr": "En Islam il y a deux fêtes : l'Aïd al-Fitr et l'Aïd al-Adha."
+            },
+            {
+              "speaker": "الابن",
+              "ar": "مَتى عيدُ الفِطْرِ ؟",
+              "fr": "Quand est l'Aïd al-Fitr ?"
+            },
+            {
+              "speaker": "الأب",
+              "ar": "بَعدَ شَهْرِ رَمَضَانَ : فِي اليَوْمِ الْأَوَّلِ مِنْ شَوَّالٍ",
+              "fr": "Après le mois de Ramadan : le premier jour de Shawwal."
+            },
+            {
+              "speaker": "الابن",
+              "ar": "ماذا نَعْمَلُ فِي يَوْمِ العيد ؟",
+              "fr": "Que faisons-nous le jour de la fête ?"
+            },
+            {
+              "speaker": "الأب",
+              "ar": "نُعْطِي زَكَاةَ الفِطْرِ لِلْفُقَرَاءِ",
+              "fr": "Nous donnons la Zakat al-Fitr aux pauvres."
+            },
+            {
+              "speaker": "الابن",
+              "ar": "وما زَكَاةُ الفِطْرِ ؟",
+              "fr": "Et qu'est-ce que la Zakat al-Fitr ?"
+            },
+            {
+              "speaker": "الأب",
+              "ar": "صَاعٌ مِنْ طَعَامٍ عَنْ كُلِّ شَخْصٍ",
+              "fr": "Un Sa' (mesure) de nourriture pour chaque personne."
+            },
+            {
+              "speaker": "الابن",
+              "ar": "وماذا نَفْعَلُ بَعْدَ ذَلِكَ ؟",
+              "fr": "Et que faisons-nous après cela ?"
+            },
+            {
+              "speaker": "الأب",
+              "ar": "نُصَلِّي صَلاةَ العيد ، ونزورُ الأَهْل والأصدقاء",
+              "fr": "Nous prions la prière de l'Aïd, et nous visitons la famille et les amis."
+            },
+            {
+              "speaker": "الابن",
+              "ar": "وَمَتى عيد الأضحى ؟",
+              "fr": "Et quand est l'Aïd al-Adha ?"
+            },
+            {
+              "speaker": "الأب",
+              "ar": "في اليَوْمِ العاشر من ذي الحجة",
+              "fr": "Le dixième jour de Dhu al-Hijjah."
+            },
+            {
+              "speaker": "الابن",
+              "ar": "وماذا نَفْعَلُ في عيد الأضحى ؟",
+              "fr": "Et que faisons-nous à l'Aïd al-Adha ?"
+            },
+            {
+              "speaker": "الأب",
+              "ar": "نُصَلِّي صَلاةَ العيد، ونَدْبَحُ الأَضْحِيَّةَ، وَنَزُورُ الأهل والأصدقاء",
+              "fr": "Nous prions la prière de l'Aïd, nous sacrifions la bête (l'offrande), et nous visitons famille et amis."
+            }
+          ]
+        },
+        {
+          "id": "16.2",
+          "type": "dialogue",
+          "titleAr": "",
+          "titleFr": "",
+          "youtube": "https://www.youtube.com/embed/cvZbvvh3EBU",
+          "pdfPage": null,
+          "lines": [
+            {
+              "speaker": "أحمد",
+              "ar": "اقْتَرَبَتِ العُطْلَةُ يا أبي",
+              "fr": "Les vacances approchent mon père."
+            },
+            {
+              "speaker": "الأب",
+              "ar": "ما رَأيكِ يَا نَدَى ؟ إِلَى أَيْنَ نُسَافِرُ ؟",
+              "fr": "Quel est ton avis Nada ? Où voyageons-nous ?"
+            },
+            {
+              "speaker": "ندى",
+              "ar": "لَدَيَّ فِكْرَةٌ ، نُسَافِرُ إِلى مِصْرَ",
+              "fr": "J'ai une idée, nous voyageons en Égypte."
+            },
+            {
+              "speaker": "أحمد",
+              "ar": "لماذا نُسَافِرُ إِلى مِصْرَ ؟",
+              "fr": "Pourquoi voyageons-nous en Égypte ?"
+            },
+            {
+              "speaker": "ندى",
+              "ar": "لِنَرَى مِصْرَ ، وَنَهْرَ النِّيلِ",
+              "fr": "Pour voir l'Égypte et le fleuve Nil."
+            },
+            {
+              "speaker": "أحمد",
+              "ar": "مُوافِقٌ ، فَكْرَةٌ طَيِّبَةٌ",
+              "fr": "D'accord, bonne idée."
+            },
+            {
+              "speaker": "الأب",
+              "ar": "كَيْفَ نُسَافِرُ إِلَى مِصْرَ ؟",
+              "fr": "Comment voyageons-nous en Égypte ?"
+            },
+            {
+              "speaker": "ندى",
+              "ar": "نُسَافِرُ بِالجَو",
+              "fr": "Nous voyageons par les airs (avion)."
+            },
+            {
+              "speaker": "الأب",
+              "ar": "السَّفَرُ بِالجو غال",
+              "fr": "Le voyage par avion est cher."
+            },
+            {
+              "speaker": "أحمد",
+              "ar": "إذن نُسَافِرُ بِالبَحْرِ السَّفَرُ بِالبَحْرِ رَخِيصٌ",
+              "fr": "Alors voyageons par la mer, le voyage par mer est bon marché."
+            },
+            {
+              "speaker": "الأب",
+              "ar": "كَمْ يَوْماً سَنَقْضِي فِي مِصْرَ ؟",
+              "fr": "Combien de jours passerons-nous en Égypte ?"
+            },
+            {
+              "speaker": "ندى",
+              "ar": "سَبْعَةَ أَيَّامٍ",
+              "fr": "Sept jours."
+            },
+            {
+              "speaker": "الأب",
+              "ar": "سَبْعَةَ أَيَّامٍ ... جَمِيلٌ نُسَافِرُ يَوْمَ السَّبْتِ، إِنْ شَاءَ الله",
+              "fr": "Sept jours... Bien, nous voyagerons samedi, si Dieu le veut."
+            },
+            {
+              "speaker": "أحمد وندى",
+              "ar": "شُكْراً لَكَ يا أبي",
+              "fr": "Merci à toi mon père."
+            }
+          ]
+        },
+        {
+          "id": "16.3",
+          "type": "dialogue",
+          "titleAr": "",
+          "titleFr": "",
+          "youtube": "https://www.youtube.com/embed/cvZbvvh3EBU",
+          "pdfPage": null,
+          "lines": [
+            {
+              "speaker": "المدرس",
+              "ar": "أَيْنَ سَتَقْضُونَ عُطْلَةَ الصَّيْفِ يا أبنائي ؟\nإلى أَيْنَ سَتَذْهَبُ أَنْتَ ؟",
+              "fr": "Où passerez-vous les vacances d'été mes enfants (fils) ? Où iras-tu toi ?"
+            },
+            {
+              "speaker": "الطالب 1",
+              "ar": "سَأَقْضِي عُطْلَةَ الصَّيْفِ فِي القَرْيَةِ مَعَ جدي\nالمكانُ هُناكَ هَادِئٌ ، والهَواءُ نَقِيٌّ",
+              "fr": "Je passerai les vacances d'été au village avec mon grand-père. L'endroit là-bas est calme, et l'air est pur."
+            },
+            {
+              "speaker": "الطالب 2",
+              "ar": "سَأقْضِي عُطْلَةَ الصَّيْفِ فِي العَاصِمَةِ مَعَ عَمِّي\nسأزور المكتبات والمتاحف",
+              "fr": "Je passerai les vacances d'été dans la capitale avec mon oncle paternel. Je visiterai les bibliothèques et les musées."
+            },
+            {
+              "speaker": "الطالب 3",
+              "ar": "سأقضي عُطْلَةَ الصَّيْفِ بَيْنِ الجِبالِ مَعَ فَرِيقِ الجوالة",
+              "fr": "Je passerai les vacances d'été dans les montagnes avec l'équipe de scouts."
+            },
+            {
+              "speaker": "الطالب 4",
+              "ar": "سَأَقْضِي العُطْلَةَ فِي مَكَّةَ والمَدِينَةِ مَعَ أُسْرَتِي\nسَنَعْتَمِرُ، وَنَحُجُّ ، وَنَزُورُ المَسْجِدَ النَّبَوِيَّ",
+              "fr": "Je passerai les vacances à La Mecque et Médine avec ma famille. Nous ferons la Omra, le Hajj, et nous visiterons la Mosquée du Prophète."
+            },
+            {
+              "speaker": "الطالب 5",
+              "ar": "سَأَقْضِي العُطْلَةَ فِي بَلَدِي سأساعد والدي في المَزْرَعَة",
+              "fr": "Je passerai les vacances dans mon pays, j'aiderai mon père à la ferme."
+            },
+            {
+              "speaker": "المدرس",
+              "ar": "عُطْلَةً سَعِيدَةً يا أبنائي",
+              "fr": "Bonnes vacances mes enfants."
+            },
+            {
+              "speaker": "الطلاب",
+              "ar": "عُطْلَةً سَعِيدَةً يَا أُسْتَاذُ",
+              "fr": "Bonnes vacances professeur."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

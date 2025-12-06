@@ -1,0 +1,81 @@
+{
+  "books": [
+    {
+      "id": "aby-t1",
+      "title": "Al-Arabiya Bayna Yadayk",
+      "subtitle": "Tome 1",
+      "shortName": "ABY T1",
+      "description": "16 unités · 48 dialogues",
+      "dataFile": "/arabic/books/aby-t1.json",
+      "cover": null,
+      "available": true,
+      "order": 1,
+      "category": "aby"
+    },
+    {
+      "id": "aby-t2",
+      "title": "Al-Arabiya Bayna Yadayk",
+      "subtitle": "Tome 2",
+      "shortName": "ABY T2",
+      "description": "16 unités · 64 leçons",
+      "dataFile": "/arabic/books/aby-t2.json",
+      "cover": null,
+      "available": true,
+      "order": 2,
+      "category": "aby"
+    },
+    {
+      "id": "aby-t3",
+      "title": "Al-Arabiya Bayna Yadayk",
+      "subtitle": "Tome 3",
+      "shortName": "ABY T3",
+      "description": "16 unités · 32 textes",
+      "dataFile": "/arabic/books/aby-t3.json",
+      "cover": null,
+      "available": true,
+      "order": 3,
+      "category": "aby"
+    },
+    {
+      "id": "aby-t4",
+      "title": "Al-Arabiya Bayna Yadayk",
+      "subtitle": "Tome 4",
+      "shortName": "ABY T4",
+      "description": "Prochainement",
+      "dataFile": "/arabic/books/aby-t4.json",
+      "cover": null,
+      "available": false,
+      "order": 4,
+      "category": "aby"
+    },
+    {
+      "id": "qiraatu",
+      "title": "Qiraatu al Rachida",
+      "subtitle": null,
+      "shortName": "Qiraatu",
+      "description": "Prochainement",
+      "dataFile": "/arabic/books/qiraatu.json",
+      "cover": null,
+      "available": false,
+      "order": 10,
+      "category": "reading"
+    },
+    {
+      "id": "qassas",
+      "title": "Qassas al Nabiyeen",
+      "subtitle": null,
+      "shortName": "Qassas",
+      "description": "Prochainement",
+      "dataFile": "/arabic/books/qassas.json",
+      "cover": null,
+      "available": false,
+      "order": 11,
+      "category": "reading"
+    }
+  ],
+  "categories": [
+    { "id": "aby", "label": "Al-Arabiya Bayna Yadayk", "icon": "book" },
+    { "id": "reading", "label": "Lecture", "icon": "book-open" },
+    { "id": "grammar", "label": "Grammaire", "icon": "type" }
+  ]
+}

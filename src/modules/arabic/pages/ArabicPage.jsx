@@ -11,52 +11,30 @@ const ARABIC_FONTS = [
   { id: 'lateef', name: 'Lateef', family: "'Lateef', serif" },
 ]
 
-// Map URL bookId to internal book key
-const BOOK_MAP = {
-  'aby-t1': { key: 'aby1', dataFile: '/arabic/ABY-T1.json', name: 'Tome 1' },
-  'aby-t2': { key: 'aby2', dataFile: '/arabic/ABY-T2.json', name: 'Tome 2' },
-  'aby-t3': { key: 'aby3', dataFile: '/arabic/ABY-T3.json', name: 'Tome 3' },
-  'aby-t4': { key: 'aby4', dataFile: '/arabic/ABY-T4.json', name: 'Tome 4' },
-}
-
 export default function ArabicPage({ settings, updateSettings }) {
   const { bookId } = useParams()
   const navigate = useNavigate()
   const [searchParams, setSearchParams] = useSearchParams()
 
-  const [arabicData, setArabicData] = useState(null)
-  const [pdfPagesMapping, setPdfPagesMapping] = useState(null)
+  const [bookData, setBookData] = useState(null)
+  const [bookRegistry, setBookRegistry] = useState(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
   const [showTranslation, setShowTranslation] = useState(false)
-  const [selectedLineIndex, setSelectedLineIndex] = useState(null) // For individual line translation
-  const [showVocabulary, setShowVocabulary] = useState(false) // For vocabulary PDF view
-  const [showValidatedPopup, setShowValidatedPopup] = useState(false) // For validated lessons popup
-  const [showResetConfirm, setShowResetConfirm] = useState(false) // For reset confirmation
+  const [selectedLineIndex, setSelectedLineIndex] = useState(null)
+  const [showVocabulary, setShowVocabulary] = useState(false)
+  const [showValidatedPopup, setShowValidatedPopup] = useState(false)
+  const [showResetConfirm, setShowResetConfirm] = useState(false)
 
-  // Read URL params (URL is 1-based, internal state is 0-based for dialogue)
-  const urlUnit = parseInt(searchParams.get('unit')) || null
-  const urlDialogue = searchParams.get('dialogue') ? parseInt(searchParams.get('dialogue')) - 1 : null // Convert from 1-based URL to 0-based internal
+  // URL params (1-based for user, 0-based internally for item index)
+  const urlSection = parseInt(searchParams.get('section')) || 1
+  const urlItem = parseInt(searchParams.get('item')) || 1
+  const currentSection = urlSection
+  const currentItemIndex = urlItem - 1  // Convert to 0-based
 
   // Function to remove Arabic diacritics (tashkeel) but KEEP shadda
   const removeTashkeel = (text) => {
-    // Remove: Fatha, Damma, Kasra, Sukun, Tanween, Superscript Alef
-    // BUT KEEP: Shadda (U+0651) - شَدَّة
-    // U+064B-U+0650 = Fathatan, Dammatan, Kasratan, Fatha, Damma, Kasra
-    // U+0652 = Sukun
-    // U+0670 = Superscript Alef
-    return text.replace(/[\u064B-\u0650\u0652\u0670]/g, '')
-  }
-
-  // Get book info from URL parameter
-  const bookInfo = BOOK_MAP[bookId] || BOOK_MAP['aby-t1']
-  const currentBook = bookInfo.key
-  const currentUnit = settings.arabicUnit || 1
-  const currentDialogue = settings.arabicDialogue || 0
-
-  // Determine which data file to load
-  const getDataFile = () => {
-    return bookInfo.dataFile
+    return text?.replace(/[\u064B-\u0650\u0652\u0670]/g, '') || ''
   }
 
   // Get font settings
@@ -75,198 +53,161 @@ export default function ArabicPage({ settings, updateSettings }) {
     }
   }
 
-  // Load Arabic data and PDF mapping (reload when bookId changes)
+  // Load book data
   useEffect(() => {
     setLoading(true)
+    setError(null)
 
-    Promise.all([
-      fetch(getDataFile()).then(res => res.json()),
-      fetch('/arabic/aby-pages.json').then(res => res.json())
-    ])
-      .then(([data, pdfMapping]) => {
-        setArabicData(data)
-        setPdfPagesMapping(pdfMapping)
-
-        // Initialize from URL params or reset to defaults
-        const initialUnit = urlUnit || 1
-        const initialDialogue = urlDialogue || 0
-        updateSettings({ arabicUnit: initialUnit, arabicDialogue: initialDialogue })
-
-        // Update URL if not already set (URL dialogue is 1-based)
-        if (!searchParams.get('unit') || !searchParams.get('dialogue')) {
-          setSearchParams({ unit: initialUnit, dialogue: initialDialogue + 1 }, { replace: true })
+    // First load registry to get book info
+    fetch('/arabic/books.json')
+      .then(res => res.json())
+      .then(registry => {
+        const book = registry.books.find(b => b.id === bookId)
+        if (!book) {
+          throw new Error('Livre non trouvé')
         }
+        setBookRegistry(book)
 
+        // Then load actual book data
+        return fetch(book.dataFile)
+      })
+      .then(res => res.json())
+      .then(data => {
+        setBookData(data)
         setLoading(false)
       })
       .catch(err => {
-        setError('Erreur de chargement des données')
+        setError(err.message || 'Erreur de chargement')
         setLoading(false)
       })
   }, [bookId])
 
-  // Sync settings from URL when searchParams change (navigation from sidebar)
-  useEffect(() => {
-    if (!loading && arabicData) {
-      const urlUnitValue = parseInt(searchParams.get('unit')) || 1
-      const urlDialogueValue = parseInt(searchParams.get('dialogue')) || 1
-      const internalDialogue = urlDialogueValue - 1 // Convert 1-based URL to 0-based internal
+  // Get current section and item
+  const section = bookData?.sections?.find(s => s.id === currentSection)
+  const items = section?.items || []
+  const item = items[currentItemIndex]
+  const totalItems = items.length
+  const isTexte = item?.type === 'text' || item?.type === 'texte'
 
-      // Only update if different from current settings
-      if (urlUnitValue !== currentUnit || internalDialogue !== currentDialogue) {
-        updateSettings({ arabicUnit: urlUnitValue, arabicDialogue: internalDialogue })
-        setShowTranslation(false)
-        setSelectedLineIndex(null)
-      }
+  // Get labels from metadata
+  const meta = bookData?.meta
+  const sectionLabel = meta?.structure?.sectionLabel?.fr || 'Unité'
+  const getItemLabel = (type) => {
+    const labels = meta?.structure?.itemLabels || {}
+    if (type === 'text' || type === 'texte') {
+      return labels.text?.fr || 'Texte'
     }
-  }, [searchParams, loading, arabicData])
-
-  // Get PDF file and page for current lesson
-  const getPdfInfo = () => {
-    if (!pdfPagesMapping) return { file: null, page: 1 }
-    const mapping = pdfPagesMapping[currentBook]
-    if (!mapping) return { file: null, page: 1 }
-    const fileName = mapping.file
-    const key = `${currentUnit}-${currentDialogue}`
-    const pageNum = mapping[key]
-    if (!fileName || !pageNum) return { file: null, page: 1 }
-    return { file: `/arabic/pdf/${fileName}`, page: pageNum }
+    return labels.dialogue?.fr || 'Dialogue'
   }
 
-  // Get Vocabulary PDF file and page for current unit
-  const getVocPdfInfo = () => {
-    if (!pdfPagesMapping) return { file: null, page: 1 }
-    const vocMapping = pdfPagesMapping[`${currentBook}-voc`]
-    if (!vocMapping) return { file: null, page: 1 }
-    const fileName = vocMapping.file
-    const pageStr = vocMapping[`${currentUnit}`]
-    if (!fileName || !pageStr) return { file: null, page: 1 }
-    // Parse page (can be "5" or "5,7" for multiple pages - use first page)
-    const firstPage = parseInt(pageStr.toString().split(',')[0])
-    return { file: `/arabic/pdf/${fileName}`, page: firstPage }
-  }
-
-  // Get current unit and lesson (dialogue for tome 1, lesson for tome 2)
-  const unit = arabicData?.units?.find(u => u.id === currentUnit)
-  const lessons = currentBook === 'aby1' ? unit?.dialogues : unit?.lessons
-  const lesson = lessons?.[currentDialogue]
-  const totalLessons = lessons?.length || 0
-  const isTexte = lesson?.type === 'texte' // For tome 2
-
-  // Validation state
-  const validatedDialogues = settings.arabicValidated || {}
-  const dialogueKey = `${currentUnit}-${currentDialogue}`
-  const isValidated = validatedDialogues[dialogueKey] === true
+  // Validation state (per book)
+  const allValidated = settings.arabicValidated || {}
+  const validatedItems = allValidated[bookId] || {}
+  const itemKey = `${currentSection}-${currentItemIndex}`
+  const isValidated = validatedItems[itemKey] === true
 
   // Calculate progress
-  const getTotalLessonsAll = () => {
-    if (!arabicData?.units) return 48
-    return arabicData.units.reduce((acc, u) => {
-      const lessonCount = currentBook === 'aby1' ? (u.dialogues?.length || 0) : (u.lessons?.length || 0)
-      return acc + lessonCount
-    }, 0)
+  const getTotalItemsAll = () => {
+    if (!bookData?.sections) return 0
+    return bookData.sections.reduce((acc, s) => acc + (s.items?.length || 0), 0)
   }
-  const totalLessonsAll = getTotalLessonsAll()
-  const validatedCount = Object.keys(validatedDialogues).filter(key => {
-    const unitId = parseInt(key.split('-')[0])
-    return arabicData?.units?.some(u => u.id === unitId)
-  }).length
-  const progressPercent = ((validatedCount / totalLessonsAll) * 100).toFixed(1)
+  const totalItemsAll = getTotalItemsAll()
+  const validatedCount = Object.keys(validatedItems).length
+  const progressPercent = totalItemsAll > 0 ? ((validatedCount / totalItemsAll) * 100).toFixed(1) : 0
 
-  // Get list of validated lessons with details
-  const getValidatedLessonsList = () => {
-    if (!arabicData?.units) return []
+  // Get list of validated items with details
+  const getValidatedItemsList = () => {
+    if (!bookData?.sections) return []
     const list = []
-    Object.keys(validatedDialogues).forEach(key => {
-      const [unitId, dialogueIdx] = key.split('-').map(Number)
-      const unit = arabicData.units.find(u => u.id === unitId)
-      if (unit) {
-        const lessons = currentBook === 'aby1' ? unit.dialogues : unit.lessons
-        const lesson = lessons?.[dialogueIdx]
-        if (lesson) {
+    Object.keys(validatedItems).forEach(key => {
+      const [sectionId, itemIdx] = key.split('-').map(Number)
+      const section = bookData.sections.find(s => s.id === sectionId)
+      if (section) {
+        const item = section.items?.[itemIdx]
+        if (item) {
           list.push({
-            unitId,
-            unitTitle: unit.titleFr,
-            dialogueId: lesson.id,
-            key
+            sectionId,
+            sectionTitle: section.titleFr,
+            itemType: item.type,
+            itemTitle: item.titleFr || item.titleAr,
+            key,
+            itemIdx
           })
         }
       }
     })
-    // Sort by unit then dialogue
-    return list.sort((a, b) => a.unitId - b.unitId || a.dialogueId - b.dialogueId)
+    return list.sort((a, b) => a.sectionId - b.sectionId || a.itemIdx - b.itemIdx)
   }
 
-  // Get max unit for current book
-  const maxUnit = arabicData?.units?.reduce((max, u) => Math.max(max, u.id), 0) || 16
-  const minUnit = arabicData?.units?.reduce((min, u) => Math.min(min, u.id), 1) || 1
-
   // Navigation
+  const maxSection = bookData?.sections?.reduce((max, s) => Math.max(max, s.id), 0) || 1
+  const minSection = bookData?.sections?.reduce((min, s) => Math.min(min, s.id), Infinity) || 1
+
+  const navigateTo = (sectionId, itemIdx) => {
+    setSearchParams({ section: sectionId, item: itemIdx + 1 })
+    setShowTranslation(false)
+    setSelectedLineIndex(null)
+  }
+
   const goToNext = () => {
-    if (currentDialogue < totalLessons - 1) {
-      updateSettings({ arabicDialogue: currentDialogue + 1 })
-      setShowTranslation(false)
-      setSelectedLineIndex(null)
-    } else if (currentUnit < maxUnit) {
-      const nextUnitId = arabicData?.units?.find(u => u.id > currentUnit)?.id || currentUnit + 1
-      updateSettings({ arabicUnit: nextUnitId, arabicDialogue: 0 })
-      setShowTranslation(false)
-      setSelectedLineIndex(null)
+    if (currentItemIndex < totalItems - 1) {
+      navigateTo(currentSection, currentItemIndex + 1)
+    } else if (currentSection < maxSection) {
+      const nextSection = bookData?.sections?.find(s => s.id > currentSection)
+      if (nextSection) {
+        navigateTo(nextSection.id, 0)
+      }
     }
   }
 
   const goToPrevious = () => {
-    if (currentDialogue > 0) {
-      updateSettings({ arabicDialogue: currentDialogue - 1 })
-      setShowTranslation(false)
-      setSelectedLineIndex(null)
-    } else if (currentUnit > minUnit) {
-      const prevUnit = arabicData?.units?.filter(u => u.id < currentUnit).pop()
-      const prevLessons = currentBook === 'aby1' ? prevUnit?.dialogues : prevUnit?.lessons
-      const prevLessonCount = prevLessons?.length || 1
-      updateSettings({ arabicUnit: prevUnit?.id || currentUnit - 1, arabicDialogue: prevLessonCount - 1 })
-      setShowTranslation(false)
-      setSelectedLineIndex(null)
+    if (currentItemIndex > 0) {
+      navigateTo(currentSection, currentItemIndex - 1)
+    } else if (currentSection > minSection) {
+      const prevSection = bookData?.sections?.filter(s => s.id < currentSection).pop()
+      if (prevSection) {
+        const prevItemCount = prevSection.items?.length || 1
+        navigateTo(prevSection.id, prevItemCount - 1)
+      }
     }
   }
 
   const toggleValidation = () => {
-    const newValidated = { ...validatedDialogues }
+    const newBookValidated = { ...validatedItems }
     if (isValidated) {
-      delete newValidated[dialogueKey]
+      delete newBookValidated[itemKey]
     } else {
-      newValidated[dialogueKey] = true
+      newBookValidated[itemKey] = true
     }
-    updateSettings({ arabicValidated: newValidated })
+    // Update per-book validation
+    updateSettings({
+      arabicValidated: {
+        ...allValidated,
+        [bookId]: newBookValidated
+      }
+    })
   }
 
-  const canGoPrevious = currentUnit > minUnit || currentDialogue > 0
-  const canGoNext = currentUnit < maxUnit || currentDialogue < totalLessons - 1
+  const canGoPrevious = currentSection > minSection || currentItemIndex > 0
+  const canGoNext = currentSection < maxSection || currentItemIndex < totalItems - 1
 
   // Toggle line selection
   const handleLineClick = (index) => {
-    if (selectedLineIndex === index) {
-      setSelectedLineIndex(null)
-    } else {
-      setSelectedLineIndex(index)
-    }
+    setSelectedLineIndex(selectedLineIndex === index ? null : index)
   }
 
-  // Translate button: if a line is selected, show only that line's translation
   const handleTranslate = () => {
     setShowTranslation(!showTranslation)
   }
 
-  // Get speaker color classes (alternates Blue/Amber by line index)
-  const getSpeakerColor = (speaker, index, isTexteType) => {
-    // For texte type, use a neutral color (no speaker alternation)
+  // Get speaker color classes
+  const getSpeakerColor = (index, isTexteType) => {
     if (isTexteType) {
       if (settings.darkMode) {
-        return 'bg-slate-700/50 border-slate-600/50'
+        return 'bg-blue-900/50 border-blue-700/50'
       }
-      return 'bg-gray-50 border-gray-200'
+      return 'bg-blue-100 border-blue-300'
     }
-    // Simple alternation: even index = Blue, odd index = Amber
     const isEven = index % 2 === 0
     if (settings.darkMode) {
       return isEven
@@ -280,13 +221,24 @@ export default function ArabicPage({ settings, updateSettings }) {
 
   const getSpeakerTextColor = (index, isTexteType) => {
     if (isTexteType) {
-      return settings.darkMode ? 'text-emerald-400' : 'text-emerald-700'
+      return settings.darkMode ? 'text-blue-400' : 'text-blue-700'
     }
     const isEven = index % 2 === 0
     if (settings.darkMode) {
       return isEven ? 'text-blue-400' : 'text-amber-400'
     }
     return isEven ? 'text-blue-700' : 'text-amber-700'
+  }
+
+  // Get PDF info
+  const getPdfInfo = () => {
+    const resources = meta?.resources || {}
+    return { file: resources.pdf, page: item?.pdfPage || 1 }
+  }
+
+  const getVocPdfInfo = () => {
+    const resources = meta?.resources || {}
+    return { file: resources.vocabulary, page: currentSection }
   }
 
   if (loading) {
@@ -314,7 +266,6 @@ export default function ArabicPage({ settings, updateSettings }) {
       <div className={`mb-6 p-4 rounded-2xl ${settings.darkMode ? 'bg-slate-800' : 'bg-white'} shadow-sm`}>
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-3">
           <div className="flex items-center gap-3">
-            {/* Back button */}
             <button
               onClick={() => navigate('/arabic')}
               className={`p-2 rounded-xl transition-colors ${
@@ -329,16 +280,16 @@ export default function ArabicPage({ settings, updateSettings }) {
             </div>
             <div>
               <h1 className={`text-lg font-bold ${settings.darkMode ? 'text-white' : 'text-gray-800'}`}>
-                Al-Arabiya Bayna Yadayk - {bookInfo.name}
+                {meta?.title || bookRegistry?.title}
               </h1>
               <p className={`text-sm ${settings.darkMode ? 'text-gray-400' : 'text-gray-500'}`}>
-                {arabicData?.bookName || `${totalLessonsAll} leçons`}
+                {totalItemsAll} leçons
                 {validatedCount > 0 && (
                   <> · <button
                     onClick={() => setShowValidatedPopup(true)}
                     className="font-semibold text-emerald-500 hover:text-emerald-400 hover:underline cursor-pointer"
                   >
-                    {validatedCount} leçon{validatedCount > 1 ? 's' : ''} validée{validatedCount > 1 ? 's' : ''}
+                    {validatedCount} validée{validatedCount > 1 ? 's' : ''}
                   </button></>
                 )}
               </p>
@@ -347,7 +298,7 @@ export default function ArabicPage({ settings, updateSettings }) {
           <div className="flex items-center gap-4 text-sm">
             <div className={`${settings.darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
               <span className="font-bold text-lg">{validatedCount}</span>
-              <span className={`${settings.darkMode ? 'text-gray-500' : 'text-gray-400'}`}> / {totalLessonsAll} leçons</span>
+              <span className={`${settings.darkMode ? 'text-gray-500' : 'text-gray-400'}`}> / {totalItemsAll}</span>
             </div>
             <div className={`font-semibold px-3 py-1 rounded-full ${
               settings.darkMode ? 'bg-red-900/50 text-red-400' : 'bg-red-100 text-red-700'
@@ -356,7 +307,6 @@ export default function ArabicPage({ settings, updateSettings }) {
             </div>
           </div>
         </div>
-        {/* Progress bar */}
         <div className={`h-3 rounded-full ${settings.darkMode ? 'bg-slate-700' : 'bg-gray-200'} overflow-hidden`}>
           <div
             className="h-full bg-gradient-to-r from-emerald-500 to-emerald-600 rounded-full transition-all duration-500"
@@ -365,41 +315,40 @@ export default function ArabicPage({ settings, updateSettings }) {
         </div>
       </div>
 
-      {/* Main Content - Flexible grid: Text takes more space, Video takes less */}
+      {/* Main Content */}
       <div className="grid lg:grid-cols-5 gap-4">
-        {/* Left: Arabic Text - 3/5 of space */}
+        {/* Left: Content - 3/5 */}
         <div className="lg:col-span-3">
           {/* Navigation Header */}
           <div className="flex items-center justify-between mb-4">
             <div className="flex items-center gap-3">
               <h3 className={`text-lg font-semibold ${settings.darkMode ? 'text-white' : 'text-gray-800'}`}>
-                Unité {unit?.id} - {unit?.titleFr} <span className={`${settings.darkMode ? 'text-white' : 'text-gray-800'}`} dir="rtl" style={{ fontFamily: getFontFamily() }}>({unit?.titleAr})</span>
-              </h3>
-              {/* Type badge for tome 2 */}
-              {currentBook !== 'aby1' && (
-                <span className={`text-xs px-2 py-1 rounded-full ${
-                  isTexte
-                    ? settings.darkMode ? 'bg-purple-900/50 text-purple-300' : 'bg-purple-100 text-purple-700'
-                    : settings.darkMode ? 'bg-sky-900/50 text-sky-300' : 'bg-sky-100 text-sky-700'
-                }`}>
-                  {isTexte ? 'نص' : 'حوار'}
+                {sectionLabel} {section?.id} - {section?.titleFr}
+                <span className={`ml-2 ${settings.darkMode ? 'text-white' : 'text-gray-800'}`} dir="rtl" style={{ fontFamily: getFontFamily() }}>
+                  ({section?.titleAr})
                 </span>
-              )}
-              {/* Checkbox Validé */}
+              </h3>
+              {/* Type badge */}
+              <span className={`text-xs px-2 py-1 rounded-full ${
+                isTexte
+                  ? settings.darkMode ? 'bg-purple-900/50 text-purple-300' : 'bg-purple-100 text-purple-700'
+                  : settings.darkMode ? 'bg-sky-900/50 text-sky-300' : 'bg-sky-100 text-sky-700'
+              }`}>
+                {isTexte ? 'نص' : 'حوار'}
+              </span>
+              {/* Validation checkbox */}
               <button
                 onClick={toggleValidation}
                 className="flex items-center gap-2 cursor-pointer select-none group"
                 title={isValidated ? "Marquer comme non validé" : "Marquer comme validé"}
               >
-                <div className={`w-6 h-6 rounded-md border-2 flex items-center justify-center transition-all
-                  group-hover:scale-110
-                  ${isValidated
+                <div className={`w-6 h-6 rounded-md border-2 flex items-center justify-center transition-all group-hover:scale-110 ${
+                  isValidated
                     ? 'bg-emerald-500 border-emerald-500'
                     : settings.darkMode
                       ? 'border-slate-500 bg-slate-700 hover:border-emerald-500'
                       : 'border-gray-300 bg-white hover:border-emerald-500'
-                  }`}
-                >
+                }`}>
                   <Check className={`w-4 h-4 text-white transition-opacity ${isValidated ? 'opacity-100' : 'opacity-0'}`} />
                 </div>
                 <span className={`text-sm ${
@@ -410,13 +359,11 @@ export default function ArabicPage({ settings, updateSettings }) {
                   {isValidated ? 'Validé' : 'Valider'}
                 </span>
               </button>
-
-              {/* Navigation Buttons */}
+              {/* Navigation */}
               <div className="flex items-center gap-1 ml-2">
                 <button
                   onClick={goToPrevious}
                   disabled={!canGoPrevious}
-                  title="Précédent"
                   className={`p-2 rounded-lg transition-all ${
                     canGoPrevious
                       ? settings.darkMode ? 'bg-slate-700 hover:bg-red-900/50 text-gray-200' : 'bg-gray-200 hover:bg-red-100 text-gray-700'
@@ -428,7 +375,6 @@ export default function ArabicPage({ settings, updateSettings }) {
                 <button
                   onClick={goToNext}
                   disabled={!canGoNext}
-                  title="Suivant"
                   className={`p-2 rounded-lg transition-all ${
                     canGoNext
                       ? 'bg-red-600 hover:bg-red-700 text-white'
@@ -439,46 +385,51 @@ export default function ArabicPage({ settings, updateSettings }) {
                 </button>
               </div>
             </div>
-
           </div>
 
-          {/* Dialogues bar with Translate button - Sticky */}
+          {/* Items bar with buttons */}
           <div className={`mb-4 px-4 py-3 rounded-xl ${settings.darkMode ? 'bg-slate-800' : 'bg-white'} shadow-sm sticky top-0 z-10`}>
             <div className="flex items-center justify-between gap-4">
               <div className="flex items-center flex-wrap gap-2">
-                {lessons?.map((d, idx) => {
-                  const isActive = idx === currentDialogue
-                  const isValidatedLesson = validatedDialogues[`${currentUnit}-${idx}`]
-                  return (
-                    <button
-                      key={idx}
-                      onClick={() => {
-                        updateSettings({ arabicDialogue: idx })
-                        setShowTranslation(false)
-                        setSelectedLineIndex(null)
-                      }}
-                      className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-colors ${
-                        isActive
-                          ? isValidatedLesson
-                            ? 'bg-emerald-500 text-white'
-                            : 'bg-red-600 text-white'
-                          : isValidatedLesson
-                            ? settings.darkMode
-                              ? 'bg-emerald-900/50 text-emerald-300 hover:bg-emerald-900/70'
-                              : 'bg-emerald-100 text-emerald-700 hover:bg-emerald-200'
-                            : settings.darkMode
-                              ? 'bg-slate-700 text-gray-300 hover:bg-slate-600'
-                              : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
-                      }`}
-                    >
-                      {isTexte ? 'Texte' : 'Dialogue'} {d.id}
-                    </button>
-                  )
-                })}
+                {(() => {
+                  let dialogueCount = 0
+                  let texteCount = 0
+                  return items.map((d, idx) => {
+                    const isTexteItem = d.type === 'text' || d.type === 'texte'
+                    if (isTexteItem) {
+                      texteCount++
+                    } else {
+                      dialogueCount++
+                    }
+                    const displayNum = isTexteItem ? texteCount : dialogueCount
+                    const isActive = idx === currentItemIndex
+                    const isValidatedItem = validatedItems[`${currentSection}-${idx}`]
+                    return (
+                      <button
+                        key={idx}
+                        onClick={() => navigateTo(currentSection, idx)}
+                        className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-colors ${
+                          isActive
+                            ? isValidatedItem
+                              ? 'bg-emerald-500 text-white'
+                              : 'bg-red-600 text-white'
+                            : isValidatedItem
+                              ? settings.darkMode
+                                ? 'bg-emerald-900/50 text-emerald-300 hover:bg-emerald-900/70'
+                                : 'bg-emerald-100 text-emerald-700 hover:bg-emerald-200'
+                              : settings.darkMode
+                                ? 'bg-slate-700 text-gray-300 hover:bg-slate-600'
+                                : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                        }`}
+                      >
+                        {getItemLabel(d.type)} {displayNum}
+                      </button>
+                    )
+                  })
+                })()}
               </div>
               {/* Action Buttons */}
               <div className="flex items-center gap-2 flex-shrink-0">
-                {/* PDF Mode Button */}
                 <button
                   onClick={() => updateSettings({ pdfMode: !settings.pdfMode })}
                   className={`flex items-center gap-1.5 px-3 py-2 text-sm rounded-lg transition-colors ${
@@ -488,12 +439,10 @@ export default function ArabicPage({ settings, updateSettings }) {
                         ? 'bg-slate-700 text-gray-300 hover:bg-slate-600'
                         : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                   }`}
-                  title="Mode PDF"
                 >
                   <FileText className="w-4 h-4" />
                   PDF
                 </button>
-                {/* Vocabulary PDF Button */}
                 <button
                   onClick={() => setShowVocabulary(!showVocabulary)}
                   className={`flex items-center gap-1.5 px-3 py-2 text-sm rounded-lg transition-colors ${
@@ -503,12 +452,10 @@ export default function ArabicPage({ settings, updateSettings }) {
                         ? 'bg-slate-700 text-gray-300 hover:bg-slate-600'
                         : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                   }`}
-                  title="Afficher le vocabulaire"
                 >
                   <BookOpen className="w-4 h-4" />
                   Voc
                 </button>
-                {/* Translate Button - Only show in text mode (not PDF mode and not vocabulary) */}
                 {!settings.pdfMode && !showVocabulary && (
                   <button
                     onClick={handleTranslate}
@@ -528,7 +475,7 @@ export default function ArabicPage({ settings, updateSettings }) {
             </div>
           </div>
 
-          {/* Content: PDF Mode, Vocabulary PDF, or Text */}
+          {/* Content: PDF or Text */}
           {settings.pdfMode || showVocabulary ? (
             <PdfViewer
               pdfFile={showVocabulary ? getVocPdfInfo().file : getPdfInfo().file}
@@ -536,17 +483,12 @@ export default function ArabicPage({ settings, updateSettings }) {
               darkMode={settings.darkMode}
             />
           ) : (
-            /* Lesson lines - Compact layout */
             <div className={`rounded-2xl ${settings.darkMode ? 'bg-slate-800' : 'bg-white'} shadow-sm`}>
               <div className="divide-y divide-gray-200 dark:divide-slate-700">
-                {lesson?.lines?.map((line, index) => {
-                  // Separator line (empty speaker) - render as white divider
-                  if (!line.speaker && !line.arabic) {
+                {item?.lines?.map((line, index) => {
+                  if (!line.speaker && !line.ar) {
                     return (
-                      <div
-                        key={index}
-                        className={`h-20 ${settings.darkMode ? 'bg-slate-900' : 'bg-white'}`}
-                      />
+                      <div key={index} className={`h-20 ${settings.darkMode ? 'bg-slate-900' : 'bg-white'}`} />
                     )
                   }
 
@@ -554,14 +496,14 @@ export default function ArabicPage({ settings, updateSettings }) {
                   const showThisTranslation = showTranslation && (selectedLineIndex === null || selectedLineIndex === index)
                   const hideThisTashkeel = settings.hideTashkeel && (selectedLineIndex === null || selectedLineIndex === index)
                   const isFirst = index === 0
-                  const isLast = index === (lesson?.lines?.length || 0) - 1
-                  const displayArabic = hideThisTashkeel ? removeTashkeel(line.arabic) : line.arabic
+                  const isLast = index === (item?.lines?.length || 0) - 1
+                  const displayArabic = hideThisTashkeel ? removeTashkeel(line.ar) : line.ar
 
                   return (
                     <div
                       key={index}
                       onClick={() => handleLineClick(index)}
-                      className={`p-3 cursor-pointer transition-all border-l-4 ${getSpeakerColor(line.speaker, index, isTexte)} ${
+                      className={`p-3 cursor-pointer transition-all border-l-4 ${getSpeakerColor(index, isTexte)} ${
                         isFirst ? 'rounded-t-2xl' : ''
                       } ${isLast ? 'rounded-b-2xl' : ''} ${
                         isSelected
@@ -571,7 +513,6 @@ export default function ArabicPage({ settings, updateSettings }) {
                           : 'hover:opacity-80'
                       }`}
                     >
-                      {/* Arabic text with speaker name */}
                       <div
                         className={`leading-relaxed ${settings.darkMode ? 'text-gray-100' : 'text-gray-800'}`}
                         style={{
@@ -583,7 +524,6 @@ export default function ArabicPage({ settings, updateSettings }) {
                         }}
                         dir="rtl"
                       >
-                        {/* Speaker name (fixed width, no wrap) */}
                         {!isTexte && line.speaker && (
                           <span
                             className={`font-bold ${getSpeakerTextColor(index, isTexte)}`}
@@ -592,19 +532,16 @@ export default function ArabicPage({ settings, updateSettings }) {
                             {line.speaker}:
                           </span>
                         )}
-                        {/* Arabic text (wraps and aligns properly) */}
                         <span style={{ whiteSpace: 'pre-line' }}>
                           {displayArabic}
                         </span>
                       </div>
-
-                      {/* French translation */}
                       {showThisTranslation && (
                         <div
                           className={`mt-2 text-sm ${settings.darkMode ? 'text-sky-400' : 'text-sky-600'}`}
                           style={{ fontFamily: 'Georgia, serif' }}
                         >
-                          {line.french}
+                          {line.fr}
                         </div>
                       )}
                     </div>
@@ -613,48 +550,39 @@ export default function ArabicPage({ settings, updateSettings }) {
               </div>
             </div>
           )}
-
         </div>
 
-        {/* Right: Unit Info + YouTube iframe - 2/5 of space (40%) */}
+        {/* Right: Info + Video - 2/5 */}
         <div className="lg:col-span-2 flex flex-col gap-4">
-          {/* Unit Info Block */}
-          {unit && (
+          {section && (
             <div className={`p-3 rounded-2xl ${settings.darkMode ? 'bg-slate-800' : 'bg-white'} shadow-sm text-center`}>
-              {/* Nom de l'unité en arabe */}
               <div className="mb-2">
                 <h2 className={`text-2xl font-bold mb-0.5 ${settings.darkMode ? 'text-white' : 'text-gray-800'}`} style={{ fontFamily: getFontFamily() }}>
-                  {unit.titleAr}
+                  {section.titleAr}
                 </h2>
                 <p className={`text-xs ${settings.darkMode ? 'text-gray-400' : 'text-gray-500'}`}>
-                  {unit.titleFr} - Unité {unit.id}
+                  {section.titleFr} - {sectionLabel} {section.id}
                 </p>
               </div>
-
-              {/* Position actuelle */}
               <div className={`px-2 py-1.5 rounded-lg ${settings.darkMode ? 'bg-slate-700/50' : 'bg-gray-50'}`}>
                 <span className={`text-xs ${settings.darkMode ? 'text-gray-400' : 'text-gray-500'}`}>Position : </span>
                 <span className={`font-semibold text-xs ${settings.darkMode ? 'text-white' : 'text-gray-800'}`}>
-                  Unité {currentUnit} - Dialogue {currentDialogue + 1}
+                  {sectionLabel} {currentSection} - {getItemLabel(item?.type)} {currentItemIndex + 1}
                 </span>
               </div>
             </div>
           )}
 
-          {/* Video Block */}
           <div className={`p-4 rounded-2xl ${settings.darkMode ? 'bg-slate-800' : 'bg-white'} shadow-sm sticky top-6`}>
             <div className="flex items-center gap-2 mb-3">
               <Youtube className={`w-5 h-5 ${settings.darkMode ? 'text-red-400' : 'text-red-600'}`} />
-              <h2 className={`font-semibold ${settings.darkMode ? 'text-white' : 'text-gray-900'}`}>
-                Vidéo
-              </h2>
+              <h2 className={`font-semibold ${settings.darkMode ? 'text-white' : 'text-gray-900'}`}>Vidéo</h2>
             </div>
-
-            {lesson?.youtubeUrl ? (
+            {item?.youtube ? (
               <div style={{ aspectRatio: '16/9' }}>
                 <iframe
                   className="w-full h-full rounded-xl"
-                  src={lesson.youtubeUrl}
+                  src={item.youtube}
                   title="Video leçon"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -675,7 +603,7 @@ export default function ArabicPage({ settings, updateSettings }) {
         </div>
       </div>
 
-      {/* Validated Lessons Popup */}
+      {/* Validated Items Popup */}
       {showValidatedPopup && (
         <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50" onClick={() => setShowValidatedPopup(false)}>
           <div
@@ -698,12 +626,12 @@ export default function ArabicPage({ settings, updateSettings }) {
               </button>
             </div>
             <div className="overflow-y-auto flex-1 space-y-2">
-              {getValidatedLessonsList().map((item) => (
+              {getValidatedItemsList().map((validated) => (
                 <button
-                  key={item.key}
+                  key={validated.key}
                   onClick={() => {
-                    const [unitId, dialogueIdx] = item.key.split('-').map(Number)
-                    updateSettings({ arabicUnit: unitId, arabicDialogue: dialogueIdx })
+                    const [sectionId, itemIdx] = validated.key.split('-').map(Number)
+                    navigateTo(sectionId, itemIdx)
                     setShowValidatedPopup(false)
                   }}
                   className={`w-full flex items-center gap-3 p-3 rounded-xl transition-colors text-left ${
@@ -715,14 +643,14 @@ export default function ArabicPage({ settings, updateSettings }) {
                   <div className={`w-8 h-8 rounded-lg flex items-center justify-center text-sm font-bold ${
                     settings.darkMode ? 'bg-emerald-900/50 text-emerald-400' : 'bg-emerald-100 text-emerald-600'
                   }`}>
-                    {item.unitId}
+                    {validated.sectionId}
                   </div>
                   <div className="flex-1 min-w-0">
                     <p className={`font-medium truncate ${settings.darkMode ? 'text-white' : 'text-gray-800'}`}>
-                      {item.unitTitle}
+                      {validated.sectionTitle}
                     </p>
                     <p className={`text-sm ${settings.darkMode ? 'text-gray-400' : 'text-gray-500'}`}>
-                      Dialogue {item.dialogueId}
+                      {getItemLabel(validated.itemType)} {validated.itemIdx + 1}
                     </p>
                   </div>
                   <Check className="w-5 h-5 text-emerald-500 flex-shrink-0" />
@@ -735,7 +663,6 @@ export default function ArabicPage({ settings, updateSettings }) {
               )}
             </div>
 
-            {/* Reset Progress Button */}
             {validatedCount > 0 && !showResetConfirm && (
               <button
                 onClick={() => setShowResetConfirm(true)}
@@ -749,26 +676,28 @@ export default function ArabicPage({ settings, updateSettings }) {
               </button>
             )}
 
-            {/* Reset Confirmation */}
             {showResetConfirm && (
               <div className={`mt-4 p-4 rounded-xl ${settings.darkMode ? 'bg-red-900/20 border border-red-800' : 'bg-red-50 border border-red-200'}`}>
                 <p className={`text-sm mb-3 ${settings.darkMode ? 'text-red-300' : 'text-red-700'}`}>
-                  Êtes-vous sûr de vouloir réinitialiser toute votre progression ? Cette action est irréversible.
+                  Êtes-vous sûr de vouloir réinitialiser toute votre progression ?
                 </p>
                 <div className="flex gap-2">
                   <button
                     onClick={() => {
-                      updateSettings({ arabicValidated: {} })
+                      // Only reset current book's progress
+                      const newAllValidated = { ...allValidated }
+                      delete newAllValidated[bookId]
+                      updateSettings({ arabicValidated: newAllValidated })
                       setShowResetConfirm(false)
                       setShowValidatedPopup(false)
                     }}
-                    className="flex-1 py-2 px-3 rounded-lg text-sm font-medium bg-red-500 hover:bg-red-600 text-white transition-colors"
+                    className="flex-1 py-2 px-3 rounded-lg text-sm font-medium bg-red-500 hover:bg-red-600 text-white"
                   >
                     Oui, réinitialiser
                   </button>
                   <button
                     onClick={() => setShowResetConfirm(false)}
-                    className={`flex-1 py-2 px-3 rounded-lg text-sm font-medium transition-colors ${
+                    className={`flex-1 py-2 px-3 rounded-lg text-sm font-medium ${
                       settings.darkMode
                         ? 'bg-slate-700 hover:bg-slate-600 text-gray-300'
                         : 'bg-gray-200 hover:bg-gray-300 text-gray-700'

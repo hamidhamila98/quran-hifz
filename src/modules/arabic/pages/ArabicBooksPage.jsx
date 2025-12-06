@@ -2,98 +2,67 @@ import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { BookOpen, Lock } from 'lucide-react'
 
-const BOOKS = [
-  {
-    id: 'aby-t1',
-    name: 'Al-Arabiya Bayna Yadayk',
-    tome: 'ABY - Tome 1',
-    description: '16 unités · 48 dialogues',
-    available: true,
-    dataFile: '/arabic/ABY-T1.json'
-  },
-  {
-    id: 'aby-t2',
-    name: 'Al-Arabiya Bayna Yadayk',
-    tome: 'ABY - Tome 2',
-    description: 'Prochainement',
-    available: false,
-    dataFile: '/arabic/ABY-T2.json'
-  },
-  {
-    id: 'aby-t3',
-    name: 'Al-Arabiya Bayna Yadayk',
-    tome: 'ABY - Tome 3',
-    description: 'Prochainement',
-    available: false,
-    dataFile: '/arabic/ABY-T3.json'
-  },
-  {
-    id: 'aby-t4',
-    name: 'Al-Arabiya Bayna Yadayk',
-    tome: 'ABY - Tome 4',
-    description: 'Prochainement',
-    available: false,
-    dataFile: '/arabic/ABY-T4.json'
-  },
-  {
-    id: 'qiraatu',
-    name: 'Qiraatu al Rachida',
-    tome: 'Qiraatu al Rachida',
-    description: 'Prochainement',
-    available: false,
-    dataFile: null
-  },
-  {
-    id: 'qassas',
-    name: 'Qassas al Nabiyeen',
-    tome: 'Qassas al Nabiyeen',
-    description: 'Prochainement',
-    available: false,
-    dataFile: null
-  },
-]
-
 export default function ArabicBooksPage({ settings, updateSettings }) {
   const navigate = useNavigate()
+  const [booksRegistry, setBooksRegistry] = useState({ books: [], categories: [] })
   const [booksData, setBooksData] = useState({})
+  const [loading, setLoading] = useState(true)
 
-  // Load data for available books to show progress
+  // Load books registry and data on mount
   useEffect(() => {
-    BOOKS.filter(b => b.available).forEach(book => {
-      fetch(book.dataFile)
-        .then(res => res.json())
-        .then(data => {
-          setBooksData(prev => ({ ...prev, [book.id]: data }))
+    fetch('/arabic/books.json')
+      .then(res => res.json())
+      .then(registry => {
+        setBooksRegistry(registry)
+
+        // Load data for each available book
+        const loadPromises = registry.books
+          .filter(b => b.available && b.dataFile)
+          .map(book =>
+            fetch(book.dataFile)
+              .then(res => res.json())
+              .then(data => ({ id: book.id, data }))
+              .catch(err => {
+                console.error(`Error loading ${book.id}:`, err)
+                return null
+              })
+          )
+
+        Promise.all(loadPromises).then(results => {
+          const dataMap = {}
+          results.filter(Boolean).forEach(({ id, data }) => {
+            dataMap[id] = data
+          })
+          setBooksData(dataMap)
+          setLoading(false)
         })
-        .catch(err => console.error(`Error loading ${book.id}:`, err))
-    })
+      })
+      .catch(err => {
+        console.error('Error loading books registry:', err)
+        setLoading(false)
+      })
   }, [])
 
-  // Calculate progress for a book
+  // Calculate progress for a book using new format (per-book storage)
   const getBookProgress = (bookId) => {
     const data = booksData[bookId]
-    if (!data?.units) return { validated: 0, total: 0, percent: 0 }
+    if (!data?.sections) return { validated: 0, total: 0, percent: 0 }
 
-    const validatedDialogues = settings.arabicValidated || {}
-    const totalLessons = data.units.reduce((acc, u) => acc + (u.dialogues?.length || u.lessons?.length || 0), 0)
-
-    // Count validated lessons for this book
-    const bookKey = bookId.replace('aby-t', 'aby')
-    const validated = Object.keys(validatedDialogues).filter(key => {
-      const unitId = parseInt(key.split('-')[0])
-      return data.units.some(u => u.id === unitId)
-    }).length
+    const allValidated = settings.arabicValidated || {}
+    const bookValidated = allValidated[bookId] || {}
+    const totalItems = data.sections.reduce((acc, s) => acc + (s.items?.length || 0), 0)
+    const validated = Object.keys(bookValidated).length
 
     return {
       validated,
-      total: totalLessons,
-      percent: totalLessons > 0 ? ((validated / totalLessons) * 100).toFixed(0) : 0
+      total: totalItems,
+      percent: totalItems > 0 ? ((validated / totalItems) * 100).toFixed(0) : 0
     }
   }
 
   // Calculate total progress based on completed books (100% = book validated)
   const getTotalProgress = () => {
-    const availableBooks = BOOKS.filter(b => b.available)
+    const availableBooks = booksRegistry.books?.filter(b => b.available) || []
     let completedBooks = 0
 
     availableBooks.forEach(book => {
@@ -114,10 +83,64 @@ export default function ArabicBooksPage({ settings, updateSettings }) {
 
   const handleBookClick = (book) => {
     if (!book.available) return
-    // Update settings with book selection
-    const bookKey = book.id.replace('aby-t', 'aby')
-    updateSettings({ arabicBook: bookKey, arabicUnit: 1, arabicDialogue: 0 })
-    navigate(`/arabic/${book.id}?unit=1&dialogue=1`)
+
+    const data = booksData[book.id]
+    const allValidated = settings.arabicValidated || {}
+    const bookValidated = allValidated[book.id] || {}
+
+    // Find last validated position for this book
+    let lastSection = 1
+    let lastItemIdx = 0
+
+    if (data?.sections && Object.keys(bookValidated).length > 0) {
+      // Get all validated keys for this book, sorted
+      const validatedList = Object.keys(bookValidated)
+        .map(key => {
+          const [sectionId, itemIdx] = key.split('-').map(Number)
+          return { sectionId, itemIdx }
+        })
+        .sort((a, b) => a.sectionId - b.sectionId || a.itemIdx - b.itemIdx)
+
+      if (validatedList.length > 0) {
+        const last = validatedList[validatedList.length - 1]
+        lastSection = last.sectionId
+        lastItemIdx = last.itemIdx
+
+        // Try to go to next item
+        const section = data.sections.find(s => s.id === lastSection)
+        if (section) {
+          if (lastItemIdx < (section.items?.length || 1) - 1) {
+            lastItemIdx += 1
+          } else {
+            const nextSection = data.sections.find(s => s.id > lastSection)
+            if (nextSection) {
+              lastSection = nextSection.id
+              lastItemIdx = 0
+            }
+          }
+        }
+      }
+    }
+
+    updateSettings({ arabicBook: book.id, arabicSection: lastSection, arabicItem: lastItemIdx })
+    navigate(`/arabic/${book.id}?section=${lastSection}&item=${lastItemIdx + 1}`)
+  }
+
+  // Group books by category
+  const booksByCategory = booksRegistry.categories?.map(category => ({
+    ...category,
+    books: booksRegistry.books?.filter(b => b.category === category.id).sort((a, b) => a.order - b.order) || []
+  })).filter(cat => cat.books.length > 0) || []
+
+  if (loading) {
+    return (
+      <div className={`flex items-center justify-center h-full ${settings.darkMode ? 'bg-slate-900' : 'bg-gray-50'}`}>
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-red-600 mx-auto"></div>
+          <p className={`mt-4 ${settings.darkMode ? 'text-gray-300' : 'text-gray-600'}`}>Chargement...</p>
+        </div>
+      </div>
+    )
   }
 
   return (
@@ -160,78 +183,85 @@ export default function ArabicBooksPage({ settings, updateSettings }) {
         </div>
       </div>
 
-      {/* Books Grid */}
-      <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        {BOOKS.map((book) => {
-          const progress = getBookProgress(book.id)
-          const isAvailable = book.available
+      {/* Books by Category */}
+      {booksByCategory.map((category) => (
+        <div key={category.id} className="mb-8">
+          <h2 className={`text-lg font-semibold mb-4 px-1 ${settings.darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+            {category.label}
+          </h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {category.books.map((book) => {
+              const progress = getBookProgress(book.id)
+              const isAvailable = book.available
 
-          return (
-            <button
-              key={book.id}
-              onClick={() => handleBookClick(book)}
-              disabled={!isAvailable}
-              className={`relative p-6 rounded-2xl text-left transition-all ${
-                isAvailable
-                  ? settings.darkMode
-                    ? 'bg-slate-800 hover:bg-slate-700 hover:scale-[1.02] cursor-pointer'
-                    : 'bg-white hover:bg-gray-50 hover:scale-[1.02] hover:shadow-lg cursor-pointer'
-                  : settings.darkMode
-                    ? 'bg-slate-800/50 cursor-not-allowed opacity-60'
-                    : 'bg-gray-100 cursor-not-allowed opacity-60'
-              } shadow-sm`}
-            >
-              {/* Lock icon for unavailable books */}
-              {!isAvailable && (
-                <div className="absolute top-4 right-4">
-                  <Lock className={`w-5 h-5 ${settings.darkMode ? 'text-gray-600' : 'text-gray-400'}`} />
-                </div>
-              )}
+              return (
+                <button
+                  key={book.id}
+                  onClick={() => handleBookClick(book)}
+                  disabled={!isAvailable}
+                  className={`relative p-6 rounded-2xl text-left transition-all ${
+                    isAvailable
+                      ? settings.darkMode
+                        ? 'bg-slate-800 hover:bg-slate-700 hover:scale-[1.02] cursor-pointer'
+                        : 'bg-white hover:bg-gray-50 hover:scale-[1.02] hover:shadow-lg cursor-pointer'
+                      : settings.darkMode
+                        ? 'bg-slate-800/50 cursor-not-allowed opacity-60'
+                        : 'bg-gray-100 cursor-not-allowed opacity-60'
+                  } shadow-sm`}
+                >
+                  {/* Lock icon for unavailable books */}
+                  {!isAvailable && (
+                    <div className="absolute top-4 right-4">
+                      <Lock className={`w-5 h-5 ${settings.darkMode ? 'text-gray-600' : 'text-gray-400'}`} />
+                    </div>
+                  )}
 
-              {/* Book icon */}
-              <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-4 ${
-                isAvailable
-                  ? 'bg-gradient-to-br from-red-600 to-red-700'
-                  : settings.darkMode ? 'bg-slate-700' : 'bg-gray-200'
-              }`}>
-                <BookOpen className={`w-6 h-6 ${isAvailable ? 'text-white' : settings.darkMode ? 'text-gray-500' : 'text-gray-400'}`} />
-              </div>
-
-              {/* Book info */}
-              <h3 className={`font-bold text-lg mb-1 ${settings.darkMode ? 'text-white' : 'text-gray-800'}`}>
-                {book.tome}
-              </h3>
-              <p className={`text-sm mb-3 ${settings.darkMode ? 'text-gray-400' : 'text-gray-500'}`}>
-                {book.name}
-              </p>
-              <p className={`text-xs ${settings.darkMode ? 'text-gray-500' : 'text-gray-400'}`}>
-                {book.description}
-              </p>
-
-              {/* Progress for available books */}
-              {isAvailable && progress.total > 0 && (
-                <div className="mt-4">
-                  <div className="flex items-center justify-between text-xs mb-1">
-                    <span className={settings.darkMode ? 'text-gray-400' : 'text-gray-500'}>
-                      {progress.validated}/{progress.total} leçons
-                    </span>
-                    <span className={`font-semibold ${settings.darkMode ? 'text-red-400' : 'text-red-600'}`}>
-                      {progress.percent}%
-                    </span>
+                  {/* Book icon */}
+                  <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-4 ${
+                    isAvailable
+                      ? 'bg-gradient-to-br from-red-600 to-red-700'
+                      : settings.darkMode ? 'bg-slate-700' : 'bg-gray-200'
+                  }`}>
+                    <BookOpen className={`w-6 h-6 ${isAvailable ? 'text-white' : settings.darkMode ? 'text-gray-500' : 'text-gray-400'}`} />
                   </div>
-                  <div className={`h-2 rounded-full ${settings.darkMode ? 'bg-slate-700' : 'bg-gray-200'} overflow-hidden`}>
-                    <div
-                      className="h-full bg-gradient-to-r from-red-600 to-red-700 rounded-full transition-all duration-500"
-                      style={{ width: `${Math.max(parseFloat(progress.percent), 1)}%` }}
-                    />
-                  </div>
-                </div>
-              )}
 
-            </button>
-          )
-        })}
-      </div>
+                  {/* Book info */}
+                  <h3 className={`font-bold text-lg mb-1 ${settings.darkMode ? 'text-white' : 'text-gray-800'}`}>
+                    {book.shortName}
+                  </h3>
+                  <p className={`text-sm mb-3 ${settings.darkMode ? 'text-gray-400' : 'text-gray-500'}`}>
+                    {book.title}
+                  </p>
+                  <p className={`text-xs ${settings.darkMode ? 'text-gray-500' : 'text-gray-400'}`}>
+                    {book.description}
+                  </p>
+
+                  {/* Progress for available books */}
+                  {isAvailable && progress.total > 0 && (
+                    <div className="mt-4">
+                      <div className="flex items-center justify-between text-xs mb-1">
+                        <span className={settings.darkMode ? 'text-gray-400' : 'text-gray-500'}>
+                          {progress.validated}/{progress.total} leçons
+                        </span>
+                        <span className={`font-semibold ${settings.darkMode ? 'text-red-400' : 'text-red-600'}`}>
+                          {progress.percent}%
+                        </span>
+                      </div>
+                      <div className={`h-2 rounded-full ${settings.darkMode ? 'bg-slate-700' : 'bg-gray-200'} overflow-hidden`}>
+                        <div
+                          className="h-full bg-gradient-to-r from-red-600 to-red-700 rounded-full transition-all duration-500"
+                          style={{ width: `${Math.max(parseFloat(progress.percent), 1)}%` }}
+                        />
+                      </div>
+                    </div>
+                  )}
+
+                </button>
+              )
+            })}
+          </div>
+        </div>
+      ))}
     </div>
   )
 }
