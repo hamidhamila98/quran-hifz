@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { BookOpen, Languages, FileText, User, LogOut, LogIn, UserPlus } from 'lucide-react'
+import { BookOpen, Languages, FileText, User, LogOut, LogIn, UserPlus, BookMarked, Library, ScrollText } from 'lucide-react'
 import { useUser } from '../contexts/UserContext'
 import Footer from '../components/Footer'
 
@@ -31,6 +31,35 @@ const modules = [
     titleAr: 'ملاحظاتي',
     description: 'Organisez vos ressources islamiques',
     color: 'amber',
+  },
+  {
+    id: 'douas',
+    path: '/douas',
+    icon: BookMarked,
+    title: 'MyDouas',
+    titleAr: 'حصن المسلم',
+    description: 'La Citadelle du Musulman avec audio',
+    color: 'emerald',
+  },
+  {
+    id: 'library',
+    path: '/library',
+    icon: Library,
+    title: 'MyLibrary',
+    titleAr: 'مكتبتي',
+    description: 'Votre bibliothèque islamique',
+    color: 'purple',
+    comingSoon: true,
+  },
+  {
+    id: 'hadiths',
+    path: '/hadiths',
+    icon: ScrollText,
+    title: 'MyHadiths',
+    titleAr: 'الأحاديث',
+    description: 'Collection de hadiths authentiques',
+    color: 'teal',
+    comingSoon: true,
   },
 ]
 
@@ -92,6 +121,27 @@ export default function LandingPage({ darkMode, toggleDarkMode }) {
       hover: darkMode ? 'hover:bg-amber-900/50' : 'hover:bg-amber-100',
       icon: darkMode ? 'text-amber-400' : 'text-amber-600',
       title: darkMode ? 'text-amber-300' : 'text-amber-700',
+    },
+    emerald: {
+      bg: darkMode ? 'bg-emerald-900/30' : 'bg-emerald-50',
+      border: darkMode ? 'border-emerald-700' : 'border-emerald-200',
+      hover: darkMode ? 'hover:bg-emerald-900/50' : 'hover:bg-emerald-100',
+      icon: darkMode ? 'text-emerald-400' : 'text-emerald-600',
+      title: darkMode ? 'text-emerald-300' : 'text-emerald-700',
+    },
+    purple: {
+      bg: darkMode ? 'bg-purple-900/30' : 'bg-purple-50',
+      border: darkMode ? 'border-purple-700' : 'border-purple-200',
+      hover: darkMode ? 'hover:bg-purple-900/50' : 'hover:bg-purple-100',
+      icon: darkMode ? 'text-purple-400' : 'text-purple-600',
+      title: darkMode ? 'text-purple-300' : 'text-purple-700',
+    },
+    teal: {
+      bg: darkMode ? 'bg-teal-900/30' : 'bg-teal-50',
+      border: darkMode ? 'border-teal-700' : 'border-teal-200',
+      hover: darkMode ? 'hover:bg-teal-900/50' : 'hover:bg-teal-100',
+      icon: darkMode ? 'text-teal-400' : 'text-teal-600',
+      title: darkMode ? 'text-teal-300' : 'text-teal-700',
     },
   }
 
@@ -295,7 +345,7 @@ export default function LandingPage({ darkMode, toggleDarkMode }) {
         </div>
 
         {/* Module Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-4xl w-full">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl w-full">
           {modules.map(module => renderModuleCard(module))}
         </div>
 

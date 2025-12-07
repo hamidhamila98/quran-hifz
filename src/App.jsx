@@ -15,6 +15,9 @@ import ArabicTrainingPage from './modules/arabic/pages/ArabicTrainingPage'
 // Notes module
 import NotesSidebar from './modules/notes/components/NotesSidebar'
 import NotesPage from './modules/notes/pages/NotesPage'
+// Douas module
+import DouasSidebar from './modules/douas/components/DouasSidebar'
+import DouasPage from './modules/douas/pages/DouasPage'
 
 // Page titles and favicon colors per module
 const pageConfig = {
@@ -22,6 +25,7 @@ const pageConfig = {
   '/quran': { title: 'MyHifz - MyIslam', color: '#10b981', letter: 'H' },
   '/arabic': { title: 'MyArabic - MyIslam', color: '#ef4444', letter: 'A' },
   '/notes': { title: 'MyNotes - MyIslam', color: '#f59e0b', letter: 'N' },
+  '/douas': { title: 'MyDouas - MyIslam', color: '#10b981', letter: 'D' },
 }
 
 // Generate SVG favicon
@@ -70,6 +74,7 @@ function App() {
   const isQuranPage = location.pathname.startsWith('/quran')
   const isArabicPage = location.pathname.startsWith('/arabic')
   const isNotesPage = location.pathname.startsWith('/notes')
+  const isDouasPage = location.pathname.startsWith('/douas')
 
   // Track if this is the initial load to avoid saving on first render
   const isInitialMount = useRef(true)
@@ -170,6 +175,7 @@ function App() {
 
     if (isArabicPage) return <ArabicSidebar {...sidebarProps} />
     if (isNotesPage) return <NotesSidebar {...sidebarProps} />
+    if (isDouasPage) return <DouasSidebar {...sidebarProps} />
     return <QuranSidebar {...sidebarProps} />
   }
 
@@ -205,6 +211,11 @@ function App() {
           <Route
             path="/notes"
             element={<NotesPage settings={settings} updateSettings={updateSettings} />}
+          />
+          {/* Douas module */}
+          <Route
+            path="/douas"
+            element={<DouasPage settings={settings} updateSettings={updateSettings} />}
           />
         </Routes>
       </main>

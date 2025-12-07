@@ -400,7 +400,7 @@ export function SidebarDarkModeToggle({ darkMode, onChange, accentColor = 'prima
 // SIDEBAR FOOTER - Pied de page
 // ===========================================
 export function SidebarFooter({ isOpen, darkMode, arabicText, frenchText, accentColor = 'primary' }) {
-  const gradientClasses = {
+  const gradientClassesMap = {
     primary: darkMode
       ? 'bg-gradient-to-br from-emerald-900/40 via-teal-900/30 to-emerald-900/20 border-emerald-700/30'
       : 'bg-gradient-to-br from-emerald-500/10 via-teal-500/10 to-emerald-500/5 border-emerald-200/50',
@@ -421,41 +421,51 @@ export function SidebarFooter({ isOpen, darkMode, arabicText, frenchText, accent
       : 'bg-gradient-to-br from-indigo-500/10 via-purple-500/10 to-indigo-500/5 border-indigo-200/50',
     cyan: darkMode
       ? 'bg-gradient-to-br from-cyan-900/40 via-teal-900/30 to-cyan-900/20 border-cyan-700/30'
-      : 'bg-gradient-to-br from-cyan-500/10 via-teal-500/10 to-cyan-500/5 border-cyan-200/50'
-  }[accentColor] || gradientClasses.primary
+      : 'bg-gradient-to-br from-cyan-500/10 via-teal-500/10 to-cyan-500/5 border-cyan-200/50',
+    emerald: darkMode
+      ? 'bg-gradient-to-br from-emerald-900/40 via-teal-900/30 to-emerald-900/20 border-emerald-700/30'
+      : 'bg-gradient-to-br from-emerald-500/10 via-teal-500/10 to-emerald-500/5 border-emerald-200/50'
+  }
+  const gradientClasses = gradientClassesMap[accentColor] || gradientClassesMap.primary
 
-  const textColorClasses = {
+  const textColorClassesMap = {
     primary: darkMode ? 'text-emerald-300' : 'text-emerald-700',
     blue: darkMode ? 'text-sky-300' : 'text-sky-700',
     red: darkMode ? 'text-red-300' : 'text-red-700',
     amber: darkMode ? 'text-amber-300' : 'text-amber-700',
     rose: darkMode ? 'text-rose-300' : 'text-rose-700',
     indigo: darkMode ? 'text-indigo-300' : 'text-indigo-700',
-    cyan: darkMode ? 'text-cyan-300' : 'text-cyan-700'
-  }[accentColor] || (darkMode ? 'text-emerald-300' : 'text-emerald-700')
+    cyan: darkMode ? 'text-cyan-300' : 'text-cyan-700',
+    emerald: darkMode ? 'text-emerald-300' : 'text-emerald-700'
+  }
+  const textColorClasses = textColorClassesMap[accentColor] || textColorClassesMap.primary
 
-  const lineColorClasses = {
+  const lineColorClassesMap = {
     primary: darkMode ? 'via-emerald-600' : 'via-emerald-300',
     blue: darkMode ? 'via-sky-600' : 'via-sky-300',
     red: darkMode ? 'via-red-600' : 'via-red-300',
     amber: darkMode ? 'via-amber-600' : 'via-amber-300',
     rose: darkMode ? 'via-rose-600' : 'via-rose-300',
     indigo: darkMode ? 'via-indigo-600' : 'via-indigo-300',
-    cyan: darkMode ? 'via-cyan-600' : 'via-cyan-300'
-  }[accentColor] || (darkMode ? 'via-emerald-600' : 'via-emerald-300')
+    cyan: darkMode ? 'via-cyan-600' : 'via-cyan-300',
+    emerald: darkMode ? 'via-emerald-600' : 'via-emerald-300'
+  }
+  const lineColorClasses = lineColorClassesMap[accentColor] || lineColorClassesMap.primary
 
-  const subTextColorClasses = {
+  const subTextColorClassesMap = {
     primary: darkMode ? 'text-emerald-400' : 'text-emerald-600',
     blue: darkMode ? 'text-sky-400' : 'text-sky-600',
     red: darkMode ? 'text-red-400' : 'text-red-600',
     amber: darkMode ? 'text-amber-400' : 'text-amber-600',
     rose: darkMode ? 'text-rose-400' : 'text-rose-600',
     indigo: darkMode ? 'text-indigo-400' : 'text-indigo-600',
-    cyan: darkMode ? 'text-cyan-400' : 'text-cyan-600'
-  }[accentColor] || (darkMode ? 'text-emerald-400' : 'text-emerald-600')
+    cyan: darkMode ? 'text-cyan-400' : 'text-cyan-600',
+    emerald: darkMode ? 'text-emerald-400' : 'text-emerald-600'
+  }
+  const subTextColorClasses = subTextColorClassesMap[accentColor] || subTextColorClassesMap.primary
 
   return (
-    <div className="p-3">
+    <div className="p-3 mb-2">
       <div className={`rounded-2xl p-4 border ${!isOpen ? 'p-2' : ''} ${gradientClasses}`}>
         {isOpen ? (
           <>
