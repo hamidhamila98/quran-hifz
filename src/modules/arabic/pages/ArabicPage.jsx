@@ -335,10 +335,15 @@ export default function ArabicPage({ settings, updateSettings, isMobile, setMobi
           <div className="flex items-center justify-between mb-4">
             <div className="flex items-center gap-3">
               <h3 className={`text-lg font-semibold ${settings.darkMode ? 'text-white' : 'text-gray-800'}`}>
-                {sectionLabel} {section?.id} - {section?.titleFr}
-                <span className={`ml-2 ${settings.darkMode ? 'text-white' : 'text-gray-800'}`} dir="rtl" style={{ fontFamily: getFontFamily() }}>
-                  ({section?.titleAr})
-                </span>
+                {sectionLabel} {section?.id}
+                {!isMobile && (
+                  <>
+                    {' - '}{section?.titleFr}
+                    <span className={`ml-2 ${settings.darkMode ? 'text-white' : 'text-gray-800'}`} dir="rtl" style={{ fontFamily: getFontFamily() }}>
+                      ({section?.titleAr})
+                    </span>
+                  </>
+                )}
               </h3>
               {/* Type badge */}
               <span className={`text-xs px-2 py-1 rounded-full ${
@@ -441,10 +446,10 @@ export default function ArabicPage({ settings, updateSettings, isMobile, setMobi
                 })()}
               </div>
               {/* Action Buttons */}
-              <div className="flex items-center gap-2 flex-shrink-0">
+              <div className="flex items-center gap-1.5 flex-shrink-0">
                 <button
                   onClick={() => updateSettings({ pdfMode: !settings.pdfMode })}
-                  className={`flex items-center gap-1.5 px-3 py-2 text-sm rounded-lg transition-colors ${
+                  className={`flex items-center gap-1 px-2 py-1.5 text-xs rounded-lg transition-colors ${
                     settings.pdfMode
                       ? 'bg-sky-500 text-white'
                       : settings.darkMode
@@ -452,12 +457,12 @@ export default function ArabicPage({ settings, updateSettings, isMobile, setMobi
                         : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                   }`}
                 >
-                  <FileText className="w-4 h-4" />
+                  <FileText className="w-3.5 h-3.5" />
                   PDF
                 </button>
                 <button
                   onClick={() => setShowVocabulary(!showVocabulary)}
-                  className={`flex items-center gap-1.5 px-3 py-2 text-sm rounded-lg transition-colors ${
+                  className={`flex items-center gap-1 px-2 py-1.5 text-xs rounded-lg transition-colors ${
                     showVocabulary
                       ? 'bg-sky-500 text-white'
                       : settings.darkMode
@@ -465,13 +470,13 @@ export default function ArabicPage({ settings, updateSettings, isMobile, setMobi
                         : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                   }`}
                 >
-                  <BookOpen className="w-4 h-4" />
+                  <BookOpen className="w-3.5 h-3.5" />
                   Voc
                 </button>
                 {!settings.pdfMode && !showVocabulary && (
                   <button
                     onClick={handleTranslate}
-                    className={`flex items-center gap-1.5 px-3 py-2 text-sm rounded-lg transition-colors ${
+                    className={`flex items-center gap-1 px-2 py-1.5 text-xs rounded-lg transition-colors ${
                       showTranslation
                         ? 'bg-sky-500 text-white'
                         : settings.darkMode
@@ -479,7 +484,7 @@ export default function ArabicPage({ settings, updateSettings, isMobile, setMobi
                           : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                     }`}
                   >
-                    <Languages className="w-4 h-4" />
+                    <Languages className="w-3.5 h-3.5" />
                     Trad
                   </button>
                 )}

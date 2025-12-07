@@ -266,7 +266,7 @@ export function SidebarToggle({ label, icon: Icon, value, onChange, darkMode, ac
 // ===========================================
 // SIDEBAR SIZE SELECTOR - Sélecteur de taille
 // ===========================================
-export function SidebarSizeSelector({ label, value, onChange, darkMode, accentColor = 'primary' }) {
+export function SidebarSizeSelector({ label, value, onChange, darkMode, accentColor = 'primary', isMobile = false }) {
   const activeColorClass = {
     primary: 'bg-emerald-500 text-white',
     blue: 'bg-sky-500 text-white',
@@ -277,13 +277,16 @@ export function SidebarSizeSelector({ label, value, onChange, darkMode, accentCo
     cyan: 'bg-cyan-500 text-white'
   }[accentColor] || 'bg-emerald-500 text-white'
 
-  const sizes = [
+  const allSizes = [
     { id: 'tiny', label: 'Minuscule', fontSize: 'text-[8px]' },
     { id: 'xsmall', label: 'Très petit', fontSize: 'text-[10px]' },
     { id: 'small', label: 'Petit', fontSize: 'text-xs' },
     { id: 'medium', label: 'Moyen', fontSize: 'text-sm' },
     { id: 'large', label: 'Grand', fontSize: 'text-base' }
   ]
+
+  // On mobile, only show the 2 smallest options
+  const sizes = isMobile ? allSizes.slice(0, 2) : allSizes
 
   return (
     <div className={`flex items-center justify-between px-3 py-2 rounded-xl ${darkMode ? 'bg-slate-700/50' : 'bg-gray-50'}`}>

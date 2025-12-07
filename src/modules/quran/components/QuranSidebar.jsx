@@ -155,15 +155,17 @@ export default function QuranSidebar({ isOpen, setIsOpen, settings, updateSettin
             )}
           />
 
-          {/* Tajweed Toggle - Always visible */}
-          <SidebarToggle
-            label="Tajweed (BETA)"
-            icon={Palette}
-            value={settings.tajweedEnabled}
-            onChange={() => updateSettings({ tajweedEnabled: !settings.tajweedEnabled })}
-            darkMode={darkMode}
-            accentColor="blue"
-          />
+          {/* Tajweed Toggle - Hidden on mobile (ligature issues) */}
+          {!isMobile && (
+            <SidebarToggle
+              label="Tajweed (BETA)"
+              icon={Palette}
+              value={settings.tajweedEnabled}
+              onChange={() => updateSettings({ tajweedEnabled: !settings.tajweedEnabled })}
+              darkMode={darkMode}
+              accentColor="blue"
+            />
+          )}
 
           {/* Configuration Section */}
           <SidebarConfig
@@ -264,6 +266,7 @@ export default function QuranSidebar({ isOpen, setIsOpen, settings, updateSettin
               onChange={(size) => updateSettings({ fontSize: size })}
               darkMode={darkMode}
               accentColor="blue"
+              isMobile={isMobile}
             />
 
             {/* Line Height - Quran */}
@@ -282,6 +285,7 @@ export default function QuranSidebar({ isOpen, setIsOpen, settings, updateSettin
               onChange={(size) => updateSettings({ tafsirFontSize: size })}
               darkMode={darkMode}
               accentColor="blue"
+              isMobile={isMobile}
             />
           </SidebarConfig>
         </div>
