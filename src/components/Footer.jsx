@@ -29,20 +29,24 @@ export default function Footer({ darkMode, toggleDarkMode, isMobile }) {
         : 'bg-white border-t border-gray-200'
       }
     `}>
-      {/* MyAdvice floating button - positioned above footer */}
+      {/* MyAdvice floating button - positioned above footer, smaller on mobile */}
       <Link
         to="/advice"
-        className={`group absolute left-1/2 -translate-x-1/2 -top-5 flex items-center gap-0 px-3 py-2 rounded-full font-medium text-sm transition-all duration-300 hover:-top-6 hover:gap-2 hover:px-5 ${
+        className={`group absolute left-1/2 -translate-x-1/2 flex items-center gap-0 rounded-full font-medium transition-all duration-300 ${
+          isMobile
+            ? '-top-3 px-2 py-1 text-xs hover:-top-4'
+            : '-top-5 px-3 py-2 text-sm hover:-top-6 hover:gap-2 hover:px-5'
+        } ${
           darkMode
             ? 'bg-slate-700 hover:bg-slate-600 text-amber-400 border border-slate-600 shadow-lg'
             : 'bg-white hover:bg-gray-50 text-amber-600 border border-gray-200 shadow-lg'
         }`}
       >
-        <Lightbulb className="w-4 h-4" />
-        <span className="max-w-0 overflow-hidden whitespace-nowrap transition-all duration-300 group-hover:max-w-[100px]">MyAdvice</span>
+        <Lightbulb className={isMobile ? 'w-3 h-3' : 'w-4 h-4'} />
+        <span className={`max-w-0 overflow-hidden whitespace-nowrap transition-all duration-300 ${isMobile ? '' : 'group-hover:max-w-[100px]'}`}>MyAdvice</span>
       </Link>
 
-      <div className={`grid items-center px-2 md:px-4 py-2 ${isMobile ? 'grid-cols-2' : 'grid-cols-3'}`}>
+      <div className={`grid items-center px-2 md:px-4 ${isMobile ? 'py-1.5 grid-cols-2' : 'py-2 grid-cols-3'}`}>
         {/* Left - Social links only on mobile, with text on desktop */}
         <div className="flex items-center gap-1 md:gap-2">
           <span className={`text-xs hidden lg:block ${darkMode ? 'text-gray-500' : 'text-gray-400'}`}>

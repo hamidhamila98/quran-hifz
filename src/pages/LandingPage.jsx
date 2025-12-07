@@ -191,9 +191,9 @@ export default function LandingPage({ darkMode, toggleDarkMode, isMobile }) {
   }
 
   return (
-    <div className={`min-h-screen flex flex-col pb-16 ${darkMode ? 'bg-slate-900' : 'bg-gray-50'}`}>
+    <div className={`min-h-screen flex flex-col ${isMobile ? 'pb-12' : 'pb-16'} ${darkMode ? 'bg-slate-900' : 'bg-gray-50'}`}>
       {/* Top bar avec dark mode et auth */}
-      <div className="absolute top-4 right-4 z-50 flex items-center gap-2">
+      <div className={`absolute ${isMobile ? 'top-2 right-2' : 'top-4 right-4'} z-50 flex items-center gap-1 md:gap-2`}>
         {/* User info / Auth buttons */}
         {isLoggedIn ? (
           <div className="flex items-center gap-2">
@@ -216,28 +216,28 @@ export default function LandingPage({ darkMode, toggleDarkMode, isMobile }) {
             </button>
           </div>
         ) : (
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1 md:gap-2">
             <button
               onClick={() => openAuth('login')}
-              className={`flex items-center gap-1.5 px-3 py-2 rounded-full text-sm font-medium transition-colors ${
+              className={`flex items-center gap-1 px-2 py-1.5 md:px-3 md:py-2 rounded-full text-xs md:text-sm font-medium transition-colors ${
                 darkMode
                   ? 'bg-slate-700 hover:bg-slate-600 text-white'
                   : 'bg-white hover:bg-gray-100 text-gray-700 shadow-md'
               }`}
             >
-              <LogIn className="w-4 h-4" />
-              Connexion
+              <LogIn className="w-3 h-3 md:w-4 md:h-4" />
+              <span className={isMobile ? 'hidden' : ''}>Connexion</span>
             </button>
             <button
               onClick={() => openAuth('register')}
-              className={`flex items-center gap-1.5 px-3 py-2 rounded-full text-sm font-medium transition-colors ${
+              className={`flex items-center gap-1 px-2 py-1.5 md:px-3 md:py-2 rounded-full text-xs md:text-sm font-medium transition-colors ${
                 darkMode
                   ? 'bg-emerald-600 hover:bg-emerald-500 text-white'
                   : 'bg-emerald-500 hover:bg-emerald-600 text-white shadow-md'
               }`}
             >
-              <UserPlus className="w-4 h-4" />
-              Inscription
+              <UserPlus className="w-3 h-3 md:w-4 md:h-4" />
+              <span className={isMobile ? 'hidden' : ''}>Inscription</span>
             </button>
           </div>
         )}
@@ -328,9 +328,9 @@ export default function LandingPage({ darkMode, toggleDarkMode, isMobile }) {
         </div>
       )}
 
-      <div className="flex-1 flex flex-col items-center justify-center p-4 md:p-8">
+      <div className={`flex-1 flex flex-col items-center justify-center p-4 md:p-8 ${isMobile ? 'pt-10' : ''}`}>
         {/* Header - Bismillah */}
-        <div className="text-center mb-8 md:mb-12">
+        <div className="text-center mb-6 md:mb-12">
           <h1 className={`text-2xl md:text-4xl font-bold mb-2 ${darkMode ? 'text-white' : 'text-gray-900'}`}>
             بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
           </h1>

@@ -277,22 +277,30 @@ export function SidebarSizeSelector({ label, value, onChange, darkMode, accentCo
     cyan: 'bg-cyan-500 text-white'
   }[accentColor] || 'bg-emerald-500 text-white'
 
+  const sizes = [
+    { id: 'tiny', label: 'Minuscule', fontSize: 'text-[8px]' },
+    { id: 'xsmall', label: 'Très petit', fontSize: 'text-[10px]' },
+    { id: 'small', label: 'Petit', fontSize: 'text-xs' },
+    { id: 'medium', label: 'Moyen', fontSize: 'text-sm' },
+    { id: 'large', label: 'Grand', fontSize: 'text-base' }
+  ]
+
   return (
     <div className={`flex items-center justify-between px-3 py-2 rounded-xl ${darkMode ? 'bg-slate-700/50' : 'bg-gray-50'}`}>
       <span className={`text-sm font-medium ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>{label}</span>
-      <div className="flex gap-1 items-end">
-        {['small', 'medium', 'large'].map((size) => (
+      <div className="flex gap-0.5 items-end">
+        {sizes.map((size) => (
           <button
-            key={size}
-            onClick={() => onChange(size)}
-            className={`w-7 h-7 flex items-center justify-center rounded-lg transition-colors ${
-              value === size
+            key={size.id}
+            onClick={() => onChange(size.id)}
+            className={`w-6 h-6 flex items-center justify-center rounded-md transition-colors ${
+              value === size.id
                 ? activeColorClass
                 : darkMode ? 'bg-slate-600 text-gray-300 hover:bg-slate-500' : 'bg-gray-200 text-gray-600 hover:bg-gray-300'
             }`}
-            title={size === 'small' ? 'Petit' : size === 'medium' ? 'Moyen' : 'Grand'}
+            title={size.label}
           >
-            <span className={size === 'small' ? 'text-xs' : size === 'medium' ? 'text-sm' : 'text-base'} style={{ fontWeight: 'bold' }}>A</span>
+            <span className={size.fontSize} style={{ fontWeight: 'bold' }}>A</span>
           </button>
         ))}
       </div>

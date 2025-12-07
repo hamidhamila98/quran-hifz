@@ -1405,7 +1405,17 @@ export default function HomePage({ settings, updateSettings, isMobile, setMobile
               </h1>
               <p className={`${isMobile ? 'text-xs' : 'text-sm'} ${settings.darkMode ? 'text-gray-400' : 'text-gray-500'}`}>
                 {isMobile ? (
-                  <><span className="font-semibold text-primary-500">{getPortionSizeLabel()}</span>/jour</>
+                  <>
+                    <span className="font-semibold text-primary-500">{getPortionSizeLabel()}</span>/jour
+                    {completePagesCount > 0 && (
+                      <> · <button
+                        onClick={() => setShowValidatedPagesPopup(true)}
+                        className="font-semibold text-green-500"
+                      >
+                        {completePagesCount}p apprise{completePagesCount > 1 ? 's' : ''}
+                      </button></>
+                    )}
+                  </>
                 ) : (
                   <>Vous apprenez <span className="font-semibold text-primary-500">{getPortionSizeLabel()}</span> du Coran par jour.
                   {completePagesCount > 0 && (
@@ -1677,83 +1687,155 @@ export default function HomePage({ settings, updateSettings, isMobile, setMobile
             </div>
           ) : (
             <div className={`rounded-2xl p-6 ${settings.darkMode ? 'bg-slate-800' : 'bg-white'} shadow-lg relative`}>
-              {/* Action buttons - positioned on the left side, lower when cut verse button is visible */}
-              <div className={`absolute left-3 flex flex-col gap-2 z-10 ${cutVerse && cutVerseLines.length > 0 ? 'top-20' : 'top-3'}`}>
-                {/* Hide Text Button */}
-                <button
-                  onClick={() => {
-                    const newHideText = !hideText
-                    if (newHideText) {
-                      setHiddenVerses(new Set(selectedVerses))
-                    } else {
-                      setHiddenVerses(new Set())
-                    }
-                    setHideText(newHideText)
-                  }}
-                  className={`w-10 h-10 rounded-xl flex items-center justify-center transition-all ${
-                    hideText
-                      ? 'bg-amber-100 text-amber-600 dark:bg-amber-900/50 dark:text-amber-400 shadow-lg'
-                      : `${settings.darkMode ? 'bg-slate-700 hover:bg-slate-600 text-gray-400' : 'bg-gray-100 hover:bg-gray-200 text-gray-500'} shadow`
-                  }`}
-                  title={hideText ? "Afficher le texte" : "Cacher le texte"}
-                >
-                  {hideText ? <EyeOff className="w-5 h-5" /> : <Eye className="w-5 h-5" />}
-                </button>
+              {/* Action buttons - horizontal bar above Quran on mobile, vertical on desktop */}
+              {isMobile ? (
+                <div className="flex items-center justify-center gap-2 mb-3">
+                  {/* Hide Text Button */}
+                  <button
+                    onClick={() => {
+                      const newHideText = !hideText
+                      if (newHideText) {
+                        setHiddenVerses(new Set(selectedVerses))
+                      } else {
+                        setHiddenVerses(new Set())
+                      }
+                      setHideText(newHideText)
+                    }}
+                    className={`w-9 h-9 rounded-lg flex items-center justify-center transition-all ${
+                      hideText
+                        ? 'bg-amber-100 text-amber-600 dark:bg-amber-900/50 dark:text-amber-400'
+                        : `${settings.darkMode ? 'bg-slate-700 text-gray-400' : 'bg-gray-100 text-gray-500'}`
+                    }`}
+                  >
+                    {hideText ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
+                  </button>
 
-                {/* Translation Button */}
-                <button
-                  onClick={async () => {
-                    const newShowTranslation = !showTranslation
-                    setShowTranslation(newShowTranslation)
-                    if (newShowTranslation) {
-                      // Fetch translations for current portion verses
-                      const verseKeys = verses.map(v => v.verseKey)
-                      await fetchTranslations(verseKeys)
-                    }
-                  }}
-                  disabled={loadingTranslation}
-                  className={`w-10 h-10 rounded-xl flex items-center justify-center transition-all ${
-                    showTranslation
-                      ? 'bg-blue-100 text-blue-600 dark:bg-blue-900/50 dark:text-blue-400 shadow-lg'
-                      : `${settings.darkMode ? 'bg-slate-700 hover:bg-slate-600 text-gray-400' : 'bg-gray-100 hover:bg-gray-200 text-gray-500'} shadow`
-                  }`}
-                  title={showTranslation ? "Masquer la traduction" : "Afficher la traduction (Hamidullah)"}
-                >
-                  {loadingTranslation ? (
-                    <div className="w-5 h-5 border-2 border-current border-t-transparent rounded-full animate-spin" />
-                  ) : (
-                    <Languages className="w-5 h-5" />
-                  )}
-                </button>
+                  {/* Translation Button */}
+                  <button
+                    onClick={async () => {
+                      const newShowTranslation = !showTranslation
+                      setShowTranslation(newShowTranslation)
+                      if (newShowTranslation) {
+                        const verseKeys = verses.map(v => v.verseKey)
+                        await fetchTranslations(verseKeys)
+                      }
+                    }}
+                    disabled={loadingTranslation}
+                    className={`w-9 h-9 rounded-lg flex items-center justify-center transition-all ${
+                      showTranslation
+                        ? 'bg-blue-100 text-blue-600 dark:bg-blue-900/50 dark:text-blue-400'
+                        : `${settings.darkMode ? 'bg-slate-700 text-gray-400' : 'bg-gray-100 text-gray-500'}`
+                    }`}
+                  >
+                    {loadingTranslation ? (
+                      <div className="w-4 h-4 border-2 border-current border-t-transparent rounded-full animate-spin" />
+                    ) : (
+                      <Languages className="w-4 h-4" />
+                    )}
+                  </button>
 
-                {/* Tafsir Button */}
-                <button
-                  onClick={async () => {
-                    const newShowTafsir = !showTafsir
-                    setShowTafsir(newShowTafsir)
-                    if (newShowTafsir) {
-                      // If verses selected, show tafsir for selection only, else show for portion
-                      const verseKeys = selectedVerses.size > 0
-                        ? Array.from(selectedVerses)
-                        : verses.map(v => v.verseKey)
-                      await fetchTafsir(verseKeys, tafsirInEnglish)
-                    }
-                  }}
-                  disabled={loadingTafsir}
-                  className={`w-10 h-10 rounded-xl flex items-center justify-center transition-all ${
-                    showTafsir
-                      ? 'bg-emerald-100 text-emerald-600 dark:bg-emerald-900/50 dark:text-emerald-400 shadow-lg'
-                      : `${settings.darkMode ? 'bg-slate-700 hover:bg-slate-600 text-gray-400' : 'bg-gray-100 hover:bg-gray-200 text-gray-500'} shadow`
-                  }`}
-                  title={showTafsir ? "Masquer le Tafsir" : `Afficher le Tafsir (${currentTafsir.name})`}
-                >
-                  {loadingTafsir ? (
-                    <div className="w-5 h-5 border-2 border-current border-t-transparent rounded-full animate-spin" />
-                  ) : (
-                    <BookText className="w-5 h-5" />
-                  )}
-                </button>
-              </div>
+                  {/* Tafsir Button */}
+                  <button
+                    onClick={async () => {
+                      const newShowTafsir = !showTafsir
+                      setShowTafsir(newShowTafsir)
+                      if (newShowTafsir) {
+                        const verseKeys = selectedVerses.size > 0
+                          ? Array.from(selectedVerses)
+                          : verses.map(v => v.verseKey)
+                        await fetchTafsir(verseKeys, tafsirInEnglish)
+                      }
+                    }}
+                    disabled={loadingTafsir}
+                    className={`w-9 h-9 rounded-lg flex items-center justify-center transition-all ${
+                      showTafsir
+                        ? 'bg-emerald-100 text-emerald-600 dark:bg-emerald-900/50 dark:text-emerald-400'
+                        : `${settings.darkMode ? 'bg-slate-700 text-gray-400' : 'bg-gray-100 text-gray-500'}`
+                    }`}
+                  >
+                    {loadingTafsir ? (
+                      <div className="w-4 h-4 border-2 border-current border-t-transparent rounded-full animate-spin" />
+                    ) : (
+                      <BookText className="w-4 h-4" />
+                    )}
+                  </button>
+                </div>
+              ) : (
+                <div className={`absolute left-3 flex flex-col gap-2 z-10 ${cutVerse && cutVerseLines.length > 0 ? 'top-20' : 'top-3'}`}>
+                  {/* Hide Text Button */}
+                  <button
+                    onClick={() => {
+                      const newHideText = !hideText
+                      if (newHideText) {
+                        setHiddenVerses(new Set(selectedVerses))
+                      } else {
+                        setHiddenVerses(new Set())
+                      }
+                      setHideText(newHideText)
+                    }}
+                    className={`w-10 h-10 rounded-xl flex items-center justify-center transition-all ${
+                      hideText
+                        ? 'bg-amber-100 text-amber-600 dark:bg-amber-900/50 dark:text-amber-400 shadow-lg'
+                        : `${settings.darkMode ? 'bg-slate-700 hover:bg-slate-600 text-gray-400' : 'bg-gray-100 hover:bg-gray-200 text-gray-500'} shadow`
+                    }`}
+                    title={hideText ? "Afficher le texte" : "Cacher le texte"}
+                  >
+                    {hideText ? <EyeOff className="w-5 h-5" /> : <Eye className="w-5 h-5" />}
+                  </button>
+
+                  {/* Translation Button */}
+                  <button
+                    onClick={async () => {
+                      const newShowTranslation = !showTranslation
+                      setShowTranslation(newShowTranslation)
+                      if (newShowTranslation) {
+                        const verseKeys = verses.map(v => v.verseKey)
+                        await fetchTranslations(verseKeys)
+                      }
+                    }}
+                    disabled={loadingTranslation}
+                    className={`w-10 h-10 rounded-xl flex items-center justify-center transition-all ${
+                      showTranslation
+                        ? 'bg-blue-100 text-blue-600 dark:bg-blue-900/50 dark:text-blue-400 shadow-lg'
+                        : `${settings.darkMode ? 'bg-slate-700 hover:bg-slate-600 text-gray-400' : 'bg-gray-100 hover:bg-gray-200 text-gray-500'} shadow`
+                    }`}
+                    title={showTranslation ? "Masquer la traduction" : "Afficher la traduction (Hamidullah)"}
+                  >
+                    {loadingTranslation ? (
+                      <div className="w-5 h-5 border-2 border-current border-t-transparent rounded-full animate-spin" />
+                    ) : (
+                      <Languages className="w-5 h-5" />
+                    )}
+                  </button>
+
+                  {/* Tafsir Button */}
+                  <button
+                    onClick={async () => {
+                      const newShowTafsir = !showTafsir
+                      setShowTafsir(newShowTafsir)
+                      if (newShowTafsir) {
+                        const verseKeys = selectedVerses.size > 0
+                          ? Array.from(selectedVerses)
+                          : verses.map(v => v.verseKey)
+                        await fetchTafsir(verseKeys, tafsirInEnglish)
+                      }
+                    }}
+                    disabled={loadingTafsir}
+                    className={`w-10 h-10 rounded-xl flex items-center justify-center transition-all ${
+                      showTafsir
+                        ? 'bg-emerald-100 text-emerald-600 dark:bg-emerald-900/50 dark:text-emerald-400 shadow-lg'
+                        : `${settings.darkMode ? 'bg-slate-700 hover:bg-slate-600 text-gray-400' : 'bg-gray-100 hover:bg-gray-200 text-gray-500'} shadow`
+                    }`}
+                    title={showTafsir ? "Masquer le Tafsir" : `Afficher le Tafsir (${currentTafsir.name})`}
+                  >
+                    {loadingTafsir ? (
+                      <div className="w-5 h-5 border-2 border-current border-t-transparent rounded-full animate-spin" />
+                    ) : (
+                      <BookText className="w-5 h-5" />
+                    )}
+                  </button>
+                </div>
+              )}
 
               {/* Toggle button for cut verse (verse starting before this portion) */}
               {cutVerse && cutVerseLines.length > 0 && (

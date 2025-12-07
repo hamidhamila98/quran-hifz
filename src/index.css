@@ -403,6 +403,16 @@ html {
 }
 
 /* Font size classes for Quran text */
+.font-size-tiny .mushaf-line,
+.font-size-tiny.arabic-text {
+  font-size: 0.875rem !important;
+}
+
+.font-size-xsmall .mushaf-line,
+.font-size-xsmall.arabic-text {
+  font-size: 1rem !important;
+}
+
 .font-size-small .mushaf-line,
 .font-size-small.arabic-text {
   font-size: 1.25rem !important;
@@ -419,6 +429,14 @@ html {
 }
 
 @media (min-width: 768px) {
+  .font-size-tiny .mushaf-line,
+  .font-size-tiny.arabic-text {
+    font-size: 1rem !important;
+  }
+  .font-size-xsmall .mushaf-line,
+  .font-size-xsmall.arabic-text {
+    font-size: 1.25rem !important;
+  }
   .font-size-small .mushaf-line,
   .font-size-small.arabic-text {
     font-size: 1.5rem !important;
