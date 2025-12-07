@@ -95,7 +95,7 @@ export default function NotesPage({ settings, updateSettings, isMobile, setMobil
   }
 
   return (
-    <div className={`min-h-screen ${darkMode ? 'bg-slate-900' : 'bg-gray-50'}`}>
+    <div className={`min-h-screen pb-20 ${darkMode ? 'bg-slate-900' : 'bg-gray-50'}`}>
       {/* Mobile Header */}
       <MobileHeader
         title="MyNotes"

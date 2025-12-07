@@ -192,6 +192,19 @@ body {
 /* Tajweed text styling */
 .tajweed-text {
   line-height: 3.8;
+  /* Preserve Arabic ligatures when using tajweed spans */
+  font-feature-settings: "liga" 1, "calt" 1, "rlig" 1;
+  -webkit-font-feature-settings: "liga" 1, "calt" 1, "rlig" 1;
+  text-rendering: optimizeLegibility;
+}
+
+/* Ensure tajweed spans don't break Arabic ligatures */
+.tajweed-text span[class^="tj-"],
+.tajweed-text span[style*="color"] {
+  display: inline;
+  unicode-bidi: plaintext;
+  font-feature-settings: inherit;
+  -webkit-font-feature-settings: inherit;
 }
 
 /* Hide verse end numbers from API (we have our own) */

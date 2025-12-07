@@ -191,9 +191,9 @@ export default function LandingPage({ darkMode, toggleDarkMode, isMobile }) {
   }
 
   return (
-    <div className={`min-h-screen flex flex-col ${isMobile ? 'pb-12' : 'pb-16'} ${darkMode ? 'bg-slate-900' : 'bg-gray-50'}`}>
+    <div className={`min-h-screen flex flex-col ${isMobile ? 'pb-20' : 'pb-24'} ${darkMode ? 'bg-slate-900' : 'bg-gray-50'}`}>
       {/* Top bar avec dark mode et auth */}
-      <div className={`absolute ${isMobile ? 'top-2 right-2' : 'top-4 right-4'} z-50 flex items-center gap-1 md:gap-2`}>
+      <div className={`absolute ${isMobile ? 'top-3 right-3' : 'top-4 right-4'} z-50 flex items-center gap-1 md:gap-2`}>
         {/* User info / Auth buttons */}
         {isLoggedIn ? (
           <div className="flex items-center gap-2">
@@ -328,7 +328,7 @@ export default function LandingPage({ darkMode, toggleDarkMode, isMobile }) {
         </div>
       )}
 
-      <div className={`flex-1 flex flex-col items-center justify-center p-4 md:p-8 ${isMobile ? 'pt-10' : ''}`}>
+      <div className={`flex-1 flex flex-col items-center justify-center p-4 md:p-8 ${isMobile ? 'pt-14' : ''}`}>
         {/* Header - Bismillah */}
         <div className="text-center mb-6 md:mb-12">
           <h1 className={`text-2xl md:text-4xl font-bold mb-2 ${darkMode ? 'text-white' : 'text-gray-900'}`}>

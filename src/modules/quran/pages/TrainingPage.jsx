@@ -515,7 +515,7 @@ export default function TrainingPage({ settings, isMobile, setMobileMenuOpen }) 
     const percentage = Math.round((score.correct / score.total) * 100)
 
     return (
-      <div className={`p-6 pb-16 ${settings.darkMode ? 'bg-slate-900' : 'bg-gray-50'}`}>
+      <div className={`p-6 pb-20 ${settings.darkMode ? 'bg-slate-900' : 'bg-gray-50'}`}>
         <div className={`max-w-md mx-auto mt-12 p-8 rounded-2xl ${settings.darkMode ? 'bg-slate-800' : 'bg-white'} shadow-lg text-center`}>
           <div className="text-6xl mb-4">{emoji}</div>
           <h2 className={`text-2xl font-bold mb-2 ${settings.darkMode ? 'text-white' : 'text-gray-800'}`}>
@@ -571,7 +571,7 @@ export default function TrainingPage({ settings, isMobile, setMobileMenuOpen }) 
   }
 
   return (
-    <div className={`pb-16 ${settings.darkMode ? 'bg-slate-900' : 'bg-gray-50'}`}>
+    <div className={`pb-20 ${settings.darkMode ? 'bg-slate-900' : 'bg-gray-50'}`}>
       {/* Mobile Header */}
       <MobileHeader
         title="MyHifz"

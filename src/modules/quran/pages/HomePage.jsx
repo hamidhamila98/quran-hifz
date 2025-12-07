@@ -1379,7 +1379,7 @@ export default function HomePage({ settings, updateSettings, isMobile, setMobile
   }
 
   return (
-    <div className={`${isMobile ? 'p-3 pb-14' : 'p-6 pb-16'} ${settings.darkMode ? 'bg-slate-900' : 'bg-gray-50'}`}>
+    <div className={`${isMobile ? 'p-2 pb-20' : 'p-6 pb-20'} ${settings.darkMode ? 'bg-slate-900' : 'bg-gray-50'}`}>
       {/* Mobile Header */}
       {isMobile && (
         <MobileHeader
@@ -1686,7 +1686,7 @@ export default function HomePage({ settings, updateSettings, isMobile, setMobile
               </button>
             </div>
           ) : (
-            <div className={`rounded-2xl p-6 ${settings.darkMode ? 'bg-slate-800' : 'bg-white'} shadow-lg relative`}>
+            <div className={`rounded-2xl ${isMobile ? "p-2" : "p-6"} ${settings.darkMode ? 'bg-slate-800' : 'bg-white'} shadow-lg relative`}>
               {/* Action buttons - horizontal bar above Quran on mobile, vertical on desktop */}
               {isMobile ? (
                 <div className="flex items-center justify-center gap-2 mb-3">

@@ -262,7 +262,7 @@ export default function ArabicPage({ settings, updateSettings, isMobile, setMobi
   }
 
   return (
-    <div className={`pb-16 ${settings.darkMode ? 'bg-slate-900' : 'bg-gray-50'}`}>
+    <div className={`pb-20 ${settings.darkMode ? 'bg-slate-900' : 'bg-gray-50'}`}>
       {/* Mobile Header */}
       <MobileHeader
         title="MyArabic"

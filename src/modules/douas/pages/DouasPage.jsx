@@ -97,7 +97,7 @@ export default function DouasPage({ settings, updateSettings, isMobile, setMobil
 
   // Vue accueil - Style copié de ArabicBooksPage
   return (
-    <div className={`pb-16 ${darkMode ? 'bg-slate-900' : 'bg-gray-50'}`}>
+    <div className={`pb-20 ${darkMode ? 'bg-slate-900' : 'bg-gray-50'}`}>
       {/* Mobile Header */}
       <MobileHeader
         title="MyDouas"
