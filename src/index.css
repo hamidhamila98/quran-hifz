@@ -205,6 +205,29 @@ body {
   unicode-bidi: plaintext;
   font-feature-settings: inherit;
   -webkit-font-feature-settings: inherit;
+  /* Force text shaping on mobile */
+  -webkit-text-size-adjust: 100%;
+  text-rendering: geometricPrecision;
+}
+
+/* Mobile-specific fix for Arabic ligatures */
+@supports (-webkit-touch-callout: none) {
+  .tajweed-text {
+    -webkit-text-stroke: 0;
+    text-rendering: geometricPrecision;
+  }
+  .tajweed-text span {
+    letter-spacing: 0 !important;
+  }
+}
+
+/* Force connected Arabic script on all devices */
+.tajweed-text,
+.tajweed-text * {
+  font-variant-ligatures: common-ligatures;
+  -webkit-font-variant-ligatures: common-ligatures;
+  word-spacing: normal;
+  letter-spacing: 0;
 }
 
 /* Hide verse end numbers from API (we have our own) */
