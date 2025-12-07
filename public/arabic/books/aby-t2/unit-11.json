@@ -1,0 +1,332 @@
+{
+  "id": 11,
+  "titleAr": "الوحدة الحادية عشرة",
+  "titleFr": "Unité 11",
+  "items": [
+    {
+      "id": "11.1",
+      "type": "dialogue",
+      "titleAr": "كيف تفهم الإسلام فهماً صحيحاً؟",
+      "titleFr": "Comment comprendre l'Islam correctement ?",
+      "youtube": "",
+      "pdfPage": 14,
+      "lines": [
+        {
+          "speaker": "كارلس",
+          "ar": "أُريدُ أَنْ أَسْأَلَكَ عَنِ الإِسْلامِ. هَلْ يُضَايِقُكَ ذَلِكَ؟",
+          "fr": "Je voudrais te poser des questions sur l'Islam. Cela te dérange-t-il ?"
+        },
+        {
+          "speaker": "أَحْمَدُ",
+          "ar": "يُسْعِدُنِي ذَلِكَ، وَأَرَحْبُ بِأَسْئِلَتِكَ.",
+          "fr": "Cela me fait plaisir, et je suis heureux de tes questions."
+        },
+        {
+          "speaker": "كارلس",
+          "ar": "هَلْ كَانَ نَبِيُّكُمْ مُحَمَّدٌ أُمِّيَّاً ؛ لَا يَقْرَأُ وَلَا يَكْتُبُ؟",
+          "fr": "Votre prophète Muhammad était-il illettré ; ne lisait-il ni n'écrivait-il ?"
+        },
+        {
+          "speaker": "أَحْمَدُ",
+          "ar": "نَعَمْ، هَذا صَحِيحٌ. كان نَبِيُّنا أُمِّيّاً.",
+          "fr": "Oui, c'est vrai. Notre prophète était illettré."
+        },
+        {
+          "speaker": "كارلس",
+          "ar": "إِذَنْ كَيفَ أَتى بِهَذِهِ الحَقَائِقِ العِلْمِيَّةِ الَّتِي لَمْ يَكُنِ النَّاسُ يَعْرِفُونَها فِي زَمَنِهِ، وَأَثْبَتَها العِلْمُ اليوم ؟!",
+          "fr": "Alors, comment est-il venu avec ces vérités scientifiques que les gens ne connaissaient pas à son époque, et que la science a prouvées aujourd'hui ?!"
+        },
+        {
+          "speaker": "أَحْمَدُ",
+          "ar": "لَمْ يَأْتِ بِتِلْكَ الحَقَائِقِ العِلْمِيَّةِ مِنْ عِنْدِهِ. بَلْ هِيَ مِنْ عِنْدِ اللهِ . وَهَذَا دَلِيلٌ عَلَى أَنَّهُ رَسُولٌ.",
+          "fr": "Il n'est pas venu avec ces vérités scientifiques de lui-même. Mais elles viennent d'Allah. Et c'est une preuve qu'il est un messager."
+        },
+        {
+          "speaker": "كارلس",
+          "ar": "سُؤالٌ آخَرُ: هَلِ الإِسْلَامُ دِينُ الْعَرَبِ وَحْدَهُمْ؟",
+          "fr": "Autre question : L'Islam est-il la religion des Arabes seulement ?"
+        },
+        {
+          "speaker": "أَحْمَدُ",
+          "ar": "الإِسْلامُ دِينُ النَّاسِ جَمِيعاً ، فِي كُلِّ زَمَانٍ وَمَكانٍ . انْظُرْ إلى المُسْلِمِينَ فِي كُلِّ العالم، إِنَّهُم شُعوبٌ مُخْتَلِفَةٌ فِي لُغَاتِهِمْ وَأَعْرَاقِهِمْ وَأَلْوَانِهِمْ.",
+          "fr": "L'Islam est la religion de tous les peuples, en tout temps et en tout lieu. Regarde les musulmans dans le monde entier, ce sont des peuples différents dans leurs langues, leurs ethnies et leurs couleurs."
+        },
+        {
+          "speaker": "كارلس",
+          "ar": "أنا لا أَفْهَمُ الإسْلامَ فَهْماً صحيحاً.",
+          "fr": "Je ne comprends pas l'Islam correctement."
+        },
+        {
+          "speaker": "أَحْمَدُ",
+          "ar": "لأَنَّكَ تَعْتَمِدُ فِي مَعْلُومَاتِكَ وَآرائِكَ دائماً عَلى كُتّابٍ مُعادينَ لِلإسْلامِ. اِقْرَأْ لِكُتّابٍ مُسْلِمِينَ أَوْ مُحايِدينَ يَقولونَ الحَقيقَةَ.",
+          "fr": "Parce que tu te bases dans tes informations et tes opinions toujours sur des écrivains hostiles à l'Islam. Lis des écrivains musulmans ou neutres qui disent la vérité."
+        },
+        {
+          "speaker": "كارلس",
+          "ar": "ومَنْ هؤلاءِ الكُتَّابُ المُحايِدُونَ؟",
+          "fr": "Et qui sont ces écrivains neutres ?"
+        },
+        {
+          "speaker": "أَحْمَدُ",
+          "ar": "إِنَّهُم كثيرونَ، وَمِنْهُم : العَالِمُ الفرنسي موريس بوكاي، والعالم الأمريكي مايكل هارت والمُؤَرِّخ البريطاني توماس آرنولد .",
+          "fr": "Ils sont nombreux, parmi eux : le savant français Maurice Bucaille, le savant américain Michael Hart et l'historien britannique Thomas Arnold."
+        },
+        {
+          "speaker": "كارلس",
+          "ar": "سَأَقْرَأُ لِهَؤُلاءِ الكُتّابِ.",
+          "fr": "Je vais lire ces écrivains."
+        },
+        {
+          "speaker": "أَحْمَدُ",
+          "ar": "إِذَنْ، سَتَعْرِفُ عَنِ الإِسْلامِ الشَّيْءَ الكَثِيرَ.",
+          "fr": "Alors, tu connaîtras beaucoup de choses sur l'Islam."
+        }
+      ]
+    },
+    {
+      "id": "11.2",
+      "type": "texte",
+      "titleAr": "حقيقة الإسلام",
+      "titleFr": "Vérité de l'Islam",
+      "youtube": "",
+      "pdfPage": 15,
+      "lines": [
+        {
+          "speaker": "",
+          "ar": "وَقَالُوا كُونُوا هُودًا أَوْ نَصَرَى تَهْتَدُوا قُلْ بَلْ مِلَّةَ إِبْرَاهِيمَ\nحَنِيفًا وَمَا كَانَ مِنَ الْمُشْرِكِينَ قُولُوا آمَنَّا بِاللَّهِ وَمَا\nأُنزِلَ إِلَيْنَا وَمَا أُنزِلَ إِلَى إِبْرَاهِيمَ وَإِسْمَاعِيلَ وَإِسْحَاقَ وَيَعْقُوبَ\nوَالْأَسْبَاطِ وَمَا أُوتِيَ مُوسَى وَعِيسَى وَمَا أُوتِيَ النَّبِيُّونَ",
+          "fr": "Et ils ont dit: «Soyez Juifs ou Chrétiens, vous serez sur la bonne voie». Dis: «Non, mais [suivez] la religion d'Abraham, le sincère. Et il n'était point des associateurs». Dites: «Nous croyons en Allah et en ce qu'on nous a révélé, et en ce qui a été révélé à Abraham, Ismaël, Isaac, Jacob et les Tribus, et en ce qui a été donné à Moïse et à Jésus, et en ce qui a été donné aux prophètes, venant de leur Seigneur. Nous ne faisons aucune distinction entre eux. Et à Lui nous sommes Soumis»."
+        },
+        {
+          "speaker": "",
+          "ar": "الإسلام دين التَّوحيد لا إلهَ إِلَّا اللهُ مُحَمَّدٌ رَسولُ اللهِ الَّذي بَعَثَ اللهُ بِهِ الرُّسُلَ جَمِيعاً، وَأَوَّلُهُم\nنوح عليه السلام، وَآخِرُهم مُحَمَّدٌ . قالَ تَعالى: ﴿إِنَّ الدِّينَ عِنْدَ اللَّهِ الإِسْلامُ .",
+          "fr": "L'Islam est la religion du Tawhid (l'unicité d'Allah) : il n'y a de dieu qu'Allah, Muhammad est le messager d'Allah, celui par qui Allah a envoyé tous les messagers, le premier d'entre eux étant\nNoé, que la paix soit sur lui, et le dernier d'entre eux étant Muhammad. Allah le Très-Haut a dit : «Certes, la religion acceptée d'Allah, c'est l'Islam»."
+        },
+        {
+          "speaker": "",
+          "ar": "والإسلامُ هُوَ الدِّينُ الباقي الَّذي نَسَخَ جَمِيعَ الرِّسالاتِ قَبْلَهُ . قالَ اللهُ تَعَالَى: ﴿وَمَنْ يَبْتَغِ غَيْرَ\nالإسْلامِ دِيناً فَلَنْ يُقْبَلَ مِنْهُ . وَهُوَ صَالِحٌ لِكُلِّ زمانٍ ومَكانٍ . وَهُوَ دينٌ عَامٌ لِجَمِيعِ البَشَرِ؛ لِذَا فَقَدْ\nتَكَفَّلَ اللهُ تَعَالَى بِحِفْظِهِ . قَالَ تَعالى: ﴿إِنَّا نَحْنُ نَزَّلْنَا الذِّكْرَ وَإِنَّا لَهُ لَحَافِظُونَ .",
+          "fr": "L'Islam est la religion restante qui a abrogé tous les messages précédents. Allah le Très-Haut a dit : «Et quiconque désire une religion autre que l'Islam, ne sera point agréé, et il sera, dans l'au-delà, parmi les perdants». Il est valable pour tous les temps et tous les lieux. C'est une religion générale pour toute l'humanité; c'est pourquoi Allah le Très-Haut s'est engagé à le préserver. Allah a dit : «En vérité c'est Nous qui avons fait descendre le Coran, et c'est Nous qui en sommes gardien»."
+        },
+        {
+          "speaker": "",
+          "ar": "وَالْمُسْلِمُ لَا يُؤْمِنُ بِمُحَمَّدٍ ﷺ وَحْدَهُ، وَإِنَّمَا يُؤْمِنُ كَذلِكَ بِجَمِيعِ الرُّسُلِ الَّذِينَ سَبَقُوهُ. قَالَ تَعَالَى:\nقُولُوا آمَنَّا بِاللَّهِ وَمَا أُنزِلَ إِلَيْنَا وَمَا أُنزِلَ إِلَى إِبْرَاهِيمَ وَإِسْمَاعِيلَ وَإِسْحَقَ وَيَعْقُوبَ وَالْأَسْبَاطِ وَمَا أُوتِيَ\nمُوسَى وَعِيسَى وَمَا أُوتِيَ النَّبِيُّونَ مِنْ رَبِّهِمْ لا نُفَرِّقُ بَيْنَ أَحَدٍ مِنْهُمْ وَنَحْنُ لَهُ مُسْلِمُونَ) .",
+          "fr": "Le musulman ne croit pas seulement en Muhammad ﷺ, mais il croit aussi en tous les messagers qui l'ont précédé. Allah le Très-Haut a dit : «Dites: «Nous croyons en Allah et en ce qu'on nous a révélé, et en ce qui a été révélé à Abraham, Ismaël, Isaac, Jacob et les Tribus, et en ce qui a été donné à Moïse et à Jésus, et en ce qui a été donné aux prophètes, venant de leur Seigneur. Nous ne faisons aucune distinction entre eux. Et à Lui nous sommes Soumis»."
+        },
+        {
+          "speaker": "",
+          "ar": "وَالإِسْلامُ يَدْعُو إِلى رَفْعِ الظُّلْمِ عَنِ الْأَفْرَادِ وَالْمُجْتَمَعاتِ إِذا فَقَدْ انْقَادَتْ إِلَيْهِ الشُّعُوبُ رَغْبَةً لا\nرَهْبَةً، فَوَجَدَتْ فِيهِ المُساواةَ بَيْنَ النَّاسِ جَميعاً ، وَإِنِ اخْتَلَفَتْ أَلْوانُهُمْ ، وَلُغَاتُهُمْ، وَبِيئاتُهُمْ . قَالَ الرَّسُولُ\n: (كُلُّكُمْ لَآدَمَ وَآدَمُ مِنْ تُرَابٍ. لا فَضْلَ لَعَرَبِيٌّ عَلى أَعْجَمِيٌّ ، وَلا لِأَسْوَدَ عَلَى أَحْمَرَ إِلَّا بِالتَّقْوَى).",
+          "fr": "L'Islam appelle à la suppression de l'injustice envers les individus et les sociétés. Lorsque les peuples s'y soumettent volontairement et non par crainte, ils y trouvent l'égalité entre tous les hommes, quelles que soient leurs couleurs, leurs langues et leurs environnements. Le Messager a dit : «Vous êtes tous d'Adam et Adam est de terre. Il n'y a pas de supériorité d'un Arabe sur un non-Arabe, ni d'un Noir sur un Rouge, si ce n'est par la piété»."
+        }
+      ]
+    },
+    {
+      "id": "11.3",
+      "type": "dialogue",
+      "titleAr": "لماذا أسلم كارلس ؟",
+      "titleFr": "Pourquoi Charles s'est-il converti à l'islam ?",
+      "youtube": "",
+      "pdfPage": 16,
+      "lines": [
+        {
+          "speaker": "سميت",
+          "ar": "رَأَيْتُ اليَوْمَ كارلس يَدْخُلُ الْمَسْجِدَ . ماذا حَدَثَ؟!",
+          "fr": "J'ai vu Charles entrer à la mosquée aujourd'hui. Que s'est-il passé?!"
+        },
+        {
+          "speaker": "ديفد",
+          "ar": "لَقَدْ أَسْلَمَ كَارِلُسٍ، وَهُو يُصَلِّي فِي هَذَا الْمَسْجِدِ بِانْتِظامٍ.",
+          "fr": "Charles s'est converti à l'islam et il prie régulièrement dans cette mosquée."
+        },
+        {
+          "speaker": "سميث",
+          "ar": "لماذا دَخَلَ كارلس في الإسلام؟!",
+          "fr": "Pourquoi Charles est-il entré dans l'islam?!"
+        },
+        {
+          "speaker": "ديفد",
+          "ar": "ها هُوَ قادِمٌ مِنَ الْمَسْجِدِ. هَيَّا نَسْأَلْهُ.",
+          "fr": "Le voilà qui arrive de la mosquée. Allons lui demander."
+        },
+        {
+          "speaker": "سميت",
+          "ar": "هَلْ أَسْلَمْتَ حَقًّا يَا كَارِلُس؟",
+          "fr": "T'es-tu vraiment converti à l'islam, Charles ?"
+        },
+        {
+          "speaker": "كارلس",
+          "ar": "نَعَمْ، أَسْلَمْتُ، وَالحَمْدُ للهِ.",
+          "fr": "Oui, je me suis converti et louange à Dieu."
+        },
+        {
+          "speaker": "ديفد",
+          "ar": "ما الَّذِي جَعَلَكَ تُسْلِمُ؟!",
+          "fr": "Qu'est-ce qui t'a fait te convertir à l'islam?!"
+        },
+        {
+          "speaker": "كارلس",
+          "ar": "أَشْياءُ كَثِيرَةٌ مِنْهَا : وَصْفُ القُرْآنِ الْجَنينَ في بَطْنِ أُمِّهِ . أَنا طَبيبٌ، وَأَعْرِفُ هَذَا الْأَمْرَ. جَاءَ\nالقُرْآنُ بِهَذا الوَصْفِ، قَبْلَ أَكْثَرَ مِنْ أَلْفِ وَأَرْبَعِمِئَةِ سَنَةٍ، وَأَثْبَتَ العِلْمُ الحَديثُ هَذِهِ الحَقيقَةَ.",
+          "fr": "Beaucoup de choses, dont la description du fœtus dans le ventre de sa mère dans le Coran. Je suis médecin et je connais cette affaire. Le Coran est venu avec cette description plus de mille quatre cents ans avant que la science moderne ne prouve cette vérité."
+        },
+        {
+          "speaker": "سميت",
+          "ar": "وَهَلْ هُناكَ أَسْبَابٌ أُخْرَى جَعَلَتْكَ تُسْلِمُ؟",
+          "fr": "Y a-t-il d'autres raisons qui t'ont fait te convertir à l'islam ?"
+        },
+        {
+          "speaker": "كارلس",
+          "ar": "نَعَمْ، فَالإِسْلامُ يَدْعو إلى الصِّدْقِ وَالأَمانَةِ وَالعَدْلِ وَالمُساواةِ وَالسَّلَامِ، وَعِبَادَةِ رَبِّ وَاحِدٍ .\nلَقَدْ أَسْلَمْتُ بَعْدَ قِراءاتٍ عَدِيدَةٍ، وَدِراساتٍ عَمِيقَةٍ.",
+          "fr": "Oui, l'islam appelle à la sincérité, à l'honnêteté, à la justice, à l'égalité, à la paix et à l'adoration d'un seul Seigneur. Je me suis converti à l'islam après de nombreuses lectures et des études approfondies."
+        },
+        {
+          "speaker": "ديفد",
+          "ar": "أَعِرْنَا بَعْضَ الكُتُبِ وَالدِّراساتِ الَّتِي قَرَأْتَها .",
+          "fr": "Prête-nous certains des livres et des études que tu as lus."
+        },
+        {
+          "speaker": "كارلس",
+          "ar": "بِكُلِّ سُرورٍ، فَلَدَيَّ كُتُبٌ كَثِيرَةٌ عَنِ الإِسْلامِ.",
+          "fr": "Avec plaisir, j'ai beaucoup de livres sur l'islam."
+        },
+        {
+          "speaker": "سميث",
+          "ar": "هَلْ هِيَ مَوْجُودَةٌ الْآنَ؟",
+          "fr": "Sont-ils disponibles maintenant ?"
+        },
+        {
+          "speaker": "كارلس",
+          "ar": "نَعَمْ، تَفَضَّلا مَعِي إلى البَيْتِ؛ لِنَتَناوَلَ بَعْضَ القَهْوَةِ، وَنَتَحَدَّثَ عَنِ الإِسْلَامِ، وَأُعطيكُما الكُتُبَ.",
+          "fr": "Oui, venez avec moi à la maison, prenons du café, parlons de l'islam et je vous donnerai les livres."
+        },
+        {
+          "speaker": "ديفد",
+          "ar": "هيا بنا .",
+          "fr": "Allons-y."
+        }
+      ]
+    },
+    {
+      "id": "11.4",
+      "type": "texte",
+      "titleAr": "أَرْكَانُ الإِسْلامِ الخَمْسَةُ",
+      "titleFr": "Les cinq piliers de l'Islam",
+      "youtube": "",
+      "pdfPage": 17,
+      "lines": [
+        {
+          "speaker": "",
+          "ar": "تَهْيِئَة:",
+          "fr": "Préparation:"
+        },
+        {
+          "speaker": "",
+          "ar": "فَكَرْ في الإجابَةِ عَنِ الْأَسْئِلَةِ التَّالِيَةِ:",
+          "fr": "Réfléchissez aux réponses aux questions suivantes:"
+        },
+        {
+          "speaker": "",
+          "ar": "١- ما أركان الإسلام؟",
+          "fr": "1- Quels sont les piliers de l'Islam?"
+        },
+        {
+          "speaker": "",
+          "ar": "٢- ما الرُّكْنُ الَّذِي يُؤَدِّيَهِ الْمُسْلِمُ خَمْسَ مَرَّاتٍ في اليَوْمِ؟",
+          "fr": "2- Quel est le pilier que le musulman accomplit cinq fois par jour?"
+        },
+        {
+          "speaker": "",
+          "ar": "٣- ما الرُّكْنُ الَّذي يُعطي فيه المُسْلِمُ مالاً؟",
+          "fr": "3- Quel est le pilier dans lequel le musulman donne de l'argent?"
+        },
+        {
+          "speaker": "",
+          "ar": "٤- ما الرُّكْنُ الَّذِي لَا يَصِلُّ أَداؤُه إلا في مَكَّةَ؟",
+          "fr": "4- Quel est le pilier qui n'est valide que s'il est accompli à La Mecque?"
+        },
+        {
+          "speaker": "",
+          "ar": "قالَ الرَّسُولُ ﷺ: (بُنِيَ الإِسْلامُ عَلى خَمْسٍ : شَهَادَةِ أنْ لا إلهَ إلا اللهُ، وَأَنَّ مُحَمَّداً رَسُولُ اللهِ،",
+          "fr": "Le Messager d'Allah ﷺ a dit: (L'Islam est bâti sur cinq piliers: l'attestation qu'il n'y a de divinité digne d'être adorée qu'Allah et que Muhammad est le Messager d'Allah,"
+        },
+        {
+          "speaker": "",
+          "ar": "وإقام الصَّلاةِ، وَإيتاء الزكاةِ ، وَحَجِّ البَيْتِ، وَصَوْمِ رَمَضانَ). وهذا تعريف بأركان الإسلام:",
+          "fr": "l'accomplissement de la prière, l'acquittement de la zakat, le pèlerinage à la Maison, et le jeûne du Ramadan). Ceci est une définition des piliers de l'Islam:"
+        },
+        {
+          "speaker": "",
+          "ar": "الرُّكْنَ الأَوَّلُ: الشَّهَادَتَانِ (لا إله إلا اللهُ مُحَمَّدٌ رَسولُ اللهِ . وَهُما مِفْتَاحُ الدخول إلى الإِسْلامِ،",
+          "fr": "Le premier pilier: les deux témoignages (il n'y a de divinité digne d'être adorée qu'Allah, Muhammad est le Messager d'Allah). Et ce sont les clés de l'entrée dans l'Islam,"
+        },
+        {
+          "speaker": "",
+          "ar": "فَمَنْ قالَهما ، فَقَدْ دَخَلَ في الإسلام.",
+          "fr": "quiconque les prononce, est entré dans l'Islam."
+        },
+        {
+          "speaker": "",
+          "ar": "الرُّكْنُ الثَّاني: الصَّلاةُ، وَهِيَ عَمُودُ الدِّينِ. قَالَ ﷺ: (رَأْسُ الأَمْرِ الإِسْلامُ، وَعَمُودُهُ الصَّلاةَ، وَذِرْوَةُ",
+          "fr": "Le deuxième pilier: la prière, et c'est le pilier de la religion. Il ﷺ a dit: (La tête de l'affaire est l'Islam, son pilier est la prière, et son sommet"
+        },
+        {
+          "speaker": "",
+          "ar": "سَنامِهِ الجِهادُ في سَبِيلِ اللهِ ) . وَهِيَ أَوَّلُ ما يُحاسَبُ عَلَيْهِ العَبْدُ يَوْمَ القِيامَةِ. قال ﷺ: (أَوَّلُ ما",
+          "fr": "est le jihad dans le chemin d'Allah). Et c'est la première chose dont le serviteur sera tenu responsable le Jour de la Résurrection. Il ﷺ a dit: (La première chose"
+        },
+        {
+          "speaker": "",
+          "ar": "يُحاسَبُ عَلَيْهِ العَبْدُ يَوْمَ القِيامَةِ الصَّلاةُ، فَإِنْ صَلُحَتْ صَلَحَ سَائِرُ عَمَلِهِ، وَإِنْ فَسَدَتْ فَسَدَ سَائِرُ",
+          "fr": "dont le serviteur sera tenu responsable le Jour de la Résurrection est la prière, si elle est bonne, tout son travail sera bon, et si elle est corrompue, tout son travail sera corrompu)"
+        },
+        {
+          "speaker": "",
+          "ar": "عَمَلِهِ) وَالصَّلَواتُ خَمْسٌ : صَلاةُ الفَجْرِ وَالظَّهْرِ وَالعَصْرِ وَالمَغْرِبِ وَالعِشَاءِ. وَلِلصَّلاةِ أَوْقاتٌ مُعَيَّنَةٌ .",
+          "fr": "Et les prières sont cinq: la prière de l'aube, du midi, de l'après-midi, du coucher du soleil et du soir. Et pour la prière, il y a des moments précis."
+        },
+        {
+          "speaker": "",
+          "ar": "قال تعالى: ﴿إِنَّ الصَّلاةَ كَانَتْ عَلَى الْمُؤْمِنِينَ كِتَاباً مَوْقُوتاً . [النساء: ١٠٣]",
+          "fr": "Allah a dit: ﴿La prière est, pour les croyants, une prescription à temps déterminé﴾. [An-Nisa: 103]"
+        },
+        {
+          "speaker": "",
+          "ar": "الرُّكْنُ الثَّالِثُ : الزَّكاةُ، وَهِيَ ما يُخْرِجُهُ المُسْلِمُ مِنَ المالِ إلى الفُقَراءِ . قالَ تَعالى: ﴿خُذْ مِنْ أَمْوَالِهِمْ",
+          "fr": "Le troisième pilier: la zakat, et c'est ce que le musulman sort de son argent pour les pauvres. Allah a dit: ﴿Prélève de leurs biens"
+        },
+        {
+          "speaker": "",
+          "ar": "صَدَقَةً تُطَهِّرُهُمْ وَتُزَكِّيهِمْ بِهَا﴾ . [التوبة : ١٠٣]",
+          "fr": "une aumône par laquelle tu les purifies et les bénis﴾. [At-Tawba: 103]"
+        },
+        {
+          "speaker": "",
+          "ar": "الرُّكْنُ الرّابِعُ : الصِّيَامُ، وَهُوَ أَنْ يَتْرُكَ الإِنْسانُ شَهْوَتَي البَطْنِ والفَرْجِ، مِنَ الفَجْرِ إِلى غُروبِ",
+          "fr": "Le quatrième pilier: le jeûne, et c'est que l'homme abandonne les deux désirs du ventre et du sexe, de l'aube au coucher du soleil."
+        },
+        {
+          "speaker": "",
+          "ar": "الشَّمْسِ. قَالَ تَعالى: ﴿يَا أَيُّهَا الَّذِينَ آمَنُوا كُتِبَ عَلَيْكُمُ الصِّيَامُ كَمَا كُتِبَ عَلَى الَّذِينَ مِنْ قَبْلِكُمْ",
+          "fr": "Allah a dit: ﴿Ô vous qui avez cru, le jeûne vous a été prescrit comme il a été prescrit à ceux d'avant vous,"
+        },
+        {
+          "speaker": "",
+          "ar": "لَعَلَّكُمْ تَتَّقُونَ﴾ [البقرة: ۱۸۳] وَلِلصّائِمِ أَجْرٌ عَظِيمٌ . قالَ رَسُولُ اللهِ ﷺ : (مَنْ صَامَ رَمَضانَ إِيماناً",
+          "fr": "afin que vous soyez pieux﴾ [Al-Baqara: 183] Et pour le jeûneur, il y a une grande récompense. Le Messager d'Allah ﷺ a dit: (Quiconque jeûne le Ramadan avec foi"
+        },
+        {
+          "speaker": "",
+          "ar": "وَاحْتِسَاباً غُفِرَ لَهُ مَا تَقَدَّمَ مِنْ ذَنْبِهِ).",
+          "fr": "et en espérant la récompense, ses péchés passés lui seront pardonnés)."
+        },
+        {
+          "speaker": "",
+          "ar": "الركن الخامس : الحَجُّ وَيَكونُ في مَكَّةَ لأَداءِ المَناسِكِ. قالَ تَعالى: ﴿وَلِلَّهِ عَلَى النَّاسِ حِجُّ الْبَيْتِ مَنْ",
+          "fr": "Le cinquième pilier: le pèlerinage et il se fait à La Mecque pour accomplir les rites. Allah a dit: ﴿Et c'est un devoir envers Allah pour les gens d'aller en pèlerinage à la Maison,"
+        },
+        {
+          "speaker": "",
+          "ar": "اسْتَطَاعَ إِلَيْهِ سَبِيلاً . [آل عمران : ٩٧] ويَجِبُ الحَجُّ عَلى المُسْلِمِ مَرَّةً واحِدَةً فِي العُمُرِ.",
+          "fr": "pour ceux qui en ont les moyens﴾ [Al-Imran: 97] Et le pèlerinage est obligatoire pour le musulman une seule fois dans sa vie."
+        }
+      ]
+    }
+  ]
+}

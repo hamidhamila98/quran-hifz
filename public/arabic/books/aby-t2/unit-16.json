@@ -1,0 +1,317 @@
+{
+  "id": 16,
+  "titleAr": "الوحدة السادسة عشرة: الطاقة",
+  "titleFr": "Unité 16: L'énergie",
+  "items": [
+    {
+      "id": "16.1",
+      "type": "dialogue",
+      "titleAr": "حوار عن فاتورة الكهرباء",
+      "titleFr": "Dialogue sur la facture d'électricité",
+      "youtube": "",
+      "pdfPage": 39,
+      "lines": [
+        {
+          "speaker": "الأب",
+          "ar": "يا أُمَّ أحْمَدَ، تَضاعَفَتْ فاتورَةُ الكَهْرَباءِ هَذَا الشَّهْرَ !",
+          "fr": "Oh Oum Ahmad, la facture d'électricité a doublé ce mois-ci !"
+        },
+        {
+          "speaker": "الأم",
+          "ar": "لا عَجَبَ فِي ذلِكَ، فَقَدْ أَصْبَحْنا نَسْتَهْلِكُ الكَهْرَباءَ كَثيراً : في الإضاءة، والحاسوب، والمذياع، وَالخَلاطِ، وَالفُرْنِ الكَهْرَبائِي، وَالغَسّالَةِ ، وَالمِكْنَسَةِ الكَهْرَبائِيَّةِ، وَغَيْرِ ذَلِكَ.",
+          "fr": "Pas étonnant, nous consommons beaucoup d'électricité : pour l'éclairage, l'ordinateur, la radio, le mixeur, le four électrique, la machine à laver, l'aspirateur, etc."
+        },
+        {
+          "speaker": "الأب",
+          "ar": "الاحظُ أَنَّ الأَوْلادَ، يَتْرُكونَ الأَجْهِزَةَ الكَهْرَبائِيَّةَ، تَعْمَلُ طُولَ اليَومِ، وَكَذَلِكَ الإضاءَةَ، وَهَذا تبذير.",
+          "fr": "Je remarque que les enfants laissent les appareils électriques allumés toute la journée, ainsi que l'éclairage, et c'est du gaspillage."
+        },
+        {
+          "speaker": "الأم",
+          "ar": "تَكَلَّمْنَا مَعَ الأَوْلادِ كَثيراً ، وقُلْنا لَهُمْ، نَحْنُ نَسْتَهْلِكُ الكَهْرَباءِ كَثِيراً جِدًا، وَهَذَا يُؤَكِّرُ في ميزانِيَّةِ البَيْتِ، وَلَكِنْ لَا مُسْتَجِيبَ لِما نَقولُ.",
+          "fr": "Nous avons beaucoup parlé aux enfants, et nous leur avons dit que nous consommons beaucoup d'électricité, et cela affecte le budget de la maison, mais ils n'écoutent pas ce que nous disons."
+        },
+        {
+          "speaker": "الأب",
+          "ar": "لَدَيَّ فِكْرَةٌ، نَقولُ لِلأَوْلادِ ، إذا انْخَفَضَ اسْتِهْلاكُ الكَهْرَباءِ؛ فَسَوْفَ نُعطي كُلَّ وَاحِدٍ مكافأة.",
+          "fr": "J'ai une idée, disons aux enfants que si la consommation d'électricité diminue, nous donnerons une récompense à chacun."
+        },
+        {
+          "speaker": "الأم",
+          "ar": "هيا نُجَرِّبْ هَذَا الأُسْلُوبَ.",
+          "fr": "Essayons cette méthode."
+        },
+        {
+          "speaker": "الأب",
+          "ar": "ما شاءَ اللهُ، انْخَفَضَتْ فاتورَةُ الكَهْرَباءِ كَثيراً هَذا الشَّهْرَ . أَعْتَقِدُ أَنَّ أُسْلُوبَنَا نَجَحَ.",
+          "fr": "Que Dieu soit loué, la facture d'électricité a beaucoup baissé ce mois-ci. Je pense que notre méthode a réussi."
+        },
+        {
+          "speaker": "الأم",
+          "ar": "وَأَيْنَ مُكافَأَةُ الأَوْلادِ؟",
+          "fr": "Et où est la récompense des enfants ?"
+        },
+        {
+          "speaker": "الأب",
+          "ar": "سأُحْضِرُها مَعِي إِنْ شَاءَ اللهُ.",
+          "fr": "Je l'apporterai avec moi, si Dieu le veut."
+        }
+      ]
+    },
+    {
+      "id": "16.2",
+      "type": "texte",
+      "titleAr": "النَّفْطُ",
+      "titleFr": "Le pétrole",
+      "youtube": "",
+      "pdfPage": 40,
+      "lines": [
+        {
+          "speaker": "",
+          "ar": "النَّفْطُ مِنْ أَهَمِّ الثَّرَواتِ الطَّبِيعِيَّةِ في العالَم . وَلِذَلِكَ يَعُدُّهُ بَعْضُ النَّاسِ الذَّهَبَ الأَسْوَدَ، وَيَعُدُّهُ",
+          "fr": "Le pétrole est l'une des ressources naturelles les plus importantes au monde. C'est pourquoi certaines personnes le considèrent comme de l'or noir, et d'autres le considèrent comme"
+        },
+        {
+          "speaker": "",
+          "ar": "آخَرُونَ شَرْيانَ الحَياةِ؛ لأنَّ السَّيَّارَاتِ وَالشَّاحِنَاتِ وَالقِطاراتِ وَالسُّفْنَ وَالطَّائِرَاتِ تَعْتَمِدُ عَلَيْهِ.",
+          "fr": "l'artère de la vie; parce que les voitures, les camions, les trains, les navires et les avions en dépendent."
+        },
+        {
+          "speaker": "",
+          "ar": "كَمَا أَنَّ الكَهْرَباءَ الَّتي تُسْتَخْدَمُ في البُيوتِ، وَأَماكِنَ كَثِيرَةٍ أُخْرَى، تُؤخَذُ مِنْهُ.",
+          "fr": "De même que l'électricité utilisée dans les maisons et dans de nombreux autres endroits, est tirée de celui-ci."
+        },
+        {
+          "speaker": "",
+          "ar": "وَيُوَفِّرُ النُّفْطُ نِصْفَ الطَّاقَةِ الَّتِي يَسْتَهْلِكُهَا الإِنْسانُ.",
+          "fr": "Le pétrole fournit la moitié de l'énergie consommée par l'homme."
+        },
+        {
+          "speaker": "",
+          "ar": "تَعْتَمِدُ مُعْظَمُ الدُّوَلِ الصِّناعِيَّةِ عَلى النِّفْطِ، وَتَسْتَخْدِمُهُ في أَشْيَاءَ كَثِيرَةٍ، مِنْهَا : اسْتِخْدَامُهُ وَقوداً",
+          "fr": "La plupart des pays industriels dépendent du pétrole et l'utilisent dans de nombreuses choses, notamment: son utilisation comme carburant"
+        },
+        {
+          "speaker": "",
+          "ar": "لِلْمَرْكَباتِ، وَاسْتِخْدَامُهُ في صِناعَةِ المَنْسوجاتِ، وَمُسْتَحْضَراتِ التَّجْمِيلِ، وَالْمُنَظَّفَاتِ، وَالسَّجَادِ،",
+          "fr": "pour les véhicules, et son utilisation dans la fabrication de textiles, de cosmétiques, de détergents et de tapis,"
+        },
+        {
+          "speaker": "",
+          "ar": "وَالبِلاسْتِيكِ، وَالْأَسْمِدَةِ، وَمِئَاتِ المُنْتَجاتِ الأُخْرَى وَيُحاوِلُ العُلَماءُ البَحْثَ عَنْ بَدِيلٍ آخَرَ لِلنَّفْطِ،",
+          "fr": "de plastique, d'engrais et de centaines d'autres produits. Les scientifiques essaient de trouver un autre substitut au pétrole,"
+        },
+        {
+          "speaker": "",
+          "ar": "وَلَكِنْ يَبْدُو أَنَّ البَحْثَ سَيَسْتَغْرِقُ وَقْتاً طويلاً .",
+          "fr": "mais il semble que la recherche prendra beaucoup de temps."
+        },
+        {
+          "speaker": "",
+          "ar": "يوجَدُ النَّفْطُ فِي كَثِيرٍ مِنَ الدُّوَلِ، وَيُقالُ إِنَّ احْتِيَاطَ النَّفْطِ في العالَمِ، يَصِلُ إلى نحو ٩٠٠",
+          "fr": "Le pétrole se trouve dans de nombreux pays, et on dit que les réserves de pétrole dans le monde atteignent environ 900"
+        },
+        {
+          "speaker": "",
+          "ar": "مليار برميل. وَمِنْ أَهَمِّ المَناطِقِ الَّتي يوجَدُ فيها النِّفْط: دُوَلُ الخَلِيجِ العَرَبِيِّ، وَبِهَا نَحْوُ ٦٦٠",
+          "fr": "milliards de barils. Parmi les régions les plus importantes où se trouve le pétrole: les pays du Golfe arabe, qui en détiennent environ 660"
+        },
+        {
+          "speaker": "",
+          "ar": "مِلْيَارِ بَرميل. وَفِي السُّعودِيَّةِ نَحْوُ خُمْسِ احْتِياطِ العَالَمِ. وَفي الإمارات العَرَبِيَّةِ المُتَّحِدَةِ، وَإيران،",
+          "fr": "milliards de barils. En Arabie saoudite, il y a environ un cinquième des réserves mondiales. Et dans les Émirats arabes unis, l'Iran,"
+        },
+        {
+          "speaker": "",
+          "ar": "وَالعِرَاقِ، وَالكُوَيْتِ نَحْوُ عُشْرِ احْتِياط العالَم . وَالنِّفْط محدودٌ في العالَمِ، وَسَيَنْتَهِي فِي يَوْمٍ مِنَ",
+          "fr": "l'Irak et le Koweït, il y a environ un dixième des réserves mondiales. Le pétrole est limité dans le monde et prendra fin un jour"
+        },
+        {
+          "speaker": "",
+          "ar": "الأيامِ، وَلِذلِكَ يَجِبُ عَلَى الأَفْرادِ والدُّوَلِ المَحافَظَةُ عَلَيْهِ.",
+          "fr": "des jours, et par conséquent, les individus et les États doivent le préserver."
+        }
+      ]
+    },
+    {
+      "id": "16.3",
+      "type": "dialogue",
+      "titleAr": "أزمة النفط",
+      "titleFr": "Crise pétrolière",
+      "youtube": "",
+      "pdfPage": 41,
+      "lines": [
+        {
+          "speaker": "حَسّانُ",
+          "ar": "تَجَدَّدَتْ أَزْمَةُ النَّفْطِ مَرَّةً أُخْرَى هَذا العام.",
+          "fr": "La crise pétrolière s'est renouvelée une fois de plus cette année."
+        },
+        {
+          "speaker": "عمادٌ",
+          "ar": "وَقَفَزَتْ أَسْعارُ الوَقودِ مِنْ جَدِيدٍ ، وأَصْبَحَ المَعْرُوضُ مِنْهُ قَلِيلاً في مَحَطَّاتِ الوَقود.",
+          "fr": "Les prix du carburant ont de nouveau bondi, et ce qui est disponible est devenu rare dans les stations-service."
+        },
+        {
+          "speaker": "حَسَّانُ",
+          "ar": "أنا لا أسْتَخْدِمُ سَيَّارَتي الآنَ، وَأَذْهَبُ إِلَى الشَّرِكَةِ بِالحَافِلَةِ.",
+          "fr": "Je n'utilise plus ma voiture maintenant, et je vais à l'entreprise en bus."
+        },
+        {
+          "speaker": "عماد",
+          "ar": "ما أَسْبَابُ أَزْمَةِ النِّفْطِ؟",
+          "fr": "Quelles sont les causes de la crise pétrolière ?"
+        },
+        {
+          "speaker": "حَسّانُ",
+          "ar": "هُناكَ خِلافٌ بَينَ الدُّوَلِ الصَّناعِيَّةِ، وَبَينَ الدُّوَلِ الْمُنْتِجَةِ لِلنَّفْطِ.",
+          "fr": "Il y a un désaccord entre les pays industriels et les pays producteurs de pétrole."
+        },
+        {
+          "speaker": "عماد",
+          "ar": "لِماذا تَخْتَلِفُ تِلْكَ الدُّوَلُ؟",
+          "fr": "Pourquoi ces pays sont-ils en désaccord ?"
+        },
+        {
+          "speaker": "حَسّانُ",
+          "ar": "تَدَّعي الدُّوَلُ الصِّناعِيَّةُ، أنَّ الدُّوَلَ الْمُنْتِجَةَ لِلنَّفْطِ تَرْفَعُ الأَسْعَارَ، وَتَقُولُ الدُّوَلُ الْمُنْتِجَةُ لِلنَّفْطِ، إِنَّ الدُّوَلَ الصَّناعِيَّةَ، تَفْرِضُ ضَرَائِبَ عَالِيَةً عَلَى الوَقود .",
+          "fr": "Les pays industriels prétendent que les pays producteurs de pétrole augmentent les prix, et les pays producteurs de pétrole disent que les pays industriels imposent des taxes élevées sur le carburant."
+        },
+        {
+          "speaker": "عِمادٌ",
+          "ar": "وَمَا ذَنْبُ الَّذِينَ يَعيشون في الدُّوَلِ الفَقِيرَةِ؟ !",
+          "fr": "Et quelle est la faute de ceux qui vivent dans les pays pauvres ? !"
+        },
+        {
+          "speaker": "حسان",
+          "ar": "لا ذَنْبَ لَهُمْ فَهُمْ فُقَراءُ .",
+          "fr": "Ils n'ont pas de faute, ils sont pauvres."
+        },
+        {
+          "speaker": "عماد",
+          "ar": "وَلَيْسَ لَدَيْهِمْ صِناعاتٌ يَبيعونها ، وَلا نِفْطٌ يُصَدِّرُونَهُ .",
+          "fr": "Ils n'ont pas d'industries à vendre, ni de pétrole à exporter."
+        },
+        {
+          "speaker": "حَسّانُ",
+          "ar": "تُفَكِّرُ الدُّوَلُ الصِّناعِيَّةُ في شُعوبها فَقَطْ، ولا تُفَكِّرُ فِي غَيْرِهِمْ؟ !",
+          "fr": "Les pays industriels ne pensent qu'à leurs peuples, et ne pensent pas aux autres ? !"
+        },
+        {
+          "speaker": "عمادٌ",
+          "ar": "كَانَ اللهُ فِي عَوْنِ الفُقَرَاءِ.",
+          "fr": "Que Dieu vienne en aide aux pauvres."
+        }
+      ]
+    },
+    {
+      "id": "16.4",
+      "type": "texte",
+      "titleAr": "الطَّاقَةُ الشَّمْسِيَّةُ",
+      "titleFr": "L'énergie solaire",
+      "youtube": "",
+      "pdfPage": 42,
+      "lines": [
+        {
+          "speaker": "",
+          "ar": "فَكَّر في الإجابَةِ عَنِ الْأَسْئِلَةِ التَّالِيَةِ:",
+          "fr": "Réfléchissez aux réponses aux questions suivantes:"
+        },
+        {
+          "speaker": "",
+          "ar": "١ - ما أهمُّ مَصْدَرِ لِلضَّوْءِ في العالم؟",
+          "fr": "1- Quelle est la source de lumière la plus importante au monde?"
+        },
+        {
+          "speaker": "",
+          "ar": "٣- كَيْفَ يَسْتَفِيدُ الْإِنْسَانُ مِنَ الشَّمْسِ؟",
+          "fr": "3- Comment l'homme profite-t-il du soleil?"
+        },
+        {
+          "speaker": "",
+          "ar": "٢- ماذا يَحْدُثُ عِنْدَمَا تَحْتَجِبُ الشَّمْسُ ؟",
+          "fr": "2- Que se passe-t-il lorsque le soleil est caché?"
+        },
+        {
+          "speaker": "",
+          "ar": "-٤ - ما مَصادِرُ الطَّاقَةِ الْأُخْرَى غَيْرِ الشَّمْسِ؟",
+          "fr": "4- Quelles sont les autres sources d'énergie que le soleil?"
+        },
+        {
+          "speaker": "",
+          "ar": "الشَّمْسُ، هذا النَّجْمُ الَّذِي نَراهُ في السَّمَاءِ، هُيَ المَصْدَرُ الأَساسِيُّ لِلطَّاقَةِ عَلَى الْأَرْضِ.",
+          "fr": "Le soleil, cette étoile que nous voyons dans le ciel, est la principale source d'énergie sur Terre."
+        },
+        {
+          "speaker": "",
+          "ar": "وَيَعْتَمِدُ الإِنْسانُ وَالحَيَوانُ وَالنَّباتُ عَلى الحَرارَةِ الَّتِي تُرْسِلُها أَشِيَّةُ الشَّمْسِ.",
+          "fr": "L'homme, les animaux et les plantes dépendent de la chaleur envoyée par les rayons du soleil."
+        },
+        {
+          "speaker": "",
+          "ar": "وَلَوْلا هَذِهِ الحَرارَةِ لَمَا وُجِدَتْ حَياةٌ عَلَى الْأَرْضِ بِأَمْرٍ مِنَ اللهِ .",
+          "fr": "Sans cette chaleur, il n'y aurait pas de vie sur Terre par ordre de Dieu."
+        },
+        {
+          "speaker": "",
+          "ar": "استَفادَ الإِنْسانُ مِنْ طَاقَةِ الشَّمْسِ قَديماً ؛ فَقَدِ اسْتَعانَ بِها عَلى طَبْخِ الطَّعام، وتسخين المياه،",
+          "fr": "L'homme a profité de l'énergie solaire depuis l'Antiquité ; il l'a utilisée pour cuisiner, chauffer l'eau,"
+        },
+        {
+          "speaker": "",
+          "ar": "وَتَدْفِئَةِ البُيوتِ. أَمّا في العَصْرِ الحَديثِ، فَقَدِ ازْدادَ الاهْتِمَامُ بِالطَّاقَةِ الشَّمْسِيَّةِ، وَقَدْ نَجَحَ",
+          "fr": "et chauffer les maisons. Quant à l'ère moderne, l'intérêt pour l'énergie solaire s'est accru, et a réussi"
+        },
+        {
+          "speaker": "",
+          "ar": "العُلَماءُ فِي تَوْلِيدِ الكَهْرَباءِ، عَنْ طَرِيقِ خَلايا خاصَّةٍ لِلطَّاقَةِ الشَّمْسِيَّةِ، أقاموها في البلاد التي",
+          "fr": "Les scientifiques à produire de l'électricité, grâce à des cellules spéciales pour l'énergie solaire, qu'ils ont installées dans les pays qui"
+        },
+        {
+          "speaker": "",
+          "ar": "تَكونُ الشَّمْسُ فيها حارَّةً مُعْظَمَ الوَقْتِ، كَما هو الحال في الصَّحراءِ العَرَبِيّةِ.",
+          "fr": "le soleil y est chaud la plupart du temps, comme c'est le cas dans le désert arabe."
+        },
+        {
+          "speaker": "",
+          "ar": "توضع ألواح - تُسَمَّى الأَلْواحَ الشَّمْسِيَّةَ - فَوقَ البُيوتِ تُجَمِّعُ حَرارَةَ الشَّمْسِ، وَتُحَوِّلُها إلى طاقَةٍ",
+          "fr": "Des panneaux - appelés panneaux solaires - sont placés au-dessus des maisons, collectent la chaleur du soleil et la transforment en énergie"
+        },
+        {
+          "speaker": "",
+          "ar": "كَهرَبائِيَّةِ ، وَيُمْكِنُ أَنْ تُنْتِجَ هَذِهِ الألْواحُ مِنَ الطَّاقَةِ ما يَكْفِي لِتَدْفِئَةِ المَاءِ لِبَيْتِ كَبِيرٍ.",
+          "fr": "électrique, et ces panneaux peuvent produire suffisamment d'énergie pour chauffer l'eau d'une grande maison."
+        },
+        {
+          "speaker": "",
+          "ar": "وَالطَّاقَةُ الَّتِي نَأْخُذُها مِنَ الشَّمْسِ نَظِيفَةٌ، وَهِيَ مَوْجُودَةٌ بِكَثْرَةٍ فِي الْمَناطِقِ الْمُشْمِسَةِ، وَلَكِنْ",
+          "fr": "L'énergie que nous tirons du soleil est propre, et elle est abondante dans les régions ensoleillées, mais"
+        },
+        {
+          "speaker": "",
+          "ar": "عِنْدَمَا تَحْتَجِبُ الشَّمْسُ ، لا تَكونُ هُناكَ أَشِيَّةٌ نَسْتَمِدُّ مِنْهَا الحَرارَةَ.",
+          "fr": "lorsque le soleil est caché, il n'y a pas de rayons dont nous tirons de la chaleur."
+        },
+        {
+          "speaker": "",
+          "ar": "بالرَّغْمِ مِنْ مُحاوَلاتِ الاسْتِفَادَةِ مِنَ الطَّاقَةِ الشَّمْسِيَّةِ ، فلا يَزالُ الإِنْسَانُ يَعْتَمِدُ عَلَى مَصَادِرٍ",
+          "fr": "Malgré les tentatives de profiter de l'énergie solaire, l'homme dépend toujours de sources"
+        },
+        {
+          "speaker": "",
+          "ar": "الطَّاقَةَ الأُخْرَى؛ كالنَّفْطِ، وَالفَحْم الحَجَرِي؛ لأَنَّ مَشارِيعَ الطَّاقَةِ الشَّمْسِيَّةِ تُكَلِّفُ المَالَ الكَثِيرَ.",
+          "fr": "d'autres énergies ; comme le pétrole et le charbon ; parce que les projets d'énergie solaire coûtent très cher."
+        },
+        {
+          "speaker": "",
+          "ar": "وَمَعَ ذَلِكَ، فَإِنَّ مُحاوَلاتِ اسْتِغْلالِ الطَّاقَةِ الشَّمْسِيَّةِ، لَنْ تَتَوَقَّفَ؛ لأَنَّ مَصَادِرَ الطَّاقَةِ الْأُخْرَى",
+          "fr": "Cependant, les tentatives d'exploiter l'énergie solaire ne s'arrêteront pas ; parce que les autres sources d'énergie"
+        },
+        {
+          "speaker": "",
+          "ar": "سَتَنْفَدُ في يَوْمٍ ما ، أما الشَّمْسُ فَبَاقِيَةٌ إِلَى يَوْمِ القِيامَةِ.",
+          "fr": "s'épuiseront un jour, mais le soleil restera jusqu'au jour de la résurrection."
+        }
+      ]
+    }
+  ]
+}

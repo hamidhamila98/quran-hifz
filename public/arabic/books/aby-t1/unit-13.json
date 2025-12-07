@@ -1,0 +1,237 @@
+{
+  "id": 13,
+  "titleAr": "السفر",
+  "titleFr": "Le Voyage",
+  "items": [
+    {
+      "id": "13.1",
+      "type": "dialogue",
+      "titleAr": "",
+      "titleFr": "",
+      "youtube": "https://www.youtube.com/embed/cvZbvvh3EBU",
+      "pdfPage": null,
+      "lines": [
+        {
+          "speaker": "الموظف",
+          "ar": "أَيَّ خِدمَةٍ ؟",
+          "fr": "Puis-je vous aider ?"
+        },
+        {
+          "speaker": "المسافر",
+          "ar": "لَدَيَّ حَجْزُ إلى جُدَّةَ، وأريد تأكيد الحجز",
+          "fr": "J'ai une réservation pour Jeddah, et je veux confirmer la réservation."
+        },
+        {
+          "speaker": "الموظف",
+          "ar": "هَلِ الحَجْزُ عَلَى الخُطوط السعودِيَّةِ ؟",
+          "fr": "Est-ce que la réservation est sur la Saudi Airlines ?"
+        },
+        {
+          "speaker": "المسافر",
+          "ar": "لا ، هُوَ على الخطوط الإندونيسية",
+          "fr": "Non, c'est sur les lignes indonésiennes."
+        },
+        {
+          "speaker": "الموظف",
+          "ar": "أَيْنَ التَّذاكِرُ ؟",
+          "fr": "Où sont les billets ?"
+        },
+        {
+          "speaker": "المسافر",
+          "ar": "هَذِهِ هِيَ التَّذاكِرُ : تَذْكِرَتِي، وَتَذْكِرَةُ زَوْجَتِي\nوتَذْكِرَةُ ابْنِي، وَتَذْكِرَةُ بِنْتِي",
+          "fr": "Voici les billets : mon billet, et le billet de ma femme. Et le billet de mon fils, et le billet de ma fille."
+        },
+        {
+          "speaker": "الموظف",
+          "ar": "وَأَيْنَ جَوازاتُ السَّفَرِ ؟",
+          "fr": "Et où sont les passeports ?"
+        },
+        {
+          "speaker": "المسافر",
+          "ar": "هَذِهِ هِيَ جَوازَاتُ السَّفَرِ",
+          "fr": "Voici les passeports."
+        },
+        {
+          "speaker": "الموظف",
+          "ar": "أَيْنَ تَأشِيرَةُ الخُرُوجِ ؟",
+          "fr": "Où est le visa de sortie ?"
+        },
+        {
+          "speaker": "المسافر",
+          "ar": "هَذِهِ تَأْشِيرَةُ الخُرُوجِ، وَهَذِهِ تَأْشِيرَةُ الدخول",
+          "fr": "Voici le visa de sortie, et voici le visa d'entrée."
+        },
+        {
+          "speaker": "الموظف",
+          "ar": "الرَّحلَةُ رَقْمُ ٧٧٧\nتُغَادِرُ الطَّائِرَةُ السَّاعَةَ الثَّالِثَةَ فَجْراً\nاحْضُرْ إِلى المَطارِ قَبْلَ سَاعَتَيْنِ",
+          "fr": "Le vol numéro 777. L'avion part à trois heures de l'aube. Présentez-vous à l'aéroport deux heures avant."
+        },
+        {
+          "speaker": "المسافر",
+          "ar": "شكراً",
+          "fr": "Merci."
+        },
+        {
+          "speaker": "الموظف",
+          "ar": "رِحْلَةً سَعِيدَةً",
+          "fr": "Bon voyage."
+        }
+      ]
+    },
+    {
+      "id": "13.2",
+      "type": "dialogue",
+      "titleAr": "",
+      "titleFr": "",
+      "youtube": "https://www.youtube.com/embed/cvZbvvh3EBU",
+      "pdfPage": null,
+      "lines": [
+        {
+          "speaker": "المسافر",
+          "ar": "السَّلامُ عَلَيْكُم",
+          "fr": "Que la paix soit sur vous."
+        },
+        {
+          "speaker": "الضابط",
+          "ar": "وَعَلَيْكُمُ السَّلَامُ أَهْلاً وَسَهْلاً جَوازَ السَّفَرِ مِنْ فَضْلِكَ",
+          "fr": "Et sur vous la paix, bienvenue. Votre passeport s'il vous plaît."
+        },
+        {
+          "speaker": "المسافر",
+          "ar": "هَذَا هُوَ جَوازُ السَّفَرِ",
+          "fr": "Voici le passeport."
+        },
+        {
+          "speaker": "الضابط",
+          "ar": "هَلْ أَنْتَ ماليزي ؟",
+          "fr": "Êtes-vous Malaisien ?"
+        },
+        {
+          "speaker": "المسافر",
+          "ar": "لا ، أنا كَشْمِيرِي",
+          "fr": "Non, je suis Cachemiri."
+        },
+        {
+          "speaker": "الضابط",
+          "ar": "هَلْ أَنْتَ قَادِمٌ لِلعَمَلِ ؟",
+          "fr": "Venez-vous pour travailler ?"
+        },
+        {
+          "speaker": "المسافر",
+          "ar": "لا ، أنا قادِمٌ لِلزِّيارَةِ والعُمْرَةِ",
+          "fr": "Non, je viens pour une visite et la Omra."
+        },
+        {
+          "speaker": "الضابط",
+          "ar": "كَم يَوْماً سَتُقِيمُ هُنا ؟",
+          "fr": "Combien de jours resterez-vous ici ?"
+        },
+        {
+          "speaker": "المسافر",
+          "ar": "ثَلَاثَةَ أسابيع تَقْرِيباً",
+          "fr": "Environ trois semaines."
+        },
+        {
+          "speaker": "الضابط",
+          "ar": "أَيْنَ سَتُقِيمُ ؟",
+          "fr": "Où résiderez-vous ?"
+        },
+        {
+          "speaker": "المسافر",
+          "ar": "سَأُقِيمُ فِي فُنْدُقٍ قَرِيبٍ مِنَ المَسْجِدِ الحرام",
+          "fr": "Je résiderai dans un hôtel proche de la Mosquée Sacrée."
+        },
+        {
+          "speaker": "الضابط",
+          "ar": "إقَامَةً طَيِّبَةً، وعُمْرَةً مَقْبُولَةً إِنْ شَاءَ الله",
+          "fr": "Bon séjour, et Omra acceptée si Dieu le veut."
+        },
+        {
+          "speaker": "المسافر",
+          "ar": "جَزَاكَ اللهُ خَيْرًا",
+          "fr": "Qu'Allah vous récompense."
+        }
+      ]
+    },
+    {
+      "id": "13.3",
+      "type": "dialogue",
+      "titleAr": "",
+      "titleFr": "",
+      "youtube": "https://www.youtube.com/embed/cvZbvvh3EBU",
+      "pdfPage": null,
+      "lines": [
+        {
+          "speaker": "الموظف",
+          "ar": "أَهْلاً وسهلا",
+          "fr": "Bienvenue."
+        },
+        {
+          "speaker": "المسافر",
+          "ar": "فَقَدْتُ حقيبتي",
+          "fr": "J'ai perdu ma valise."
+        },
+        {
+          "speaker": "الموظف",
+          "ar": "مِنْ أَيْنَ أَنْتَ قَادِمٌ ؟",
+          "fr": "D'où venez-vous (arrivez-vous) ?"
+        },
+        {
+          "speaker": "المسافر",
+          "ar": "أنا قادِمٌ مِنْ بَنْغَلاديش",
+          "fr": "Je viens du Bangladesh."
+        },
+        {
+          "speaker": "الموظف",
+          "ar": "أَيْنَ الجَوازُ ؟ وَأَيْنَ التَّذْكِرَةُ ؟",
+          "fr": "Où est le passeport ? Et où est le billet ?"
+        },
+        {
+          "speaker": "المسافر",
+          "ar": "هذا هُوَ الجَوازُ، وَهَذِهِ هِيَ التَّذْكِرَةُ",
+          "fr": "Voici le passeport, et voici le billet."
+        },
+        {
+          "speaker": "الموظف",
+          "ar": "مَا لَوْنُ الحَقِيبَةِ ؟",
+          "fr": "Quelle est la couleur de la valise ?"
+        },
+        {
+          "speaker": "المسافر",
+          "ar": "لَونُها أَسْوَدُ",
+          "fr": "Sa couleur est noire."
+        },
+        {
+          "speaker": "الموظف",
+          "ar": "هَلْ هَذِهِ حَقِيبَتُكَ ؟",
+          "fr": "Est-ce votre valise ?"
+        },
+        {
+          "speaker": "المسافر",
+          "ar": "نَعَمْ، هَذِهِ حقيبتي",
+          "fr": "Oui, c'est ma valise."
+        },
+        {
+          "speaker": "الموظف",
+          "ar": "ماذا في الحقيبة ؟",
+          "fr": "Qu'y a-t-il dans la valise ?"
+        },
+        {
+          "speaker": "المسافر",
+          "ar": "في الحقيبة ملابس",
+          "fr": "Dans la valise il y a des vêtements."
+        },
+        {
+          "speaker": "الموظف",
+          "ar": "افْتَحِ الحَقِيبَةَ",
+          "fr": "Ouvrez la valise."
+        },
+        {
+          "speaker": "المسافر",
+          "ar": "نَعَمْ، هذه حقيبتي",
+          "fr": "Oui, c'est ma valise."
+        }
+      ]
+    }
+  ]
+}

@@ -17,7 +17,9 @@ export default function ArabicPage({ settings, updateSettings, isMobile, setMobi
   const navigate = useNavigate()
   const [searchParams, setSearchParams] = useSearchParams()
 
-  const [bookData, setBookData] = useState(null)
+  const [bookMeta, setBookMeta] = useState(null)
+  const [unitData, setUnitData] = useState(null)
+  const [allUnits, setAllUnits] = useState([])
   const [bookRegistry, setBookRegistry] = useState(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
@@ -54,12 +56,13 @@ export default function ArabicPage({ settings, updateSettings, isMobile, setMobi
     }
   }
 
-  // Load book data
+  // Load book registry and meta
   useEffect(() => {
     setLoading(true)
     setError(null)
+    setBookMeta(null)
+    setAllUnits([])
 
-    // First load registry to get book info
     fetch('/arabic/books.json')
       .then(res => res.json())
       .then(registry => {
@@ -67,14 +70,43 @@ export default function ArabicPage({ settings, updateSettings, isMobile, setMobi
         if (!book) {
           throw new Error('Livre non trouvé')
         }
+        if (!book.dataFolder) {
+          throw new Error('Livre non disponible')
+        }
         setBookRegistry(book)
-
-        // Then load actual book data
-        return fetch(book.dataFile)
+        return book
       })
-      .then(res => res.json())
-      .then(data => {
-        setBookData(data)
+      .then(book => {
+        // Load meta.json
+        return fetch(`${book.dataFolder}/meta.json`)
+          .then(res => res.json())
+          .then(meta => {
+            setBookMeta(meta)
+            return book
+          })
+      })
+      .then(book => {
+        // Load all unit summaries for navigation
+        const unitCount = book.unitCount || 16
+        const unitPromises = []
+        for (let i = 1; i <= unitCount; i++) {
+          const unitNum = i.toString().padStart(2, '0')
+          unitPromises.push(
+            fetch(`${book.dataFolder}/unit-${unitNum}.json`)
+              .then(res => res.json())
+              .then(data => ({
+                id: data.id,
+                titleAr: data.titleAr,
+                titleFr: data.titleFr,
+                itemCount: data.items?.length || 0
+              }))
+              .catch(() => null)
+          )
+        }
+        return Promise.all(unitPromises)
+      })
+      .then(units => {
+        setAllUnits(units.filter(u => u !== null))
         setLoading(false)
       })
       .catch(err => {
@@ -83,15 +115,31 @@ export default function ArabicPage({ settings, updateSettings, isMobile, setMobi
       })
   }, [bookId])
 
+  // Load current unit when section changes
+  useEffect(() => {
+    if (!bookRegistry?.dataFolder) return
+
+    const unitNum = currentSection.toString().padStart(2, '0')
+    fetch(`${bookRegistry.dataFolder}/unit-${unitNum}.json`)
+      .then(res => res.json())
+      .then(data => {
+        setUnitData(data)
+      })
+      .catch(err => {
+        console.error('Error loading unit:', err)
+        setUnitData(null)
+      })
+  }, [bookRegistry, currentSection])
+
   // Get current section and item
-  const section = bookData?.sections?.find(s => s.id === currentSection)
+  const section = unitData
   const items = section?.items || []
   const item = items[currentItemIndex]
   const totalItems = items.length
   const isTexte = item?.type === 'text' || item?.type === 'texte'
 
   // Get labels from metadata
-  const meta = bookData?.meta
+  const meta = bookMeta
   const sectionLabel = meta?.structure?.sectionLabel?.fr || 'Unité'
   const getItemLabel = (type) => {
     const labels = meta?.structure?.itemLabels || {}
@@ -107,10 +155,9 @@ export default function ArabicPage({ settings, updateSettings, isMobile, setMobi
   const itemKey = `${currentSection}-${currentItemIndex}`
   const isValidated = validatedItems[itemKey] === true
 
-  // Calculate progress
+  // Calculate progress using allUnits
   const getTotalItemsAll = () => {
-    if (!bookData?.sections) return 0
-    return bookData.sections.reduce((acc, s) => acc + (s.items?.length || 0), 0)
+    return allUnits.reduce((acc, u) => acc + (u.itemCount || 0), 0)
   }
   const totalItemsAll = getTotalItemsAll()
   const validatedCount = Object.keys(validatedItems).length
@@ -118,31 +165,28 @@ export default function ArabicPage({ settings, updateSettings, isMobile, setMobi
 
   // Get list of validated items with details
   const getValidatedItemsList = () => {
-    if (!bookData?.sections) return []
+    if (!allUnits.length) return []
     const list = []
     Object.keys(validatedItems).forEach(key => {
       const [sectionId, itemIdx] = key.split('-').map(Number)
-      const section = bookData.sections.find(s => s.id === sectionId)
-      if (section) {
-        const item = section.items?.[itemIdx]
-        if (item) {
-          list.push({
-            sectionId,
-            sectionTitle: section.titleFr,
-            itemType: item.type,
-            itemTitle: item.titleFr || item.titleAr,
-            key,
-            itemIdx
-          })
-        }
+      const unit = allUnits.find(u => u.id === sectionId)
+      if (unit) {
+        list.push({
+          sectionId,
+          sectionTitle: unit.titleFr,
+          itemType: 'text',
+          itemTitle: '',
+          key,
+          itemIdx
+        })
       }
     })
     return list.sort((a, b) => a.sectionId - b.sectionId || a.itemIdx - b.itemIdx)
   }
 
   // Navigation
-  const maxSection = bookData?.sections?.reduce((max, s) => Math.max(max, s.id), 0) || 1
-  const minSection = bookData?.sections?.reduce((min, s) => Math.min(min, s.id), Infinity) || 1
+  const maxSection = allUnits.length > 0 ? Math.max(...allUnits.map(u => u.id)) : 1
+  const minSection = allUnits.length > 0 ? Math.min(...allUnits.map(u => u.id)) : 1
 
   const navigateTo = (sectionId, itemIdx) => {
     setSearchParams({ section: sectionId, item: itemIdx + 1 })
@@ -154,9 +198,9 @@ export default function ArabicPage({ settings, updateSettings, isMobile, setMobi
     if (currentItemIndex < totalItems - 1) {
       navigateTo(currentSection, currentItemIndex + 1)
     } else if (currentSection < maxSection) {
-      const nextSection = bookData?.sections?.find(s => s.id > currentSection)
-      if (nextSection) {
-        navigateTo(nextSection.id, 0)
+      const nextUnit = allUnits.find(u => u.id > currentSection)
+      if (nextUnit) {
+        navigateTo(nextUnit.id, 0)
       }
     }
   }
@@ -165,10 +209,9 @@ export default function ArabicPage({ settings, updateSettings, isMobile, setMobi
     if (currentItemIndex > 0) {
       navigateTo(currentSection, currentItemIndex - 1)
     } else if (currentSection > minSection) {
-      const prevSection = bookData?.sections?.filter(s => s.id < currentSection).pop()
-      if (prevSection) {
-        const prevItemCount = prevSection.items?.length || 1
-        navigateTo(prevSection.id, prevItemCount - 1)
+      const prevUnit = [...allUnits].reverse().find(u => u.id < currentSection)
+      if (prevUnit) {
+        navigateTo(prevUnit.id, prevUnit.itemCount - 1)
       }
     }
   }
@@ -180,7 +223,6 @@ export default function ArabicPage({ settings, updateSettings, isMobile, setMobi
     } else {
       newBookValidated[itemKey] = true
     }
-    // Update per-book validation
     updateSettings({
       arabicValidated: {
         ...allValidated,
@@ -701,7 +743,6 @@ export default function ArabicPage({ settings, updateSettings, isMobile, setMobi
                 <div className="flex gap-2">
                   <button
                     onClick={() => {
-                      // Only reset current book's progress
                       const newAllValidated = { ...allValidated }
                       delete newAllValidated[bookId]
                       updateSettings({ arabicValidated: newAllValidated })

@@ -1,0 +1,247 @@
+{
+  "id": 8,
+  "titleAr": "الوحدة الثامنة: الجوائز",
+  "titleFr": "Unité 8: Les prix",
+  "items": [
+    {
+      "id": "8.1",
+      "type": "dialogue",
+      "titleAr": "الفَرْحَةُ بِالجَوائِزِ",
+      "titleFr": "La joie des prix",
+      "youtube": "",
+      "pdfPage": 39,
+      "lines": [
+        {
+          "speaker": "الأُمُّ",
+          "ar": "ماذا تَحْمِلُ يَا وَلَدِي؟ ما هَذِهِ الأَشْياءُ؟!",
+          "fr": "Que portes-tu, mon fils ? Que sont ces choses ?"
+        },
+        {
+          "speaker": "الابْنُ",
+          "ar": "هَذِهِ جَوائِزُ، ساعدوني، فَالْجَوَائِزُ كَثِيرَةٌ.",
+          "fr": "Ce sont des prix. Aidez-moi, il y en a beaucoup."
+        },
+        {
+          "speaker": "الأب",
+          "ar": "ما الْجَوَائِزُ التي حَصَلْتَ عَليها؟",
+          "fr": "Quels sont les prix que tu as obtenus ?"
+        },
+        {
+          "speaker": "الإِبْنُ",
+          "ar": "حَصَلْتُ عَلَى جَائِزَةِ القُرْآنِ الكَرِيمِ، وَجَائِزَةِ السِّيرَةِ النَّبَوِيَّةِ ، وَجَائِزَةِ المَعلومات العامَّةِ.",
+          "fr": "J'ai obtenu le prix du Saint Coran, le prix de la biographie prophétique et le prix de l'information générale."
+        },
+        {
+          "speaker": "الأُمُّ",
+          "ar": "ما شَاءَ اللهُ! فَقَد حَصَلَ وَلَدِي عَلَى جَوائِزِ الْمُسَابَقَةِ.",
+          "fr": "Que Dieu le veuille ! Mon fils a obtenu les prix du concours."
+        },
+        {
+          "speaker": "الابْنُ",
+          "ar": "كَانَتِ الْمُنَافَسَةُ شَدِيدَةً جِدًا.",
+          "fr": "La compétition était très rude."
+        },
+        {
+          "speaker": "الأب",
+          "ar": "ماذا فَعَلَ صَدِيقُكَ حُسامٌ؟",
+          "fr": "Qu'a fait ton ami Houssam ?"
+        },
+        {
+          "speaker": "الابْنُ",
+          "ar": "حَصَلَ عَلَى جَائِزَةِ الحَدِيثِ وَجَائِزَةِ الخَطَابَةِ.",
+          "fr": "Il a obtenu le prix du Hadith et le prix de l'éloquence."
+        },
+        {
+          "speaker": "الأُمُّ",
+          "ar": "هَذَا أَسْعَدُ يَوْمٍ في حياتي!",
+          "fr": "C'est le jour le plus heureux de ma vie !"
+        },
+        {
+          "speaker": "الأَبُ",
+          "ar": "لَقَدْ رَفَعْتَ رَأْسَنا.",
+          "fr": "Tu as relevé notre honneur."
+        },
+        {
+          "speaker": "الابْنُ",
+          "ar": "أَنْتُمَا السَّبَبُ في نجاحي. جَزاكُما اللهُ خَيْراً.",
+          "fr": "Vous êtes la cause de mon succès. Que Dieu vous récompense."
+        },
+        {
+          "speaker": "الأَبُ وَالأُمُّ",
+          "ar": "وَنَحْنُ سَنُعْطِيكَ جَائِزَةً أَيْضاً.",
+          "fr": "Et nous, nous te donnerons aussi un prix."
+        },
+        {
+          "speaker": "الابْنُ",
+          "ar": "لا أُرِيدُ مِنْكُما جَائِزَةً؛ فَالْخَيْرُ كَثِيرٌ، وَالْحَمْدُ للهِ، لَكِنَّنِي أُرِيدُ مِنْكُما شَيْئاً آخَرَ.",
+          "fr": "Je ne veux pas de prix de votre part ; le bien est abondant, et louange à Dieu, mais je veux autre chose de vous."
+        },
+        {
+          "speaker": "الأَبُ وَالأُمُّ",
+          "ar": "مَا هُوَ؟ سَنُعْطِيكَ مَا تُرِيدُ.",
+          "fr": "Qu'est-ce que c'est ? Nous te donnerons ce que tu veux."
+        },
+        {
+          "speaker": "الابن",
+          "ar": "أطلُبُ مِنْكُما العَفْوَ وَالدُّعاء.",
+          "fr": "Je vous demande le pardon et la prière."
+        },
+        {
+          "speaker": "الأَبُ وَالأُمُّ",
+          "ar": "عَفا اللهُ عَنْكَ، وَوَفَّقَكَ فِي حَيَاتِكَ وَدِرَاسَتِكَ.",
+          "fr": "Que Dieu te pardonne et te guide dans ta vie et tes études."
+        },
+        {
+          "speaker": "الابْنُ",
+          "ar": "جَزاكُما اللهُ خَيْراً.",
+          "fr": "Que Dieu vous récompense."
+        }
+      ]
+    },
+    {
+      "id": "8.2",
+      "type": "texte",
+      "titleAr": "أنواع الجوائز",
+      "titleFr": "Types de prix",
+      "youtube": "",
+      "pdfPage": 40,
+      "lines": [
+        {
+          "speaker": "",
+          "ar": "٤ - اذْكُرْ أَسْمَاءَ بَعْضِ الَّذِينَ حَصَلُوا عَلَى جَوائِزَ فِي بَلَدِكَ.",
+          "fr": "4- Citez les noms de certaines personnes qui ont reçu des prix dans votre pays."
+        },
+        {
+          "speaker": "",
+          "ar": "تَمْنَحُ كَثِيرٌ مِنَ الدُّوَلِ جَوائِزَ كَثِيرَةً لِلْمُبْدِعينَ. وَالهَدَفُ مِنْ تِلْكَ الجَوَائِزِ خِدْمَةُ العُلومِ وَالْآدَابِ وغيرِها ، وَهِيَ تُمْنَحُ لِلْأَشْخَاصِ الْمُبْدِعينَ في تلك المجالات . وَتَكونُ الجَائِزَةُ - في الغالِبِ مُكافَأَةً مالِيَّةً، تَخْتَلِفُ قِيمَتُها مِنْ بَلَدٍ إِلى بَلَدٍ.",
+          "fr": "De nombreux pays décernent de nombreux prix aux créateurs. Le but de ces prix est de servir les sciences, les lettres et autres. Ils sont décernés aux personnes créatives dans ces domaines. Le prix est généralement une récompense financière, dont la valeur varie d'un pays à l'autre."
+        },
+        {
+          "speaker": "",
+          "ar": "فَقَدْ تَبْلُغُ مِئَاتِ الدولارات في بَعْضِ البِلادِ ، وَقَدْ تَصِلُ إلى مِلْيَون دولار في بلادٍ أُخْرى.",
+          "fr": "Elle peut atteindre des centaines de dollars dans certains pays, et jusqu'à un million de dollars dans d'autres."
+        },
+        {
+          "speaker": "",
+          "ar": "وقَدْ يَصْحَبُ المُكافَاةَ المَالِيَّةَ : دِرْعٌ، أَوْ شَهَادَةٌ، أَوْ غَيْرُ ذَلِكَ.",
+          "fr": "La récompense financière peut être accompagnée d'un bouclier, d'un certificat ou autre."
+        },
+        {
+          "speaker": "",
+          "ar": "تَنْقَسِمُ الجَوائِزُ إِلى قِسْمَيْنِ: جَوائِزَ مَحَلِّيَّةٍ، وَجَوائِزَ عَالَميَّةٍ.",
+          "fr": "Les prix se divisent en deux catégories : les prix locaux et les prix internationaux."
+        },
+        {
+          "speaker": "",
+          "ar": "وَالجَوائِزُ المَحَلِّيَّةُ، هِيَ الَّتِي تَمْنَحُها الدَّوْلَةُ لأَبْنَائِها، الَّذِينَ يَخْدِمُونَ العِلْمَ وَالثَّقَافَةَ فِي بَلَدِهِمْ.",
+          "fr": "Les prix locaux sont ceux que l'État décerne à ses citoyens qui servent la science et la culture dans leur pays."
+        },
+        {
+          "speaker": "",
+          "ar": "وَمِنْ ذَلِكَ جَوائِزُ الدَّوْلَةِ التَّقْدِيرِيَّةُ ، وجَوائِزُ الدَّوْلَةِ التَّشْجِيعِيَّةُ. وَتُمْنَحُ هَذِهِ الجَوائِزُ فِي كَثِيرٍ مِنَ البلاد العَرَبِيَّة كُلَّ سَنَةٍ، وَتُكَوَّنُ لِجانٌ، لاخْتِيارِ الَّذِينَ يُمْنَحُونَ تِلْكَ الجَوائِزَ.",
+          "fr": "Parmi ceux-ci, les prix d'appréciation de l'État et les prix d'encouragement de l'État. Ces prix sont décernés dans de nombreux pays arabes chaque année, et des comités sont formés pour choisir ceux qui recevront ces prix."
+        },
+        {
+          "speaker": "",
+          "ar": "أَمَّا الجَوائِزُ العَالَمِيَّةُ، فَتَمْنَحُها هَيْئَاتُ عَالَميَّةٌ لِلأَشْخاصِ الَّذِينَ يَخْدِمُونَ الْإِنْسانِيَّةَ فِي جَمِيعِ أنحاء العالم، في مجالات العلوم والآداب وغيرها .",
+          "fr": "Quant aux prix internationaux, ils sont décernés par des organisations internationales aux personnes qui servent l'humanité dans le monde entier, dans les domaines des sciences, des lettres et autres."
+        },
+        {
+          "speaker": "",
+          "ar": "وَمِنَ الجَوائِزِ العَالَمِيَّةِ المَشْهُورَةِ، جَوائِزُ الْمَلِكِ فَيْصَلِ العالميَّة، التي تَمْنَحُها مُؤَسَّسَةُ المَلِكِ فَيْصَلِ الْخَيْرِيَّةُ بِالْمَمْلَكَةِ العَرَبِيَّةِ السُّعودِيَّةِ. وَهُناكَ جَوائِزُ نوبِلَ العالَميَّةُ. وَتُكَوِّنُ كُلُّ مُؤَسَّسَةٍ ، أَوْ هَيْئَةٍ لِجاناً ، وَتَضَعُ شُروطاً ؛ لِمَنْحِ جَوائِزها .",
+          "fr": "Parmi les prix internationaux célèbres, les prix mondiaux du roi Fayçal, décernés par la Fondation caritative du roi Fayçal dans le Royaume d'Arabie saoudite. Il existe également les prix Nobel mondiaux. Chaque fondation ou organisation forme des comités et fixe des conditions pour l'attribution de ses prix."
+        }
+      ]
+    },
+    {
+      "id": "8.3",
+      "type": "dialogue",
+      "titleAr": "اختيار الطالب المثالي",
+      "titleFr": "Sélection de l'élève idéal",
+      "youtube": "",
+      "pdfPage": 41,
+      "lines": [
+        {
+          "speaker": "مُدِيرُ المَدْرَسِةِ",
+          "ar": "نَجْتَمِعُ اليَوْمَ، لاختيار الطالب المثالي. ما صِفاتُ الطَّالِبِ المَثالِي فِي رَأَيْكُمْ؟",
+          "fr": "Directeur de l'école : Nous nous réunissons aujourd'hui pour choisir l'élève idéal. Quelles sont les qualités de l'élève idéal selon vous ?"
+        },
+        {
+          "speaker": "مُدَرِّسُ الدِّينِ",
+          "ar": "أَنْ يُحَافِظَ عَلى صَلَاتِهِ، وَأَنْ يَكُونَ حَسَنَ الأَخْلاقِ.",
+          "fr": "Professeur de religion : Qu'il préserve ses prières et qu'il ait une bonne moralité."
+        },
+        {
+          "speaker": "مُدَرِّسُ العُلوم",
+          "ar": "أَن يَهْتَمَّ بِنَظافَتِهِ وَمَظْهَرِهِ؛ وَأَنْ يَكُونَ مَحْبُوباً لَدَى زُمَلائِهِ وَمُدَرِّسِيهِ.",
+          "fr": "Professeur de sciences : Qu'il prenne soin de sa propreté et de son apparence ; et qu'il soit aimé de ses camarades et de ses professeurs."
+        },
+        {
+          "speaker": "مُدَرِّسُ الرِّياضيّاتِ",
+          "ar": "أَنْ يَحْصُل على امتياز في الاختبارات.",
+          "fr": "Professeur de mathématiques : Qu'il obtienne une distinction aux examens."
+        },
+        {
+          "speaker": "مُدَرِّسُ اللُّغَةِ العَرَبِيَّةِ",
+          "ar": "أَنْ يُشارك في المسابقات الثقافية.",
+          "fr": "Professeur de langue arabe : Qu'il participe aux compétitions culturelles."
+        },
+        {
+          "speaker": "مُدَرِّسُ الرِّيَاضَةِ",
+          "ar": "وَأَنْ يُشارِكَ فِي الأَنْشِطَةِ الرِّياضِيَّة أيضاً.",
+          "fr": "Professeur de sport : Et qu'il participe également aux activités sportives."
+        },
+        {
+          "speaker": "مُدِيرُ المَدْرَسِةِ",
+          "ar": "والآنَ يَخْتَارُ كُلِّ وَاحِدٍ مِنْكُمْ ثَلَاثَةَ طُلابِ، وَيَكْتُبُ أَسْمَاءَهُم في البطاقة.",
+          "fr": "Directeur de l'école : Et maintenant, chacun de vous choisit trois élèves et écrit leurs noms sur la carte."
+        },
+        {
+          "speaker": "مُدِيرُ المَدْرَسِةِ",
+          "ar": "هُناكَ اسْمٌ مُشْتَرَكَ في جَميعِ البطاقاتِ: أَحْمَدُ بْنُ عَلام، هُوَ الطَّالِبُ المثالي.",
+          "fr": "Directeur de l'école : Il y a un nom commun à toutes les cartes : Ahmed Ben Allam, c'est l'élève idéal."
+        },
+        {
+          "speaker": "مُدَرِّسُ الرِّياضَةِ",
+          "ar": "سَنُعَنُ النَّتيجَةَ لِلطَّلابِ في الأسبوع القادم، إن شاء الله .",
+          "fr": "Professeur de sport : Nous annoncerons le résultat aux élèves la semaine prochaine, si Dieu le veut."
+        },
+        {
+          "speaker": "مُدِيرُ المَدْرَسِةِ",
+          "ar": "الجَائِزَةُ : كُتُبٌ، وَحَقيبَةٌ ، وَمَبْلَغ منَ المالِ، وَسَوْفَ يَكُونُ هُناكَ حَفْلٌ كَبِيرٌ، يَحْضُرُهُ آباء الطلاب.",
+          "fr": "Directeur de l'école : Le prix : des livres, un sac et une somme d'argent, et il y aura une grande cérémonie à laquelle assisteront les parents des élèves."
+        }
+      ]
+    },
+    {
+      "id": "8.4",
+      "type": "texte",
+      "titleAr": "جائِزَةُ الْمَلِكِ فَيْصَلِ العَالَمِيَّةُ",
+      "titleFr": "Prix mondial du roi Fayçal",
+      "youtube": "",
+      "pdfPage": 42,
+      "lines": [
+        {
+          "speaker": "",
+          "ar": "تَمْنَحُ مُؤَسَّسَةُ المَلِكِ فَيْصَلِ الخَيْرِيَّةُ، مُنْذُ عام ۱۳۹۷هـ ، خَمْسَ جَوائِزَ عَالَميَّةٍ، فِي خَمْسَةِ مجالات، هِيَ : خِدْمَةُ الإِسْلام، وَالدّراساتُ الإِسْلَامِيَّةُ، وَالأدَبُ العَرَبِيُّ، وَالطَّبُّ، وَالعُلُومُ. وَتَتَكَوَّنُ الجائِزَةُ مِنْ شَهَادَةٍ، تَحْمِلُ اسْمَ الفائِزِ، وَمُلَخَّص لِلْعَمَلِ الَّذي حَصَلَ بِهِ عَلَى الجَائِزَةِ، وَمِيدالِيَّةٍ ذَهَبِيَّةٍ، وَمَبْلَغ مالي.",
+          "fr": "La Fondation caritative du roi Fayçal décerne, depuis 1397 de l'Hégire, cinq prix mondiaux dans cinq domaines : le service de l'islam, les études islamiques, la littérature arabe, la médecine et les sciences. Le prix consiste en un certificat portant le nom du lauréat, un résumé des travaux pour lesquels il a reçu le prix, une médaille d'or et une somme d'argent."
+        },
+        {
+          "speaker": "",
+          "ar": "فازَ بِجَوائِزِ المَلِكِ فَيْصَلٍ كَثِيرٌ مِنَ العُلَمَاءِ، مِنَ الشَّرْقِ وَالغَرْبِ. وَمِنْ أَشْهَرِ الَّذِينَ نالوا جَائِزَةَ خِدْمَةِ الإِسْلام: أَبو الأَعْلَى الْمَوْدودِيُّ مِنْ باكِستان، وَأَبو الحَسَنِ النَّدْوِيُّ مِنَ الْهِنْدِ، وَأَحْمَدُ ديدات مِنْ جَنوب إفريقيا ، وَعَبْدُ العزيز بن باز مِنَ السُّعودِيَّةِ. وَمِنَ الَّذِينَ حَصَلوا على جائزة الدراسات الإِسْلامِيَّةِ : فُؤادُ سِرْكينُ مِنْ تُركيا ، وَيُوسُفُ القَرَضاوِيُّ مِنْ مِصْرَ ، ومُصْطَفى الزَّرْقاءُ مِنْ سوريا .",
+          "fr": "De nombreux érudits de l'Est et de l'Ouest ont remporté les prix du roi Fayçal. Parmi les lauréats les plus célèbres du prix du service de l'islam figurent : Abul Ala Maududi du Pakistan, Abul Hasan al-Nadwi d'Inde, Ahmed Deedat d'Afrique du Sud et Abdul Aziz bin Baz d'Arabie saoudite. Parmi ceux qui ont reçu le prix des études islamiques figurent : Fuad Sezgin de Turquie, Youssef al-Qaradawi d'Égypte et Mustafa al-Zarqa de Syrie."
+        },
+        {
+          "speaker": "",
+          "ar": "وَمِنَ الَّذِينَ حَصَلُوا عَلَى جَائِزَةِ المَلِكِ فَيْصَلٍ في الأَدَبِ العَرَبِيِّ : عَبْدُ السَّلام هَارُونُ، وَعَائِشَةُ عَبْدُ الرَّحْمَنِ مِنْ مِصْرَ ، وَناصِرُ الدِّينِ الأَسَدُ مِنْ الأَرْدُن، وَعَبْدُ اللهِ الطَّيِّبُ من السودان.",
+          "fr": "Parmi ceux qui ont reçu le prix du roi Fayçal en littérature arabe figurent : Abd al-Salam Haroun et Aisha Abd al-Rahman d'Égypte, Nasser al-Din al-Assad de Jordanie et Abdallah al-Tayeb du Soudan."
+        },
+        {
+          "speaker": "",
+          "ar": "مِنَ الَّذِينَ حَصَلُوا عَلَى جَائِزَةِ الْمَلِكِ فَيْصَل العالَميَّةِ في الطِّبِّ: مايكل فيلد مِنْ أمريكا، وماريو رينريتو من إيطاليا، وألبرت رينولدز من سويسرا . وَمِنْ أَشْهَرِ الَّذينَ نالوا الجائزة في العلوم: أَحْمَدُ زُوَيل مِنْ أمريكا، وَهُوَ مِصْرِيُّ الأَصْلِ، وَمايكل عَطِيَّة مِنْ بَريطانيا، وَهُوَ مَوْلُودٌ في السودان، وهيربرت فالتر من ألمانيا .",
+          "fr": "Parmi ceux qui ont reçu le prix mondial du roi Fayçal en médecine figurent : Michael Field d'Amérique, Mario Rinetto d'Italie et Albert Reynolds de Suisse. Parmi les lauréats les plus célèbres du prix en sciences figurent : Ahmed Zewail d'Amérique, qui est d'origine égyptienne, Michael Atiyah de Grande-Bretagne, né au Soudan, et Herbert Walter d'Allemagne."
+        }
+      ]
+    }
+  ]
+}

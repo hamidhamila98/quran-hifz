@@ -1,0 +1,227 @@
+{
+  "id": 12,
+  "titleAr": "الهوايات",
+  "titleFr": "Les Loisirs",
+  "items": [
+    {
+      "id": "12.1",
+      "type": "dialogue",
+      "titleAr": "",
+      "titleFr": "",
+      "youtube": "https://www.youtube.com/embed/cvZbvvh3EBU",
+      "pdfPage": null,
+      "lines": [
+        {
+          "speaker": "شاكر",
+          "ar": "ما هوايَتُكَ يا شَريف ؟",
+          "fr": "Quel est ton hobby (passe-temps) Sharif ?"
+        },
+        {
+          "speaker": "شريف",
+          "ar": "هواياتي كثيرة: القراءة، والسَّفَرُ والمراسلة\nوما هواياتكَ أنتَ ؟",
+          "fr": "Mes loisirs sont nombreux : la lecture, le voyage et la correspondance. Et quels sont tes loisirs toi ?"
+        },
+        {
+          "speaker": "شاكر",
+          "ar": "هواياتي: الرياضة ، والرَّحْلاتُ والقِراءَةُ أَيْضًا",
+          "fr": "Mes loisirs : le sport, les excursions et la lecture aussi."
+        },
+        {
+          "speaker": "شريف",
+          "ar": "ماذا تقرأُ يا شاكر ؟",
+          "fr": "Que lis-tu Shaker ?"
+        },
+        {
+          "speaker": "شاكر",
+          "ar": "أقرأُ الكُتُبَ والمَجَلاتِ الإِسْلامِيَّةَ\nوماذا تَقرَأُ أَنْتَ؟",
+          "fr": "Je lis des livres et des magazines islamiques. Et que lis-tu toi ?"
+        },
+        {
+          "speaker": "شريف",
+          "ar": "أقرأُ الكُتُبَ الإِسْلامِيَّةَ ، والمَجَلاتِ العلمية",
+          "fr": "Je lis des livres islamiques et des magazines scientifiques."
+        },
+        {
+          "speaker": "شاكر",
+          "ar": "هَلْ لَدَيْكَ مَكَتَبَةٌ ؟",
+          "fr": "As-tu une bibliothèque ?"
+        },
+        {
+          "speaker": "شريف",
+          "ar": "نَعَمْ، لَدَيَّ مَكْتَبَةٌ كَبِيرَةٌ",
+          "fr": "Oui, j'ai une grande bibliothèque."
+        },
+        {
+          "speaker": "شاكر",
+          "ar": "كَمْ سَاعَةً تَقْرَأُ فِي اليَوْمِ؟",
+          "fr": "Combien d'heures lis-tu par jour ?"
+        },
+        {
+          "speaker": "شريف",
+          "ar": "أقرأُ ثَلاثَ ساعات تقريباً",
+          "fr": "Je lis environ trois heures."
+        },
+        {
+          "speaker": "شاكر",
+          "ar": "أنا أقرَأُ أَرْبَعَ ساعات في اليَوْمِ",
+          "fr": "Moi je lis quatre heures par jour."
+        },
+        {
+          "speaker": "شريف",
+          "ar": "القراءة هواية مفيدة",
+          "fr": "La lecture est un passe-temps utile."
+        }
+      ]
+    },
+    {
+      "id": "12.2",
+      "type": "dialogue",
+      "titleAr": "",
+      "titleFr": "",
+      "youtube": "https://www.youtube.com/embed/cvZbvvh3EBU",
+      "pdfPage": null,
+      "lines": [
+        {
+          "speaker": "شهاب",
+          "ar": "هَلْ زُرْتَ مَعْرِضَ الهوايَاتِ؟",
+          "fr": "As-tu visité l'exposition des loisirs ?"
+        },
+        {
+          "speaker": "شعيب",
+          "ar": "لَا ، مَا زُرْتُهُ، هَيَّا بِنَا إِلَيْهِ",
+          "fr": "Non, je ne l'ai pas visité, allons-y."
+        },
+        {
+          "speaker": "شهاب",
+          "ar": "هَذَا هُوَ مَعْرِضُ الهوايات",
+          "fr": "Voici l'exposition des loisirs."
+        },
+        {
+          "speaker": "شعيب",
+          "ar": "هَذِهِ هِوَايَاتٌ كَثِيرَةٌ جِدًا",
+          "fr": "Ce sont de très nombreux loisirs."
+        },
+        {
+          "speaker": "شهاب",
+          "ar": "هَذَا جَنَاحُ جَمْعِ الطَّوَابِعِ",
+          "fr": "C'est le pavillon (section) de la collection de timbres."
+        },
+        {
+          "speaker": "شعيب",
+          "ar": "هَذِهِ طَوابِعُ جَمِيلَةٌ. هَذَا طَابَعٌ هِنْدِيٌّ، وهَذا طَابَعٌ فَرَنْسي",
+          "fr": "Ce sont de beaux timbres. C'est un timbre indien, et c'est un timbre français."
+        },
+        {
+          "speaker": "شهاب",
+          "ar": "وهَذا جَناحُ الخَطِّ العربي",
+          "fr": "Et c'est le pavillon de la calligraphie arabe."
+        },
+        {
+          "speaker": "شعيب",
+          "ar": "هَذِهِ كَلِمَاتٌ بِخَطِّ النَّسْخِ، وَتِلكَ كَلِمَاتٌ بِخَطِّ الرقعة",
+          "fr": "Ce sont des mots en écriture Naskh, et ceux-là en écriture Ruq'ah."
+        },
+        {
+          "speaker": "شهاب",
+          "ar": "وهذا جَناحُ الصَّحافة",
+          "fr": "Et c'est le pavillon du journalisme."
+        },
+        {
+          "speaker": "شعيب",
+          "ar": "وَهَذِهِ صُحُفٌ بِجَمِيعِ اللُّغَاتِ",
+          "fr": "Et ce sont des journaux dans toutes les langues."
+        },
+        {
+          "speaker": "شهاب",
+          "ar": "وهذا جَناح التدبير المنزلي",
+          "fr": "Et c'est le pavillon de l'économie domestique."
+        },
+        {
+          "speaker": "شعيب",
+          "ar": "هَذا طَعَامٌ صِينِيُّ، وَهَذَا طَعَامٌ عَرَبِيٌّ",
+          "fr": "C'est de la nourriture chinoise, et c'est de la nourriture arabe."
+        },
+        {
+          "speaker": "شهاب",
+          "ar": "وهذا جَناح الرياضة",
+          "fr": "Et c'est le pavillon du sport."
+        },
+        {
+          "speaker": "شعيب",
+          "ar": "كُرَةُ القَدَم والسباحَةُ والفُرُوسِيَّةُ",
+          "fr": "Le football, la natation et l'équitation."
+        }
+      ]
+    },
+    {
+      "id": "12.3",
+      "type": "dialogue",
+      "titleAr": "",
+      "titleFr": "",
+      "youtube": "https://www.youtube.com/embed/cvZbvvh3EBU",
+      "pdfPage": null,
+      "lines": [
+        {
+          "speaker": "المدرسة",
+          "ar": "أَيَّ جَمْعِيَّةٍ تَخْتَارِينَ يا شَرِيفَةُ ؟",
+          "fr": "Quelle association (club) choisis-tu Charifa ?"
+        },
+        {
+          "speaker": "شريفة",
+          "ar": "أَخْتَارُ جَمْعِيَّةَ الصَّحَافَةِ",
+          "fr": "Je choisis l'association de journalisme."
+        },
+        {
+          "speaker": "المدرسة",
+          "ar": "أَيَّ جَمْعِيَّةٍ تَخْتَارِينَ يا شَادِيةُ ؟",
+          "fr": "Quelle association choisis-tu Shadia ?"
+        },
+        {
+          "speaker": "شادية",
+          "ar": "أَخْتَارُ جَمْعِيَّةَ الثَّقَافَةِ الإسلامية",
+          "fr": "Je choisis l'association de culture islamique."
+        },
+        {
+          "speaker": "المدرسة",
+          "ar": "أي جَمْعِيَّةٍ تَخْتَارِينَ يا شَيْمَاءُ ؟",
+          "fr": "Quelle association choisis-tu Shayma ?"
+        },
+        {
+          "speaker": "شيماء",
+          "ar": "أَخْتَارُ جَمعِيَّةَ الحاسوب",
+          "fr": "Je choisis l'association d'informatique."
+        },
+        {
+          "speaker": "المدرسة",
+          "ar": "أي جَمْعِيَّةِ تَخْتَارِينَ يا شَقْراء ؟",
+          "fr": "Quelle association choisis-tu Shaqra ?"
+        },
+        {
+          "speaker": "شقراء",
+          "ar": "أَخْتَارُ جَمْعِيَّةَ العُلومِ",
+          "fr": "Je choisis l'association des sciences."
+        },
+        {
+          "speaker": "المدرسة",
+          "ar": "أَي جَمْعِيَّةٍ تَخْتَارِينَ يَا شَمْسُ ؟",
+          "fr": "Quelle association choisis-tu Shams ?"
+        },
+        {
+          "speaker": "شمس",
+          "ar": "أَخْتَارُ جَمْعِيَّةَ اللُّغَةِ العَرَبِيَّةِ\nأَنَا أُحِبُّ الخَطَّ العَرَبِيَّ، وَلَدَيَّ آيَاتٌ بِخَطْ النَّسْخِ، وأحاديثُ بِخَط الرقعة",
+          "fr": "Je choisis l'association de langue arabe. J'aime la calligraphie arabe, et j'ai des versets en écriture Naskh et des hadiths en écriture Ruq'ah."
+        },
+        {
+          "speaker": "المدرسة",
+          "ar": "أَيَّ جَمْعِيَّةٍ تَخْتَارِينَ يا سَمِيرَةُ ؟",
+          "fr": "Quelle association choisis-tu Samira ?"
+        },
+        {
+          "speaker": "سميرة",
+          "ar": "أَخْتَارُ جَمْعِيَّةَ التَّدْبِيرِ المَنْزِلِيِّ\nأَنَا أُحِبُّ الطَّبْخَ وَالخِياطَةَ",
+          "fr": "Je choisis l'association d'économie domestique. J'aime la cuisine et la couture."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,237 @@
+{
+  "id": 3,
+  "titleAr": "الوحدة الثالثة: الحياة الزوجية",
+  "titleFr": "Unité 3: La vie conjugale",
+  "items": [
+    {
+      "id": "3.1",
+      "type": "dialogue",
+      "titleAr": "عَلَيْكَ بذاتِ الدِّينِ",
+      "titleFr": "Choisis celle qui a la religion",
+      "youtube": "",
+      "pdfPage": 14,
+      "lines": [
+        {
+          "speaker": "الأُمِّ",
+          "ar": "أَنتَ قَلِقٌ يَا وَلَدِي، ماذا بِكَ؟!",
+          "fr": "Tu es inquiet mon fils, qu'est-ce qu'il y a ?"
+        },
+        {
+          "speaker": "بلال",
+          "ar": "أُريد الزواج يا أُمِّي، ولا أَجِدُ الفَتاةَ الْمُنَاسِبَةَ.",
+          "fr": "Je veux me marier maman, mais je ne trouve pas la fille convenable."
+        },
+        {
+          "speaker": "الأم",
+          "ar": "هَذِهِ لَيْسَتْ مُشْكِلَةٌ . هُناكَ فَتَيَاتٌ كَثِيراتٌ مُناسِباتٌ للزواج.",
+          "fr": "Ce n'est pas un problème. Il y a beaucoup de filles convenables pour le mariage."
+        },
+        {
+          "speaker": "بلال",
+          "ar": "هَلْ تَعْرِفِينَ وَاحِدَةً مُنَاسِبَةً؟",
+          "fr": "En connais-tu une de convenable ?"
+        },
+        {
+          "speaker": "الأم",
+          "ar": "فاطِمَةَ بنتُ صالح.",
+          "fr": "Fatima bint Salih."
+        },
+        {
+          "speaker": "بلال",
+          "ar": "هَذِهِ غَيْرُ مُنَاسِبَةٍ إِنَّهَا فَقِيرَةٌ، لا مال لها .",
+          "fr": "Celle-ci n'est pas convenable, elle est pauvre, elle n'a pas d'argent."
+        },
+        {
+          "speaker": "الأم",
+          "ar": "ما رأيك فِي زَيْنَبَ بِنْتِ عَبْدِ اللهِ؟",
+          "fr": "Que penses-tu de Zeinab bint Abd Allah ?"
+        },
+        {
+          "speaker": "بلال",
+          "ar": "نَعَمْ، هِيَ مِنْ أَسْرَةٍ غَنِيَّةٍ، وَلَكِنِّي سَمِعْتُ أَنهَا غَيْرُ جَمِيلَةٍ.",
+          "fr": "Oui, elle est d'une famille riche, mais j'ai entendu dire qu'elle n'était pas belle."
+        },
+        {
+          "speaker": "الأم",
+          "ar": "هُناكَ هُدَى بِنْتُ عَبْدِ الْعَزِيز.",
+          "fr": "Il y a Houda bint Abd Al-Aziz."
+        },
+        {
+          "speaker": "بلال",
+          "ar": "سَمِعْتُ أَنها ذَاتُ مالَ وجَمالَ ، وَلَكِنِّي أُرِيدُ الْحَسَبَ والنَّسَبَ.",
+          "fr": "J'ai entendu dire qu'elle avait de l'argent et de la beauté, mais je veux la noblesse et la lignée."
+        },
+        {
+          "speaker": "الأم",
+          "ar": "تُريدُ المالَ والجَمالَ وَالْحَسَبُّ والنَّسَبَ. هَذِهِ لَا تُحَقِّقُ السَّعادَةَ!",
+          "fr": "Tu veux l'argent, la beauté, la noblesse et la lignée. Cela ne garantit pas le bonheur !"
+        },
+        {
+          "speaker": "بلال",
+          "ar": "ما الذي يُحَقِّقُ السَّعادَةَ إِذَنْ؟!",
+          "fr": "Qu'est-ce qui garantit le bonheur alors ?!"
+        },
+        {
+          "speaker": "الأم",
+          "ar": "إِذا أَرَدْتَ السَّعادَةَ، فَعَلَيْكَ بِذاتِ الدّين.",
+          "fr": "Si tu veux le bonheur, alors choisis celle qui a la religion."
+        },
+        {
+          "speaker": "بلال",
+          "ar": "ذات الدِّينِ . أَحْسَنْتِ يا أَمِّي هَذَا قَوْلُ الرّسولِ : « فَاظْفَرُ بِذَاتِ الدِّينِ، تَرِبَتْ يَداكَ ».",
+          "fr": "Celle qui a la religion. Tu as raison maman, c'est la parole du Messager : « Choisis celle qui a la religion, que tes mains soient couvertes de poussière (si tu fais autrement) »."
+        }
+      ]
+    },
+    {
+      "id": "3.2",
+      "type": "texte",
+      "titleAr": "هَلْ تَحْدُثُ مُشْكِلاتُ بَينَ الزَوجَينِ ؟",
+      "titleFr": "Les problèmes surviennent-ils entre les époux ?",
+      "youtube": "",
+      "pdfPage": 15,
+      "lines": [
+        {
+          "speaker": "",
+          "ar": "فكر في الإجابَةِ عَنِ الْأَسْئِلَةِ التَّالِيَةِ:\n١- هَلْ تَحْدُثُ مُشْكِلاتٌ بَينَ الزَّوْجَينِ؟ ٢- لماذا تَحْدُثُ الْمُشْكِلاتُ بينَ الزُّوجَينِ؟\n- مَنْ عَلَيْهِ حَلٌّ مُشْكِلاتِ البَيْتِ وَالْأَسْرَةِ ۚ وَلِماذا؟ ٤- مَتى يَقَعُ الطَّلَاقُ بين الزوجَينِ؟",
+          "fr": "Réfléchissez aux réponses aux questions suivantes:\n1- Les problèmes surviennent-ils entre les époux ? 2- Pourquoi les problèmes surviennent-ils entre les époux ?\n3- Qui doit résoudre les problèmes de la maison et de la famille ? Et pourquoi ? 4- Quand le divorce a-t-il lieu entre les époux ?"
+        },
+        {
+          "speaker": "",
+          "ar": "في الْحَيَاةِ الزَّوْجِيَّةِ خَيْرٌ كَثِيرٌ لِلزَّوْجِ وَلِلزَّوْجَةِ وَلِلأَوْلادِ . ومَعَ ذَلِكَ تَظْهَرُ - أَحْيَانَا - بَعْضُ الْمُشْكِلاتِ\nفي حياةِ الزَّوْجَينَ. عَلَيْنَا أَنْ نَعْرِفَ هَذِهِ الْحَقِيقَةَ قَبْلَ الزِّواج . نَعَمْ ، قَدْ تَحْدُثُ خِلافات بينَ الزَّوْجَينِ،\nوَلَيْسَتْ هَذِهِ هِيَ الْمُشْكِلَةَ، وَإِنَّمَا الْمُشْكِلَةُ أَنْ نَعْجِزَ عَنْ حَلَّ تِلْكَ الْمُشْكِلاتِ.",
+          "fr": "Dans la vie conjugale, il y a beaucoup de bien pour le mari, la femme et les enfants. Cependant, parfois, certains problèmes apparaissent\ndans la vie des époux. Nous devons connaître cette vérité avant le mariage. Oui, il peut y avoir des différends entre les époux,\net ce n'est pas le problème, mais le problème est que nous sommes incapables de résoudre ces problèmes."
+        },
+        {
+          "speaker": "",
+          "ar": "يَعْتَقِدُ كَثيرٌ مِنَ الشَّبابِ أَنَّ الْحَيَاةَ الزَوْجِيَّةَ بِلَا مُشْكِلاتِ، فَإِذا قابلوا مُشْكِلَةً ثاروا، وَفَكَّروا في\nالطَّلَاقِ. عَلَى الشَّبَابِ أَنْ يَعْرِفُوا أَنَّ الْحَياةَ الزُوجِيَّةَ رِحْلَةٌ طَوِيلَةٌ ، وَأَنَّ السَّبِيلَ إِلَى النَّجَاحِ فِي الْحَيَاةِ\nالزوجية، هُوَ الحوار.",
+          "fr": "Beaucoup de jeunes pensent que la vie conjugale est sans problèmes, donc s'ils rencontrent un problème, ils se mettent en colère et pensent au\ndivorce. Les jeunes doivent savoir que la vie conjugale est un long voyage, et que le chemin du succès dans la vie\nconjugale est le dialogue."
+        },
+        {
+          "speaker": "",
+          "ar": "لماذا تحـ تَحْدُثُ مُشْكَلاتٌ بَيْنَ الزّوْجَين، مِنْ وقت لآخَرَ؟ يَعودُ السَّبَبُ إلى وُجودِ اخْتِلَافاتِ كَثِيرَةٍ بَيْنَ\nشَخْصِيَّةِ الرَّجُلِ، وَشَخْصِيَّةِ المَرْأَةِ، وَتَظْهَرُ هَذِهِ الاختلافاتُ بَعْدَ مَرْحَلَةِ الطَّفُولَةِ، وَتَزيدُ فِي مَرْحَلَةِ\nالشَّبَابِ فَالرِّجُلُ يُحِبُّ أَشْيَاءَ لا تُحِبُّها المَرْأَةُ، وَالْمَرْأَةُ تُحِبُّ أَشْيَاءَ لَا يُحِبُّها الرَّجُلُ.",
+          "fr": "Pourquoi les problèmes surviennent-ils entre les époux de temps en temps ? La raison en est l'existence de nombreuses différences entre\nla personnalité de l'homme et la personnalité de la femme, et ces différences apparaissent après l'enfance, et augmentent au stade de\nla jeunesse : l'homme aime des choses que la femme n'aime pas, et la femme aime des choses que l'homme n'aime pas."
+        },
+        {
+          "speaker": "",
+          "ar": "وَعِنْدَمَا تَظْهَرُ الْمُشْكِلاتُ فِي الحَياةِ الزّوْجِيّةِ ، يأْخُذُ الزِّوْجَانِ في الشَّكْوَى يَشْكُو الزَّوْجُ فَيَقُولُ:\nزَوْجَتي لَا تَسْتَمِعُ إِلَيَّ، وَتَتَكَلَّمُ مَعَ صَديقاتها في الهاتف كثيراً، وَتَذْهَبُ إِلى السِّوقِ كَثِيراً، وَتَشْتَرِي\nأَشْيَاءَ لا نَحْتاجُ إِلَيْهَا . وَتَشْكو الزِّوْجَةُ فَتَقولُ : زَوْجِي يَتَكَلَّمُ طُولَ الوَقْتِ في السياسة والرياضة،\nويَقْضِي وَقْتاً طويلاً خارِجَ البَيْتِ، وَعِنْدَما يَكونُ في البَيْتِ يَقْضِي الوَقْتَ فِي قِرَاءَةِ الصُّحُفِ\nوَالْمَجَلاتِ، أَوْ مَعَ الحاسوب.",
+          "fr": "Et lorsque des problèmes apparaissent dans la vie conjugale, les époux commencent à se plaindre. Le mari se plaint et dit :\nMa femme ne m'écoute pas, elle parle beaucoup avec ses amies au téléphone, elle va beaucoup au marché et achète\ndes choses dont nous n'avons pas besoin. Et la femme se plaint et dit : Mon mari parle tout le temps de politique et de sport,\net passe beaucoup de temps hors de la maison, et quand il est à la maison, il passe son temps à lire des journaux\net des magazines, ou avec l'ordinateur."
+        }
+      ]
+    },
+    {
+      "id": "3.3",
+      "type": "dialogue",
+      "titleAr": "السَّهَرُ خَارِجَ الْبَيْتِ",
+      "titleFr": "Soirées à l'extérieur de la maison",
+      "youtube": "",
+      "pdfPage": 16,
+      "lines": [
+        {
+          "speaker": "ناصر",
+          "ar": "أُرِيدُ أَنْ أَتْرُكَ زَوْجَتِي.",
+          "fr": "Je veux quitter ma femme."
+        },
+        {
+          "speaker": "فيصل",
+          "ar": "إِنَّا للهِ وَإِنَّا إِلَيْهِ رَاجِعونَ. ماذا هُناكَ؟!",
+          "fr": "À Dieu nous appartenons et à Lui nous retournons. Que se passe-t-il?!"
+        },
+        {
+          "speaker": "ناصر",
+          "ar": "لَا أُحِبَّها.",
+          "fr": "Je ne l'aime pas."
+        },
+        {
+          "speaker": "فيصل",
+          "ar": "لا تُحِبُّها ؟! كَيْفَ عِشْتَ مَعَهَا كُلِّ هَذِهِ السَّنَواتِ؟!",
+          "fr": "Tu ne l'aimes pas ?! Comment as-tu vécu avec elle toutes ces années ?!"
+        },
+        {
+          "speaker": "ناصر",
+          "ar": "لا أدري ... لا أدري ... لا أحبها.",
+          "fr": "Je ne sais pas... Je ne sais pas... Je ne l'aime pas."
+        },
+        {
+          "speaker": "فيصل",
+          "ar": "كُنْتَ تَقُولُ دَائِماً: إِنَّهَا زَوْجَةً طَيِّبَةٌ، وَمُؤَدِّبَةٌ ومُطِيعَةٌ. ماذا حَدَثَ؟!",
+          "fr": "Tu disais toujours : c'est une femme bonne, polie et obéissante. Que s'est-il passé ?!"
+        },
+        {
+          "speaker": "ناصر",
+          "ar": "كُنْتُ أُحِبُّها فِعْلاً، وَلَكِنّهَا تَغَيِّرَتْ كَثِيراً.",
+          "fr": "Je l'aimais vraiment, mais elle a beaucoup changé."
+        },
+        {
+          "speaker": "فيصل",
+          "ar": "كَيْفَ تَغَيِّرَتْ؟",
+          "fr": "Comment a-t-elle changé ?"
+        },
+        {
+          "speaker": "ناصر",
+          "ar": "أَصْبَحَتْ مُهْمِلَةً، لَا تَهْتَمُ بِي، وَلَا بِالبَيْتِ.\nتَهْتَمُ بِنَفْسِهَا وَبِصَدِيقَاتِها فَقَط.",
+          "fr": "Elle est devenue négligente, elle ne s'intéresse ni à moi ni à la maison. Elle ne s'intéresse qu'à elle-même et à ses amies."
+        },
+        {
+          "speaker": "فيصل",
+          "ar": "هَلْ تَكَلَّمْتَ مَعَهَا فِي هَذَا الأَمْرِ؟",
+          "fr": "As-tu parlé avec elle de cette affaire ?"
+        },
+        {
+          "speaker": "ناصر",
+          "ar": "تَكَلَّمْتُ مَعَهَا كَثيراً ، وَلَكِنَّها عَنِيدَةٌ.",
+          "fr": "J'ai beaucoup parlé avec elle, mais elle est têtue."
+        },
+        {
+          "speaker": "فيصل",
+          "ar": "هَلْ تَغَيِّرْتَ أَنْتَ؟",
+          "fr": "As-tu changé toi aussi ?"
+        },
+        {
+          "speaker": "ناصر",
+          "ar": "نَعَمْ، أَصْبَحْتُ أَسْهَرُ كَثِيراً خَارِجَ البَيْتِ.",
+          "fr": "Oui, je passe beaucoup plus de temps à l'extérieur de la maison."
+        },
+        {
+          "speaker": "فيصل",
+          "ar": "قَدْ يَكونُ هَذا هُوَ السّبَبَ. لَا تَسْهَرُ خَارِجَ البَيْتِ.",
+          "fr": "C'est peut-être la raison. Ne passe pas tes soirées à l'extérieur de la maison."
+        },
+        {
+          "speaker": "ناصر",
+          "ar": "سَأَفْعَلُ ذَلِكَ.",
+          "fr": "Je vais le faire."
+        },
+        {
+          "speaker": "فيصل",
+          "ar": "إِذَنْ سَتَهْتَمَّ زَوْجَتُكَ بِكَ وَبِبَيْتِها ، بِإِذْنِ اللهِ.",
+          "fr": "Alors ta femme s'intéressera à toi et à sa maison, si Dieu le veut."
+        }
+      ]
+    },
+    {
+      "id": "3.4",
+      "type": "texte",
+      "titleAr": "الأُسْرَةُ بَينَ الماضي والحاضر",
+      "titleFr": "La famille entre le passé et le présent",
+      "youtube": "",
+      "pdfPage": 17,
+      "lines": [
+        {
+          "speaker": "",
+          "ar": "يَخْتَلِفُ نِظامُ الأَسْرَةِ الْآنَ عَن نظام الأُسْرَةِ في الماضي، ولهذا الاخْتِلافِ صُوَرٌ كَثِيرَةٌ، منها : اخْتِفاءُ الأَسْرَةِ الكَبِيرَةِ فِي كَثِيرٍ مِنَ الْمُجْتَمَعاتِ. كَانَتِ الأَسْرَةُ الكَبِيرَةُ تَسْكُنُ فِي بَيْتِ وَاحِدٍ كبيرٍ، يَضُمُّ جَمِيعَ أَفْرادِها . اخْتَفَتِ الأَسْرَةُ الكَبيرَةُ، وَظَهَرَتِ الأَسْرَةُ الصّغيرة، التي تَضُمُ الزَّوْجَ وَالزَّوْجَةَ والوَلَدَ، أَو الوَلَدَينِ.",
+          "fr": "Le système familial actuel diffère du système familial du passé, et il existe de nombreuses formes de cette différence, notamment : la disparition de la grande famille dans de nombreuses sociétés. La grande famille vivait dans une grande maison qui comprenait tous ses membres. La grande famille a disparu et la petite famille est apparue, qui comprend le mari, la femme et l'enfant, ou les deux enfants."
+        },
+        {
+          "speaker": "",
+          "ar": "مِنْ صُوَرِ الاخْتِلافِ، ضَعْفُ العَلاقَةِ بينَ أَفْرادِ الأَسْرَةِ، فَقَدْ أَصْبَحَ الْآبَاءُ يَقْضُونَ مُعْظَمَ الوَقْتِ فِي أَمَاكِنِ العَمَلِ، وَلا يَرَوْنَ أَطْفالَهُمْ إلا قليلاً ؛ لأنّهُم يَخْرُجُونَ في الصباح، ويَتْرُكُونَهُمْ نَائِمِينَ، وَيَرْجِعُونَ في اللَّيْلِ، وَيَجِدُونَهُمْ نَائِمينَ. وَمِنْ نَاحِيَةٍ أَخْرَى، يُغَادِرُ الأَوْلادُ البَيْتَ في الصباح إلى المَدْرَسَةِ، ويَرْجِعونَ في المَساءِ، فَتَبْقَى الأم في البَيْتِ وَحْدَها مُعْظَمَ الوَقْتِ.",
+          "fr": "Parmi les formes de différence, il y a l'affaiblissement de la relation entre les membres de la famille. Les pères passent la plupart de leur temps au travail et ne voient leurs enfants que rarement, car ils partent le matin et les laissent endormis, et ils reviennent la nuit et les trouvent endormis. D'un autre côté, les enfants quittent la maison le matin pour aller à l'école et reviennent le soir, de sorte que la mère reste seule à la maison la plupart du temps."
+        },
+        {
+          "speaker": "",
+          "ar": "مِنْ صُوَرِ الاخْتِلافِ أَيْضاً ، خُروجُ بَعْضِ النِّسَاءِ مِنَ البيت إلى العَمَلِ. وكانَتِ الْمَرْأَةُ - في الماضي - لا تَخْرُجُ مِنْ بَيْتِهَا إِلَّا عِنْدَ الضّرورة، أمَّا اليَومَ، فَقَدْ تُغادِرُ الزِّوْجَةُ بَيْتَها فِي الصِّبَاحِ، وَلَا تَرْجِعُ إِلَيهِ إلا في المساء، وعِندَمَا تَرْجِعُ تَكونُ مُتْعَبَةً ، فلا تَقومُ بِعَمَلٍ البَيْتِ مِن نَظَافَةٍ وَإِعْدَادٍ لِلطَّعَامِ، وَلَا تَجِدُ وَقْتاً لِتَجْلِسَ مَعَ أَطْفالِها ، أَوْ زَوْجِها ، لِلْحَديثِ فِي أُمُورِ الْأَوْلَادِ وَالبَيْتِ.",
+          "fr": "Parmi les formes de différence, il y a aussi la sortie de certaines femmes de la maison pour aller travailler. Dans le passé, la femme ne sortait de sa maison qu'en cas de nécessité, mais aujourd'hui, la femme peut quitter sa maison le matin et ne revenir que le soir, et lorsqu'elle revient, elle est fatiguée, elle ne fait donc pas le travail de la maison en termes de propreté et de préparation des aliments, et elle ne trouve pas le temps de s'asseoir avec ses enfants, ou son mari, pour parler des affaires des enfants et de la maison."
+        }
+      ]
+    }
+  ]
+}

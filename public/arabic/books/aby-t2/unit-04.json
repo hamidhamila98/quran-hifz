@@ -1,0 +1,232 @@
+{
+  "id": 4,
+  "titleAr": "الوحدة الرابعة: الحياة في المدينة",
+  "titleFr": "Unité 4: La vie en ville",
+  "items": [
+    {
+      "id": "4.1",
+      "type": "dialogue",
+      "titleAr": "بَيْنَ القَرْيَةِ وَالْمَدِينَةِ",
+      "titleFr": "Entre le village et la ville",
+      "youtube": "",
+      "pdfPage": 19,
+      "lines": [
+        {
+          "speaker": "الأم",
+          "ar": "يا أَبَا عَمْرٍو، مَا رَأْيَكَ، نَتْرُكَ القَرْيَةَ، وَنَسْكُنَ فِي العَاصِمَةِ؟",
+          "fr": "Ô Abou Amr, quel est ton avis, quittons-nous le village pour habiter dans la capitale ?"
+        },
+        {
+          "speaker": "الأب",
+          "ar": "لَنا بَيْتٌ فِي القَرْيَةِ، وَلَيْسَ لَنا بَيْتٌ في العاصمة. لماذا نَتْرُكُ بَيْتَنَا، وَنَرْحَلُ إِلى هُناكَ؟!",
+          "fr": "Nous avons une maison au village, et nous n'en avons pas dans la capitale. Pourquoi quitter notre maison et aller là-bas ?!"
+        },
+        {
+          "speaker": "الأم",
+          "ar": "أَوْلادُنا يَعيشون في العاصِمَةِ . حُسَيْنٌ يَدْرُسُ في الجامِعَةِ، وَمُحْسِنَةٌ تَدْرُسُ فِي كُلِّيَّةِ الْمُعَلِّمَاتِ، وَحَسّانُ يَعْمَلُ فِي شَرِكَةٍ هُناكَ.",
+          "fr": "Nos enfants vivent dans la capitale. Hussein étudie à l'université, Mohsina étudie à l'école normale, et Hassan travaille dans une entreprise là-bas."
+        },
+        {
+          "speaker": "الأب",
+          "ar": "هَلْ نَتْرُكُ مَزْرَعَتَنَا يَا أَمْ عَمْرِو ؟! سَيَمُوتُ الزِّرْعُ والشَّجَرُ.",
+          "fr": "Allons-nous quitter notre ferme, ô Oum Amr ?! Les cultures et les arbres vont mourir."
+        },
+        {
+          "speaker": "الأم",
+          "ar": "أَنا خَائِفَةٌ عَلى أَوْلادي. الحَوادِثُ كَثِيرَةٌ فِي العَاصِمَةِ.",
+          "fr": "J'ai peur pour mes enfants. Les accidents sont nombreux dans la capitale."
+        },
+        {
+          "speaker": "الأب",
+          "ar": "أَنا لا أُحِبُّ العَاصِمَةَ. أَنا أُحِبُّ بَيْتِي وَمَزْرَعَتِي.",
+          "fr": "Je n'aime pas la capitale. J'aime ma maison et ma ferme."
+        },
+        {
+          "speaker": "الأم",
+          "ar": "أَنا لا أُحِبُّ العَاصِمَةَ أَيْضاً، فَهُنَاكَ التَلَوْتُ، وَالضَّوضَاءُ، وَالأَزْدِحَامُ.",
+          "fr": "Je n'aime pas non plus la capitale, car il y a la pollution, le bruit et l'embouteillage."
+        },
+        {
+          "speaker": "الأب",
+          "ar": "وَفِي القَرْيَةِ الأَهْلُ وَالجيران.",
+          "fr": "Et au village, il y a la famille et les voisins."
+        },
+        {
+          "speaker": "الأم",
+          "ar": "هذا حَقٌّ، وَلَكِنّكَ مَرِيضٌ ، وَأَنا مَرِيضَةٌ أَيْضاً . نَحْنُ نَحْتاجُ إلى أَوْلادِنا .",
+          "fr": "C'est vrai, mais tu es malade, et je suis malade aussi. Nous avons besoin de nos enfants."
+        },
+        {
+          "speaker": "الأب",
+          "ar": "وَهُمْ يَحْتاجُونَ إِلَيْنَا أَيْضاً .",
+          "fr": "Et ils ont besoin de nous aussi."
+        },
+        {
+          "speaker": "الأم",
+          "ar": "نَبِيعُ البَيْتَ وَالْمَزَرَعَةَ، وَنَشْتَرِي بَيْتًا فِي العَاصِمَةِ.",
+          "fr": "Nous vendons la maison et la ferme, et nous achetons une maison dans la capitale."
+        },
+        {
+          "speaker": "الأب",
+          "ar": "سَأَطْلُبُ مِنَ الأَوْلادِ أَنْ يَشْتَرُوا لَنَا بَيْتًا هُناكَ.",
+          "fr": "Je demanderai aux enfants de nous acheter une maison là-bas."
+        },
+        {
+          "speaker": "الأم",
+          "ar": "جَزَاكَ اللهُ خَيْراً يَا أَبَا عَمْرٍو.",
+          "fr": "Qu'Allah te récompense, ô Abou Amr."
+        }
+      ]
+    },
+    {
+      "id": "4.2",
+      "type": "texte",
+      "titleAr": "لماذا يُفَضّلُ بَعْضُ النّاس الحَياةَ في المُدُنِ الكَبِيرَةِ؟",
+      "titleFr": "Pourquoi certaines personnes préfèrent-elles la vie dans les grandes villes ?",
+      "youtube": "",
+      "pdfPage": 20,
+      "lines": [
+        {
+          "speaker": "",
+          "ar": "يَعِيشُ مَلايِينُ النَّاسِ في المُدُنِ الكَبيرَةِ، مِثْلِ : طوكيو، ولندن، ونيويورك، والقاهِرَةِ. ويُواجِهُ سُكَّانُ المُدنِ الكَبِيرَةِ مُشْكِلَاتِ كَبِيرَةً، مِثْلَ : التَلَوْثِ وَالجَريمَةِ وَالازْدِحامِ. وَبِالرِّغْمِ مِنْ هَذِهِ الْمُشْكِلاتِ، يُفَضّلُ كَثِيرٌ مِنَ النَّاسِ الحَيَاةَ في المُدنِ الكَبِيرَةِ؛ لأن فيها المَصانِعَ وَالشَّرِكاتِ والجَامِعاتِ والمَكْتَبَاتِ والمُسْتَشْفِيات والأسواق، وأماكن الترويح .",
+          "fr": "Des millions de personnes vivent dans les grandes villes, comme Tokyo, Londres, New York et Le Caire. Les habitants des grandes villes sont confrontés à de grands problèmes, tels que la pollution, la criminalité et la congestion. Malgré ces problèmes, beaucoup de gens préfèrent la vie dans les grandes villes, car elles offrent des usines, des entreprises, des universités, des bibliothèques, des hôpitaux, des marchés et des lieux de divertissement."
+        },
+        {
+          "speaker": "",
+          "ar": "يَزْدادُ سُكَّانُ المُدُنِ كُلَّ يَوْمٍ؛ لأَنَّ سُكَانَ الرِّيفِ يُهاجرون إليها ؛ لِلْعَمَلِ في المصانع والشركاتِ، وَيَتْرُكُونَ العَمَلَ في الزراعَةِ وَالرِّعْيِ: فَتَزْدادُ مُشْكِلاتُ الْمُدْنِ. وَقَدْ أَدْرَكَتْ بَعْضُ الدَّوَلِ هَذِهِ الْمُشْكِلَةَ؛ مُشْكِلَةَ الهِجْرَةِ مِنَ الرِّيفِ إِلى المَدِينَةِ، فَبَنَتْ مَصَانِعَ كَثِيرَةً في الرّيفِ، فَرَجَعَ كَثِيرٌ مِنَ النَّاسِ لِلْعَمَلِ فِي الريف، والحياة فيه.",
+          "fr": "La population des villes augmente chaque jour, car les habitants des campagnes y émigrent pour travailler dans les usines et les entreprises, et abandonnent le travail dans l'agriculture et l'élevage. Les problèmes des villes augmentent donc. Certains pays ont pris conscience de ce problème, le problème de l'exode rural vers la ville, et ont construit de nombreuses usines dans les campagnes, de sorte que beaucoup de gens sont retournés travailler et vivre à la campagne."
+        },
+        {
+          "speaker": "",
+          "ar": "في القَرْنِ التَّاسِعَ عَشَرَ الميلادي، كانَ يَسْكُنُ المُدُنَ نَحْوُ ٢،٥٪؜ مِنْ سُكَانِ العَالَمِ، ثُمَّ وَصَلَتِ النِّسْبَةُ إلى نَحْو ٤٠٪؜ سَنَةَ ١٩٨٠م ، ووَصَلَتْ إلى ٥٠٪؜ سَنَةَ ٢٠٠٠ م . وبَلَغَ عَدَدُ سُكَانِ العَالَمِ سَنَةَ ٢٠٠٠ م ستَّةَ مِلْيَاراتٍ، يَعِيشُ أَكْثَرُ مِنْ مِلْيَارٍ مِنْهُمْ فِي مُدُنٍ، في دُوَلِ العَالَمِ الثَّالِثِ، وَسَيَبْلُغَ سُكَّانُ العَالَمِ أَكْثَرَ مِنْ ثَمَانِيَةِ مِلْيَارَاتِ شَخْصٍ سَنَّةَ ٢٠٢٥م - إِنْ شَاءَ اللهُ - وَسَيَصِلُ سُكَّانُ العَالَمِ الثَّالِثِ مِنْهُمَّ إلى أَرْبَعَةِ مِلْيَارَاتِ شَخْصٍ.",
+          "fr": "Au XIXe siècle, environ 2,5 % de la population mondiale vivait dans les villes, puis le pourcentage a atteint environ 40 % en 1980, et a atteint 50 % en 2000. La population mondiale a atteint six milliards en 2000, dont plus d'un milliard vivent dans les villes, dans les pays du tiers monde, et la population mondiale atteindra plus de huit milliards de personnes en 2025 - si Dieu le veut - et la population du tiers monde parmi eux atteindra quatre milliards de personnes."
+        }
+      ]
+    },
+    {
+      "id": "4.3",
+      "type": "dialogue",
+      "titleAr": "الطريق إلى الجامعة",
+      "titleFr": "Le chemin vers l'université",
+      "youtube": "",
+      "pdfPage": 21,
+      "lines": [
+        {
+          "speaker": "السَّائِقُ",
+          "ar": "لَوْ سَمَحْتَ، أَيْنَ تَقَعُ الجَامِعَةُ؟",
+          "fr": "Excusez-moi, où se trouve l'université ?"
+        },
+        {
+          "speaker": "رَجُلُ المرورِ",
+          "ar": "تَقَعُ الجَامِعَةُ غَرْبَ المَدِينَةِ.",
+          "fr": "L'université se trouve à l'ouest de la ville."
+        },
+        {
+          "speaker": "السَّائِقُ",
+          "ar": "كَيْفَ أَصِلُ إِلَيْهَا مِنْ فَضْلِكَ؟",
+          "fr": "Comment puis-je y arriver, s'il vous plaît ?"
+        },
+        {
+          "speaker": "رَجُلُ المرورِ",
+          "ar": "اتَّجِه غَرْباً في شارِعِ طَارِقِ بْنِ زِيَادٍ .",
+          "fr": "Dirigez-vous vers l'ouest dans la rue Tariq Ibn Ziyad."
+        },
+        {
+          "speaker": "السَّائِقُ",
+          "ar": "أَتَّجِهُ غَرْباً في شارع طَارِقِ بْنِ زِيَادٍ.",
+          "fr": "Je me dirige vers l'ouest dans la rue Tariq Ibn Ziyad."
+        },
+        {
+          "speaker": "رَجُلُ المرور",
+          "ar": "عِنْدَ الإِشَارَةِ الضَّوْئِيَّةِ الثَّالِثَةِ، أَنْعَطِفْ يَساراً في طَرِيقِ خَالِدِ بْنِ الوَلِيدِ .",
+          "fr": "Au troisième feu de signalisation, tournez à gauche dans la rue Khalid Ibn Al-Walid."
+        },
+        {
+          "speaker": "السَّائِقُ",
+          "ar": "أَنْعَطِفُ يَساراً فِي طَرِيقِ خَالِدِ بْنِ الوَلِيدِ .",
+          "fr": "Je tourne à gauche dans la rue Khalid Ibn Al-Walid."
+        },
+        {
+          "speaker": "رَجُلُ المرورِ",
+          "ar": "عِنْدَ الدَّوارِ الأَوَّلِ، ارْجِعْ فِي الطَّرِيقِ نَفْسِهِ.",
+          "fr": "Au premier rond-point, faites demi-tour."
+        },
+        {
+          "speaker": "السَّائِقُ",
+          "ar": "عِنْدَ الدَّوارِ الأَوَّلِ، أَرْجِعُ فِي الطَّرِيقِ نَفْسِهِ.",
+          "fr": "Au premier rond-point, je fais demi-tour."
+        },
+        {
+          "speaker": "رَجُلُ المُرورِ",
+          "ar": "عِندَ أَول شارع ، اتجه يميناً .",
+          "fr": "À la première rue, tournez à droite."
+        },
+        {
+          "speaker": "السَّائِقُ",
+          "ar": "عِندَ أَوَّلِ شَارِعٍ، أَتَّجِهُ يَمِيناً.",
+          "fr": "À la première rue, je tourne à droite."
+        },
+        {
+          "speaker": "رَجُلُ المرورِ",
+          "ar": "تَجِدْ صَيْدَلِيَّةً عِندَ الزَّاوِيَةِ.",
+          "fr": "Vous trouverez une pharmacie au coin."
+        },
+        {
+          "speaker": "السَّائِقُ",
+          "ar": "أَجِدُ صَيْدَلِيَّةً عِندَ الزَّاوِيَةِ.",
+          "fr": "Je trouve une pharmacie au coin."
+        },
+        {
+          "speaker": "رَجُلُ المرور",
+          "ar": "اسْتَمِرٌ ، وَبَعْدَ ۲۰۰ مِثْرِ تَجِدُ الْمُسْتَشْفَى الجَامِعِي عَنْ يَمِينِكَ.",
+          "fr": "Continuez, et après 200 mètres, vous trouverez l'hôpital universitaire sur votre droite."
+        },
+        {
+          "speaker": "السَّائِقُ",
+          "ar": "أَسْتَمِرٌ ، وبَعْدَ ۲۰۰ مِتْرِ أَجِدُ الْمُسْتَشْفَى الجَامِعِي عَنْ يَمِيني.",
+          "fr": "Je continue, et après 200 mètres, je trouve l'hôpital universitaire sur ma droite."
+        },
+        {
+          "speaker": "رجل المرور",
+          "ar": "الجامِعَةُ مُقابِلَ الْمُسْتَشْفَى.",
+          "fr": "L'université est en face de l'hôpital."
+        },
+        {
+          "speaker": "السائق",
+          "ar": "شُكراً .",
+          "fr": "Merci."
+        },
+        {
+          "speaker": "رَجُلُ المُرورِ",
+          "ar": "عَفْواً .",
+          "fr": "De rien."
+        }
+      ]
+    },
+    {
+      "id": "4.4",
+      "type": "texte",
+      "titleAr": "مِنْ مُدُنِ العَالَمِ الكُبْرَى",
+      "titleFr": "Parmi les grandes villes du monde",
+      "youtube": "",
+      "pdfPage": 22,
+      "lines": [
+        {
+          "speaker": "",
+          "ar": "طوكيو عاصِمَةُ اليابان، ويَبْلُغُ عَدَدُ سُكّانها نَحْوَ عَشْرَةِ مَلايينَ شَخْصٍ. في طوكيو مَقَرَّ الإمبراطور والحكومة، وفيها المَصارِفُ وَالشَّرِكاتُ. وَتَكْثُرُ في طوكيو العمارات العالية. وقد أُنْشِئَتْ مَدِينَةُ طوكيو سَنَةَ ١٤٧٥م ، تُواجِهُ طوكيو مُشْكِلات كثيرة، مثل: الازدحام، والتلوث والزلازل.",
+          "fr": "Tokyo est la capitale du Japon, et sa population atteint environ dix millions d'habitants. Tokyo est le siège de l'empereur et du gouvernement, et elle abrite les banques et les entreprises. Les bâtiments hauts y sont nombreux. La ville de Tokyo a été fondée en 1475 après J.-C. Tokyo est confrontée à de nombreux problèmes, tels que les embouteillages, la pollution et les tremblements de terre."
+        },
+        {
+          "speaker": "",
+          "ar": "القاهِرَةُ عَاصِمَةُ مِصْرَ، وَأَكْبَرُ مُدُنِها ، تَقَعُ عَلى نَهْرِ النّيلِ، وَيَبْلُغُ عَدَدُ سُكَانِها نَحْوَ ثَمَانِيَةِ مَلايين شَخْصٍ. في مَدِينَةِ القَاهِرَةِ كَثِيرٌ مِنَ الآثارِ، وَالمَكْتَبات العامة، وتُشْتَهَرُ بِأَنهَا مَدِينَةُ المَآذِنِ، لِكَثْرَةِ مَسَاجِدِها، ومِنْ تِلْكَ المَساجِدِ: مَسْجِدُ عَمْرِو بْنِ العاصِ، وَمَسْجِدُ أَحْمَدَ بنِ طُولُونَ، وَمَسْجِدُ السَّلطَانِ حَسَنَ، وَمَسْجِدُ مُحَمَّد عَليّ، وَمَسْجِدُ الأَزْهَرِ، وَقَدْ أَصْبَحَ الآنَ جَامِعَةً إِسْلامِيَّةً كَبِيرَةً، يَدْرُسُ فيها اللُّغَةَ العَرَبِيَّةَ والعُلوم الإسْلامِيَّةَ طَلَابٌ مِنْ كُلِّ دُوَلِ العالم.",
+          "fr": "Le Caire est la capitale de l'Égypte et sa plus grande ville, située sur le Nil, et sa population atteint environ huit millions d'habitants. La ville du Caire possède de nombreux monuments et bibliothèques publiques, et elle est connue comme la ville des minarets, en raison de ses nombreuses mosquées, parmi lesquelles : la mosquée de Amr ibn al-As, la mosquée d'Ahmed ibn Touloun, la mosquée du sultan Hassan, la mosquée de Muhammad Ali et la mosquée d'Al-Azhar, qui est maintenant devenue une grande université islamique, où des étudiants de tous les pays du monde étudient la langue arabe et les sciences islamiques."
+        },
+        {
+          "speaker": "",
+          "ar": "نيويورك أَكْبَرُ مَدِينَةٍ في الولايات المُتَّحِدَةِ الأَمْرِيكِيَّةِ ، ويوجد فيها مَقَرَّ الأُمَمِ الْمُتَّحِدَةِ، وَالمَصارِفُ وَالشَّرِكاتُ. يَبْلُغُ عَدَدُ سُكَانَ نيويورك نَحْوَ سَبْعَةِ ملايين شَخْصٍ، وَقَدْ هَاجَرَ إِليهَا النَّاسُ مِنْ كُلِّ دُوَلِ العَالَمِ لِلْعَمَلِ، وَطَلَبِ العِلْمِ. تَكْثُرُ في نيويورك ناطحاتُ السِّحابِ. وَتُواجِهُ الْمَدِينَةُ مُشْكِلاتٍ كثيرةً مِثْلَ: الفَقْرِ وَالجَرِيمَةِ وَالْمُخَدِّرات.",
+          "fr": "New York est la plus grande ville des États-Unis d'Amérique, et elle abrite le siège des Nations Unies, les banques et les entreprises. La population de New York atteint environ sept millions d'habitants, et des gens de tous les pays du monde y ont immigré pour travailler et étudier. Les gratte-ciel sont nombreux à New York. La ville est confrontée à de nombreux problèmes tels que la pauvreté, la criminalité et la drogue."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,187 @@
+{
+  "id": 8,
+  "titleAr": "العمل",
+  "titleFr": "Le Travail",
+  "items": [
+    {
+      "id": "8.1",
+      "type": "dialogue",
+      "titleAr": "",
+      "titleFr": "",
+      "youtube": "https://www.youtube.com/embed/CxgCg-nRS54",
+      "pdfPage": null,
+      "lines": [
+        {
+          "speaker": "عثمان",
+          "ar": "أَعْمَلُ طَبِيباً، مَاذَا تَعْمَلُ أَنْتَ ؟",
+          "fr": "Je travaille comme médecin, que fais-tu comme travail ?"
+        },
+        {
+          "speaker": "علي",
+          "ar": "أَعْمَلُ مُهَنْدِساً",
+          "fr": "Je travaille comme ingénieur."
+        },
+        {
+          "speaker": "عثمان",
+          "ar": "أَيْنَ تَعْمَلُ ؟",
+          "fr": "Où travailles-tu ?"
+        },
+        {
+          "speaker": "علي",
+          "ar": "أَعْمَلُ فِي شَرِكَةٍ، وَأَيْنَ تَعْمَلُ أَنْتَ ؟",
+          "fr": "Je travaille dans une entreprise, et où travailles-tu toi ?"
+        },
+        {
+          "speaker": "عثمان",
+          "ar": "أَعْمَلُ فِي الْمُسْتَشْفَى",
+          "fr": "Je travaille à l'hôpital."
+        },
+        {
+          "speaker": "علي",
+          "ar": "كَمْ سَاعَةً تَعْمَلُ فِي الْيَوْمِ ؟",
+          "fr": "Combien d'heures travailles-tu par jour ?"
+        },
+        {
+          "speaker": "عثمان",
+          "ar": "أَعْمَلُ ثَمَانِيَ سَاعَاتٍ فِي الْيَوْمِ\nوَكَمْ سَاعَةً تَعْمَلُ أَنْتَ ؟",
+          "fr": "Je travaille huit heures par jour. Et combien d'heures travailles-tu toi ?"
+        },
+        {
+          "speaker": "علي",
+          "ar": "أَعْمَلُ سَبْعَ سَاعَاتٍ",
+          "fr": "Je travaille sept heures."
+        },
+        {
+          "speaker": "عثمان",
+          "ar": "هَلْ تُحِبُّ عَمَلَكَ ؟",
+          "fr": "Aimes-tu ton travail ?"
+        },
+        {
+          "speaker": "علي",
+          "ar": "نَعَمْ، أُحِبُّ عَمَلِي",
+          "fr": "Oui, j'aime mon travail."
+        },
+        {
+          "speaker": "عثمان",
+          "ar": "وَأَنَا أُحِبُّ عَمَلِي أَيْضاً",
+          "fr": "Et moi j'aime mon travail aussi."
+        }
+      ]
+    },
+    {
+      "id": "8.2",
+      "type": "dialogue",
+      "titleAr": "",
+      "titleFr": "",
+      "youtube": "https://www.youtube.com/embed/CxgCg-nRS54",
+      "pdfPage": null,
+      "lines": [
+        {
+          "speaker": "الطالب 1",
+          "ar": "مَاذَا سَنَعْمَلُ بَعْدَ الدِّرَاسَةِ ؟",
+          "fr": "Que ferons-nous après les études ?"
+        },
+        {
+          "speaker": "الطالب 2",
+          "ar": "أَنَا أَدْرُسُ الطِّبَّ فِي كُلِّيَّةِ الطِّبِّ\nسَأَعْمَلُ طَبِيباً إِنْ شَاءَ الله",
+          "fr": "J'étudie la médecine à la faculté de médecine. Je travaillerai comme médecin, inchallah."
+        },
+        {
+          "speaker": "الطالب 3",
+          "ar": "أَنَا أَدْرُسُ الصَّيْدَلَةَ فِي كُلِّيَّةِ الصَّيْدَلَةِ\nسَأَعْمَلُ صَيْدَلِيّاً إِنْ شَاءَ الله",
+          "fr": "J'étudie la pharmacie à la faculté de pharmacie. Je travaillerai comme pharmacien, inchallah."
+        },
+        {
+          "speaker": "الطالب 4",
+          "ar": "أَنَا أَدْرُسُ التَّمْرِيضَ فِي كُلِّيَّةِ التَّمْرِيضِ\nسَأَعْمَلُ مُمَرِّضاً إِنْ شَاءَ الله",
+          "fr": "J'étudie les soins infirmiers à la faculté d'infirmiers. Je travaillerai comme infirmier, inchallah."
+        },
+        {
+          "speaker": "الطالب 5",
+          "ar": "أَنَا أَدْرُسُ الْهَنْدَسَةَ فِي كُلِّيَّةِ الْهَنْدَسَةِ\nسَأَعْمَلُ مُهَنْدِساً إِنْ شَاءَ الله",
+          "fr": "J'étudie l'ingénierie à la faculté d'ingénierie. Je travaillerai comme ingénieur, inchallah."
+        },
+        {
+          "speaker": "الطالب 6",
+          "ar": "أَنَا أَدْرُسُ الطَّيَرَانَ فِي كُلِّيَّةِ الطَّيَرَانِ\nسَأَعْمَلُ طَيَّاراً إِنْ شَاءَ الله",
+          "fr": "J'étudie l'aviation à la faculté d'aviation. Je travaillerai comme pilote, inchallah."
+        },
+        {
+          "speaker": "الطالب 1",
+          "ar": "أَنَا أَدْرُسُ التَّرْبِيَةَ فِي كُلِّيَّةِ التَّرْبِيَةِ\nسَأَعْمَلُ مُدَرِّساً إِنْ شَاءَ الله",
+          "fr": "J'étudie l'éducation à la faculté de pédagogie. Je travaillerai comme enseignant, inchallah."
+        }
+      ]
+    },
+    {
+      "id": "8.3",
+      "type": "dialogue",
+      "titleAr": "",
+      "titleFr": "",
+      "youtube": "https://www.youtube.com/embed/CxgCg-nRS54",
+      "pdfPage": null,
+      "lines": [
+        {
+          "speaker": "مريم",
+          "ar": "أَنَا مُدَرِّسَةٌ. مَا مِهْنَتُكِ ؟",
+          "fr": "Je suis enseignante. Quel est ton métier ?"
+        },
+        {
+          "speaker": "زينب",
+          "ar": "أَنَا مُدَرِّسَةٌ أَيْضاً",
+          "fr": "Je suis enseignante aussi."
+        },
+        {
+          "speaker": "مريم",
+          "ar": "فِي أَيِّ مَرْحَلَةٍ تُدَرِّسِينَ ؟",
+          "fr": "Dans quel niveau enseignes-tu ?"
+        },
+        {
+          "speaker": "زينب",
+          "ar": "أُدَرِّسُ فِي الْمَرْحَلَةِ الابْتِدَائِيَّةِ\nوَفِي أَيِّ مَرْحَلَةٍ تُدَرِّسِينَ أَنْتِ ؟",
+          "fr": "J'enseigne au niveau primaire. Et dans quel niveau enseignes-tu toi ?"
+        },
+        {
+          "speaker": "مريم",
+          "ar": "أُدَرِّسُ فِي الْمَرْحَلَةِ الْمُتَوَسِّطَةِ",
+          "fr": "J'enseigne au niveau moyen (collège)."
+        },
+        {
+          "speaker": "زينب",
+          "ar": "هَلْ لَكِ أَطْفَالٌ ؟",
+          "fr": "As-tu des enfants ?"
+        },
+        {
+          "speaker": "مريم",
+          "ar": "نَعَمْ، لِي أَطْفَالٌ",
+          "fr": "Oui, j'ai des enfants."
+        },
+        {
+          "speaker": "زينب",
+          "ar": "كَمْ طِفْلاً لَكِ ؟",
+          "fr": "Combien d'enfants as-tu ?"
+        },
+        {
+          "speaker": "مريم",
+          "ar": "لِي خَمْسَةُ أَطْفَالٍ",
+          "fr": "J'ai cinq enfants."
+        },
+        {
+          "speaker": "زينب",
+          "ar": "هَلْ تُحِبِّينَ عَمَلَكِ ؟",
+          "fr": "Aimes-tu ton travail ?"
+        },
+        {
+          "speaker": "مريم",
+          "ar": "نَعَمْ، أُحِبُّ عَمَلِي",
+          "fr": "Oui, j'aime mon travail."
+        },
+        {
+          "speaker": "زينب",
+          "ar": "وَأَنَا أُحِبُّ عَمَلِي أَيْضاً",
+          "fr": "Et moi j'aime mon travail aussi."
+        }
+      ]
+    }
+  ]
+}

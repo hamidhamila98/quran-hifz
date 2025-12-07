@@ -1,0 +1,342 @@
+{
+  "id": 13,
+  "titleAr": "الوحدة الثالثة عشرة العالم الإسلامي",
+  "titleFr": "Unité 13: Le monde islamique",
+  "items": [
+    {
+      "id": "13.1",
+      "type": "dialogue",
+      "titleAr": "مُسَابَقَةٌ إِسْلامِيَةٌ",
+      "titleFr": "Concours islamique",
+      "youtube": "",
+      "pdfPage": 24,
+      "lines": [
+        {
+          "speaker": "فاطِمَة",
+          "ar": "هَذِهِ مُسَابَقَةٌ عَنِ العَالَمِ الإِسْلاميِّ.",
+          "fr": "Fatima : C'est un concours sur le monde islamique."
+        },
+        {
+          "speaker": "لَيْلَى",
+          "ar": "هَيَّا نَحُلَّها مَعاً.",
+          "fr": "Layla : Allons-y, résolvons-le ensemble."
+        },
+        {
+          "speaker": "فاطِمَة",
+          "ar": "سُؤالٌ لَكِ، وَسُؤالٌ لي.",
+          "fr": "Fatima : Une question pour toi, et une question pour moi."
+        },
+        {
+          "speaker": "لَيْلَى",
+          "ar": "حَسَنٌ ؛ السُّؤالُ الأَوَّلُ عَنْ عَدَدِ الْمُسْلِمِينَ في العالم.",
+          "fr": "Layla : Bien ; la première question concerne le nombre de musulmans dans le monde."
+        },
+        {
+          "speaker": "الجواب",
+          "ar": "أَكْثَرُ مِنْ مِلْيَارِ مُسْلِمٍ.",
+          "fr": "La réponse : Plus d'un milliard de musulmans."
+        },
+        {
+          "speaker": "فاطِمَة",
+          "ar": "السُّؤالُ الثَّانِي عَنْ عَدَدِ الدُّوَّلِ الإِسْلامِيَّةِ.",
+          "fr": "Fatima : La deuxième question concerne le nombre de pays islamiques."
+        },
+        {
+          "speaker": "الجواب",
+          "ar": "في العالم أَرْبَعٌ وَخَمْسُونَ دَوْلَةً إِسْلامِيَّةً.",
+          "fr": "La réponse : Dans le monde, il y a quarante-quatre-vingt-cinq pays islamiques."
+        },
+        {
+          "speaker": "لَيْلَى",
+          "ar": "السُّؤالُ الثَّالِثُ القارَّةُ التي فيها أكْثَرُ عَدَدٍ مِنَ المُسْلِمِينَ .",
+          "fr": "Layla : La troisième question : le continent qui compte le plus grand nombre de musulmans."
+        },
+        {
+          "speaker": "الجواب",
+          "ar": "قارَّةُ آسيا.",
+          "fr": "La réponse : Le continent asiatique."
+        },
+        {
+          "speaker": "فاطِمَة",
+          "ar": "القارَّةُ التي فيها أَكْبَرُ عَدَدٍ مِنَ الدُّوَلِ الْإِسْلَامِيَّةِ.",
+          "fr": "Fatima : Le continent qui compte le plus grand nombre de pays islamiques."
+        },
+        {
+          "speaker": "الجواب",
+          "ar": "قارَّةُ إفريقيا.",
+          "fr": "La réponse : Le continent africain."
+        },
+        {
+          "speaker": "لَيْلَى",
+          "ar": "أَكْثَرُ الدُّوَلِ الإسْلامِيّةِ سُكّاناً .",
+          "fr": "Layla : Le pays islamique le plus peuplé."
+        },
+        {
+          "speaker": "الجواب",
+          "ar": "إندونيسيا.",
+          "fr": "La réponse : L'Indonésie."
+        },
+        {
+          "speaker": "فاطِمَة",
+          "ar": "أَكْبَرُ الدُّوَلِ الإِسْلامِيَّة في إفريقيا مساحَةً.",
+          "fr": "Fatima : Le plus grand pays islamique d'Afrique en superficie."
+        },
+        {
+          "speaker": "الجواب",
+          "ar": "الجزائر.",
+          "fr": "La réponse : L'Algérie."
+        },
+        {
+          "speaker": "لَيْلَى",
+          "ar": "أَقَلُّ الدُّوَلِ الإِسْلامِيَّةِ سُكّاناً، وَأَصْغَرُها مِسَاحَةً.",
+          "fr": "Layla : Le pays islamique le moins peuplé et le plus petit en superficie."
+        },
+        {
+          "speaker": "الجواب",
+          "ar": "جُزر المالديف.",
+          "fr": "La réponse : Les Maldives."
+        },
+        {
+          "speaker": "فاطمة",
+          "ar": "السُّؤالُ الأخير البَلَدُ الإسلامي الذي يَحْتَلُّهُ اليَهُودُ .",
+          "fr": "Fatima : La dernière question : le pays islamique occupé par les Juifs."
+        },
+        {
+          "speaker": "الجواب",
+          "ar": "فَلَسْطِينُ.",
+          "fr": "La réponse : La Palestine."
+        },
+        {
+          "speaker": "لَيْلَى",
+          "ar": "أَنْقَذَهُ اللهُ مِنْهُم !",
+          "fr": "Layla : Que Dieu le sauve d'eux !"
+        },
+        {
+          "speaker": "فاطمة",
+          "ar": "آمين . يالَها مِنْ مُسَابَقَةٍ سَهْلَةٍ !",
+          "fr": "Fatima : Amen. Quel concours facile !"
+        }
+      ]
+    },
+    {
+      "id": "13.2",
+      "type": "texte",
+      "titleAr": "ميزات العالم الإسلامي",
+      "titleFr": "Caractéristiques du monde islamique",
+      "youtube": "",
+      "pdfPage": 25,
+      "lines": [
+        {
+          "speaker": "",
+          "ar": "بَدَأَتِ الدَّعْوَةُ الإِسْلامِيَّةُ في الجَزيرَةِ العَرَبِيَّةِ، فِي القَرْنِ السّابع الميلادِي، وَانتَشَرَتْ سَرِيعاً\nخارِجَ الجَزِيرَةِ العَرَبِيَّةِ، وَبَعْدَ قَرْنٍ ضَمَّتْ مِسَاحَةً واسِعَةً مِنَ الكُرَةِ الْأَرْضِيَّةِ، شَمَلَتِ الْمَنْطِقَةَ\nمِنَ الدِّينِ شَرْقاً إلى المحيط الأطلسي غَرْباً، وَمِ وَمِنَ البَحْرِ الأَسْوَدِ وَسيبيريا شمالاً، إلى المحيط\nالهِنْدِيٌّ جنوباً.",
+          "fr": "L'appel islamique a commencé dans la péninsule arabique au VIIe siècle après J.-C. et s'est rapidement répandu\nen dehors de la péninsule arabique, et après un siècle, il a inclus une vaste zone du globe terrestre, comprenant la région\nde la Chine à l'est jusqu'à l'océan Atlantique à l'ouest, et de la mer Noire et de la Sibérie au nord jusqu'à l'océan\nIndien au sud."
+        },
+        {
+          "speaker": "",
+          "ar": "دَخَلَتْ شُعوبٌ كَثِيرَةٌ فِي الإِسْلامِ طَائِعَةً ؛ لأَنَّهُ أَزالَ الظُّلُّمَ عَنْهَا، وَحَقَّقَ لَهَا العَدْلَ. وَقَدْ جَعَلَ\nالإسْلامُ مِنَ المُسْلِمِينَ أُمَّةً واحِدَةً هِيَ الأُمَّةُ الإِسْلامِيّة. قالَ تَعالى: ﴿إِنَّ هَذِهِ أُمَّتُكُمْ أُمَّةً وَاحِدَةً\nوَأَنَا رَبُّكُمْ فَاعْبُدُونِ . وَوَحَدَ الإِسْلامُ بَيْنَ الْمُسْلِمِينَ بالرَّغْمِ مِنَ اخْتِلَافِ أَعْرَاقِهِمْ وَأَلْوَانِهِمْ\nوَلُغَاتِهِمْ وَبِيئاتِهِمْ؛ فَرَبُّهُمْ وَاحِدٌ ، وَكِتابُهُمْ وَاحِدٌ ، وَرَسُولُهُمْ وَاحِدٌ، وَقِبْلَتُهُمْ وَاحِدَةٌ.",
+          "fr": "De nombreux peuples sont entrés dans l'islam volontairement, car il a supprimé l'injustice et leur a apporté la justice. Et il a fait\nl'islam des musulmans une seule nation, qui est la nation islamique. Dieu Tout-Puissant a dit : « Voici votre nation, une seule nation,\net je suis votre Seigneur, alors adorez-moi. » L'islam a uni les musulmans malgré leurs différences d'ethnies et de couleurs,\nde langues et d'environnements ; leur Seigneur est un, leur livre est un, leur messager est un et leur qibla est une."
+        },
+        {
+          "speaker": "",
+          "ar": "لِلْعَالَمِ الإِسْلاميِّ مَزايا كَثِيرَةٌ، جَعَلَتْهُ مِنْ أَهَمِّ المَناطِقِ في العالَمِ؛ فَمِنْ نَاحِيَةٍ، هُوَ كَالقَلْبِ\nلَاسِيَا وَإِفْرِيقِيا وَأُورُوبًا ، وَيُشْرِفُ عَلى كَثِيرٍ مِنَ المَرَاتِ المائِيَّةِ ؛ كَالبَحْرِ الْأَحْمَرِ، وَالبَحْرِ الْأَبْيَضِ\nالمُتَوَسِّطِ، وَبَحْرِ العَرَبِ، وَالخَليج العَرَبِيِّ، وَالمُحيطِ الأَطْلَسِي، وَالمُحيطِ الهِنْدِي، وَالمحيط الهادئ.\nوَفِي العَالَمِ الإِسْلاميِّ ثَرَواتٌ زِرَاعِيَّةٌ وَمَعْدِنِيَّةٌ وَحَيَوانِيَّةٌ عَدِيدَةٌ.",
+          "fr": "Le monde islamique a de nombreux avantages qui en font l'une des régions les plus importantes du monde ; d'une part, il est comme le cœur\npour l'Asie, l'Afrique et l'Europe, et il surplombe de nombreuses voies navigables ; comme la mer Rouge, la mer Blanche\nMéditerranée, la mer d'Arabie, le golfe Arabique, l'océan Atlantique, l'océan Indien et l'océan Pacifique.\nEt dans le monde islamique, il existe de nombreuses richesses agricoles, minérales et animales."
+        }
+      ]
+    },
+    {
+      "id": "13.3",
+      "type": "dialogue",
+      "titleAr": "أَسْبَابُ ضَعْفِ الْمُسْلِمِينَ",
+      "titleFr": "Les causes de la faiblesse des musulmans",
+      "youtube": "",
+      "pdfPage": 26,
+      "lines": [
+        {
+          "speaker": "عَبْدُ السَّلامِ",
+          "ar": "أَراكَ مَهْمُوماً . فِيمَ تُفَكِّرُ؟",
+          "fr": "Je te vois soucieux. À quoi penses-tu ?"
+        },
+        {
+          "speaker": "عَبْدُ اللهِ",
+          "ar": "أُفَكِّرُ في حالِ الْمُسْلِمِينَ هَذِهِ الأَيَّامَ.",
+          "fr": "Je pense à la situation des musulmans ces jours-ci."
+        },
+        {
+          "speaker": "عَبْدُ السَّلام",
+          "ar": "لَقَدْ أَصابَهُمْ ضَعْفٌ شَدِيدٌ .",
+          "fr": "Ils ont été frappés par une grande faiblesse."
+        },
+        {
+          "speaker": "عَبْدُ اللهِ",
+          "ar": "فِعْلاً ، فَقَدْ كانوا أُمَّةً واحِدَةً، فَأَصْبَحُوا دُوَلا عَدِيدَةً.",
+          "fr": "En effet, ils étaient une seule nation, et ils sont devenus de nombreux États."
+        },
+        {
+          "speaker": "عَبْدُ السَّلامِ",
+          "ar": "ما أَسْبَابُ هَذا الضَعْفِ فِي رَأْيِكَ؟",
+          "fr": "Quelles sont les causes de cette faiblesse selon toi ?"
+        },
+        {
+          "speaker": "عَبْدُ اللهِ",
+          "ar": "هُناكَ أَسْبَابٌ دَاخِلِيَّةٌ، وَأُخْرَى خَارِجِيَّةٌ.",
+          "fr": "Il y a des causes internes et d'autres externes."
+        },
+        {
+          "speaker": "عَبْدُ السَّلامِ",
+          "ar": "لِنَبْدَأَ أَوَّلاً بِالأَسْبابِ الدّاخِلِيَّةِ.",
+          "fr": "Commençons d'abord par les causes internes."
+        },
+        {
+          "speaker": "عَبْدُ اللهِ",
+          "ar": "أَهَمُّهَا ابْتِعادُ الْمُسْلِمِينَ عَنِ الإِسْلامِ ، وَكَثْرَةُ الخلافاتِ وَالمَنازَعَاتِ بَيْنَهُم، وَاشْتِغَالُهُم\nبما لا يُفيدُ مِنَ العِلْمِ.",
+          "fr": "La plus importante est l'éloignement des musulmans de l'islam, la multiplication des désaccords et des conflits entre eux, et leur occupation par ce qui ne profite pas à la science."
+        },
+        {
+          "speaker": "عَبْدُ السَّلامِ",
+          "ar": "وَمَا الْأَسْبَابُ الخَارِجِيَّةُ؟",
+          "fr": "Et quelles sont les causes externes ?"
+        },
+        {
+          "speaker": "عَبْدُ اللهِ",
+          "ar": "أَسْبَابٌ كَثِيرَةٌ عَلى رَأْسِها : الاسْتِعْمَارُ ، وَالاسْتِشْراقُ، وَالغَزْوُ الثَّقَافِيُّ.",
+          "fr": "Il y a de nombreuses causes, dont les principales sont : le colonialisme, l'orientalisme et l'invasion culturelle."
+        },
+        {
+          "speaker": "عَبْدُ السَّلامِ",
+          "ar": "وَمَا العَمَلُ؟ كَيْفَ يَرْجِعُ الْمُسْلِمُونَ إِلَى عَهْدِ القُوَّةِ؟!",
+          "fr": "Et que faire ? Comment les musulmans peuvent-ils revenir à l'époque de la puissance ?!"
+        },
+        {
+          "speaker": "عَبْدُ اللهِ",
+          "ar": "إِذا رَجَعَوا إلى دينِهِمْ، وَاتَّحَدِوا، وَاسْتَعانُوا بِالعِلْمِ.",
+          "fr": "S'ils reviennent à leur religion, s'unissent et utilisent la science."
+        },
+        {
+          "speaker": "عَبْدُ السَّلامِ",
+          "ar": "إِذا رَجَعَوا إلى دينِهِم ، وَاتَّحَدِوا ، واسْتَعانُوا بِالْعِلْمِ. هَلْ هَذَا مُمْكِنٌ؟",
+          "fr": "S'ils reviennent à leur religion, s'unissent et utilisent la science. Est-ce possible ?"
+        },
+        {
+          "speaker": "عَبْدُ اللهِ",
+          "ar": "نَعَمْ، مُمْكِنٌ ، بِإِذْنِ اللهِ؛ فَقَدْ بَدَأَتْ عَلامَاتُ ذَلِكَ.",
+          "fr": "Oui, c'est possible, avec la permission d'Allah ; les signes de cela ont commencé à apparaître."
+        }
+      ]
+    },
+    {
+      "id": "13.4",
+      "type": "texte",
+      "titleAr": "مِنَ الدُّوَلِ الإِسْلامِيَّةِ",
+      "titleFr": "Des pays islamiques",
+      "youtube": "",
+      "pdfPage": 27,
+      "lines": [
+        {
+          "speaker": "",
+          "ar": "تَهْيِئَةٌ:",
+          "fr": "Préparation:"
+        },
+        {
+          "speaker": "",
+          "ar": "فَكِّرْ فِي الإِجابَةِ عَنِ الْأَسْئِلَةِ التَّالِيَةِ:",
+          "fr": "Réfléchissez aux réponses aux questions suivantes:"
+        },
+        {
+          "speaker": "",
+          "ar": "١- اذْكُرْ بَعْضَ الدُّوَلِ الإسْلامِيّة في آسيا .",
+          "fr": "1- Mentionnez quelques pays islamiques d'Asie."
+        },
+        {
+          "speaker": "",
+          "ar": "٣- ما أَهَمُّ دَوْلَةٍ إِسْلامِيَّةٍ في آسيا ؟ لماذا ؟",
+          "fr": "3- Quel est le pays islamique le plus important d'Asie ? Pourquoi ?"
+        },
+        {
+          "speaker": "",
+          "ar": "٢- اذْكُرْ بَعْضَ الدُّوَلِ الإِسْلامِيَّةِ في إفريقيا .",
+          "fr": "2- Mentionnez quelques pays islamiques d'Afrique."
+        },
+        {
+          "speaker": "",
+          "ar": "٤ - ما أكْثَرُ الدُّوَلِ الإِسْلامِيَّةِ سُكاناً في إفريقيا؟",
+          "fr": "4- Quel est le pays islamique le plus peuplé d'Afrique ?"
+        },
+        {
+          "speaker": "",
+          "ar": "يَبْلُغُ عَدَدُ الدُّوَلِ الإِسْلامِيَّةِ في العالَمِ أَرْبَعاً وَخَمْسِينَ دَوْلَةً، وَسَنُحَدِّثُكَ هُنا بِاخْتِصارٍ عَنْ دَوْلَتَينِ",
+          "fr": "Le nombre de pays islamiques dans le monde atteint cinquante-quatre pays, et nous vous parlerons ici brièvement de deux pays."
+        },
+        {
+          "speaker": "",
+          "ar": "مِنْ تِلْكَ الدُّوَلِ، إحْدَاهُما في قارة آسيا، وَالثَّانِيَةُ في قارة إفريقيا .",
+          "fr": "Parmi ces pays, l'un est en Asie et l'autre en Afrique."
+        },
+        {
+          "speaker": "",
+          "ar": "المَمْلَكَةُ العَرَبِيَّةُ السُّعودِيَّةُ تَقَعُ في غَرْبِ آسيا، وفيها بَيْتُ الله الحرامُ في مَكَّةَ الْمُكَرَّمَةِ، وَالْمَسْجِدُ",
+          "fr": "Le Royaume d'Arabie saoudite est situé en Asie occidentale, et il contient la Sainte Mosquée à La Mecque, et la Mosquée"
+        },
+        {
+          "speaker": "",
+          "ar": "النَّبَوِيُّ فِي المَدِينَةِ الْمُنَوَّرَةِ، وَهُما مَكانانِ مُقَدَّسَانِ يَأْتِي إِلَيْهِما المُسْلِمُونَ مِنْ كُلِّ بِلادِ العَالَمِ الأَداءِ",
+          "fr": "Prophétique à Médine, et ce sont deux lieux saints où les musulmans viennent de tous les pays du monde pour accomplir"
+        },
+        {
+          "speaker": "",
+          "ar": "الحَجَّ وَالعُمْرَةِ، وَالزِّيارَةِ وَالصَّلاةِ. كَما يَأْتِي كَثِيرٌ مِنْ أَبْنَاءِ الْمُسْلِمِينَ إِلَى السُّعودِيَّةِ لِدِرَاسَةِ اللُّغَةِ",
+          "fr": "le Hajj et la Omra, la visite et la prière. De même, de nombreux fils de musulmans viennent en Arabie saoudite pour étudier la langue"
+        },
+        {
+          "speaker": "",
+          "ar": "العَرَبِيَّةِ وَالدِّينِ الإسلامي في مَعاهِدِها وَجامِعاتِها .",
+          "fr": "arabe et la religion islamique dans ses instituts et universités."
+        },
+        {
+          "speaker": "",
+          "ar": "عاصِمَةُ البِلادِ الرِّياضُ، وَهِيَ مَدينَةٌ حَدِيثَةٌ، تَضُمُّ أَجْمَلَ المباني. تَبْلُغُ مِسَاحَةُ المَمْلَكَةِ العَرَبِيَّةِ",
+          "fr": "La capitale du pays est Riyad, et c'est une ville moderne qui comprend les plus beaux bâtiments. La superficie du Royaume d'Arabie"
+        },
+        {
+          "speaker": "",
+          "ar": "السُّعودِيَّةِ ٢٢٥٠٠٠٠ كم ٢ . وَعَدَدُ سُكَانِها نَحْو سَبْعَةَ عَشَرَ مِليونَ شَخْصٍ، وَلُغَتُهَا العَرَبِيَّةُ، وَجَمِيعُ",
+          "fr": "saoudite est de 2 250 000 km2. Le nombre de ses habitants est d'environ dix-sept millions de personnes, sa langue est l'arabe, et tous"
+        },
+        {
+          "speaker": "",
+          "ar": "أَهْلِ البِلادِ مُسْلِمُونَ . وَعُمْلَتُها الرِّيالُ السُّعودِيُّ. وَهِيَ غَنِيَّةٌ بالنُّفْطِ.",
+          "fr": "les habitants du pays sont musulmans. Sa monnaie est le riyal saoudien. Et elle est riche en pétrole."
+        },
+        {
+          "speaker": "",
+          "ar": "نيجيريا تَقَعُ في غَرْبِ إفريقيا ، وَعاصِمَتُها أبوجا في الوَسَطِ، وَتَبْلُغُ مِساحتُها ٩٢٣٧٦٨ كم٢ .",
+          "fr": "Le Nigéria est situé en Afrique de l'Ouest, sa capitale est Abuja au centre, et sa superficie est de 923 768 km2."
+        },
+        {
+          "speaker": "",
+          "ar": "وَعَدَدَ سُكَّانِها نَحوُ ١٥٤ مليونَ شَخْصٍ، تَصِلُ نِسْبَةُ المُسْلِمِينَ بَيْنَهُم إِلَى نَحْوِ ٧٦٪، وَعَدَدُ النَّصَارَى",
+          "fr": "Le nombre de ses habitants est d'environ 154 millions de personnes, le pourcentage de musulmans parmi eux atteint environ 76%, et le nombre de chrétiens"
+        },
+        {
+          "speaker": "",
+          "ar": "نَحْوُ ٢٠٪. وَيَعْمَلُ مُعْظَمُ أَهْلِ البِلادِ بِالزِّرَاعَةِ، وَالرَّعْيِ، وَصَيْدِ الْأَسْمَاكِ. تُنْتِجُ نَيْجيريا الكاكاو",
+          "fr": "est d'environ 20%. La plupart des habitants du pays travaillent dans l'agriculture, le pâturage et la pêche. Le Nigéria produit du cacao"
+        },
+        {
+          "speaker": "",
+          "ar": "والفول السوداني، وَالمَطَّاطَ وَالنَّفْطَ، وَغَيْرَ ذَلِكَ.",
+          "fr": "et des arachides, du caoutchouc et du pétrole, etc."
+        },
+        {
+          "speaker": "",
+          "ar": "وَعُمْلَةُ البِلادِ النايرا، وَاللُّغَةُ الرَّسْمِيَّةُ لنَيْجيريا الإِنْجِلِيزِيَّةُ، وَيَتَحَدَّثُ أَهْلُ البِلادِ لُغَاتٍ كَثِيرَةً،",
+          "fr": "La monnaie du pays est le naira, et la langue officielle du Nigéria est l'anglais, et les habitants du pays parlent de nombreuses langues,"
+        },
+        {
+          "speaker": "",
+          "ar": "كالهوسا ، واليوروبا ، والإيبو، وَيَهْتَمُّ أَهْلُهَا بِاللُّغَةِ العَرَبِيَّةِ وَتَعَلُّمِها .",
+          "fr": "comme le haoussa, le yoruba et l'ibo, et ses habitants s'intéressent à la langue arabe et à son apprentissage."
+        }
+      ]
+    }
+  ]
+}

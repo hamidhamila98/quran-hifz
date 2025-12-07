@@ -1,0 +1,372 @@
+{
+  "id": 15,
+  "titleAr": "الوحدة الخامسة عشرة: التلوث",
+  "titleFr": "Unité 15: La pollution",
+  "items": [
+    {
+      "id": "15.1",
+      "type": "dialogue",
+      "titleAr": "دفن النفايات",
+      "titleFr": "Enterrement des déchets",
+      "youtube": "",
+      "pdfPage": 34,
+      "lines": [
+        {
+          "speaker": "أَحْمَد",
+          "ar": "أنا قادِمٌ مِنَ الْمُسْتَشْفَى كُنْتُ أزورُ ابْنَ صَديقي صالحاً؛ إِنَّهُ مُصابٌ بِالسَّرَطانِ.",
+          "fr": "Je viens de l'hôpital. Je rendais visite au fils de mon ami, Saleh. Il est atteint d'un cancer."
+        },
+        {
+          "speaker": "عَبْدُ اللهِ",
+          "ar": "شَفَاهُ اللهُ. وَكَيْفَ حَالُهُ الْآنَ؟",
+          "fr": "Que Dieu le guérisse. Comment va-t-il maintenant?"
+        },
+        {
+          "speaker": "أَحْمَد",
+          "ar": "انْتَشَرَ الْمَرَضُ فِي جِسْمِهِ.",
+          "fr": "La maladie s'est propagée dans son corps."
+        },
+        {
+          "speaker": "عَبْدُ اللهِ",
+          "ar": "إِنَّا للهِ وَإِنَّا إِلَيْهِ رَاجِعونَ.",
+          "fr": "À Dieu nous appartenons et à Lui nous retournons."
+        },
+        {
+          "speaker": "أَحْمَد",
+          "ar": "كَثُرَتْ أمْراضُ السَّرَطَانِ في بَلَدِنَا، وَهَذَا الْأَمْرُ يُحَيِّرُنِي كَثِيراً .",
+          "fr": "Les maladies cancéreuses se sont multipliées dans notre pays, et cela me déconcerte beaucoup."
+        },
+        {
+          "speaker": "عَبْدُ اللهِ",
+          "ar": "صَدَقْتَ، فَقَدْ مَاتَ في مَدِينَتِنا وَحْدَها عَدَدٌ كَبِيرٌ خِلالَ شَهْرٍ وَاحِدٍ .",
+          "fr": "Tu as raison, un grand nombre de personnes sont mortes dans notre seule ville en un mois."
+        },
+        {
+          "speaker": "أَحْمَد",
+          "ar": "ذَكَرَتِ الصُّحُفُ، أَنَّ هُناكَ نُفاياتٍ مَدْفُونَةً في بلادنا .",
+          "fr": "Les journaux ont mentionné qu'il y a des déchets enfouis dans notre pays."
+        },
+        {
+          "speaker": "عَبْدُ اللهِ",
+          "ar": "مِنْ أَيْنَ جَاءَتْ تِلْكَ النُّفايَاتُ؟",
+          "fr": "D'où viennent ces déchets?"
+        },
+        {
+          "speaker": "أَحْمَد",
+          "ar": "أُحْضِرَتْ مِنْ بَعْضِ الدُّوَلِ الصِّناعِيَّةِ؛ لِتُدْفَنَ في بلادنا .",
+          "fr": "Ils ont été apportés de certains pays industriels pour être enterrés dans notre pays."
+        },
+        {
+          "speaker": "عَبْدُ اللهِ",
+          "ar": "وَلِماذا لا تُدْفَنُ فِي تِلْكَ البِلادِ الصَّناعِيَّةِ؟! أَلَيْسَ لَهُمْ أَرْضٌ مِثْلُنَا؟!",
+          "fr": "Pourquoi ne sont-ils pas enterrés dans ces pays industriels ?! N'ont-ils pas de terre comme nous ?!"
+        },
+        {
+          "speaker": "أَحْمَد",
+          "ar": "بَلى، لَهُمْ أَرْضٌ مِثْلُنَا ، وَلَكِنَّ لَدَيْهِمْ مُنَظَّماتٍ لا تَسْمَحُ بِتَلَوُّثِ البيئةِ، وَهُمْ يَخافُونَ عَلَى\nشُعُوبِهِمْ.",
+          "fr": "Si, ils ont une terre comme nous, mais ils ont des organisations qui ne permettent pas la pollution de l'environnement, et ils ont peur pour leurs peuples."
+        },
+        {
+          "speaker": "عَبْدُ اللهِ",
+          "ar": "وَلِمَاذَا لَا نَخَافُ عَلى شُعوبنا مِثْلَهُم، وتَكونُ لَنَا مُنَظَّماتٌ مِثْلُ مُنَظَّمَاتِهِمْ؟!",
+          "fr": "Pourquoi n'avons-nous pas peur pour nos peuples comme eux, et pourquoi n'avons-nous pas des organisations comme les leurs ?!"
+        },
+        {
+          "speaker": "أَحْمَد",
+          "ar": "هذا ما يَجِبُ عَمَلُهُ.",
+          "fr": "C'est ce qu'il faut faire."
+        }
+      ]
+    },
+    {
+      "id": "15.2",
+      "type": "texte",
+      "titleAr": "أنْواعُ تَلَوُّثِ البيئة",
+      "titleFr": "Types de pollution environnementale",
+      "youtube": "",
+      "pdfPage": 35,
+      "lines": [
+        {
+          "speaker": "",
+          "ar": "فَكَرْ في الإجابَةِ عَنِ الْأَسْئِلَةِ التَّالِيَةِ:",
+          "fr": "Réfléchissez aux réponses aux questions suivantes:"
+        },
+        {
+          "speaker": "",
+          "ar": "١- ما أَهَمُّ صُوَرِ التَّلَوُّثِ؟",
+          "fr": "1- Quelles sont les formes de pollution les plus importantes?"
+        },
+        {
+          "speaker": "",
+          "ar": "٢- ما الأمراض التي يُسَبِّبُها التَّلَوُّثُ؟",
+          "fr": "2- Quelles sont les maladies causées par la pollution?"
+        },
+        {
+          "speaker": "",
+          "ar": "٣- هَلْ يَتَلَوَّثُ الغِذاءُ؟ كَيْفَ؟",
+          "fr": "3- La nourriture est-elle polluée? Comment?"
+        },
+        {
+          "speaker": "",
+          "ar": "٤- هَلْ يَتَلَوَّثُ الماء والهَواءُ؟ كَيْفَ؟",
+          "fr": "4- L'eau et l'air sont-ils pollués? Comment?"
+        },
+        {
+          "speaker": "",
+          "ar": "هُناكَ صُوَرٌ عَديدَةٌ لتَلَوُّثِ البيئةِ ، أهَمُّها : تَلَوُّثُ الهَواءِ ، وَتَلَوُّثُ الماءِ، وَتَلَوُّتُ التَّرْبَةِ، وَالضَّوضاء.",
+          "fr": "Il existe de nombreuses formes de pollution environnementale, dont les plus importantes sont: la pollution de l'air, la pollution de l'eau, la pollution du sol et le bruit."
+        },
+        {
+          "speaker": "",
+          "ar": "وفيما يلي تعريفٌ بِهَذِهِ الأَنْوَاعِ :",
+          "fr": "Voici une définition de ces types:"
+        },
+        {
+          "speaker": "",
+          "ar": "تَلَوُّثُ الهَواءِ : الهَواءُ الَّذي لا رَائِحَةَ لَهُ يُصْبِحُ هَواءً لَهُ رائِحَةٌ، وَلَهُ لَوْنٌ أَيْضاً . وَالسَّبَبُ فِي هَذا",
+          "fr": "Pollution de l'air: l'air qui n'a pas d'odeur devient un air qui a une odeur et une couleur aussi. La raison de cela"
+        },
+        {
+          "speaker": "",
+          "ar": "التَّلَوُّثِ، إحْرَاقُ النِّفْطِ، بِسَبَبٍ مُحَرِّكَاتِ السَّيَّارَاتِ وَغَيْرِها .",
+          "fr": "la pollution est la combustion du pétrole, à cause des moteurs de voitures et autres."
+        },
+        {
+          "speaker": "",
+          "ar": "وَيَضُرُّ تَلَوُّثُ الهَواءِ بِصِحَّةِ الإِنْسانِ ؛ فَيُؤَدِّي إلى الْتِهابِ العُيونِ وَالرِّئَةِ. وَيُسَبِّبُ تَلَوُّتُ الهَواءِ كَذَلِكَ",
+          "fr": "La pollution de l'air nuit à la santé humaine; elle conduit à l'inflammation des yeux et des poumons. La pollution de l'air cause également"
+        },
+        {
+          "speaker": "",
+          "ar": "مَوْتَ الحَيَوانِ وَالنَّبَاتِ.",
+          "fr": "la mort des animaux et des plantes."
+        },
+        {
+          "speaker": "",
+          "ar": "تَلَوُّثُ المَاءِ: يُؤَدِّي إلى تَقْلِيلِ المَاءِ النَّقِيِّ وَالعَدْبِ الَّذِي يَسْتَعْمِلُهُ الإِنْسانُ فِي الشَّرْبِ وَالنَّظافَةِ.",
+          "fr": "Pollution de l'eau: elle conduit à la réduction de l'eau pure et douce que l'homme utilise pour boire et se nettoyer."
+        },
+        {
+          "speaker": "",
+          "ar": "وَالسَّبَبُ فِي تَلَوُّثِ الماءِ، رَمْيُ المَواد الكيميائِيَّةِ ، وَالنَّفاياتِ الحَيوانِيَّةِ وَالنَّبَاتِيَّةِ وَمِيَاهِ الصَّرْفِ",
+          "fr": "La raison de la pollution de l'eau est le rejet de produits chimiques, de déchets animaux et végétaux et d'eaux usées"
+        },
+        {
+          "speaker": "",
+          "ar": "الصحي في البِحارِ وَالأَنْهارِ وَالآبار. ويُسَبِّبُ تَلَوُّثُ الماء أمراضاً كَثِيرَةً لِلإِنْسانِ، وَيُؤَدِّي إِلَى مَوتِ",
+          "fr": "assainissement dans les mers, les rivières et les puits. La pollution de l'eau cause de nombreuses maladies à l'homme et conduit à la mort de"
+        },
+        {
+          "speaker": "",
+          "ar": "الحَيَوانِ والنَّبات.",
+          "fr": "l'animal et la plante."
+        },
+        {
+          "speaker": "",
+          "ar": "تَلَوُّثُ التَّرْبَةِ: يُتْلِفُ هَذا النَّوْعُ مِنَ التَّلَوُّثِ التَّرْبَةَ الجَيْدَةَ، وَيُؤَدِّي هَذا إِلَى فَقْدِ مِسَاحَةٍ مِنَ الْأَرْضِ",
+          "fr": "Pollution du sol: ce type de pollution détruit le bon sol et conduit à la perte d'une superficie de la terre"
+        },
+        {
+          "speaker": "",
+          "ar": "التي يُزْرَعُ فيها النَّباتُ لِغِذاءِ الإِنْسَانِ وَالحَيَوانِ.",
+          "fr": "où les plantes sont cultivées pour la nourriture des humains et des animaux."
+        },
+        {
+          "speaker": "",
+          "ar": "الضوضاءُ : تَكْثُرُ الضَّوضاء في المُدنِ، وَسَبَبُها وَسَائِلُ النَّقْلِ مِنْ طَائِرَاتٍ وَحافِلَاتٍ وَقِطارات",
+          "fr": "Bruit: le bruit est abondant dans les villes, et la raison en est les moyens de transport tels que les avions, les bus et les trains"
+        },
+        {
+          "speaker": "",
+          "ar": "وَسَيَّارَاتٍ، كَمَا تُسَبِّبُهُ الأجْهِزَةُ الكَهْرَبائِيَّةُ المُخْتَلِفَةُ الّتي في البُيوتِ. وَتُؤَدِّي الضَّوضَاءُ إِلَى ضَعْفِ",
+          "fr": "et les voitures, ainsi que les différents appareils électriques qui se trouvent dans les maisons. Le bruit conduit à une faiblesse de"
+        },
+        {
+          "speaker": "",
+          "ar": "السَّمْعِ والقَلَقِ.",
+          "fr": "l'ouïe et l'anxiété."
+        }
+      ]
+    },
+    {
+      "id": "15.3",
+      "type": "dialogue",
+      "titleAr": "مَنْ يَحْمي البيئة؟ وَمَنْ يُفْسِدُها ؟",
+      "titleFr": "Qui protège l'environnement ? Et qui le corrompt ?",
+      "youtube": "",
+      "pdfPage": 36,
+      "lines": [
+        {
+          "speaker": "بَدْرٍ",
+          "ar": "أَنْشَأْنَا مُنَظَّمَةً لِحِمَايَةِ البيئةِ. هَلْ تَشْتَرِكُ مَعَنا؟",
+          "fr": "Badr : Nous avons créé une organisation pour protéger l'environnement. Voulez-vous vous joindre à nous ?"
+        },
+        {
+          "speaker": "عامر",
+          "ar": "بالطبع، فَبِلادُنا تَحْتاجُ إلى مِثْلِ هَذِهِ الْمُنَظَّمَةِ .",
+          "fr": "Amer : Bien sûr, notre pays a besoin d'une telle organisation."
+        },
+        {
+          "speaker": "بَدْر",
+          "ar": "سَنَقومُ غَداً - إِنْ شَاءَ اللهُ - بِجَولَةٍ ؛ لِنَرى ما يَفْعَلُهُ النَّاسُ بِالبيئة في بلادنا .",
+          "fr": "Badr : Nous ferons une tournée demain - si Dieu le veut - pour voir ce que les gens font à l'environnement dans notre pays."
+        },
+        {
+          "speaker": "بَدْر",
+          "ar": "سَتَكونُ الجَوْلَةُ بِالطَّائِرَةِ. أَرْجُو أَنْ تَكُونَ مَعَنا .",
+          "fr": "Badr : La tournée se fera en avion. J'espère que vous serez avec nous."
+        },
+        {
+          "speaker": "عامر",
+          "ar": "هَذِهِ فِكْرَةٌ طَيِّبَة. سأكونُ مَعَكُمْ .",
+          "fr": "Amer : C'est une bonne idée. Je serai avec vous."
+        },
+        {
+          "speaker": "بَدْر",
+          "ar": "انْظُرُوا إِلى هَؤُلاءِ النَّاسِ، إِنَّهُم يُفْسِدُون البيئة!",
+          "fr": "Badr : Regardez ces gens, ils corrompent l'environnement !"
+        },
+        {
+          "speaker": "عامر",
+          "ar": "هَؤُلاءِ يَحْرِقُونَ الغاباتِ ، وَأُولَئِكَ يَقْتُلُونَ الحَيَواناتِ!",
+          "fr": "Amer : Ceux-ci brûlent les forêts, et ceux-là tuent les animaux !"
+        },
+        {
+          "speaker": "أَحْمَد",
+          "ar": "وَهَؤُلاءِ يُلْقُونَ النُّفايات في البَرِّ، وَأُولَئِكَ يُلقونها في البَحْرِ.",
+          "fr": "Ahmed : Et ceux-ci jettent les déchets dans la nature, et ceux-là les jettent dans la mer."
+        },
+        {
+          "speaker": "حَسّانُ",
+          "ar": "لِماذا يُفْسِدُ هَؤُلاءِ النَّاسُ البيئة؟! ظَهَرَ الفَسادُ فِي البَرِّ وَالبَحْرِ.",
+          "fr": "Hassan : Pourquoi ces gens corrompent-ils l'environnement ?! La corruption est apparue dans la nature et dans la mer."
+        },
+        {
+          "speaker": "بَدْرِ",
+          "ar": "انْظُرْ إِلى هَؤُلاءِ النَّاسِ، إِنَّهُم يُحافِظُونَ عَلَى البيئة.",
+          "fr": "Badr : Regardez ces gens, ils préservent l'environnement."
+        },
+        {
+          "speaker": "أحْمَد",
+          "ar": "صَدَقْتَ ، فَهُم يَزْرَعُونَ الأَرْضَ؛ لإيقاف التَّصَحُرِ.",
+          "fr": "Ahmed : Vous avez raison, ils cultivent la terre pour arrêter la désertification."
+        },
+        {
+          "speaker": "عامر",
+          "ar": "وَأُولَئِكَ يُحافِظُونَ عَلى الحَيَواناتِ النَّادِرَةِ حَتَّى لا تَنْقَرِضَ.",
+          "fr": "Amer : Et ceux-là préservent les animaux rares afin qu'ils ne disparaissent pas."
+        },
+        {
+          "speaker": "بَدْر",
+          "ar": "أنا مَسْرُورٌ جِدّاً ؛ فَما يَقومُ بِهِ هَؤُلَاءِ النَّاسُ عَمَلٌ طَيِّبٌ.",
+          "fr": "Badr : Je suis très heureux ; ce que font ces gens est un bon travail."
+        },
+        {
+          "speaker": "عامر",
+          "ar": "نُرِيدُ بيئَةً خَالِيَةً مِنَ التَّلَوُّثِ.",
+          "fr": "Amer : Nous voulons un environnement exempt de pollution."
+        },
+        {
+          "speaker": "أَحْمَد",
+          "ar": "هَذِهِ رِسَالَةٌ مُنَظَّمَتِنَا ، بِعَونِ اللهِ .",
+          "fr": "Ahmed : C'est le message de notre organisation, avec l'aide de Dieu."
+        }
+      ]
+    },
+    {
+      "id": "15.4",
+      "type": "texte",
+      "titleAr": "وسائل المحافظة على البيئة",
+      "titleFr": "Moyens de préserver l'environnement",
+      "youtube": "",
+      "pdfPage": 37,
+      "lines": [
+        {
+          "speaker": "",
+          "ar": "تَهْيِئة:",
+          "fr": "Préparation:"
+        },
+        {
+          "speaker": "",
+          "ar": "فكر في الإِجابَةِ عَنِ الْأَسْئِلَةِ التَّالِيَةِ:",
+          "fr": "Réfléchissez aux réponses aux questions suivantes:"
+        },
+        {
+          "speaker": "",
+          "ar": "١- هَلْ فِي بَلَدِكَ مُنَظَّمَةٌ تُحَافِظُ عَلى البيئة؟ -٣- كَيْفَ يُحافِظُ الْإِنْسانُ عَلى البيئةِ؟",
+          "fr": "1- Existe-t-il dans votre pays une organisation qui protège l'environnement ? -3- Comment l'homme préserve-t-il l'environnement ?"
+        },
+        {
+          "speaker": "",
+          "ar": "٢- إلى أَيُّ شَيْءٍ تَدْعُو هَذِهِ الْمُنَظَّمَةُ؟ - ما أخطارُ التَّلَوُّثِ عَلَى الإِنْسانِ؟",
+          "fr": "2- À quoi appelle cette organisation ? - Quels sont les dangers de la pollution pour l'homme ?"
+        },
+        {
+          "speaker": "",
+          "ar": "على الإِنْسانِ أَنْ يُحافِظَ عَلى البيئةِ التي يَعيشُ فيها، وألا يُفْسِدَها؛ لأَنَّهَا مِنْ أَعْظَمِ نِعَمِ اللهِ",
+          "fr": "L'homme doit préserver l'environnement dans lequel il vit et ne pas le corrompre ; car c'est l'un des plus grands bienfaits de Dieu"
+        },
+        {
+          "speaker": "",
+          "ar": "عَلَى عِبَادِهِ. وَفِي كَثِيرٍ مِنْ بِلادِ العالم - اليَوْمَ - مُنَظَّمَاتٌ، تَدْعو إلى المُحافَظَةِ عَلَى البيئةِ. وَتَقومُ",
+          "fr": "sur ses serviteurs. Et dans de nombreux pays du monde - aujourd'hui - des organisations appellent à la préservation de l'environnement. Et effectuer"
+        },
+        {
+          "speaker": "",
+          "ar": "تِلْكَ الْمُنَظَّمَاتُ بِأَعْمَالِ عَديدَةٍ، مِنْها : بَيانُ أَخْطَارِ تَلَوُّثِ البيئةِ عَلى الإِنْسَانِ وَالحَيَوَانِ وَالنَّبَاتِ،",
+          "fr": "Ces organisations mènent de nombreuses actions, notamment : expliquer les dangers de la pollution de l'environnement pour l'homme, les animaux et les plantes,"
+        },
+        {
+          "speaker": "",
+          "ar": "وَمُراقَبَةُ الحُكومَاتِ وَالْمُؤَسَّسَاتِ، التي تُفْسِدُ البيئَةَ، وَذِكْرُ وَسَائِلِ المُحَافَظَةِ عَلَى البيئة.",
+          "fr": "et surveiller les gouvernements et les institutions qui corrompent l'environnement, et mentionner les moyens de préserver l'environnement."
+        },
+        {
+          "speaker": "",
+          "ar": "مِنْ وَسَائِلِ المُحافَظَةِ عَلى البيئةِ، التي يَدْعُو إِلَيْهَا الإِسْلامُ، غَرْسُ الأَشْجَارِ، وَمِنَ الخَطَةِ، إِحْرَاقُ",
+          "fr": "Parmi les moyens de préserver l'environnement, auxquels l'Islam appelle, il y a la plantation d'arbres, et parmi les erreurs, il y a l'incendie"
+        },
+        {
+          "speaker": "",
+          "ar": "الغاباتِ، كَمَا يَحْدُثُ فِي بَعْضِ البِلادِ الآن. قالَ الرَّسُولُ : ( إِنْ قَامَتِ القِيامَةُ، وَفِي يَدِ أَحَدِكُم",
+          "fr": "des forêts, comme cela se produit actuellement dans certains pays. Le Messager a dit : (Si le Jour de la Résurrection arrive, et que l'un de vous a dans sa main"
+        },
+        {
+          "speaker": "",
+          "ar": "فَسِيلَةٌ (نَخْلَةٌ صَغِيرَةٌ) فَإِنِ اسْتَطَاعَ أَلا تَقومَ حَتى يَفْرِسَها ، فَلْيَغْرِسْها). وَيَطْلُبُ هَذَا الحَدِيثُ",
+          "fr": "un plant (un petit palmier), s'il peut ne pas se lever avant de le planter, qu'il le plante). Et ce hadith demande"
+        },
+        {
+          "speaker": "",
+          "ar": "مِنَ الإِنْسانِ، أَنْ يَزْرَعَ الأَرْضَ ، وَيَجْعَلَها خَضْراء. وَهَذِهِ مِنْ أَفْضَلِ الطَّرُقِ لِلْمُحافَظَةِ عَلَى البيئةِ،",
+          "fr": "à l'homme de cultiver la terre et de la rendre verte. Et c'est l'un des meilleurs moyens de préserver l'environnement,"
+        },
+        {
+          "speaker": "",
+          "ar": "وَحِمَايَتِها مِنَ التَّلَوُّثِ.",
+          "fr": "et de le protéger de la pollution."
+        },
+        {
+          "speaker": "",
+          "ar": "مِنْ وَسَائِلِ المُحافَظَةِ عَلى البيئةِ أَيْضاً ، عَدَمُ الإسْراف في استهلاكِ المَاءِ، وَبِخَاصَّةٍ إِذا عَلِمْنَا أَنَّ",
+          "fr": "Parmi les moyens de préserver l'environnement, il y a aussi la non-gaspillage dans la consommation d'eau, surtout si nous savons que"
+        },
+        {
+          "speaker": "",
+          "ar": "الماءَ العَذِّبَ قَلِيلٌ عَلَى الأَرْضِ. وَتُواجِهُ كَثِيرٌ مِنَ الدُّوَلِ أَزْمَةً فِي الْمِيَاهِ، وَتُؤَدِّي قِلَّةُ المِيَاهِ فِي بَلَدٍ",
+          "fr": "l'eau douce est rare sur terre. Et de nombreux pays sont confrontés à une crise de l'eau, et le manque d'eau dans un pays"
+        },
+        {
+          "speaker": "",
+          "ar": "ما، إلى تقليل الزراعَةِ وَالصِّناعَةِ فِيهِ . وَقَدْ تُؤَدِّي أَزْمَةُ المياه في العالَمِ إِلى حُروبِ بَيْنَ الدُّوَلِ.",
+          "fr": "conduit à la réduction de l'agriculture et de l'industrie dans ce pays. Et la crise de l'eau dans le monde peut conduire à des guerres entre les pays."
+        },
+        {
+          "speaker": "",
+          "ar": "وَلا هَمِّيَّةِ المَاءِ؛ فَإِنَّ الإِسْلامَ يَنْهَى عَنِ الإِسْرَافِ فِيهِ فِي كُلِّ شَيْءٍ، حَتَّى فِي العِبادات.",
+          "fr": "Et en raison de l'importance de l'eau ; L'Islam interdit le gaspillage dans tout, même dans les actes d'adoration."
+        }
+      ]
+    }
+  ]
+}

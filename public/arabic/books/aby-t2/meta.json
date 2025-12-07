@@ -1,0 +1,24 @@
+{
+  "id": "aby-t2",
+  "title": "Al-Arabiya Bayna Yadayk - Tome 2",
+  "structure": {
+    "sectionLabel": {
+      "ar": "الوحدة",
+      "fr": "Unité"
+    },
+    "itemLabels": {
+      "dialogue": {
+        "ar": "حوار",
+        "fr": "Dialogue"
+      },
+      "text": {
+        "ar": "نص",
+        "fr": "Texte"
+      }
+    }
+  },
+  "resources": {
+    "pdf": "/arabic/pdf/ABY-T2.pdf",
+    "vocabulary": "/arabic/pdf/ABY-T2-VOC.pdf"
+  }
+}

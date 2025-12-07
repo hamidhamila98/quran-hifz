@@ -1,0 +1,232 @@
+{
+  "id": 15,
+  "titleAr": "الصحة",
+  "titleFr": "La Santé",
+  "items": [
+    {
+      "id": "15.1",
+      "type": "dialogue",
+      "titleAr": "",
+      "titleFr": "",
+      "youtube": "https://www.youtube.com/embed/cvZbvvh3EBU",
+      "pdfPage": null,
+      "lines": [
+        {
+          "speaker": "مسعود",
+          "ar": "السَّلامُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكاتُهُ",
+          "fr": "Que la paix, la miséricorde d'Allah et Ses bénédictions soient sur vous."
+        },
+        {
+          "speaker": "محمود",
+          "ar": "وَعَلَيْكُمُ السَّلامُ وَرَحْمَةُ اللهِ وَبَرَكاتُهُ",
+          "fr": "Et sur vous la paix..."
+        },
+        {
+          "speaker": "مسعود",
+          "ar": "لماذا حَضَرْتَ اليَوْمَ إلى المُسْتَشْفَى ؟",
+          "fr": "Pourquoi es-tu venu aujourd'hui à l'hôpital ?"
+        },
+        {
+          "speaker": "محمود",
+          "ar": "حَضَرْتُ لِزِيارَةِ طَبِيبِ الأَسْنان",
+          "fr": "Je suis venu voir le dentiste."
+        },
+        {
+          "speaker": "مسعود",
+          "ar": "بِمَ تَشْعُرُ ؟",
+          "fr": "Que ressens-tu ?"
+        },
+        {
+          "speaker": "محمود",
+          "ar": "أَشْعُرُ بِأَلَم شَديد في أَسناني\nولماذا حَضَرْتَ أَنْتَ إِلَى المُسْتَشْفَى ؟",
+          "fr": "Je ressens une forte douleur dans mes dents. Et pourquoi es-tu venu à l'hôpital toi ?"
+        },
+        {
+          "speaker": "مسعود",
+          "ar": "حَضَرْتُ لِزِيارَةِ طَبِيبِ الأَنْفِ وَالْأُذُنِ والحَنْجَرَة",
+          "fr": "Je suis venu voir l'ORL (médecin du nez, de l'oreille et de la gorge)."
+        },
+        {
+          "speaker": "محمود",
+          "ar": "بِمَ تَشْعُرُ ؟",
+          "fr": "Que ressens-tu ?"
+        },
+        {
+          "speaker": "مسعود",
+          "ar": "أَشْعُرُ بِأَلم شَدِيدٍ في أُذُني",
+          "fr": "Je ressens une forte douleur dans mon oreille."
+        },
+        {
+          "speaker": "محمود",
+          "ar": "هَلْ لَدَيْكَ مَوْعِدٌ مَعَ الطَّبِيبِ ؟",
+          "fr": "As-tu un rendez-vous avec le médecin ?"
+        },
+        {
+          "speaker": "مسعود",
+          "ar": "نَعَمْ ، مَوْعِدِي السَّاعَةَ العَاشِرَةَ",
+          "fr": "Oui, mon rendez-vous est à dix heures."
+        },
+        {
+          "speaker": "محمود",
+          "ar": "مَوْعِدِي السَّاعَةَ العَاشِرَةَ أَيْضاً",
+          "fr": "Mon rendez-vous est à dix heures aussi."
+        },
+        {
+          "speaker": "مسعود",
+          "ar": "السَّاعَةُ الْآنَ التَّاسِعَةُ وَالنِّصْفُ ، الباقي نِصْفُ سَاعَةٍ",
+          "fr": "Il est neuf heures et demie maintenant, il reste une demi-heure."
+        }
+      ]
+    },
+    {
+      "id": "15.2",
+      "type": "dialogue",
+      "titleAr": "",
+      "titleFr": "",
+      "youtube": "https://www.youtube.com/embed/cvZbvvh3EBU",
+      "pdfPage": null,
+      "lines": [
+        {
+          "speaker": "المدرس",
+          "ar": "السَّلامُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكاتُهُ",
+          "fr": "Que la paix soit sur vous..."
+        },
+        {
+          "speaker": "الطالب",
+          "ar": "وَعَلَيْكُمُ السَّلامُ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ",
+          "fr": "Et sur vous la paix..."
+        },
+        {
+          "speaker": "المدرس",
+          "ar": "لماذا تَغَيَّبْتَ عَنِ الدِّرَاسَةِ ؟",
+          "fr": "Pourquoi t'es-tu absenté des cours ?"
+        },
+        {
+          "speaker": "الطالب",
+          "ar": "أُصِبْتُ بِزُكَامٍ شَدِيدٍ",
+          "fr": "J'ai attrapé un gros rhume."
+        },
+        {
+          "speaker": "المدرس",
+          "ar": "بِمَ شَعَرْتَ ؟",
+          "fr": "Qu'as-tu ressenti ?"
+        },
+        {
+          "speaker": "الطالب",
+          "ar": "شَعَرْتُ بِصُداع شَدِيدٍ فِي اللَّيلِ، وَارتَفَعَتْ درجة حرارتي",
+          "fr": "J'ai ressenti un violent mal de tête la nuit, et ma température est montée."
+        },
+        {
+          "speaker": "المدرس",
+          "ar": "هل قَابَلْتَ الطَّبِيبَ ؟",
+          "fr": "As-tu vu le médecin ?"
+        },
+        {
+          "speaker": "الطالب",
+          "ar": "نَعَمْ ، ذَهَبْتُ إلى المُسْتَشْفَى بالإسعاف ، وقابلت الطبيب",
+          "fr": "Oui, je suis allé à l'hôpital en ambulance, et j'ai vu le médecin."
+        },
+        {
+          "speaker": "المدرس",
+          "ar": "وبِمَ نَصَحَكَ الطَّبِيبُ ؟",
+          "fr": "Et que t'a conseillé le médecin ?"
+        },
+        {
+          "speaker": "الطالب",
+          "ar": "نَصَحَنِي بِالرَّاحَةِ وَتَنَاوُلِ الدَّواءِ، وَهَذَا هُوَ التقرير الطبي",
+          "fr": "Il m'a conseillé le repos et de prendre des médicaments, et voici le rapport médical."
+        },
+        {
+          "speaker": "المدرس",
+          "ar": "شُكْراً لَكَ\nوَبِمَ تَشْعُرُ الآن ؟",
+          "fr": "Merci à toi. Et comment te sens-tu maintenant ?"
+        },
+        {
+          "speaker": "الطالب",
+          "ar": "الحَمْدُ لله ، أنا بِخَيْرٍ",
+          "fr": "Louange à Dieu, je vais bien."
+        }
+      ]
+    },
+    {
+      "id": "15.3",
+      "type": "dialogue",
+      "titleAr": "",
+      "titleFr": "",
+      "youtube": "https://www.youtube.com/embed/cvZbvvh3EBU",
+      "pdfPage": null,
+      "lines": [
+        {
+          "speaker": "الزوجة",
+          "ar": "السَّلامُ عَلَيْكُم وَرَحْمَةُ اللهِ وَبَرَكاتُهُ",
+          "fr": "Que la paix soit sur vous..."
+        },
+        {
+          "speaker": "الزوج",
+          "ar": "وَعَلَيْكُمُ السَّلامُ وَرَحْمَةُ اللهِ وَبَرَكاتُهُ",
+          "fr": "Et sur vous la paix..."
+        },
+        {
+          "speaker": "الزوجة",
+          "ar": "خَيْراً ، هَلْ قَابَلْتَ الطَّبِيبَ ؟",
+          "fr": "J'espère que c'est bon, as-tu vu le médecin ?"
+        },
+        {
+          "speaker": "الزوج",
+          "ar": "نَعَمْ ، وفَحَصَ الصَّدْرَ، والقَلْبَ، والكُلْيَةَ وقاس الضغط",
+          "fr": "Oui, et il a examiné la poitrine, le cœur, le rein et a mesuré la tension."
+        },
+        {
+          "speaker": "الزوجة",
+          "ar": "وما النتيجة ؟",
+          "fr": "Et quel est le résultat ?"
+        },
+        {
+          "speaker": "الزوج",
+          "ar": "القَلْبُ سَليم، والحَمْدُ للهِ\nهُناكَ ارتفاع قَلِيلٌ في الضَّغْطِ والسُّكَّري",
+          "fr": "Le cœur est sain, louange à Dieu. Il y a une légère augmentation de la tension et du diabète."
+        },
+        {
+          "speaker": "الزوجة",
+          "ar": "مَا سَبَبُ ذَلِكَ ؟",
+          "fr": "Quelle en est la cause ?"
+        },
+        {
+          "speaker": "الزوج",
+          "ar": "زِيادَةُ الوَزْنِ",
+          "fr": "L'augmentation du poids (surpoids)."
+        },
+        {
+          "speaker": "الزوجة",
+          "ar": "وماذا طَلَبَ مِنْكَ الطَّبِيبُ ؟",
+          "fr": "Et que t'a demandé le médecin ?"
+        },
+        {
+          "speaker": "الزوج",
+          "ar": "طَلَبَ مِنِّي تَرْكَ السُّكَرِيَّاتِ",
+          "fr": "Il m'a demandé d'arrêter les sucreries."
+        },
+        {
+          "speaker": "الزوجة",
+          "ar": "وَهَلْ طَلَبَ مِنْكَ شَيئًا آخَرَ ؟",
+          "fr": "Et t'a-t-il demandé autre chose ?"
+        },
+        {
+          "speaker": "الزوج",
+          "ar": "نَعَمْ ، مُمارَسَةَ الرياضةِ ، وتَناول الفاكهة والخضراوات",
+          "fr": "Oui, de faire du sport, et de manger des fruits et des légumes."
+        },
+        {
+          "speaker": "الزوجة",
+          "ar": "شَفَاكَ اللَّهُ",
+          "fr": "Qu'Allah te guérisse."
+        },
+        {
+          "speaker": "الزوج",
+          "ar": "آمين ، شُكراً لكِ",
+          "fr": "Amen, merci à toi."
+        }
+      ]
+    }
+  ]
+}

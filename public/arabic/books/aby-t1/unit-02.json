@@ -1,0 +1,247 @@
+{
+  "id": 2,
+  "titleAr": "الأسرة",
+  "titleFr": "La Famille",
+  "items": [
+    {
+      "id": "2.1",
+      "type": "dialogue",
+      "titleAr": "",
+      "titleFr": "",
+      "youtube": "https://www.youtube.com/embed/vWoclD7YPIo",
+      "pdfPage": null,
+      "lines": [
+        {
+          "speaker": "علي",
+          "ar": "السَّلامُ عَلَيْكُم",
+          "fr": "Que la paix soit sur vous."
+        },
+        {
+          "speaker": "عمار",
+          "ar": "وَعَلَيْكُمُ السَّلام",
+          "fr": "Et sur vous la paix."
+        },
+        {
+          "speaker": "علي",
+          "ar": "هَذِهِ صُورَةُ أُسْرَتِي",
+          "fr": "C'est une photo de ma famille."
+        },
+        {
+          "speaker": "عمار",
+          "ar": "مَا شَاءَ الله ! مَنْ هَذَا ؟",
+          "fr": "Masha'Allah ! Qui est-ce ?"
+        },
+        {
+          "speaker": "علي",
+          "ar": "هَذَا وَالِدِي عَدْنَان وَهُوَ مُهَنْدِس",
+          "fr": "C'est mon père Adnan et il est ingénieur."
+        },
+        {
+          "speaker": "عمار",
+          "ar": "وَمَنْ هَذِهِ ؟",
+          "fr": "Et qui est celle-ci ?"
+        },
+        {
+          "speaker": "علي",
+          "ar": "هَذِهِ وَالِدَتِي سَعِيدَة وَهِيَ طَبِيبَة",
+          "fr": "C'est ma mère Saida et elle est médecin."
+        },
+        {
+          "speaker": "عمار",
+          "ar": "وَمَنْ هَذَا ؟",
+          "fr": "Et qui est celui-ci ?"
+        },
+        {
+          "speaker": "علي",
+          "ar": "هَذَا أَخِي عِيسَى وَهُوَ طَالِب",
+          "fr": "C'est mon frère Issa et il est étudiant."
+        },
+        {
+          "speaker": "عمار",
+          "ar": "وَمَنْ هَذِهِ ؟",
+          "fr": "Et qui est celle-ci ?"
+        },
+        {
+          "speaker": "علي",
+          "ar": "هَذِهِ أُخْتِي عَبْلَة وَهِيَ مُعَلِّمَة\nوَهَذَا جَدِّي\nوَهَذِهِ جَدَّتِي",
+          "fr": "C'est ma sœur Abla et elle est enseignante. Et voici mon grand-père. Et voici ma grand-mère."
+        },
+        {
+          "speaker": "عمار",
+          "ar": "مَا شَاءَ الله !",
+          "fr": "Masha'Allah !"
+        }
+      ]
+    },
+    {
+      "id": "2.2",
+      "type": "dialogue",
+      "titleAr": "",
+      "titleFr": "",
+      "youtube": "https://www.youtube.com/embed/vWoclD7YPIo",
+      "pdfPage": null,
+      "lines": [
+        {
+          "speaker": "عمر",
+          "ar": "هَلْ هَذِهِ شَجَرَةٌ ؟",
+          "fr": "Est-ce un arbre ?"
+        },
+        {
+          "speaker": "عثمان",
+          "ar": "نَعَمْ، هَذِهِ أُسْرَةُ الرَّسُول ﷺ",
+          "fr": "Oui, c'est la famille du Messager ﷺ."
+        },
+        {
+          "speaker": "عمر",
+          "ar": "صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ",
+          "fr": "Paix et salut sur lui."
+        },
+        {
+          "speaker": "عثمان",
+          "ar": "هَذَا وَالِدُهُ عَبْدُ الله",
+          "fr": "C'est son père Abdallah."
+        },
+        {
+          "speaker": "عمر",
+          "ar": "وَهَذِهِ وَالِدَتُهُ آمِنَة",
+          "fr": "Et c'est sa mère Amina."
+        },
+        {
+          "speaker": "عثمان",
+          "ar": "وَهَذَا جَدُّهُ عَبْدُ المُطَّلِب",
+          "fr": "Et c'est son grand-père Abd al-Muttalib."
+        },
+        {
+          "speaker": "عمر",
+          "ar": "وَهَذَا عَمُّهُ العَبَّاس",
+          "fr": "Et c'est son oncle Al-Abbas."
+        },
+        {
+          "speaker": "عثمان",
+          "ar": "وَهَذَا عَمُّهُ حَمْزَة",
+          "fr": "Et c'est son oncle Hamza."
+        },
+        {
+          "speaker": "عمر",
+          "ar": "وَهَذَا عَمُّهُ أَبُو طَالِب",
+          "fr": "Et c'est son oncle Abou Talib."
+        },
+        {
+          "speaker": "عثمان",
+          "ar": "وَهَذِهِ عَمَّتُهُ صَفِيَّة",
+          "fr": "Et c'est sa tante Safiyyah."
+        },
+        {
+          "speaker": "عمر",
+          "ar": "وَهَذَا ابْنُهُ القَاسِم",
+          "fr": "Et c'est son fils Al-Qasim."
+        },
+        {
+          "speaker": "عثمان",
+          "ar": "وَهَذَا ابْنُهُ عَبْدُ الله",
+          "fr": "Et c'est son fils Abdallah."
+        },
+        {
+          "speaker": "عمر",
+          "ar": "وَهَذَا ابْنُهُ إِبْرَاهِيم",
+          "fr": "Et c'est son fils Ibrahim."
+        },
+        {
+          "speaker": "عثمان",
+          "ar": "وَهَذِهِ ابْنَتُهُ فَاطِمَة",
+          "fr": "Et c'est sa fille Fatima."
+        },
+        {
+          "speaker": "عمر",
+          "ar": "وَهَذِهِ ابْنَتُهُ رُقَيَّة",
+          "fr": "Et c'est sa fille Ruqayyah."
+        },
+        {
+          "speaker": "عثمان",
+          "ar": "وَهَذِهِ ابْنَتُهُ زَيْنَب",
+          "fr": "Et c'est sa fille Zaynab."
+        },
+        {
+          "speaker": "عمر",
+          "ar": "وَهَذِهِ ابْنَتُهُ أُمُّ كُلْثُوم",
+          "fr": "Et c'est sa fille Oum Kalthoum."
+        }
+      ]
+    },
+    {
+      "id": "2.3",
+      "type": "dialogue",
+      "titleAr": "",
+      "titleFr": "",
+      "youtube": "https://www.youtube.com/embed/0M7MpiV4TFg",
+      "pdfPage": null,
+      "lines": [
+        {
+          "speaker": "الأم",
+          "ar": "هَذَا أَذَانُ الفَجْر",
+          "fr": "C'est l'appel à la prière de l'aube."
+        },
+        {
+          "speaker": "الأب",
+          "ar": "اللهُ أَكْبَرُ\nاللهُ أَكْبَرُ\nأَيْنَ الأَوْلادُ ؟",
+          "fr": "Dieu est le plus Grand. Où sont les enfants ?"
+        },
+        {
+          "speaker": "الأم",
+          "ar": "سَعْدٌ فِي الحَمَّامِ يَتَوَضَّأُ",
+          "fr": "Saad est dans la salle de bain, il fait ses ablutions."
+        },
+        {
+          "speaker": "الأب",
+          "ar": "وَأَيْنَ سَعِيدٌ ؟",
+          "fr": "Et où est Said ?"
+        },
+        {
+          "speaker": "الأم",
+          "ar": "سَعِيدٌ فِي الغُرْفَةِ يَقْرَأُ القُرْآنَ",
+          "fr": "Said est dans la chambre, il lit le Coran."
+        },
+        {
+          "speaker": "الأب",
+          "ar": "وَأَيْنَ سَعِيدَةُ ؟",
+          "fr": "Et où est Saida ?"
+        },
+        {
+          "speaker": "الأم",
+          "ar": "سَعِيدَةُ فِي المُصَلَّى تُصَلِّي",
+          "fr": "Saida est dans le lieu de prière, elle prie."
+        },
+        {
+          "speaker": "الأب",
+          "ar": "أَيْنَ المِعْطَفُ ؟",
+          "fr": "Où est le manteau ?"
+        },
+        {
+          "speaker": "سعد",
+          "ar": "هَذَا هُوَ المِعْطَفُ يَا وَالِدِي",
+          "fr": "Voici le manteau, ô mon père."
+        },
+        {
+          "speaker": "الأب",
+          "ar": "وَأَيْنَ النَّظَّارَةُ ؟",
+          "fr": "Et où sont les lunettes ?"
+        },
+        {
+          "speaker": "سعيد",
+          "ar": "هَذِهِ هِيَ النَّظَّارَةُ يَا وَالِدِي",
+          "fr": "Voici les lunettes, ô mon père."
+        },
+        {
+          "speaker": "الأب",
+          "ar": "هَيَّا بِنَا إِلَى المَسْجِدِ",
+          "fr": "Allons à la mosquée."
+        },
+        {
+          "speaker": "سعد وسعيد",
+          "ar": "هَيَّا بِنَا",
+          "fr": "Allons-y."
+        }
+      ]
+    }
+  ]
+}

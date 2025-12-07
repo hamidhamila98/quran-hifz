@@ -1,0 +1,202 @@
+{
+  "id": 6,
+  "titleAr": "الصلاة",
+  "titleFr": "La Prière",
+  "items": [
+    {
+      "id": "6.1",
+      "type": "dialogue",
+      "titleAr": "",
+      "titleFr": "",
+      "youtube": "https://www.youtube.com/embed/WfyZ9kge4r4",
+      "pdfPage": null,
+      "lines": [
+        {
+          "speaker": "مصطفى",
+          "ar": "أَيْنَ تُصَلِّي الصَّلَوَاتِ الْخَمْسَ ؟",
+          "fr": "Où pries-tu les cinq prières ?"
+        },
+        {
+          "speaker": "قصي",
+          "ar": "أُصَلِّي الظُّهْرَ وَالْعَصْرَ وَالْمَغْرِبَ وَالْعِشَاءَ فِي مَسْجِدِ بِلال",
+          "fr": "Je prie le Dhuhr, le Asr, le Maghrib et l'Isha à la mosquée Bilal."
+        },
+        {
+          "speaker": "مصطفى",
+          "ar": "وَأَيْنَ تُصَلِّي الْفَجْرَ ؟",
+          "fr": "Et où pries-tu le Fajr ?"
+        },
+        {
+          "speaker": "قصي",
+          "ar": "أُصَلِّي الْفَجْرَ فِي الْبَيْتِ",
+          "fr": "Je prie le Fajr à la maison."
+        },
+        {
+          "speaker": "مصطفى",
+          "ar": "لِمَاذَا تُصَلِّي الْفَجْرَ فِي الْبَيْتِ ؟",
+          "fr": "Pourquoi pries-tu le Fajr à la maison ?"
+        },
+        {
+          "speaker": "قصي",
+          "ar": "لا أَسْمَعُ الأَذَانَ",
+          "fr": "Je n'entends pas l'appel à la prière."
+        },
+        {
+          "speaker": "مصطفى",
+          "ar": "هَلْ تَسْتَيْقِظُ مُتَأَخِّراً ؟",
+          "fr": "Te réveilles-tu tard ?"
+        },
+        {
+          "speaker": "قصي",
+          "ar": "نَعَمْ، بَعْدَ صَلاةِ الْفَجْرِ",
+          "fr": "Oui, après la prière du Fajr."
+        },
+        {
+          "speaker": "مصطفى",
+          "ar": "اسْتَيْقِظْ مُبَكِّراً",
+          "fr": "Réveille-toi tôt !"
+        },
+        {
+          "speaker": "قصي",
+          "ar": "لا أَسْتَطِيعُ، أَعْمَلُ فِي اللَّيْلِ",
+          "fr": "Je ne peux pas, je travaille la nuit."
+        },
+        {
+          "speaker": "مصطفى",
+          "ar": "ضَعِ الْمُنَبِّهَ بِجَانِبِكَ",
+          "fr": "Mets le réveil à côté de toi."
+        },
+        {
+          "speaker": "قصي",
+          "ar": "هَذِهِ فِكْرَةٌ طَيِّبَةٌ، جَزَاكَ اللهُ خَيْراً",
+          "fr": "C'est une bonne idée, qu'Allah te récompense."
+        }
+      ]
+    },
+    {
+      "id": "6.2",
+      "type": "dialogue",
+      "titleAr": "",
+      "titleFr": "",
+      "youtube": "https://www.youtube.com/embed/lvz5bmdtMRo",
+      "pdfPage": null,
+      "lines": [
+        {
+          "speaker": "عصام",
+          "ar": "السَّلامُ عَلَيْكُم",
+          "fr": "Que la paix soit sur vous."
+        },
+        {
+          "speaker": "صالح",
+          "ar": "وَعَلَيْكُمُ السَّلام",
+          "fr": "Et sur vous la paix."
+        },
+        {
+          "speaker": "عصام",
+          "ar": "أَنَا مُسَافِرٌ إِلَى مَكَّةَ، إِلَى أَيْنَ أَنْتَ مُسَافِرٌ ؟",
+          "fr": "Je voyage vers La Mecque, vers où voyages-tu ?"
+        },
+        {
+          "speaker": "صالح",
+          "ar": "أَنَا مُسَافِرٌ إِلَى الْمَدِينَةِ\nلِمَاذَا أَنْتَ مُسَافِرٌ إِلَى مَكَّةَ ؟",
+          "fr": "Je voyage vers Médine. Pourquoi voyages-tu vers La Mecque ?"
+        },
+        {
+          "speaker": "عصام",
+          "ar": "لِلصَّلاةِ فِي الْمَسْجِدِ الْحَرَامِ\nوَلِمَاذَا أَنْتَ مُسَافِرٌ إِلَى الْمَدِينَةِ ؟",
+          "fr": "Pour prier dans la Mosquée Sacrée. Et pourquoi voyages-tu vers Médine ?"
+        },
+        {
+          "speaker": "صالح",
+          "ar": "لِلصَّلاةِ فِي الْمَسْجِدِ النَّبَوِيِّ\nأَيْنَ سَتُصَلِّي الْجُمُعَةَ ؟",
+          "fr": "Pour prier dans la Mosquée du Prophète. Où prieras-tu le Vendredi ?"
+        },
+        {
+          "speaker": "عصام",
+          "ar": "فِي الْمَسْجِدِ الْحَرَامِ إِنْ شَاءَ الله\nوَأَيْنَ سَتُصَلِّي الْجُمُعَةَ ؟",
+          "fr": "À la Mosquée Sacrée, si Dieu le veut. Et où prieras-tu le Vendredi ?"
+        },
+        {
+          "speaker": "صالح",
+          "ar": "فِي الْمَسْجِدِ النَّبَوِيِّ إِنْ شَاءَ الله",
+          "fr": "À la Mosquée du Prophète, si Dieu le veut."
+        },
+        {
+          "speaker": "عصام",
+          "ar": "كَيْفَ سَتُسَافِرُ إِلَى الْمَدِينَةِ ؟",
+          "fr": "Comment voyageras-tu vers Médine ?"
+        },
+        {
+          "speaker": "صالح",
+          "ar": "أَرْكَبُ الطَّائِرَةَ",
+          "fr": "Je prends l'avion."
+        }
+      ]
+    },
+    {
+      "id": "6.3",
+      "type": "dialogue",
+      "titleAr": "",
+      "titleFr": "",
+      "youtube": "https://www.youtube.com/embed/7qxWQjLsjHY",
+      "pdfPage": null,
+      "lines": [
+        {
+          "speaker": "صادق",
+          "ar": "هَذَا أَذَانُ الْعَصْرِ",
+          "fr": "C'est l'appel à la prière du Asr."
+        },
+        {
+          "speaker": "صابر",
+          "ar": "هَيَّا بِنَا إِلَى الْمَسْجِدِ",
+          "fr": "Allons à la mosquée."
+        },
+        {
+          "speaker": "صادق",
+          "ar": "أَنَا أُصَلِّي فِي الْبَيْتِ",
+          "fr": "Moi, je prie à la maison."
+        },
+        {
+          "speaker": "صابر",
+          "ar": "الصَّلاةُ فِي الْمَسْجِدِ أَفْضَلُ",
+          "fr": "La prière à la mosquée est meilleure."
+        },
+        {
+          "speaker": "صادق",
+          "ar": "الْمَسْجِدُ بَعِيدٌ",
+          "fr": "La mosquée est loin."
+        },
+        {
+          "speaker": "صابر",
+          "ar": "الْمَسْجِدُ قَرِيبٌ. هَلْ أَنْتَ مَرِيضٌ ؟",
+          "fr": "La mosquée est proche. Es-tu malade ?"
+        },
+        {
+          "speaker": "صادق",
+          "ar": "لا، أَنَا بِخَيْرٍ",
+          "fr": "Non, je vais bien."
+        },
+        {
+          "speaker": "صابر",
+          "ar": "أَنْتَ كَسْلانُ",
+          "fr": "Tu es paresseux."
+        },
+        {
+          "speaker": "صادق",
+          "ar": "هَذَا صَحِيحٌ. آسِفٌ",
+          "fr": "C'est vrai. Désolé."
+        },
+        {
+          "speaker": "صابر",
+          "ar": "أَنَا ذَاهِبٌ إِلَى الْمَسْجِدِ",
+          "fr": "Moi, je vais à la mosquée."
+        },
+        {
+          "speaker": "صادق",
+          "ar": "انْتَظِرْ، أَنَا ذَاهِبٌ مَعَكَ",
+          "fr": "Attends, je viens avec toi."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "id": 9,
+  "titleAr": "التسوق",
+  "titleFr": "Le Shopping",
+  "items": [
+    {
+      "id": "9.1",
+      "type": "dialogue",
+      "titleAr": "",
+      "titleFr": "",
+      "youtube": "https://www.youtube.com/embed/cvZbvvh3EBU",
+      "pdfPage": null,
+      "lines": [
+        {
+          "speaker": "البائع",
+          "ar": "أَهْلاً وسَهْلاً",
+          "fr": "Bienvenue."
+        },
+        {
+          "speaker": "الطالب",
+          "ar": "أُرِيدُ مُعْجَماً مِنْ فَضْلِكَ",
+          "fr": "Je voudrais un dictionnaire s'il vous plaît."
+        },
+        {
+          "speaker": "البائع",
+          "ar": "أَيَّ مُعْجَمٍ تُرِيدُ ؟",
+          "fr": "Quel dictionnaire voulez-vous ?"
+        },
+        {
+          "speaker": "الطالب",
+          "ar": "أُرِيدُ الْمُعْجَمَ العَرَبِيَّ",
+          "fr": "Je veux le dictionnaire arabe."
+        },
+        {
+          "speaker": "البائع",
+          "ar": "تَفَضَّلِ المُعْجَمَ العَرَبِيَّ\nوماذا تُرِيدُ أَيْضاً ؟",
+          "fr": "Voici le dictionnaire arabe. Et que voulez-vous aussi ?"
+        },
+        {
+          "speaker": "الطالب",
+          "ar": "أُريدُ كِتابَ القِرَاءَةِ ، وكِتابَ القَوَاعِدِ",
+          "fr": "Je veux le livre de lecture et le livre de grammaire."
+        },
+        {
+          "speaker": "البائع",
+          "ar": "هَذا كِتابُ القِراءَةِ ، وَهَذَا كِتَابُ القَوَاعِدِ",
+          "fr": "Voici le livre de lecture, et voici le livre de grammaire."
+        },
+        {
+          "speaker": "الطالب",
+          "ar": "أُريدُ دَفْتَراً وقَلَماً",
+          "fr": "Je veux un cahier et un stylo."
+        },
+        {
+          "speaker": "البائع",
+          "ar": "تَفَضَّلِ الدَّفْتَرَ والقَلَمَ ، هَلْ تُرِيدُ شَيْئاً آخَرَ ؟",
+          "fr": "Voici le cahier et le stylo. Voulez-vous autre chose ?"
+        },
+        {
+          "speaker": "الطالب",
+          "ar": "لا ، وشكراً",
+          "fr": "Non, merci."
+        },
+        {
+          "speaker": "البائع",
+          "ar": "المَطْلُوبُ ثَلاثُونَ رِيالاً",
+          "fr": "Le total est de trente riyals."
+        },
+        {
+          "speaker": "الطالب",
+          "ar": "ماذا تَقولُ ؟ ثَلاثونَ رِيالاً !",
+          "fr": "Que dites-vous ? Trente riyals !"
+        },
+        {
+          "speaker": "البائع",
+          "ar": "نَعَمْ ، ثَلاثون ريالاً",
+          "fr": "Oui, trente riyals."
+        },
+        {
+          "speaker": "الطالب",
+          "ar": "تَفَضَّلْ، هَذِهِ ثَلَاثُونَ رِيالاً",
+          "fr": "Tenez, voici trente riyals."
+        }
+      ]
+    },
+    {
+      "id": "9.2",
+      "type": "dialogue",
+      "titleAr": "",
+      "titleFr": "",
+      "youtube": "https://www.youtube.com/embed/cvZbvvh3EBU",
+      "pdfPage": null,
+      "lines": [
+        {
+          "speaker": "البائع",
+          "ar": "مَرْحَباً ، أَيَّ خِدْمَةٍ",
+          "fr": "Bonjour (Bienvenue), puis-je vous aider ?"
+        },
+        {
+          "speaker": "المرأة",
+          "ar": "أُريدُ سَمَكاً ولَحْماً ودجاجاً",
+          "fr": "Je veux du poisson, de la viande et du poulet."
+        },
+        {
+          "speaker": "البائع",
+          "ar": "تَفَضَّلِي السَّمَكَ وَاللَّحْمَ وَالدَّجَاجَ\nوماذا تريدين أيضاً ؟",
+          "fr": "Voici le poisson, la viande et le poulet. Et que voulez-vous aussi ?"
+        },
+        {
+          "speaker": "المرأة",
+          "ar": "أريد خياراً وبَصَلاً وطَماطم",
+          "fr": "Je veux des concombres, des oignons et des tomates."
+        },
+        {
+          "speaker": "البائع",
+          "ar": "تفضّلي الخيار والبَصَلَ والطماطم. وماذا تريدين أيضاً ؟",
+          "fr": "Voici les concombres, oignons et tomates. Et que voulez-vous aussi ?"
+        },
+        {
+          "speaker": "المرأة",
+          "ar": "أُريدُ سُكَّراً وشاياً وبُنّاً",
+          "fr": "Je veux du sucre, du thé et du café (grains/moulu)."
+        },
+        {
+          "speaker": "البائع",
+          "ar": "تَفَضَّلي... هَلْ تُرِيدِينَ شَيْئاً آخَرَ ؟",
+          "fr": "Voici... Voulez-vous autre chose ?"
+        },
+        {
+          "speaker": "المرأة",
+          "ar": "نَعَمْ ، طَبَقَ بَيْضٍ ، وعُلبَةَ مِلْحٍ",
+          "fr": "Oui, un plateau d'œufs et une boîte de sel."
+        },
+        {
+          "speaker": "البائع",
+          "ar": "هَذا طَبَقُ البَيْضِ، وَهَذِهِ عُلْبَةُ المِلْحِ. المَطْلُوبُ ثَمانونَ ديناراً",
+          "fr": "Voici... Le total est de quatre-vingts dinars."
+        },
+        {
+          "speaker": "المرأة",
+          "ar": "تَفَضَّلْ ، هَذِهِ ثَمانون ديناراً",
+          "fr": "Tenez, voici quatre-vingts dinars."
+        }
+      ]
+    },
+    {
+      "id": "9.3",
+      "type": "dialogue",
+      "titleAr": "",
+      "titleFr": "",
+      "youtube": "https://www.youtube.com/embed/cvZbvvh3EBU",
+      "pdfPage": null,
+      "lines": [
+        {
+          "speaker": "البائع",
+          "ar": "تَفَضَّلْ ، أَيَّ خِدْمَة",
+          "fr": "Entrez, puis-je vous aider ?"
+        },
+        {
+          "speaker": "المشتري",
+          "ar": "أُرِيدُ قَميصاً لَو سَمَحْتَ",
+          "fr": "Je voudrais une chemise s'il vous plaît."
+        },
+        {
+          "speaker": "البائع",
+          "ar": "تَفَضَّلْ هُنا ، هذا قِسْمُ القُمْصَانِ\nهَذَا قَمِيصٌ أَبْيَضُ، وهَذَا أَصْفَرُ، وهَذَا أَزْرَقُ، وهَذَا أَحْمَرُ، وهَذَا أَسْوَدُ",
+          "fr": "Venez par ici, c'est le rayon des chemises. Voici une chemise blanche, une jaune, une bleue, une rouge et une noire."
+        },
+        {
+          "speaker": "المشتري",
+          "ar": "بِكُم القميص ؟",
+          "fr": "Combien coûte la chemise ?"
+        },
+        {
+          "speaker": "البائع",
+          "ar": "القَمِيصُ بِعِشْرِينَ ديناراً\nأَيَّ قَميصٍ تُريدُ ؟",
+          "fr": "La chemise est à vingt dinars. Quelle chemise voulez-vous ?"
+        },
+        {
+          "speaker": "المشتري",
+          "ar": "سَأَشْتَرِي القَمِيصَ الأَزْرَقَ",
+          "fr": "J'achèterai la chemise bleue."
+        },
+        {
+          "speaker": "البائع",
+          "ar": "هَذَا هُوَ القَمِيصُ الْأَزْرَقُ",
+          "fr": "Voici la chemise bleue."
+        },
+        {
+          "speaker": "المشتري",
+          "ar": "شُكْراً",
+          "fr": "Merci."
+        },
+        {
+          "speaker": "البائع",
+          "ar": "لَدَيْنَا أَثْوابٌ جَمِيلَةٌ",
+          "fr": "Nous avons de beaux vêtements (thobes)."
+        },
+        {
+          "speaker": "المشتري",
+          "ar": "بِكُمِ الثَّوْبُ ؟",
+          "fr": "Combien coûte le thobe ?"
+        },
+        {
+          "speaker": "البائع",
+          "ar": "الثَّوْبُ بِثَلاثين ديناراً",
+          "fr": "Le thobe est à trente dinars."
+        },
+        {
+          "speaker": "المشتري",
+          "ar": "أُرِيدُ الثَّوْبَ الأبيض",
+          "fr": "Je veux le thobe blanc."
+        },
+        {
+          "speaker": "البائع",
+          "ar": "تَفَضَّلِ الثَّوْبَ الأَبْيَضَ ، المَطْلُوبُ خَمْسُونَ ديناراً",
+          "fr": "Voici le thobe blanc. Le total est de cinquante dinars."
+        },
+        {
+          "speaker": "المشتري",
+          "ar": "تَفَضَّلْ ، هَذِهِ خَمْسُونَ ديناراً",
+          "fr": "Tenez, voici cinquante dinars."
+        }
+      ]
+    }
+  ]
+}

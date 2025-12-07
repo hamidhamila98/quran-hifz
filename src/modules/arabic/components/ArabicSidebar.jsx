@@ -41,7 +41,7 @@ export default function ArabicSidebar({ isOpen, setIsOpen, settings, updateSetti
 
   // Dynamic data from registry
   const [booksRegistry, setBooksRegistry] = useState({ books: [], categories: [] })
-  const [booksData, setBooksData] = useState({})
+  const [booksUnits, setBooksUnits] = useState({}) // Store units per book
 
   const darkMode = settings.darkMode
   const currentFont = ARABIC_FONTS.find(f => f.id === settings.arabicLearningFont) || ARABIC_FONTS[0]
@@ -55,16 +55,33 @@ export default function ArabicSidebar({ isOpen, setIsOpen, settings, updateSetti
       .then(res => res.json())
       .then(data => {
         setBooksRegistry(data)
-        // Load data for each available book
+        // Load units for each available book
         data.books
-          .filter(b => b.available && b.dataFile)
+          .filter(b => b.available && b.dataFolder)
           .forEach(book => {
-            fetch(book.dataFile)
-              .then(res => res.json())
-              .then(bookData => {
-                setBooksData(prev => ({ ...prev, [book.id]: bookData }))
-              })
-              .catch(err => console.error(`Error loading ${book.id}:`, err))
+            // Load all units for this book
+            const unitCount = book.unitCount || 16
+            const unitPromises = []
+            for (let i = 1; i <= unitCount; i++) {
+              const unitNum = i.toString().padStart(2, '0')
+              unitPromises.push(
+                fetch(`${book.dataFolder}/unit-${unitNum}.json`)
+                  .then(res => res.json())
+                  .then(data => ({
+                    id: data.id,
+                    titleAr: data.titleAr,
+                    titleFr: data.titleFr,
+                    itemCount: data.items?.length || 0
+                  }))
+                  .catch(() => null)
+              )
+            }
+            Promise.all(unitPromises).then(units => {
+              setBooksUnits(prev => ({
+                ...prev,
+                [book.id]: units.filter(u => u !== null)
+              }))
+            })
           })
       })
       .catch(err => console.error('Error loading books registry:', err))
@@ -74,8 +91,8 @@ export default function ArabicSidebar({ isOpen, setIsOpen, settings, updateSetti
     setOpenBookDropdown(openBookDropdown === bookId ? null : bookId)
   }
 
-  const getSectionsForBook = (bookId) => {
-    return booksData[bookId]?.sections || []
+  const getUnitsForBook = (bookId) => {
+    return booksUnits[bookId] || []
   }
 
   const closeAllDropdowns = () => {
@@ -86,7 +103,7 @@ export default function ArabicSidebar({ isOpen, setIsOpen, settings, updateSetti
   const handleBookClick = (book) => {
     if (!book.available) return
 
-    const data = booksData[book.id]
+    const units = booksUnits[book.id] || []
     const allValidated = settings.arabicValidated || {}
     const bookValidated = allValidated[book.id] || {}
 
@@ -94,7 +111,7 @@ export default function ArabicSidebar({ isOpen, setIsOpen, settings, updateSetti
     let lastSection = 1
     let lastItemIdx = 0
 
-    if (data?.sections && Object.keys(bookValidated).length > 0) {
+    if (units.length > 0 && Object.keys(bookValidated).length > 0) {
       const validatedList = Object.keys(bookValidated)
         .map(key => {
           const [sectionId, itemIdx] = key.split('-').map(Number)
@@ -108,14 +125,14 @@ export default function ArabicSidebar({ isOpen, setIsOpen, settings, updateSetti
         lastItemIdx = last.itemIdx
 
         // Go to next item
-        const section = data.sections.find(s => s.id === lastSection)
-        if (section) {
-          if (lastItemIdx < (section.items?.length || 1) - 1) {
+        const unit = units.find(u => u.id === lastSection)
+        if (unit) {
+          if (lastItemIdx < (unit.itemCount || 1) - 1) {
             lastItemIdx += 1
           } else {
-            const nextSection = data.sections.find(s => s.id > lastSection)
-            if (nextSection) {
-              lastSection = nextSection.id
+            const nextUnit = units.find(u => u.id > lastSection)
+            if (nextUnit) {
+              lastSection = nextUnit.id
               lastItemIdx = 0
             }
           }
@@ -160,10 +177,9 @@ export default function ArabicSidebar({ isOpen, setIsOpen, settings, updateSetti
 
               <div className="space-y-2">
                 {category.books.map((book) => {
-                  const bookSections = getSectionsForBook(book.id)
+                  const bookUnits = getUnitsForBook(book.id)
                   const isCurrentBook = currentBookId === book.id
-                  const hasSections = bookSections.length > 0
-                  const bookMeta = booksData[book.id]?.meta
+                  const hasUnits = bookUnits.length > 0
 
                   return (
                     <div key={book.id} className="relative">
@@ -187,8 +203,8 @@ export default function ArabicSidebar({ isOpen, setIsOpen, settings, updateSetti
                           )}
                         </button>
 
-                        {/* Dropdown toggle for sections (only for available books with sections) */}
-                        {book.available && hasSections && (
+                        {/* Dropdown toggle for units (only for available books with units) */}
+                        {book.available && hasUnits && (
                           <button
                             onClick={() => toggleBookDropdown(book.id)}
                             className={`p-2.5 rounded-xl transition-colors ${
@@ -202,19 +218,19 @@ export default function ArabicSidebar({ isOpen, setIsOpen, settings, updateSetti
                         )}
                       </div>
 
-                      {/* Sections dropdown - clickable to navigate */}
-                      {openBookDropdown === book.id && hasSections && (
+                      {/* Units dropdown - clickable to navigate */}
+                      {openBookDropdown === book.id && hasUnits && (
                         <div className={`mt-2 rounded-xl max-h-64 overflow-y-auto overflow-x-hidden p-1.5 ${
                           darkMode ? 'bg-slate-800/90 shadow-lg shadow-black/20' : 'bg-gray-50 shadow-md'
                         }`}>
-                          {bookSections.map((section) => (
+                          {bookUnits.map((unit) => (
                             <button
                               type="button"
-                              key={section.id}
+                              key={unit.id}
                               onClick={(e) => {
                                 e.stopPropagation()
                                 e.preventDefault()
-                                const url = `/arabic/${book.id}?section=${section.id}&item=1`
+                                const url = `/arabic/${book.id}?section=${unit.id}&item=1`
                                 setOpenBookDropdown(null)
                                 navigate(url)
                               }}
@@ -229,11 +245,11 @@ export default function ArabicSidebar({ isOpen, setIsOpen, settings, updateSetti
                                   ? 'bg-red-900/50 text-red-400'
                                   : 'bg-red-100 text-red-600'
                               }`}>
-                                {section.id}
+                                {unit.id}
                               </span>
                               <span className="text-sm truncate text-left">
-                                {section.titleFr}
-                                <span className={darkMode ? 'text-gray-500' : 'text-gray-400'}> ({section.titleAr})</span>
+                                {unit.titleFr}
+                                <span className={darkMode ? 'text-gray-500' : 'text-gray-400'}> ({unit.titleAr})</span>
                               </span>
                             </button>
                           ))}

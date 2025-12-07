@@ -1,0 +1,217 @@
+{
+  "id": 3,
+  "titleAr": "السكن",
+  "titleFr": "Le Logement",
+  "items": [
+    {
+      "id": "3.1",
+      "type": "dialogue",
+      "titleAr": "",
+      "titleFr": "",
+      "youtube": "https://www.youtube.com/embed/NkifmY0u9Qs",
+      "pdfPage": null,
+      "lines": [
+        {
+          "speaker": "أحمد",
+          "ar": "السَّلامُ عَلَيْكُم",
+          "fr": "Que la paix soit sur vous."
+        },
+        {
+          "speaker": "حسان",
+          "ar": "وَعَلَيْكُمُ السَّلام",
+          "fr": "Et sur vous la paix."
+        },
+        {
+          "speaker": "أحمد",
+          "ar": "أَيْنَ تَسْكُنُ ؟",
+          "fr": "Où habites-tu ?"
+        },
+        {
+          "speaker": "حسان",
+          "ar": "أَسْكُنُ فِي حَيِّ الْمَطَار. وَأَيْنَ تَسْكُنُ أَنْتَ ؟",
+          "fr": "J'habite quartier de l'aéroport. Et où habites-tu toi ?"
+        },
+        {
+          "speaker": "أحمد",
+          "ar": "أَسْكُنُ فِي حَيِّ الْجَامِعَة",
+          "fr": "J'habite dans le quartier de l'université."
+        },
+        {
+          "speaker": "حسان",
+          "ar": "هَلْ تَسْكُنُ فِي بَيْتٍ ؟",
+          "fr": "Habites-tu dans une maison ?"
+        },
+        {
+          "speaker": "أحمد",
+          "ar": "نَعَمْ، أَسْكُنُ فِي بَيْتٍ\nوَهَلْ تَسْكُنُ فِي بَيْتٍ ؟",
+          "fr": "Oui, j'habite dans une maison. Et habites-tu dans une maison ?"
+        },
+        {
+          "speaker": "حسان",
+          "ar": "لا، أَسْكُنُ فِي شَقَّةٍ",
+          "fr": "Non, j'habite dans un appartement."
+        },
+        {
+          "speaker": "أحمد",
+          "ar": "مَا رَقْمُ شَقَّتِكَ ؟",
+          "fr": "Quel est le numéro de ton appartement ?"
+        },
+        {
+          "speaker": "حسان",
+          "ar": "خَمْسَة\nوَمَا رَقْمُ بَيْتِكَ ؟",
+          "fr": "Cinq. Et quel est le numéro de ta maison ?"
+        },
+        {
+          "speaker": "أحمد",
+          "ar": "تِسْعَة",
+          "fr": "Neuf."
+        }
+      ]
+    },
+    {
+      "id": "3.2",
+      "type": "dialogue",
+      "titleAr": "",
+      "titleFr": "",
+      "youtube": "https://www.youtube.com/embed/NkifmY0u9Qs",
+      "pdfPage": null,
+      "lines": [
+        {
+          "speaker": "المستأجر",
+          "ar": "السَّلامُ عَلَيْكُم",
+          "fr": "Que la paix soit sur vous."
+        },
+        {
+          "speaker": "المؤجر",
+          "ar": "وَعَلَيْكُمُ السَّلام",
+          "fr": "Et sur vous la paix."
+        },
+        {
+          "speaker": "المستأجر",
+          "ar": "أُرِيدُ شَقَّةً مِنْ فَضْلِكَ",
+          "fr": "Je voudrais un appartement, s'il vous plaît."
+        },
+        {
+          "speaker": "المؤجر",
+          "ar": "لَدَيْنَا شَقَّةٌ جَمِيلَة",
+          "fr": "Nous avons un bel appartement."
+        },
+        {
+          "speaker": "المستأجر",
+          "ar": "كَمْ غُرْفَةً فِي الشَّقَّةِ ؟",
+          "fr": "Combien de pièces y a-t-il dans l'appartement ?"
+        },
+        {
+          "speaker": "المؤجر",
+          "ar": "فِي الشَّقَّةِ خَمْسُ غُرَفٍ",
+          "fr": "Dans l'appartement, il y a cinq pièces."
+        },
+        {
+          "speaker": "المستأجر",
+          "ar": "فِي أَيِّ دَوْرٍ الشَّقَّةُ ؟",
+          "fr": "À quel étage est l'appartement ?"
+        },
+        {
+          "speaker": "المؤجر",
+          "ar": "الشَّقَّةُ فِي الدَّوْرِ الْخَامِس",
+          "fr": "L'appartement est au cinquième étage."
+        },
+        {
+          "speaker": "المستأجر",
+          "ar": "أُرِيدُ مُشَاهَدَةَ الشَّقَّةِ",
+          "fr": "Je voudrais voir l'appartement."
+        },
+        {
+          "speaker": "المؤجر",
+          "ar": "تَفَضَّلْ، ادْخُلْ، هَذَا بَابُ الشَّقَّةِ",
+          "fr": "Entrez, voici la porte de l'appartement."
+        },
+        {
+          "speaker": "المستأجر",
+          "ar": "هَذِهِ شَقَّةٌ جَمِيلَةٌ",
+          "fr": "C'est un bel appartement."
+        }
+      ]
+    },
+    {
+      "id": "3.3",
+      "type": "dialogue",
+      "titleAr": "",
+      "titleFr": "",
+      "youtube": "https://www.youtube.com/embed/qSYmUyOdZ6M",
+      "pdfPage": null,
+      "lines": [
+        {
+          "speaker": "المشتري",
+          "ar": "السَّلامُ عَلَيْكُم",
+          "fr": "Que la paix soit sur vous."
+        },
+        {
+          "speaker": "البائع",
+          "ar": "وَعَلَيْكُمُ السَّلام. أَيَّ خِدْمَةٍ ؟",
+          "fr": "Et sur vous la paix. Puis-je vous aider ?"
+        },
+        {
+          "speaker": "المشتري",
+          "ar": "أُرِيدُ بَعْضَ الأَثَاثِ",
+          "fr": "Je voudrais quelques meubles."
+        },
+        {
+          "speaker": "البائع",
+          "ar": "مَاذَا تُرِيدُ لِغُرْفَةِ النَّوْمِ ؟",
+          "fr": "Que voulez-vous pour la chambre à coucher ?"
+        },
+        {
+          "speaker": "المشتري",
+          "ar": "أُرِيدُ سَرِيراً وَسِتَارَةً",
+          "fr": "Je veux un lit et un rideau."
+        },
+        {
+          "speaker": "البائع",
+          "ar": "وَمَاذَا تُرِيدُ لِغُرْفَةِ الْجُلُوسِ ؟",
+          "fr": "Et que voulez-vous pour le salon ?"
+        },
+        {
+          "speaker": "المشتري",
+          "ar": "أُرِيدُ أَرِيكَةً وَسَجَّادَةً",
+          "fr": "Je veux un canapé et un tapis."
+        },
+        {
+          "speaker": "البائع",
+          "ar": "وَمَاذَا تُرِيدُ لِلْمَطْبَخِ ؟",
+          "fr": "Et que voulez-vous pour la cuisine ?"
+        },
+        {
+          "speaker": "المشتري",
+          "ar": "أُرِيدُ فُرْناً وَثَلاجَةً",
+          "fr": "Je veux un four et un frigo."
+        },
+        {
+          "speaker": "البائع",
+          "ar": "وَمَاذَا تُرِيدُ لِلْحَمَّامِ ؟",
+          "fr": "Et que voulez-vous pour la salle de bain ?"
+        },
+        {
+          "speaker": "المشتري",
+          "ar": "أُرِيدُ سَخَّاناً وَمِرْآةً",
+          "fr": "Je veux un chauffe-eau et un miroir."
+        },
+        {
+          "speaker": "البائع",
+          "ar": "هَلْ تُرِيدُ شَيْئاً آخَرَ ؟",
+          "fr": "Voulez-vous autre chose ?"
+        },
+        {
+          "speaker": "المشتري",
+          "ar": "شُكْراً، أُرِيدُ مُشَاهَدَةَ الأَثَاثِ",
+          "fr": "Merci, je voudrais voir les meubles."
+        },
+        {
+          "speaker": "البائع",
+          "ar": "تَفَضَّلْ",
+          "fr": "Allez-y (Je vous en prie)."
+        }
+      ]
+    }
+  ]
+}

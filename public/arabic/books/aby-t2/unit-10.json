@@ -1,0 +1,327 @@
+{
+  "id": 10,
+  "titleAr": "الوحدة العاشرة النظافة",
+  "titleFr": "Unité 10: Propreté",
+  "items": [
+    {
+      "id": "10.1",
+      "type": "dialogue",
+      "titleAr": "المُسْلِم يَهْتَمُّ بِالنَّظافَةِ",
+      "titleFr": "Le musulman se soucie de la propreté",
+      "youtube": "",
+      "pdfPage": 9,
+      "lines": [
+        {
+          "speaker": "جون",
+          "ar": "ما أَطْيَبَ العِطْرَ الَّذِي تَسْتَعْمِلُهُ اليَوْمَ يَا عِمَادُ !",
+          "fr": "Quelle est la bonne odeur du parfum que tu utilises aujourd'hui, Imad !"
+        },
+        {
+          "speaker": "عماد",
+          "ar": "شُكْراً يا جون.",
+          "fr": "Merci, John."
+        },
+        {
+          "speaker": "جون",
+          "ar": "أَراكَ تَهْتَمُّ بِالنَّظافَةِ كَثيراً.",
+          "fr": "Je vois que tu te soucies beaucoup de la propreté."
+        },
+        {
+          "speaker": "عماد",
+          "ar": "حَقًّا ؛ لأَنَّ الإِسْلامَ يَحُثُّ الْمُسْلِمَ عَلَى النَّظافَةِ.",
+          "fr": "Vraiment, car l'Islam exhorte le musulman à la propreté."
+        },
+        {
+          "speaker": "جون",
+          "ar": "هَلْ يَهْتَمُّ كُلُّ الْمُسْلِمِينَ بِالنَّظافَةِ مِثْلَكَ؟",
+          "fr": "Est-ce que tous les musulmans se soucient de la propreté comme toi ?"
+        },
+        {
+          "speaker": "عماد",
+          "ar": "نَعَمْ، لأَنَّ عَلَى كُلِّ مُسْلِمٍ أَنْ يَتَوَضَّأَ ، وَيَغْتَسِلَ، وَيَتَطَهَّرَ.",
+          "fr": "Oui, car chaque musulman doit faire ses ablutions, se laver et se purifier."
+        },
+        {
+          "speaker": "جون",
+          "ar": "هَذِهِ نَظَافَةُ الجِسْمِ، وَمَاذَا عَنْ نَظَافَةِ الْمَلْبَسِ؟",
+          "fr": "C'est la propreté du corps, et qu'en est-il de la propreté des vêtements ?"
+        },
+        {
+          "speaker": "عماد",
+          "ar": "يَهْتَمُّ الْمُسْلِمُ بِنَظَافَةِ المَلْبَسِ، كَمَا يَهْتَمُّ بِنَظَافَةِ الجِسْمِ، فَتَكُونُ ثِيابُهُ نَظيفَةً دائماً.",
+          "fr": "Le musulman se soucie de la propreté des vêtements, comme il se soucie de la propreté du corps, de sorte que ses vêtements soient toujours propres."
+        },
+        {
+          "speaker": "جون",
+          "ar": "فِعْلاً، النَّظافَةُ أَمْرٌ مُهِم عِنْدَكُمْ.",
+          "fr": "En effet, la propreté est une chose importante pour vous."
+        },
+        {
+          "speaker": "عماد",
+          "ar": "وَهُناكَ نَوْعٌ ثَالِثُ مِنَ النَّظافَةِ.",
+          "fr": "Et il y a un troisième type de propreté."
+        },
+        {
+          "speaker": "جون",
+          "ar": "ما هُوَ؟",
+          "fr": "Qu'est-ce que c'est ?"
+        },
+        {
+          "speaker": "عماد",
+          "ar": "نَظَافَةُ القَلْبِ.",
+          "fr": "La propreté du cœur."
+        },
+        {
+          "speaker": "جون",
+          "ar": "ماذا تَقْصِدُ ؟!",
+          "fr": "Que veux-tu dire ?!"
+        },
+        {
+          "speaker": "عماد",
+          "ar": "يَجِبُّ أَنْ يَكُونَ الْمُسْلِمُ نَظِيفَ القَلْبِ، يُحِبُّ الخَيرَ لِأَخِيهِ، كَمَا يُحِبُّهُ لِنَفْسِهِ.",
+          "fr": "Le musulman doit avoir le cœur pur, aimer le bien pour son frère, comme il l'aime pour lui-même."
+        },
+        {
+          "speaker": "جون",
+          "ar": "شُكْراً يا عماد ؛ فَقَد تَعَلَّمْتُ مِنْكَ الْيَوْمَ الكَثِيرَ.",
+          "fr": "Merci, Imad ; j'ai beaucoup appris de toi aujourd'hui."
+        },
+        {
+          "speaker": "عماد",
+          "ar": "عَفْوًا، وَإِلى لقاء.",
+          "fr": "De rien, et à bientôt."
+        }
+      ]
+    },
+    {
+      "id": "10.2",
+      "type": "texte",
+      "titleAr": "الإِسْلامُ وَالطَّهَارَةُ",
+      "titleFr": "L'Islam et la pureté",
+      "youtube": "",
+      "pdfPage": 10,
+      "lines": [
+        {
+          "speaker": "",
+          "ar": "دعا الإِسْلامُ إِلى النَّظافَةِ وَالطَّهَارَةِ. قَالَ تَعالى: ﴿إِنَّ اللَّهَ يُحِبُّ التَّوَّابِينَ وَيُحِبُّ الْمُتَطَهِّرِينَ",
+          "fr": "L'Islam appelle à la propreté et à la pureté. Dieu a dit: ﴿En vérité, Allah aime ceux qui se repentent et aime ceux qui se purifient.﴾"
+        },
+        {
+          "speaker": "",
+          "ar": "وقال : (الطهورُ شَطْرُ الإيمان) . وأَنْزَلَ اللهُ الماءَ مِنَ السَّمَاءِ؛ لِيَتَطَهَّرَ بِهِ الإِنسانُ.",
+          "fr": "Et il a dit: (La pureté est la moitié de la foi). Et Dieu a fait descendre l'eau du ciel; pour que l'homme s'en purifie."
+        },
+        {
+          "speaker": "",
+          "ar": "قالَ تَعالى: ﴿وَيُنَزِّلُ عَلَيْكُمْ مِنْ السَّمَاءِ مَاءً لِيُطَهِّرَكُمْ بِهِ .",
+          "fr": "Dieu a dit: ﴿Et Il fait descendre sur vous du ciel de l'eau, afin de vous purifier par elle.﴾"
+        },
+        {
+          "speaker": "",
+          "ar": "وَحَنَّ الإِسْلَامُ الْمُسْلِمَ عَلى نَظَافَةِ جَسَدِهِ وَمَلْبَسِهِ وَمَسْكَنِهِ، وَالبَيئَةِ الَّتِي يَعِيشُ فيها .",
+          "fr": "Et l'Islam a exhorté le musulman à la propreté de son corps, de ses vêtements, de son logement et de l'environnement dans lequel il vit."
+        },
+        {
+          "speaker": "",
+          "ar": "يَتَوَضَّأُ المُسْلِمُ في اليَوْم خَمْسَ مَرّاتٍ لِلصَّلاةِ . قالَ الرَّسُولُ : لا يَقْبَلُ اللهُ صَلاةً بِغَيْرِ طُهور).",
+          "fr": "Le musulman fait ses ablutions cinq fois par jour pour la prière. Le Messager a dit: (Allah n'accepte pas la prière sans pureté)."
+        },
+        {
+          "speaker": "",
+          "ar": "كَمَا يَتَوَضَّأُ الأَداءِ عِبادَاتٍ أُخْرِى مِثْلِ : قِرَاءَةِ القُرْآنِ، وَالطَّوافِ حَوْلَ البَيْتِ. وَعِنْدَ الوُضُوءِ يَغْسِلُ",
+          "fr": "Il fait également ses ablutions pour accomplir d'autres actes d'adoration tels que: la lecture du Coran et le Tawaf autour de la Maison. Et lors des ablutions, il lave"
+        },
+        {
+          "speaker": "",
+          "ar": "الإِنْسانُ وَجْهَهُ، وَيَدَيْهِ، وَرِجْلَيهِ . قالَ اللهُ تَعالى: ﴿يَا أَيُّهَا الَّذِينَ آمَنُوا إِذَا قُمْتُمْ إِلَى الصَّلَاةِ",
+          "fr": "le visage, les mains et les pieds de l'homme. Dieu a dit: ﴿Ô vous qui croyez! Lorsque vous vous levez pour la prière,"
+        },
+        {
+          "speaker": "",
+          "ar": "فَاغْسِلُوا وُجُوهَكُمْ وَأَيْدِيَكُمْ إِلَى الْمَرَافِقِ وَامْسَحُوا بِرُءُوسِكُمْ وَأَرْجُلَكُمْ إِلَى الْكَعْبَيْنِ . إِنَّ الوُضُوءَ",
+          "fr": "lavez vos visages et vos mains jusqu'aux coudes, et passez vos mains sur vos têtes et vos pieds jusqu'aux chevilles. En vérité, les ablutions"
+        },
+        {
+          "speaker": "",
+          "ar": "نَظَافَةٌ مُسْتَمِرَّةٌ لِلْجِسْمِ، يَتَكَرَّرُ في اليَوْمِ كَثِيراً ؛ فَيُزِيلُ الأَوْساخ.",
+          "fr": "est une propreté continue pour le corps, qui se répète souvent dans la journée; elle élimine la saleté."
+        },
+        {
+          "speaker": "",
+          "ar": "لا يَكْتَفِي الْمُسْلِمُ بِالْوُضُوءِ وَحْدَهُ، بَلْ يُضيفُ إلى ذَلِكَ الغُسْلَ ؛ لِنَظَافَةِ الجِسْمِ كُلِّهِ.",
+          "fr": "Le musulman ne se contente pas des ablutions seules, mais y ajoute le lavage; pour la propreté de tout le corps."
+        },
+        {
+          "speaker": "",
+          "ar": "وَيَغْتَسِلُ الْمُسْلِمُ مِنَ الجَنابَةِ، وَلِصَلاةِ الجُمُعَةِ، وَلِصَلاةِ العيدَيْنِ. قَالَ الرَّسُولُ : (غُسْلُ يَوْمِ",
+          "fr": "Et le musulman se lave de l'impureté majeure, pour la prière du vendredi et pour la prière des deux fêtes. Le Messager a dit: (Le lavage du jour de"
+        },
+        {
+          "speaker": "",
+          "ar": "الجُمُعَةِ وَاجِبٌ عَلى كُلِّ مُحْتَلِم). وَتَغْتَسِلُ المَرْأَةُ إِذا طَهُرَتْ مِنَ الحَيْضِ وَمِنَ النِّفاسِ.",
+          "fr": "Vendredi est obligatoire pour tout pubère). Et la femme se lave lorsqu'elle est purifiée des menstrues et des lochies."
+        },
+        {
+          "speaker": "",
+          "ar": "وَيَهْتَمُّ الْمُسْلِمُ بِنَظَافَةِ ثَوْبِهِ، كَمَا يَهْتَمُّ بِنَظَافَةِ جِسْمِهِ . قَالَ تَعالى: ﴿وَثِيَابَكَ فَطَهِّرْ .",
+          "fr": "Et le musulman se soucie de la propreté de ses vêtements, comme il se soucie de la propreté de son corps. Dieu a dit: ﴿Et tes vêtements, purifie-les.﴾"
+        }
+      ]
+    },
+    {
+      "id": "10.3",
+      "type": "dialogue",
+      "titleAr": "الأَكْلاتُ السَّرِيعَةُ",
+      "titleFr": "Les fast-foods",
+      "youtube": "",
+      "pdfPage": 11,
+      "lines": [
+        {
+          "speaker": "هِنْدٌ",
+          "ar": "نُرِيدُ تَناوُلَ العَشَاءِ اللَّيْلَةَ خَارِجَ البَيْتِ.",
+          "fr": "Nous voulons dîner dehors ce soir."
+        },
+        {
+          "speaker": "بَدْرٌ",
+          "ar": "فِكْرَةٌ مُمْتَازَةٌ، أَنا أُحِبُّ الأَكَلاتِ السَّرِيعَةَ.",
+          "fr": "Excellente idée, j'aime les fast-foods."
+        },
+        {
+          "speaker": "الأَبُ",
+          "ar": "وَلَكِنَّ طَعامَ البَيْتِ أَفْضَلُ ؛ فَهُوَ لَذيدٌ، وَنَظِيفٌ، وَصِحًيّ.",
+          "fr": "Mais la nourriture à la maison est meilleure ; elle est délicieuse, propre et saine."
+        },
+        {
+          "speaker": "الأُمُّ",
+          "ar": "سأُعِدُّ لَكُمُ اللَّيْلَةَ عَشَاءً لَذيذاً .",
+          "fr": "Je vais vous préparer un délicieux dîner ce soir."
+        },
+        {
+          "speaker": "هِنْدٌ",
+          "ar": "لا يا أُمِّي . نَحْنُ نُحِبُّ الأَكَلاتِ السَّرِيعَةَ.",
+          "fr": "Non, maman. Nous aimons les fast-foods."
+        },
+        {
+          "speaker": "الأَبُ",
+          "ar": "إِذَنْ، هَيَّا بِنا نَتَناوَلِ العَشَاءَ اللَّيْلَةَ في الخارج.",
+          "fr": "Alors, allons dîner dehors ce soir."
+        },
+        {
+          "speaker": "هِنْدٌ",
+          "ar": "أَشْعُرُ بآلام شَدِيدَةٍ في بَطْني.",
+          "fr": "Je ressens de fortes douleurs dans mon ventre."
+        },
+        {
+          "speaker": "بَدْرٌ",
+          "ar": "وَأَنا أَيْضاً : آه ! آه ! آه ! بَطْنِي بَطْني.",
+          "fr": "Moi aussi : Ah ! Ah ! Ah ! Mon ventre, mon ventre."
+        },
+        {
+          "speaker": "الأَبُ",
+          "ar": "وَأَنَا كَذلِكَ.",
+          "fr": "Moi aussi."
+        },
+        {
+          "speaker": "الأُمُّ",
+          "ar": "سَأَطْلُبُ سَيَّارَةَ الإِسْعَافِ حالاً . رُبَّما كانَ هَذا تَسَمُّماً .",
+          "fr": "Je vais appeler une ambulance tout de suite. C'est peut-être un empoisonnement."
+        },
+        {
+          "speaker": "الأَبُ",
+          "ar": "لَاحَظْتُ أَنَّ الْمَطْعَمَ غَيْرُ نَظِيفٍ، وَكَذَلِكَ عُمَّالُ المَطْعَمِ.",
+          "fr": "J'ai remarqué que le restaurant n'était pas propre, ni les employés du restaurant."
+        },
+        {
+          "speaker": "الأم",
+          "ar": "وَكَانَتِ المائِدَةُ وَالأَطْباقُ وَالأَكْوابُ مُتَّسِخَةً .",
+          "fr": "Et la table, les assiettes et les tasses étaient sales."
+        },
+        {
+          "speaker": "هِنْدٌ",
+          "ar": "لَنْ أَتَناوَلَ الطَّعَامَ مَرَّةً أُخْرَى خَارِجَ البَيْتِ.",
+          "fr": "Je ne mangerai plus jamais dehors."
+        },
+        {
+          "speaker": "الأم",
+          "ar": "ها هِيَ سَيَّارَةُ الإِسْعَافِ قَدْ وَصَلَتْ.",
+          "fr": "Voilà l'ambulance qui arrive."
+        }
+      ]
+    },
+    {
+      "id": "10.4",
+      "type": "texte",
+      "titleAr": "نَظَافَةُ البيئة",
+      "titleFr": "Néttoyage de l'environnement",
+      "youtube": "",
+      "pdfPage": 12,
+      "lines": [
+        {
+          "speaker": "",
+          "ar": "النَّظافَةُ نَوعان؛ نَظَافَةٌ خَاصَّةٌ، وَنَظَافَةٌ عامَّةٌ. فَالنَّظافَةُ الخاصَّةُ نَظَافَةُ بِسْمِ الإِنْسَانِ وَثَوْبِهِ",
+          "fr": "Il existe deux types de propreté : la propreté privée et la propreté publique. La propreté privée est la propreté du corps, des vêtements,"
+        },
+        {
+          "speaker": "",
+          "ar": "وَطَعَامِهِ وَبَيْتِهِ. أَمَّا النَّظافَةُ العامَّةُ، فَنَظَافَةُ الأَماكِنِ العامَّةِ، كَالشَّوارِعِ وَالحَدَائِقِ. وَتَقَعُ مَسْؤولِيَّةُ",
+          "fr": "de la nourriture et de la maison. Quant à la propreté publique, c'est la propreté des lieux publics, comme les rues et les jardins. La responsabilité incombe"
+        },
+        {
+          "speaker": "",
+          "ar": "النظافة الخاصة على الأفراد .",
+          "fr": "La propreté privée incombe aux individus."
+        },
+        {
+          "speaker": "",
+          "ar": "أَمَّا مَسْؤولِيَّةُ النَّظافَةِ العامَّةِ ، فَتَقَعُ على الأفراد والحكومات.",
+          "fr": "Quant à la responsabilité de la propreté publique, elle incombe aux individus et aux gouvernements."
+        },
+        {
+          "speaker": "",
+          "ar": "يُقاسُ تَقَدُّمُ الدُّوَلِ اليَوْمَ بِالنَّظَافَةِ، فَإِذا كَانَتِ الدَّوْلَةُ وَسُكَّانُهَا يَهْتَمُونَ بِالنَّظافَةِ، فَهِيَ دَوْلَةٌ",
+          "fr": "Le progrès des pays se mesure aujourd'hui à la propreté. Si un pays et ses habitants se soucient de la propreté, c'est un pays"
+        },
+        {
+          "speaker": "",
+          "ar": "مُتَحَضّرَةٌ، وإذا كانَتِ الدَّوْلَةُ وَسُكَّانُها لا يَهْتَمُونَ بِالنَّظافَةِ، فَهِيَ دَوْلَةٌ مُتَخَلَّفَةٌ.",
+          "fr": "civilisé, et si un pays et ses habitants ne se soucient pas de la propreté, c'est un pays arriéré."
+        },
+        {
+          "speaker": "",
+          "ar": "وَهُناكَ دُوَلٌ مَشْهُورَةٌ في العالَمِ بِالنَّظافَةِ، وَهْيَ قَليلَةٌ مِثْلُ ماليزيا وَسَنْغَافُورَةَ. وَهُناكَ دُوَلٌ أُخْرِى",
+          "fr": "Il existe des pays célèbres dans le monde pour leur propreté, et ils sont peu nombreux, comme la Malaisie et Singapour. Et il y a d'autres pays"
+        },
+        {
+          "speaker": "",
+          "ar": "مَشْهُورَةٌ بِالقَدَارَةِ، وَهِي كَثِيرَةٌ.",
+          "fr": "célèbres pour leur saleté, et ils sont nombreux."
+        },
+        {
+          "speaker": "",
+          "ar": "تُنْفِقُ بعضُ الدُّوَلِ أمْوالاً كَثِيرَةً عَلى النَّظافَةِ ، وَنُشَاهِدُ الآنَ فِي كُلِّ مَدِينَةٍ عُمَّالَ النَّظافَةِ،",
+          "fr": "Certains pays dépensent beaucoup d'argent pour la propreté, et nous voyons maintenant dans chaque ville des agents de propreté,"
+        },
+        {
+          "speaker": "",
+          "ar": "يَجوبونَ الشَّوارِعَ ، يَحْمِلُونَ حاوياتِ النَّظافَةِ، وَيَضَعُونَها في سَيّاراتٍ خاصَّةٍ ، تَحْمِلُهَا خَارِجَ المَدِينَةِ ؛",
+          "fr": "qui parcourent les rues, transportent des conteneurs de propreté et les placent dans des voitures spéciales, qui les transportent à l'extérieur de la ville ;"
+        },
+        {
+          "speaker": "",
+          "ar": "لِتُحْرَقَ وَيُشَارِكُ المُواطِنُ الدَّولَةَ في الاهْتِمَامِ بِالنَّظافَةِ، حَيْثُ يَضَعُ النفاياتِ الخَاصَّةَ بِبَيْتِهِ،",
+          "fr": "pour être brûlés. Le citoyen participe à l'intérêt de l'État pour la propreté, en plaçant les déchets de sa maison,"
+        },
+        {
+          "speaker": "",
+          "ar": "وَالَّتِي يَجِدُها في الشَّوارِعِ وَالحَدائِقِ في الحاوياتِ، وَهَذا ما دعا إِلَيْهِ الرَّسُولُ ﷺ فِي قَوْلِهِ :",
+          "fr": "qu'il trouve dans les rues et les jardins dans des conteneurs, et c'est ce à quoi le Messager a appelé dans sa parole :"
+        },
+        {
+          "speaker": "",
+          "ar": "(إماطَةُ الأَذَى عَنِ الطَّرِيقِ صَدَقَةٌ).",
+          "fr": "(Enlever le mal du chemin est une charité)."
+        }
+      ]
+    }
+  ]
+}

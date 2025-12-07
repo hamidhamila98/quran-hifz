@@ -1,0 +1,227 @@
+{
+  "id": 7,
+  "titleAr": "الدراسة",
+  "titleFr": "Les Études",
+  "items": [
+    {
+      "id": "7.1",
+      "type": "dialogue",
+      "titleAr": "",
+      "titleFr": "",
+      "youtube": "https://www.youtube.com/embed/f3owgXyjLDw",
+      "pdfPage": null,
+      "lines": [
+        {
+          "speaker": "غانم",
+          "ar": "انْظُرْ إِلَى اللَّوْحَةِ، اقْرَأِ الْجَدْوَلَ الدِّرَاسِيَّ",
+          "fr": "Regarde le tableau, lis l'emploi du temps."
+        },
+        {
+          "speaker": "غالب",
+          "ar": "الدِّرَاسَةُ خَمْسَةُ أَيَّامٍ فِي الأُسْبُوعِ",
+          "fr": "Les cours sont cinq jours par semaine."
+        },
+        {
+          "speaker": "غانم",
+          "ar": "نَعَمْ، يَوْمُ السَّبْتِ، وَيَوْمُ الأَحَدِ، وَيَوْمُ الاثْنَيْنِ، وَيَوْمُ الثُّلاثَاءِ، وَيَوْمُ الأَرْبِعَاءِ",
+          "fr": "Oui, samedi, dimanche, lundi, mardi et mercredi."
+        },
+        {
+          "speaker": "غالب",
+          "ar": "الْعُطْلَةُ يَوْمُ الْخَمِيسِ وَيَوْمُ الْجُمُعَةِ",
+          "fr": "Le congé est jeudi et vendredi."
+        },
+        {
+          "speaker": "غانم",
+          "ar": "اكْتُبِ الْمَوَادَّ الدِّرَاسِيَّةَ",
+          "fr": "Écris les matières scolaires."
+        },
+        {
+          "speaker": "غالب",
+          "ar": "الثَّقَافَةُ الإِسْلامِيَّةُ، وَاللُّغَةُ الْعَرَبِيَّةُ، وَالرِّيَاضِيَّاتُ، وَالْعُلُومُ، وَالْحَاسُوبُ",
+          "fr": "La culture islamique, l'arabe, les maths, les sciences, l'informatique."
+        },
+        {
+          "speaker": "غانم",
+          "ar": "مَتَى تَبْدَأُ الاخْتِبَارَاتُ ؟",
+          "fr": "Quand commencent les examens ?"
+        },
+        {
+          "speaker": "غالب",
+          "ar": "فِي شَهْرِ شَعْبَانَ",
+          "fr": "Au mois de Cha'ban."
+        },
+        {
+          "speaker": "غانم",
+          "ar": "وَمَتَى يَنْ تَهِي الْعَامُ الدِّرَاسِيُّ ؟",
+          "fr": "Et quand finit l'année scolaire ?"
+        },
+        {
+          "speaker": "غالب",
+          "ar": "فِي شَهْرِ رَمَضَانَ",
+          "fr": "Au mois de Ramadan."
+        },
+        {
+          "speaker": "غانم",
+          "ar": "الْعُطْلَةُ ثَلاثَةُ أَشْهُرٍ",
+          "fr": "Les vacances durent trois mois."
+        },
+        {
+          "speaker": "غالب",
+          "ar": "الْحَمْدُ للهِ، الْعُطْلَةُ طَوِيلَةٌ\nبَدَأَتِ الْحِصَّةُ، وَجَاءَ الْمُعَلِّمُ\nهَيَّا بِنَا إِلَى الصَّفِّ",
+          "fr": "Louange à Dieu, les vacances sont longues. Le cours a commencé, et le professeur est arrivé. Allons en classe."
+        },
+        {
+          "speaker": "غانم",
+          "ar": "هَيَّا بِنَا",
+          "fr": "Allons-y."
+        }
+      ]
+    },
+    {
+      "id": "7.2",
+      "type": "dialogue",
+      "titleAr": "",
+      "titleFr": "",
+      "youtube": "https://www.youtube.com/embed/NY75tONaxs0",
+      "pdfPage": null,
+      "lines": [
+        {
+          "speaker": "ندى",
+          "ar": "السَّلامُ عَلَيْكُم",
+          "fr": "Que la paix soit sur vous."
+        },
+        {
+          "speaker": "إلهام",
+          "ar": "وَعَلَيْكُمُ السَّلام",
+          "fr": "Et sur vous la paix."
+        },
+        {
+          "speaker": "ندى",
+          "ar": "اسْمِي نَدَى، أَنَا سُورِيَّةٌ",
+          "fr": "Je m'appelle Nada, je suis Syrienne."
+        },
+        {
+          "speaker": "إلهام",
+          "ar": "اسْمِي إِلْهَام، أَنَا سُعُودِيَّةٌ",
+          "fr": "Je m'appelle Ilham, je suis Saoudienne."
+        },
+        {
+          "speaker": "ندى",
+          "ar": "أَنَا طَالِبَةٌ فِي جَامِعَةِ دِمَشْقَ",
+          "fr": "Je suis étudiante à l'Université de Damas."
+        },
+        {
+          "speaker": "إلهام",
+          "ar": "أَنَا طَالِبَةٌ فِي جَامِعَةِ أُمِّ الْقُرَى",
+          "fr": "Je suis étudiante à l'Université Umm Al-Qura."
+        },
+        {
+          "speaker": "ندى",
+          "ar": "فِي أَيِّ كُلِّيَّةٍ تَدْرُسِينَ ؟",
+          "fr": "Dans quelle faculté étudies-tu ?"
+        },
+        {
+          "speaker": "إلهام",
+          "ar": "أَدْرُسُ فِي كُلِّيَّةِ التَّرْبِيَةِ\nوَفِي أَيِّ كُلِّيَّةٍ تَدْرُسِينَ أَنْتِ ؟",
+          "fr": "J'étudie à la faculté de pédagogie. Et dans quelle faculté étudies-tu toi ?"
+        },
+        {
+          "speaker": "ندى",
+          "ar": "أَدْرُسُ فِي كُلِّيَّةِ الطِّبِّ",
+          "fr": "J'étudie à la faculté de médecine."
+        },
+        {
+          "speaker": "إلهام",
+          "ar": "سَأَكُونُ مُدَرِّسَةً إِنْ شَاءَ الله",
+          "fr": "Je serai enseignante, inchallah."
+        },
+        {
+          "speaker": "ندى",
+          "ar": "وَسَأَكُونُ طَبِيبَةً إِنْ شَاءَ الله",
+          "fr": "Et je serai médecin, inchallah."
+        }
+      ]
+    },
+    {
+      "id": "7.3",
+      "type": "dialogue",
+      "titleAr": "",
+      "titleFr": "",
+      "youtube": "https://www.youtube.com/embed/NY75tONaxs0",
+      "pdfPage": null,
+      "lines": [
+        {
+          "speaker": "قاسم",
+          "ar": "أَيْنَ تَذْهَبُ يَا غَسَّانُ ؟",
+          "fr": "Où vas-tu Ghassan ?"
+        },
+        {
+          "speaker": "غسان",
+          "ar": "أَذْهَبُ إِلَى الْمَدْرَسَةِ",
+          "fr": "Je vais à l'école."
+        },
+        {
+          "speaker": "قاسم",
+          "ar": "الْوَقْتُ مُبَكِّرٌ. السَّاعَةُ الآنَ السَّادِسَةُ صَبَاحاً",
+          "fr": "Il est tôt. Il est maintenant six heures du matin."
+        },
+        {
+          "speaker": "غسان",
+          "ar": "الْمَدْرَسَةُ بَعِيدَةٌ عَنِ الْبَيْتِ",
+          "fr": "L'école est loin de la maison."
+        },
+        {
+          "speaker": "قاسم",
+          "ar": "مَتَى يَبْدَأُ الْيَوْمُ الدِّرَاسِيُّ ؟",
+          "fr": "Quand commence la journée scolaire ?"
+        },
+        {
+          "speaker": "غسان",
+          "ar": "يَبْدَأُ السَّاعَةَ السَّابِعَةَ صَبَاحاً",
+          "fr": "Elle commence à sept heures du matin."
+        },
+        {
+          "speaker": "قاسم",
+          "ar": "هَلْ تَذْهَبُ بِالْحَافِلَةِ ؟",
+          "fr": "Y vas-tu en bus ?"
+        },
+        {
+          "speaker": "غسان",
+          "ar": "لا، أَذْهَبُ بِالسَّيَّارَةِ",
+          "fr": "Non, j'y vais en voiture."
+        },
+        {
+          "speaker": "قاسم",
+          "ar": "مَتَى يَنْ تَهِي الْيَوْمُ الدِّرَاسِيُّ ؟",
+          "fr": "Quand finit la journée scolaire ?"
+        },
+        {
+          "speaker": "غسان",
+          "ar": "يَنْ تَهِي السَّاعَةَ الْوَاحِدَةَ ظُهْراً",
+          "fr": "Elle finit à une heure de l'après-midi."
+        },
+        {
+          "speaker": "قاسم",
+          "ar": "كَمْ حِصَّةً تَدْرُسُ فِي الْيَوْمِ ؟",
+          "fr": "Combien de cours étudies-tu par jour ?"
+        },
+        {
+          "speaker": "غسان",
+          "ar": "أَدْرُسُ سِتَّ حِصَصٍ فِي الْيَوْمِ",
+          "fr": "J'étudie six cours par jour."
+        },
+        {
+          "speaker": "قاسم",
+          "ar": "مَاذَا تَفْعَلُ فِي الاسْتِرَاحَةِ ؟",
+          "fr": "Que fais-tu pendant la récréation ?"
+        },
+        {
+          "speaker": "غسان",
+          "ar": "أَذْهَبُ إِلَى الْمَكْتَبَةِ أَوْ إِلَى الْمُخْتَبَرِ",
+          "fr": "Je vais à la bibliothèque ou au laboratoire."
+        }
+      ]
+    }
+  ]
+}

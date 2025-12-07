@@ -1,0 +1,242 @@
+{
+  "id": 1,
+  "titleAr": "الوحدة الأولى العناية بالصحة",
+  "titleFr": "Unité 1: Soins de santé",
+  "items": [
+    {
+      "id": "1.1",
+      "type": "dialogue",
+      "titleAr": "في العَسَلِ شِفاء",
+      "titleFr": "Le miel est une guérison",
+      "youtube": "",
+      "pdfPage": 4,
+      "lines": [
+        {
+          "speaker": "حازم",
+          "ar": "أَمَرِيضُ أَنْتَ؟",
+          "fr": "Êtes-vous malade ?"
+        },
+        {
+          "speaker": "عامر",
+          "ar": "نَعَمْ، أَشْعُرُ بِآلامٍ شَدِيدَةٍ فِي بَطْنِي.",
+          "fr": "Oui, je ressens de fortes douleurs dans mon ventre."
+        },
+        {
+          "speaker": "حازم",
+          "ar": "هَلْ ذَهَبْتَ إِلَى الطَّبِيبِ؟!",
+          "fr": "Êtes-vous allé chez le médecin ?!"
+        },
+        {
+          "speaker": "عامر",
+          "ar": "لا ، لَمْ أَذْهَبْ إِلى الطَّبِيبِ، وَلَمْ أَتَناوَلْ أَيَّ دَواء.",
+          "fr": "Non, je ne suis pas allé chez le médecin et je n'ai pris aucun médicament."
+        },
+        {
+          "speaker": "حازم",
+          "ar": "هَلْ سَمِعْتَ قِصَّةَ الصَّحابِيِّ الَّذِي عَالَجَهُ الرَّسُولُ ؟",
+          "fr": "Avez-vous entendu l'histoire du compagnon que le Messager a soigné ?"
+        },
+        {
+          "speaker": "عامر",
+          "ar": "لا ، لَمْ أَسْمَعْ بِها . مِمَّ اشْتَكَى الصَّحَابِيُّ؟",
+          "fr": "Non, je n'en ai pas entendu parler. De quoi se plaignait le compagnon ?"
+        },
+        {
+          "speaker": "حازم",
+          "ar": "اشْتَكَى مِنْ بَطْنِهِ.",
+          "fr": "Il se plaignait de son ventre."
+        },
+        {
+          "speaker": "عامر",
+          "ar": "وَكَيفَ عَالَجَهُ الرَّسُولُ ؟",
+          "fr": "Et comment le Messager l'a-t-il soigné ?"
+        },
+        {
+          "speaker": "حازم",
+          "ar": "أَمَرَ أَخَاهُ أَنْ يَسْقِيَهُ عَسَلاً.",
+          "fr": "Il a ordonné à son frère de lui donner du miel à boire."
+        },
+        {
+          "speaker": "عامر",
+          "ar": "وَهَلْ شُفِيَ؟",
+          "fr": "Et a-t-il guéri ?"
+        },
+        {
+          "speaker": "حازم",
+          "ar": "نَعَمْ، بَعْدَ أَنْ سَقَاهُ ثَلَاثَ مَرَّاتٍ.",
+          "fr": "Oui, après lui avoir donné à boire trois fois."
+        },
+        {
+          "speaker": "عامر",
+          "ar": "العَسَلُ ؟! سُبْحانَ اللهِ!",
+          "fr": "Du miel ?! Gloire à Dieu !"
+        },
+        {
+          "speaker": "حازم",
+          "ar": "نَعَمْ، العَسَلُ. قال تعالى: ﴿فِيْهِ شِفَاءٌ لِلنَّاسِ .",
+          "fr": "Oui, le miel. Dieu Tout-Puissant a dit : \"Il y a une guérison pour les gens en lui.\""
+        },
+        {
+          "speaker": "عامر",
+          "ar": "سَأَتَناوَلُ العَسَلَ مِثْلَ هَذا الصَّحابِيِّ.",
+          "fr": "Je vais prendre du miel comme ce compagnon."
+        },
+        {
+          "speaker": "حازم",
+          "ar": "توجَدُ مَحَلاتٌ لِبَيْعِ العَسَلِ فِي السَّوقِ الْمَرْكَزِيِّ.",
+          "fr": "Il y a des magasins qui vendent du miel au marché central."
+        },
+        {
+          "speaker": "عامر",
+          "ar": "سَأَذْهَبُ الآنَ إِلى هُناكَ، وَأَشْتَرِي العَسَلَ.",
+          "fr": "Je vais y aller maintenant et acheter du miel."
+        },
+        {
+          "speaker": "حازم",
+          "ar": "شَفاكَ اللهُ.",
+          "fr": "Que Dieu te guérisse."
+        },
+        {
+          "speaker": "عامر",
+          "ar": "جَزَاكَ اللهُ خَيْراً .",
+          "fr": "Que Dieu vous récompense par le bien."
+        }
+      ]
+    },
+    {
+      "id": "1.2",
+      "type": "texte",
+      "titleAr": "زينب ومريم صديقتان",
+      "titleFr": "Zaynab et Maryam sont amies",
+      "youtube": "",
+      "pdfPage": 5,
+      "lines": [
+        {
+          "speaker": "",
+          "ar": "زَيْنَبُ وَمَرْيَمُ صَدِيقَتانِ، تَتَشَابَهَانِ في أَشْيَاءَ كَثِيرةٍ؛ فَهُما تَسْكُنانِ في حَيٍّ وَاحِدٍ، وَتَدْرُسانِ في جَامِعَةٍ وَاحِدَةٍ، وَلَكِنَّهُما تَخْتَلِفانِ في أَمْرِ آخَرَ؛ فَزَيْنَبُ نَحِيفَةٌ جِدًا ، وَمَرْيَمُ سَمِينَةٌ جِدًا . تُرِيدُ زَيْنَبُ أَنْ تَكُونَ سَمِينَةً، وَلَكِنَّها لا تَسْتَطِيعُ. وَتُرِيدُ مَرْيَمُ أَنْ تَكونَ نَحِيفَةً، وَلَكِنَّها لا تَسْتَطِيعُ.",
+          "fr": "Zaynab et Maryam sont amies, elles se ressemblent en beaucoup de choses ; elles vivent dans le même quartier et étudient dans la même université, mais elles diffèrent sur un autre point ; Zaynab est très mince, et Maryam est très grosse. Zaynab veut être grosse, mais elle ne peut pas. Maryam veut être mince, mais elle ne peut pas."
+        },
+        {
+          "speaker": "",
+          "ar": "زَيْنَبُ تُفَكِّرُ كثيراً في هَذِهِ الْمُشْكِلَةِ ، ماذا تَفْعَلُ؟ . وَزْنُها الآنَ خَمْسَةٌ وخَمسُونَ كَيْلاً. كَيْفَ تَزِيدُ وَزْنَهَا؟ يَجِبُ أَنْ يَصِلَ وَزْنُها إِلى سَبعين كيلاً . حاوَلَتْ زَيْنَبُ، وَحاوَلَتْ، وَلَكِنَّها لَمْ تَنْجَحْ.",
+          "fr": "Zaynab réfléchit beaucoup à ce problème, que faire ? Son poids est maintenant de cinquante-cinq kilos. Comment prendre du poids ? Son poids doit atteindre soixante-dix kilos. Zaynab a essayé, et a essayé, mais elle n'a pas réussi."
+        },
+        {
+          "speaker": "",
+          "ar": "أَخَذَتْ زَيْنَبُ تَتَناوَلُ كَثيراً مِنَ الطَّعام : تَأْكُلُ اللَّحْمَ وَالخُبْزَ وَالبَيْضَ وَالأَرْزَّ وَالْجُبْنَ وَالعَسَلَ وَالْحَلْوَى وَالْمُرَبِّي، وَتَشْرَبُ الحَلِيبَ، وَعَصِيرَ الْفَواكِهِ . لَمْ تُمارِسُ زَيْنَبُ الرِّياضَةَ، وَرَغْمَ ذَلِكَ ظَلَّتْ نَحِيفَةً . ماذا تَفْعَلُ؟ أَكَلَتْ كَثِيراً ، وَشَرِبَتْ كَثِيراً، وَلَكِنَّهَا ظَلَّتْ نَحِيفَةً.",
+          "fr": "Zaynab a commencé à manger beaucoup de nourriture : elle mange de la viande, du pain, des œufs, du riz, du fromage, du miel, des bonbons et de la confiture, et elle boit du lait et du jus de fruits. Zaynab n'a pas fait de sport, et malgré cela, elle est restée mince. Que faire ? Elle a beaucoup mangé, et elle a beaucoup bu, mais elle est restée mince."
+        },
+        {
+          "speaker": "",
+          "ar": "تَخْتَلِفُ مُشْكِلَةُ مَرْيَمَ عَنْ مُشْكِلَةِ زَيْنَبَ؛ فَمَرْيَمُ سَمِينَةٌ جِدًا ، وَتُريدُ أَنْ تَكُونَ نَحِيفَةً. وَزْنُهَا الآن تسعُونَ كَيْلاً، كَيفَ يَنْقُصُ وَزْنُهَا ؟ يَجِبُ أَنْ يَصِلَ وَزْنُها إِلَى سَبْعِينَ كِيلاً. تَرَكَتْ مَرْيمُ السُّكَّرِيَّاتِ وَالنَّشَوِيّاتِ، وَمَارَسَتِ الرِّيَاضَةَ شَهْراً، لَمْ تَسْتَطِعْ مَريَمُ، فَهِيَ تُحِبُّ الأَكْلَ. أَخَذَتْ مَرِيَمُ تَأْكُلُ كَثِيراً، فَزادَ وَزْنُهَا ، وَلَم يَنْقُصْ.",
+          "fr": "Le problème de Maryam est différent du problème de Zaynab ; Maryam est très grosse, et elle veut être mince. Son poids est maintenant de quatre-vingt-dix kilos, comment perdre du poids ? Son poids doit atteindre soixante-dix kilos. Maryam a arrêté les sucres et les féculents, et a fait du sport pendant un mois, Maryam n'a pas pu, car elle aime manger. Maryam a commencé à manger beaucoup, son poids a augmenté, et n'a pas diminué."
+        }
+      ]
+    },
+    {
+      "id": "1.3",
+      "type": "dialogue",
+      "titleAr": "عند الطبيب",
+      "titleFr": "Chez le médecin",
+      "youtube": "",
+      "pdfPage": 6,
+      "lines": [
+        {
+          "speaker": "الطبيب",
+          "ar": "الضَّغْطُ مُرْتَفِعُ، والسُّكَّرِيُّ أَيْضاً. ماذا حَدَثَ؟",
+          "fr": "Docteur: Votre tension est élevée, et votre taux de sucre aussi. Que s'est-il passé ?"
+        },
+        {
+          "speaker": "المريض",
+          "ar": "تَناوَلْتُ دَواءَ الضَّغْطِ، وَدَواءَ السُّكَّرِي.",
+          "fr": "Patient: J'ai pris mes médicaments pour la tension et le diabète."
+        },
+        {
+          "speaker": "الطبيب",
+          "ar": "أَعْتَقِدُ أَنَّكَ لَمْ تَتَّبِعِ الحِمْيَةَ.",
+          "fr": "Docteur: Je pense que vous n'avez pas suivi le régime."
+        },
+        {
+          "speaker": "المريض",
+          "ar": "هذا صَحِيحٌ، فَقَدْ تَنَاوَلْتُ كَثِيراً مِنَ السُّكَرِيَّاتِ والدهون والنَّشَوِيَّاتِ.",
+          "fr": "Patient: C'est vrai, j'ai consommé beaucoup de sucres, de graisses et de féculents."
+        },
+        {
+          "speaker": "الطَّبيب",
+          "ar": "وأَعْتَقِدُ أَنَّكَ لَمْ تُمَارِسِ الرِّيَاضَةَ أَيْضاً.",
+          "fr": "Docteur: Et je pense que vous n'avez pas fait de sport non plus."
+        },
+        {
+          "speaker": "المريض",
+          "ar": "حاوَلْتُ ذَلِكَ، وَلَكِنْ لَمْ أَسْتَطِعْ، فَأَنا مَشْغول دائماً.",
+          "fr": "Patient: J'ai essayé, mais je n'ai pas pu, je suis toujours occupé."
+        },
+        {
+          "speaker": "الطبيب",
+          "ar": "حالَتُكَ خَطيرَةٌ. لابُدَّ مِنَ الحِمْيَةِ، وَلابُدَّ مِنَ الرِّيَاضَةِ. الدَّواءُ وَحْدَهُ لا يَكْفِي.",
+          "fr": "Docteur: Votre état est grave. Il faut absolument suivre un régime et faire du sport. Le médicament seul ne suffit pas."
+        },
+        {
+          "speaker": "المريض",
+          "ar": "ماذا أَفْعَلُ يا دكتور؟",
+          "fr": "Patient: Que dois-je faire, docteur ?"
+        },
+        {
+          "speaker": "الطبيب",
+          "ar": "اتَّبِعِ الحِمْيَةَ، ومارِسِ الرِّيَاضَةَ، وَتَناوَلِ الدَّواءَ، وَقَابِلْنِي بَعْدَ شَهْرٍ.",
+          "fr": "Docteur: Suivez le régime, faites du sport, prenez vos médicaments, et revenez me voir dans un mois."
+        },
+        {
+          "speaker": "الطَّبيب",
+          "ar": "الضَّغْطُ عادِيٌّ، وكذلِكَ السُّكَّرِيُّ. ما شاءَ الله! ماذا فَعَلْتَ؟",
+          "fr": "Docteur: Votre tension est normale, et votre taux de sucre aussi. Masha Allah ! Qu'avez-vous fait ?"
+        },
+        {
+          "speaker": "المريض",
+          "ar": "اتَّبَعْتُ الحِمْيَةَ، ومارَسْتُ الرِّياضة، وتناوَلْتُ الدَّواء.",
+          "fr": "Patient: J'ai suivi le régime, j'ai fait du sport et j'ai pris mes médicaments."
+        },
+        {
+          "speaker": "الطبيب",
+          "ar": "أَحْسَنْتَ. قَابِلْنِي بَعْدَ سِتَّةِ أَشْهُرٍ.",
+          "fr": "Docteur: Excellent. Revenez me voir dans six mois."
+        },
+        {
+          "speaker": "المريض",
+          "ar": "إن شاء الله، وجزاك الله خيراً.",
+          "fr": "Patient: Si Dieu le veut, et que Dieu vous récompense."
+        }
+      ]
+    },
+    {
+      "id": "1.4",
+      "type": "texte",
+      "titleAr": "الصحة بين الماضي والحاضر",
+      "titleFr": "La santé entre le passé et le présent",
+      "youtube": "",
+      "pdfPage": 7,
+      "lines": [
+        {
+          "speaker": "",
+          "ar": "كَانَتْ عَلامَةُ الصِّحَّةِ - في الماضي - أَنْ يَكونَ الإِنْسانُ سَمِيناً، كَثير اللَّحْمِ والشَّحْمِ. فَالإِنْسانُ السَّمِينُ\nهُوَ الصَّحِيحُ، والإنْسانُ النَّحيفُ هُوَ المريضُ. وكانَ النَّاسُ يَأْكُلُونَ كَثيراً ، إذا وَجَدُوا الطَّعَامَ. وَكَانَ الرِّجَالُ\nيُفَضّلون الزواج بِالْمَرْأَةِ السَّمِينَةِ ، ولا يُحِبّونَ الزَّوَاجَ بِالْمَرْأَةِ النَّحِيفَةِ.",
+          "fr": "Dans le passé, un signe de santé était qu'une personne soit grosse, avec beaucoup de viande et de graisse. La personne grosse était considérée comme saine, et la personne maigre était considérée comme malade. Les gens mangeaient beaucoup quand ils trouvaient de la nourriture. Et les hommes préféraient épouser une femme grosse et n'aimaient pas épouser une femme maigre."
+        },
+        {
+          "speaker": "",
+          "ar": "تَقَدَّمَ الطَّبُّ كَثيراً الآن، وظَهَرَ أَنَّ هُناكَ أَمْراضاً تُصِيبُ الشَّخْصَ السَّمِينَ، وَهِيَ أَمْرَاضٌ خَطيَرَةٌ، مِثْلُ :\nأَمْرَاضِ القَلْبِ ، والسُّكَّرِيّ، وضَغْطِ الدَّمِ. لَقَدْ أَصْبَحَتِ البَدانَةُ - اليومَ - عَلامَةً عَلَى الْمَرَضِ، وَأَخَذَ النَّاسُ\nيَتَّبِعُونَ الحِمْيَةَ، فَيَتَناوَلُونَ طَعاماً قَليلاً، ويَبْتَعِدُونَ عَنِ السُّكَّرِيّاتِ والدُّهونِ والنَّشَوِيّاتِ.",
+          "fr": "La médecine a beaucoup progressé maintenant, et il est apparu qu'il existe des maladies qui affectent la personne grosse, et ce sont des maladies graves, telles que :\nles maladies cardiaques, le diabète et l'hypertension artérielle. L'obésité est devenue - aujourd'hui - un signe de maladie, et les gens ont commencé à suivre un régime, ils mangent peu de nourriture et évitent les glucides, les graisses et les féculents."
+        },
+        {
+          "speaker": "",
+          "ar": "وأَصْبَحَ الأَطِبّاءُ يُحَذِّرُونَ النَّاسَ مِنَ الطَّعام الأَبْيَضِ، والحليب كاملِ الدَّسَمِ. قَائِلِينَ: ابْتَعِدْ عَنِ السُّكَّرِ.\nضَعْ قَليلاً مِنْهُ فِي الطَّعام . لا تَأْكُلِ الْخُبْزَ الأَبْيَضَ ، كُلِ الْخُبْزَ الأَسْمَرَ، لَا تَأْكُلِ الْأَرُنَّ الْأَبْيَضَ، كُلِ\nالأَرنَّ الأَسْمَرَ . وَأَصْبَحَ النَّاسُ يَتَّبِعُونَ الحِمْيَةَ، فَيَأْكُلُونَ قَلِيلاً مِنَ اللَّحْمِ الْأَحْمَرِ والبَيْضِ، وَيَتَناوَلُونَ\nكَثِيراً مِنَ السَّمَكِ والدَّجاج والخضراوات والفواكه.",
+          "fr": "Les médecins ont commencé à mettre en garde les gens contre les aliments blancs et le lait entier. En disant : Éloignez-vous du sucre.\nMettez-en peu dans la nourriture. Ne mangez pas de pain blanc, mangez du pain complet, ne mangez pas de riz blanc, mangez du riz complet. Les gens ont commencé à suivre un régime, ils mangent peu de viande rouge et d'œufs, et ils mangent beaucoup de poisson, de poulet, de légumes et de fruits."
+        },
+        {
+          "speaker": "",
+          "ar": "دعا الإسلام إلى الْحِمْيَةِ؛ لأَنَّ الأَكْلَ الكَثيرَ يُصِيبُ الإِنْسانَ بالبَدانَةِ . قَالَ تَعَالَى: ﴿وَكُلُوا وَاشْرَبُوا\nوَلَا تُسْرِفُوا إِنَّهُ لا يُحِبُّ الْمُسْرِفِينَ﴾ [الأعراف: ۳۱] وقال الرسول ﷺ : «مَا مَلَأَ آدَمِيٌّ وَعَاءً شَرّاً مِنْ\nبَطْنِهِ، بِحَسْبِ ابْنِ آدَمَ أَكَلاتٌ يُقِمْنَ صُلْبَهُ، فَإِنْ كَانَ لا محَالَةَ، فَثُلُثٌ لِطَعَامِهِ، وَثُلُثٌ لِشَرابِهِ، وَثُلُثُ\nلِنَفْسِهِ».",
+          "fr": "L'Islam appelle au régime ; car manger beaucoup rend l'homme obèse. Dieu Tout-Puissant a dit : « Mangez et buvez, et ne gaspillez pas, car Il n'aime pas ceux qui gaspillent » [Al-A'raf : 31] Et le Messager d'Allah ﷺ a dit : « L'homme ne remplit pas de récipient pire que son ventre, il suffit au fils d'Adam de quelques bouchées pour se nourrir, et s'il ne peut s'en empêcher, alors un tiers pour sa nourriture, un tiers pour sa boisson et un tiers pour lui-même »."
+        }
+      ]
+    }
+  ]
+}

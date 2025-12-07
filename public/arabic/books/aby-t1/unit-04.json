@@ -1,0 +1,202 @@
+{
+  "id": 4,
+  "titleAr": "الحياة اليومية",
+  "titleFr": "Vie Quotidienne",
+  "items": [
+    {
+      "id": "4.1",
+      "type": "dialogue",
+      "titleAr": "",
+      "titleFr": "",
+      "youtube": "https://www.youtube.com/embed/-wWppSok6gc",
+      "pdfPage": null,
+      "lines": [
+        {
+          "speaker": "طارق",
+          "ar": "مَتَى تَسْتَيْقِظُ ؟",
+          "fr": "Quand te réveilles-tu ?"
+        },
+        {
+          "speaker": "طاهر",
+          "ar": "أَسْتَيْقِظُ عِنْدَ الْفَجْرِ",
+          "fr": "Je me réveille à l'aube."
+        },
+        {
+          "speaker": "طارق",
+          "ar": "أَيْنَ تُصَلِّي الْفَجْرَ ؟",
+          "fr": "Où pries-tu le Fajr ?"
+        },
+        {
+          "speaker": "طاهر",
+          "ar": "أُصَلِّي الْفَجْرَ فِي الْمَسْجِدِ",
+          "fr": "Je prie le Fajr à la mosquée."
+        },
+        {
+          "speaker": "طارق",
+          "ar": "هَلْ تَنَامُ بَعْدَ الصَّلاةِ ؟",
+          "fr": "Dors-tu après la prière ?"
+        },
+        {
+          "speaker": "طاهر",
+          "ar": "لا، لا أَنَامُ بَعْدَ الصَّلاةِ",
+          "fr": "Non, je ne dors pas après la prière."
+        },
+        {
+          "speaker": "طارق",
+          "ar": "مَاذَا تَفْعَلُ بَعْدَ الصَّلاةِ ؟",
+          "fr": "Que fais-tu après la prière ?"
+        },
+        {
+          "speaker": "طاهر",
+          "ar": "أَقْرَأُ الْقُرْآنَ",
+          "fr": "Je lis le Coran."
+        },
+        {
+          "speaker": "طارق",
+          "ar": "وَمَتَى تَذْهَبُ إِلَى الْمَدْرَسَةِ ؟",
+          "fr": "Et quand vas-tu à l'école ?"
+        },
+        {
+          "speaker": "طاهر",
+          "ar": "أَذْهَبُ السَّاعَةَ السَّابِعَةَ",
+          "fr": "J'y vais à sept heures."
+        },
+        {
+          "speaker": "طارق",
+          "ar": "هَلْ تَذْهَبُ بِالسَّيَّارَةِ ؟",
+          "fr": "Y vas-tu en voiture ?"
+        },
+        {
+          "speaker": "طاهر",
+          "ar": "لا، أَذْهَبُ بِالْحَافِلَةِ",
+          "fr": "Non, j'y vais en bus."
+        }
+      ]
+    },
+    {
+      "id": "4.2",
+      "type": "dialogue",
+      "titleAr": "",
+      "titleFr": "",
+      "youtube": "https://www.youtube.com/embed/-wWppSok6gc",
+      "pdfPage": null,
+      "lines": [
+        {
+          "speaker": "الأم",
+          "ar": "هَذَا يَوْمُ الْعُطْلَةِ",
+          "fr": "C'est le jour de congé."
+        },
+        {
+          "speaker": "الأب",
+          "ar": "هَذَا يَوْمُ الْعَمَلِ",
+          "fr": "C'est un jour de travail."
+        },
+        {
+          "speaker": "الأم",
+          "ar": "مَاذَا سَتَفْعَلُ يَا طَارِقُ ؟",
+          "fr": "Que vas-tu faire, Tariq ?"
+        },
+        {
+          "speaker": "طارق",
+          "ar": "سَأَكْنُسُ غُرْفَةَ الْجُلُوسِ",
+          "fr": "Je vais balayer le salon."
+        },
+        {
+          "speaker": "الأم",
+          "ar": "وَمَاذَا سَتَفْعَلِينَ يَا فَاطِمَةُ ؟",
+          "fr": "Et que vas-tu faire, Fatima ?"
+        },
+        {
+          "speaker": "فاطمة",
+          "ar": "سَأَكْنُسُ غُرْفَةَ النَّوْمِ",
+          "fr": "Je vais balayer la chambre."
+        },
+        {
+          "speaker": "الأم",
+          "ar": "وَمَاذَا سَتَفْعَلُ يَا أَحْمَدُ ؟",
+          "fr": "Et que vas-tu faire, Ahmed ?"
+        },
+        {
+          "speaker": "أحمد",
+          "ar": "سَأَغْسِلُ الْمَلابِسَ",
+          "fr": "Je vais laver les vêtements."
+        },
+        {
+          "speaker": "الأم",
+          "ar": "وَمَاذَا سَتَفْعَلِينَ يَا لَطِيفَةُ ؟",
+          "fr": "Et que vas-tu faire, Latifa ?"
+        },
+        {
+          "speaker": "لطيفة",
+          "ar": "سَأَكْوِي الْمَلابِسَ",
+          "fr": "Je vais repasser les vêtements."
+        },
+        {
+          "speaker": "الجدة",
+          "ar": "أَنَا سَأَغْسِلُ الأَطْبَاقَ",
+          "fr": "Moi, je vais laver la vaisselle."
+        },
+        {
+          "speaker": "الجد",
+          "ar": "وَأَنَا سَأَقْرَأُ الْقُرْآنَ",
+          "fr": "Et moi, je vais lire le Coran."
+        }
+      ]
+    },
+    {
+      "id": "4.3",
+      "type": "dialogue",
+      "titleAr": "",
+      "titleFr": "",
+      "youtube": "https://www.youtube.com/embed/m_zWX6MdH2Y",
+      "pdfPage": null,
+      "lines": [
+        {
+          "speaker": "عادل",
+          "ar": "مَتَى تَسْتَيْقِظُ يَوْمَ الْعُطْلَةِ ؟",
+          "fr": "Quand te réveilles-tu le jour de congé ?"
+        },
+        {
+          "speaker": "فيصل",
+          "ar": "أَسْتَيْقِظُ مُبَكِّراً\nوَمَتَى تَسْتَيْقِظُ أَنْتَ ؟",
+          "fr": "Je me réveille tôt. Et quand te réveilles-tu toi ?"
+        },
+        {
+          "speaker": "عادل",
+          "ar": "أَسْتَيْقِظُ مُتَأَخِّراً",
+          "fr": "Je me réveille tard."
+        },
+        {
+          "speaker": "فيصل",
+          "ar": "مَاذَا تَفْعَلُ فِي الصَّبَاحِ ؟",
+          "fr": "Que fais-tu le matin ?"
+        },
+        {
+          "speaker": "عادل",
+          "ar": "أُشَاهِدُ التِّلْفَازَ. وَمَاذَا تَفْعَلُ أَنْتَ ؟",
+          "fr": "Je regarde la TV. Et que fais-tu toi ?"
+        },
+        {
+          "speaker": "فيصل",
+          "ar": "أَقْرَأُ صَحِيفَةً أَوْ كِتَاباً",
+          "fr": "Je lis un journal ou un livre."
+        },
+        {
+          "speaker": "عادل",
+          "ar": "أَيْنَ تُصَلِّي الْجُمُعَةَ ؟",
+          "fr": "Où pries-tu le Vendredi ?"
+        },
+        {
+          "speaker": "فيصل",
+          "ar": "أُصَلِّي الْجُمُعَةَ فِي الْمَسْجِدِ الْكَبِيرِ",
+          "fr": "Je prie le Vendredi à la grande mosquée."
+        },
+        {
+          "speaker": "عادل",
+          "ar": "وَأَيْنَ تُصَلِّي أَنْتَ ؟\nأُصَلِّي فِي الْمَسْجِدِ الْكَبِيرِ أَيْضاً",
+          "fr": "Et où pries-tu toi ? Je prie à la grande mosquée aussi."
+        }
+      ]
+    }
+  ]
+}

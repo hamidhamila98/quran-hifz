@@ -1,0 +1,302 @@
+{
+  "id": 2,
+  "titleAr": "الوحدة الثانية: الترويح عن النفس",
+  "titleFr": "Unité 2: Se divertir",
+  "items": [
+    {
+      "id": "2.1",
+      "type": "dialogue",
+      "titleAr": "حوار عن الصحة",
+      "titleFr": "Dialogue sur la santé",
+      "youtube": "",
+      "pdfPage": 9,
+      "lines": [
+        {
+          "speaker": "هشام",
+          "ar": "الْحَمْدُ للهِ عَلَى سَلَامَتِكَ يَا إِبْرَاهِيمُ.",
+          "fr": "Hamdoullah pour ta guérison, Ibrahim."
+        },
+        {
+          "speaker": "إبراهيم",
+          "ar": "شُكْراً لَكَ . أَنَا بِخَيْرِ، وَالْحَمْدُ لِلهِ.",
+          "fr": "Merci. Je vais bien, Hamdoullah."
+        },
+        {
+          "speaker": "هشام",
+          "ar": "ماذا حَدَثَ؟ لماذا أنتَ هُنا ؟!",
+          "fr": "Que s'est-il passé ? Pourquoi es-tu ici ?!"
+        },
+        {
+          "speaker": "إبراهيم",
+          "ar": "أُغْمِيَ عَلَيَّ، وَأَنا في الشَّرِكَةِ ، وعِنْدَما أَفَقْتُ، وَجَدْتُ نَفْسِي هُنا في الْمُسْتَشفى.",
+          "fr": "J'ai perdu connaissance alors que j'étais à la compagnie, et quand je me suis réveillé, je me suis retrouvé ici à l'hôpital."
+        },
+        {
+          "speaker": "هشام",
+          "ar": "وَما رَأي الطبيب؟",
+          "fr": "Et quel est l'avis du médecin ?"
+        },
+        {
+          "speaker": "إبراهيم",
+          "ar": "فَحَصَنِي الطَّبَيبُ، وَقَالَ لِي: أَنْتَ بِخَيرٍ.",
+          "fr": "Le médecin m'a examiné et m'a dit : tu vas bien."
+        },
+        {
+          "speaker": "هشام",
+          "ar": "ما المشكلة؟",
+          "fr": "Quel est le problème ?"
+        },
+        {
+          "speaker": "إبراهيم",
+          "ar": "الأَمْرُ عَجِيبٌ جِدًا ، طَلَبَ مِنِّي الطَّبِيبُ أَنْ أُغَيْرَ أُسْلُوبَ حَياتي.",
+          "fr": "C'est très étrange, le médecin m'a demandé de changer mon style de vie."
+        },
+        {
+          "speaker": "هشام",
+          "ar": "تُغَيِّرُ أَسْلُوبَ حَياتِكَ! ماذا يَقْصِدُ؟",
+          "fr": "Changer ton style de vie ! Que veut-il dire ?"
+        },
+        {
+          "speaker": "إبراهيم",
+          "ar": "قَالَ لِي: حَياتُكَ كُلَّها عَمَلٌ، لَا تَرْوِيحَ فيها .",
+          "fr": "Il m'a dit : ta vie n'est que travail, pas de divertissement."
+        },
+        {
+          "speaker": "هشام",
+          "ar": "يا لَهُ مِنْ أَمْرٍ عَجِيب!",
+          "fr": "Quelle chose étrange !"
+        },
+        {
+          "speaker": "إبراهيم",
+          "ar": "صَدَقَ الطَّبِيبُ، فَحَياتي كُلُّها عَمَلٌ، لَا تَرْوِيحَ فيها .",
+          "fr": "Le médecin a raison, ma vie n'est que travail, pas de divertissement."
+        },
+        {
+          "speaker": "هشام",
+          "ar": "وَبِمَ نَصَحَكَ؟",
+          "fr": "Et que t'a-t-il conseillé ?"
+        },
+        {
+          "speaker": "إبراهيم",
+          "ar": "أَنْ أَقْضِيَ الْعُطْلَةَ فِي بَلَدٍ جَمِيلٍ.",
+          "fr": "De passer les vacances dans un beau pays."
+        },
+        {
+          "speaker": "هشام",
+          "ar": "يا لها من نَصِيحَةٍ طَيِّبَةٍ!",
+          "fr": "Quel bon conseil !"
+        }
+      ]
+    },
+    {
+      "id": "2.2",
+      "type": "texte",
+      "titleAr": "أنواع الترويح",
+      "titleFr": "Types de divertissement",
+      "youtube": "",
+      "pdfPage": 10,
+      "lines": [
+        {
+          "speaker": "",
+          "ar": "تَهْيِئة:",
+          "fr": "Préparation :"
+        },
+        {
+          "speaker": "",
+          "ar": "فكر في الإِجَابَةِ عَنِ الْأَسْئِلَةِ التَّالِيَةِ:",
+          "fr": "Réfléchissez aux réponses aux questions suivantes :"
+        },
+        {
+          "speaker": "",
+          "ar": "١- هَلْ تُرَوِّحُ عَنْ نَفْسِكَ أَحْيَانًا ۚ كَيْفَ؟",
+          "fr": "1- Vous arrive-t-il de vous divertir ? Comment ?"
+        },
+        {
+          "speaker": "",
+          "ar": "٢- هَلِ القِرَاءَةُ نَوْعٌ مِنْ أَنْوَاعِ التَّرْوِيحِ؟",
+          "fr": "2- La lecture est-elle une forme de divertissement ?"
+        },
+        {
+          "speaker": "",
+          "ar": "٣- هَلِ التَّرْوِيحُ مُفيدٌ؟",
+          "fr": "3- Le divertissement est-il bénéfique ?"
+        },
+        {
+          "speaker": "",
+          "ar": "٤- متى يَكُونُ التَّرْوِيحُ غَيْرَ مُفِيدٍ؟",
+          "fr": "4- Quand le divertissement n'est-il pas bénéfique ?"
+        },
+        {
+          "speaker": "",
+          "ar": "يُمارِسُ النَّاسُ بَعْضَ الأَنْشِطَةِ، لِلتَّرْويحٍ عَنِ النَّفْسِ. ويَطْلُبُ النَّاسُ التَّرْوِيحَ بَعْدَ عَناءِ العَمَلِ، أَوِ الدِّرَاسَةِ .",
+          "fr": "Les gens pratiquent certaines activités pour se divertir. Les gens recherchent le divertissement après la fatigue du travail ou des études."
+        },
+        {
+          "speaker": "",
+          "ar": "فالعامِلُ الَّذِي يَعْمَلُ كَثيراً يَحْتاجُ إلى الترويح ، وَالطَّالِبُ الَّذِي يَدْرُسُ كَثِيراً ، يَحْتاجُ إلى الترويح .",
+          "fr": "L'ouvrier qui travaille beaucoup a besoin de se divertir, et l'étudiant qui étudie beaucoup a besoin de se divertir."
+        },
+        {
+          "speaker": "",
+          "ar": "والتَّرْوِيحُ مُفيدٌ لِلْعَقْلِ وَالْجِسْمِ. وَلَيْسَ الهَدَفُ مِنَ التَّرْوِيحِ قَتْلَ الوَقْتِ، وَإِنَّمَا الهَدَفُ قَضاءُ الوَقْتِ فِي أَنْشِطَةِ مُفِيدَةٍ.",
+          "fr": "Le divertissement est bénéfique pour l'esprit et le corps. Le but du divertissement n'est pas de tuer le temps, mais plutôt de passer du temps dans des activités utiles."
+        },
+        {
+          "speaker": "",
+          "ar": "للترويح صُوَرَ كَثِيرَةٌ مِنْهَا : القِراءَةُ، وَمُمارَسَةُ الرِّياضَةِ، وَالسِّفَرُ ، وَقَضاءُ الوَقْتِ فِي الْحَدِيقَةِ، أَوْ عَلَى الشَّاطِئِ، وَأَلْعاب الحاسوب، وإقامَةُ المُخَيّماتِ، وَصَيْدُ السَّمَكِ، وَزِيارَةُ الْمَتاحِفِ.",
+          "fr": "Le divertissement a de nombreuses formes, notamment : la lecture, la pratique du sport, les voyages, passer du temps dans le jardin, ou sur la plage, les jeux informatiques, l'installation de camps, la pêche et la visite de musées."
+        },
+        {
+          "speaker": "",
+          "ar": "يُفَضِّلُ كَثيرٌ مِنَ النَّاسِ القِراءَةَ، فَفيها فائِدِةٌ وَمُتْعَةٌ : فَالإِنْسانُ يُرَوِّحُ عَنْ نَفْسِهِ بِقِرَاءَةِ القِصَصِ وَالشَّعْرِ وَالْكُتُبِ المُفِيدَةِ.",
+          "fr": "Beaucoup de gens préfèrent la lecture, car elle est à la fois bénéfique et agréable : l'être humain se divertit en lisant des histoires, de la poésie et des livres utiles."
+        },
+        {
+          "speaker": "",
+          "ar": "وَمِنَ التَّرْويح المفيد مُمَارَسَةُ الرِّياضَةِ؛ لأنَّ الإِسْلامَ يَدْعُو إِلَى القُوَّةِ. قَالَ الرَّسُولُ:",
+          "fr": "Parmi les divertissements bénéfiques, il y a la pratique du sport ; car l'Islam appelle à la force. Le Messager a dit :"
+        },
+        {
+          "speaker": "",
+          "ar": "(الْمُؤْمِنُ القَوِيُّ خَيْرٌ وَأَحَبُّ إِلَى اللهِ مِنَ الْمُؤْمِنِ الضّعِيف، وَفي كُلَّ خَيْرٌ) وَكَانَ الْمُسْلِمُونَ يُمارِسُونَ الرِّيَاضَةَ .",
+          "fr": "(Le croyant fort est meilleur et plus aimé d'Allah que le croyant faible, et il y a du bien en tout). Les musulmans pratiquaient le sport."
+        },
+        {
+          "speaker": "",
+          "ar": "قَالَ عُمَرُ بْنُ الْخَطَّابِ : \" عَلِّمُوا أَوْلادَكُمُ السَّبَاحَةَ وَالرِّمَايَةَ وَرُكوبَ الْخَيْلِ \".",
+          "fr": "Omar Ibn Al-Khattab a dit : \"Enseignez à vos enfants la natation, le tir à l'arc et l'équitation\"."
+        }
+      ]
+    },
+    {
+      "id": "2.3",
+      "type": "dialogue",
+      "titleAr": "كيف نقضي العطلة؟",
+      "titleFr": "Comment passer les vacances ?",
+      "youtube": "",
+      "pdfPage": 11,
+      "lines": [
+        {
+          "speaker": "الأم",
+          "ar": "العُطْلَةُ عَلَى الْأَبْوابِ، يَا أَبَا أَحْمَدَ.",
+          "fr": "La période des vacances est à nos portes, Ô Abu Ahmad."
+        },
+        {
+          "speaker": "الأب",
+          "ar": "يا لَها مِنْ مُشْكِلَةٍ كَبِيرَةٍ يا أُمَّ أَحْمَدَ!",
+          "fr": "Quelle grande problématique, Ô Umm Ahmad !"
+        },
+        {
+          "speaker": "الأم",
+          "ar": "كَيْفَ سَيَقْضِي أَوْلَادُنَا الْعُطْلَةَ؟",
+          "fr": "Comment nos enfants vont-ils passer les vacances ?"
+        },
+        {
+          "speaker": "الأب",
+          "ar": "هَيَا نُنَادِ الأَوْلادَ، وَنُنَاقِشُهُمْ فِي الأَمْرِ.",
+          "fr": "Allons, appelons les enfants et discutons-en avec eux."
+        },
+        {
+          "speaker": "الأم",
+          "ar": "فِكْرَةٌ طَيِّبَةً. سَأناديهِمُ الآنَ. يا أَحْمَدُ، يا فاطِمَةُ، يا طارِقُ، يَا نَدَى، يَا بَدْرُ.",
+          "fr": "Bonne idée. Je vais les appeler maintenant. Ô Ahmad, Ô Fatima, Ô Tariq, Ô Nada, Ô Badr."
+        },
+        {
+          "speaker": "الأب",
+          "ar": "كَيْفَ نَقْضِي العُطْلَةَ يَا أَوْلادُ؟ نُرِيدُ آرَاءَكُمْ.",
+          "fr": "Comment allons-nous passer les vacances, les enfants ? Nous voulons vos avis."
+        },
+        {
+          "speaker": "أَحْمَدُ",
+          "ar": "أَرى السِّفَرَ إِلى مَصِيفٍ جَمِيلٍ.",
+          "fr": "Je pense qu'on devrait voyager vers une belle station estivale."
+        },
+        {
+          "speaker": "الأب",
+          "ar": "أَحْسَنْتَ. وَما رَأْيَكَ يا فَاطِمَةُ؟",
+          "fr": "Excellent. Et toi, Fatima, qu'en penses-tu ?"
+        },
+        {
+          "speaker": "فاطمة",
+          "ar": "أَرى عَمَلَ حَدِيقَة لِلْبَيْتِ.",
+          "fr": "Je pense qu'on devrait faire un jardin pour la maison."
+        },
+        {
+          "speaker": "الأم",
+          "ar": "يالَها مِنْ فِكْرَةٍ طَيِّبَةً! فَلَيْسَ فِي بَيْتِنَا حَدِيقَةٌ.",
+          "fr": "Quelle bonne idée ! Nous n'avons pas de jardin dans notre maison."
+        },
+        {
+          "speaker": "طارق",
+          "ar": "أَفَضْلُ مُشَاهَدَةً بَرَامِجِ التلفاز.",
+          "fr": "Je préfère regarder des programmes à la télévision."
+        },
+        {
+          "speaker": "الأم",
+          "ar": "لا مانَعَ مِنْ مُشاهَدَةِ البرامج المفيدَةِ فَقَط : سَاعَةً، أَوْ سَاعَتَيْنِ.",
+          "fr": "Je ne suis pas contre regarder des programmes utiles seulement : une heure, ou deux heures."
+        },
+        {
+          "speaker": "الأب",
+          "ar": "وماذا تَقُولُ نَدَى وَمَاذَا يَقُولُ بَدْرُ؟",
+          "fr": "Et que dites Nada et Badr ?"
+        },
+        {
+          "speaker": "ندى",
+          "ar": "سَأَقْرَأَ كُتُباً كَثِيرَةً فِي العُطْلَة.",
+          "fr": "Je vais lire beaucoup de livres pendant les vacances."
+        },
+        {
+          "speaker": "بَدْرٍ",
+          "ar": "سَأَلْعَبُ، وَسَأَقْرَأَ، وَسَأَسْبَحُ فِي البَحْرِ.",
+          "fr": "Je vais jouer, lire et nager dans la mer."
+        },
+        {
+          "speaker": "الأم",
+          "ar": "عُطْلَةً سَعِيدةً، يا أَوْلادُ.",
+          "fr": "Bonnes vacances, les enfants."
+        }
+      ]
+    },
+    {
+      "id": "2.4",
+      "type": "texte",
+      "titleAr": "التخييم",
+      "titleFr": "Le camping",
+      "youtube": "",
+      "pdfPage": 12,
+      "lines": [
+        {
+          "speaker": "",
+          "ar": "تَهْيِئة:",
+          "fr": "Préparation :"
+        },
+        {
+          "speaker": "",
+          "ar": "فكر في الإِجابَةِ عَنِ الْأَسْئِلَةِ التَّالِيَةِ:\n١- أَيْنَ يَقْضِي النَّاسُ وَقْتَ التَّرْوِيحِ؟\n٢- أَيْنَ تُفَضّلُ التَّرْوِيحَ في البَيْتِ، أَمْ خارِجَ البَيْتِ؟",
+          "fr": "Réfléchis aux réponses des questions suivantes :\n1- Où les gens passent-ils leur temps de loisirs ?\n2- Où préfères-tu te divertir, à la maison ou à l'extérieur ?"
+        },
+        {
+          "speaker": "",
+          "ar": "٣- أَيْنَ تُعِدُ الطَّعامَ فِي بَيْتِكَ أَمْ فِي الْمُخَيِّمِ؟\n٤- ما أَفْضَلُ هِوَايَةٍ تُمَارِسُها عَلَى شَاطِئِ الْبَحْرِ؟",
+          "fr": "3- Où prépares-tu la nourriture, chez toi ou au camp ?\n4- Quel est ton loisir préféré à pratiquer sur la plage ?"
+        },
+        {
+          "speaker": "",
+          "ar": "يُفَضّلُ كَثِيرٌ مِنَ النَّاسِ التَّرْوِيحَ خارِجَ البُيوتِ، حَيْثُ يَقْضُونَ الوَقْتَ فِي مُخَيِّمَاتٍ وَيَخْتَلِفُ الوَقْتُ\nالَّذِي يَقْضِيهِ النَّاسُ فِي الْمُخَيْماتِ، فَقَدْ يَكونُ لَيْلَةً واحِدَةً، وَقَدْ يَكُونُ عِدَّةَ أَسابيع. وَيَخْتَلِفُ الْمَكَانُ،\nفَقَدْ يَكُونُ عَلَى شَاطِئِ البَحْرِ، أَوْ فِي البَر، أَوْ فِي الغَابَةَ، أَوْ فِي الصَّحْرَاءَ، أَوْ بَيْنَ الْجِبَالِ، حَيْثُ الْهَوَاءُ النَّقِيُّ.",
+          "fr": "Beaucoup de gens préfèrent se divertir à l'extérieur des maisons, où ils passent du temps dans des camps. Le temps que les gens passent dans les camps varie, il peut être d'une seule nuit, ou de plusieurs semaines. L'endroit varie également, il peut être sur la plage, ou dans le désert, ou dans la forêt, ou entre les montagnes, où l'air est pur."
+        },
+        {
+          "speaker": "",
+          "ar": "يَخْرُجُ النَّاسُ أَيَّامَ العُطْلَةِ إلى البَرِّ، وَيَنْصِبُونَ فِي مَكَانِ التَّرْويْحِ الْخِيَامَ، وَيَحْمِلُونَ مَعَهُمُ الطَّعَامَ\nوالشَّرابَ، وَوَسائِلَ التَّرْوِيحِ، وَيُفَضّلُ فَرِيقٌ مِنَ النَّاسِ أَنْ يَكونَ قَريباً مِنْ شَاطِئِ البَحْرِ، حَيْثُ\nيُمارسون السّباحَةَ، وَأَنواع الرِّياضَةِ الأَخْرَى، وَيَصْطادونَ السَّمَكَ . وَيُفَضِّلُ بَعْضُ النَّاسِ مُشَاهَدَةَ\nالطيور، أو التصوير، أَوِ الْمَشْيَ.",
+          "fr": "Les gens sortent dans le désert pendant les jours de vacances, et ils installent des tentes dans le lieu de divertissement, et ils emportent avec eux la nourriture et les boissons, et les moyens de divertissement. Une partie des gens préfère être près de la plage, où ils pratiquent la natation, et d'autres types de sports, et ils pêchent. Et certains préfèrent observer les oiseaux, ou prendre des photos, ou marcher."
+        },
+        {
+          "speaker": "",
+          "ar": "يَحْمِلُ النَّاسُ مَعَهُمْ إلى البَرِّ خِياماً ، ومَلابِسَ، وَكَثِيراً مِنَ الطَّعام. وَبَعْضُ النَّاسِ يُعِدِّونَ الطَّعَامَ فِي\nبُيوتِهِمْ، وَيَضَعُونَهُ في أَوانٍ. وَهُناكَ مَنْ يُفَضّلُ إعْدادَ الطَّعَامِ فِي الْمُخَيِّمَاتِ. وَيَحْمِلُ النَّاسُ مَعَهُمُ\nالماء، إذا لَمْ يَكُنْ فِي الْمَكَانِ ماء.",
+          "fr": "Les gens emportent avec eux dans le désert des tentes, des vêtements, et beaucoup de nourriture. Et certains préparent la nourriture dans leurs maisons, et ils la mettent dans des récipients. Et il y a ceux qui préfèrent préparer la nourriture dans les camps. Et les gens emportent avec eux de l'eau, si il n'y a pas d'eau dans l'endroit."
+        }
+      ]
+    }
+  ]
+}

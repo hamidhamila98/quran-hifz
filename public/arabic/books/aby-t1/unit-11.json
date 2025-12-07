@@ -1,0 +1,227 @@
+{
+  "id": 11,
+  "titleAr": "الناس والأماكن",
+  "titleFr": "Gens et Lieux",
+  "items": [
+    {
+      "id": "11.1",
+      "type": "dialogue",
+      "titleAr": "",
+      "titleFr": "",
+      "youtube": "https://www.youtube.com/embed/cvZbvvh3EBU",
+      "pdfPage": null,
+      "lines": [
+        {
+          "speaker": "ثابت",
+          "ar": "لماذا تَرَكْتَ العِراقَ ؟",
+          "fr": "Pourquoi as-tu quitté l'Irak ?"
+        },
+        {
+          "speaker": "حارث",
+          "ar": "انتَقَلَتِ الشَّرِكَةُ إِلى جُدَّةً ، وأنا مدير الشَّرِكَةِ هنا",
+          "fr": "La compagnie a déménagé à Jeddah, et je suis le directeur de la compagnie ici."
+        },
+        {
+          "speaker": "ثابت",
+          "ar": "كُنْتَ سَعيداً في العراق",
+          "fr": "Tu étais heureux en Irak."
+        },
+        {
+          "speaker": "حارث",
+          "ar": "هذا صَحِيحٌ، العِراقُ بَلَدٌ جَمِيلٌ ، ولي أصدقاء هناك",
+          "fr": "C'est vrai, l'Irak est un beau pays, et j'y ai des amis."
+        },
+        {
+          "speaker": "ثابت",
+          "ar": "ما رَأَيْكَ فِي جُدَّةَ ؟",
+          "fr": "Quel est ton avis sur Jeddah ?"
+        },
+        {
+          "speaker": "حارث",
+          "ar": "جُدَّةٌ مَدِينَةٌ كَبِيرَةٌ ، وجَمِيلَةٌ جداً",
+          "fr": "Jeddah est une grande ville, et très belle."
+        },
+        {
+          "speaker": "ثابت",
+          "ar": "كَيْفَ تَقْضِي الوَقْتَ فِي جُدَّةَ ؟",
+          "fr": "Comment passes-tu le temps à Jeddah ?"
+        },
+        {
+          "speaker": "حارث",
+          "ar": "أذهَبُ مَعَ الأُسْرَةِ إِلَى شَاطِئِ البَحْرِ",
+          "fr": "Je vais avec la famille au bord de la mer."
+        },
+        {
+          "speaker": "ثابت",
+          "ar": "وإلى أَيْنَ تَذهَبُ الآن ؟",
+          "fr": "Et où vas-tu maintenant ?"
+        },
+        {
+          "speaker": "حارث",
+          "ar": "أَذهَبُ إِلى مَكَّةَ : لِلْعُمْرَةِ والصلاة في المسجد الحرام",
+          "fr": "Je vais à La Mecque : pour la Omra et la prière à la Mosquée Sacrée."
+        },
+        {
+          "speaker": "ثابت",
+          "ar": "كَمْ تَسْتَغْرِقُ الرِّحْلَةُ إِلَى مَكَّةَ ؟",
+          "fr": "Combien de temps dure le voyage vers La Mecque ?"
+        },
+        {
+          "speaker": "حارث",
+          "ar": "تَسْتَغْرِقُ سَاعَةً واحِدَةً تَقْريباً",
+          "fr": "Cela prend environ une heure."
+        }
+      ]
+    },
+    {
+      "id": "11.2",
+      "type": "dialogue",
+      "titleAr": "",
+      "titleFr": "",
+      "youtube": "https://www.youtube.com/embed/cvZbvvh3EBU",
+      "pdfPage": null,
+      "lines": [
+        {
+          "speaker": "ليث",
+          "ar": "مِنْ أَيْنَ حَضَرْتَ ؟",
+          "fr": "D'où es-tu venu (arrivé) ?"
+        },
+        {
+          "speaker": "ثامر",
+          "ar": "حَضَرْتُ مِنَ اليَمَنِ، أَنَا يَمَنِيٌّ",
+          "fr": "Je suis venu du Yémen, je suis Yéménite."
+        },
+        {
+          "speaker": "ليث",
+          "ar": "ومَتى حَضَرْتَ مِنَ اليَمَنِ ؟",
+          "fr": "Et quand es-tu venu du Yémen ?"
+        },
+        {
+          "speaker": "ثامر",
+          "ar": "حَضَرْتُ قَبْلَ عَشْرِ سَنَوَاتٍ",
+          "fr": "Je suis venu il y a dix ans."
+        },
+        {
+          "speaker": "ليث",
+          "ar": "هَلْ مَعَكَ الْجِنْسِيَّةُ اليَمَنِيَّةُ ؟",
+          "fr": "As-tu la nationalité yéménite ?"
+        },
+        {
+          "speaker": "ثامر",
+          "ar": "نعم، ومعي جَوازُ السَّفَرِ اليَمَنِيُّ",
+          "fr": "Oui, et j'ai le passeport yéménite."
+        },
+        {
+          "speaker": "ليث",
+          "ar": "هَلْ حَضَرْتَ لِلعَمَلِ؟",
+          "fr": "Es-tu venu pour le travail ?"
+        },
+        {
+          "speaker": "ثامر",
+          "ar": "لا ، حَضَرْتُ للدراسة، وبَعْدَ الدَّرَاسَةِ تَزَوَّجْتُ",
+          "fr": "Non, je suis venu pour les études, et après les études je me suis marié."
+        },
+        {
+          "speaker": "ليث",
+          "ar": "وماذا تَعْمَلُ هُنا؟",
+          "fr": "Et que fais-tu (travailles-tu) ici ?"
+        },
+        {
+          "speaker": "ثامر",
+          "ar": "أنا أستاذ في الجامعة",
+          "fr": "Je suis professeur à l'université."
+        },
+        {
+          "speaker": "ليث",
+          "ar": "هَلْ تَزُورُ اليَمَنَ؟",
+          "fr": "Visites-tu le Yémen ?"
+        },
+        {
+          "speaker": "ثامر",
+          "ar": "نعم، أقضي العُطْلَةَ مَعَ الأَسْرَةِ فِي اليَمَنِ",
+          "fr": "Oui, je passe les vacances avec la famille au Yémen."
+        },
+        {
+          "speaker": "ليث",
+          "ar": "هَلْ أَنْتَ سَعِيدٌ هُنا ؟",
+          "fr": "Es-tu heureux ici ?"
+        },
+        {
+          "speaker": "ثامر",
+          "ar": "نَعَمْ ، والحَمْدُ لله",
+          "fr": "Oui, louange à Dieu."
+        }
+      ]
+    },
+    {
+      "id": "11.3",
+      "type": "dialogue",
+      "titleAr": "",
+      "titleFr": "",
+      "youtube": "https://www.youtube.com/embed/cvZbvvh3EBU",
+      "pdfPage": null,
+      "lines": [
+        {
+          "speaker": "أحمد",
+          "ar": "أَيْنَ تَسْكُنُ الآنَ يا بَدْرُ؟",
+          "fr": "Où habites-tu maintenant Badr ?"
+        },
+        {
+          "speaker": "بدر",
+          "ar": "أَسْكُنُ فِي القَرْيَةِ",
+          "fr": "J'habite au village."
+        },
+        {
+          "speaker": "أحمد",
+          "ar": "لماذا تَرَكْتَ المَدِينَةَ؟",
+          "fr": "Pourquoi as-tu quitté la ville ?"
+        },
+        {
+          "speaker": "بدر",
+          "ar": "القَرْيَةُ هَادِئَةٌ، والهواء نَقِيّ",
+          "fr": "Le village est calme, et l'air est pur."
+        },
+        {
+          "speaker": "أحمد",
+          "ar": "وَلَكِنْ فِي المَدِينَةِ جامعات، ومُسْتَشْفَياتٌ وشركات، وأسواق",
+          "fr": "Mais en ville il y a des universités, des hôpitaux, des entreprises et des marchés."
+        },
+        {
+          "speaker": "بدر",
+          "ar": "وفي المدينَةِ أَيْضًا ضَوْضَاءُ، وَتَلَوُّثٌ وازدحام",
+          "fr": "Et en ville il y a aussi du bruit, de la pollution et des embouteillages."
+        },
+        {
+          "speaker": "أحمد",
+          "ar": "لماذا تَسْكُنُ فِي القَرْيَةِ، وَأَنْتَ تَعْمَلُ فِي المدينة ؟",
+          "fr": "Pourquoi habites-tu au village, alors que tu travailles en ville ?"
+        },
+        {
+          "speaker": "بدر",
+          "ar": "لَيْسَ هُناكَ مُشْكِلَةٌ",
+          "fr": "Il n'y a pas de problème."
+        },
+        {
+          "speaker": "أحمد",
+          "ar": "كَيْفَ تَذْهَبُ إِلى المَدِينَةِ؟",
+          "fr": "Comment vas-tu en ville ?"
+        },
+        {
+          "speaker": "بدر",
+          "ar": "أَذْهَبُ بِالقِطار",
+          "fr": "J'y vais en train."
+        },
+        {
+          "speaker": "أحمد",
+          "ar": "كَمْ تَسْتَغْرِقُ الرِّحْلَةُ إِلى المَدِينَةِ ؟",
+          "fr": "Combien de temps dure le trajet vers la ville ?"
+        },
+        {
+          "speaker": "بدر",
+          "ar": "تَسْتَغْرِقُ سَاعَةً وَنِصْفَ السَّاعَةِ تَقْرِيباً",
+          "fr": "Cela prend environ une heure et demie."
+        }
+      ]
+    }
+  ]
+}

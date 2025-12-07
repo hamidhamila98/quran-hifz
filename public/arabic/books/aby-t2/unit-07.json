@@ -1,0 +1,267 @@
+{
+  "id": 7,
+  "titleAr": "الوحدة السابعة اللغة العربية",
+  "titleFr": "Unité 7: La langue arabe",
+  "items": [
+    {
+      "id": "7.1",
+      "type": "dialogue",
+      "titleAr": "بَيْنَ طَالِبَتَيْنِ",
+      "titleFr": "Dialogue entre deux étudiantes",
+      "youtube": "",
+      "pdfPage": 34,
+      "lines": [
+        {
+          "speaker": "الطَّالِبَةُ الأولى",
+          "ar": "أَعْتَقِدُ أَنَّكِ طَالِبَةٌ جَدِيدَةٌ.",
+          "fr": "Je crois que tu es une nouvelle étudiante."
+        },
+        {
+          "speaker": "الطَّالِبَةُ الثَّانِيَةُ",
+          "ar": "نعم، التَحَقْتُ بِالْمَعْهَدِ هَذِهِ السَّنَةَ.",
+          "fr": "Oui, je me suis inscrite à l'institut cette année."
+        },
+        {
+          "speaker": "الطَّالِبَةُ الأولى",
+          "ar": "هَلْ دَرَسْتِ اللُّغَةَ العَرَبِيَّةَ فِي بَلَدِكِ؟",
+          "fr": "As-tu étudié la langue arabe dans ton pays ?"
+        },
+        {
+          "speaker": "الطَّالِبَةُ الثَّانِيَةُ",
+          "ar": "هَذِهِ أَوَّلُ مَرَّةٍ أَدْرُسُ فيها العَرَبِيَّةَ.",
+          "fr": "C'est la première fois que j'étudie l'arabe."
+        },
+        {
+          "speaker": "الطَّالِبَةُ الأولى",
+          "ar": "أَنا دَرَسْتُ العَرَبِيَّةَ ثَلَاثَ سَنَوَاتٍ فِي بَلَدي.",
+          "fr": "J'ai étudié l'arabe pendant trois ans dans mon pays."
+        },
+        {
+          "speaker": "الطَّالِبَةُ الثَّانِيَةُ",
+          "ar": "لِماذا تَدْرُسِينَها مَرَّةً ثَانِيَةً، إِذَنْ ؟!",
+          "fr": "Pourquoi l'étudies-tu une deuxième fois, alors ?!"
+        },
+        {
+          "speaker": "الطَّالِبَةُ الأولى",
+          "ar": "في بلدي نتَعَلَّمُ القِراءَةَ، وَالقَواعِدَ وَالتَّرْجَمَةَ، وَلَا نَتَعَلَّمُ الْحَدِيثَ بِاللُّغَةِ العَرَبِيَّةِ.",
+          "fr": "Dans mon pays, nous apprenons la lecture, la grammaire et la traduction, mais nous n'apprenons pas à parler en arabe."
+        },
+        {
+          "speaker": "الطَّالِبَةُ الثَّانِيَةُ",
+          "ar": "وَلَكِنَّكِ تَتَحَدَّثِينَ الْعَرَبِيَّةَ الْآنَ جَيِّداً !",
+          "fr": "Mais tu parles bien arabe maintenant !"
+        },
+        {
+          "speaker": "الطَّالِبَةُ الأولى",
+          "ar": "تَعَلَّمْتُ الحَدِيثَ بِاللُّغَةِ العَرَبِيَّةِ هُنا . في المَعَهَدِ مُخْتَبَرٌ وَحاسوبٌ وَإِذاعَةٌ وَمَكْتَبَةٌ.",
+          "fr": "J'ai appris à parler arabe ici. Dans l'institut, il y a un laboratoire, un ordinateur, une radio et une bibliothèque."
+        },
+        {
+          "speaker": "الطَّالِبَةُ الثَّانِيَةُ",
+          "ar": "لا أَسْتَطِيعُ نُطْقَ الأصوات: « ق، ظ، ح » جيداً.",
+          "fr": "Je ne peux pas prononcer correctement les sons : « Qaf, Dha, Ha »."
+        },
+        {
+          "speaker": "الطَّالِبَةُ الأولى",
+          "ar": "هُناكَ تَدريباتٌ صَوْتِيَّةٌ جَيِّدَةٌ فِي مُخْتَبَرِ اللُّغَةِ.",
+          "fr": "Il y a de bons exercices phonétiques dans le laboratoire de langues."
+        },
+        {
+          "speaker": "الطَّالِبَةُ الثَّانِيَةُ",
+          "ar": "وَلَا أَسْتَطِيعُ التَّحَدُّثَ بِاللُّغَةِ العَرَبِيَّةِ ، وَلَا أَفْهَمُ كَلامَ الْمُدَرِّسَةِ وَالطَّالِباتِ أُرِيدُ أَنْ أَتَعَلَّمَ العَرَبِيَّةَ جَيِّداً . ماذا أَفْعَلُ ؟!",
+          "fr": "Je ne peux pas parler arabe, et je ne comprends pas les paroles de la professeure et des étudiantes. Je veux bien apprendre l'arabe. Que dois-je faire ?!"
+        },
+        {
+          "speaker": "الطَّالِبَةُ الأولى",
+          "ar": "احْفَظي جُزْءاً مِنَ القُرآنِ الكَرِيمِ، وَبَعْضَ الأَحادِيثِ النَّبَوِيَّةِ، وَتَحَدَّثي بِالعَرَبِيَّةِ كثيراً.",
+          "fr": "Mémorise une partie du Saint Coran, et quelques hadiths prophétiques, et parle beaucoup en arabe."
+        },
+        {
+          "speaker": "الطَّالِبَةُ الثَّانِيَةُ",
+          "ar": "هذِهِ نَصِيحَةٌ مُفِيدَةٌ، سَأَتَّبِعُها، إِنْ شَاءَ اللهُ.",
+          "fr": "C'est un conseil utile, je le suivrai, si Dieu le veut."
+        },
+        {
+          "speaker": "الطَّالِبَةُ الأولى",
+          "ar": "إِذَنْ سَتَتَعَلَّمِينَ العَرَبِيَّةَ جَيِّداً.",
+          "fr": "Alors tu apprendras bien l'arabe."
+        }
+      ]
+    },
+    {
+      "id": "7.2",
+      "type": "texte",
+      "titleAr": "العَرَبِيَّةُ الفَصِيحَةُ وَأَثَرُها",
+      "titleFr": "L'arabe classique et son impact",
+      "youtube": "",
+      "pdfPage": 35,
+      "lines": [
+        {
+          "speaker": "",
+          "ar": "نَشَأَتِ اللُّغَةُ العَرَبِيَّةُ فِي جَزِيرَةِ العَرَبِ قَبْلَ الإسلام، وَكَانَ العَرَبُ قَبَائِلَ مُتَفَرِّقَةً، وَكَانَتْ لِبَعْضِ\nالقَبائِلِ لَهَاتٌ خاصَّةٌ بِها . وَكَانَتِ الاخْتِلافاتُ قَلِيلَةً بَيْنَ تِلْكَ اللَّهَجاتِ.",
+          "fr": "La langue arabe est née dans la péninsule arabique avant l'islam. Les Arabes étaient des tribus dispersées, et certaines tribus avaient leurs propres dialectes. Les différences étaient minimes entre ces dialectes."
+        },
+        {
+          "speaker": "",
+          "ar": "وَكَانَتْ لِلْعَرَبِ لُغَةٌ مُشْتَرَكَةٌ، هِيَ اللُّغَةُ العَرَبِيَّةُ الفَصيحَةُ ؛ لُغَةُ الشِّعْرِ وَالْخَطَابَةِ الَّتِي كَانَ العَرَبُ\nيَتَحَدَّثُونَ بِهَا . ثُمَّ جَاءَ الإِسْلامُ، وَأَنْزَلَ اللهُ القُرْآنَ الكَرِيمَ، بِاللُّغَةِ العَرَبِيَّةِ الفَصِيحَةِ.",
+          "fr": "Les Arabes avaient une langue commune, qui est la langue arabe classique ; la langue de la poésie et de la rhétorique que les Arabes parlaient. Puis vint l'islam, et Dieu révéla le Coran en langue arabe classique."
+        },
+        {
+          "speaker": "",
+          "ar": "قال الله تعالى: ﴿إِنَّا أَنزَلْنَاهُ قُرْآناً عَرَبِيّاً لَعَلَّكُمْ تَعْقِلُونَ . [يوسف: ٢]",
+          "fr": "Dieu Tout-Puissant a dit : « Nous l'avons fait descendre en tant que Coran arabe afin que vous raisonniez. » [Yusuf : 2]"
+        },
+        {
+          "speaker": "",
+          "ar": "أَعْطَى القُرْآنُ الكَرِيمُ بَعْضَ الأَلْفاظِ العَرَبِيَّةِ القَديمةِ مَعانِيَ جَدِيدَةً، وَجَاءَ بأساليب جديدةٍ،\nلَمْ تَعْرِفْهَا العَرَبِيَّةُ مِنْ قَبْلُ. وَكَانَ القُرْآنُ سَبَباً في نَشْأَةِ عُلومِ اللُّغَةِ العَرَبِيَّةِ كَالنَّحْوِ وَالصَّرْفِ،\nوَالبَلاغَةِ، وَالعُلومِ الإسلامِيَّةِ ؛ كَعِلْمِ التَّفْسِيرِ وَالْحَدِيثِ وَالفِقْهِ وَغَيْرِها .",
+          "fr": "Le Saint Coran a donné de nouvelles significations à certains anciens mots arabes, et est venu avec de nouveaux styles, que l'arabe n'avait jamais connus auparavant. Le Coran a été la cause de la création des sciences de la langue arabe, telles que la grammaire, la morphologie et la rhétorique, et des sciences islamiques ; comme la science de l'interprétation, du hadith, de la jurisprudence, etc."
+        },
+        {
+          "speaker": "",
+          "ar": "أَثَّرَتِ اللُّغَةُ العَرَبِيَّةُ فِي لُغَاتِ الشُّعوبِ الإِسْلامِيَّةِ، كالفارِسِيَّةِ وَالْأُرْدِيَّةِ وَالسَّواحِلِيَّةِ، فَأَقْرَضَتْها\nكثيراً مِنَ الأَلْفاظِ، وَكُتِبَ كَثِيرٌ مِنْ تِلْكَ اللُّغَاتِ بِالْحَرْفِ العَرَبِيِّ.",
+          "fr": "La langue arabe a influencé les langues des peuples islamiques, comme le persan, l'ourdou et le swahili, elle leur a donc prêté de nombreux mots, et beaucoup de ces langues ont été écrites en caractères arabes."
+        },
+        {
+          "speaker": "",
+          "ar": "وَاقْتَرَضَتْ لُغَاتٌ أُخْرَى بَعْضَ الأَلْفاظِ العَرَبِيَّةِ، مِثْلُ : الإنجِلِيزِيَّةِ وَالْفِرَنْسِيَّةِ وَالإِسْبَانِيَّةِ.",
+          "fr": "D'autres langues ont emprunté des mots arabes, comme l'anglais, le français et l'espagnol."
+        }
+      ]
+    },
+    {
+      "id": "7.3",
+      "type": "dialogue",
+      "titleAr": "السَّفَرُ لِطَلَبِ العِلْمِ",
+      "titleFr": "Voyager pour chercher la science",
+      "youtube": "",
+      "pdfPage": 36,
+      "lines": [
+        {
+          "speaker": "شريف",
+          "ar": "السَّلامُ عَلَيْكُمْ.",
+          "fr": "Sharif: Que la paix soit sur vous."
+        },
+        {
+          "speaker": "هارون",
+          "ar": "وعَلَيْكُمُ السَّلامُ.",
+          "fr": "Haroun: Et que la paix soit sur vous."
+        },
+        {
+          "speaker": "شريف",
+          "ar": "إلى أَيْنَ أَنْتَ مُسافِرُ ؟",
+          "fr": "Sharif: Où voyages-tu ?"
+        },
+        {
+          "speaker": "هارون",
+          "ar": "أنا مُسافِر إلى الرِّياضِ، سَأَلتَحِقُ بِجامِعَةِ الإمامِ ، كُلِّيَّةِ الشَّرِيعَةِ. أُرِيدُ التَّخُصَّصَ في الدراسات الإسلامية.",
+          "fr": "Haroun: Je voyage à Riyad, je vais rejoindre l'Université de l'Imam, la faculté de la Charia. Je veux me spécialiser dans les études islamiques."
+        },
+        {
+          "speaker": "شريف",
+          "ar": "وَلَكِنَّكَ تَعْرِفُ الإِسْلامَ جَيِّداً .",
+          "fr": "Sharif: Mais tu connais bien l'Islam."
+        },
+        {
+          "speaker": "هارون",
+          "ar": "دَرَسْتُ الإِسْلامَ بِاللُّغَةِ الأَرْدِيَّةِ، وَهَذا لا يَكْفي . يَجِبُّ أَنْ أَدْرُسَ الإِسْلامَ بِاللُّغَةِ العَرَبِيَّةِ؛ لأَنَّها لُغَةُ القُرْآنِ الكَرِيمِ، وَلا يُفْهَمُ القُرْآنُ إلا بها .",
+          "fr": "Haroun: J'ai étudié l'Islam en ourdou, et cela ne suffit pas. Je dois étudier l'Islam en arabe, car c'est la langue du Saint Coran, et on ne comprend le Coran que par elle."
+        },
+        {
+          "speaker": "شريف",
+          "ar": "أنا مُسافِرُ إلى القاهِرَةِ. سَوْفَ أَلْتَحِقُ بِجَامِعَةِ القَاهِرَةِ، كُلِّيَّةِ الآداب.",
+          "fr": "Sharif: Je voyage au Caire. Je vais rejoindre l'Université du Caire, la faculté des Lettres."
+        },
+        {
+          "speaker": "هارون",
+          "ar": "ماذا سَتَدْرُسُ فِي كُلِّيَّةِ الآداب ؟",
+          "fr": "Haroun: Qu'est-ce que tu vas étudier à la faculté des Lettres ?"
+        },
+        {
+          "speaker": "شريف",
+          "ar": "أُريدُ التَّخَصُّصَ في عُلومِ اللُّغَةِ العَرَبِيَّةِ النَّحْوِ وَالصَّرْفِ وَالبَلاغَةِ.",
+          "fr": "Sharif: Je veux me spécialiser dans les sciences de la langue arabe: la grammaire, la morphologie et la rhétorique."
+        },
+        {
+          "speaker": "هارون",
+          "ar": "لماذا تُريدُ التَّخَصُّصَ فِي عُلُومِ اللُّغَةِ العَرَبِيَّةِ؟",
+          "fr": "Haroun: Pourquoi veux-tu te spécialiser dans les sciences de la langue arabe ?"
+        },
+        {
+          "speaker": "شريف",
+          "ar": "سَأَكونُ مُدَرِّساً لِلُّغَةِ العَرَبِيَّةِ في جَامِعَةِ إسلام آباد، إنْ شاءَ اللهُ، وَيَجِبُ أَنْ أَعْرِفَ هَذِهِ اللُّغَةَ جَيِّداً.",
+          "fr": "Sharif: Je serai professeur de langue arabe à l'université d'Islamabad, si Dieu le veut, et je dois bien connaître cette langue."
+        },
+        {
+          "speaker": "هارون",
+          "ar": "عفواً ؛ هَذا هُوَ النّداء الأخيرُ لِطائِرَةِ الرِّياضِ.",
+          "fr": "Haroun: Excusez-moi, c'est le dernier appel pour le vol à destination de Riyad."
+        },
+        {
+          "speaker": "هارون",
+          "ar": "مَعَ السَّلامَةِ .",
+          "fr": "Haroun: Au revoir."
+        },
+        {
+          "speaker": "شريف",
+          "ar": "في أمان الله.",
+          "fr": "Sharif: Que Dieu te protège."
+        }
+      ]
+    },
+    {
+      "id": "7.4",
+      "type": "texte",
+      "titleAr": "العَرَبِيَّةُ لُغَةٌ عَالَميَّةٌ",
+      "titleFr": "L'arabe, une langue universelle",
+      "youtube": "",
+      "pdfPage": 37,
+      "lines": [
+        {
+          "speaker": "",
+          "ar": "كانَتِ اللُّغَةُ العَرَبِيَّةُ لُغَةً عالَميَّةً فِي العَصْرِ العبّاسي، الَّذِي ازْدَهَرَتْ فِيهِ الحَضَارَةُ الإِسْلامِيَّةُ.",
+          "fr": "La langue arabe était une langue universelle à l'époque abbasside, au cours de laquelle la civilisation islamique a prospéré."
+        },
+        {
+          "speaker": "",
+          "ar": "وَكَانَتِ العَرَبِيَّةُ لُغَةَ تِلْكَ الحَضَارَةِ الَّتي تُرْجِمَتْ إِلَيْها الكُتُبُ مِنَ اليونانِيَّةِ وَالفَارِسِيَّةِ، وَأَلَّفَ بِها العلماء في الطِّبِّ، وَالهَندَسَةِ ، وَالرِّياضِيَّاتِ، وَالعُلومِ، وَغَيْرِ ذَلِكَ.",
+          "fr": "L'arabe était la langue de cette civilisation vers laquelle les livres étaient traduits du grec et du persan, et les savants écrivaient en arabe dans les domaines de la médecine, de l'ingénierie, des mathématiques, des sciences, etc."
+        },
+        {
+          "speaker": "",
+          "ar": "وَحَمَلَتِ اللُّغَةُ العَرَبِيَّةُ تِلْكَ العُلوم إلى أوروبا ، فَكانَتْ أَساسَ الحَضَارَةِ الغربية الحديثة.",
+          "fr": "La langue arabe a transmis ces sciences à l'Europe, et elle était la base de la civilisation occidentale moderne."
+        },
+        {
+          "speaker": "",
+          "ar": "مَرَّتْ بِالعَرَبِ بَعْدَ ذَلِكَ - عُصورٌ مِنَ الضَّعْفِ ابْتَعَدوا فيها عَنْ دِينِهِمْ، وَهَجَرُوا اللُّغَةَ العَرَبِيَّةَ الفَصيحَةَ، وَاسْتَعْمَلُوا اللَّهَجاتِ.",
+          "fr": "Les Arabes ont ensuite traversé des périodes de faiblesse au cours desquelles ils se sont éloignés de leur religion, ont abandonné la langue arabe classique et ont utilisé les dialectes."
+        },
+        {
+          "speaker": "",
+          "ar": "ثُمَّ جَاءَ الاسْتِعمارُ ، فَحارَبَ الثَّقَافَةَ الإِسْلامِيَّةَ، وَاللُّغَةَ العَرَبِيَّةَ الفَصيحَةَ، وَشَجَّعَ اللَّهَجاتِ، فَكَانَتْ هُناكَ لَهْجَةٌ مِصْرِيَّةٌ ، وَأُخْرَى مَغْرِبِيَّةٌ، وَثَالِثَةٌ سُورِيَّةٌ، وَهَكَذَا ...",
+          "fr": "Puis vint le colonialisme, qui combattit la culture islamique et la langue arabe classique, et encouragea les dialectes, de sorte qu'il y avait un dialecte égyptien, un autre marocain, un troisième syrien, et ainsi de suite..."
+        },
+        {
+          "speaker": "",
+          "ar": "وَقَدْ أَدَّى هَذا إلى تَفَرُّقِ العَرَبِ، وَبُعْدِ بَعْضِهِم عَنْ بَعْضٍ؛ بِحَيْثُ إذا سافرَ العَرَبِيُّ مِنْ بَلَدِهِ إِلَى بَلَدٍ عَرَبِيٌّ آخَرَ، وَجَدَ بَعْضَ الصُّعُوبَةِ في الاتِّصَالِ بِأَهْلِ ذَلِكَ البَلَدِ ، إذا تَحَدَّثُوا بِلَهَجاتِهِم، وَلَا يَتَحَقَّقُ الاتصال التام بَيْنَهُ وَبَيْنَهُمْ، إلا إذا كانَ الحَديثُ بِاللُّغَةِ العَرَبِيَّةِ الفَصيحَةِ.",
+          "fr": "Cela a conduit à la division des Arabes et à l'éloignement de certains d'entre eux des autres ; de sorte que si un Arabe voyage de son pays à un autre pays arabe, il trouve une certaine difficulté à communiquer avec les habitants de ce pays, s'ils parlent leurs dialectes, et une communication complète entre eux n'est possible que si la conversation se fait en langue arabe classique."
+        },
+        {
+          "speaker": "",
+          "ar": "اخْتَلَفَ الأَمْرُ اليَوْمَ، فَضَعُفَتِ اللَّهَجاتُ، وَقَوِيَتِ اللُّغَةُ العَرَبِيَّةُ الفَصيحَةُ؛ بِسَبَبِ التَّعْلِيمِ وَوَسَائِلِ الاتِّصالِ الحَدِيثَةِ .",
+          "fr": "La situation est différente aujourd'hui, les dialectes se sont affaiblis et la langue arabe classique s'est renforcée, en raison de l'éducation et des moyens de communication modernes."
+        },
+        {
+          "speaker": "",
+          "ar": "وَأَصْبَحَتِ العَرَبِيَّةُ لُغَةٌ عالَميَّةً مَرَّةً ثانية ، الإِنْجِلِيزِيَّةِ ، وَالفِرَنْسِيَّةِ وَالْإِسْبَانِيَّةِ.",
+          "fr": "L'arabe est redevenue une langue universelle, comme l'anglais, le français et l'espagnol."
+        },
+        {
+          "speaker": "",
+          "ar": "فَهِيَ إِحْدَى اللُّغَاتِ الرَّسْمِيَّةِ فِي هَيْئَةِ الأُمَمِ المُتَّحِدَةِ، وَهِيَ اللُّغَةُ السَّادِسَةُ فِي العَالَمِ، يَتَحَدَّثُ بِها أَكْثَرُ مِنْ ۲۰۰ مِلْيونِ عَرَبِيٌّ، وَيُؤَدِّي العِباداتِ بِها أَكْثَرُ مِنْ مِلْيَارِ مُسْلِمٍ.",
+          "fr": "C'est l'une des langues officielles de l'Organisation des Nations Unies, et c'est la sixième langue au monde, parlée par plus de 200 millions d'Arabes, et plus d'un milliard de musulmans accomplissent des actes de culte dans cette langue."
+        }
+      ]
+    }
+  ]
+}

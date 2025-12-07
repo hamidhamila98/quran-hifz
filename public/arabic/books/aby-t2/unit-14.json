@@ -1,0 +1,372 @@
+{
+  "id": 14,
+  "titleAr": "الوحدة الرابعة عشرة: الأمن",
+  "titleFr": "Unité 14: La sécurité",
+  "items": [
+    {
+      "id": "14.1",
+      "type": "dialogue",
+      "titleAr": "حادِثُ سَرِقَةٍ",
+      "titleFr": "Un vol",
+      "youtube": "",
+      "pdfPage": 29,
+      "lines": [
+        {
+          "speaker": "فَيصَل",
+          "ar": "السَّلامُ عَلَيْكُمْ.",
+          "fr": "Paix sur vous."
+        },
+        {
+          "speaker": "جَعْفَر",
+          "ar": "وَعَلَيْكُمُ السَّلامُ.",
+          "fr": "Et sur vous la paix."
+        },
+        {
+          "speaker": "جَعْفَر",
+          "ar": "هَلْ شَاهَدْتَ الأَخْبَارَ فِي التِّلْفَازِ أَمْسِ؟",
+          "fr": "Avez-vous regardé les nouvelles à la télévision hier ?"
+        },
+        {
+          "speaker": "فَيْصَل",
+          "ar": "تَقْصِدُ حَادِثَ سَرِقَةِ الْمَصْرِفِ الوَطَنِيّ؟",
+          "fr": "Vous voulez dire le vol de la banque nationale ?"
+        },
+        {
+          "speaker": "جَعْفَر",
+          "ar": "نَعَمْ، لَقَدْ أخافني ذلِكَ الحادِثُ كَثيراً . لَمْ تَكُنْ بِلادُنا تَعْرِفُ هَذَا النَّوْعَ مِنَ الجَرِيمَةِ مِنْ قَبْلُ.",
+          "fr": "Oui, cet incident m'a beaucoup effrayé. Notre pays ne connaissait pas ce genre de crime auparavant."
+        },
+        {
+          "speaker": "فَيْصَل",
+          "ar": "لَكِنَّنِي شَعَرْتُ بِالاطْمِئنَانِ عِنْدَما قَبَضَتِ الشُّرْطَةُ عَلَى الجُنَاةِ بَعْدَ ساعات.",
+          "fr": "Mais je me suis senti rassuré lorsque la police a arrêté les criminels après quelques heures."
+        },
+        {
+          "speaker": "جَعْفَر",
+          "ar": "لَقَدْ زَادَتِ الجَرِيمَةُ عِنْدَنا أخيراً .",
+          "fr": "Le crime a récemment augmenté chez nous."
+        },
+        {
+          "speaker": "فَيْصَل",
+          "ar": "وَلَكِنَّها ما زالَتْ قَليلَةً، مُقارَنَةً بِالدُّوَلِ الأُخْرَى.",
+          "fr": "Mais il est encore faible par rapport aux autres pays."
+        },
+        {
+          "speaker": "جَعْفَر",
+          "ar": "أَتَّفِقُ مَعَكَ، فَقَدْ قَضيتُ العُطْلَةَ المَاضِيَةَ، في إحْدَى الدُّوَلِ الكُبْرَى. لَمْ نَكُنْ نَخْرُجُ مِنَ الفُنْدُق بَعْدَ غُروبِ الشَّمْسِ، خوفاً مِنْ حَوادِثِ السَّرِقَةِ وَالقَتْلِ.",
+          "fr": "Je suis d'accord avec vous, j'ai passé les dernières vacances dans l'un des grands pays. Nous ne sortions pas de l'hôtel après le coucher du soleil, de peur des vols et des meurtres."
+        },
+        {
+          "speaker": "فَيْصَل",
+          "ar": "بَلْ تَقَعُ الجَريمَةُ - أَحْياناً - في تِلْكَ البلاد في النَّهَارِ.",
+          "fr": "Au contraire, le crime se produit - parfois - dans ce pays pendant la journée."
+        },
+        {
+          "speaker": "جَعْفَر",
+          "ar": "أَخافُ أَنْ تَنْتَقِلَ العَدْوَى إلى بلادنا ؛ فَتَنْتَشِرَ جَرَائِمُ القَتْلِ وَالاغْتِصابِ.",
+          "fr": "Je crains que l'infection ne se propage à notre pays ; les crimes de meurtre et de viol se répandront."
+        },
+        {
+          "speaker": "فَيْصَل",
+          "ar": "أَسْأَلُ اللهَ أَلا يَحْدُثَ ذَلِكَ.",
+          "fr": "Je demande à Dieu que cela n'arrive pas."
+        },
+        {
+          "speaker": "جَعْفَر",
+          "ar": "أَحْسَنْتَ فَالحَياةُ لَا تُساوِي شَيْئاً بِلا أَمْنٍ.",
+          "fr": "Vous avez raison, la vie ne vaut rien sans sécurité."
+        },
+        {
+          "speaker": "فَيْصَل",
+          "ar": "أدامَ اللهُ عَلَيْنَا نِعْمَةَ الأَمْنِ.",
+          "fr": "Que Dieu prolonge pour nous la bénédiction de la sécurité."
+        },
+        {
+          "speaker": "جَعْفَر",
+          "ar": "آمين.",
+          "fr": "Amen."
+        }
+      ]
+    },
+    {
+      "id": "14.2",
+      "type": "texte",
+      "titleAr": "الحَرْبُ والسَّلامُ",
+      "titleFr": "La guerre et la paix",
+      "youtube": "",
+      "pdfPage": 30,
+      "lines": [
+        {
+          "speaker": "",
+          "ar": "تَهْيِئَة:",
+          "fr": "Préparation:"
+        },
+        {
+          "speaker": "",
+          "ar": "فكر في الإِجَابَةِ عَنِ الْأَسْئِلَةِ التَّالِيَةِ :",
+          "fr": "Réfléchissez à répondre aux questions suivantes :"
+        },
+        {
+          "speaker": "",
+          "ar": "١- هَلْ تُحِبُّ الحَرْبَ أَمِ السَّلامَ؟ لماذا ؟",
+          "fr": "1- Aimez-vous la guerre ou la paix ? Pourquoi ?"
+        },
+        {
+          "speaker": "",
+          "ar": "٢- ما أَسْبَابُ الحُروبِ؟",
+          "fr": "2- Quelles sont les causes des guerres ?"
+        },
+        {
+          "speaker": "",
+          "ar": "٣- مَتى انْتَهَتِ الحَرْبُ العَالَمِيَّةُ الأولى؟",
+          "fr": "3- Quand s'est terminée la Première Guerre mondiale ?"
+        },
+        {
+          "speaker": "",
+          "ar": "٤- مَتى انْتَهَتِ الحَرْبُ العَالَمِيَّةُ الثَّانِيَةِ؟",
+          "fr": "4- Quand s'est terminée la Seconde Guerre mondiale ?"
+        },
+        {
+          "speaker": "",
+          "ar": "يحتاجُ كُلُّ إِنْسَانٍ إِلى أَنْ يَعِيشَ في في أَمْنٍ وَسَلام؛ وَمَعَ ذَلِكَ تَحْدُثُ الحُرُوبُ فِي كُلِّ مَكَانٍ مِنَ العَالَمِ.",
+          "fr": "Chaque personne a besoin de vivre en sécurité et en paix ; et pourtant, les guerres se produisent partout dans le monde."
+        },
+        {
+          "speaker": "",
+          "ar": "وها هِيَ وَسائِلُ الإعلام، تَنْقُلُ لَنا كُلَّ ساعَةٍ أَخْبَارَ الحُروبِ. وَالحَرْبُ لَيْسَتْ أَمْراً جَدِيداً؛ فَالتَّارِيخ",
+          "fr": "Voici les médias, qui nous transmettent chaque heure des nouvelles des guerres. Et la guerre n'est pas une chose nouvelle ; l'histoire"
+        },
+        {
+          "speaker": "",
+          "ar": "يُحَدِّثُنا عَنْ حُروبِ كَثِيرَةٍ ، وَقَعَتْ في الماضي، وَأَضْعَفَتْ حَضارات الإنْسَانِ. لَقَدْ ذَاقَتْ مُعْظَمُ الدُّوَلِ",
+          "fr": "nous parle de nombreuses guerres qui ont eu lieu dans le passé et ont affaibli les civilisations humaines. La plupart des pays ont goûté"
+        },
+        {
+          "speaker": "",
+          "ar": "آلام الحروب، وَلَمْ يَتَمَتَّعُ الإِنْسانُ في تاريخه الطَّوِيلِ بِالْأَمْنِ وَالسَّلَامِ إِلَّا قَلِيلاً.",
+          "fr": "aux douleurs des guerres, et l'homme n'a joui de la sécurité et de la paix dans sa longue histoire que rarement."
+        },
+        {
+          "speaker": "",
+          "ar": "وَمَعَ كَثْرَةِ الحُروبِ، كَانَتْ هُناكَ محاولات لتحقيق السَّلام؛ فَفِي العَصْرِ الحَدِيثِ، وَبَعْدَ انْتِهَاءِ",
+          "fr": "Et malgré la fréquence des guerres, il y a eu des tentatives pour réaliser la paix ; ainsi, à l'époque moderne, et après la fin de"
+        },
+        {
+          "speaker": "",
+          "ar": "الحَرْبِ العالَميَّة الأولى سَنَةَ ،۱۹۱۸م، أُنْشِئَتْ عُصْبَةُ الأُمَمِ، وَكَانَ الهَدَفُ مِنْهَا حِفْظُ السَّلامِ في",
+          "fr": "la Première Guerre mondiale en 1918, la Société des Nations a été créée, et son objectif était de maintenir la paix dans"
+        },
+        {
+          "speaker": "",
+          "ar": "العالم. وَبَعْدَ انْتِهاءِ الحَرْبِ العالَميَّةِ الثَّانِيَةِ سَنَةَ ١٩٤٥م ، أُنْشِئَتْ مُنَظَّمَةُ الْأُمَمِ الْمُتَّحِدَةِ؛ لِتَحُلَّ مَكَانَ",
+          "fr": "le monde. Et après la fin de la Seconde Guerre mondiale en 1945, l'Organisation des Nations Unies a été créée ; pour remplacer"
+        },
+        {
+          "speaker": "",
+          "ar": "عُصْبَةِ الْأُمَمِ. وَيَتْبَعُ مَجْلِسُ الأَمْنِ مُنَظَّمَةَ الأُمَمِ المُتَّحِدَةِ، وَهُوَ يَبْحَثُ فِي الْمُنازَعَاتِ بَيْنَ الدُّوَلِ،",
+          "fr": "la Société des Nations. Le Conseil de sécurité relève de l'Organisation des Nations Unies, et il examine les conflits entre les pays,"
+        },
+        {
+          "speaker": "",
+          "ar": "وَيَفْرِضُ عُقوباتٍ عَلى الدُّوَلِ الْمُعْتَدِيَةِ. وَقَدْ حَقَّقَتِ الأَمَمُ المُتَّحِدَةُ بَعْضَ النَّجَاحِ فِي حِفْظِ السَّلامِ،",
+          "fr": "et impose des sanctions aux pays agresseurs. L'Organisation des Nations Unies a obtenu un certain succès dans le maintien de la paix,"
+        },
+        {
+          "speaker": "",
+          "ar": "وَلَكِنَّهَا لَمْ تَوقِفُ الحروب في كَثِيرٍ مِنَ الدُّوَلِ، وَبِخاصَّةٍ في إفريقيا وآسيا . وَتُنَّهَمُ الْأُمَمُ الْمُتَّحِدَةُ",
+          "fr": "mais elle n'a pas arrêté les guerres dans de nombreux pays, en particulier en Afrique et en Asie. L'Organisation des Nations Unies est accusée"
+        },
+        {
+          "speaker": "",
+          "ar": "بِأَنَّهَا أَصْبَحَتْ ضَعِيفَةً، لا حَوْلَ لها ولا قُوَّةَ، لأَنَّ بَعْضَ الدُّوَلِ تُهَيْمِنُ عَلَيْهَا ؛ وَلِذلِكَ أَصْبَحَ كَثِيرٌ",
+          "fr": "d'être devenue faible, sans pouvoir ni force, car certains pays la dominent ; et c'est pourquoi beaucoup"
+        },
+        {
+          "speaker": "",
+          "ar": "مِنْ قَراراتها لا يُنَفَّذُ ، وَمِنْ ذلِكَ القرارات الّتي تَخُصُّ فلسطينَ وَالقُدْسَ وَكَشْمِيرَ.",
+          "fr": "de ses décisions ne sont pas mises en œuvre, et parmi celles-ci, les décisions qui concernent la Palestine, Jérusalem et le Cachemire."
+        }
+      ]
+    },
+    {
+      "id": "14.3",
+      "type": "dialogue",
+      "titleAr": "أسباب الجريمة",
+      "titleFr": "Causes du crime",
+      "youtube": "",
+      "pdfPage": 31,
+      "lines": [
+        {
+          "speaker": "صلاح",
+          "ar": "هُناكَ سُؤالٌ يَشْغَلُ بالي كثيراً : لماذا زادَتْ نِسْبَةُ الجَرِيمَةِ في العالم؟",
+          "fr": "Salah : J'ai une question qui me préoccupe beaucoup : pourquoi le taux de criminalité a-t-il augmenté dans le monde ?"
+        },
+        {
+          "speaker": "مسعود",
+          "ar": "هُناكَ أَسْبابٌ كَثِيرَةٌ مِنْها : أنَّ القوانينَ أَصْبَحَتْ غَيْرَ رادِعَةِ، فَالْمُجْرِمُ يُسْجَنُ سَنَوَاتٍ، ثُمَّ يَخْرُجُ : لِيَرْتَكِبَ جَرَائِمَ أُخْرَى أَكْبَرَ.",
+          "fr": "Masoud : Il y a beaucoup de raisons, dont le fait que les lois ne sont plus dissuasives, le criminel est emprisonné pendant des années, puis il sort pour commettre d'autres crimes plus importants."
+        },
+        {
+          "speaker": "زياد",
+          "ar": "لَقَدْ وَضَعَ الإِسْلامُ الحُدُودَ؛ لِحِمَايَةِ الْمُجْتَمَعِ . قال تعالى: ﴿ وَلَكُمْ فِي الْقِصَاصِ حَيَاةٌ يَا أُوْلِي الْأَلْبَابِ لَعَلَّكُمْ تَتَّقُونَ.",
+          "fr": "Ziad : L'Islam a établi des limites pour protéger la société. Dieu Tout-Puissant a dit : « Et dans le talion, il y a la vie pour vous, ô gens doués d'intelligence, afin que vous craigniez Dieu."
+        },
+        {
+          "speaker": "صلاح",
+          "ar": "يُؤَيِّدُ ذَلِكَ، أَنَّ الجَريمَةَ تَزْدادُ، كُلَّمَا أَمِنَ الْمُجْرِمُ العِقَابَ.",
+          "fr": "Salah : Cela confirme que le crime augmente chaque fois que le criminel est à l'abri de la punition."
+        },
+        {
+          "speaker": "زياد",
+          "ar": "وَمِنَ الأَسْبابِ عِنْدي، أنَّ وَسائِلَ الإعلام تُشَجِّعُ عَلَى الجَرِيمَةِ.",
+          "fr": "Ziad : Parmi les raisons que j'ai, c'est que les médias encouragent le crime."
+        },
+        {
+          "speaker": "مسعود",
+          "ar": "وَقَدْ يكونُ مِنَ الأَسْبَابِ انْتِشَارُ الفَقْرِ، وَالجوع في المُجْتَمَعِ.",
+          "fr": "Masoud : L'une des raisons peut être la propagation de la pauvreté et de la faim dans la société."
+        },
+        {
+          "speaker": "صلاح",
+          "ar": "صَدَقْتَ ، فالأَمْنُ وَالغِذاءً مِنْ أَهَمِّ النَّعَمِ. قَالَ تَعَالَى: ﴿ فَلْيَعْبُدُوا رَبَّ هَذَا الْبَيْتِ - الَّذِي أَطْعَمَهُمْ مِنْ جُوعِ وَآمَنَهُمْ مِنْ خَوْفٍ .",
+          "fr": "Salah : Tu as raison, la sécurité et la nourriture sont parmi les bénédictions les plus importantes. Dieu Tout-Puissant a dit : « Qu'ils adorent donc le Seigneur de cette Maison - qui les a nourris contre la faim et les a mis en sécurité contre la peur."
+        },
+        {
+          "speaker": "زياد",
+          "ar": "يَجِبُ أَنَّ نَتَعاوَنَ جَمِيعاً عَلى حِفْظِ الأَمْنِ؛ فَحِفْظُ الأَمْنِ لَيسَ مَسْؤولِيَّةَ رِجَالِ الْأَمْنِ وَحْدَهُمْ، وَإِنَّمَا مَسؤولِيَّةٌ كُلِّ مُواطِنٍ.",
+          "fr": "Ziad : Nous devons tous coopérer pour maintenir la sécurité ; maintenir la sécurité n'est pas la responsabilité des seuls hommes de la sécurité, mais la responsabilité de chaque citoyen."
+        }
+      ]
+    },
+    {
+      "id": "14.4",
+      "type": "texte",
+      "titleAr": "أثر الأمن في الحياة",
+      "titleFr": "L'impact de la sécurité dans la vie",
+      "youtube": "",
+      "pdfPage": 32,
+      "lines": [
+        {
+          "speaker": "",
+          "ar": "تَهْيِئَة:",
+          "fr": "Préparation:"
+        },
+        {
+          "speaker": "",
+          "ar": "فَكِّر في الإِجَابَةِ عَنِ الْأَسْئِلَةِ التَّالِيَةِ:",
+          "fr": "Réfléchissez aux réponses aux questions suivantes:"
+        },
+        {
+          "speaker": "",
+          "ar": "١- ما أَسْبَابُ الحروب؟",
+          "fr": "1- Quelles sont les causes des guerres?"
+        },
+        {
+          "speaker": "",
+          "ar": "اذْكُرْ بَعْضَ الدُّوَلِ الَّتي فيها حُروبٌ.",
+          "fr": "Mentionnez certains pays où il y a des guerres."
+        },
+        {
+          "speaker": "",
+          "ar": "٢- ما نَتائِجُ السَّلامِ؟",
+          "fr": "2- Quels sont les résultats de la paix?"
+        },
+        {
+          "speaker": "",
+          "ar": "٤- اذْكُرْ دُوَلاً لَيْسَ فِيهَا حُروبٌ .",
+          "fr": "4- Mentionnez des pays où il n'y a pas de guerres."
+        },
+        {
+          "speaker": "",
+          "ar": "﴿الَّذِينَ آمَنُوا وَلَمْ يَلْبِسُوا إِيمَانَهُم بِظُلْمٍ أُوْلَئِكَ لَهُمُ الْأَمْنُ وَهُم مُّهْتَدُونَ﴾",
+          "fr": "(Ceux qui ont cru et n'ont pas entaché leur foi d'injustice, ceux-là auront la sécurité et ils seront bien guidés)"
+        },
+        {
+          "speaker": "",
+          "ar": "يعيش الإنْسانُ سَعِيداً في حَياتِهِ، مُطْمَئِنّاً عَلَى نَفْسِهِ، وَمَالِهِ، وَأَهْلِهِ، إِذا تَوَفَّرَتْ فِي مُجْتَمَعِهِ",
+          "fr": "L'homme vit heureux dans sa vie, rassuré pour lui-même, son argent et sa famille, si trois choses sont disponibles dans sa société:"
+        },
+        {
+          "speaker": "",
+          "ar": "ثلاثة أمور : الأَمْنُ، وَالصِّحَّةُ، وَالغِذاءُ.",
+          "fr": "Trois choses: la sécurité, la santé et la nourriture."
+        },
+        {
+          "speaker": "",
+          "ar": "وَإِذَا حُرِمَ الإِنْسانُ مِنْ هَذِهِ النِّعَمِ عاشَ شَقِيًّا في حَياتِهِ. قالَ الرَّسُولُ ﷺ : ( مَنْ أَصْبَحَ مِنْكُمْ",
+          "fr": "Et si l'homme est privé de ces bienfaits, il vit malheureux dans sa vie. Le Messager a dit: (Quiconque parmi vous se réveille"
+        },
+        {
+          "speaker": "",
+          "ar": "آمِناً فِي سِرْبِهِ، مُعافَى فِي جَسَدِهِ، عِنْدَهُ قوتُ يَوْمِهِ، فَكَأَنَّما حِيزَتْ لَهُ الدُّنْيا بِحَذافيرها).",
+          "fr": "en sécurité dans son foyer, en bonne santé dans son corps, ayant sa nourriture quotidienne, c'est comme si le monde entier lui avait été donné)."
+        },
+        {
+          "speaker": "",
+          "ar": "عِنْدَمَا تَعِيشُ البِلادُ فِي أَمْنِ وَسَلَام يَتَحَقَّقُ الاسْتِقْرارُ؛ فَتَنْشَطُ عَمَلِيَّةُ التَّنْمِيَةِ، وَيَتَّجِهُ النَّاسُ إِلى",
+          "fr": "Lorsque le pays vit dans la sécurité et la paix, la stabilité est réalisée; le processus de développement est activé et les gens se tournent vers"
+        },
+        {
+          "speaker": "",
+          "ar": "البناء ؛ فَتَكْثُرُ الصِّنَاعَةُ وَالزِّراعَةُ، وَتَكْثُرُ الثَّرْوَةُ.",
+          "fr": "la construction; l'industrie et l'agriculture se multiplient, et la richesse augmente."
+        },
+        {
+          "speaker": "",
+          "ar": "أما إذا حَلَّتِ الجَرِيمَةُ مَكَانَ الأَمْنِ ؛ فَتُحْرَمُ البِلادُ مِنَ الاسْتِقْرارِ، وَتَتَوَقَّفُ عَمَلِيَّةُ التَّنْمِيَةِ،",
+          "fr": "Mais si le crime remplace la sécurité; le pays est privé de stabilité et le processus de développement s'arrête,"
+        },
+        {
+          "speaker": "",
+          "ar": "والمشاريع الزراعِيَّةُ وَالصِّناعِيَّةُ، وَتُوَجَّهُ طَاقاتُ الدَّولَةِ إِلَى الحَرْبِ.",
+          "fr": "les projets agricoles et industriels, et les énergies de l'État sont dirigées vers la guerre."
+        },
+        {
+          "speaker": "",
+          "ar": "إذا نَظَرْنَا إلى خَريطة العالم اليومَ وَجَدنا أنَّ الدُّوَلَ ثَلاثَةُ أقْسام : القِسْمُ الأَوَّلُ : دُوَلٌ فِيهَا أَمْنٌ",
+          "fr": "Si nous regardons la carte du monde aujourd'hui, nous constatons que les pays sont de trois types: le premier type: les pays où il y a la sécurité"
+        },
+        {
+          "speaker": "",
+          "ar": "وَسَلامٌ، وَهِيَ في تَقَدُّم مُسْتَمِرٌ، وَيَعيشُ الإِنْسانُ فيها مُطْمَئِنَّاً ، وَالقِسْمُ الثَّانِي: دُوَلٌ لا تَعْرِفُ",
+          "fr": "et la paix, et ils sont en progrès constant, et l'homme y vit rassuré, et le deuxième type: les pays qui ne connaissent pas"
+        },
+        {
+          "speaker": "",
+          "ar": "السَّلامَ، فَهِيَ فِي حُرُوبٍ مُسْتَمِرَّةٍ ، فَما تَخْرُجُ مِنْ حَرْبٍ، إلا وَتَدْخُلُ فِي حَرْبٍ أُخْرَى، وَهَذِهِ",
+          "fr": "la paix, ils sont en guerres constantes, ils ne sortent pas d'une guerre sans entrer dans une autre, et ces"
+        },
+        {
+          "speaker": "",
+          "ar": "الدُّوَلُ فِي تِأَخِرٍ مُسْتَمِنٌ، وَيَعيشُ أَهْلُها في جَهْلٍ وَمَرَضٌ وَفَقْرٍ . والقِسْمُ الثَّالِثُ : دُوَلٌ لَيسَتْ في",
+          "fr": "pays sont en retard constant, et leurs habitants vivent dans l'ignorance, la maladie et la pauvreté. Et le troisième type: les pays qui ne sont pas dans"
+        },
+        {
+          "speaker": "",
+          "ar": "سلام دائم، وَلَيْسَتْ في حُروبٍ مُسْتَمِرَّةٍ ، وَالإِنْسَانُ فِيهَا يَعيشُ فِي حَالَةٍ بَيْنَ الغِنى وَالفَقْرِ.",
+          "fr": "une paix permanente, et ne sont pas dans des guerres constantes, et l'homme y vit dans un état entre la richesse et la pauvreté."
+        },
+        {
+          "speaker": "",
+          "ar": "يَجِبُّ أَنْ تَتَوَقَّفَ الحُروب في جميع أنحاء العالم، حَتَّى يَعُمَّ السَّلَامُ الْأَرْضَ.",
+          "fr": "Les guerres doivent cesser dans toutes les régions du monde, afin que la paix règne sur la terre."
+        },
+        {
+          "speaker": "",
+          "ar": "وَعَلَى الدُّوَلِ الكُبْرَى أنْ توقِفَ تِلْكَ الحُروبَ، فَلا تَبِيعَ السّلاحَ، وَلا تُثير الخلافاتِ بَيْنَ الدُّوَلِ.",
+          "fr": "Et les grandes puissances doivent arrêter ces guerres, ne pas vendre d'armes, et ne pas susciter de conflits entre les pays."
+        },
+        {
+          "speaker": "",
+          "ar": "وَمِنْ نَاحِيَةٍ أَخْرَى، عَلَيْهَا مُسَاعَدَةُ الدُّوَلِ الفَقِيرَةِ؛ لِتَنْتَقِلَ مِنْ مَرْحَلَةِ التَّأَخَّرِ إِلَى مَرْحَلَةِ التَّقَدُّمِ",
+          "fr": "Et d'un autre côté, elles doivent aider les pays pauvres; pour passer d'une phase de retard à une phase de progrès,"
+        },
+        {
+          "speaker": "",
+          "ar": "وَلِيَعِيشَ أَهْلُهَا فِي أَمْنٍ وَسَلَامٍ.",
+          "fr": "et pour que leurs habitants vivent dans la sécurité et la paix."
+        }
+      ]
+    }
+  ]
+}

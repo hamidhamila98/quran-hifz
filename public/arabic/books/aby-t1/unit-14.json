@@ -1,0 +1,247 @@
+{
+  "id": 14,
+  "titleAr": "الحج والعمرة",
+  "titleFr": "Hajj et Omra",
+  "items": [
+    {
+      "id": "14.1",
+      "type": "dialogue",
+      "titleAr": "",
+      "titleFr": "",
+      "youtube": "https://www.youtube.com/embed/cvZbvvh3EBU",
+      "pdfPage": null,
+      "lines": [
+        {
+          "speaker": "سليم",
+          "ar": "متى العُطْلَةُ يا جميل ؟",
+          "fr": "Quand sont les vacances Jamil ?"
+        },
+        {
+          "speaker": "جميل",
+          "ar": "العُطْلَةُ فِي شَهْرِ رَمَضانَ",
+          "fr": "Les vacances sont au mois de Ramadan."
+        },
+        {
+          "speaker": "سليم",
+          "ar": "أَيْنَ تَقْضِي العطلَةَ ؟",
+          "fr": "Où passes-tu les vacances ?"
+        },
+        {
+          "speaker": "جميل",
+          "ar": "أقضي العُطْلَةَ في مَكَّةَ المُكَرَّمَةِ ، والمدينة المنورة",
+          "fr": "Je passe les vacances à La Mecque la Sainte, et Médine l'Illuminée."
+        },
+        {
+          "speaker": "سليم",
+          "ar": "كَيْفَ تَقْضِي العُطْلَةَ فِي مَكَّةَ ؟",
+          "fr": "Comment passes-tu les vacances à La Mecque ?"
+        },
+        {
+          "speaker": "جميل",
+          "ar": "أَعْتَمِرُ وأصوم، وأصلي في المَسْجِدِ الحرام",
+          "fr": "Je fais la Omra, je jeûne et je prie à la Mosquée Sacrée."
+        },
+        {
+          "speaker": "سليم",
+          "ar": "وماذا تَفْعَلُ في المدينة ؟",
+          "fr": "Et que fais-tu à Médine ?"
+        },
+        {
+          "speaker": "جميل",
+          "ar": "أزورُ المَسْجِدَ النَّبَوِيَّ",
+          "fr": "Je visite la Mosquée du Prophète."
+        },
+        {
+          "speaker": "سليم",
+          "ar": "وأَيْنَ تَقْضِي أَيَّامَ العيد ؟",
+          "fr": "Et où passes-tu les jours de l'Aïd ?"
+        },
+        {
+          "speaker": "جميل",
+          "ar": "أقضيها في مكة أو في المدينة",
+          "fr": "Je les passe à La Mecque ou à Médine."
+        },
+        {
+          "speaker": "سليم",
+          "ar": "وماذا تَفْعَلُ فِي مَكَّةَ ؟",
+          "fr": "Et que fais-tu à La Mecque ?"
+        },
+        {
+          "speaker": "جميل",
+          "ar": "أَطُوفُ حَوْلَ الكَعْبَةِ سَبْعَةَ أَشْواطٍ\nثُمَّ أُصَلِّي رَكْعَتَينِ خَلْفَ مَقامِ إِبْرَاهِيمَ",
+          "fr": "Je tourne autour de la Kaaba sept tours (Tawaf). Ensuite je prie deux unités de prière derrière la station d'Ibrahim."
+        },
+        {
+          "speaker": "سليم",
+          "ar": "بِمَ تَشْعُرُ فِي مَكَّةَ والمَدِينَةِ ؟",
+          "fr": "Que ressens-tu à La Mecque et à Médine ?"
+        },
+        {
+          "speaker": "جميل",
+          "ar": "أَشْعُرُ بالسرور",
+          "fr": "Je ressens de la joie."
+        }
+      ]
+    },
+    {
+      "id": "14.2",
+      "type": "dialogue",
+      "titleAr": "",
+      "titleFr": "",
+      "youtube": "https://www.youtube.com/embed/cvZbvvh3EBU",
+      "pdfPage": null,
+      "lines": [
+        {
+          "speaker": "الابن",
+          "ar": "كَيْفَ اعْتَمَرْتَ يا أبي ؟",
+          "fr": "Comment as-tu fait la Omra mon père ?"
+        },
+        {
+          "speaker": "الأب",
+          "ar": "وَصَلْتُ إلى الميقاتِ عِنْدَ الظُّهْرِ",
+          "fr": "Je suis arrivé au Miquat à midi."
+        },
+        {
+          "speaker": "الابن",
+          "ar": "وماذا فَعَلْتَ في الميقات ؟",
+          "fr": "Et qu'as-tu fait au Miquat ?"
+        },
+        {
+          "speaker": "الأب",
+          "ar": "خَلَعْتُ ثَوْبِي ، وَلَبِسْتُ مَلَابِسَ الإِحْرامِ وَلَبَّيْتُ بِالعُمْرَةِ",
+          "fr": "J'ai enlevé mon vêtement, j'ai mis les habits de l'Ihram et j'ai prononcé la Talbiya pour la Omra."
+        },
+        {
+          "speaker": "الابن",
+          "ar": "وَمَتى وَصَلْتَ إِلَى المَسْجِدِ الحَرَامِ ؟",
+          "fr": "Et quand es-tu arrivé à la Mosquée Sacrée ?"
+        },
+        {
+          "speaker": "الأب",
+          "ar": "وَصَلْتُ بَعْدَ العَصْرِ",
+          "fr": "Je suis arrivé après l'Asr."
+        },
+        {
+          "speaker": "الابن",
+          "ar": "بِمَ شَعَرْتَ فِي المَسْجِدِ الْحَرَامِ ؟",
+          "fr": "Qu'as-tu ressenti dans la Mosquée Sacrée ?"
+        },
+        {
+          "speaker": "الأب",
+          "ar": "شَعَرْتُ بِالسُّرُورِ",
+          "fr": "J'ai ressenti de la joie."
+        },
+        {
+          "speaker": "الابن",
+          "ar": "كَمْ شَوْطاً طُفْتَ حَوْلَ الكَعْبَةِ ؟",
+          "fr": "Combien de tours as-tu fait autour de la Kaaba ?"
+        },
+        {
+          "speaker": "الأب",
+          "ar": "طُفْتُ سَبْعَةَ أَشْواطٍ، ثُمَّ صَلَّيْتُ رَكْعَتَينِ خَلْفَ مَقامِ إِبْراهيمَ",
+          "fr": "J'ai fait sept tours, puis j'ai prié deux unités derrière la station d'Ibrahim."
+        },
+        {
+          "speaker": "الابن",
+          "ar": "وماذا فَعَلْتَ بَعْدَ ذَلِكَ ؟",
+          "fr": "Et qu'as-tu fait après cela ?"
+        },
+        {
+          "speaker": "الأب",
+          "ar": "سَعَيْتُ بَيْنَ الصَّفا والمَرْوَةِ سَبْعَةَ أَشْواطٍ ثُمَّ حَلَقْتُ رَأسي",
+          "fr": "J'ai fait le Sa'y entre Safa et Marwa sept fois, puis je me suis rasé la tête."
+        },
+        {
+          "speaker": "الابن",
+          "ar": "وَأَيْنَ خَلَعْتَ مَلَابِسَ الإِحْرَامِ ؟",
+          "fr": "Et où as-tu enlevé les vêtements de l'Ihram ?"
+        },
+        {
+          "speaker": "الأب",
+          "ar": "خَلَعْتُها فِي الفُنْدُقِ",
+          "fr": "Je les ai enlevés à l'hôtel."
+        }
+      ]
+    },
+    {
+      "id": "14.3",
+      "type": "dialogue",
+      "titleAr": "",
+      "titleFr": "",
+      "youtube": "https://www.youtube.com/embed/cvZbvvh3EBU",
+      "pdfPage": null,
+      "lines": [
+        {
+          "speaker": "الرجل",
+          "ar": "مَتى يَبْدَأُ الوُقوفُ بِعَرَفَةَ ؟",
+          "fr": "Quand commence la station à Arafat ?"
+        },
+        {
+          "speaker": "عدنان",
+          "ar": "يَبْدَأُ غَداً فِي اليَوْمِ النَّاسِعِ بَعْدَ الزَّوالِ",
+          "fr": "Elle commence demain, le neuvième jour, après le zénith."
+        },
+        {
+          "speaker": "الرجل",
+          "ar": "ومَتى يَنْتَهي ؟",
+          "fr": "Et quand finit-elle ?"
+        },
+        {
+          "speaker": "عدنان",
+          "ar": "يَنْتَهِي عِنْدَ الفَجْرِ",
+          "fr": "Elle finit à l'aube."
+        },
+        {
+          "speaker": "الرجل",
+          "ar": "هَلْ نُصَلِّي الظُّهْرَ والعَصْرَ فِي عَرَفَاتِ ؟",
+          "fr": "Prions-nous le Dhuhr et le Asr à Arafat ?"
+        },
+        {
+          "speaker": "عدنان",
+          "ar": "نَعَمْ، جَمْعاً وقَصْراً وَقْتَ الظَّهْرِ",
+          "fr": "Oui, groupées et raccourcies à l'heure du Dhuhr."
+        },
+        {
+          "speaker": "الرجل",
+          "ar": "ومَتى نَذْهَبُ إِلى مُزْدَلِفَةَ ؟",
+          "fr": "Et quand allons-nous à Muzdalifa ?"
+        },
+        {
+          "speaker": "عدنان",
+          "ar": "نَذْهَبُ بَعْدَ غُروبِ الشَّمْسِ\nوَنُصَلِّي فيها المَغْرِبَ والعِشَاءَ جَمْعاً وقَصْراً",
+          "fr": "Nous irons après le coucher du soleil. Et nous y prierons le Maghrib et l'Isha groupées et raccourcies."
+        },
+        {
+          "speaker": "الرجل",
+          "ar": "وماذا نَفْعَلُ بَعْدَ ذَلِكَ ؟",
+          "fr": "Et que ferons-nous après cela ?"
+        },
+        {
+          "speaker": "عدنان",
+          "ar": "نَذْهَبُ إِلى مِنى قَبْلَ شُروقِ الشَّمْسِ\nوَنَرْمي الجَمْرَةَ الكُبرى، ثُمَّ نَذْبَحُ الهَدْيَ، وَنَحْلِقُ رُؤوسَنا",
+          "fr": "Nous irons à Mina avant le lever du soleil. Et nous jetterons (les pierres) à la grande Jamra, puis nous sacrifierons l'offrande, et nous nous raserons la tête."
+        },
+        {
+          "speaker": "الرجل",
+          "ar": "وماذا نَفْعَلُ بَعْدَ ذَلِكَ ؟",
+          "fr": "Et que ferons-nous après cela ?"
+        },
+        {
+          "speaker": "عدنان",
+          "ar": "نَذْهَبُ إِلى المَسْجِدِ الحرام لِطَوَافِ الإِفَاضَةِ وَسَعْيِ الْحَجِّ",
+          "fr": "Nous irons à la Mosquée Sacrée pour le Tawaf al-Ifada et le Sa'y du Hajj."
+        },
+        {
+          "speaker": "الرجل",
+          "ar": "وَمَتى نَطُوفُ طَوافَ الوَداع ؟",
+          "fr": "Et quand ferons-nous le Tawaf d'adieu ?"
+        },
+        {
+          "speaker": "عدنان",
+          "ar": "بَعْدَ رَمْيِ الجَمَرَاتِ فِي اليَوْمِ الثَّانِي عَشَرَ، أَوِ الثَّالِثَ عَشَرَ",
+          "fr": "Après le jet des Jamarat le douzième ou le treizième jour."
+        }
+      ]
+    }
+  ]
+}

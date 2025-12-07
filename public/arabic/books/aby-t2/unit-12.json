@@ -1,0 +1,327 @@
+{
+  "id": 12,
+  "titleAr": "الوحدة الثانية عشرة الشباب",
+  "titleFr": "Unité 12: La jeunesse",
+  "items": [
+    {
+      "id": "12.1",
+      "type": "dialogue",
+      "titleAr": "حوار بين الأب والعم",
+      "titleFr": "Dialogue entre le père et l'oncle",
+      "youtube": "",
+      "pdfPage": 19,
+      "lines": [
+        {
+          "speaker": "الأب",
+          "ar": "أنا قَلِقٌ على ابْني عُمَرَ؛ لَقَدْ أَصْبَحَ يَخْرُجُ مِنَ البَيْتِ مَتى شَاءَ، وَيَرْجِعُ مَتى شَاءَ، وَلَا يُخْبِرُنِي بِالْمَكَانِ الَّذِي يَذْهَبُ إِلَيْهِ، وَلا بِالأَصْدِقَاءِ الَّذِينَ يَذْهَبُ مَعَهُم أَنا خَائِفٌ عَلَيْهِ.",
+          "fr": "Je suis inquiet pour mon fils Omar; il sort de la maison quand il veut, et revient quand il veut, et ne me dit pas où il va, ni avec quels amis il va. J'ai peur pour lui."
+        },
+        {
+          "speaker": "الخال",
+          "ar": "هَذَا شُعورٌ طَبِيعِيُّ، وَلَكِنْ لا تَنْسَ أَنَّ ابْنَكَ عُمَرَ، أَتَمَّ السَّادِسَةَ عَشْرَةَ مِنْ عُمُرِهِ. وَهُوَ الْآنَ في مَرْحَلَةِ المُراهَقَةِ، وَلَا بُدَّ أَنْ تُعَامِلَهُ بِحِكْمَةٍ.",
+          "fr": "C'est un sentiment naturel, mais n'oubliez pas que votre fils Omar a seize ans. Il est maintenant dans la phase de l'adolescence, et vous devez le traiter avec sagesse."
+        },
+        {
+          "speaker": "الأَبُ",
+          "ar": "كَيْفَ أُعَامِلُهُ بِحِكْمَةٍ؟!",
+          "fr": "Comment puis-je le traiter avec sagesse?!"
+        },
+        {
+          "speaker": "الخالُ",
+          "ar": "يَشْعُرُ عُمَرُ الآنَ، بِأَنَّهُ رَجُلٌ، يَعْرِفُ مَا يَنْفَعُهُ وما يَضُرُّهُ.",
+          "fr": "Omar sent maintenant qu'il est un homme, qu'il sait ce qui lui profite et ce qui lui nuit."
+        },
+        {
+          "speaker": "الأب",
+          "ar": "في الحَقيقَةِ، أنا أُعَامِلُ عُمَرَ كالطَّفْلِ : افْعَلْ كَذا ، لا تَفْعَلْ كَذا ، قُلْ كَذَا ، لَا تَقُلْ كَذَا الْبَسْ كَذا ، لا تَلْبَسْ كَذا ....",
+          "fr": "En fait, je traite Omar comme un enfant: fais ceci, ne fais pas cela, dis ceci, ne dis pas cela, porte ceci, ne porte pas cela..."
+        },
+        {
+          "speaker": "الخال",
+          "ar": "هذا أَسْلُوبٌ غَيْرُ سَلِيمٍ في التَّرْبِيَةِ . مُعامَلَةُ الشَّبابِ  َتخَتلِفُ عن مُعَامَلَةِ الْأَطْفَالِ. سَيَبْتَعِدُ عُمَرُ عَنْكَ.",
+          "fr": "C'est une mauvaise méthode d'éducation. Le traitement des jeunes est différent du traitement des enfants. Omar s'éloignera de vous."
+        },
+        {
+          "speaker": "الأب",
+          "ar": "هذا ما حَدَثَ فِعْلاً ، فَهُوَ يَقْضي مُعْظَمَ الوَقْتِ مَعَ أصْدِقَائِهِ، وَلَا أَرَاهُ إلا قليلاً.",
+          "fr": "C'est ce qui s'est passé en fait, il passe la plupart de son temps avec ses amis, et je ne le vois que rarement."
+        },
+        {
+          "speaker": "الخال",
+          "ar": "غير أُسْلُوبَكَ مَعَ ابْنِكَ، تَحاوَرْ مَعَهُ، وَاحْتَرِمْ آرَاءَهُ، وَسَيَعُودُ إِلَيكَ.",
+          "fr": "Changez votre façon de faire avec votre fils, discutez avec lui, respectez ses opinions, et il reviendra vers vous."
+        },
+        {
+          "speaker": "الأَبُ",
+          "ar": "جَزَاكَ اللهُ خَيْراً يا خالَ عُمَرَ.",
+          "fr": "Que Dieu vous récompense, oncle d'Omar."
+        }
+      ]
+    },
+    {
+      "id": "12.2",
+      "type": "texte",
+      "titleAr": "مَرْحَلَةُ الشَّبابِ",
+      "titleFr": "Phase de la jeunesse",
+      "youtube": "",
+      "pdfPage": 20,
+      "lines": [
+        {
+          "speaker": "",
+          "ar": "تَهْيِئَة:",
+          "fr": "Préparation:"
+        },
+        {
+          "speaker": "",
+          "ar": "فَكِّر في الإجابَةِ عَنِ الْأَسْئِلَةِ التَّالِيَةِ:",
+          "fr": "Réfléchissez aux questions suivantes:"
+        },
+        {
+          "speaker": "",
+          "ar": "١ - ما أَهَمُّ مَرْحَلَةٍ في حَيَاةِ الإِنْسانِ؟ لماذا؟",
+          "fr": "1- Quelle est la phase la plus importante dans la vie d'une personne ? Pourquoi?"
+        },
+        {
+          "speaker": "",
+          "ar": "٢- لماذا يغطي الإِنْسانُ فِي شَبابِهِ أَكْثَرَ مِمَّا",
+          "fr": "2- Pourquoi une personne donne-t-elle plus dans sa jeunesse que"
+        },
+        {
+          "speaker": "",
+          "ar": "يُعْطي في بَقِيَّةِ عُمُرِهِ؟",
+          "fr": "ce qu'elle donne dans le reste de sa vie ?"
+        },
+        {
+          "speaker": "",
+          "ar": "٣- ما رأيك في الشَّابِّ الكَسْلانِ؟",
+          "fr": "3- Que pensez-vous du jeune paresseux ?"
+        },
+        {
+          "speaker": "",
+          "ar": "٤- بأيهما تَتَقَدَّمُ البِلادُ : بِقُوَّةِ الشَّبابِ، أم",
+          "fr": "4- Lequel fait progresser le pays : la force de la jeunesse, ou"
+        },
+        {
+          "speaker": "",
+          "ar": "بِخِبْرَةِ الشَّيوخ؟",
+          "fr": "l'expérience des cheikhs ?"
+        },
+        {
+          "speaker": "",
+          "ar": "مَرْحَلَةُ الشَّبابِ أَهَمُّ مَرْحَلَةٍ فِي حَياةِ الإِنْسانِ، وَأَغْلَى ثَرْوَةٍ عِنْدَ الْأُمَّةِ. وَمَرْحَلَةُ الشَّبَابِ هِيَ",
+          "fr": "La phase de la jeunesse est la phase la plus importante dans la vie d'une personne, et la richesse la plus précieuse pour la nation. Et la phase de la jeunesse est"
+        },
+        {
+          "speaker": "",
+          "ar": "مَرْحَلَةُ العَطَاءِ وَالعَمَلِ.",
+          "fr": "la phase du don et du travail."
+        },
+        {
+          "speaker": "",
+          "ar": "وَالإِنْسانُ الذي لا يُعطي في شَبابِهِ ، قَلَّما يُعْطي في بَقِيَّةِ عُمُرِهِ. وَكَانَ كَثِيرٌ مِنْ أَصْحَابِ الرَّسُولِ",
+          "fr": "Et la personne qui ne donne pas dans sa jeunesse, donne rarement dans le reste de sa vie. Et il y avait beaucoup de compagnons du Messager"
+        },
+        {
+          "speaker": "",
+          "ar": "مِنَ الشَّبابِ، وَقَدْ وَلاهُمْ مَسْؤوليّاتٍ كَبِيرَةً، حَيْثُ وَلَّى كَثِيراً مِنْهُمْ قِيادَةَ الجَيشِ، وَفِيهِ شُيوخ",
+          "fr": "parmi les jeunes, et il leur a confié de grandes responsabilités, où il a confié à beaucoup d'entre eux le commandement de l'armée, et il y avait des cheikhs"
+        },
+        {
+          "speaker": "",
+          "ar": "المُهَاجِرِينَ وَالأَنْصَارِ؛ فَقَدْ وَلَّى زَيْدَ بْنَ حارِثَةَ ، وَجَعْفَرَ بنَ أبي طالِبٍ، وَعَبْدَ اللهِ بْنَ رَوَاحَةَ، قِيادَةَ",
+          "fr": "des Muhajirin et des Ansar ; il a confié à Zayd ibn Haritha, Jaafar ibn Abi Talib et Abdullah ibn Rawaha, le commandement de"
+        },
+        {
+          "speaker": "",
+          "ar": "الجَيْشِ في غَزْوَةٍ مُؤْتَةَ، كَما وَلَّى أَسامَةَ بْنَ زِيدٍ قِيادَةَ الجَيْشِ الْإِسْلَامِيِّ، لِغَزْوِ الرُّومِ، وَعُمُرُهُ",
+          "fr": "l'armée dans la bataille de Mu'tah, comme il a confié à Usama ibn Zaid le commandement de l'armée islamique, pour la bataille de Rome, et son âge était de"
+        },
+        {
+          "speaker": "",
+          "ar": "ثَمانِي عَشْرَةَ سَنَةً، وَأَرْسَلَ مُعاذَ بنَ جَبَلٍ قاضِياً إلى اليَمَنِ، وَهُوَ فِي مَرْحَلَةِ الشَّبابِ.",
+          "fr": "dix-huit ans, et il a envoyé Muadh ibn Jabal comme juge au Yémen, et il était dans la phase de la jeunesse."
+        },
+        {
+          "speaker": "",
+          "ar": "تحتاجُ الأُمَّةُ إلى الشّاب القَوِيِّ الجاد، الذي يُعْطِي أَكْثَرَ مِمَّا يَأْخُذُ، وَلَا تَحْتاجُ إلى الشاب",
+          "fr": "La nation a besoin du jeune homme fort et sérieux, qui donne plus qu'il ne prend, et elle n'a pas besoin du jeune homme"
+        },
+        {
+          "speaker": "",
+          "ar": "الكسلان، الَّذِي يَهْتَمُّ بِطَعَامِهِ وَمَظْهَرِهِ فَقَطْ ، وَلا يُحِبُّ العَمَلَ وَالعَطَاءَ. وَكَمَا تَحْتَاجُ الأُمَّةُ إِلى",
+          "fr": "paresseux, qui ne se soucie que de sa nourriture et de son apparence, et qui n'aime pas le travail et le don. Et comme la nation a besoin de"
+        },
+        {
+          "speaker": "",
+          "ar": "قُوَّةِ الشَّبَابِ، تَحْتاجُ إِلَى خِبْرَةِ الشَّيوخ، حَتى تَتَقَدَّمَ البِلادُ. وَتُخْطِئُ الْأُمَّةُ إِذا اعْتَمَدَتْ عَلَى قُوَّةِ",
+          "fr": "la force de la jeunesse, elle a besoin de l'expérience des cheikhs, pour que le pays progresse. Et la nation se trompe si elle s'appuie sur la force de"
+        },
+        {
+          "speaker": "",
+          "ar": "الشَّبابِ وَحْدَهُم، وَأَهْمَلَتْ خَبْراتِ الشَّيوخ. وَهَذا يَعْنِي أَنْ تَكُونَ هُناكَ عَلَاقَةٌ طَيِّبَةٌ بَيْنَ جَمِيعِ",
+          "fr": "la jeunesse seule, et néglige l'expérience des cheikhs. Et cela signifie qu'il doit y avoir une bonne relation entre tous"
+        },
+        {
+          "speaker": "",
+          "ar": "أَفْرادِ الْمُجْتَمَعِ ، كِباراً وصغاراً ، رِجالاً ونساءً، حَتّى تَصِلَ الأُمَّةُ إلى ما تُريدُ.",
+          "fr": "les membres de la société, jeunes et vieux, hommes et femmes, jusqu'à ce que la nation atteigne ce qu'elle veut."
+        }
+      ]
+    },
+    {
+      "id": "12.3",
+      "type": "dialogue",
+      "titleAr": "العَلاقَةُ بَيْنَ الآباءِ وَالْأَبْنَاءِ",
+      "titleFr": "Relation entre pères et fils",
+      "youtube": "",
+      "pdfPage": 21,
+      "lines": [
+        {
+          "speaker": "خالد",
+          "ar": "أُفَكِّرُ كَثِيراً في مَوْضوعِ العَلاقَةِ بَيْنَ الآباءِ وَالأَبْناءِ، أَوْ بَيْنَ الشَّبابِ وَالشَّيوخ . إِنَّهُ مَوْضُوعٌ مُهِم.",
+          "fr": "Je pense beaucoup à la relation entre les pères et les fils, ou entre les jeunes et les personnes âgées. C'est un sujet important."
+        },
+        {
+          "speaker": "حسن",
+          "ar": "أَخْتَلِفُ مَعَكَ يَا خَالِدُ، هَذا المَوْضُوعُ غَيْرُ مُهِم؛ لأَنَّ دَورَ الشَّيوخ قَدِ انْتَهَى فِي الحَيَاةِ. يَجِبُ أَنْ يَعْتَمِدَ الْمُجْتَمَعُ عَلَى الشَّبَابِ وَحْدَهُمْ.",
+          "fr": "Je ne suis pas d'accord avec toi, Khaled, ce sujet n'est pas important ; car le rôle des personnes âgées est terminé dans la vie. La société doit dépendre uniquement des jeunes."
+        },
+        {
+          "speaker": "يوسف",
+          "ar": "أَتَّفِقُ مَعَ خَالِدٍ فِي أَهَمِّيَّةِ المَوْضُوعِ، وَأَخْتَلِفُ مَعَ حَسَنٍ وَرَأْيِي أَنَّ الْمُجْتَمَعَ يَحْتَاجُ إلى قُوَّةِ الشَّبابِ، وَتَجْرِبَةِ الشُّيُوخِ مَعاً.",
+          "fr": "Je suis d'accord avec Khaled sur l'importance du sujet, et je ne suis pas d'accord avec Hassan. Mon opinion est que la société a besoin à la fois de la force des jeunes et de l'expérience des personnes âgées."
+        },
+        {
+          "speaker": "حسن",
+          "ar": "لَكِنَّ الشَّيوخ يُرِيدُونَ فَرْضَ آرائِهِم عَلى الشَّبابِ، في كُلِّ شَيْءٍ فِي اخْتِيَارِ الأَصْدِقَاءِ، وَالزَّوجَةِ، وَنَوْعِ الدَّرَاسَةِ، بَلْ وَحَتَّى فِي الْمَلابِسِ الَّتِي يَلْبَسُونَها .",
+          "fr": "Mais les personnes âgées veulent imposer leurs opinions aux jeunes, dans tout : dans le choix des amis, de la femme, du type d'études, et même dans les vêtements qu'ils portent."
+        },
+        {
+          "speaker": "خالد",
+          "ar": "للشيوخ آراء، وَلِلشَّبابِ آراء ، وَيَجِبُ أَنْ يَحْتَرِمَ كُلُّ فَرِيقٍ آراء الفَرِيقِ الْآخَرِ.",
+          "fr": "Les personnes âgées ont des opinions, et les jeunes ont des opinions, et chaque équipe doit respecter les opinions de l'autre équipe."
+        },
+        {
+          "speaker": "حسن",
+          "ar": "أبي يُعَامِلُنِي مُعامَلَةَ الأطفالِ، وَلا يَسْتَمِعُ إِلَيَّ، وَلَا يَتَحَاوَرُ مَعِي.",
+          "fr": "Mon père me traite comme un enfant, il ne m'écoute pas et ne discute pas avec moi."
+        },
+        {
+          "speaker": "يوسف",
+          "ar": "أبي يُعامِلُني مُعامَلَةَ الأَصْدِقاءِ، يَسْتَمِعُ إِليَّ، وَيُحاوِرُنِي، وَيَحْتَرِمُ آرائي، وَأَتَّبِعُ نَصَائِحَهُ.",
+          "fr": "Mon père me traite comme un ami, il m'écoute, il discute avec moi, il respecte mes opinions, et je suis ses conseils."
+        },
+        {
+          "speaker": "حسن",
+          "ar": "هَكَذَا تَكونُ العَلاقَةُ بَيْنَ الشَّبابِ والشَّيوخ.",
+          "fr": "C'est ainsi que devrait être la relation entre les jeunes et les personnes âgées."
+        }
+      ]
+    },
+    {
+      "id": "12.4",
+      "type": "texte",
+      "titleAr": "مِنْ مِشْكِلاتِ الشَّباب",
+      "titleFr": "Des problèmes de la jeunesse",
+      "youtube": "",
+      "pdfPage": 22,
+      "lines": [
+        {
+          "speaker": "",
+          "ar": "تَهْيِئَة:",
+          "fr": "Préparation:"
+        },
+        {
+          "speaker": "",
+          "ar": "فكر في الإِجابَةِ عَنِ الْأَسْئِلَةِ التَّالِيَةِ:",
+          "fr": "Réfléchissez aux réponses aux questions suivantes:"
+        },
+        {
+          "speaker": "",
+          "ar": "١- ما المُشْكِلاتُ الَّتِي يُواجِهُها الشَّبابُ اليَوْمَ؟",
+          "fr": "1- Quels sont les problèmes auxquels les jeunes sont confrontés aujourd'hui?"
+        },
+        {
+          "speaker": "",
+          "ar": "٣- هَلْ كُلُّ ما يُشاهِدُهُ الشَّبابُ فِي التَّلْفازِ مُفيدٌ؟",
+          "fr": "3- Tout ce que les jeunes regardent à la télévision est-il utile?"
+        },
+        {
+          "speaker": "",
+          "ar": "٢- مَنْ يُقَلِّدُ الثَّقافاتِ الأَجْنَبِيَّةَ كَثيراً الشَّبابُ أَمِ الشَّيوخ؟",
+          "fr": "2- Qui imite le plus les cultures étrangères, les jeunes ou les personnes âgées?"
+        },
+        {
+          "speaker": "",
+          "ar": "٤- ما مَعْنَى الغَزْوِ الثَّقَافِيِّ؟",
+          "fr": "4- Que signifie l'invasion culturelle?"
+        },
+        {
+          "speaker": "",
+          "ar": "يُواجِهُ الشَّبابُ مُشْكِلاتٍ كَثِيرَةً فِي هَذا العَصْرِ، وَمِنْ ذلِكَ مُشْكِلَةُ الغَزْوِ الثَّقَافِيِّ الَّذِي يَأْتِي",
+          "fr": "Les jeunes sont confrontés à de nombreux problèmes à cette époque, et parmi ceux-ci, le problème de l'invasion culturelle qui vient"
+        },
+        {
+          "speaker": "",
+          "ar": "في صورٍ كَثِيرَةٍ، مِثْلِ: مُحارَبَةِ اللُّغَةِ وَالثَّقَافَةِ، وَفَرْضِ لُغاتٍ وَثَقافاتٍ أَجْنَبِيَّةٍ مَحَلَّها، كَالدَّعْوَةِ",
+          "fr": "sous de nombreuses formes, telles que: la lutte contre la langue et la culture, et l'imposition de langues et de cultures étrangères à leur place, comme l'appel"
+        },
+        {
+          "speaker": "",
+          "ar": "الَّتِي نَادَتْ بِتَرْكِ اللُّغَةِ العَرَبِيَّةِ ، وَاسْتِعْمالِ اللَّهَجاتِ الْمَحَلِّيَّةِ، لِتَمْزِيقِ الْأُمَّةِ، وَفَصِلِهَا عَنْ تُراثِها،",
+          "fr": "qui a appelé à l'abandon de la langue arabe et à l'utilisation des dialectes locaux, pour déchirer la nation et la séparer de son héritage,"
+        },
+        {
+          "speaker": "",
+          "ar": "أَوْ كَالدَّعْوَةِ إِلَى تَدْرِيسِ العُلوم في الجَامِعَاتِ العَرَبِيَّةِ بِاللُّغَاتِ الْأَجْنَبِيَّةِ. وَقَدْ تَأَثَّرَ بَعْضُ الشَّبَابِ",
+          "fr": "ou comme l'appel à enseigner les sciences dans les universités arabes dans des langues étrangères. Certains jeunes ont été affectés"
+        },
+        {
+          "speaker": "",
+          "ar": "بِهَذِهِ الدَّعَواتِ، فَأَخَذَ يُقَلِّدُ أَصْحابَ اللُّغَاتِ وَالثَّقافاتِ الأَجْنَبِيَّةِ فِي كَلَامِهِمْ، وَسُلُوكِهِمْ.",
+          "fr": "par ces appels, ils ont commencé à imiter les locuteurs des langues et des cultures étrangères dans leur discours et leur comportement."
+        },
+        {
+          "speaker": "",
+          "ar": "يَشْعُرُ الشَّبابُ - أَحْياناً - بِالتَّناقُضِ بَيْنَ ما تَعَلَّمَهُ في بَيْتِهِ وَمَدْرَسَتِهِ وَمُجْتَمَعِهِ مِنْ أَخْلَاقٍ، وَبَيْنَ",
+          "fr": "Les jeunes ressentent - parfois - une contradiction entre ce qu'ils ont appris dans leur maison, leur école et leur société en matière de moralité, et entre"
+        },
+        {
+          "speaker": "",
+          "ar": "ما يُبَثَّ فِي وَسَائِلِ الإِعْلَامِ مِنْ أَخَلاقٍ تُخَالِفُ أَخْلاقَ مُجْتَمَعِهِ وَدِينِهِ.",
+          "fr": "ce qui est diffusé dans les médias en matière de moralité qui contredit la moralité de sa société et de sa religion."
+        },
+        {
+          "speaker": "",
+          "ar": "وَكَثيراً ما تَنْجَحُ تِلْكَ الوَسَائِلُ في التَّأثير في بَعْضِ الشَّبابِ، وَلَعَلَّ هَذَا سَبَبُ انْتِشَارِ الْمُخَدِّراتِ،",
+          "fr": "Et souvent, ces médias réussissent à influencer certains jeunes, et c'est peut-être la raison de la propagation des drogues,"
+        },
+        {
+          "speaker": "",
+          "ar": "وَالْجَرِيمَةِ بِصُوَرِهَا الْمُخْتِلِفَةِ فِي بَعْضِ الْمُجْتَمَعاتِ.",
+          "fr": "et du crime sous ses différentes formes dans certaines sociétés."
+        },
+        {
+          "speaker": "",
+          "ar": "يشكو الشَّبَابُ مِنْ أَنَّ الْمُجْتَمَعَ ، لا يَهْتَمُّ بِهِمْ كَثيراً ، وَيَقُولُونَ إِنَّ فُرَصَ التَّعْلِيمِ العالي أَصْبَحَتْ قَلِيلَةً،",
+          "fr": "Les jeunes se plaignent que la société ne se soucie pas beaucoup d'eux, et ils disent que les opportunités d'enseignement supérieur sont devenues rares,"
+        },
+        {
+          "speaker": "",
+          "ar": "وَإِنَّ الشَّابَ بَعْدَ أَنْ يَتَخَرَّجَ في الجامِعَةِ، لا يَجِدُ العَمَلَ الْمُنَاسِبَ، وَيَرِى أَنَّ الزَّواج يُكَلِّفُ كَثِيراً",
+          "fr": "et que le jeune, après avoir obtenu son diplôme de l'université, ne trouve pas le travail approprié, et il voit que le mariage coûte cher"
+        },
+        {
+          "speaker": "",
+          "ar": "مِنَ المالِ. وَلا شَكٍّ أَنَّ الشَّبابَ عَلى حَقٌّ فِي كَثِيرٍ مِمَّا يَقولونَ . وَعَلَى الْمُجْتَمَعِ أَنْ يَعْمَلَ عَلَى حَلَّ",
+          "fr": "de l'argent. Et il ne fait aucun doute que les jeunes ont raison dans beaucoup de ce qu'ils disent. Et la société doit travailler à résoudre"
+        },
+        {
+          "speaker": "",
+          "ar": "مُشْكِلاتِ الشَّبابِ؛ حَتَّى يُشارِكوا في عَمَلِيَّةِ البِناءِ.",
+          "fr": "les problèmes des jeunes; afin qu'ils participent au processus de construction."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,217 @@
+{
+  "id": 16,
+  "titleAr": "العطلة",
+  "titleFr": "Les Vacances",
+  "items": [
+    {
+      "id": "16.1",
+      "type": "dialogue",
+      "titleAr": "",
+      "titleFr": "",
+      "youtube": "https://www.youtube.com/embed/cvZbvvh3EBU",
+      "pdfPage": null,
+      "lines": [
+        {
+          "speaker": "الابن",
+          "ar": "كَمْ عِيداً في الإسلام يا أبي ؟",
+          "fr": "Combien de fêtes y a-t-il en Islam mon père ?"
+        },
+        {
+          "speaker": "الأب",
+          "ar": "في الإسلام عيدان : عيد الفِطْرِ ، وَعِيدُ الأضحى",
+          "fr": "En Islam il y a deux fêtes : l'Aïd al-Fitr et l'Aïd al-Adha."
+        },
+        {
+          "speaker": "الابن",
+          "ar": "مَتى عيدُ الفِطْرِ ؟",
+          "fr": "Quand est l'Aïd al-Fitr ?"
+        },
+        {
+          "speaker": "الأب",
+          "ar": "بَعدَ شَهْرِ رَمَضَانَ : فِي اليَوْمِ الْأَوَّلِ مِنْ شَوَّالٍ",
+          "fr": "Après le mois de Ramadan : le premier jour de Shawwal."
+        },
+        {
+          "speaker": "الابن",
+          "ar": "ماذا نَعْمَلُ فِي يَوْمِ العيد ؟",
+          "fr": "Que faisons-nous le jour de la fête ?"
+        },
+        {
+          "speaker": "الأب",
+          "ar": "نُعْطِي زَكَاةَ الفِطْرِ لِلْفُقَرَاءِ",
+          "fr": "Nous donnons la Zakat al-Fitr aux pauvres."
+        },
+        {
+          "speaker": "الابن",
+          "ar": "وما زَكَاةُ الفِطْرِ ؟",
+          "fr": "Et qu'est-ce que la Zakat al-Fitr ?"
+        },
+        {
+          "speaker": "الأب",
+          "ar": "صَاعٌ مِنْ طَعَامٍ عَنْ كُلِّ شَخْصٍ",
+          "fr": "Un Sa' (mesure) de nourriture pour chaque personne."
+        },
+        {
+          "speaker": "الابن",
+          "ar": "وماذا نَفْعَلُ بَعْدَ ذَلِكَ ؟",
+          "fr": "Et que faisons-nous après cela ?"
+        },
+        {
+          "speaker": "الأب",
+          "ar": "نُصَلِّي صَلاةَ العيد ، ونزورُ الأَهْل والأصدقاء",
+          "fr": "Nous prions la prière de l'Aïd, et nous visitons la famille et les amis."
+        },
+        {
+          "speaker": "الابن",
+          "ar": "وَمَتى عيد الأضحى ؟",
+          "fr": "Et quand est l'Aïd al-Adha ?"
+        },
+        {
+          "speaker": "الأب",
+          "ar": "في اليَوْمِ العاشر من ذي الحجة",
+          "fr": "Le dixième jour de Dhu al-Hijjah."
+        },
+        {
+          "speaker": "الابن",
+          "ar": "وماذا نَفْعَلُ في عيد الأضحى ؟",
+          "fr": "Et que faisons-nous à l'Aïd al-Adha ?"
+        },
+        {
+          "speaker": "الأب",
+          "ar": "نُصَلِّي صَلاةَ العيد، ونَدْبَحُ الأَضْحِيَّةَ، وَنَزُورُ الأهل والأصدقاء",
+          "fr": "Nous prions la prière de l'Aïd, nous sacrifions la bête (l'offrande), et nous visitons famille et amis."
+        }
+      ]
+    },
+    {
+      "id": "16.2",
+      "type": "dialogue",
+      "titleAr": "",
+      "titleFr": "",
+      "youtube": "https://www.youtube.com/embed/cvZbvvh3EBU",
+      "pdfPage": null,
+      "lines": [
+        {
+          "speaker": "أحمد",
+          "ar": "اقْتَرَبَتِ العُطْلَةُ يا أبي",
+          "fr": "Les vacances approchent mon père."
+        },
+        {
+          "speaker": "الأب",
+          "ar": "ما رَأيكِ يَا نَدَى ؟ إِلَى أَيْنَ نُسَافِرُ ؟",
+          "fr": "Quel est ton avis Nada ? Où voyageons-nous ?"
+        },
+        {
+          "speaker": "ندى",
+          "ar": "لَدَيَّ فِكْرَةٌ ، نُسَافِرُ إِلى مِصْرَ",
+          "fr": "J'ai une idée, nous voyageons en Égypte."
+        },
+        {
+          "speaker": "أحمد",
+          "ar": "لماذا نُسَافِرُ إِلى مِصْرَ ؟",
+          "fr": "Pourquoi voyageons-nous en Égypte ?"
+        },
+        {
+          "speaker": "ندى",
+          "ar": "لِنَرَى مِصْرَ ، وَنَهْرَ النِّيلِ",
+          "fr": "Pour voir l'Égypte et le fleuve Nil."
+        },
+        {
+          "speaker": "أحمد",
+          "ar": "مُوافِقٌ ، فَكْرَةٌ طَيِّبَةٌ",
+          "fr": "D'accord, bonne idée."
+        },
+        {
+          "speaker": "الأب",
+          "ar": "كَيْفَ نُسَافِرُ إِلَى مِصْرَ ؟",
+          "fr": "Comment voyageons-nous en Égypte ?"
+        },
+        {
+          "speaker": "ندى",
+          "ar": "نُسَافِرُ بِالجَو",
+          "fr": "Nous voyageons par les airs (avion)."
+        },
+        {
+          "speaker": "الأب",
+          "ar": "السَّفَرُ بِالجو غال",
+          "fr": "Le voyage par avion est cher."
+        },
+        {
+          "speaker": "أحمد",
+          "ar": "إذن نُسَافِرُ بِالبَحْرِ السَّفَرُ بِالبَحْرِ رَخِيصٌ",
+          "fr": "Alors voyageons par la mer, le voyage par mer est bon marché."
+        },
+        {
+          "speaker": "الأب",
+          "ar": "كَمْ يَوْماً سَنَقْضِي فِي مِصْرَ ؟",
+          "fr": "Combien de jours passerons-nous en Égypte ?"
+        },
+        {
+          "speaker": "ندى",
+          "ar": "سَبْعَةَ أَيَّامٍ",
+          "fr": "Sept jours."
+        },
+        {
+          "speaker": "الأب",
+          "ar": "سَبْعَةَ أَيَّامٍ ... جَمِيلٌ نُسَافِرُ يَوْمَ السَّبْتِ، إِنْ شَاءَ الله",
+          "fr": "Sept jours... Bien, nous voyagerons samedi, si Dieu le veut."
+        },
+        {
+          "speaker": "أحمد وندى",
+          "ar": "شُكْراً لَكَ يا أبي",
+          "fr": "Merci à toi mon père."
+        }
+      ]
+    },
+    {
+      "id": "16.3",
+      "type": "dialogue",
+      "titleAr": "",
+      "titleFr": "",
+      "youtube": "https://www.youtube.com/embed/cvZbvvh3EBU",
+      "pdfPage": null,
+      "lines": [
+        {
+          "speaker": "المدرس",
+          "ar": "أَيْنَ سَتَقْضُونَ عُطْلَةَ الصَّيْفِ يا أبنائي ؟\nإلى أَيْنَ سَتَذْهَبُ أَنْتَ ؟",
+          "fr": "Où passerez-vous les vacances d'été mes enfants (fils) ? Où iras-tu toi ?"
+        },
+        {
+          "speaker": "الطالب 1",
+          "ar": "سَأَقْضِي عُطْلَةَ الصَّيْفِ فِي القَرْيَةِ مَعَ جدي\nالمكانُ هُناكَ هَادِئٌ ، والهَواءُ نَقِيٌّ",
+          "fr": "Je passerai les vacances d'été au village avec mon grand-père. L'endroit là-bas est calme, et l'air est pur."
+        },
+        {
+          "speaker": "الطالب 2",
+          "ar": "سَأقْضِي عُطْلَةَ الصَّيْفِ فِي العَاصِمَةِ مَعَ عَمِّي\nسأزور المكتبات والمتاحف",
+          "fr": "Je passerai les vacances d'été dans la capitale avec mon oncle paternel. Je visiterai les bibliothèques et les musées."
+        },
+        {
+          "speaker": "الطالب 3",
+          "ar": "سأقضي عُطْلَةَ الصَّيْفِ بَيْنِ الجِبالِ مَعَ فَرِيقِ الجوالة",
+          "fr": "Je passerai les vacances d'été dans les montagnes avec l'équipe de scouts."
+        },
+        {
+          "speaker": "الطالب 4",
+          "ar": "سَأَقْضِي العُطْلَةَ فِي مَكَّةَ والمَدِينَةِ مَعَ أُسْرَتِي\nسَنَعْتَمِرُ، وَنَحُجُّ ، وَنَزُورُ المَسْجِدَ النَّبَوِيَّ",
+          "fr": "Je passerai les vacances à La Mecque et Médine avec ma famille. Nous ferons la Omra, le Hajj, et nous visiterons la Mosquée du Prophète."
+        },
+        {
+          "speaker": "الطالب 5",
+          "ar": "سَأَقْضِي العُطْلَةَ فِي بَلَدِي سأساعد والدي في المَزْرَعَة",
+          "fr": "Je passerai les vacances dans mon pays, j'aiderai mon père à la ferme."
+        },
+        {
+          "speaker": "المدرس",
+          "ar": "عُطْلَةً سَعِيدَةً يا أبنائي",
+          "fr": "Bonnes vacances mes enfants."
+        },
+        {
+          "speaker": "الطلاب",
+          "ar": "عُطْلَةً سَعِيدَةً يَا أُسْتَاذُ",
+          "fr": "Bonnes vacances professeur."
+        }
+      ]
+    }
+  ]
+}

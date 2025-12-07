@@ -1,0 +1,267 @@
+{
+  "id": 6,
+  "titleAr": "الوحدة السادسة: المهن",
+  "titleFr": "Unité 6: Professions",
+  "items": [
+    {
+      "id": "6.1",
+      "type": "dialogue",
+      "titleAr": "البحث عن العمل",
+      "titleFr": "La recherche d'emploi",
+      "youtube": "",
+      "pdfPage": 29,
+      "lines": [
+        {
+          "speaker": "الأب",
+          "ar": "لَعَلَّ نَتِيجَةَ الْمُقَابَلَةِ طَيِّبة اليوم.",
+          "fr": "J'espère que le résultat de l'entretien sera bon aujourd'hui."
+        },
+        {
+          "speaker": "الابْنُ",
+          "ar": "قابَلْتُ مُديرَ الشَّرِكَةِ ، وَرَأَى شَهاداتي، لَكِنَّنِي غَيْرُ مُتَفَائِلٍ.",
+          "fr": "J'ai rencontré le directeur de l'entreprise et il a vu mes diplômes, mais je ne suis pas optimiste."
+        },
+        {
+          "speaker": "الأب",
+          "ar": "ما سَبَبُ ذَلِكَ؟",
+          "fr": "Quelle en est la raison ?"
+        },
+        {
+          "speaker": "الابْنُ",
+          "ar": "الشَّرِكَةُ تَحْتاجُ إلى عَشَرةِ مُهَنْدِسِينَ، وَقَدَّمَ لِلْعَمَلِ مِئَةٌ مُهَنْدِسٍ، مُعْظَمُهُمْ لَهُمْ خِبْرَاتٌ طويلة.",
+          "fr": "L'entreprise a besoin de dix ingénieurs, et cent ingénieurs ont postulé, la plupart d'entre eux ayant une longue expérience."
+        },
+        {
+          "speaker": "الأب",
+          "ar": "سَتَجِدُ العَمَلَ الْمُنَاسِبَ، إِنْ شَاءَ اللهُ.",
+          "fr": "Tu trouveras le travail approprié, si Dieu le veut."
+        },
+        {
+          "speaker": "الابْنُ",
+          "ar": "أنا آسف - يا أبي - لأنَّني دَرَسْتُ الهَنْدَسَةَ . لَقَدْ تَخَرَّجْتُ في كُلِّيَّةِ الهَنْدَسَةِ مُنْذُ سَنَتَيْنِ، وَلَمْ أَعْمَلْ حَتَّى الآن.",
+          "fr": "Je suis désolé - mon père - d'avoir étudié l'ingénierie. J'ai obtenu mon diplôme de la faculté d'ingénierie il y a deux ans, et je n'ai pas encore travaillé."
+        },
+        {
+          "speaker": "الأب",
+          "ar": "لَيسَتِ المُشْكِلَةُ فِي دِرَاسَةِ الهَنْدَسَةِ، المُشْكِلَةُ في البِطالَة، الَّتِي تَعُمُّ كُلَّ العَالَمِ، حَيْثُ يَتَخَرَّجُ الطلاب في الجامعات والمعاهِدِ الْمُخْتَلِفَةِ، ولا يَجِدُونَ عَمَلاً.",
+          "fr": "Le problème n'est pas d'étudier l'ingénierie, le problème est le chômage, qui touche le monde entier, où les étudiants diplômés des différentes universités et instituts ne trouvent pas de travail."
+        },
+        {
+          "speaker": "الابْنُ",
+          "ar": "نُرِيدُ مُسَاعَدَةَ أَهْلِنا ، ونُرِيدُ الزَّوَاجَ، لَكِنَّنا لا نَسْتَطِيعُ.",
+          "fr": "Nous voulons aider nos familles et nous voulons nous marier, mais nous ne pouvons pas."
+        },
+        {
+          "speaker": "الأب",
+          "ar": "تَقولُ الحُكومَةُ : سَتَكونُ هُناكَ فُرَصُ عَمَلٍ كَثِيرَةٌ لِلشَّبَابِ، هَذا العام.",
+          "fr": "Le gouvernement dit : Il y aura de nombreuses opportunités d'emploi pour les jeunes, cette année."
+        },
+        {
+          "speaker": "الابْنُ",
+          "ar": "سَمِعْنا هَذا الكَلامَ كَثيراً . نَحْنُ نُرِيدُ عَمَلاً، لا كَلاماً.",
+          "fr": "Nous avons beaucoup entendu ces paroles. Nous voulons du travail, pas des paroles."
+        },
+        {
+          "speaker": "الأب",
+          "ar": "كُنْ مُتَفائِلاً.",
+          "fr": "Sois optimiste."
+        }
+      ]
+    },
+    {
+      "id": "6.2",
+      "type": "texte",
+      "titleAr": "عَمَلُ الْمَرْأَةِ",
+      "titleFr": "Le travail de la femme",
+      "youtube": "",
+      "pdfPage": 30,
+      "lines": [
+        {
+          "speaker": "",
+          "ar": "هَلْ تَعْمَلُ المَرْأَةُ خارج بيتها ، أَمْ لا تَعْمَلُ؟ يختلِفُ النَّاسُ في الإجابَةِ عَنْ هَذَا السُّؤَالِ إِلى\nثَلاثِ فِرَقِ فَرِيقِ يَقولُ : نَعَمْ ، يَجِبُ أَنْ تَعْمَلَ المَرْأَةُ خارِجَ بَيْتِها ، مِثْلَ الرَّجُلِ وَفَرِيقِ آخَرَ يَقُولُ:\nلا يَصِحُّ أَنْ تَعْمَلَ المَرْأَةُ خَارِجَ بَيْتِها ؛ وَفَرِيقِ ثَالِثٍ يَقولُ : تَعْمَلُ المَرْأَةُ خارج بيتها ، وَلَكِنْ بِشَرْطَ.",
+          "fr": "La femme doit-elle travailler à l'extérieur de son foyer ou non ? Les gens divergent dans leur réponse à cette question en trois groupes : un groupe dit : oui, la femme doit travailler à l'extérieur de son foyer, comme l'homme ; un autre groupe dit : il n'est pas correct que la femme travaille à l'extérieur de son foyer ; et un troisième groupe dit : la femme travaille à l'intérieur de son foyer, mais à condition."
+        },
+        {
+          "speaker": "",
+          "ar": "يَقُولُ الفَرِيقُ الأَوَّلُ: إِنَّ الْمَرْأَةَ نِصْفُ الْمُجْتَمَعِ، وَلا يَصِحُ أَنْ تَجْلِسَ فِي بَيْتِهَا؛ تَغْسِلُ\nالملابس، وَتُعِدُّ الطَّعامَ، وَتُنَظِّفُ البَيْتَ، وَتُرَبِّي الأَوْلادَ ، وَهِيَ عِنْدَهُمْ جُزْءٌ مِنَ الاقْتِصَادِ، تَعْمَلُ\nوَتَأْخُذُ أَجْرَ عَمَلِها.",
+          "fr": "Le premier groupe dit : la femme est la moitié de la société, et il n'est pas correct qu'elle reste assise chez elle ; elle lave les vêtements, prépare la nourriture, nettoie la maison et élève les enfants, et elle est pour eux une partie de l'économie, elle travaille et prend un salaire pour son travail."
+        },
+        {
+          "speaker": "",
+          "ar": "وَيَرَى الفَرِيقُ الثَّاني، أَنَّ وَظِيفَةَ المَرْأَةِ الأَساسِيَّةَ تَكونُ في البَيْتِ حَيْثُ تُدِيرُهُ، وَتُرَبِّي\nأَوْلادَها . وَيَرَى هَذَا الفَرِيقُ أَنَّ الرَّاحِبَ الَّذِي تَأخُذُهُ المَرْأَةُ مِنْ عَمَلِهَا تُعْطِيهِ لِلخَادِمَةِ الَّتِي تُفْسِدُ\nالأَوْلادَ، وَلا تُصْلِحُهُمْ . وَيَقولُ هَذا الفَرِيقُ : إِنَّ خُرُوجَ المَرْأَةِ مِنَ البَيْتِ، يُؤَدِّي إِلى تَفَكَّكِ الْأَسْرَةِ،\nوَضَياع الأَوْلادِ .",
+          "fr": "Le deuxième groupe estime que la fonction principale de la femme est d'être à la maison, où elle la gère et élève ses enfants. Ce groupe estime que le salaire que la femme tire de son travail, elle le donne à la servante qui corrompt les enfants et ne les corrige pas. Et ce groupe dit : la sortie de la femme de la maison conduit à la désintégration de la famille et à la perte des enfants."
+        },
+        {
+          "speaker": "",
+          "ar": "أَمَّا الفَرِيقُ الثَّالِثُ، فَيَرَى أَنَّ العَمَلَ حَقٌّ لِلْمَرْأَةِ، فَتَعْمَلُ عَمَلَها الأَساسِيَّ فِي بَيْتِها ، وَلَها\nأَنْ تَعْمَلَ خَارِجَ بيتِها ، بِشَرْطِ أَن تَعْمَلَ في المجالاتِ الَّتِي تُناسِبُهَا، وَتَحْفَظُ أَخِلاقَهَا، وَتُبْعِدَ\nعَنْ مُخالَطَةِ الرِّجَالِ، كَالعَمَلِ في المَجالِ الطَّبّي؛ فَتَعْمَلُ طَبيبةً، أَوْ مُمَرِّضَةً، أَوْ فِي المَجالِ\nالتَّعْلِيمِيّ؛ فَتَعْمَلُ مُعَلِّمَةً، أَوْ مُرَبِّيَةٌ، أَوْ غَيْرَ ذَلِكَ فِي مُجْتَمَعٍ نِسَائيّ.",
+          "fr": "Quant au troisième groupe, il estime que le travail est un droit pour la femme, elle fait donc son travail principal à la maison, et elle peut travailler à l'extérieur de sa maison, à condition qu'elle travaille dans les domaines qui lui conviennent, qu'elle préserve sa moralité et qu'elle s'éloigne du mélange avec les hommes, comme le travail dans le domaine médical ; elle travaille comme médecin, ou infirmière, ou dans le domaine de l'enseignement ; elle travaille comme enseignante, ou éducatrice, ou autre dans une société de femmes."
+        }
+      ]
+    },
+    {
+      "id": "6.3",
+      "type": "dialogue",
+      "titleAr": "الاغتراب للعمل",
+      "titleFr": "L'expatriation pour le travail",
+      "youtube": "",
+      "pdfPage": 31,
+      "lines": [
+        {
+          "speaker": "صلاح",
+          "ar": "سَأَغْتَرِبُ لِلْعَمَلِ خَارِجَ وَطَني.",
+          "fr": "Je vais m'expatrier pour travailler hors de mon pays."
+        },
+        {
+          "speaker": "عماد",
+          "ar": "لَكِنَّكَ تَعْمَلُ هُنا، وَرَاتِبُكَ جَيْدٌ.",
+          "fr": "Mais tu travailles ici, et ton salaire est bon."
+        },
+        {
+          "speaker": "صلاح",
+          "ar": "المالُ كَثِيرٌ هُناكَ، وَالْحَياةُ سَهْلَةٌ.",
+          "fr": "L'argent est abondant là-bas, et la vie est facile."
+        },
+        {
+          "speaker": "عماد",
+          "ar": "أَخْتَلِفُ مَعَكَ. بلادنا تَحْتاجُ إِلَيْنَا.",
+          "fr": "Je ne suis pas d'accord avec toi. Notre pays a besoin de nous."
+        },
+        {
+          "speaker": "صلاح",
+          "ar": "السَّفَرُ لِلْعَمَلِ حَلالٌ، وَلَيْسَ حَراماً. قالَ اللهُ تَعالى: ﴿هُوَ الَّذِي جَعَلَ لَكُمُ الْأَرْضَ ذَلُولاً فَامْشُوا فِي مَنَاكِبِهَا وَكُلُوا مِنْ رِزْقِهِ وَإِلَيْهِ النُّشُورُ.",
+          "fr": "Voyager pour travailler est licite, pas interdit. Dieu Tout-Puissant a dit : \"C'est Lui qui vous a soumis la terre : parcourez donc ses grandes étendues. Mangez de ce qu'Il vous fournit. C'est vers Lui qu'est la Résurrection.\" "
+        },
+        {
+          "speaker": "عماد",
+          "ar": "صَدَقَ اللهُ العَظِيمُ. ولكِنْ هَلْ فَكَرْتَ فِي أَوْلَادِكَ؟",
+          "fr": "Dieu le Grand a dit la vérité. Mais as-tu pensé à tes enfants ?"
+        },
+        {
+          "speaker": "صلاح",
+          "ar": "سَأَصْحَبُهُمْ مَعِي، أَوْ أَزورُهُمْ في العامِ مَرَّتَيْنِ.",
+          "fr": "Je les emmènerai avec moi, ou je leur rendrai visite deux fois par an."
+        },
+        {
+          "speaker": "عماد",
+          "ar": "كَيْفَ تُحافِظُ عَلى دِينِهِمْ وَثَقافَتِهِمْ وَلُغَتِهِم، إِذا اغْتَرَبُوا مَعَكَ؟",
+          "fr": "Comment vas-tu préserver leur religion, leur culture et leur langue, s'ils s'expatrient avec toi ?"
+        },
+        {
+          "speaker": "صلاح",
+          "ar": "لَنْ أَذْهَبَ إِلى بِلادٍ غَرِيبَةٍ عَنْ ثَقافَتي.",
+          "fr": "Je n'irai pas dans un pays étranger à ma culture."
+        },
+        {
+          "speaker": "عماد",
+          "ar": "أَرْجُو أَنْ تَصْحَبَ أَوْلادَكَ.",
+          "fr": "J'espère que tu emmèneras tes enfants."
+        },
+        {
+          "speaker": "صلاح",
+          "ar": "سَأُحاوِلُ ذَلِكَ، وَشُكْراً عَلَى نَصِيحَتِكَ.",
+          "fr": "Je vais essayer, et merci pour ton conseil."
+        },
+        {
+          "speaker": "عماد",
+          "ar": "هَلْ وَافَقَ وَالِدُكَ عَلَى اغْتِرَابِكَ؟",
+          "fr": "Ton père a-t-il accepté ton expatriation ?"
+        },
+        {
+          "speaker": "صلاح",
+          "ar": "بالطَّبْعِ وافَقَ، وَإِلا مَا فَكَّرْتُ فِي الاغْتِرَابِ.",
+          "fr": "Bien sûr qu'il a accepté, sinon je n'aurais pas pensé à m'expatrier."
+        },
+        {
+          "speaker": "عماد",
+          "ar": "هَلْ سَتُقِيمُ طَوِيلاً هُناكَ؟",
+          "fr": "Vas-tu rester longtemps là-bas ?"
+        },
+        {
+          "speaker": "صلاح",
+          "ar": "خَمْسَ سَنَوَاتٍ فَقَطْ، ثُمَّ أَعودُ ، إِنْ شَاءَ اللهُ.",
+          "fr": "Cinq ans seulement, puis je reviendrai, si Dieu le veut."
+        },
+        {
+          "speaker": "عماد",
+          "ar": "أَرْجُو أَنْ تَعود إلينا سالماً غائماً.",
+          "fr": "J'espère que tu reviendras parmi nous sain et sauf."
+        },
+        {
+          "speaker": "صلاح",
+          "ar": "بارَكَ الله فيك.",
+          "fr": "Que Dieu te bénisse."
+        }
+      ]
+    },
+    {
+      "id": "6.4",
+      "type": "dialogue",
+      "titleAr": "عمل خير من مسألة",
+      "titleFr": "Un travail vaut mieux que la mendicité",
+      "youtube": "",
+      "pdfPage": 32,
+      "lines": [
+        {
+          "speaker": "الرسول",
+          "ar": "مَا أَكَلَ أَحَدٌ طَعَاماً قَطُّ خَيْراً مِنْ أَنْ يَأْكُلَ مِنْ عَمَلِ يَدِهِ، وَإِنَّ نَبِيَّ اللهِ داودَ كَانَ يَأْكُلُ مِنْ عَمَلِ يَدِهِ",
+          "fr": "Personne n'a jamais mangé une nourriture meilleure que celle qu'il a gagnée par son propre travail, et le prophète de Dieu, Daoud, mangeait de son propre travail."
+        },
+        {
+          "speaker": "الرسول",
+          "ar": "لأَنْ يَأْخُذَ أَحَدُكُمْ حَبْلَهُ ، ثُمَّ يَغْدو إلى الجَبَلِ، فَيَحْتَطِبَ، فَيَبِيعَ، فَيَأْكُلَ، وَيَتَصَدَّقَ خَيْرٌ مِنْ أَنْ يَسْأَلَ النَّاسَ",
+          "fr": "Qu'il prenne sa corde, puis aille à la montagne, coupe du bois, le vende, mange et fasse l'aumône, c'est mieux que de demander aux gens."
+        },
+        {
+          "speaker": "الرسول",
+          "ar": "هَلْ فِي بَيْتِكَ شَيْءٌ؟",
+          "fr": "Y a-t-il quelque chose chez toi ?"
+        },
+        {
+          "speaker": "رجل فقير",
+          "ar": "نَعَمْ، قَصْعَةٌ (إناء) نَأْكُلُ فيها ، ونَشْرَبُ مِنْها وَنَتَطَهَّرُ، وَحِلْسٌ (فِراش) نَجْلِسُ عَلَيْهَا ، وَلَا شَيْءَ غَيْرَ هَذا",
+          "fr": "Oui, un bol dans lequel nous mangeons, buvons et nous purifions, et une couverture sur laquelle nous nous asseyons, et rien d'autre."
+        },
+        {
+          "speaker": "الرسول",
+          "ar": "ائْتِنِي بِهِما",
+          "fr": "Apporte-les moi."
+        },
+        {
+          "speaker": "الرسول",
+          "ar": "مَنْ يَشْتَرِي هَذَيْنِ؟",
+          "fr": "Qui achète ces deux objets ?"
+        },
+        {
+          "speaker": "رجل",
+          "ar": "أَنا أَشْتَرِيهِمَا بِدِرْهَمٍ",
+          "fr": "Je les achète pour un dirham."
+        },
+        {
+          "speaker": "الرسول",
+          "ar": "مَنْ يَزِيدُ عَلَى دِرْهَم؟",
+          "fr": "Qui offre plus d'un dirham ?"
+        },
+        {
+          "speaker": "رجل آخر",
+          "ar": "أَنا أَشْتَرِيهِمَا بِإِرْهَمَيْنِ",
+          "fr": "Je les achète pour deux dirhams."
+        },
+        {
+          "speaker": "الرسول",
+          "ar": "اشْتَرِ بِأَحَدِهِما طَعاماً ، وَاذْهَبْ بِهِ إِلَى أَهْلِكَ، وَاشْتَرِ بِالْآخَرِ قَدُوماً وَائْتِنِي بِهِ",
+          "fr": "Achète de la nourriture avec l'un, et va chez ta famille, et achète une hache avec l'autre et reviens vers moi."
+        },
+        {
+          "speaker": "الرسول",
+          "ar": "اذْهَبْ وَاحْتَطِبْ وَبِعْ، وَلَا أَرَاكَ خَمْسَةَ عَشَرَ يَوْماً",
+          "fr": "Va couper du bois et vends-le, et je ne veux pas te voir pendant quinze jours."
+        },
+        {
+          "speaker": "الرسول",
+          "ar": "أَلَيْسَ هَذا خَيْراً لَكَ مِنْ أَنْ تَسْأَلَ النَّاسَ أَعْطَوْكَ أَوْ مَنَعوكَ",
+          "fr": "N'est-ce pas mieux pour toi que de demander aux gens, qu'ils te donnent ou te refusent ?"
+        }
+      ]
+    }
+  ]
+}

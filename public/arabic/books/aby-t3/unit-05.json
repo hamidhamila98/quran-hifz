@@ -1,0 +1,77 @@
+{
+  "id": 5,
+  "titleAr": "الأَطْفَالُ وَالْقِرَاءَةُ",
+  "titleFr": "Les enfants et la lecture",
+  "items": [
+    {
+      "id": "5.1",
+      "type": "text",
+      "titleAr": "",
+      "titleFr": "",
+      "youtube": null,
+      "pdfPage": null,
+      "lines": [
+        {
+          "id": "Intro",
+          "ar": "الْقِرَاءَةُ مِفْتَاحُ الْمَعْرِفَةِ، وَهِيَ مِنْ أَهَمِّ أَسْبَابِ تَقَدُّمِ الْمُجْتَمَعَاتِ؛ فَفِيهَا مُجَالَسَةٌ لِلْكُتَّابِ وَالْعُلَمَاءِ، وَمَعْرِفَةٌ بِأَخْبَارِ السَّالِفِينَ وَالْمُعَاصِرِينَ وَعُلُومِهِمْ. وَالأَمْرُ بِالْقِرَاءَةِ هُوَ أَوَّلُ مَا نَزَلَ عَلَى النَّبِيِّ ﷺ مِنَ الْوَحْيِ ﴿اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ﴾ [العلق/١]. وَيَحْرِصُ الْمُرَبُّونَ عَلَى تَعْلِيمِ الأَطْفَالِ الْقِرَاءَةَ فِي وَقْتٍ مُبَكِّرٍ مِنْ أَعْمَارِهِمْ. وَعَادَةُ الْقِرَاءَةِ لَدَى الأَطْفَالِ تَمُرُّ بِمَرَاحِلَ، هِيَ:",
+          "fr": "Introduction : La lecture est la clé du savoir et l'une des causes principales du progrès des sociétés. Elle permet de \"s'asseoir\" avec les écrivains et les savants, et de connaître les nouvelles des anciens et des contemporains. L'ordre de lire fut la première révélation faite au Prophète ﷺ : {Lis, au nom de ton Seigneur qui a créé}. Les éducateurs veillent à enseigner la lecture aux enfants très tôt. L'habitude de la lecture chez l'enfant passe par plusieurs étapes :"
+        },
+        {
+          "id": "1",
+          "ar": "١- مَرْحَلَةُ التَّنَاوُلِ بِالْيَدِ: وَتَبْدَأُ فِي الْعَامِ الأَوَّلِ مِنْ حَيَاةِ الطِّفْلِ، فَيُظْهِرُ اهْتِمَاماً عَابِراً بِالْكُتُبِ، فَيَضَعُهَا فِي فَمِهِ وَيَنْتَزِعُ الأَوْرَاقَ وَيُمَزِّقُهَا. وَلِيَكْتَسِبَ الطِّفْلُ هَذِهِ الْخِبْرَةَ، يُمْكِنُ أَنْ نَضَعَ بَيْنَ يَدَيْهِ أَوْرَاقاً مِنْ مَجَلَّاتٍ قَدِيمَةٍ.",
+          "fr": "1. L'étape de la manipulation (1ère année) : L'enfant montre un intérêt passager pour les livres, les met à la bouche ou déchire les pages. Pour qu'il acquière cette expérience, on peut lui donner de vieux magazines."
+        },
+        {
+          "id": "2",
+          "ar": "٢- مَرْحَلَةُ الإِشَارَةِ إِلى الصُّوَرِ عِنْدَما يَبْلُغُ الطِّفْلُ الشَّهْرَ الْخَامِسَ عَشَرَ مِنَ الْعُمُرِ: فَيَنْشَأُ لَدَى الصَّغِيرِ اهْتِمَامٌ شَدِيدٌ بِالصُّوَرِ وَالْكُتُبِ. وَتَقُومُ الأُمُّ بِدَوْرٍ رَئِيسٍ فِي هَذِهِ الْمَرْحَلَةِ؛ حَيْثُ تَقُومُ بِتَقْلِيبِ صَفَحَاتِ الْكِتَابِ، وَطِفْلُهَا يَنْظُرُ.",
+          "fr": "2. L'étape de désignation des images (15 mois) : Un vif intérêt pour les images et les livres naît chez le petit. La mère joue un rôle clé en tournant les pages pendant que l'enfant regarde."
+        },
+        {
+          "id": "3",
+          "ar": "٣- مَرْحَلَةُ تَسْمِيَةِ الأَشْيَاءِ: وَتَبْدَأُ فِي الشَّهْرِ الثَّامِنَ عَشَرَ مِنْ عُمُرِ الطِّفْلِ؛ فَيَبْدَأُ الطِّفْلُ فِي اسْتِعْمَالِ كَلِمَاتٍ يَأْخُذُهَا مِنْ مَعَانِي الصُّوَرِ، وَهَذَا يُسَاعِدُهُ عَلَى زِيَادَةِ حَصِيلَتِهِ اللُّغَوِيَّةِ، إِنَّهُ يُشِيرُ إِلى الصُّوَرِ وَيُسَمِّيها: هَذَا جَمَلٌ، هَذِهِ سَيَّارَةٌ، وَيَسْأَلُ أُمَّهُ: مَا هَذَا؟.",
+          "fr": "3. L'étape de la dénomination (18 mois) : L'enfant commence à utiliser des mots tirés des images, ce qui enrichit son vocabulaire. Il pointe les images et les nomme (ceci est un chameau, ceci est une voiture) et questionne sa mère : \"C'est quoi ça ?\"."
+        },
+        {
+          "id": "4",
+          "ar": "٤- مَرْحَلَةُ حُبِّ الْقِصَصِ الْقَصِيرَةِ السَّهْلَةِ: وَتَبْدَأُ بَعْدَ أَنْ يُتِمَّ الْعَامَيْنِ مِنْ عُمُرِهِ، وَفِيها يُسَمَّى الطِّفْلُ عَمَلِيَّةَ النَّظَرِ إِلى الْكِتَابِ «قِرَاءَةً» كَمَا يُحِبُّ أَنْ يَسْمَعَ قِصَّةً عَنْ كُلِّ صُورَةٍ. وَفِي هَذِهِ السِّنِّ، يَبْدَأُ الأَطْفَالُ بِإِدْرَاكِ الحروفِ، عَلَى أَنَّهَا أَشْيَاءُ فِي الصَّفَحَاتِ.",
+          "fr": "4. L'étape des histoires courtes (2 ans) : L'enfant appelle le fait de regarder un livre \"lire\" et aime entendre une histoire pour chaque image. Il commence à percevoir les lettres comme des objets sur la page."
+        },
+        {
+          "id": "5",
+          "ar": "٥- مَرْحَلَةُ الْبَحْثِ عَنِ الْمَعَانِي: وَتَبْدَأُ بَعْدَ عَامَيْنِ وَنِصْفِ الْعَامِ أَوْ ثَلَاثَةِ أَعْوَامٍ. وَفِيها تَبْدُو الصُّوَرُ لِلْطِّفْلِ، وَكَأَنَّها أَشْيَاءُ حَقِيقِيَّةٌ فِيها حَيَاةٌ؛ فَقَدْ يَمُدُّ يَدَهُ لِيَأْخُذَ شَيْئاً مِنْ صُورَةٍ، وَقَدْ يُقَبِّلُ طِفْلاً فِي صُورَةٍ.",
+          "fr": "5. L'étape de la recherche de sens (2,5 - 3 ans) : Les images semblent réelles et vivantes pour l'enfant. Il peut essayer de saisir un objet dans l'image ou d'embrasser un enfant représenté."
+        },
+        {
+          "id": "6",
+          "ar": "٦- مَرْحَلَةُ الْقَصَصِ، وَمُلاحَظَةُ الْحُرُوفِ: وَتَبْدَأُ بَعْدَ مُنْتَصَفِ الْعَامِ الرَّابِعِ مِنْ عُمُرِ الطِّفْلِ؛ فَيَكْتَسِبُ الطِّفْلُ الْقُدْرَةَ عَلَى تَفْسِيرِ الصُّوَرِ، وَالتَّعْلِيقِ عَلَيْها، كَمَا يَبْدَأُ الاهْتِمَامُ بِأَشْكَالِ الْحُرُوفِ بِمِثْلِ الاهْتِمَامِ بِالصُّوَرِ.",
+          "fr": "6. L'étape des histoires et de l'observation des lettres (4,5 ans) : L'enfant devient capable d'interpréter et de commenter les images. Il commence à s'intéresser aux formes des lettres autant qu'aux images."
+        },
+        {
+          "id": "7",
+          "ar": "٧- مَرْحَلَةُ إِدْرَاكِ الْعَلاقَةِ بَيْنَ النَّصِّ وَالصُّورَةِ: تَبْدَأُ فِي الْخَامِسَةِ مِنَ الْعُمُرِ؛ فَيَجِدُ فِيها الطِّفْلُ مُتْعَةً فِي مُصاحَبَةِ غَيْرِهِ؛ لِهَذَا تَزْدَادُ مَهَارَاتُهُ الاجْتِمَاعِيَّةُ. وَفِي هَذِهِ الْمَرْحَلَةِ يَجِدُ الطِّفْلُ مُتْعَةً فِي كُلِّ مَا يُثِيرُ الضَّحِكَ، وَخُصوصاً الصُّوَرَ الْهَزْلِيَّةَ.",
+          "fr": "7. L'étape de la relation texte-image (5 ans) : L'enfant prend plaisir à la compagnie des autres, améliorant ses compétences sociales. Il apprécie tout ce qui fait rire, surtout les images comiques."
+        },
+        {
+          "id": "8",
+          "ar": "٨- مَرْحَلَةُ اكْتِسَابِ الْعَادَاتِ الرَّئِيسَةِ لِلْقِرَاءَةِ: وَتَبْدَأُ فِي السِّنِّ السَّادِسَةِ مِنْ عُمُرِ الطِّفْلِ، فَيُصْبِحُ الطِّفْلُ قَادِراً عَلَى مُمَارَسَةِ الْعَمَلِيَّاتِ الْفِكْرِيَّةِ؛ وَلِذَا كَانَتْ هَذِهِ السِّنُّ هِيَ الْمُلائِمَةُ لِدُخُولِ الْمَدْرَسَةِ بِفَضْلِ مَا يَتَكَوَّنُ لَدَيْهِ مِنْ مَفْهُومَاتٍ لِمُرونَةِ ذَكَائِهِ.",
+          "fr": "8. L'étape des habitudes de lecture (6 ans) : L'enfant devient capable d'opérations intellectuelles. C'est l'âge idéal pour l'entrée à l'école grâce à la flexibilité de son intelligence et aux concepts acquis."
+        },
+        {
+          "id": "9",
+          "ar": "٩- مَرْحَلَةُ ازْدِيَادِ قُدْرَةِ الطِّفْلِ عَلَى الانْتِبَاهِ، وَمَعْرِفَةِ الْبِيئَةِ الْمُحِيطَةِ بِهِ: وَتَبْدَأُ مِنْ سِنِّ السَّابِعَةِ وَحَتَّى الثَّالِثَةَ عَشْرَةَ، فِيها يُحِبُّ الطِّفْلُ أَنْ يَعْرِفَ مَا وَرَاءَ الظَّوَاهِرِ الْوَاقِعِيَّةِ الَّتِي خَبَرَهَا بِنَفْسِهِ فِي بِيئَتِهِ، فَيَلْجَأُ إِلى بِيئَةِ الْخَيَالِ، وَلَكِنَّهُ يُصْبِحُ قَادِراً عَلَى تَمْيِيزِ الْقِصَصِ بَعْضِها عَنْ بَعْضٍ، وَبَيْنَ مَا هُوَ خَيَالِي، وَمَا هُوَ غَيْرُ خَيَالِي.",
+          "fr": "9. L'étape de l'attention et de la découverte de l'environnement (7-13 ans) : L'enfant veut comprendre ce qui se cache derrière les phénomènes réels. Il se tourne vers l'imaginaire, mais devient capable de distinguer les histoires entre elles et le réel de la fiction."
+        },
+        {
+          "id": "10",
+          "ar": "١٠- مَرْحَلَةُ التَّحَوُّلِ الْوَاضِحِ مِنَ الْخَيَالِ إِلى الْوَاقِعِ: وَتَبْدَأُ فِي سِنِّ التَّاسِعَةِ؛ فَيُحِبُّ الأَوْلادُ قِرَاءَةَ قِصَصِ الجَوَّالَةِ، وَالْقِصَصِ الَّتِي تَتَنَاوَلُ حَيَاةَ الأَوْلادِ.",
+          "fr": "10. Le passage de l'imaginaire au réel (9 ans) : Les garçons aiment lire des histoires de scoutisme et des récits sur la vie des enfants."
+        },
+        {
+          "id": "11",
+          "ar": "١١- مَرْحَلَةُ التَّقْلِيلِ مِنَ الْقَصَصِ الْخَيَالِيَّةِ: وَهِيَ مِنْ سِنِّ الْعَاشِرَةِ إِلى الْحَادِيَةَ عَشْرَةَ؛ وَلِذَا نَجِدُ الأَوْلادَ يُعْجَبونَ كَثِيراً بِالأَبْطَالِ وَالْمُغَامِرينَ، وَيُحَاوِلُونَ تَقْلِيدَهُمْ، بَيْنَمَا يَظَلُّ اهْتِمَامُ البَنَاتِ مُتَعَلِّقاً بِقِصَصِ الرِّحْلاتِ وَعَادَاتِ الْبِلادِ الأُخْرى، لِذَا يَجِبُ أَنْ نَخْتَارَ لَهُمُ الْمَوْضُوعَاتِ الَّتِي لا تَتَنَافَى مَعَ قِيَمِنَا وَأَخْلَاقِنَا الإِسْلَامِيَّةِ.",
+          "fr": "11. La diminution des histoires fantastiques (10-11 ans) : Les garçons admirent les héros et les aventuriers et tentent de les imiter. Les filles s'intéressent aux récits de voyage et aux coutumes d'autres pays. Il faut donc choisir des sujets conformes à nos valeurs et à notre éthique islamique."
+        }
+      ]
+    }
+  ]
+}

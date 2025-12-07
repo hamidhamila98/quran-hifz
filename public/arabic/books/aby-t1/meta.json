@@ -1,0 +1,24 @@
+{
+  "id": "aby-t1",
+  "title": "Al-Arabiya Bayna Yadayk - Tome 1",
+  "structure": {
+    "sectionLabel": {
+      "ar": "الوحدة",
+      "fr": "Unité"
+    },
+    "itemLabels": {
+      "dialogue": {
+        "ar": "حوار",
+        "fr": "Dialogue"
+      },
+      "text": {
+        "ar": "نص",
+        "fr": "Texte"
+      }
+    }
+  },
+  "resources": {
+    "pdf": "/arabic/pdf/ABY-T1.pdf",
+    "vocabulary": "/arabic/pdf/ABY-T1-VOC.pdf"
+  }
+}

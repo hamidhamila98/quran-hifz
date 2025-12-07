@@ -1,0 +1,372 @@
+{
+  "id": 9,
+  "titleAr": "الوحدة التاسعة: العالم قرية صغيرة",
+  "titleFr": "Unité 9: Le monde est un petit village",
+  "items": [
+    {
+      "id": "9.1",
+      "type": "dialogue",
+      "titleAr": "الشَّبَكَةُ الدَّوْلِيَّةُ",
+      "titleFr": "Le réseau international",
+      "youtube": "",
+      "pdfPage": 4,
+      "lines": [
+        {
+          "speaker": "أَحْمَدُ",
+          "ar": "كُنْتَ تَقْضِي وَقْتاً طويلاً أَمامَ التِّلْفانِ ، وَالآنَ تَقْضِي وقتاً أَطْوَلَ أَمَامَ الحاسوب. ما سَبَبُ ذَلِكَ ؟!",
+          "fr": "Tu passais beaucoup de temps devant la télévision, et maintenant tu passes plus de temps devant l'ordinateur. Quelle en est la raison?!"
+        },
+        {
+          "speaker": "مَحْمُودٌ",
+          "ar": "السَّبَبُ أَنَّ فَوائِدَ الحاسوب، أَكْثَرُ مِنْ فَوائِدِ التَّلْفازِ.",
+          "fr": "La raison est que les avantages de l'ordinateur sont plus nombreux que ceux de la télévision."
+        },
+        {
+          "speaker": "أَحْمَدُ",
+          "ar": "أَرى رَسَائِلَ عَلَى شَاشَةِ الحاسوب.",
+          "fr": "Je vois des messages sur l'écran de l'ordinateur."
+        },
+        {
+          "speaker": "مَحْمُودٌ",
+          "ar": "هَذَا هُوَ البريد الإلكتروني.",
+          "fr": "C'est le courrier électronique."
+        },
+        {
+          "speaker": "أَحْمَدُ",
+          "ar": "عَفْواً ، كَيْفَ تَصِلُ الرَّسَائِلُ بِالبريد الإلكتروني؟",
+          "fr": "Pardon, comment les messages arrivent-ils par courrier électronique?"
+        },
+        {
+          "speaker": "مَحْمُودٌ",
+          "ar": "هَذِهِ عَناوينُ أَصْحابيَ المُشْتَرِكِينَ في البريد الإلكتروني . أَسْتَطِيعُ أَنْ أَبْعَثَ رَسائلي إلى أَيِّ مَكَانٍ في العالم.",
+          "fr": "Ce sont les adresses de mes amis abonnés au courrier électronique. Je peux envoyer mes messages à n'importe quel endroit dans le monde."
+        },
+        {
+          "speaker": "أَحْمَدُ",
+          "ar": "هَذَا أَمْرٌ عَجِيبٌ فِعْلَا !",
+          "fr": "C'est vraiment une chose étrange!"
+        },
+        {
+          "speaker": "مَحْمُودٌ",
+          "ar": "هَذِهِ رِسالَةٌ مِنْ صَدِيقي عُمَرَ مِنْ دِمَشْقَ.",
+          "fr": "Ceci est un message de mon ami Omar de Damas."
+        },
+        {
+          "speaker": "أَحْمَدُ",
+          "ar": "يَتَحَدَّثُ النَّاسُ كَثيراً عَنِ الشَّبَكَةِ الدَّوْلِيَّةِ. مَا هَذِهِ الشَّبَكَةُ الدَّوْلِيَّةُ؟",
+          "fr": "Les gens parlent beaucoup du réseau international. Qu'est-ce que ce réseau international?"
+        },
+        {
+          "speaker": "مَحْمُودٌ",
+          "ar": "الشَّبَكَةُ الدَّوْلِيَّةُ تَرْبِطُ مَلايين الحواسيب عَنْ طَريق الهاتف.",
+          "fr": "Le réseau international relie des millions d'ordinateurs par téléphone."
+        },
+        {
+          "speaker": "أحْمَدُ",
+          "ar": "ما فَائِدَةُ الشَّبَكَةِ الدَّوْلِيَّةِ؟",
+          "fr": "Quel est l'avantage du réseau international?"
+        },
+        {
+          "speaker": "مَحْمُودٌ",
+          "ar": "فَوائِدُها كَثِيرَةٌ : اُنظُرْ هَذِهِ عَناوين الجامِعاتِ وَالمَكْتَباتِ وَمَراكِز البحوث. تَسْتَطِيعُ الحصول على المعلومات التي تُريدُها ، وَأَنْتَ فِي بَيْتِكَ، أَوْ فِي مَكْتَبِكَ.",
+          "fr": "Ses avantages sont nombreux: regardez ces adresses d'universités, de bibliothèques et de centres de recherche. Vous pouvez obtenir les informations que vous souhaitez, que vous soyez chez vous ou à votre bureau."
+        },
+        {
+          "speaker": "أَحْمَدُ",
+          "ar": "يَا لَهُ مِنْ أَمْرٍ عَجِيبٍ!",
+          "fr": "Quelle chose étrange!"
+        }
+      ]
+    },
+    {
+      "id": "9.2",
+      "type": "texte",
+      "titleAr": "وَسَائِلُ النَّقْلِ وَالاتِّصالِ قَدِيماً وَحَدِيثاً",
+      "titleFr": "Moyens de transport et de communication anciens et modernes",
+      "youtube": "",
+      "pdfPage": 5,
+      "lines": [
+        {
+          "speaker": "",
+          "ar": "تَهْيئَةٌ:",
+          "fr": "Préparation:"
+        },
+        {
+          "speaker": "",
+          "ar": "فكر في الإِجابَةِ عَنِ الْأَسْئِلَةِ التَّالِيَةِ:",
+          "fr": "Réfléchissez à la réponse aux questions suivantes:"
+        },
+        {
+          "speaker": "",
+          "ar": "١- ما وَسائِلُ النَّقْلِ في الماضي؟",
+          "fr": "1- Quels sont les moyens de transport dans le passé?"
+        },
+        {
+          "speaker": "",
+          "ar": "٢- ما وَسَائِلُ النَّقْلِ الحَدِيثَةِ؟",
+          "fr": "2- Quels sont les moyens de transport modernes?"
+        },
+        {
+          "speaker": "",
+          "ar": "٣- ما وسائل الاتصال في الماضي؟",
+          "fr": "3- Quels sont les moyens de communication dans le passé?"
+        },
+        {
+          "speaker": "",
+          "ar": "4 - ما وَسَائِلُ الاتِّصالِ الحَدِيثَةِ؟",
+          "fr": "4- Quels sont les moyens de communication modernes?"
+        },
+        {
+          "speaker": "",
+          "ar": "يَتَكَوَّنُ العَالَمُ مِنْ سِتِّ قَارَّاتٍ، وَيَبْلُغُ عَدَدُ سُكَانِهِ أَكثَرَ مِنْ سِتَّةِ مِلْيَارَاتِ إِنْسَانِ. هَذَا العَالَمُ",
+          "fr": "Le monde est composé de six continents et sa population atteint plus de six milliards d'êtres humains. Ce monde"
+        },
+        {
+          "speaker": "",
+          "ar": "الواسِعُ، أَصْبَحَ قَرْيَةً صَغِيرَةً. كَيْفَ صَارَ ذَلِكَ ؟! هُناكَ سَبَبانِ، أَوَّلُهما : وَسَائِلُ النَّقْلِ الحَدِيثَةُ،",
+          "fr": "vaste, est devenu un petit village. Comment est-ce arrivé ?! Il y a deux raisons, la première: les moyens de transport modernes,"
+        },
+        {
+          "speaker": "",
+          "ar": "وثانيهما ، وَسائِلُ الاتِّصال الحديثة.",
+          "fr": "et la seconde, les moyens de communication modernes."
+        },
+        {
+          "speaker": "",
+          "ar": "كانَتْ وَسَائِلُ النَّقْلِ فِي العُصورِ القَدِيمَةِ بَطيئَةً جِدًا ، وَكَانَ النَّاسُ يُسافِرُونَ مَشْياً عَلَى الْأَقْدامِ،",
+          "fr": "Les moyens de transport dans les temps anciens étaient très lents, et les gens voyageaient à pied,"
+        },
+        {
+          "speaker": "",
+          "ar": "وَيَحْمِلُونَ حاجاتِهِمْ عَلَى ظُهُورِهِمْ، أَوْ رُؤوسِهِم . ثُمَّ أَخَذَ النَّاسُ يَسْتَعْمِلُونَ الحَيَوَانَاتِ؛ كَالجِمالِ",
+          "fr": "et portaient leurs affaires sur leur dos, ou sur leur tête. Puis les gens ont commencé à utiliser les animaux; comme les chameaux"
+        },
+        {
+          "speaker": "",
+          "ar": "وَالبِغَالِ وَالحَمِيرِ فِي نَقْلِ حاجاتِهِم بَعْدَ مُدَّةٍ، صَنَعَ الإِنْسانُ عَرَباتٍ صَغِيرَةً، لَهَا أَرْبَعُ عَجَلاتٍ،",
+          "fr": "et les mules et les ânes pour transporter leurs affaires. Après un certain temps, l'homme a fabriqué de petites charrettes, avec quatre roues,"
+        },
+        {
+          "speaker": "",
+          "ar": "تَسِيرُ دُونَ مُحَرِّكَ، ثُمَّ صُنِعَتْ بَعْدَ ذلِكَ المَراكِبُ الشَّراعِيَّةُ الَّتِي تَسِيرُ عَلى الماء.",
+          "fr": "qui se déplacent sans moteur, puis après cela ont été fabriqués les navires à voile qui se déplacent sur l'eau."
+        },
+        {
+          "speaker": "",
+          "ar": "صَنَعَ الإِنْسانُ فِي العَصْرِ الحَدِيثِ مَرْكَبَاتٍ، تَعْمَلُ بالمحرّكاتِ، فَظَهَرَ كَثِيرٌ مِنْ وَسَائِلِ النَّقْلِ",
+          "fr": "L'homme a fabriqué à l'époque moderne des véhicules, qui fonctionnent avec des moteurs, et de nombreux moyens de transport sont apparus"
+        },
+        {
+          "speaker": "",
+          "ar": "الحديثَةِ مِثْلُ: السَّيَّارَاتِ، وَالقِطاراتِ، وَالسُّفْنِ، وَالطَّائِراتِ. جَعَلَتْ هَذِهِ الوَسَائِلُ العَالَمَ قَرْيَةً",
+          "fr": "modernes tels que: les voitures, les trains, les navires et les avions. Ces moyens ont fait du monde un village"
+        },
+        {
+          "speaker": "",
+          "ar": "صَغِيرَةً؛ فَالإِنْسانُ يَنْتَقِلُ في ساعاتٍ مِنْ بَلَدٍ إِلَى بَلَدٍ ، وَمِنْ قارَّةٍ إلى قارَّةٍ. وَهَذَا يَخْتَلِفُ عَمَّا كَانَ",
+          "fr": "petit; l'homme se déplace en quelques heures d'un pays à l'autre, et d'un continent à l'autre. Et cela diffère de ce qui était"
+        },
+        {
+          "speaker": "",
+          "ar": "في الماضي، حيثُ كَانَ الإنْسانُ يَحْتَاجُ إلى أيَّامٍ وَشُهُورٍ ، لِيَنْتَقِلَ مِنْ مَدِينَةٍ إِلى مَدِينَةٍ.",
+          "fr": "dans le passé, où l'homme avait besoin de jours et de mois, pour se déplacer d'une ville à l'autre."
+        },
+        {
+          "speaker": "",
+          "ar": "أمَّا السَّبَبُ الثَّاني، الَّذِي جَعَلَ العالَمَ قَرْيَةً صَغِيرَةً ، فَهُوَ وَسائِلُ الاتصال الحَدِيثَةُ مِثْلُ: الصُّحُفِ،",
+          "fr": "Quant à la deuxième raison, qui a fait du monde un petit village, ce sont les moyens de communication modernes tels que: les journaux,"
+        },
+        {
+          "speaker": "",
+          "ar": "والهاتف، والإذاعَةِ، وَالتَّلْفانِ، وَالحاسوب، وَالشَّبَكَةِ الدَّوْلِيَّةِ الَّتِي جَعَلَتِ الْإِنْسَانَ يَعْرِفُ أَوْلاً بِأَوَّلِ،",
+          "fr": "le téléphone, la radio, la télévision, l'ordinateur et le réseau international qui ont permis à l'homme de savoir de première main,"
+        },
+        {
+          "speaker": "",
+          "ar": "ما يَحْدُثُ فِي جَميعِ بِلادِ العَالَمِ كَانَتْ وَسائل الاتصال في العُصُورِ القَدِيمَةِ بَطِيئَةً جِدًا ؛ فَالإِنسانُ",
+          "fr": "ce qui se passe dans tous les pays du monde. Les moyens de communication dans les temps anciens étaient très lents; l'homme"
+        },
+        {
+          "speaker": "",
+          "ar": "يُرْسِلُ الأخبار والمعلوماتِ ، عَنْ طَرِيقِ صَوتِهِ ، أَوْ عَنْ طَرِيقِ العَدّائِينَ، أَوْ عَنْ طَرِيقِ الحَمامِ الزَّاجِلِ.",
+          "fr": "envoie les nouvelles et les informations, par sa voix, ou par le biais de coureurs, ou par le biais de pigeons voyageurs."
+        },
+        {
+          "speaker": "",
+          "ar": "وَكَانَتِ الأَخْبَارُ تَصِلُ بَعْدَ مُدَّةٍ طَوِيلَةٍ ، وَقَدْ لا تَصِلُ فِي كَثِيرٍ مِنَ الْأَحْيَانِ.",
+          "fr": "Et les nouvelles arrivaient après une longue période, et pouvaient ne pas arriver dans de nombreux cas."
+        }
+      ]
+    },
+    {
+      "id": "9.3",
+      "type": "dialogue",
+      "titleAr": "ندوة عن العولمة",
+      "titleFr": "Débat sur la mondialisation",
+      "youtube": "",
+      "pdfPage": 6,
+      "lines": [
+        {
+          "speaker": "زينب",
+          "ar": "كانت ندوة مفيدة. لماذا لم تحضري؟",
+          "fr": "Zainab : Le débat était intéressant. Pourquoi n'y as-tu pas assisté ?"
+        },
+        {
+          "speaker": "فاطمة",
+          "ar": "كنت أمس مشغولة. زارنا بعض الضيوف.",
+          "fr": "Fatima : J'étais occupée hier. Des invités nous ont rendu visite."
+        },
+        {
+          "speaker": "زينب",
+          "ar": "حضرت الندوة معظم مدرسات الجامعة وطالباتها.",
+          "fr": "Zainab : La plupart des professeurs d'université et leurs étudiantes ont assisté au débat."
+        },
+        {
+          "speaker": "فاطمة",
+          "ar": "ماذا حدث في الندوة؟",
+          "fr": "Fatima : Que s'est-il passé au débat ?"
+        },
+        {
+          "speaker": "زينب",
+          "ar": "كانت المتحدثات فريقين: فريقاً يدعو إلى العولمة، وفريقاً يرفض العولمة.",
+          "fr": "Zainab : Les orateurs étaient divisés en deux groupes : un groupe appelant à la mondialisation et un groupe rejetant la mondialisation."
+        },
+        {
+          "speaker": "فاطمة",
+          "ar": "وما حجة كل فريق؟",
+          "fr": "Fatima : Quel est l'argument de chaque groupe ?"
+        },
+        {
+          "speaker": "زينب",
+          "ar": "يقول الفريق الأول: ستؤدي العولمة إلى تنمية جميع الدول، خاصة الدول الفقيرة.",
+          "fr": "Zainab : Le premier groupe dit : la mondialisation mènera au développement de tous les pays, en particulier les pays pauvres."
+        },
+        {
+          "speaker": "فاطمة",
+          "ar": "وماذا يقول الفريق الثاني؟",
+          "fr": "Fatima : Que dit le deuxième groupe ?"
+        },
+        {
+          "speaker": "زينب",
+          "ar": "يقول: إن العولمة ستؤدي إلى هيمنة الدول الغنية على الدول الفقيرة.",
+          "fr": "Zainab : Il dit : la mondialisation mènera à la domination des pays riches sur les pays pauvres."
+        },
+        {
+          "speaker": "فاطمة",
+          "ar": "وكيف انتهت الندوة؟",
+          "fr": "Fatima : Et comment s'est terminé le débat ?"
+        },
+        {
+          "speaker": "زينب",
+          "ar": "دار نقاش ساخن بعد الندوة، ورفض معظم الحضور العولمة.",
+          "fr": "Zainab : Il y a eu une discussion animée après le débat, et la plupart des participants ont rejeté la mondialisation."
+        },
+        {
+          "speaker": "فاطمة",
+          "ar": "لماذا؟",
+          "fr": "Fatima : Pourquoi ?"
+        },
+        {
+          "speaker": "زينب",
+          "ar": "لأن الدول الغنية، ستفرض لغاتها وثقافاتها على الدول الفقيرة.",
+          "fr": "Zainab : Parce que les pays riches imposeront leurs langues et leurs cultures aux pays pauvres."
+        },
+        {
+          "speaker": "فاطمة",
+          "ar": "أنا أتفق مع هذا الرأي، أنا أرفض العولمة.",
+          "fr": "Fatima : Je suis d'accord avec cette opinion, je rejette la mondialisation."
+        },
+        {
+          "speaker": "زينب",
+          "ar": "وأنا لن أترك لغتي وثقافتي.",
+          "fr": "Zainab : Et je n'abandonnerai pas ma langue et ma culture."
+        }
+      ]
+    },
+    {
+      "id": "9.4",
+      "type": "texte",
+      "titleAr": "دُوَلُ الشَّمَالِ وَدُوَلُ الجَنوبِ",
+      "titleFr": "Pays du Nord et pays du Sud",
+      "youtube": "",
+      "pdfPage": 7,
+      "lines": [
+        {
+          "speaker": "",
+          "ar": "أصبح العالَمُ - اليَوْمَ - قَرْيَةً صَغِيرَةً ، بِسَبَبِ وَسائلِ النَّقْلِ الحَديثَةِ، وَوَسائِلِ الاتصال الحديثة.",
+          "fr": "Le monde est devenu aujourd'hui un petit village, grâce aux moyens de transport modernes et aux moyens de communication modernes."
+        },
+        {
+          "speaker": "",
+          "ar": "كَيْفَ يَعِيشُ سُكّانُ هَذِهِ القَرْيَةِ الصَّغيرة؟ إنني أدْعُوكَ يا صاحبي لِزِيارَةِ هَذِهِ القَرْيَةِ الصَّغِيرَةِ.",
+          "fr": "Comment vivent les habitants de ce petit village ? Je t'invite, mon ami, à visiter ce petit village."
+        },
+        {
+          "speaker": "",
+          "ar": "هَيْا نَتَجَوَّلْ فيها ، ونَنْظُرْ كَيفَ يَعيشُ سُكَّانُها . سَأَصْحَبُكَ مَعي في طَائِرَتي. إِنَّنِي أَمْلِكُ طَائِرَةً",
+          "fr": "Allons nous promener et voyons comment vivent ses habitants. Je t'emmènerai avec moi dans mon avion. Je possède un avion"
+        },
+        {
+          "speaker": "",
+          "ar": "سَرِيعَةً، أَسْرَعَ مِنَ الصَّوتِ. تَفَضَّلْ يا صاحبي، اِرْكَبِ الطَّائِرَةَ، وَهَيَّا بِنا نَنْطَلِقْ.",
+          "fr": "rapide, plus rapide que le son. S'il te plaît, mon ami, monte dans l'avion, et allons-y."
+        },
+        {
+          "speaker": "",
+          "ar": "نَحْنُ نَطِيرُ الآنَ فَوْقَ دُوَلِ الشَّمَالِ.",
+          "fr": "Nous volons maintenant au-dessus des pays du Nord."
+        },
+        {
+          "speaker": "",
+          "ar": "انْظُرْ إِلَى هَذِهِ الدُّوَلِ، إِنَّهَا دُوَلٌ غَنِيَّةٌ ، تَمْلِكُ القُوَّةَ وَالعِلْمَ وَالمالَ . انْظُرْ إِلَى النَّاسِ، إِنَّهُمْ أَغْنِياءُ فِي",
+          "fr": "Regarde ces pays, ce sont des pays riches, ils possèdent la force, la science et l'argent. Regarde les gens, ils sont riches dans"
+        },
+        {
+          "speaker": "",
+          "ar": "هَذِهِ الدُّوَلِ، يَلْبَسُونَ أَجْمَلَ الثَّيابِ، وَهُمْ أَصِحَّاءُ، ويعيشونَ في بُيُوتٍ جَميلَةٍ.",
+          "fr": "ces pays, ils portent les plus beaux vêtements, ils sont en bonne santé et vivent dans de belles maisons."
+        },
+        {
+          "speaker": "",
+          "ar": "ما أَكْثَرَ المَدارِسَ وَالجامعاتِ وَالمُسْتَشْفِياتِ وَالمَصانِعَ وَالمزارع هُنا! إِنَّهُمْ يَعِيشُونَ فِي أَمْنٍ وَرَخاء.",
+          "fr": "Que de nombreuses écoles, universités, hôpitaux, usines et fermes ici ! Ils vivent dans la sécurité et l'aisance."
+        },
+        {
+          "speaker": "",
+          "ar": "هَيَّا نَزَرُ الجَانِبَ الْآخَرَ مِنَ العَالَمِ هَذِهِ دُوَلُ الجَنوبِ إِنَّهَا دُولٌ فَقِيرَةٌ، لَا تَمْلِكُ الْقُوَّةَ وَلَا العِلْمَ",
+          "fr": "Allons visiter l'autre côté du monde, ce sont les pays du Sud. Ce sont des pays pauvres, ils ne possèdent ni la force ni la science"
+        },
+        {
+          "speaker": "",
+          "ar": "ولا المالَ. أَنْظُرْ إِلى هَؤُلاءِ النَّاسِ، إِنَّهُمْ فُقَراءُ يَلْبَسُونَ ثِياباً بسيطةً، ويعيشون في بيوت صغيرة،",
+          "fr": "ni l'argent. Regarde ces gens, ils sont pauvres, ils portent des vêtements simples et vivent dans de petites maisons,"
+        },
+        {
+          "speaker": "",
+          "ar": "وَمُعْظَمُهُم مَرْضَى مَا أَقَلُّ المَدارِسَ وَالجَامِعاتِ وَالْمُسْتَشْفِياتِ وَالْمَصَانِعَ وَالْمَزَارِعَ هُنا! لِمَاذَا يَتَقاتَلُ",
+          "fr": "et la plupart d'entre eux sont malades. Que de rares écoles, universités, hôpitaux, usines et fermes ici ! Pourquoi les gens se battent-ils"
+        },
+        {
+          "speaker": "",
+          "ar": "النَّاسُ في هَذِهِ البِلادِ؟ وَلِماذا يَنْتَشِرُ الفَقْرُ وَالمَرَضُ وَالجَهْلُ هُنا؟ يَا لَهَا مِنْ حَيَاةٍ!",
+          "fr": "dans ce pays ? Et pourquoi la pauvreté, la maladie et l'ignorance se répandent-elles ici ? Quelle vie !"
+        },
+        {
+          "speaker": "",
+          "ar": "هَلْ رَأَيْتَ يا صاحِبِي هَذِهِ القَرْيَةَ الصَّغِيرَةَ؟! يَعيشُ نِصْفُ سُكّانِها فِي رَجَاءٍ، وَيَعِيشُ النِّصْفُ",
+          "fr": "As-tu vu, mon ami, ce petit village ?! La moitié de ses habitants vit dans l'espoir, et l'autre moitié vit"
+        },
+        {
+          "speaker": "",
+          "ar": "الآخَرُ في فَقْرٍ وَحَرْبٍ . لماذا لا يَعيشُ جَمِيعُ سُكّانِ القَرْيَةِ في رَخاءٍ وَأَمْنٍ؟ هَلْ سَيَحْدُتُ ذَلِكَ فِي",
+          "fr": "dans la pauvreté et la guerre. Pourquoi tous les habitants du village ne vivent-ils pas dans l'aisance et la sécurité ? Cela se produira-t-il dans"
+        },
+        {
+          "speaker": "",
+          "ar": "يَوْمِ مِنَ الْأَيَّامِ! اللهُ أَعْلَمُ.",
+          "fr": "un jour ! Dieu seul sait."
+        }
+      ]
+    }
+  ]
+}

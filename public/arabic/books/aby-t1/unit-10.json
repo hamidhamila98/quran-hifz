@@ -1,0 +1,217 @@
+{
+  "id": 10,
+  "titleAr": "الجو",
+  "titleFr": "La Météo",
+  "items": [
+    {
+      "id": "10.1",
+      "type": "dialogue",
+      "titleAr": "",
+      "titleFr": "",
+      "youtube": "https://www.youtube.com/embed/cvZbvvh3EBU",
+      "pdfPage": null,
+      "lines": [
+        {
+          "speaker": "الزوجة",
+          "ar": "كَيْفَ الجَوُّ في الخارج ؟",
+          "fr": "Quel temps fait-il dehors ?"
+        },
+        {
+          "speaker": "الزوج",
+          "ar": "السَّمَاءُ تُمْطِرُ الآنَ : هَذَا فَصْلُ الخَرِيفِ",
+          "fr": "Il pleut maintenant. C'est l'automne."
+        },
+        {
+          "speaker": "الزوجة",
+          "ar": "ثَوْبُكَ مُبْتَلٌ ، أَيْنَ المِعْطَفُ ؟",
+          "fr": "Ton vêtement est mouillé, où est le manteau ?"
+        },
+        {
+          "speaker": "الزوج",
+          "ar": "تَرَكْتُهُ في الشركة",
+          "fr": "Je l'ai laissé à l'entreprise."
+        },
+        {
+          "speaker": "الزوجة",
+          "ar": "وَأَيْنَ المِظَلَّةُ ؟",
+          "fr": "Et où est le parapluie ?"
+        },
+        {
+          "speaker": "الزوج",
+          "ar": "تَرَكْتُها في السَّيَّارَةِ",
+          "fr": "Je l'ai laissé dans la voiture."
+        },
+        {
+          "speaker": "الزوجة",
+          "ar": "اشْرَبْ هَذَا الشَّايَ الدَّافِئَ",
+          "fr": "Bois ce thé chaud."
+        },
+        {
+          "speaker": "الزوج",
+          "ar": "بارَكَ اللهُ فيكِ",
+          "fr": "Que Dieu te bénisse."
+        },
+        {
+          "speaker": "الزوجة",
+          "ar": "هَلْ نَخْرُجُ إلى السوق الآن ؟",
+          "fr": "Sortons-nous au marché maintenant ?"
+        },
+        {
+          "speaker": "الزوج",
+          "ar": "الماءُ كَثِيرٌ جِداً في الخَارِجِ",
+          "fr": "Il y a beaucoup d'eau dehors."
+        },
+        {
+          "speaker": "الزوجة",
+          "ar": "ماذا نَفْعَلُ ؟",
+          "fr": "Que faisons-nous ?"
+        },
+        {
+          "speaker": "الزوج",
+          "ar": "نَبْقَى اللَّيْلَةَ فِي البَيْتِ",
+          "fr": "Nous restons à la maison ce soir."
+        },
+        {
+          "speaker": "الزوجة",
+          "ar": "وَنَذْهَبُ غَداً إلى السوق ، إِنْ شَاءَ الله",
+          "fr": "Et nous irons au marché demain, si Dieu le veut."
+        },
+        {
+          "speaker": "الزوج",
+          "ar": "هَذِهِ فِكْرَةٌ طَيِّبَةٌ",
+          "fr": "C'est une bonne idée."
+        }
+      ]
+    },
+    {
+      "id": "10.2",
+      "type": "dialogue",
+      "titleAr": "",
+      "titleFr": "",
+      "youtube": "https://www.youtube.com/embed/cvZbvvh3EBU",
+      "pdfPage": null,
+      "lines": [
+        {
+          "speaker": "حسان",
+          "ar": "السَّلامُ عَلَيْكُم يا بَدْرُ. أَنا حَسّانُ ، أَتَكَلَّمُ مِنْ لَنْدَن",
+          "fr": "Paix sur toi Badr. Je suis Hassan, j'appelle de Londres."
+        },
+        {
+          "speaker": "بدر",
+          "ar": "وَعَلَيْكُم السَّلامُ يَا حَسّانُ\nكَيْفَ الجَوُّ فِي لَنْدَن ؟",
+          "fr": "Et sur toi la paix Hassan. Quel temps fait-il à Londres ?"
+        },
+        {
+          "speaker": "حسان",
+          "ar": "الجو بارد في لَنْدَن\nهَذا فَصْلُ الشَّتاءِ",
+          "fr": "Il fait froid à Londres. C'est l'hiver."
+        },
+        {
+          "speaker": "بدر",
+          "ar": "كَمْ دَرَجَةُ الحَرارَةِ فِي لَنْدَن ؟",
+          "fr": "Quelle est la température à Londres ?"
+        },
+        {
+          "speaker": "حسان",
+          "ar": "تَحْتَ الصِّفْرِ\nكَيْفَ الجَوُّ فِي الرِّياضِ ؟",
+          "fr": "En dessous de zéro. Quel temps fait-il à Riyad ?"
+        },
+        {
+          "speaker": "بدر",
+          "ar": "كان الجو حاراً، وَهُوَ الآنَ مُعْتَدِل",
+          "fr": "Il faisait chaud, et maintenant c'est tempéré."
+        },
+        {
+          "speaker": "حسان",
+          "ar": "كَمْ دَرَجَةُ الحَرارَةِ فِي الرِّياضِ ؟",
+          "fr": "Quelle est la température à Riyad ?"
+        },
+        {
+          "speaker": "بدر",
+          "ar": "دَرَجَةُ الحَرَارَةِ عِشْرُونَ",
+          "fr": "La température est de vingt."
+        },
+        {
+          "speaker": "حسان",
+          "ar": "هَلْ سَتَقْضِي العُطْلَةَ فِي لَنْدَنَ ؟",
+          "fr": "Vas-tu passer les vacances à Londres ?"
+        },
+        {
+          "speaker": "بدر",
+          "ar": "لا ، سأقضيها في تونس ، إن شاء الله",
+          "fr": "Non, je les passerai en Tunisie, inchallah."
+        }
+      ]
+    },
+    {
+      "id": "10.3",
+      "type": "dialogue",
+      "titleAr": "",
+      "titleFr": "",
+      "youtube": "https://www.youtube.com/embed/cvZbvvh3EBU",
+      "pdfPage": null,
+      "lines": [
+        {
+          "speaker": "خالد",
+          "ar": "الجَوُّ مُعْتَدِلٌ هَذِهِ الأَيَّامِ",
+          "fr": "Le temps est tempéré (doux) ces jours-ci."
+        },
+        {
+          "speaker": "حازم",
+          "ar": "هَذَا فَصْلُ الرَّبِيعِ",
+          "fr": "C'est le printemps."
+        },
+        {
+          "speaker": "خالد",
+          "ar": "الحَمْدُ لله ، ذَهَبَ الصَّيْفُ ، وَذَهَبَ الحَرُّ",
+          "fr": "Louange à Dieu, l'été est parti, et la chaleur est partie."
+        },
+        {
+          "speaker": "حازم",
+          "ar": "وَذَهَبَ الشَّتَاءُ ، وَذَهَبَ البَرْدُ",
+          "fr": "Et l'hiver est parti, et le froid est parti."
+        },
+        {
+          "speaker": "خالد",
+          "ar": "أَيْنَ نَقْضِي عُطْلَةَ الأُسْبُوعِ ؟",
+          "fr": "Où passons-nous le week-end ?"
+        },
+        {
+          "speaker": "حازم",
+          "ar": "نَذهَبُ إِلى الشَّاطِئِ",
+          "fr": "Nous allons à la plage."
+        },
+        {
+          "speaker": "خالد",
+          "ar": "الشَّاطِئُ بَعِيدٌ ، نَذهَبُ إِلى البَرِّ",
+          "fr": "La plage est loin, allons dans le désert (la campagne/terre ferme)."
+        },
+        {
+          "speaker": "حازم",
+          "ar": "هَذِهِ فِكْرَةٌ طَيِّبَةٌ ، نَذْهَبُ إِلى البَرِّ",
+          "fr": "C'est une bonne idée, allons dans le désert."
+        },
+        {
+          "speaker": "خالد",
+          "ar": "سَأُحْضِرُ الخَيْمَةَ وَالسَّجَادَةَ",
+          "fr": "J'apporterai la tente et le tapis."
+        },
+        {
+          "speaker": "حازم",
+          "ar": "سَأُحْضِرُ الطَّعَامَ وَالشَّرَابَ",
+          "fr": "J'apporterai la nourriture et les boissons."
+        },
+        {
+          "speaker": "خالد",
+          "ar": "أُسْرَتِي سَتَحْضُرُ مَعِي",
+          "fr": "Ma famille viendra avec moi."
+        },
+        {
+          "speaker": "حازم",
+          "ar": "وأُسْرَتِي سَتَحْضُرُ مَعِي أَيْضاً",
+          "fr": "Et ma famille viendra avec moi aussi."
+        }
+      ]
+    }
+  ]
+}

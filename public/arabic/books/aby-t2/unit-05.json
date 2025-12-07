@@ -1,0 +1,202 @@
+{
+  "id": 5,
+  "titleAr": "الوحدة الخامسة: العلم والتعلم",
+  "titleFr": "Unité 5: La science et l'apprentissage",
+  "items": [
+    {
+      "id": "5.1",
+      "type": "dialogue",
+      "titleAr": "الالتحاقُ بِالجَامِعَةِ",
+      "titleFr": "L'inscription à l'université",
+      "youtube": "",
+      "pdfPage": 24,
+      "lines": [
+        {
+          "speaker": "مُبارَك",
+          "ar": "زُرْتُكَ أَمْسِ فِي البَيْتِ، وَلَمْ أَجِدْكَ.",
+          "fr": "Moubarak : Je t'ai rendu visite hier à la maison, mais je ne t'ai pas trouvé."
+        },
+        {
+          "speaker": "سالم",
+          "ar": "ذَهَبْتُ معَ ابْني طارق إلى الجامِعَةِ؛ لِيُقَدِّمَ أَوْرَاقَهُ إِلى كُلِّيَّةِ الْهَنْدَسَةِ.",
+          "fr": "Salem : Je suis allé avec mon fils Tariq à l'université pour qu'il dépose ses papiers à la faculté d'ingénierie."
+        },
+        {
+          "speaker": "مُبارَك",
+          "ar": "سَيُقْبَلُ طَارِقٌ فِي كُلِّيَّةِ الهَنْدَسَةِ - إِنْ شَاءَ اللهُ - فَتَقْدِيرُهُ « مُمْتاز » في الثَّانَوِيّة.",
+          "fr": "Moubarak : Tariq sera accepté à la faculté d'ingénierie - si Dieu le veut - sa note est « excellent » au lycée."
+        },
+        {
+          "speaker": "سالم",
+          "ar": "هَلْ قَدَّمَ ابْنُكَ أَوْرَاقَهُ إِلَى كُلِّيَّةِ الطَّبِّ؟",
+          "fr": "Salem : Est-ce que ton fils a déposé ses papiers à la faculté de médecine ?"
+        },
+        {
+          "speaker": "مُبارَك",
+          "ar": "لا ، لَمْ يُقَدِّمْ أَوْراقَهُ إلى كُلِّيَّةِ الطَّبّ؛ إِنَّهُ لَا يَرْغَبُ في دِرَاسَةِ الطَّبّ.",
+          "fr": "Moubarak : Non, il n'a pas déposé ses papiers à la faculté de médecine ; il ne souhaite pas étudier la médecine."
+        },
+        {
+          "speaker": "سالم",
+          "ar": "لا يَرْغَبُ في دِرَاسَةِ الطَّبّ! لَقَدْ حَصَلَ على تَقْدِيرٍ «ممتاز» في العلوم الطبيعية.",
+          "fr": "Salem : Il ne souhaite pas étudier la médecine ! Il a obtenu une mention « excellent » en sciences naturelles."
+        },
+        {
+          "speaker": "مُبارَك",
+          "ar": "هَذَا صَحِيحٌ، وَلَكِنَّهُ يَرْغَبُ في الالْتِحاقِ بِقِسْمِ اللُّغَةِ الْعَرَبِيَّةِ. أَحْمَدُ يُحِبُّ دِرَاسَةَ اللُّغَةِ العَرَبِيّةِ.",
+          "fr": "Moubarak : C'est vrai, mais il souhaite s'inscrire au département de langue arabe. Ahmed aime étudier la langue arabe."
+        },
+        {
+          "speaker": "سالم",
+          "ar": "لا عَجَبَ في ذَلِكَ؛ فالعَرَبِيَّةُ لُغَةُ القُرْآنِ الكَرِيمِ، وَلَكِنْ هَلْ سَيُقْبَلُ فِي قِسْمِ اللُّغَةِ العَرَبِيّةِ؟",
+          "fr": "Salem : Ce n'est pas étonnant ; l'arabe est la langue du noble Coran, mais sera-t-il accepté au département de langue arabe ?"
+        },
+        {
+          "speaker": "مُبارك",
+          "ar": "قابَلْتُ عَمِيدَ كُلِّيّةِ الآدابِ، وَدَرَسَ أَوْرَاقَهُ، وَوَافَقَ عَلَى قَبولِهِ.",
+          "fr": "Moubarak : J'ai rencontré le doyen de la faculté des lettres, il a examiné ses papiers et a accepté son inscription."
+        },
+        {
+          "speaker": "سالم",
+          "ar": "وَفْقَهُ اللهُ في دِرَاسَةِ اللُّغَةِ العَرَبِيَّةِ.",
+          "fr": "Salem : Que Dieu le guide dans ses études de langue arabe."
+        },
+        {
+          "speaker": "مُبارَك",
+          "ar": "شُكْراً لَكَ، وَوَفِّقَ اللهُ ابْنَكَ فِي دِرَاسَةِ الهَنْدَسَةِ أَيْضاً.",
+          "fr": "Moubarak : Merci, et que Dieu guide ton fils dans ses études d'ingénierie également."
+        }
+      ]
+    },
+    {
+      "id": "5.2",
+      "type": "texte",
+      "titleAr": "التعليمُ بَيْنَ الماضي والحاضر",
+      "titleFr": "L'éducation entre le passé et le présent",
+      "youtube": "",
+      "pdfPage": 25,
+      "lines": [
+        {
+          "speaker": "",
+          "ar": "هُناكَ اخْتِلافاتٌ كَثِيرَة، بَينَ التعليم في الماضي، والتعليم في الحاضرِ. وَمِنْ تِلْكَ الاخْتِلَافاتِ، أَنْ فُرَصَ التَّعْلِيمِ، كَانَتْ قَليلَةً في الماضي، حَيْثُ كَانَ يَلْتَحِقُ بِالْمَدَارِسِ طُلابٌ قَلِيلُونَ، هُمْ فِي الغالِبِ أَبْنَاءُ الْأَغْنِياءِ وَسُكَّانُ الْمُدُنِ. أَمَّا اليَوْمَ ، فَقَدْ أَصْبَحَ التَّعْلِيمُ حَقًّا لِكُلِّ مُواطِنٍ؛ فَكَثُرَ عَدَدُ الطَّلاب، وانْتَشَرَتِ المَدارِسُ في كُلِّ مَكانٍ ، وَشَاعَ القَوْلُ: «التَّعْلِيمُ كَالمَاءِ وَالهَواءِ».",
+          "fr": "Il existe de nombreuses différences entre l'éducation dans le passé et l'éducation dans le présent. Parmi ces différences, les opportunités d'éducation étaient rares dans le passé, où seuls quelques élèves issus des riches et des habitants des villes rejoignaient les écoles. Aujourd'hui, l'éducation est devenue un droit pour chaque citoyen ; le nombre d'élèves a augmenté, les écoles se sont répandues partout et le dicton s'est répandu : « L'éducation est comme l'eau et l'air »."
+        },
+        {
+          "speaker": "",
+          "ar": "كانَ طُلاب العِلْمِ - في الماضي - يُسافِرُونَ مِنْ بَلَدٍ إلى بَلَدٍ؛ لِطَلَبِ العِلْمِ، وَكَانُوا يُواجِهونَ في سَفَرِهِم كَثِيراً مِنَ التَّعَبِ؛ فكانوا يَرْكَبُونَ الجَمالَ أَيَّاماً وَأَشْهُراً .",
+          "fr": "Les étudiants en sciences - dans le passé - voyageaient d'un pays à l'autre ; pour rechercher la science, et ils rencontraient beaucoup de fatigue dans leurs voyages ; ils montaient à dos de chameau pendant des jours et des mois."
+        },
+        {
+          "speaker": "",
+          "ar": "أَمَّا الْيَوْمَ، فَالْمَدَارِسُ وَالجَامِعاتُ كَثِيرَةٌ، في كُلِّ مَدِينَةٍ وقَرْيَةٍ تَقْرِيباً، حَيْثُ يَذْهَبُ الطَّالِبُ إِلى مَدْرَسَتِهِ، أو جامِعَتِهِ بِالسَّيَّارَةِ، أَوْ سَيْراً عَلَى الْأَقْدَامِ.",
+          "fr": "Aujourd'hui, les écoles et les universités sont nombreuses, dans presque toutes les villes et villages, où l'étudiant se rend à son école ou à son université en voiture ou à pied."
+        },
+        {
+          "speaker": "",
+          "ar": "وَمِنْ نَاحِيَةٍ أُخْرَى، يَسْتَطِيعُ الطَّالِبُ أَنْ يَتَعَلَّمَ، وَهُوَ فِي بَيْتِهِ عَنْ طَرِيقِ الشَّبَكَةِ الدَّوْلِيَّةِ.",
+          "fr": "D'un autre côté, l'étudiant peut apprendre, alors qu'il est chez lui, via le réseau international."
+        },
+        {
+          "speaker": "",
+          "ar": "مِنَ الاخْتِلَافاتِ أَيْضاً، أَنَّ المُعَلَّمَ كانَ لا يَطْلُبُ أَجْراً عَلى عَمَلِهِ في الماضي؛ لِأَنَّهُ كَانَ يَطْلُبُ الأَجْرَ مِنَ ا اللهِ . وَكَانَ هَدَفُ الطَّالِبِ طَلَبَ العِلْمِ . أمّا اليَوْمَ ، فَقَدِ اخْتَلَفَ الأَمْرُ، فَالْمُعَلِّمُ يَطْلُبُ كثيراً مِنَ الأَجْرِ، والطَّالِبُ يُفَكِّرُ في الشَّهَادَةِ قَبْلَ العِلْمِ لِأَنَّهَا وَسِيلَةٌ إلى العَمَلِ.",
+          "fr": "Parmi les différences également, l'enseignant ne demandait pas de salaire pour son travail dans le passé ; parce qu'il demandait le salaire à Dieu. Et le but de l'étudiant était de rechercher la science. Mais aujourd'hui, la situation a changé, l'enseignant demande beaucoup de salaire et l'étudiant pense au diplôme avant la science car c'est un moyen de trouver un emploi."
+        }
+      ]
+    },
+    {
+      "id": "5.3",
+      "type": "dialogue",
+      "titleAr": "حَضَارَةُ الْمُسْلِمِينَ",
+      "titleFr": "La civilisation des musulmans",
+      "youtube": "",
+      "pdfPage": 26,
+      "lines": [
+        {
+          "speaker": "فاطمة",
+          "ar": "ماذا تَقْرَئِينَ - يَا عَائِشَةُ - هَذِهِ الأَيَّامَ؟",
+          "fr": "Que lis-tu, Ô Aïcha, ces jours-ci ?"
+        },
+        {
+          "speaker": "عَائِشَةُ",
+          "ar": "أَقْرَأُ كُتُبَاً عَنْ حَضَارَةِ الْمُسْلِمِينَ. كَانَتْ حَضَارَةً عَظِيمَةً تَقَدَّمَتْ في الطَّبِ، وَالصَّيْدَلَةِ، والعُلومِ، وَالرِّياضِيَّاتِ، وَالْجُغرافيا، والفَلَكِ، وَالعُلومِ الإِنْسانِيَّةِ.",
+          "fr": "Je lis des livres sur la civilisation des musulmans. C'était une grande civilisation qui a progressé dans la médecine, la pharmacie, les sciences, les mathématiques, la géographie, l'astronomie et les sciences humaines."
+        },
+        {
+          "speaker": "فاطِمَة",
+          "ar": "هَلْ تَأَثَّرَتْ أوروبا بِحَضَارَةِ الْمُسْلِمِينَ؟",
+          "fr": "L'Europe a-t-elle été influencée par la civilisation des musulmans ?"
+        },
+        {
+          "speaker": "عائشة",
+          "ar": "نَعَمْ، تَأَثَّرَتْ بِها كَثيراً ، فَقَدِ اتِّصَلَ عُلَماء أوروبا بِعُلَماءِ المُسْلِمِينَ، وَأَخَذُوا عَنْهُمُ العِلْمَ، وَتَرْجَمُوا كُتُبَهُمْ، وَدَرسوها في جامعاتهم.",
+          "fr": "Oui, elle a été très influencée par elle. Les savants européens ont contacté les savants musulmans, ont pris la science d'eux, ont traduit leurs livres et les ont étudiés dans leurs universités."
+        },
+        {
+          "speaker": "فاطِمَة",
+          "ar": "وَلَكِنْ، لِماذا تَأَخَّرَ الْمُسْلِمُونَ بَعْدَ ذَلِكَ؟",
+          "fr": "Mais pourquoi les musulmans ont-ils régressé après cela ?"
+        },
+        {
+          "speaker": "عائِشَة",
+          "ar": "تَأَخَّروا ؛ لأَنَّهُم تَرَكوا العِلْمَ، وَابْتَعَدُوا عَنِ الدِّينِ.",
+          "fr": "Ils ont régressé parce qu'ils ont abandonné la science et se sont éloignés de la religion."
+        },
+        {
+          "speaker": "فاطِمَة",
+          "ar": "كَيفَ يَتْرُكُونَ العِلْمَ، وَالإِسْلَامُ يَدْعُو إِلَيهِ؟!",
+          "fr": "Comment peuvent-ils abandonner la science alors que l'islam y appelle ?!"
+        },
+        {
+          "speaker": "عَائِشَة",
+          "ar": "أَحْسَنْتِ، فَأَوَّلُ كَلِمَةٍ نَزَلَتْ مِنَ القُرْآنِ، هِيَ: اقْرَأْ .",
+          "fr": "Tu as raison, le premier mot révélé du Coran est : Lis."
+        },
+        {
+          "speaker": "فاطِمَة",
+          "ar": "وَدَعَا الرَّسُولُ ﷺ الْمُسْلِمِينَ في كَثِيرٍ مِنْ أَحاديثِهِ لِطَلَبِ العِلْمِ، كَقُولِهِ : « طَلَبُ العِلْمِ فَرِيضَةٌ عَلَى كُلِّ مُسْلِمٍ».",
+          "fr": "Et le Messager a appelé les musulmans dans beaucoup de ses hadiths à la recherche de la science, comme sa parole : \"La recherche de la science est une obligation pour chaque musulman.\""
+        },
+        {
+          "speaker": "عائِشَة",
+          "ar": "الحَمْدُ للهِ، فَقَدْ رَجَعَ المُسْلِمُونَ مَرَّةً أُخْرَى إلى طَلَبِ العِلْمِ؛ فَهَا هِيَ الْمَدارِسُ وَالجَامِعاتُ تَنْتَشِرُ في جَمِيعِ بِلادِ الْمُسْلِمِينَ.",
+          "fr": "Louange à Allah, les musulmans sont revenus une fois de plus à la recherche de la science ; voici les écoles et les universités qui se répandent dans tous les pays musulmans."
+        },
+        {
+          "speaker": "فاطِمَة",
+          "ar": "وَعَلَى كُلِّ مُسْلِمٍ، رَجُلاً كَانَ أَوِ امْرَأَةً، أَنْ يَطْلُبَ العِلْمَ طولَ حَياتِهِ.",
+          "fr": "Et chaque musulman, homme ou femme, doit rechercher la science tout au long de sa vie."
+        }
+      ]
+    },
+    {
+      "id": "5.4",
+      "type": "texte",
+      "titleAr": "مَراحِلُ التَّعْلِيمِ",
+      "titleFr": "Les étapes de l'éducation",
+      "youtube": "",
+      "pdfPage": 27,
+      "lines": [
+        {
+          "speaker": "",
+          "ar": "للتَّعْلِيمِ مَراحِلُ مُخْتَلِفَةٌ، يَمُرُ بِها الطَّالِبُ خِلالَ دِرَاسَتِهِ، فإِذا أَنْهَى مَرْحَلَةً تَعْلِيمِيَّةً، انْتَقَلَ إِلى الْمَرْحَلَةِ الَّتِي بَعْدَها. وَتَتَكَوْنُ مَراحِلُ التَّعْلِيمِ فِي كَثِيرٍ مِنَ الدُّوَلِ العَرَبِيَّةِ مِنْ أَرْبَعِ مَراحِلَ؛ هِيَ:\nالْمَرْحَلَةُ الابْتِدائِيَّةُ، فَالْمَرْحَلَةُ الْمُتَوَسِّطَةُ، فَالْمَرْحَلَةُ الثَّانَوِيَّةُ، ثُمَّ الْمَرْحَلَةُ الجَامِعِيَّةُ. وَفِي بَعْضِ البِلادِ العَرَبِيَّةِ، يَلْتَحِقُ التلاميذُ قَبْلَ الْمَدْرَسَةِ الابتدائيَّةِ بِالْحَضانَةِ، فَالرِّوْضَةِ، ثُمَّ التَّمْهِيدِي.",
+          "fr": "L'éducation comporte différentes étapes que l'élève traverse au cours de ses études. Lorsqu'il termine une étape éducative, il passe à l'étape suivante. Dans de nombreux pays arabes, les étapes de l'éducation sont au nombre de quatre : l'école primaire, le collège, le lycée, puis l'université. Dans certains pays arabes, les élèves rejoignent la crèche, puis le jardin d'enfants, puis la maternelle avant l'école primaire."
+        },
+        {
+          "speaker": "",
+          "ar": "يَلْتَحِقُ التّلاميذُ بالمَدْرَسَةِ الابْتِدائِيّة - عادَةً - في السّادِسَةِ مِنْ أَعْمَارِهِم. وتَبْلُغُ سَنَوَاتُ الدِّرَاسَةِ في المَرْحَلَةِ الابتدائيّةِ سِتّ سَنَواتٍ وتَبْلُغُ سَنواتُ الدِّرَاسَةِ في المَرْحَلَةِ الْمُتَوَسِّطَةِ ثَلَاثَ سَنَوَاتٍ، وَكَذلِكَ فِي المَرْحَلَةِ الثَّانَوِيَّةِ. أَمّا المَرْحَلَةُ الجَامِعِيَّةُ، فَتَتَرَاوَحُ بَينَ أَرْبَعِ وسِتِّ سَنَوَاتٍ.",
+          "fr": "Les élèves rejoignent l'école primaire - généralement - à l'âge de six ans. La durée des études à l'école primaire est de six ans, et la durée des études au collège est de trois ans, de même qu'au lycée. Quant à l'université, sa durée varie entre quatre et six ans."
+        },
+        {
+          "speaker": "",
+          "ar": "بَعْدَ أَنْ يُنْهِيَ الطَّالِبُ المَرْحَلَةَ الثانَوِيَّةَ ، يَلْتَحِقُ بالجامعاتِ، أَوِ المَعاهِدِ ، إِذا حَصَلَ عَلَى تَقدِيرٍ طَيِّبٍ. وَبَعْدَ أَنْ يَحْصُلَ الطَّالِبُ عَلَى الشَّهَادَةِ الجَامِعِيَّةِ بِتَقْدِيرٍ جَيِّدٍ جِدًا أَو مُمْتَارٍ، يَلْتَحِقُ بِالدّراساتِ العُلْيا؛ لِلْحُصولِ على شَهَادَةِ الماجستير، ثُمَّ شَهَادَةِ الدكتوراه.",
+          "fr": "Après avoir terminé le lycée, l'étudiant rejoint les universités ou les instituts, s'il a obtenu une bonne note. Et après que l'étudiant a obtenu un diplôme universitaire avec une très bonne note ou une mention excellent, il rejoint les études supérieures pour obtenir une maîtrise, puis un doctorat."
+        },
+        {
+          "speaker": "",
+          "ar": "مِنْ نَاحِيَةٍ أُخْرَى، في البِلادِ العَرَبِيّة نوعانِ مِنَ التَّعْلِيمِ، هُما : التَّعْلِيمُ الْحُكومِيَّ، وَتُشْرِفُ عَلَيْهِ الدَّوْلَةُ، فَتَبْنِي المَدارِسَ، وَتُوَفِّرُ الكُتُبَ والمُدَرِّسِينَ، والتَّعْلِيمُ الأَهْلِيُّ، وَتُشْرِفُ عَلَيْهِ بَعْضُ الْجَمْعِيَّاتِ وَالأَفْرادِ.",
+          "fr": "D'autre part, dans les pays arabes, il existe deux types d'enseignement : l'enseignement public, qui est supervisé par l'État, qui construit les écoles et fournit les livres et les enseignants, et l'enseignement privé, qui est supervisé par certaines associations et individus."
+        }
+      ]
+    }
+  ]
+}

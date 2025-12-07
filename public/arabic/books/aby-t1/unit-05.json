@@ -1,0 +1,232 @@
+{
+  "id": 5,
+  "titleAr": "الطعام والشراب",
+  "titleFr": "Nourriture",
+  "items": [
+    {
+      "id": "5.1",
+      "type": "dialogue",
+      "titleAr": "",
+      "titleFr": "",
+      "youtube": "https://www.youtube.com/embed/V8hqPd-02Ts",
+      "pdfPage": null,
+      "lines": [
+        {
+          "speaker": "قاسم",
+          "ar": "أَيْنَ تَذْهَبُ يَا سَالِمُ ؟",
+          "fr": "Où vas-tu Salim ?"
+        },
+        {
+          "speaker": "سالم",
+          "ar": "إِلَى الْمَطْعَمِ",
+          "fr": "Au restaurant."
+        },
+        {
+          "speaker": "قاسم",
+          "ar": "كَمْ وَجْبَةً تَأْكُلُ فِي الْيَوْمِ ؟",
+          "fr": "Combien de repas manges-tu par jour ?"
+        },
+        {
+          "speaker": "سالم",
+          "ar": "آكُلُ ثَلاثَ وَجَبَات: الْفَطُورَ وَالْغَدَاءَ وَالْعَشَاءَ",
+          "fr": "Je mange trois repas : le petit-déjeuner, le déjeuner et le dîner."
+        },
+        {
+          "speaker": "قاسم",
+          "ar": "هَذَا كَثِيرٌ جِدّاً. أَنَا آكُلُ وَجْبَةً وَاحِدَةً",
+          "fr": "C'est beaucoup. Moi, je mange un seul repas."
+        },
+        {
+          "speaker": "سالم",
+          "ar": "هَذَا قَلِيلٌ جِدّاً",
+          "fr": "C'est très peu."
+        },
+        {
+          "speaker": "قاسم",
+          "ar": "مَاذَا تَأْكُلُ فِي الْغَدَاءِ ؟",
+          "fr": "Que manges-tu au déjeuner ?"
+        },
+        {
+          "speaker": "سالم",
+          "ar": "آكُلُ الأَرُزَّ وَالْخُبْزَ. وَمَاذَا تَأْكُلُ أَنْتَ ؟",
+          "fr": "Je mange du riz et du pain. Et que manges-tu toi ?"
+        },
+        {
+          "speaker": "قاسم",
+          "ar": "آكُلُ السَّمَكَ وَالسَّلَطَةَ وَالْفَاكِهَةَ",
+          "fr": "Je mange du poisson, de la salade et des fruits."
+        },
+        {
+          "speaker": "سالم",
+          "ar": "مَا وَزْنُكَ ؟",
+          "fr": "Quel est ton poids ?"
+        },
+        {
+          "speaker": "قاسم",
+          "ar": "سِتُّونَ كَيْلاً. وَمَا وَزْنُكَ أَنْتَ ؟",
+          "fr": "60 kilos. Et quel est ton poids toi ?"
+        },
+        {
+          "speaker": "سالم",
+          "ar": "مِائَةُ كَيْلٍ",
+          "fr": "100 kilos."
+        },
+        {
+          "speaker": "قاسم",
+          "ar": "أَنْتَ سَمِينٌ جِدّاً",
+          "fr": "Tu es très gros."
+        },
+        {
+          "speaker": "سالم",
+          "ar": "وَأَنْتَ نَحِيفٌ جِدّاً",
+          "fr": "Et tu es très maigre."
+        }
+      ]
+    },
+    {
+      "id": "5.2",
+      "type": "dialogue",
+      "titleAr": "",
+      "titleFr": "",
+      "youtube": "https://www.youtube.com/embed/m9Tw3KpFsWU",
+      "pdfPage": null,
+      "lines": [
+        {
+          "speaker": "المضيفة",
+          "ar": "مَاذَا تَطْلُبِينَ مِنَ الطَّعَامِ ؟",
+          "fr": "Que désirez-vous comme nourriture ?"
+        },
+        {
+          "speaker": "المسافرة",
+          "ar": "بَعْضَ السَّمَكِ وَالأَرُزِّ مِنْ فَضْلِكِ",
+          "fr": "Du poisson et du riz s'il vous plaît."
+        },
+        {
+          "speaker": "المضيفة",
+          "ar": "وَمَاذَا تَطْلُبِينَ مِنَ الشَّرَابِ ؟",
+          "fr": "Et que désirez-vous comme boisson ?"
+        },
+        {
+          "speaker": "المسافرة",
+          "ar": "مَاءً مِنْ فَضْلِكِ",
+          "fr": "De l'eau s'il vous plaît."
+        },
+        {
+          "speaker": "المضيفة",
+          "ar": "وَمَاذَا تُفَضِّلِينَ مِنَ الْفَاكِهَةِ ؟",
+          "fr": "Et que préférez-vous comme fruits ?"
+        },
+        {
+          "speaker": "المسافرة",
+          "ar": "التَّمْرَ أَوِ الْعِنَبَ",
+          "fr": "Des dattes ou du raisin."
+        },
+        {
+          "speaker": "المضيفة",
+          "ar": "هَلْ تَشْرَبِينَ الشَّايَ ؟",
+          "fr": "Buvez-vous du thé ?"
+        },
+        {
+          "speaker": "المسافرة",
+          "ar": "لا، أُفَضِّلُ الْقَهْوَةَ",
+          "fr": "Non, je préfère le café."
+        },
+        {
+          "speaker": "المضيفة",
+          "ar": "الْقَهْوَةَ بِالْحَلِيبِ ؟",
+          "fr": "Du café au lait ?"
+        },
+        {
+          "speaker": "المسافرة",
+          "ar": "نَعَمْ، الْقَهْوَةَ بِالْحَلِيبِ",
+          "fr": "Oui, du café au lait."
+        },
+        {
+          "speaker": "المضيفة",
+          "ar": "هَلْ تُرِيدِينَ شَيْئاً آخَرَ ؟",
+          "fr": "Voulez-vous autre chose ?"
+        },
+        {
+          "speaker": "المسافرة",
+          "ar": "لا، وَشُكْراً",
+          "fr": "Non, merci."
+        },
+        {
+          "speaker": "المضيفة",
+          "ar": "عَفْواً",
+          "fr": "Je vous en prie."
+        }
+      ]
+    },
+    {
+      "id": "5.3",
+      "type": "dialogue",
+      "titleAr": "",
+      "titleFr": "",
+      "youtube": "https://www.youtube.com/embed/BRh81_OdaJU",
+      "pdfPage": null,
+      "lines": [
+        {
+          "speaker": "الزوج",
+          "ar": "السَّلامُ عَلَيْكُم",
+          "fr": "Que la paix soit sur vous."
+        },
+        {
+          "speaker": "الزوجة",
+          "ar": "وَعَلَيْكُمُ السَّلام",
+          "fr": "Et sur vous la paix."
+        },
+        {
+          "speaker": "الزوج",
+          "ar": "أَنَا جَوْعَانٌ جِدّاً",
+          "fr": "J'ai très faim."
+        },
+        {
+          "speaker": "الزوجة",
+          "ar": "الْغَدَاءُ عَلَى الْمَائِدَةِ",
+          "fr": "Le déjeuner est sur la table."
+        },
+        {
+          "speaker": "الزوج",
+          "ar": "مَا هَذَا ؟! سَمَكٌ وَلَحْمٌ وَدَجَاجٌ وَأَرُزٌّ وَسَلَطَةٌ وَفَاكِهَةٌ !\nهَذَا كَثِيرٌ جِدّاً",
+          "fr": "Qu'est-ce que c'est ?! Poisson, viande, poulet, riz, salade et fruits ! C'est énormément (trop)."
+        },
+        {
+          "speaker": "الزوجة",
+          "ar": "لا تَأْكُلْ ... لا تَأْكُلْ ... اجْلِسْ",
+          "fr": "Ne mange pas... Ne mange pas... Assieds-toi."
+        },
+        {
+          "speaker": "الزوج",
+          "ar": "لِمَاذَا ؟ أَنَا جَوْعَانٌ",
+          "fr": "Pourquoi ? J'ai faim."
+        },
+        {
+          "speaker": "الزوجة",
+          "ar": "لَدَيْنَا ضُيُوفٌ",
+          "fr": "Nous avons des invités."
+        },
+        {
+          "speaker": "الزوج",
+          "ar": "لَدَيْنَا ضُيُوفٌ ! مَنْ ؟!",
+          "fr": "Nous avons des invités ! Qui ?!"
+        },
+        {
+          "speaker": "الزوجة",
+          "ar": "وَالِدِي وَوَالِدَتِي وَأَخِي",
+          "fr": "Mon père, ma mère et mon frère."
+        },
+        {
+          "speaker": "الزوج",
+          "ar": "أَيْنَ الضُّيُوفُ ؟",
+          "fr": "Où sont les invités ?"
+        },
+        {
+          "speaker": "الزوجة",
+          "ar": "فِي غُرْفَةِ الْجُلُوسِ",
+          "fr": "Dans le salon."
+        }
+      ]
+    }
+  ]
+}

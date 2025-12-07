@@ -1,0 +1,52 @@
+{
+  "id": 4,
+  "titleAr": "السُّنَّةُ النَّبَوِيَّةُ",
+  "titleFr": "La Sunna Prophétique",
+  "items": [
+    {
+      "id": "4.1",
+      "type": "text",
+      "titleAr": "",
+      "titleFr": "",
+      "youtube": null,
+      "pdfPage": null,
+      "lines": [
+        {
+          "id": "1",
+          "ar": "١- السُّنَّةُ النَّبَوِيَّةُ: أَقْوالُ الرَّسولِ ﷺ وأَفْعالُهُ وتَقْريراتُهُ. وقَدْ جاءَتْ مُبَيِّنَةً لِلْقُرْآنِ، كَما قالَ تَعالى: ﴿وَأَنزَلْنَا إِلَيْكَ الذِّكْرَ لِتُبَيِّنَ لِلنَّاسِ مَا نُزِّلَ إِلَيْهِمْ﴾.",
+          "fr": "1. La Sunna prophétique correspond aux paroles, aux actes et aux approbations du Messager ﷺ. Elle est venue expliciter le Coran, comme Allah le dit : {Et vers toi, Nous avons fait descendre le Coran, pour que tu exposes clairement aux gens ce qu'on a fait descendre pour eux}."
+        },
+        {
+          "id": "2",
+          "ar": "٢- والسُّنَّةُ النَّبَوِيَّةُ وَحْيٌ مِنَ اللهِ تَعالى، كَما قالَ تَعالى: ﴿وَمَا يَنطِقُ عَنِ الْهَوَىٰ إِنْ هُوَ إِلَّا وَحْيٌ يُوحَىٰ﴾ وَكَما قالَ ﷺ: «أَلَا إِنِّي أُوتِيتُ الْقُرْآنَ وَمِثْلَهُ مَعَهُ».",
+          "fr": "2. La Sunna est une révélation d'Allah, comme Il le dit : {Et il ne prononce rien sous l'effet de la passion ; ce n'est rien d'autre qu'une révélation inspirée}. Et comme le Prophète ﷺ a dit : \"Certes, on m'a donné le Coran et son équivalent avec lui\"."
+        },
+        {
+          "id": "3",
+          "ar": "٣- السُّنَّةُ النَّبَوِيَّةُ هِيَ المَصْدَرُ الثَّانِي مِنْ مَصادِرِ التَّشْريعِ الإِسْلامِيِّ بَعْدَ القُرْآنِ الكَريمِ؛ لِذا يَجِبُ اتِّباعُها، وتَحْرُمُ مُخالَفَتُها، وَعَلى ذَلِكَ أَجْمَعَ المُسْلِمونَ، وأَيَّدَتْ ذَلِكَ الآياتُ بِما لا يَتْرُكُ مَجالاً لِلشَّكِّ، وَمِنْ هَذِهِ الآياتِ: ﴿وَمَا آتَاكُمُ الرَّسُولُ فَخُذُوهُ وَمَا نَهَاكُمْ عَنْهُ فَانتَهُوا﴾ [الحشر ٧]. والآيةُ: ﴿مَّنْ يُطِعِ الرَّسُولَ فَقَدْ أَطَاعَ اللَّهَ﴾ [النساء/٨٠]. والآيةُ: ﴿قُلْ إِن كُنتُمْ تُحِبُّونَ اللَّهَ فَاتَّبِعُونِي يُحْبِبْكُمُ اللَّهُ وَيَغْفِرْ لَكُمْ ذُنُوبَكُمْ﴾ [آل عمران/٣١]. والآيةُ: ﴿وَمَا كَانَ لِمُؤْمِنٍ وَلَا مُؤْمِنَةٍ إِذَا قَضَى اللَّهُ وَرَسُولُهُ أَمْرًا أَن يَكُونَ لَهُمُ الْخِيَرَةُ مِنْ أَمْرِهِمْ وَمَن يَعْصِ اللَّهَ وَرَسُولَهُ فَقَدْ ضَلَّ ضَلَالًا مُّبِينًا﴾ [الأحزاب/٣٦]. وَكَذَلِكَ: ﴿فَلَا وَرَبِّكَ لَا يُؤْمِنُونَ حَتَّىٰ يُحَكِّمُوكَ فِيمَا شَجَرَ بَيْنَهُمْ ثُمَّ لَا يَجِدُوا فِي أَنفُسِهِمْ حَرَجًا مِّمَّا قَضَيْتَ وَيُسَلِّمُوا تَسْلِيمًا﴾ [النساء/٦٥].",
+          "fr": "3. Elle est la deuxième source de la législation islamique après le Coran. Il est donc obligatoire de la suivre et interdit de la contredire, point sur lequel les musulmans sont unanimes. De nombreux versets le confirment, tels que : {Ce que le Messager vous donne, prenez-le...}, {Quiconque obéit au Messager obéit certainement à Allah}, {Dis : \"Si vous aimez vraiment Allah, suivez-moi...\"}, et d'autres versets indiquant qu'il n'appartient pas au croyant d'avoir le choix une fois qu'Allah et Son Messager ont décidé d'une affaire."
+        },
+        {
+          "id": "4",
+          "ar": "٤- وقَدْ جاءَ في الحَديثِ النَّبَوِيِّ أَيْضاً ما يوجِبُ اتِّباعَهُ ﷺ، وَمِنْ ذَلِكَ: (مَنْ أَطَاعَنِي دَخَلَ الجَنَّةَ وَمَنْ عَصَانِي فَقَدْ أَبَى) ومِنْها: (لا أُلْفِيَنَّ أَحَدَكُمْ مُتَّكِئاً عَلَى أَرِيكَتِهِ يَأْتِيهِ الأَمْرُ مِنْ أَمْرِي مِمَّا أَمَرْتُ بِهِ أَوْ نَهَيْتُ عَنْهُ فَيَقُولُ: لا نَدْرِي، مَا وَجَدْنَا فِي كِتَابِ اللهِ اتَّبَعْنَاهُ).",
+          "fr": "4. Les Hadiths confirment aussi cette obligation : \"Quiconque m'obéit entrera au Paradis, et quiconque me désobéit aura refusé\". Et la mise en garde contre celui qui dirait : \"Nous ne suivons que ce que nous trouvons dans le Livre d'Allah\" en rejetant l'ordre prophétique."
+        },
+        {
+          "id": "5",
+          "ar": "٥- وقَدْ عَمِلَ المُسْلِمونَ عَلَى تَدْوينِ السُّنَّةِ النَّبَوِيَّةِ في وَقْتٍ مُبَكِّرٍ. وَفي سَبيلِ المُحافَظَةِ عَلَى سُنَّةِ الرَّسولِ ﷺ، أَصْبَحَ المُسْلِمونَ أَكْثَرَ الأُمَمِ تَدْقيقاً فيما يَكْتُبونَ وَيَنْقُلونَ. وَقَدْ حَثَّ الرَّسولُ ﷺ عَلَى التَّثَبُّتِ في نَقْلِ الأَخْبارِ وقَبولِها فَقالَ: «نَضَّرَ اللهُ امْرءاً سَمِعَ مِنَّا شَيْئاً فَبَلَّغَهُ كَما سَمِعَهُ، فَرُبَّ مُبَلَّغٍ أَوْعَى مِنْ سَامِعٍ» وقَالَ أَيْضاً: «مَنْ كَذَبَ عَلَيَّ مُتَعَمِّداً فَلْيَتَبَوَّأْ مَقْعَدَهُ مِنَ النَّارِ»؛ فَنَشَأَ عِنْدَ المُسْلِمِينَ عِلْمٌ يُسَمَّى عِلْمَ الجَرْحِ والتَّعْدِيلِ، وَهُوَ عِلْمٌ لا نَظِيرَ لَهُ عِنْدَ الأُمَمِ الأُخْرى، وَأَصْبَحَ المُسْلِمونَ يُمَيِّزونَ بِهِ بَيْنَ مَنْ تُقْبَلُ رِوايَتُهُ وَمَنْ تُرْفَضُ رِوايَتُهُ؛ فَحَفِظوا السُّنَّةَ مِنْ كَذِبِ المُبْتَدِعينَ.",
+          "fr": "5. Les musulmans ont consigné la Sunna très tôt, devenant la nation la plus rigoureuse dans la transmission. Le Prophète ﷺ a encouragé la précision et mis en garde contre le mensonge à son égard (\"Quiconque ment volontairement sur moi, qu'il prépare sa place en Enfer\"). Ainsi est née la science unique de la critique (Jarh wa Ta'dil) pour distinguer le vrai du faux et préserver la Sunna."
+        },
+        {
+          "id": "6",
+          "ar": "٦- والأَحاديثُ النَّبَوِيَّةُ كَثيرَةٌ، فَما مِنْ خَيْرٍ إِلا وقَدْ دَلَّ الرَّسولُ ﷺ أُمَّتَهُ عَلَيْهِ، وَما مِنْ شَرٍّ إِلا حَذَّرَها مِنْهُ ؛ وَلِذا فَإِنَّ الشَّرْعَ جاءَ شامِلاً لِجَميعِ نَواحي الحَياةِ؛ فَهُوَ مَنْهَجٌ كامِلٌ، يَعِيشُهُ المُسْلِمُ وَيَعْمَلُ بِهِ في حَياتِهِ كُلِّها. والأَحاديثُ النَّبَوِيَّةُ حَوَتْها كُتُبُ السُّنَّةِ المَشْهورَةُ، وَمِنْ أَهَمِّها صَحيحُ البُخارِيِّ وَصَحِيحُ مُسْلِمٍ. وَمِنْ أَمْثِلَةِ الأَحاديثِ النَّبَوِيَّةِ:",
+          "fr": "6. Les hadiths sont nombreux ; le Prophète ﷺ a indiqué tout bien et mis en garde contre tout mal. La législation est donc complète. Ces hadiths sont rassemblés dans des livres célèbres comme les Sahih de Bukhari et Muslim."
+        },
+        {
+          "id": "7",
+          "ar": "٧- «بُنِيَ الإِسْلامُ عَلَى خَمْسٍ: شَهَادَةِ أَنْ لا إِلَهَ إِلا اللَّهُ وَأَنَّ مُحَمَّداً رَسُولُ اللهِ، وَإِقامِ الصَّلَاةِ وَإِيتَاءِ الزَّكَاةِ، وَحَجِّ البَيْتِ وَصَوْمِ رَمَضَانَ». «مَنْ شَهِدَ أَلا إِلَهَ إِلا اللَّهُ وَحْدَهُ لا شَريكَ لَهُ، وَأَنَّ مُحَمَّداً عَبْدُهُ وَرَسُولُهُ، وَأَنَّ عِيسَى عَبْدُهُ وَرَسُولُهُ وَابْنُ أَمَتِهِ وَكَلِمَتُهُ أَلْقَاهَا إِلى مَرْيَمَ وَرُوحٌ مِنْهُ، وَأَنَّ الجَنَّةَ حَقٌّ، وَأَنَّ النَّارَ حَقٌّ، وَأَنَّ البَعْثَ حَقٌّ، أَدْخَلَهُ اللهُ الجَنَّةَ». «إِنَّمَا بُعِثْتُ لأُتَمِّمَ صالِحَ الأَخْلَاقِ». «الْمُؤْمِنُ لِلْمُؤْمِنِ كَالْبُنْيَانِ يَشُدُّ بَعْضُهُ بَعْضاً». «ما زَالَ جِبْرِيلُ يُوصينِي بِالجارِ حَتَّى ظَنَنْتُ أَنَّهُ سَيُوَرِّثُهُ». «تَداووا عِبادَ اللهِ، فإِنَّ اللهَ تَعالى لَمْ يَضَعْ داءً إِلا وَضَعَ لَهُ دَواءً غَيْرَ داءٍ واحِدٍ، الهَرَمِ». «عَلَيْكُمْ بِالصِّدْقِ، فإِنَّ الصِّدْقَ يَهْدِي إِلى البِرِّ، وَإِنَّ البِرَّ يَهْدِي إِلى الجَنَّةِ...». «اغْتَنِمْ خَمْساً قَبْلَ خَمْسٍ: حَياتِكَ قَبْلَ مَوْتِكَ، وَصِحَّتَكَ قَبْلَ مَرَضِكَ...». «إِنَّ اللهَ يُحِبُّ إِذا عَمِلَ أَحَدُكُمْ عَمَلاً أَنْ يُتْقِنَهُ». «إِنَّ اللهَ يُحِبُّ الرِّفْقَ فِي الأَمْرِ كُلِّهِ». «ثَلَاثٌ مَنْ كُنَّ فِيهِ وَجَدَ حَلَاوَةَ الإِيمانِ...». «خَيْرُكُمْ خَيْرُكُمْ لأَهْلِهِ، وَأَنَا خَيْرُكُمْ لأَهْلِي».",
+          "fr": "7. Exemples de Hadiths : \"L'Islam est bâti sur cinq piliers...\". \"Celui qui témoigne qu'il n'y a de divinité qu'Allah et que Jésus est Son serviteur entrera au Paradis\". \"Je n'ai été envoyé que pour parfaire les nobles caractères\". \"Le croyant est pour le croyant comme un édifice\". \"Gabriel n'a cessé de me recommander le voisin\". \"Soignez-vous, car il y a un remède à toute maladie sauf la vieillesse\". \"Attachez-vous à la véracité...\". \"Profite de cinq choses avant cinq autres...\". \"Allah aime le travail bien fait\". \"Allah aime la douceur\". \"Trois qualités donnent la douceur de la foi\". \"Le meilleur d'entre vous est le meilleur avec sa famille\"."
+        }
+      ]
+    }
+  ]
+}
