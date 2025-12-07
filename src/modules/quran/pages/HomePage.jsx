@@ -11,6 +11,7 @@ import {
   RECITERS
 } from '../services/quranApi'
 import { loadTimingData, getVerseTimings, getCurrentWordIndex, hasTimingData } from '../services/wordTiming'
+import { MobileHeader } from '../../../components/sidebar'
 
 // Pages spéciales (pas 15 lignes standard)
 const SPECIAL_PAGES = [1, 2]
@@ -24,7 +25,7 @@ const PORTION_CONFIG = {
   '2': { lines: [15, 15], portions: 1, pages: 2, label: '2' }
 }
 
-export default function HomePage({ settings, updateSettings }) {
+export default function HomePage({ settings, updateSettings, isMobile, setMobileMenuOpen }) {
   const [searchParams, setSearchParams] = useSearchParams()
   const [verses, setVerses] = useState([])
   const [portionLines, setPortionLines] = useState([]) // Lignes de la portion pour affichage Mushaf
@@ -1339,25 +1340,30 @@ export default function HomePage({ settings, updateSettings }) {
 
   // Get portion label for display
   const getPortionLabel = () => {
+    const pageLabel = isMobile ? 'P' : 'Page'
+    const pagesLabel = isMobile ? 'P' : 'Pages'
     if (portionInfo?.isSpecialPage) {
-      return `Page ${currentPage} complète`
+      return isMobile ? `P${currentPage}` : `Page ${currentPage} complète`
     }
     if (portionSize === '2') {
-      return `Pages ${currentPage}-${Math.min(currentPage + 1, 604)}`
+      return `${pagesLabel} ${currentPage}-${Math.min(currentPage + 1, 604)}`
     }
     if (portionSize === '1') {
-      return `Page ${currentPage}`
+      return `${pageLabel} ${currentPage}`
     }
     // Mode fractionné: Page Y - 1/3, 2/3, etc.
-    return `Page ${currentPage} - ${portionIndex + 1}/${config.portions}`
+    return `${pageLabel} ${currentPage} - ${portionIndex + 1}/${config.portions}`
   }
 
   // Get position display text
   const getPositionText = () => {
+    const pageLabel = isMobile ? 'P' : 'Page'
     if (portionInfo?.isSpecialPage || portionSize === '1' || portionSize === '2') {
-      return `Page ${currentPage}`
+      return `${pageLabel} ${currentPage}`
     }
-    return `Page ${currentPage}, Portion ${portionIndex + 1}/${config.portions}`
+    return isMobile
+      ? `P${currentPage} - ${portionIndex + 1}/${config.portions}`
+      : `Page ${currentPage}, Portion ${portionIndex + 1}/${config.portions}`
   }
 
   // Render verse marker
@@ -1373,37 +1379,53 @@ export default function HomePage({ settings, updateSettings }) {
   }
 
   return (
-    <div className={`p-6 pb-16 ${settings.darkMode ? 'bg-slate-900' : 'bg-gray-50'}`}>
+    <div className={`${isMobile ? 'p-3 pb-14' : 'p-6 pb-16'} ${settings.darkMode ? 'bg-slate-900' : 'bg-gray-50'}`}>
+      {/* Mobile Header */}
+      {isMobile && (
+        <MobileHeader
+          title="MyHifz"
+          icon="📖"
+          gradientFrom="from-sky-500"
+          gradientTo="to-sky-700"
+          darkMode={settings.darkMode}
+          onMenuClick={() => setMobileMenuOpen(true)}
+        />
+      )}
+
       {/* Progress Bar Header */}
-      <div className={`mb-6 p-4 rounded-2xl ${settings.darkMode ? 'bg-slate-800' : 'bg-white'} shadow-sm`}>
-        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-3">
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-gradient-to-br from-primary-500 to-primary-600 rounded-xl flex items-center justify-center">
-              <BookOpen className="w-5 h-5 text-white" />
+      <div className={`${isMobile ? 'mb-4 p-3 mt-2' : 'mb-6 p-4'} rounded-2xl ${settings.darkMode ? 'bg-slate-800' : 'bg-white'} shadow-sm`}>
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 md:gap-3 mb-3">
+          <div className="flex items-center gap-2 md:gap-3">
+            <div className={`${isMobile ? 'w-8 h-8' : 'w-10 h-10'} bg-gradient-to-br from-primary-500 to-primary-600 rounded-xl flex items-center justify-center`}>
+              <BookOpen className={`${isMobile ? 'w-4 h-4' : 'w-5 h-5'} text-white`} />
             </div>
             <div>
-              <h1 className={`text-lg font-bold ${settings.darkMode ? 'text-white' : 'text-gray-800'}`}>
+              <h1 className={`${isMobile ? 'text-base' : 'text-lg'} font-bold ${settings.darkMode ? 'text-white' : 'text-gray-800'}`}>
                 Ma Progression
               </h1>
-              <p className={`text-sm ${settings.darkMode ? 'text-gray-400' : 'text-gray-500'}`}>
-                Vous apprenez <span className="font-semibold text-primary-500">{getPortionSizeLabel()}</span> du Coran par jour.
-                {completePagesCount > 0 && (
-                  <> Vous avez actuellement appris <button
-                    onClick={() => setShowValidatedPagesPopup(true)}
-                    className="font-semibold text-green-500 hover:text-green-400 hover:underline cursor-pointer"
-                  >
-                    {completePagesCount} page{completePagesCount > 1 ? 's' : ''}
-                  </button>.</>
+              <p className={`${isMobile ? 'text-xs' : 'text-sm'} ${settings.darkMode ? 'text-gray-400' : 'text-gray-500'}`}>
+                {isMobile ? (
+                  <><span className="font-semibold text-primary-500">{getPortionSizeLabel()}</span>/jour</>
+                ) : (
+                  <>Vous apprenez <span className="font-semibold text-primary-500">{getPortionSizeLabel()}</span> du Coran par jour.
+                  {completePagesCount > 0 && (
+                    <> Vous avez actuellement appris <button
+                      onClick={() => setShowValidatedPagesPopup(true)}
+                      className="font-semibold text-green-500 hover:text-green-400 hover:underline cursor-pointer"
+                    >
+                      {completePagesCount} page{completePagesCount > 1 ? 's' : ''}
+                    </button>.</>
+                  )}</>
                 )}
               </p>
             </div>
           </div>
-          <div className="flex items-center gap-4 text-sm">
+          <div className="flex items-center gap-2 md:gap-4 text-sm">
             <div className={`${settings.darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
-              <span className="font-bold text-lg">{completePagesCount}</span>
-              <span className={`${settings.darkMode ? 'text-gray-500' : 'text-gray-400'}`}> / 604 pages</span>
+              <span className={`font-bold ${isMobile ? 'text-base' : 'text-lg'}`}>{completePagesCount}</span>
+              <span className={`${settings.darkMode ? 'text-gray-500' : 'text-gray-400'} ${isMobile ? 'text-xs' : ''}`}> / 604</span>
             </div>
-            <div className={`font-semibold px-3 py-1 rounded-full ${
+            <div className={`font-semibold ${isMobile ? 'px-2 py-0.5 text-xs' : 'px-3 py-1'} rounded-full ${
               settings.darkMode ? 'bg-primary-900/50 text-primary-400' : 'bg-primary-100 text-primary-700'
             }`}>
               {progressPercent}%

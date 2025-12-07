@@ -20,10 +20,10 @@ const TwitterIcon = ({ className }) => (
   </svg>
 )
 
-export default function Footer({ darkMode, toggleDarkMode }) {
+export default function Footer({ darkMode, toggleDarkMode, isMobile }) {
   return (
     <footer className={`
-      fixed bottom-0 left-0 w-screen z-40
+      fixed bottom-0 left-0 w-screen z-30
       ${darkMode
         ? 'bg-slate-800 border-t border-slate-700/50'
         : 'bg-white border-t border-gray-200'
@@ -42,18 +42,18 @@ export default function Footer({ darkMode, toggleDarkMode }) {
         <span className="max-w-0 overflow-hidden whitespace-nowrap transition-all duration-300 group-hover:max-w-[100px]">MyAdvice</span>
       </Link>
 
-      <div className="grid grid-cols-3 items-center px-4 py-2.5">
-        {/* Left - Bug report & Social links */}
-        <div className="flex items-center gap-2">
-          <span className={`text-xs hidden md:block ${darkMode ? 'text-gray-500' : 'text-gray-400'}`}>
-            Contact / Reporter un bug :
+      <div className={`grid items-center px-2 md:px-4 py-2 ${isMobile ? 'grid-cols-2' : 'grid-cols-3'}`}>
+        {/* Left - Social links only on mobile, with text on desktop */}
+        <div className="flex items-center gap-1 md:gap-2">
+          <span className={`text-xs hidden lg:block ${darkMode ? 'text-gray-500' : 'text-gray-400'}`}>
+            Contact :
           </span>
-          <div className="flex items-center gap-1">
+          <div className="flex items-center gap-0.5 md:gap-1">
             <a
               href="https://t.me/abuzayd93"
               target="_blank"
               rel="noopener noreferrer"
-              className={`p-1.5 rounded-lg transition-colors ${
+              className={`p-1 md:p-1.5 rounded-lg transition-colors ${
                 darkMode
                   ? 'hover:bg-slate-700 text-gray-400 hover:text-sky-400'
                   : 'hover:bg-gray-100 text-gray-500 hover:text-sky-500'
@@ -66,7 +66,7 @@ export default function Footer({ darkMode, toggleDarkMode }) {
               href="https://instagram.com/citarappel"
               target="_blank"
               rel="noopener noreferrer"
-              className={`p-1.5 rounded-lg transition-colors ${
+              className={`p-1 md:p-1.5 rounded-lg transition-colors ${
                 darkMode
                   ? 'hover:bg-slate-700 text-gray-400 hover:text-pink-400'
                   : 'hover:bg-gray-100 text-gray-500 hover:text-pink-500'
@@ -79,7 +79,7 @@ export default function Footer({ darkMode, toggleDarkMode }) {
               href="https://x.com/abuzayd93"
               target="_blank"
               rel="noopener noreferrer"
-              className={`p-1.5 rounded-lg transition-colors ${
+              className={`p-1 md:p-1.5 rounded-lg transition-colors ${
                 darkMode
                   ? 'hover:bg-slate-700 text-gray-400 hover:text-gray-200'
                   : 'hover:bg-gray-100 text-gray-500 hover:text-gray-800'
@@ -91,18 +91,20 @@ export default function Footer({ darkMode, toggleDarkMode }) {
           </div>
         </div>
 
-        {/* Center - App branding */}
-        <p className={`text-sm text-center ${darkMode ? 'text-gray-400' : 'text-gray-500'}`}>
-          <span className={`font-semibold ${darkMode ? 'text-white' : 'text-gray-800'}`}>MyIslamHub</span>
-          {' '}By{' '}
-          <span className={`font-medium ${darkMode ? 'text-white' : 'text-gray-800'}`}>AbuZayd93</span>
-        </p>
+        {/* Center - App branding (hidden on mobile) */}
+        {!isMobile && (
+          <p className={`text-sm text-center ${darkMode ? 'text-gray-400' : 'text-gray-500'}`}>
+            <span className={`font-semibold ${darkMode ? 'text-white' : 'text-gray-800'}`}>MyIslamHub</span>
+            {' '}By{' '}
+            <span className={`font-medium ${darkMode ? 'text-white' : 'text-gray-800'}`}>AbuZayd93</span>
+          </p>
+        )}
 
         {/* Right - Dark mode toggle */}
         <div className="flex justify-end">
           <button
             onClick={toggleDarkMode}
-            className={`p-2 rounded-lg transition-all ${
+            className={`p-1.5 md:p-2 rounded-lg transition-all ${
               darkMode
                 ? 'bg-slate-700 hover:bg-slate-600 text-amber-400'
                 : 'bg-gray-100 hover:bg-gray-200 text-gray-600'

@@ -33,7 +33,7 @@ const ITEM_ICONS = {
   citations: Quote
 }
 
-export default function NotesSidebar({ isOpen, setIsOpen, settings, updateSettings }) {
+export default function NotesSidebar({ isOpen, setIsOpen, settings, updateSettings, isMobile, setMobileMenuOpen }) {
   const navigate = useNavigate()
   const location = useLocation()
   const [notes, setNotes] = useState({ items: [] })
@@ -246,15 +246,17 @@ export default function NotesSidebar({ isOpen, setIsOpen, settings, updateSettin
   }, [contextMenu, showAddMenu])
 
   return (
-    <SidebarWrapper isOpen={isOpen} darkMode={darkMode}>
+    <SidebarWrapper isOpen={isOpen} darkMode={darkMode} isMobile={isMobile}>
       <SidebarHeader
         isOpen={isOpen}
         setIsOpen={setIsOpen}
         darkMode={darkMode}
         title="MyNotes"
-        icon=""
+        icon="📝"
         gradientFrom="from-amber-500"
         gradientTo="to-amber-700"
+        isMobile={isMobile}
+        onClose={() => setMobileMenuOpen && setMobileMenuOpen(false)}
       />
 
       <SidebarNav items={navItems} isOpen={isOpen} darkMode={darkMode} accentColor="amber" />

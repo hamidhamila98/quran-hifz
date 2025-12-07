@@ -80,6 +80,26 @@ function App() {
   const isInitialMount = useRef(true)
   const lastUserPseudo = useRef(user?.pseudo)
 
+  // Mobile detection
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+
+  // Handle window resize for mobile detection
+  useEffect(() => {
+    const handleResize = () => {
+      const mobile = window.innerWidth < 768
+      setIsMobile(mobile)
+      if (!mobile) setMobileMenuOpen(false)
+    }
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
+
+  // Close mobile menu on route change
+  useEffect(() => {
+    setMobileMenuOpen(false)
+  }, [location.pathname])
+
   // Load settings based on login state
   const getInitialSettings = useCallback(() => {
     if (isLoggedIn && user) {
@@ -167,10 +187,13 @@ function App() {
   // Determine which sidebar to show
   const renderSidebar = () => {
     const sidebarProps = {
-      isOpen: sidebarOpen,
-      setIsOpen: setSidebarOpen,
+      isOpen: isMobile ? true : sidebarOpen, // Always open when visible on mobile
+      setIsOpen: isMobile ? setMobileMenuOpen : setSidebarOpen,
       settings,
       updateSettings,
+      isMobile,
+      mobileMenuOpen,
+      setMobileMenuOpen,
     }
 
     if (isArabicPage) return <ArabicSidebar {...sidebarProps} />
@@ -179,48 +202,65 @@ function App() {
     return <QuranSidebar {...sidebarProps} />
   }
 
+  // Calculate main content margin based on device and sidebar state
+  const getMainMargin = () => {
+    if (isMobile) return 'ml-0' // No margin on mobile
+    return sidebarOpen ? 'ml-64' : 'ml-16'
+  }
+
   return (
     <div className={`flex h-screen overflow-hidden ${settings.darkMode ? 'dark bg-slate-900' : 'bg-gray-50'}`}>
-      {renderSidebar()}
+      {/* Mobile overlay */}
+      {isMobile && mobileMenuOpen && (
+        <div
+          className="fixed inset-0 bg-black/50 z-40 md:hidden"
+          onClick={() => setMobileMenuOpen(false)}
+        />
+      )}
 
-      <main className={`flex-1 transition-all duration-300 h-[calc(100vh-41px)] overflow-y-auto ${sidebarOpen ? 'ml-64' : 'ml-16'}`}>
+      {/* Sidebar - hidden on mobile unless menu open */}
+      <div className={`${isMobile ? (mobileMenuOpen ? 'block' : 'hidden') : 'block'}`}>
+        {renderSidebar()}
+      </div>
+
+      <main className={`flex-1 transition-all duration-300 h-[calc(100vh-41px)] overflow-y-auto ${getMainMargin()}`}>
         <Routes>
           {/* Quran module */}
           <Route
             path="/quran"
-            element={<HomePage settings={settings} updateSettings={updateSettings} />}
+            element={<HomePage settings={settings} updateSettings={updateSettings} isMobile={isMobile} setMobileMenuOpen={setMobileMenuOpen} />}
           />
           <Route
             path="/quran/training"
-            element={<TrainingPage settings={settings} />}
+            element={<TrainingPage settings={settings} isMobile={isMobile} />}
           />
           {/* Arabic module */}
           <Route
             path="/arabic"
-            element={<ArabicBooksPage settings={settings} updateSettings={updateSettings} />}
+            element={<ArabicBooksPage settings={settings} updateSettings={updateSettings} isMobile={isMobile} setMobileMenuOpen={setMobileMenuOpen} />}
           />
           <Route
             path="/arabic/training"
-            element={<ArabicTrainingPage settings={settings} updateSettings={updateSettings} />}
+            element={<ArabicTrainingPage settings={settings} updateSettings={updateSettings} isMobile={isMobile} />}
           />
           <Route
             path="/arabic/:bookId"
-            element={<ArabicPage settings={settings} updateSettings={updateSettings} />}
+            element={<ArabicPage settings={settings} updateSettings={updateSettings} isMobile={isMobile} setMobileMenuOpen={setMobileMenuOpen} />}
           />
           {/* Notes module */}
           <Route
             path="/notes"
-            element={<NotesPage settings={settings} updateSettings={updateSettings} />}
+            element={<NotesPage settings={settings} updateSettings={updateSettings} isMobile={isMobile} setMobileMenuOpen={setMobileMenuOpen} />}
           />
           {/* Douas module */}
           <Route
             path="/douas"
-            element={<DouasPage settings={settings} updateSettings={updateSettings} />}
+            element={<DouasPage settings={settings} updateSettings={updateSettings} isMobile={isMobile} setMobileMenuOpen={setMobileMenuOpen} />}
           />
         </Routes>
       </main>
 
-      <Footer darkMode={settings.darkMode} toggleDarkMode={toggleDarkMode} />
+      <Footer darkMode={settings.darkMode} toggleDarkMode={toggleDarkMode} isMobile={isMobile} />
     </div>
   )
 }

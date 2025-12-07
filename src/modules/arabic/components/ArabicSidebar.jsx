@@ -32,7 +32,7 @@ const ARABIC_FONTS = [
   { id: 'scheherazade', name: 'Scheherazade New' },
 ]
 
-export default function ArabicSidebar({ isOpen, setIsOpen, settings, updateSettings }) {
+export default function ArabicSidebar({ isOpen, setIsOpen, settings, updateSettings, isMobile, setMobileMenuOpen }) {
   const navigate = useNavigate()
   const location = useLocation()
   const [openBookDropdown, setOpenBookDropdown] = useState(null)
@@ -133,15 +133,17 @@ export default function ArabicSidebar({ isOpen, setIsOpen, settings, updateSetti
   })).filter(cat => cat.books.length > 0) || []
 
   return (
-    <SidebarWrapper isOpen={isOpen} darkMode={darkMode}>
+    <SidebarWrapper isOpen={isOpen} darkMode={darkMode} isMobile={isMobile}>
       <SidebarHeader
         isOpen={isOpen}
         setIsOpen={setIsOpen}
         darkMode={darkMode}
         title="MyArabic"
-        icon=""
+        icon="ع"
         gradientFrom="from-red-500"
         gradientTo="to-red-700"
+        isMobile={isMobile}
+        onClose={() => setMobileMenuOpen && setMobileMenuOpen(false)}
       />
 
       <SidebarNav items={navItems} isOpen={isOpen} darkMode={darkMode} accentColor="red" />

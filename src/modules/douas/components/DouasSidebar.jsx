@@ -27,7 +27,7 @@ const ARABIC_FONTS = [
   { id: 'lateef', name: 'Lateef' },
 ]
 
-export default function DouasSidebar({ isOpen, setIsOpen, settings, updateSettings }) {
+export default function DouasSidebar({ isOpen, setIsOpen, settings, updateSettings, isMobile, setMobileMenuOpen }) {
   const navigate = useNavigate()
   const location = useLocation()
   const [categories, setCategories] = useState([])
@@ -80,15 +80,17 @@ export default function DouasSidebar({ isOpen, setIsOpen, settings, updateSettin
   }
 
   return (
-    <SidebarWrapper isOpen={isOpen} darkMode={darkMode}>
+    <SidebarWrapper isOpen={isOpen} darkMode={darkMode} isMobile={isMobile}>
       <SidebarHeader
         isOpen={isOpen}
         setIsOpen={setIsOpen}
         darkMode={darkMode}
         title="MyDouas"
-        icon=""
+        icon="🤲"
         gradientFrom="from-emerald-500"
         gradientTo="to-emerald-700"
+        isMobile={isMobile}
+        onClose={() => setMobileMenuOpen && setMobileMenuOpen(false)}
       />
 
       {/* Custom Navigation */}

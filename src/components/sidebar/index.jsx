@@ -5,17 +5,20 @@ import {
   ChevronDown,
   Moon,
   Sun,
-  Settings
+  Settings,
+  X
 } from 'lucide-react'
 
 // ===========================================
 // SIDEBAR WRAPPER - Container principal
 // ===========================================
-export function SidebarWrapper({ isOpen, darkMode, children }) {
+export function SidebarWrapper({ isOpen, darkMode, children, isMobile }) {
   return (
     <aside
-      className={`fixed left-0 top-0 h-[calc(100vh-41px)] transition-all duration-300 z-40 flex flex-col ${
-        isOpen ? 'w-64' : 'w-16'
+      className={`fixed left-0 top-0 transition-all duration-300 z-50 flex flex-col ${
+        isMobile
+          ? 'w-72 h-full shadow-2xl'
+          : `h-[calc(100vh-41px)] ${isOpen ? 'w-64' : 'w-16'}`
       } ${darkMode ? 'bg-slate-800 border-r border-slate-700' : 'bg-white border-r border-gray-200'}`}
     >
       {children}
@@ -26,10 +29,10 @@ export function SidebarWrapper({ isOpen, darkMode, children }) {
 // ===========================================
 // SIDEBAR HEADER - En-tête avec logo et toggle
 // ===========================================
-export function SidebarHeader({ isOpen, setIsOpen, darkMode, title, icon, gradientFrom, gradientTo }) {
+export function SidebarHeader({ isOpen, setIsOpen, darkMode, title, icon, gradientFrom, gradientTo, isMobile, onClose }) {
   return (
     <div className={`flex items-center justify-between p-4 border-b ${darkMode ? 'border-slate-700' : 'border-gray-100'}`}>
-      {isOpen && (
+      {(isOpen || isMobile) && (
         <div className="flex items-center gap-2">
           <div className={`w-8 h-8 bg-gradient-to-br ${gradientFrom} ${gradientTo} rounded-lg flex items-center justify-center`}>
             <span className="text-white font-bold text-sm">{icon}</span>
@@ -37,16 +40,25 @@ export function SidebarHeader({ isOpen, setIsOpen, darkMode, title, icon, gradie
           <h1 className={`font-semibold ${darkMode ? 'text-white' : 'text-gray-800'}`}>{title}</h1>
         </div>
       )}
-      <button
-        onClick={() => setIsOpen(!isOpen)}
-        className={`p-2 rounded-lg transition-colors ${darkMode ? 'hover:bg-slate-700' : 'hover:bg-gray-100'} ${!isOpen && 'mx-auto'}`}
-      >
-        {isOpen ? (
-          <ChevronLeft className={`w-5 h-5 ${darkMode ? 'text-gray-300' : 'text-gray-600'}`} />
-        ) : (
-          <ChevronRight className={`w-5 h-5 ${darkMode ? 'text-gray-300' : 'text-gray-600'}`} />
-        )}
-      </button>
+      {isMobile ? (
+        <button
+          onClick={onClose}
+          className={`p-2 rounded-lg transition-colors ${darkMode ? 'hover:bg-slate-700' : 'hover:bg-gray-100'}`}
+        >
+          <X className={`w-5 h-5 ${darkMode ? 'text-gray-300' : 'text-gray-600'}`} />
+        </button>
+      ) : (
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className={`p-2 rounded-lg transition-colors ${darkMode ? 'hover:bg-slate-700' : 'hover:bg-gray-100'} ${!isOpen && 'mx-auto'}`}
+        >
+          {isOpen ? (
+            <ChevronLeft className={`w-5 h-5 ${darkMode ? 'text-gray-300' : 'text-gray-600'}`} />
+          ) : (
+            <ChevronRight className={`w-5 h-5 ${darkMode ? 'text-gray-300' : 'text-gray-600'}`} />
+          )}
+        </button>
+      )}
     </div>
   )
 }
@@ -393,6 +405,32 @@ export function SidebarDarkModeToggle({ darkMode, onChange, accentColor = 'prima
       darkMode={darkMode}
       accentColor={accentColor}
     />
+  )
+}
+
+// ===========================================
+// MOBILE HEADER - Header with hamburger menu for mobile
+// ===========================================
+export function MobileHeader({ title, icon, gradientFrom, gradientTo, darkMode, onMenuClick }) {
+  return (
+    <div className={`md:hidden sticky top-0 z-30 flex items-center justify-between px-4 py-3 border-b ${
+      darkMode ? 'bg-slate-800 border-slate-700' : 'bg-white border-gray-200'
+    }`}>
+      <div className="flex items-center gap-2">
+        <div className={`w-8 h-8 bg-gradient-to-br ${gradientFrom} ${gradientTo} rounded-lg flex items-center justify-center`}>
+          <span className="text-white font-bold text-sm">{icon}</span>
+        </div>
+        <h1 className={`font-semibold ${darkMode ? 'text-white' : 'text-gray-800'}`}>{title}</h1>
+      </div>
+      <button
+        onClick={onMenuClick}
+        className={`p-2 rounded-lg transition-colors ${darkMode ? 'hover:bg-slate-700' : 'hover:bg-gray-100'}`}
+      >
+        <svg className={`w-6 h-6 ${darkMode ? 'text-gray-300' : 'text-gray-600'}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
   )
 }
 

@@ -1,15 +1,14 @@
 import { useState, useEffect } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import { FileText, Folder, Music, Quote } from 'lucide-react'
-import NotesSidebar from '../components/NotesSidebar'
 import FolderView from '../components/FolderView'
 import PlaylistView from '../components/PlaylistView'
 import CitationsView from '../components/CitationsView'
 import { getNotes, findItemById } from '../services/notesService'
+import { MobileHeader } from '../../../components/sidebar'
 
-export default function NotesPage({ settings, updateSettings }) {
+export default function NotesPage({ settings, updateSettings, isMobile, setMobileMenuOpen }) {
   const [searchParams] = useSearchParams()
-  const [sidebarOpen, setSidebarOpen] = useState(true)
   const [currentItem, setCurrentItem] = useState(null)
   const [notes, setNotes] = useState({ items: [] })
 
@@ -96,18 +95,19 @@ export default function NotesPage({ settings, updateSettings }) {
   }
 
   return (
-    <div className={`flex h-screen ${darkMode ? 'bg-slate-900' : 'bg-gray-50'}`}>
-      <NotesSidebar
-        isOpen={sidebarOpen}
-        setIsOpen={setSidebarOpen}
-        settings={settings}
-        updateSettings={updateSettings}
+    <div className={`min-h-screen ${darkMode ? 'bg-slate-900' : 'bg-gray-50'}`}>
+      {/* Mobile Header */}
+      <MobileHeader
+        title="MyNotes"
+        icon="📝"
+        gradientFrom="from-amber-500"
+        gradientTo="to-amber-700"
+        darkMode={darkMode}
+        onMenuClick={() => setMobileMenuOpen && setMobileMenuOpen(true)}
       />
 
-      <main className={`flex-1 overflow-y-auto transition-all duration-300 ${
-        sidebarOpen ? 'ml-0' : 'ml-0'
-      }`}>
-        <div className="p-6 max-w-6xl mx-auto">
+      <main className="overflow-y-auto">
+        <div className="p-4 md:p-6 max-w-6xl mx-auto">
           {renderView()}
         </div>
       </main>

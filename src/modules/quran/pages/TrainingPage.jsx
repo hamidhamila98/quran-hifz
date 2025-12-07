@@ -2,8 +2,9 @@ import { useState, useCallback, useRef, useEffect } from 'react'
 import { Shuffle, Eye, RotateCcw, Check, X, Lightbulb, Trophy, BookOpen, ChevronDown, Play, Pause } from 'lucide-react'
 import { getAyahsInPageRange, SURAH_INFO, JUZ_INFO, HIZB_INFO, ARABIC_FONTS, getEveryAyahUrl, RECITERS } from '../services/quranApi'
 import { loadTimingData, getVerseTimings, getCurrentWordIndex, hasTimingData, isTimingDataLoaded } from '../services/wordTiming'
+import { MobileHeader } from '../../../components/sidebar'
 
-export default function TrainingPage({ settings }) {
+export default function TrainingPage({ settings, isMobile, setMobileMenuOpen }) {
   // Selection mode: 'juz', 'hizb', 'surah', 'custom'
   const [selectionMode, setSelectionMode] = useState('juz')
   const [selectedJuz, setSelectedJuz] = useState(30)
@@ -570,13 +571,24 @@ export default function TrainingPage({ settings }) {
   }
 
   return (
-    <div className={`p-6 pb-16 ${settings.darkMode ? 'bg-slate-900' : 'bg-gray-50'}`}>
-      <header className="mb-8">
-        <h1 className={`text-3xl font-bold ${settings.darkMode ? 'text-white' : 'text-gray-800'}`}>
+    <div className={`pb-16 ${settings.darkMode ? 'bg-slate-900' : 'bg-gray-50'}`}>
+      {/* Mobile Header */}
+      <MobileHeader
+        title="MyHifz"
+        icon="📖"
+        gradientFrom="from-sky-500"
+        gradientTo="to-sky-700"
+        darkMode={settings.darkMode}
+        onMenuClick={() => setMobileMenuOpen && setMobileMenuOpen(true)}
+      />
+
+      <div className="p-4 md:p-6">
+      <header className="mb-6 md:mb-8">
+        <h1 className={`text-2xl md:text-3xl font-bold ${settings.darkMode ? 'text-white' : 'text-gray-800'}`}>
           Entraînement
         </h1>
-        <p className={`mt-2 ${settings.darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-          Testez votre mémorisation avec des versets aléatoires
+        <p className={`mt-2 text-sm md:text-base ${settings.darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+          Testez votre mémorisation
         </p>
       </header>
 
@@ -1137,6 +1149,7 @@ export default function TrainingPage({ settings }) {
           )}
         </div>
       )}
+      </div>
     </div>
   )
 }

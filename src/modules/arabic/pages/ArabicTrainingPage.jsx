@@ -1,10 +1,11 @@
 import { useState } from 'react'
 import { Shuffle, Eye, RotateCcw, Check, X, ChevronDown, BookOpen, Brain } from 'lucide-react'
+import { MobileHeader } from '../../../components/sidebar'
 
 // Placeholder - sera remplacé par les vraies données de vocabulaire
 const PLACEHOLDER_VOCAB = []
 
-export default function ArabicTrainingPage({ settings, updateSettings }) {
+export default function ArabicTrainingPage({ settings, updateSettings, isMobile, setMobileMenuOpen }) {
   const darkMode = settings.darkMode
 
   // Configuration states
@@ -153,13 +154,24 @@ export default function ArabicTrainingPage({ settings, updateSettings }) {
   }
 
   return (
-    <div className={`p-6 pb-16 ${darkMode ? 'bg-slate-900' : 'bg-gray-50'}`}>
-      <header className="mb-8">
-        <h1 className={`text-3xl font-bold ${darkMode ? 'text-white' : 'text-gray-800'}`}>
+    <div className={`pb-16 ${darkMode ? 'bg-slate-900' : 'bg-gray-50'}`}>
+      {/* Mobile Header */}
+      <MobileHeader
+        title="MyArabic"
+        icon="ع"
+        gradientFrom="from-red-500"
+        gradientTo="to-red-700"
+        darkMode={darkMode}
+        onMenuClick={() => setMobileMenuOpen && setMobileMenuOpen(true)}
+      />
+
+      <div className="p-4 md:p-6">
+      <header className="mb-6 md:mb-8">
+        <h1 className={`text-2xl md:text-3xl font-bold ${darkMode ? 'text-white' : 'text-gray-800'}`}>
           Entraînement Vocabulaire
         </h1>
-        <p className={`mt-2 ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-          Testez votre vocabulaire arabe avec des mots aléatoires
+        <p className={`mt-2 text-sm md:text-base ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+          Testez votre vocabulaire arabe
         </p>
       </header>
 
@@ -403,6 +415,7 @@ export default function ArabicTrainingPage({ settings, updateSettings }) {
           </div>
         </div>
       )}
+      </div>
     </div>
   )
 }

@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { BookOpen, Lock } from 'lucide-react'
+import { MobileHeader } from '../../../components/sidebar'
 
-export default function ArabicBooksPage({ settings, updateSettings }) {
+export default function ArabicBooksPage({ settings, updateSettings, isMobile, setMobileMenuOpen }) {
   const navigate = useNavigate()
   const [booksRegistry, setBooksRegistry] = useState({ books: [], categories: [] })
   const [booksData, setBooksData] = useState({})
@@ -144,7 +145,18 @@ export default function ArabicBooksPage({ settings, updateSettings }) {
   }
 
   return (
-    <div className={`p-6 pb-16 ${settings.darkMode ? 'bg-slate-900' : 'bg-gray-50'}`}>
+    <div className={`pb-16 ${settings.darkMode ? 'bg-slate-900' : 'bg-gray-50'}`}>
+      {/* Mobile Header */}
+      <MobileHeader
+        title="MyArabic"
+        icon="ع"
+        gradientFrom="from-red-500"
+        gradientTo="to-red-700"
+        darkMode={settings.darkMode}
+        onMenuClick={() => setMobileMenuOpen && setMobileMenuOpen(true)}
+      />
+
+      <div className="p-4 md:p-6">
       {/* Header with total progress */}
       <div className={`mb-8 p-6 rounded-2xl ${settings.darkMode ? 'bg-slate-800' : 'bg-white'} shadow-sm`}>
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-4">
@@ -262,6 +274,7 @@ export default function ArabicBooksPage({ settings, updateSettings }) {
           </div>
         </div>
       ))}
+      </div>
     </div>
   )
 }

@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { useParams, useNavigate, useSearchParams } from 'react-router-dom'
 import { ChevronRight, ChevronLeft, Check, Languages, Youtube, FileText, BookOpen, ArrowLeft } from 'lucide-react'
 import PdfViewer from '../components/PdfViewer'
+import { MobileHeader } from '../../../components/sidebar'
 
 // Arabic fonts for learning
 const ARABIC_FONTS = [
@@ -11,7 +12,7 @@ const ARABIC_FONTS = [
   { id: 'lateef', name: 'Lateef', family: "'Lateef', serif" },
 ]
 
-export default function ArabicPage({ settings, updateSettings }) {
+export default function ArabicPage({ settings, updateSettings, isMobile, setMobileMenuOpen }) {
   const { bookId } = useParams()
   const navigate = useNavigate()
   const [searchParams, setSearchParams] = useSearchParams()
@@ -261,7 +262,18 @@ export default function ArabicPage({ settings, updateSettings }) {
   }
 
   return (
-    <div className={`p-6 pb-16 ${settings.darkMode ? 'bg-slate-900' : 'bg-gray-50'}`}>
+    <div className={`pb-16 ${settings.darkMode ? 'bg-slate-900' : 'bg-gray-50'}`}>
+      {/* Mobile Header */}
+      <MobileHeader
+        title="MyArabic"
+        icon="ع"
+        gradientFrom="from-red-500"
+        gradientTo="to-red-700"
+        darkMode={settings.darkMode}
+        onMenuClick={() => setMobileMenuOpen && setMobileMenuOpen(true)}
+      />
+
+      <div className="p-4 md:p-6">
       {/* Progress Bar Header */}
       <div className={`mb-6 p-4 rounded-2xl ${settings.darkMode ? 'bg-slate-800' : 'bg-white'} shadow-sm`}>
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-3">
@@ -711,6 +723,7 @@ export default function ArabicPage({ settings, updateSettings }) {
           </div>
         </div>
       )}
+      </div>
     </div>
   )
 }

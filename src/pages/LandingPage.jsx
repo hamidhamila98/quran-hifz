@@ -63,7 +63,7 @@ const modules = [
   },
 ]
 
-export default function LandingPage({ darkMode, toggleDarkMode }) {
+export default function LandingPage({ darkMode, toggleDarkMode, isMobile }) {
   const { user, isLoggedIn, login, register, logout } = useUser()
   const [showAuthModal, setShowAuthModal] = useState(false)
   const [authMode, setAuthMode] = useState('login') // 'login' ou 'register'
@@ -151,14 +151,14 @@ export default function LandingPage({ darkMode, toggleDarkMode }) {
 
     const cardContent = (
       <div className="flex flex-col items-center text-center">
-        <Icon className={`w-14 h-14 mb-4 ${colors.icon}`} strokeWidth={1.5} />
-        <h2 className={`text-2xl font-bold mb-1 ${colors.title}`}>
+        <Icon className={`w-10 h-10 md:w-14 md:h-14 mb-3 md:mb-4 ${colors.icon}`} strokeWidth={1.5} />
+        <h2 className={`text-lg md:text-2xl font-bold mb-1 ${colors.title}`}>
           {module.title}
         </h2>
-        <p className={`text-xl font-arabic mb-2 ${colors.title}`} dir="rtl">
+        <p className={`text-base md:text-xl font-arabic mb-2 ${colors.title}`} dir="rtl">
           {module.titleAr}
         </p>
-        <p className={`text-sm ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+        <p className={`text-xs md:text-sm ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
           {module.description}
         </p>
         {module.comingSoon && (
@@ -170,7 +170,7 @@ export default function LandingPage({ darkMode, toggleDarkMode }) {
     )
 
     const baseClasses = `
-      p-6 rounded-2xl border-2 transition-all duration-200
+      p-4 md:p-6 rounded-2xl border-2 transition-all duration-200
       ${colors.bg} ${colors.border} ${colors.hover}
       ${module.comingSoon ? 'cursor-not-allowed opacity-75' : 'transform hover:scale-[1.02] hover:shadow-lg'}
     `
@@ -328,42 +328,42 @@ export default function LandingPage({ darkMode, toggleDarkMode }) {
         </div>
       )}
 
-      <div className="flex-1 flex flex-col items-center justify-center p-8">
+      <div className="flex-1 flex flex-col items-center justify-center p-4 md:p-8">
         {/* Header - Bismillah */}
-        <div className="text-center mb-12">
-          <h1 className={`text-4xl font-bold mb-2 ${darkMode ? 'text-white' : 'text-gray-900'}`}>
+        <div className="text-center mb-8 md:mb-12">
+          <h1 className={`text-2xl md:text-4xl font-bold mb-2 ${darkMode ? 'text-white' : 'text-gray-900'}`}>
             بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
           </h1>
-          <p className={`text-lg ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+          <p className={`text-sm md:text-lg ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
             Votre compagnon pour l'apprentissage islamique
           </p>
           {isLoggedIn && (
-            <p className={`text-sm mt-2 ${darkMode ? 'text-emerald-400' : 'text-emerald-600'}`}>
+            <p className={`text-xs md:text-sm mt-2 ${darkMode ? 'text-emerald-400' : 'text-emerald-600'}`}>
               Connecté en tant que <span className="font-semibold">{user.pseudo}</span>
             </p>
           )}
         </div>
 
         {/* Module Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl w-full">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-5 max-w-5xl w-full">
           {modules.map(module => renderModuleCard(module))}
         </div>
 
         {/* Hadith Quote */}
-        <div className={`mt-10 max-w-2xl text-center ${darkMode ? 'text-gray-400' : 'text-gray-500'}`}>
-          <p className="text-2xl font-arabic mb-3" dir="rtl">
+        <div className={`mt-6 md:mt-10 max-w-2xl text-center px-4 ${darkMode ? 'text-gray-400' : 'text-gray-500'}`}>
+          <p className="text-lg md:text-2xl font-arabic mb-2 md:mb-3" dir="rtl">
             طَلَبُ الْعِلْمِ فَرِيضَةٌ عَلَى كُلِّ مُسْلِمٍ
           </p>
-          <p className={`text-base italic mb-2 ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
+          <p className={`text-sm md:text-base italic mb-2 ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
             "Apprendre la science est une obligation pour chaque musulman"
           </p>
-          <p className={`text-sm ${darkMode ? 'text-gray-500' : 'text-gray-400'}`}>
+          <p className={`text-xs md:text-sm ${darkMode ? 'text-gray-500' : 'text-gray-400'}`}>
             Rapporte par Ibn Majah - Sahih Targhib n°72
           </p>
         </div>
       </div>
 
-      <Footer darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+      <Footer darkMode={darkMode} toggleDarkMode={toggleDarkMode} isMobile={isMobile} />
     </div>
   )
 }

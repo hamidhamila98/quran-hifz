@@ -76,7 +76,7 @@ const TAFSIR_SOURCES = [
   { id: 'qurtubi', name: 'Qurtubi', lang: 'AR' },
 ]
 
-export default function QuranSidebar({ isOpen, setIsOpen, settings, updateSettings }) {
+export default function QuranSidebar({ isOpen, setIsOpen, settings, updateSettings, isMobile, setMobileMenuOpen }) {
   const [reciterDropdownOpen, setReciterDropdownOpen] = useState(false)
   const [portionDropdownOpen, setPortionDropdownOpen] = useState(false)
   const [configOpen, setConfigOpen] = useState(false)
@@ -97,7 +97,7 @@ export default function QuranSidebar({ isOpen, setIsOpen, settings, updateSettin
   }
 
   return (
-    <SidebarWrapper isOpen={isOpen} darkMode={darkMode}>
+    <SidebarWrapper isOpen={isOpen} darkMode={darkMode} isMobile={isMobile}>
       <SidebarHeader
         isOpen={isOpen}
         setIsOpen={setIsOpen}
@@ -106,6 +106,8 @@ export default function QuranSidebar({ isOpen, setIsOpen, settings, updateSettin
         icon=""
         gradientFrom="from-sky-500"
         gradientTo="to-sky-700"
+        isMobile={isMobile}
+        onClose={() => setMobileMenuOpen && setMobileMenuOpen(false)}
       />
 
       <SidebarNav items={navItems} isOpen={isOpen} darkMode={darkMode} accentColor="blue" />

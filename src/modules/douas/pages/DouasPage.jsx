@@ -5,8 +5,9 @@ import CategoryView from '../components/CategoryView'
 import DuaReader from '../components/DuaReader'
 import TrainingMode from '../components/TrainingMode'
 import { getCategories, getStats, getProgress, getFavoriteCategories, toggleFavoriteCategory } from '../services/douasService'
+import { MobileHeader } from '../../../components/sidebar'
 
-export default function DouasPage({ settings, updateSettings }) {
+export default function DouasPage({ settings, updateSettings, isMobile, setMobileMenuOpen }) {
   const [searchParams] = useSearchParams()
   const navigate = useNavigate()
   const [categories, setCategories] = useState([])
@@ -96,7 +97,18 @@ export default function DouasPage({ settings, updateSettings }) {
 
   // Vue accueil - Style copié de ArabicBooksPage
   return (
-    <div className={`p-6 pb-16 ${darkMode ? 'bg-slate-900' : 'bg-gray-50'}`}>
+    <div className={`pb-16 ${darkMode ? 'bg-slate-900' : 'bg-gray-50'}`}>
+      {/* Mobile Header */}
+      <MobileHeader
+        title="MyDouas"
+        icon="🤲"
+        gradientFrom="from-emerald-500"
+        gradientTo="to-emerald-700"
+        darkMode={darkMode}
+        onMenuClick={() => setMobileMenuOpen && setMobileMenuOpen(true)}
+      />
+
+      <div className="p-4 md:p-6">
       {/* Header with total progress - Same style as ArabicBooksPage */}
       <div className={`mb-8 p-6 rounded-2xl ${darkMode ? 'bg-slate-800' : 'bg-white'} shadow-sm`}>
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-4">
@@ -218,6 +230,7 @@ export default function DouasPage({ settings, updateSettings }) {
             )
           })}
         </div>
+      </div>
       </div>
     </div>
   )
